@@ -163,10 +163,10 @@ was a month long summer course which aims to cover semester-worth of material in
   [2018]: https://www.mathcamp.org/2018/index.php 
   [2017]: https://www.mathcamp.org/2017/index.php 
 
-  [Galois Correspondence of Covering Spaces]: courses/2019MathCamp/GaloisCorrespondenceOfCoveringSpaces.pdf
-  [From High School Arithmetic to Group Cohomology]: courses/2019MathCamp/GroupCohomology.pdf
-  [Crash Course on Linear Algebra]: courses/2019MathCamp/CrashCourseOnLinearAlgebra.pdf
-  [Riemann Surfaces]: courses/2019MathCamp/RiemannSurfaces/index.html
+  [Galois Correspondence of Covering Spaces]: https://drive.google.com/file/d/1yMpw52rjMrBRj5q8W2PIDRDp9yXmDYVN/view?usp=sharing
+  [From High School Arithmetic to Group Cohomology]: https://drive.google.com/file/d/1L7urIOuiu4JIfI6ry2lkKin6Xof8yJdd/view?usp=sharing
+  [Crash Course on Linear Algebra]: https://drive.google.com/file/d/1lnX4p_K75vMl0rt0JtOeTYPm9eA6Zi2j/view?usp=sharing
+  [Riemann Surfaces]: https://drive.google.com/drive/folders/16o9Slgd4YvhjUCEp_BHSc-xf-2ubKHlo?usp=sharing
   
   [How Curved Is a Potato?]: https://drive.google.com/drive/folders/1zZ49l7ZrmVfg4Lrt7iiCZrk3YH_kVVSg?usp=sharing
   [Cohomology via Sheaves]: https://drive.google.com/file/d/1C21oAC_dH0EX-el2mdT9lH_taY2xZNMm/view?usp=sharing
