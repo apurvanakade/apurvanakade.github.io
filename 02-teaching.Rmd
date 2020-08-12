@@ -4,7 +4,7 @@
 The Directed Reading Program is a program for undergrads and grad students/postdocs.
 Undergrads are paired with a mentor whose interests align with theirs and they study a topic of their choice for one semester. 
 It is intended to help motivated students explore topics in more depth than possible in a classroom setting.
-I help organize the [DRP at UWO] and have helped out with organizing the [DRP at JHU].
+I co-organize the [DRP at UWO] and in the past have co-organized the [DRP at JHU].
 Following is the list of projects I've mentored.
 
 
@@ -13,8 +13,7 @@ Following is the list of projects I've mentored.
 -   Tim Yau, *An Introduction to Manifolds* by Loring Tu. ([DRP, Fall
     2019][DRP, Fall 2020])
 -   Hannah Wool, *Topology* by Munkres. ([DRP, Spring 2019])
--   Sydney Timmerman, *Differential Geometry and Lie Groups for
-    Physicists* by Marián Fecko. ([DRP, Fall 2018])
+-   Sydney Timmerman, [*Differential Geometry and Lie Groups for Physicists*] by Marián Fecko. ([DRP, Fall 2018])
 -   Eric Cochran, *An Introduction to Manifolds* by Loring Tu. ([DRP,
     Spring 2018])
 -   Chris Chia, *The Knot Book* by Adams Collins. ([DRP, Fall 2017])
@@ -78,7 +77,9 @@ At JHU, I designed and taught a full semester (IBL) Honors Single Variable Calcu
 ## Expository Notes
 
 Following are some notes I've taken while learning a new subject in my grad school. 
+The entire folder can be found [here](https://drive.google.com/drive/folders/1UR3MW_iRyv6idye57D8QuOu_VEAooS7u?usp=sharing).
 They have not been proofread and are likely to contain several mistakes, viewer discretion is advised.
+("One day" when I get some free time I intend to clean them up.)
 
 #### Homotopy Theory
 
@@ -98,7 +99,7 @@ They have not been proofread and are likely to contain several mistakes, viewer 
 - [Finite Group Gauge Theory]
 - [FIOs and Lagrangian Submanifolds]
 - [Lie Groups]
-- [Classical Electromagnetism]
+- [Connections on Principal Bundles and Classical Electromagnetism]
 
 #### Algebra
 
@@ -109,20 +110,22 @@ They have not been proofread and are likely to contain several mistakes, viewer 
 
 ## Complete List of Courses
 
-| University | Course                                             | Years    | Avg # of students |                             |
-|------------|----------------------------------------------------|----------|-------------------|-----------------------------|
-| UWO        | Algebraic Topology                                 | 2021     | -                 | Math Grad                   |
-|            | Discrete Structures for Engineering                | 2020     | -                 | -                           |
-|            | Calculus II for Mathematical and Physical Sciences | 2020     | 150               | First year undergrad        |
-|            | Calculus I for Mathematical and Physical Sciences  | 2019     | 176               | First year undergrad        |
-|            | Topics in Category Theory                          | 2019     | 3                 | Math Grad                   |
-| JHU        | Symmetries & Polynomials                           | 2018     | 10                | All years undergrad         |
-|            | Honors Single Variable Calculus                    | 2017, 18 | 7                 | First year undergrad        |
-|            | Hitchhiker’s Guide to Algebraic Topology           | 2017     | 11                | All years undergrad         |
-|            | Calculus II (For Biology and Social Science)       | 2016     | 5                 | First year undergrad        |
-|            | Differential Equations with Applications           | 2015, 17 | 11                | First year undergrad        |
-|            | Online Linear Algebra                              | 2014     | 34                | All years undergrad         |
-| Mathcamp   | See above                                          | 2015-19  | -                 | High school & middle school |
+:::small
+| University | Course                                             | Years             | # of students |                             |
+|------------|----------------------------------------------------|-------------------|---------------|-----------------------------|
+| UWO        | Algebraic Topology                                 | Winter 2021       | -             | Grad                        |
+|            | Discrete Structures for Engineering                | Fall 2020         | -             | First year undergrad        |
+|            | Calculus II for Mathematical and Physical Sciences | Winter 2020       | 150           | First year undergrad        |
+|            | Calculus I for Mathematical and Physical Sciences  | Fall 2019         | 176           | First year undergrad        |
+|            | Topics in Category Theory                          | Fall 2019         | 3             | Grad                        |
+| JHU        | Symmetries & Polynomials                           | Intersession 2018 | 10            | All years undergrad         |
+|            | Honors Single Variable Calculus                    | Spring 2017, 18   | 7             | First year undergrad        |
+|            | Hitchhiker’s Guide to Algebraic Topology           | Intersession 2017 | 11            | All years undergrad         |
+|            | Calculus II (For Biology and Social Science)       | Summer 2016       | 5             | First year undergrad        |
+|            | Differential Equations with Applications           | Summer 2015, 17   | 11            | First year undergrad        |
+|            | Online Linear Algebra                              | Summer 2014       | 34            | All years undergrad         |
+| Mathcamp   | See above                                          | Summers 2015-19   | -             | High school & middle school |
+:::
 
 Course websites: [Calc \'19], [Calc \'20], [DiffEq \'17], [Calc \'16], [DiffEq \'15].
 
@@ -133,13 +136,16 @@ was a full semester 4 credit course with more than 300 students divided into 2 s
 was a full semester course with more than 1000 students divided into 10 sections. I was the instructor for one of the sections and was solely responsible for making weekly WebWork homeworks and in-class quizzes. The class regularly met for 4 hours every week.
 
 #### Topics in Category Theory (UWO, Fall 2019)
-was a full semester reading course for math graduate students that I supervised.
+was a full semester reading course for math graduate students that I supervised. We worked through Chapter 1 of Ravi Vakil's [*Foundations of Algebraic Geometry*] with some help from Emily Riehl's [*Category Theory in Context*].
 
 #### Calculus II For Biology and Social Science (JHU, Summer 2019)
-was a month long summer course which aims to cover semester-worth of material in one month. The class regularly met for 10 hours every week.
+was a month long summer course which covered semester-worth of material. The class regularly met for 10 hours every week and had weekly exams.
 
-#### Differential Equations with Applications
-#### Online Linear Algebra
+#### Differential Equations with Applications (JHU, Summer 2015, 17)
+was a month long summer course which covered semester-worth of material. The class regularly met for 10 hours every week and had weekly exams.
+
+#### Online Linear Algebra (JHU, Summer 2014)
+was a fully online two month long summer course which covered semester-worth of material. The class regularly met for 4-5 hours every week.
 
 
   [DiffEq \'15]: https://drive.google.com/drive/folders/1X7WKPhBljbXt6dBt278t2lKUlWUKIU5Z?usp=sharing
@@ -180,24 +186,24 @@ was a month long summer course which aims to cover semester-worth of material in
   [Representation theory]: https://drive.google.com/drive/folders/1gCkxfiQ09TKmofzZKd6TlNikzWV3Ltum?usp=sharing
   [Lagrangian and Hamiltonian Mechanics]: https://drive.google.com/drive/folders/1sCCXN0ffj0SP216WOwTwe7LJgIXJtPpg?usp=sharing
 
-  [What is a Spectrum?]: notes/Bits%20and%20Pieces/What%20is%20a%20Spectrum%3F.pdf
-  [Vector fields on Spheres]: notes/CMI/vector%20fields%20on%20spheres/index.html
-  [Mosher and Tangora Notes]: notes/JHU%20Course%20Notes/Mosher%20and%20Tangora/index.html
-  [Steifel Whitney Numbers]: notes/Bits%20and%20Pieces/SW%20numbers.pdf
-  [Model Categories]: notes/Bits%20and%20Pieces/Model%20Categories/index.html
-  [Homotopy of MO]: notes/Bits%20and%20Pieces/Homotopy%20of%20MO/index.html
-  [Infinity Categories]: notes/JHU%20Course%20Notes/Infinity%20Categories/index.html
-  [h-principles MSRI Summer School]: notes/Conference%20Notes/MSRI-h-principles.pdf
-  [Symplectic Geometry]: notes/Bits%20and%20Pieces/Symplectic%20Geometry/index.html
-  [Geometry of Dirac Operators]: notes/Bits%20and%20Pieces/Geometry%20of%20Dirac%20Operators/index.html
-  [Finite Group Gauge Theory]: notes/Bits%20and%20Pieces/Finite%20Gauge%20Group%20Theory/index.html
-  [FIOs and Lagrangian Submanifolds]: notes/Bits%20and%20Pieces/FIOs%20and%20Lagrangian%20Submanifolds/index.html
-  [Lie Groups]: notes/Bits%20and%20Pieces/Classical%20Lie%20Groups.pdf
-  [Classical Electromagnetism]: notes/Bits%20and%20Pieces/Connections%20on%20Principal%20Bundles%20and%20Classical%20Electromagnetism.pdf
-  [Commutative Algebra Notes]: notes/JHU%20Course%20Notes/Commutative%20Algebra.pdf
-  [Rep Theory of Symmetric Group]: notes/CMI/Representation%20Theory%20of%20Symmetric%20Group.pdf
+  [What is a Spectrum?]: https://drive.google.com/file/d/16zRKLkBl4skQ0UNKRXfM7d51qWnBLwGF/view?usp=sharing
+  [Vector fields on Spheres]: https://drive.google.com/drive/folders/1fVAeXqn82gOEpEJ9RfBnXqdeJjxTPJNk?usp=sharing
+  [Mosher and Tangora Notes]: https://drive.google.com/drive/folders/1vSFBZh3cuDoJPglIeBmLUV1Ur0RvhZ-p?usp=sharing
+  [Steifel Whitney Numbers]: https://drive.google.com/file/d/1W9TDU1SaWVLghrSaw8Dg04vdfW9veW_C/view?usp=sharing
+  [Model Categories]: https://drive.google.com/drive/folders/1F2cHnX93gMsFYpfASU-TBF4GhZ5TZRBf?usp=sharing
+  [Homotopy of MO]: https://drive.google.com/drive/folders/1ns-S54As89Srb8Hlz2ypOmzoOA-CW3il?usp=sharing
+  [Infinity Categories]: https://drive.google.com/drive/folders/12tMk47gvY0B8cL0LmtRxLMcrVudd73y-?usp=sharing
+  [h-principles MSRI Summer School]: https://drive.google.com/file/d/1uecVJP6Xl1vScsswWGqBtJ1s3o9PwG8C/view?usp=sharing
+  [Symplectic Geometry]: https://drive.google.com/drive/folders/1NJllhRgGV5uMSg3hfbp2wcJgScIwhhSZ?usp=sharing
+  [Geometry of Dirac Operators]: https://drive.google.com/drive/folders/19GanFw6odpL4tRUJa-mPsVmVKcK52jaW?usp=sharing
+  [Finite Group Gauge Theory]: https://drive.google.com/drive/folders/1OyE4ADuxnFIJ3-wuEifCNYWcCF2-iiRd?usp=sharing
+  [FIOs and Lagrangian Submanifolds]: https://drive.google.com/drive/folders/1lkx7z7ht5XuRAhhKnhVgLiPHJ2GLSrT3?usp=sharing
+  [Lie Groups]: https://drive.google.com/file/d/15SwA8TDmLUMElPQYvhMcIAttXgNzuKbz/view?usp=sharing
+  [Connections on Principal Bundles and Classical Electromagnetism]: https://drive.google.com/file/d/1kFh_-_DmR4wt-sDBiOggM5a5U-5W7V_l/view?usp=sharing
+  [Commutative Algebra Notes]: https://drive.google.com/file/d/1iwjYv6a5myfnvFKXg8VGAd2fsMZTDXin/view?usp=sharing
+  [Rep Theory of Symmetric Group]: https://drive.google.com/file/d/1xMliaDffPi6yUzp5U2d_wIdPJ6yyfLE1/view?usp=sharing
 
-
+  [*Differential Geometry and Lie Groups for Physicists*]: http://www.math.jhu.edu/drpfiles/F2018%20-%20Sydney.pdf
   [DRP at UWO]: https://www.math.uwo.ca/undergraduate/directed_reading_program.html
   [DRP at JHU]: http://www.math.jhu.edu/drp.html
   [DRP, Fall 2020]: https://www.math.uwo.ca/undergraduate/directed_reading_program.html
@@ -205,3 +211,6 @@ was a month long summer course which aims to cover semester-worth of material in
   [DRP, Fall 2018]: http://www.math.jhu.edu/drp.html#Fall2018
   [DRP, Spring 2018]: http://www.math.jhu.edu/drp.html#Spring2018
   [DRP, Fall 2017]: http://www.math.jhu.edu/drp.html#Fall2017
+
+  [*Foundations of Algebraic Geometry*]: http://math.stanford.edu/~vakil/216blog/FOAGnov1817public.pdf
+  [*Category Theory in Context*]: http://www.math.jhu.edu/~eriehl/context.pdf

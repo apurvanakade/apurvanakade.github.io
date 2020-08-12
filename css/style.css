@@ -17,3 +17,7 @@ pre {
 pre code {
   white-space: inherit;
 }
+
+.small {
+  font-size: small;
+}
