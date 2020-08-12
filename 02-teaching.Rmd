@@ -141,16 +141,16 @@ was a month long summer course which aims to cover semester-worth of material in
 #### Differential Equations with Applications
 #### Online Linear Algebra
 
-  [Calc \'19]: courses/2019Calc1000A/index.html
-  [Calc \'20]: courses/2020Calc1501B/index.html
-  [DiffEq \'17]: courses/2017DiffEq/index.html
-  [Calc \'16]: courses/2016Calc/index.html
-  [DiffEq \'15]: courses/2015DiffEq/index.html
 
-  [Honors Single Variable Calculus \'18 (IBL)]: courses/2018HonorsCalc/index.html
-  [Honors Single Variable Calculus \'17 (IBL)]: courses/2017HonorsCalc/index.html
-  [Symmetries & Polynomials \'18 (IBL)]: courses/2018Symm&Poly.pdf
-  [H2G2 Algebraic Topology \'17]: courses/2017AlgTop/index.html
+  [DiffEq \'15]: https://drive.google.com/drive/folders/1X7WKPhBljbXt6dBt278t2lKUlWUKIU5Z?usp=sharing
+  [Calc \'16]: https://drive.google.com/drive/folders/199dY1MF3TWhJ6gUKQyPf_7YK6rO36HZc?usp=sharing
+  [H2G2 Algebraic Topology \'17]: https://drive.google.com/drive/folders/1UmhBnhqXzL1b9kb1zn-7qkYgSSW-Gmwz?usp=sharing
+  [DiffEq \'17]: https://drive.google.com/drive/folders/1_lSraXoUwk7CmStg23T1nHpYvf9zq9jA?usp=sharing
+  [Honors Single Variable Calculus \'17 (IBL)]: https://drive.google.com/drive/folders/16gJLOf0L6RJ09yRL_b7AozVyq3wHsTMG?usp=sharing
+  [Honors Single Variable Calculus \'18 (IBL)]: https://drive.google.com/drive/folders/1xF37VjqpQfSI9W5PmrK19bp8OybGmmpW?usp=sharing
+  [Calc \'19]: https://drive.google.com/drive/folders/1HFqAhHYG4m_BtwQSXGeSyItFt1xBHtWE?usp=sharing
+  [Calc \'20]: https://drive.google.com/drive/folders/1MkXy0CPOKqSJANr9QSD4gwYdMYjVcdmV?usp=sharing
+  [Symmetries & Polynomials \'18 (IBL)]: https://drive.google.com/file/d/1dChuk8J7s31C8xGurzsbf988VORnyXgb/view?usp=sharing
 
   [Lean at MC2020]: courses/lean_at_MC2020/index.html
   [code]: https://github.com/apurvnakade/mc2020-projects
@@ -160,16 +160,19 @@ was a month long summer course which aims to cover semester-worth of material in
   [Canada/USA Mathcamp]: images/mathcamp-icon.png
   [2020]: https://www.mathcamp.org/2020/index.php 
   [2019]: https://www.mathcamp.org/2019/index.php 
+  [2018]: https://www.mathcamp.org/2018/index.php 
+  [2017]: https://www.mathcamp.org/2017/index.php 
+
   [Galois Correspondence of Covering Spaces]: courses/2019MathCamp/GaloisCorrespondenceOfCoveringSpaces.pdf
   [From High School Arithmetic to Group Cohomology]: courses/2019MathCamp/GroupCohomology.pdf
   [Crash Course on Linear Algebra]: courses/2019MathCamp/CrashCourseOnLinearAlgebra.pdf
   [Riemann Surfaces]: courses/2019MathCamp/RiemannSurfaces/index.html
-  [2018]: https://www.mathcamp.org/2018/index.php 
+  
   [How Curved Is a Potato?]: courses/2018MathCamp/How%20Curved%20Is%20a%20Potato/
   [Cohomology via Sheaves]: courses/2018MathCamp/CohomologyViaSheaves.pdf
   [The Quantum Spring]: courses/2018MathCamp/TheQuantumSpring.pdf
   [Would I ever Lie Group to you?]: courses/2018MathCamp/WouldIEverLieGroupToYou.pdf
-  [2017]: https://www.mathcamp.org/2017/index.php 
+  
   [All things manifoldy]: courses/2017MathCamp/All%20things%20manifoldy/
   [Euler Characteristic]: courses/2017MathCamp/Euler%20Characteristic/
   [Symmetries of Spaces]: courses/2017MathCamp/Symmetries%20of%20Spaces/
