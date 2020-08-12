@@ -168,10 +168,10 @@ was a month long summer course which aims to cover semester-worth of material in
   [Crash Course on Linear Algebra]: courses/2019MathCamp/CrashCourseOnLinearAlgebra.pdf
   [Riemann Surfaces]: courses/2019MathCamp/RiemannSurfaces/index.html
   
-  [How Curved Is a Potato?]: courses/2018MathCamp/How%20Curved%20Is%20a%20Potato/
-  [Cohomology via Sheaves]: courses/2018MathCamp/CohomologyViaSheaves.pdf
-  [The Quantum Spring]: courses/2018MathCamp/TheQuantumSpring.pdf
-  [Would I ever Lie Group to you?]: courses/2018MathCamp/WouldIEverLieGroupToYou.pdf
+  [How Curved Is a Potato?]: https://drive.google.com/drive/folders/1zZ49l7ZrmVfg4Lrt7iiCZrk3YH_kVVSg?usp=sharing
+  [Cohomology via Sheaves]: https://drive.google.com/file/d/1C21oAC_dH0EX-el2mdT9lH_taY2xZNMm/view?usp=sharing
+  [The Quantum Spring]: https://drive.google.com/file/d/1UxZK5drBPLGt4GCC22VtEgYsGLT3p8Nu/view?usp=sharing
+  [Would I ever Lie Group to you?]: https://drive.google.com/file/d/1QSPZ5WpFDLCa1AzFrJiE57NXRhwRo8Ra/view?usp=sharing
   
   [All things manifoldy]: https://drive.google.com/drive/folders/1_ksj5iK0wjRhCcMH2r3a6t-5Y_IXTG49?usp=sharing
   [Euler Characteristic]: https://drive.google.com/drive/folders/13-oarucRe06Mi7jWdGFAQoW1Z9h0lcWM?usp=sharing
