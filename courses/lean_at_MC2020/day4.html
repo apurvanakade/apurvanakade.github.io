@@ -1,0 +1,338 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="ascii" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4. Sqrt 2 is irrational &#8212; Lean at MC 2020 0.1 documentation</title>
+    <link rel="stylesheet" href="static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="static/pygments.css" type="text/css" />
+    <script id="documentation_options" data-url_root="./" src="static/documentation_options.js"></script>
+    <script src="static/jquery.js"></script>
+    <script src="static/underscore.js"></script>
+    <script src="static/doctools.js"></script>
+    <script src="static/language_data.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="shortcut icon" href="static/favicon.ico"/>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="5. Bits &amp; Pieces" href="day5.html" />
+    <link rel="prev" title="3. Infinitely Many Primes" href="day3.html" />
+   
+  <link rel="stylesheet" href="static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="sqrt-2-is-irrational">
+<span id="day4"></span><h1><span class="section-number">4. </span>Sqrt 2 is irrational<a class="headerlink" href="#sqrt-2-is-irrational" title="Permalink to this headline">&#182;</a></h1>
+<p>Today we will teach Lean that <span class="math notranslate nohighlight">\(\sqrt{2}\)</span> is irrational.
+Let us start by reviewing some concepts we encountered yesterday.</p>
+<div class="section" id="implicit-arguments">
+<h2><span class="section-number">4.1. </span>Implicit arguments<a class="headerlink" href="#implicit-arguments" title="Permalink to this headline">&#182;</a></h2>
+<p>Consider the following theorem which says that the smallest non-trivial factor of a natural number greater than 1 is a prime number.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>min_fac_prime : n &#8800; 1 &#8594; n.min_fac.prime
+</pre></div>
+</div>
+<p>It needs only one argument, namely a term of type <code class="docutils literal notranslate"><span class="pre">n</span> <span class="pre">&#8800;</span> <span class="pre">1</span></code>.
+But we have not told Lean what <code class="docutils literal notranslate"><span class="pre">n</span></code> is!
+That&#8217;s because if we pass a term, say <code class="docutils literal notranslate"><span class="pre">hp</span> <span class="pre">:</span> <span class="pre">2</span> <span class="pre">&#8800;</span> <span class="pre">1</span></code> to <code class="docutils literal notranslate"><span class="pre">min_fac_prime</span></code> then from <code class="docutils literal notranslate"><span class="pre">hp</span></code> Lean can infer that <code class="docutils literal notranslate"><span class="pre">n</span> <span class="pre">=</span> <span class="pre">2</span></code>.
+<code class="docutils literal notranslate"><span class="pre">n</span></code> is called an <em>implicit</em> argument.
+An argument is made implicit by using curly brackets <code class="docutils literal notranslate"><span class="pre">{</span></code> and <code class="docutils literal notranslate"><span class="pre">}</span></code> instead of the usual <code class="docutils literal notranslate"><span class="pre">(</span></code> and <code class="docutils literal notranslate"><span class="pre">)</span></code> while defining the theorem.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>theorem min_fac_prime {n : &#8469;} (hne1 : n &#8800; 1) : n.min_fac.prime := ...
+</pre></div>
+</div>
+<p>Sometimes the notation is ambiguous and Lean is unable to infer the implicit arguments.
+In such a case, you can force all the arguments to become explicit by putting an <code class="docutils literal notranslate"><span class="pre">&#64;</span></code> symbol in from on the theorem. For example,</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>@min_fac_prime : (n : &#8469;) &#8594; n &#8800; 1 &#8594; n.min_fac.prime
+</pre></div>
+</div>
+<p>Use this sparingly as this makes the proof very hard to read and debug.</p>
+</div>
+<div class="section" id="the-two-haves">
+<h2><span class="section-number">4.2. </span>The two haves<a class="headerlink" href="#the-two-haves" title="Permalink to this headline">&#182;</a></h2>
+<p>We have seen two slightly different variants of the <code class="docutils literal notranslate"><span class="pre">have</span></code> tactic.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">have</span> <span class="n">hq</span> <span class="p">:</span><span class="o">=</span> <span class="o">...</span>
+<span class="n">have</span> <span class="n">hq</span> <span class="p">:</span> <span class="o">...</span>
+</pre></div>
+</div>
+<p>In the first case, we are defining <code class="docutils literal notranslate"><span class="pre">hq</span></code> to be the term on the right hand side.
+In the second case, we are saying that we do not know what the term <code class="docutils literal notranslate"><span class="pre">hq</span></code> is but we know it&#8217;s type.</p>
+<p>Let&#8217;s consider the example of <code class="docutils literal notranslate"><span class="pre">min_fac_prime</span></code> again.
+Suppose we want to conclude that the smallest factor of 10 is a prime.
+We will need a term of type <code class="docutils literal notranslate"><span class="pre">10.min_fac.prime</span></code>.
+If this is the target, we can use <code class="docutils literal notranslate"><span class="pre">apply</span> <span class="pre">min_fac_prime,</span></code>.
+If not, we need a proof of <code class="docutils literal notranslate"><span class="pre">10</span> <span class="pre">&#8800;</span> <span class="pre">1</span></code> to provide as input to <code class="docutils literal notranslate"><span class="pre">min_fac_prime</span></code>.
+For this we&#8217;ll use</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>have ten_ne_zero : 10 &#8800; 1,
+</pre></div>
+</div>
+<p>which will open up a goal with target <code class="docutils literal notranslate"><span class="pre">10</span> <span class="pre">&#8800;</span> <span class="pre">1</span></code>.
+If on the other hand, you have another hypothesis, say <code class="docutils literal notranslate"><span class="pre">f</span> <span class="pre">:</span> <span class="pre">P</span> <span class="pre">&#8594;</span>&#160; <span class="pre">(10</span> <span class="pre">&#8800;</span> <span class="pre">1)</span></code> and a term <code class="docutils literal notranslate"><span class="pre">hp</span> <span class="pre">:</span> <span class="pre">P</span></code>, then</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">have</span> <span class="n">ten_ne_zero</span> <span class="p">:</span><span class="o">=</span> <span class="n">f</span><span class="p">(</span><span class="n">hp</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>will immediately create a term of type <code class="docutils literal notranslate"><span class="pre">10</span> <span class="pre">&#8800;</span> <span class="pre">1</span></code>. More generally, remember that</p>
+<ol class="arabic simple">
+<li><p>&#8220;<code class="docutils literal notranslate"><span class="pre">:=</span></code>&#8221; stands for definition. <code class="docutils literal notranslate"><span class="pre">x</span> <span class="pre">:=</span> <span class="pre">...</span></code> means that <code class="docutils literal notranslate"><span class="pre">x</span></code> is defined to be the right hand side.</p></li>
+<li><p>&#8220;<code class="docutils literal notranslate"><span class="pre">:</span></code>&#8221; is a way of specifying type. <code class="docutils literal notranslate"><span class="pre">x</span> <span class="pre">:</span> <span class="pre">...</span></code> means that the type of <code class="docutils literal notranslate"><span class="pre">x</span></code> is the right hand side.</p></li>
+<li><p>&#8220;<code class="docutils literal notranslate"><span class="pre">=</span></code>&#8221; is only ever used in propositions and has nothing to do with terms or types.</p></li>
+</ol>
+</div>
+<div class="section" id="id2">
+<h2><span class="section-number">4.3. </span>Sqrt(2) is irrational<a class="headerlink" href="#id2" title="Permalink to this headline">&#182;</a></h2>
+<p>We will show that there do not exist non-zero natural numbers <code class="docutils literal notranslate"><span class="pre">m</span></code> and <code class="docutils literal notranslate"><span class="pre">n</span></code> such that</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">2</span> <span class="o">*</span> <span class="n">m</span> <span class="o">^</span> <span class="mi">2</span> <span class="o">=</span> <span class="n">n</span> <span class="o">^</span> <span class="mi">2</span>  <span class="o">--</span> <span class="p">(</span><span class="o">*</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>The crux of the proof is very easy.
+You simply have to start with the assumption that <code class="docutils literal notranslate"><span class="pre">m</span></code> and <code class="docutils literal notranslate"><span class="pre">n</span></code> are coprime <em>without any loss of generality</em> and derive a contradiction.
+But proving that <em>without a loss of generality</em> is a valid argument requires quite a bit of effort.
+This proof is broken down into several parts.
+The first two parts prove <code class="docutils literal notranslate"><span class="pre">(*)</span></code> assuming that <code class="docutils literal notranslate"><span class="pre">m</span></code> and <code class="docutils literal notranslate"><span class="pre">n</span></code> are coprime.
+The rest of the parts prove the <em>without loss of generality</em> part.</p>
+<p>For this problem you&#8217;ll need the following definitions.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">m.gcd</span> <span class="pre">n</span> <span class="pre">:</span> <span class="pre">&#8469;</span></code> is the gcd of <code class="docutils literal notranslate"><span class="pre">m</span></code> and <code class="docutils literal notranslate"><span class="pre">n</span></code>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">m.coprime</span> <span class="pre">n</span></code> is defined to be the proposition <code class="docutils literal notranslate"><span class="pre">m.gcd</span> <span class="pre">n</span> <span class="pre">=</span> <span class="pre">1</span></code>.</p></li>
+</ul>
+</div></blockquote>
+<p>The descriptions of the library theorems that you&#8217;ll be needing are included as comments.
+Have fun!</p>
+<div class="section" id="lemmas-for-proving-assuming-m-and-n-are-coprime">
+<h3><span class="section-number">4.3.1. </span>Lemmas for proving (*) assuming m and n are coprime.<a class="headerlink" href="#lemmas-for-proving-assuming-m-and-n-are-coprime" title="Permalink to this headline">&#182;</a></h3>
+<div style="position: relative">
+<div style='position: absolute; right: 0; top: 0; padding: 1ex'><a href="https://leanprover-community.github.io/lean-web-editor/#code=import%20tactic%0Aimport%20data.nat.basic%0Aimport%20data.nat.prime%0A%0A%0Anoncomputable%20theory%0Aopen_locale%20classical%0A%0Aopen%20nat%0A%0A--BEGIN--%0A%2F-%0Aprime.dvd_of_dvd_pow%20%3A%20%E2%88%80%20%7Bp%20m%20n%20%3A%20%E2%84%95%7D%2C%20p.prime%20%E2%86%92%20p%20%E2%88%A3%20m%20%5E%20n%20%E2%86%92%20p%20%E2%88%A3%20m%0A-%2F%0Alemma%20two_dvd_of_two_dvd_sq%20%7Bk%20%3A%20%E2%84%95%7D%0A%20%20(hk%20%3A%202%20%E2%88%A3%20k%20%5E%202)%0A%3A%202%20%E2%88%A3%20k%20%3A%3D%0Abegin%0A%20%20apply%20prime.dvd_of_dvd_pow%2C%0A%20%20sorry%2C%0Aend%0A%0A--%20to%20switch%20the%20target%20from%20%60%60P%20%3D%20Q%60%60%20to%20%60%60Q%20%3D%20P%60%60%2C%0A--%20use%20the%20tactic%20%60%60symmetry%2C%60%60%0Alemma%20division_lemma_n%20%7Bm%20n%20%3A%20%E2%84%95%7D%0A%20%20(hmn%20%3A%202%20*%20m%20%5E%202%20%3D%20n%20%5E%202)%0A%3A%202%20%E2%88%A3%20n%20%3A%3D%0Abegin%0A%20%20sorry%2C%0Aend%0A%0Alemma%20div_2%20%7Bm%20n%20%3A%20%E2%84%95%7D%20(hnm%20%3A%202%20*%20m%20%3D%202%20*%20n)%20%3A%20(m%20%3D%20n)%20%3A%3D%0Abegin%0A%20%20linarith%2C%0Aend%0A%0Alemma%20division_lemma_m%20%7Bm%20n%20%3A%20%E2%84%95%7D%0A%20%20(hmn%20%3A%202%20*%20m%20%5E%202%20%3D%20n%20%5E%202)%0A%3A%202%20%E2%88%A3%20m%20%3A%3D%0Abegin%0A%20%20apply%20two_dvd_of_two_dvd_sq%2C%0A%20%20sorry%2C%0Aend%0A--END--" target="_blank" tryitfile="../examples/day4/unnamed_106.lean">
+try it!</a></div><div class="highlight-lean notranslate"><div class="highlight"><pre><span></span>/-
+prime.dvd_of_dvd_pow : &#8704; {p m n : &#8469;}, p.prime &#8594; p &#8739; m ^ n &#8594; p &#8739; m
+-/
+lemma two_dvd_of_two_dvd_sq {k : &#8469;}
+  (hk : 2 &#8739; k ^ 2)
+: 2 &#8739; k :=
+begin
+  apply prime.dvd_of_dvd_pow,
+  sorry,
+end
+
+-- to switch the target from ``P = Q`` to ``Q = P``,
+-- use the tactic ``symmetry,``
+lemma division_lemma_n {m n : &#8469;}
+  (hmn : 2 * m ^ 2 = n ^ 2)
+: 2 &#8739; n :=
+begin
+  sorry,
+end
+
+lemma div_2 {m n : &#8469;} (hnm : 2 * m = 2 * n) : (m = n) :=
+begin
+  linarith,
+end
+
+lemma division_lemma_m {m n : &#8469;}
+  (hmn : 2 * m ^ 2 = n ^ 2)
+: 2 &#8739; m :=
+begin
+  apply two_dvd_of_two_dvd_sq,
+  sorry,
+end
+</pre></div>
+</div>
+</div></div>
+<div class="section" id="prove-assuming-m-and-n-are-coprime">
+<h3><span class="section-number">4.3.2. </span>Prove (*) assuming m and n are coprime.<a class="headerlink" href="#prove-assuming-m-and-n-are-coprime" title="Permalink to this headline">&#182;</a></h3>
+<div style="position: relative">
+<div style='position: absolute; right: 0; top: 0; padding: 1ex'><a href="https://leanprover-community.github.io/lean-web-editor/#code=import%20tactic%0Aimport%20data.nat.basic%0Aimport%20data.nat.prime%0A%0A%0Anoncomputable%20theory%0Aopen_locale%20classical%0A%0Aopen%20nat%0A%0Alemma%20two_dvd_of_two_dvd_sq%20%7Bk%20%3A%20%E2%84%95%7D%0A%20%20(hk%20%3A%202%20%E2%88%A3%20k%20%5E%202)%0A%3A%202%20%E2%88%A3%20k%20%3A%3D%0Abegin%0A%20%20sorry%2C%0Aend%0A%0Alemma%20division_lemma_n%20%7Bm%20n%20%3A%20%E2%84%95%7D%0A%20%20(hmn%20%3A%202%20*%20m%20%5E%202%20%3D%20n%20%5E%202)%0A%3A%202%20%E2%88%A3%20n%20%3A%3D%0Abegin%0A%20%20sorry%2C%0Aend%0A%0Alemma%20division_lemma_m%20%7Bm%20n%20%3A%20%E2%84%95%7D%0A%20%20(hmn%20%3A%202%20*%20m%20%5E%202%20%3D%20n%20%5E%202)%0A%3A%202%20%E2%88%A3%20m%20%3A%3D%0Abegin%0A%20%20sorry%2C%0Aend%0A%0A--%20Assume%20that%20everything%20above%20this%20line%20is%20true.%0A%0A--BEGIN--%0A%0A%2F-%0Atheorem%20nat.not_coprime_of_dvd_of_dvd%20%20%3A%201%20%3C%20d%20%E2%86%92%20d%20%E2%88%A3%20m%20%E2%86%92%20d%20%E2%88%A3%20n%20%E2%86%92%20%C2%ACm.coprime%20n%0A-%2F%0A%0Atheorem%20sqrt2_irrational'%20%3A%0A%20%20%C2%AC%20%E2%88%83%20(m%20n%20%3A%20%E2%84%95)%2C%0A%20%202%20*%20m%5E2%20%3D%20n%5E2%20%E2%88%A7%0A%20%20m.coprime%20n%0A%3A%3D%0Abegin%0A%20%20by_contradiction%2C%0A%20%20rcases%20a%20with%20%E2%9F%A8m%2C%20n%2C%20hmn%2C%20h_cop%E2%9F%A9%2C%0A%20%20--%20rcases%20is%20a%20way%20of%20doing%20cases%20iteratively%0A%20%20--%20you%20get%20the%20brackets%20by%20typing%20%60%60%5Clangle%60%60%20and%20%60%60%5Crangle%60%60%0A%20%20sorry%2C%0Aend%0A%0A--END--" target="_blank" tryitfile="../examples/day4/unnamed_156.lean">
+try it!</a></div><div class="highlight-lean notranslate"><div class="highlight"><pre><span></span>
+/-
+theorem nat.not_coprime_of_dvd_of_dvd  : 1 &lt; d &#8594; d &#8739; m &#8594; d &#8739; n &#8594; &#172;m.coprime n
+-/
+
+theorem sqrt2_irrational&#39; :
+  &#172; &#8707; (m n : &#8469;),
+  2 * m^2 = n^2 &#8743;
+  m.coprime n
+:=
+begin
+  by_contradiction,
+  rcases a with &#10216;m, n, hmn, h_cop&#10217;,
+  -- rcases is a way of doing cases iteratively
+  -- you get the brackets by typing ``\langle`` and ``\rangle``
+  sorry,
+end
+
+</pre></div>
+</div>
+</div></div>
+<div class="section" id="lemmas-for-proving-assuming-m-0">
+<h3><span class="section-number">4.3.3. </span>Lemmas for proving (*) assuming m &#8800; 0<a class="headerlink" href="#lemmas-for-proving-assuming-m-0" title="Permalink to this headline">&#182;</a></h3>
+<div style="position: relative">
+<div style='position: absolute; right: 0; top: 0; padding: 1ex'><a href="https://leanprover-community.github.io/lean-web-editor/#code=import%20tactic%0Aimport%20data.nat.basic%0Aimport%20data.nat.prime%0A%0A%0Anoncomputable%20theory%0Aopen_locale%20classical%0A%0Aopen%20nat%0A%0A%0Atheorem%20sqrt2_irrational'%20%3A%0A%20%20%C2%AC%20%E2%88%83%20(m%20n%20%3A%20%E2%84%95)%2C%0A%20%202%20*%20m%5E2%20%3D%20n%5E2%20%E2%88%A7%0A%20%20m.coprime%20n%0A%3A%3D%0Abegin%0A%20%20sorry%2C%0Aend%0A%0A--%20Assume%20that%20everything%20above%20this%20line%20is%20true.%0A%0A--BEGIN--%0A%0A%0Alemma%20ne_zero_ge_zero%20%7Bn%20%3A%20%E2%84%95%7D%0A%20%20(hne%20%3A%20n%20%E2%89%A0%200)%0A%3A%20(0%20%3C%20n)%0A%3A%3D%0Abegin%0A%20%20contrapose!%20hne%2C%0A%20%20sorry%2C%0Aend%0A%0A%2F-%0Anat.pow_pos%20%3A%20%E2%88%80%20%7Bp%20%3A%20%E2%84%95%7D%2C%200%20%3C%20p%20%E2%86%92%20%E2%88%80%20(n%20%3A%20%E2%84%95)%2C%200%20%3C%20p%20%5E%20n%0A-%2F%0Alemma%20ge_zero_sq_ge_zero%20%7Bn%20%3A%20%E2%84%95%7D%20(hne%20%3A%200%20%3C%20n)%20%3A%20(0%20%3C%20n%5E2)%0A%3A%3D%0Abegin%0A%20%20sorry%2C%0Aend%0A%0Alemma%20cancellation_lemma%20%7Bk%20m%20n%20%3A%20%E2%84%95%7D%0A(hk_pos%20%3A%200%20%3C%20k%5E2)%0A(hmn%20%3A%202%20*%20(m%20*%20k)%20%5E%202%20%3D%20(n%20*%20k)%20%5E%202)%0A%3A%202%20*%20m%20%5E%202%20%3D%20n%20%5E%202%0A%3A%3D%0Abegin%0A%20%20apply%20(nat.mul_left_inj%20hk_pos).mp%2C%0A%20%20ring%20at%20*%2C%0A%20%20exact%20hmn%2C%0Aend%0A%0A--END--" target="_blank" tryitfile="../examples/day4/unnamed_216.lean">
+try it!</a></div><div class="highlight-lean notranslate"><div class="highlight"><pre><span></span>
+
+lemma ne_zero_ge_zero {n : &#8469;}
+  (hne : n &#8800; 0)
+: (0 &lt; n)
+:=
+begin
+  contrapose! hne,
+  sorry,
+end
+
+/-
+nat.pow_pos : &#8704; {p : &#8469;}, 0 &lt; p &#8594; &#8704; (n : &#8469;), 0 &lt; p ^ n
+-/
+lemma ge_zero_sq_ge_zero {n : &#8469;} (hne : 0 &lt; n) : (0 &lt; n^2)
+:=
+begin
+  sorry,
+end
+
+lemma cancellation_lemma {k m n : &#8469;}
+(hk_pos : 0 &lt; k^2)
+(hmn : 2 * (m * k) ^ 2 = (n * k) ^ 2)
+: 2 * m ^ 2 = n ^ 2
+:=
+begin
+  apply (nat.mul_left_inj hk_pos).mp,
+  ring at *,
+  exact hmn,
+end
+
+</pre></div>
+</div>
+</div></div>
+<div class="section" id="prove-assuming-m-0">
+<h3><span class="section-number">4.3.4. </span>Prove (*) assuming m &#8800; 0<a class="headerlink" href="#prove-assuming-m-0" title="Permalink to this headline">&#182;</a></h3>
+<div style="position: relative">
+<div style='position: absolute; right: 0; top: 0; padding: 1ex'><a href="https://leanprover-community.github.io/lean-web-editor/#code=import%20tactic%0Aimport%20data.nat.basic%0Aimport%20data.nat.prime%0A%0A%0Anoncomputable%20theory%0Aopen_locale%20classical%0A%0Aopen%20nat%0A%0A%0Atheorem%20sqrt2_irrational'%20%3A%0A%20%20%C2%AC%20%E2%88%83%20(m%20n%20%3A%20%E2%84%95)%2C%0A%20%202%20*%20m%5E2%20%3D%20n%5E2%20%E2%88%A7%0A%20%20m.coprime%20n%0A%3A%3D%0Abegin%0A%20%20sorry%2C%0Aend%0A%0Alemma%20ne_zero_ge_zero%20%7Bn%20%3A%20%E2%84%95%7D%0A%20%20(hne%20%3A%20n%20%E2%89%A0%200)%0A%3A%20(0%20%3C%20n)%0A%3A%3D%0Abegin%0A%20%20contrapose!%20hne%2C%0A%20%20sorry%2C%0Aend%0A%0Alemma%20ge_zero_sq_ge_zero%20%7Bn%20%3A%20%E2%84%95%7D%20(hne%20%3A%200%20%3C%20n)%20%3A%20(0%20%3C%20n%5E2)%0A%3A%3D%0Abegin%0A%20%20sorry%2C%0Aend%0A%0Alemma%20cancellation_lemma%20%7Bk%20m%20n%20%3A%20%E2%84%95%7D%0A(hk_pos%20%3A%200%20%3C%20k%5E2)%0A(hmn%20%3A%202%20*%20(m%20*%20k)%20%5E%202%20%3D%20(n%20*%20k)%20%5E%202)%0A%3A%202%20*%20m%20%5E%202%20%3D%20n%20%5E%202%0A%3A%3D%0Abegin%0A%20%20sorry%2C%0Aend%0A%0A--%20Assume%20that%20everything%20above%20this%20line%20is%20true.%0A%0A--BEGIN--%0A%2F-%0Agcd_pos_of_pos_left%20%3A%20%E2%88%80%20%7Bm%20%3A%20%E2%84%95%7D%20(n%20%3A%20%E2%84%95)%2C%200%20%3C%20m%20%E2%86%92%200%20%3C%20m.gcd%20n%0Agcd_pos_of_pos_right%20%3A%20%E2%88%80%20(m%20%3A%20%E2%84%95)%20%7Bn%20%3A%20%E2%84%95%7D%2C%200%20%3C%20n%20%E2%86%92%200%20%3C%20m.gcd%20n%0Aexists_coprime%20%3A%20%E2%88%80%20%7Bm%20n%20%3A%20%E2%84%95%7D%2C%200%20%3C%20m.gcd%20n%20%E2%86%92%20(%E2%88%83%20(m'%20n'%20%3A%20%E2%84%95)%2C%20m'.coprime%20n'%20%E2%88%A7%20m%20%3D%20m'%20*%20m.gcd%20n%20%E2%88%A7%20n%20%3D%20n'%20*%20m.gcd%20n)%0A-%2F%0Atheorem%20wlog_coprime%20%3A%0A%20%20(%E2%88%83%20(m%20n%20%3A%20%E2%84%95)%2C%0A%20%202%20*%20m%5E2%20%3D%20n%5E2%20%E2%88%A7%0A%20%20m%20%E2%89%A0%200%20)%0A%20%20%E2%86%92%20(%E2%88%83%20(m'%20n'%20%3A%20%E2%84%95)%2C%0A%20%20%20%202%20*%20m'%5E2%20%3D%20n'%5E2%20%E2%88%A7%0A%20%20%20%20m'.coprime%20n'%20)%0A%3A%3D%0Abegin%0A%20%20intro%20key%2C%0A%20%20rcases%20key%20with%20%E2%9F%A8m%2C%20n%2C%20hmn%2C%20hme0%E2%9F%A9%2C%0A%20%20set%20k%20%3A%3D%20m.gcd%20n%20with%20hk%2C%0A%20%20--%20might%20be%20useful%20to%20declutter%0A%20%20--%20you%20can%20replace%20all%20the%20%60%60m.gcd%20n%60%60%20with%20%60%60k%60%60%20using%20%60%60rw%20%E2%86%90hk%2C%60%60%20if%20needed%0A%20%20sorry%2C%0Aend%0A%0Atheorem%20sqrt2_irrational''%20%3A%0A%20%20%C2%AC%20%E2%88%83%20(m%20n%20%3A%20%E2%84%95)%2C%0A%20%202%20*%20m%5E2%20%3D%20n%5E2%20%E2%88%A7%0A%20%20m%20%E2%89%A0%200%0A%3A%3D%0Abegin%0A%20%20sorry%2C%0Aend%0A%0A--END--" target="_blank" tryitfile="../examples/day4/unnamed_277.lean">
+try it!</a></div><div class="highlight-lean notranslate"><div class="highlight"><pre><span></span>/-
+gcd_pos_of_pos_left : &#8704; {m : &#8469;} (n : &#8469;), 0 &lt; m &#8594; 0 &lt; m.gcd n
+gcd_pos_of_pos_right : &#8704; (m : &#8469;) {n : &#8469;}, 0 &lt; n &#8594; 0 &lt; m.gcd n
+exists_coprime : &#8704; {m n : &#8469;}, 0 &lt; m.gcd n &#8594; (&#8707; (m&#39; n&#39; : &#8469;), m&#39;.coprime n&#39; &#8743; m = m&#39; * m.gcd n &#8743; n = n&#39; * m.gcd n)
+-/
+theorem wlog_coprime :
+  (&#8707; (m n : &#8469;),
+  2 * m^2 = n^2 &#8743;
+  m &#8800; 0 )
+  &#8594; (&#8707; (m&#39; n&#39; : &#8469;),
+    2 * m&#39;^2 = n&#39;^2 &#8743;
+    m&#39;.coprime n&#39; )
+:=
+begin
+  intro key,
+  rcases key with &#10216;m, n, hmn, hme0&#10217;,
+  set k := m.gcd n with hk,
+  -- might be useful to declutter
+  -- you can replace all the ``m.gcd n`` with ``k`` using ``rw &#8592;hk,`` if needed
+  sorry,
+end
+
+theorem sqrt2_irrational&#39;&#39; :
+  &#172; &#8707; (m n : &#8469;),
+  2 * m^2 = n^2 &#8743;
+  m &#8800; 0
+:=
+begin
+  sorry,
+end
+
+</pre></div>
+</div>
+</div></div>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">Lean at MC 2020</a></h1>
+
+
+
+
+
+
+
+
+<!-- <h3>Navigation</h3> -->
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="day1.html">1. Logic in Lean - Part 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="day2.html">2. Logic in Lean - Part 2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="day3.html">3. Infinitely Many Primes</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">4. Sqrt 2 is irrational</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#implicit-arguments">4.1. Implicit arguments</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#the-two-haves">4.2. The two haves</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id2">4.3. Sqrt(2) is irrational</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="day5.html">5. Bits &amp; Pieces</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="symbols.html">Pretty Symbols in Lean</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tactics.html">Glossary of tactics</a></li>
+</ul>
+
+
+<hr />
+<ul>
+    
+    <li class="toctree-l1"><a href="latex/lean_at_mc2020.pdf">PDF version</a></li>
+    
+    <li class="toctree-l1"><a href="https://leanprover-community.github.io/lean-web-editor/">Lean Live Editor</a></li>
+    
+    <li class="toctree-l1"><a href="https://leanprover-community.github.io/mathlib_docs/">Lean Documentation</a></li>
+    
+    <li class="toctree-l1"><a href="https://leanprover-community.github.io/">Leanprover Community</a></li>
+    
+</ul>
+
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, Apurva Nakade, Jalex Stark.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.1.2</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="sources/day4.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

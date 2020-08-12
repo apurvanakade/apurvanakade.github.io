@@ -1,0 +1,542 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="ascii" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1. Logic in Lean - Part 1 &#8212; Lean at MC 2020 0.1 documentation</title>
+    <link rel="stylesheet" href="static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="static/pygments.css" type="text/css" />
+    <script id="documentation_options" data-url_root="./" src="static/documentation_options.js"></script>
+    <script src="static/jquery.js"></script>
+    <script src="static/underscore.js"></script>
+    <script src="static/doctools.js"></script>
+    <script src="static/language_data.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="shortcut icon" href="static/favicon.ico"/>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="2. Logic in Lean - Part 2" href="day2.html" />
+    <link rel="prev" title="Introduction" href="introduction.html" />
+   
+  <link rel="stylesheet" href="static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="logic-in-lean-part-1">
+<span id="day1"></span><h1><span class="section-number">1. </span>Logic in Lean - Part 1<a class="headerlink" href="#logic-in-lean-part-1" title="Permalink to this headline">&#182;</a></h1>
+<p>Today&#8217;s mission, should you choose to accept it, is to understand the philosophy of type theory (in Lean).
+Don&#8217;t try to memorize anything, that will happen automatically.
+Instead, try to r&#822;e&#822;a&#822;l&#822;i&#822;z&#822;e&#822; &#822;t&#822;h&#822;a&#822;t&#822; &#822;t&#822;h&#822;e&#822;r&#822;e&#822; &#822;i&#822;s&#822; &#822;n&#822;o&#822; &#822;s&#822;p&#822;o&#822;o&#822;n&#822; do as many exercises as you can.
+Practice is the only way to learn a new programming language.
+And <strong>always save your work</strong>.
+The easiest way to do this is by bookmarking the Lean window in your web browser.</p>
+<p>Lean is built on top of a logic system called <em>type theory</em>, which is an alternative to <em>set theory</em>.
+In type theory, instead of elements we have <em>terms</em> and every term has a <em>type</em>.
+When translated to math, terms can be either mathematical objects, functions, propositions, or proofs.
+The notation <code class="docutils literal notranslate"><span class="pre">x</span> <span class="pre">:</span> <span class="pre">X</span></code> stands for &#8220;<code class="docutils literal notranslate"><span class="pre">x</span></code> is a term of type <code class="docutils literal notranslate"><span class="pre">X</span></code>&#8221; or &#8220;<code class="docutils literal notranslate"><span class="pre">x</span></code> is an inhabitant of <code class="docutils literal notranslate"><span class="pre">X</span></code>&#8221;.
+For the most part, you can think of a type as a set and terms as elements of the set.</p>
+<div class="section" id="propositions-as-types">
+<h2><span class="section-number">1.1. </span>Propositions as types<a class="headerlink" href="#propositions-as-types" title="Permalink to this headline">&#182;</a></h2>
+<p>In set theory, a <strong>proposition</strong> is any statement that has the potential of being true or false, like <code class="docutils literal notranslate"><span class="pre">2</span> <span class="pre">+</span> <span class="pre">2</span> <span class="pre">=</span> <span class="pre">4</span></code>, <code class="docutils literal notranslate"><span class="pre">2</span> <span class="pre">+</span> <span class="pre">2</span> <span class="pre">=</span> <span class="pre">5</span></code>, &#8220;Fermat&#8217;s last theorem&#8221;, or &#8220;Riemann hypothesis&#8221;.
+In type theory, there is a special type called <code class="docutils literal notranslate"><span class="pre">Prop</span></code> whose inhabitants are propositions.
+Furthermore, each proposition <code class="docutils literal notranslate"><span class="pre">P</span></code> is itself a type and the inhabitants of <code class="docutils literal notranslate"><span class="pre">P</span></code> are its proofs!</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">P</span> <span class="p">:</span> <span class="n">Prop</span>     <span class="o">--</span> <span class="n">P</span> <span class="ow">is</span> <span class="n">a</span> <span class="n">proposition</span>
+<span class="n">hp</span> <span class="p">:</span> <span class="n">P</span>       <span class="o">--</span> <span class="n">hp</span> <span class="ow">is</span> <span class="n">a</span> <span class="n">proof</span> <span class="n">of</span> <span class="n">P</span>
+</pre></div>
+</div>
+<p>As such, in type theory &#8220;producing a proof of <code class="docutils literal notranslate"><span class="pre">P</span></code>&#8221; is the same as &#8220;producing a term of type <code class="docutils literal notranslate"><span class="pre">P</span></code>&#8221;
+and so a proposition <code class="docutils literal notranslate"><span class="pre">P</span></code> is <code class="docutils literal notranslate"><span class="pre">true</span></code> if there exists a term <code class="docutils literal notranslate"><span class="pre">hp</span></code> of type <code class="docutils literal notranslate"><span class="pre">P</span></code>.</p>
+<p><strong>Notation.</strong> Throughout these notes, <code class="docutils literal notranslate"><span class="pre">P,</span> <span class="pre">Q,</span> <span class="pre">R,</span> <span class="pre">...</span></code> will denote propositions.</p>
+<div class="section" id="implication">
+<h3><span class="section-number">1.1.1. </span>Implication<a class="headerlink" href="#implication" title="Permalink to this headline">&#182;</a></h3>
+<p>In set theory, the proposition <code class="docutils literal notranslate"><span class="pre">P</span> <span class="pre">&#8658;</span> <span class="pre">Q</span></code> (&#8220;P implies Q&#8221;) is true if either both <code class="docutils literal notranslate"><span class="pre">P</span></code> and <code class="docutils literal notranslate"><span class="pre">Q</span></code> are true or if <code class="docutils literal notranslate"><span class="pre">P</span></code> is false.
+In type theory, a proof of an implication <code class="docutils literal notranslate"><span class="pre">P</span> <span class="pre">&#8658;</span> <span class="pre">Q</span></code> is just a function <code class="docutils literal notranslate"><span class="pre">f</span> <span class="pre">:</span> <span class="pre">P</span> <span class="pre">&#8594;</span> <span class="pre">Q</span></code>.
+Given a function <code class="docutils literal notranslate"><span class="pre">f</span> <span class="pre">:</span> <span class="pre">P</span> <span class="pre">&#8594;</span> <span class="pre">Q</span></code>, every proof <code class="docutils literal notranslate"><span class="pre">hp</span> <span class="pre">:</span> <span class="pre">P</span></code> produces a proof <code class="docutils literal notranslate"><span class="pre">f(hp)</span> <span class="pre">:</span> <span class="pre">Q</span></code>.
+If <code class="docutils literal notranslate"><span class="pre">P</span></code> is false then <code class="docutils literal notranslate"><span class="pre">P</span></code> is <em>empty</em>, and there exists an <a class="reference external" href="https://en.wikipedia.org/wiki/Function_(mathematics)#empty_function">empty function</a> from an empty type to any type.
+Hence, in type theory we use <code class="docutils literal notranslate"><span class="pre">&#8594;</span></code> to denote implication.</p>
+</div>
+<div class="section" id="negation">
+<h3><span class="section-number">1.1.2. </span>Negation<a class="headerlink" href="#negation" title="Permalink to this headline">&#182;</a></h3>
+<p>In type theory, there is a special proposition <code class="docutils literal notranslate"><span class="pre">false</span> <span class="pre">:</span> <span class="pre">Prop</span></code> which has no proof (hence is <em>empty</em>).
+The negation of a proposition <code class="docutils literal notranslate"><span class="pre">&#172;</span> <span class="pre">P</span></code> is the implication <code class="docutils literal notranslate"><span class="pre">P</span> <span class="pre">&#8594;</span> <span class="pre">false</span></code>.
+Such a function exists if and only if <code class="docutils literal notranslate"><span class="pre">P</span></code> itself is empty (<a class="reference external" href="https://en.wikipedia.org/wiki/Function_(mathematics)#empty_function">empty function</a>), hence <code class="docutils literal notranslate"><span class="pre">P</span> <span class="pre">&#8594;</span> <span class="pre">false</span></code> is inhabited if and only if <code class="docutils literal notranslate"><span class="pre">P</span></code> is empty which justifies using it as the definition of <code class="docutils literal notranslate"><span class="pre">&#172;</span> <span class="pre">P</span></code>.</p>
+<dl class="simple">
+<dt><strong>To summarize:</strong></dt><dd><ol class="arabic simple">
+<li><p>Proving a proposition <code class="docutils literal notranslate"><span class="pre">P</span></code> is equivalent to producing an inhabitant <code class="docutils literal notranslate"><span class="pre">hp</span> <span class="pre">:</span> <span class="pre">P</span></code>.</p></li>
+<li><p>Proving an implication <code class="docutils literal notranslate"><span class="pre">P</span> <span class="pre">&#8594;</span> <span class="pre">Q</span></code> is equivalent to producing a function <code class="docutils literal notranslate"><span class="pre">f</span> <span class="pre">:</span> <span class="pre">P</span> <span class="pre">&#8594;</span> <span class="pre">Q</span></code>.</p></li>
+<li><p>The negation, <code class="docutils literal notranslate"><span class="pre">&#172;</span> <span class="pre">P</span></code>, is defined as the implication <code class="docutils literal notranslate"><span class="pre">P</span> <span class="pre">&#8594;</span> <span class="pre">false</span></code>.</p></li>
+</ol>
+</dd>
+</dl>
+</div>
+<div class="section" id="propositions-in-lean">
+<h3><span class="section-number">1.1.3. </span>Propositions in Lean<a class="headerlink" href="#propositions-in-lean" title="Permalink to this headline">&#182;</a></h3>
+<p>In Lean, a proposition and its proof are written using the following syntax.</p>
+<div style="position: relative">
+<div style='position: absolute; right: 0; top: 0; padding: 1ex'><a href="https://leanprover-community.github.io/lean-web-editor/#code=theorem%20fermats_last_theorem%0A%20%20(n%20%3A%20%E2%84%95)%0A%20%20(n_gt_2%20%3A%20n%20%3E%202)%0A%20%20%3A%0A%20%20%C2%AC%20(%E2%88%83%20x%20y%20z%20%3A%20%E2%84%95%2C%20(x%5En%20%2B%20y%5En%20%3D%20z%5En)%20%E2%88%A7%20(x%20%E2%89%A0%200)%20%E2%88%A7%20(y%20%E2%89%A0%200)%20%E2%88%A7%20(z%20%E2%89%A0%200))%0A%3A%3D%0Abegin%0A%20%20sorry%2C%0Aend" target="_blank" tryitfile="../examples/day1/unnamed_66.lean">
+try it!</a></div><div class="highlight-lean notranslate"><div class="highlight"><pre><span></span>theorem fermats_last_theorem
+  (n : &#8469;)
+  (n_gt_2 : n &gt; 2)
+  :
+  &#172; (&#8707; x y z : &#8469;, (x^n + y^n = z^n) &#8743; (x &#8800; 0) &#8743; (y &#8800; 0) &#8743; (z &#8800; 0))
+:=
+begin
+  sorry,
+end
+</pre></div>
+</div>
+</div><p>Let us parse the above statement. (Lean ignores multiple whitespaces, tabs, and new lines.
+You could theoretically write the entire code in a single line but then we can never be friends.)</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">fermats_last_theorem</span></code> is the name of the theorem.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">(n</span> <span class="pre">:</span> <span class="pre">&#8469;)</span></code> and <code class="docutils literal notranslate"><span class="pre">(n_gt_2</span> <span class="pre">:</span> <span class="pre">n</span> <span class="pre">&gt;</span> <span class="pre">2)</span></code> are the two <em>hypotheses</em>.
+The former says <code class="docutils literal notranslate"><span class="pre">n</span></code> is a natural number and the latter says that <code class="docutils literal notranslate"><span class="pre">n_gt_2</span></code> is a proof of <code class="docutils literal notranslate"><span class="pre">n</span> <span class="pre">&gt;</span> <span class="pre">2</span></code>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">:</span></code> is the delimiter between hypotheses and targets</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">&#172;</span> <span class="pre">(&#8707;</span> <span class="pre">x</span> <span class="pre">y</span> <span class="pre">z</span> <span class="pre">:</span> <span class="pre">&#8469;,</span> <span class="pre">(x^n</span> <span class="pre">+</span> <span class="pre">y^n</span> <span class="pre">=</span> <span class="pre">z^n)</span> <span class="pre">&#8743;</span> <span class="pre">(x</span> <span class="pre">&#8800;</span> <span class="pre">0)</span> <span class="pre">&#8743;</span> <span class="pre">(y</span> <span class="pre">&#8800;</span> <span class="pre">0)</span> <span class="pre">&#8743;</span> <span class="pre">(z</span> <span class="pre">&#8800;</span> <span class="pre">0))</span></code> is the <em>target</em> of the theorem.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">:=</span> <span class="pre">begin</span> <span class="pre">...</span> <span class="pre">end</span></code> contains the proof. When you start your proof, Lean opens up a goal window  for you to keep track of hypotheses and targets.
+<strong>Your goal is to produce a term that has the type of the target</strong>.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>-- example of Lean goal window
+n : &#8469;, -- hypothesis 1
+n_gt_2 : n &gt; 2 -- hypothesis 2
+&#8866; &#172;&#8707; (x y z : &#8469;), x ^ n + y ^ n = z ^ n &#8743; x &#8800; 0 &#8743; y &#8800; 0 &#8743; z &#8800; 0 -- target
+</pre></div>
+</div>
+</li>
+<li><p>The commands you write between <code class="docutils literal notranslate"><span class="pre">begin</span></code> and <code class="docutils literal notranslate"><span class="pre">end</span></code> are called <em>tactics</em>.
+<code class="docutils literal notranslate"><span class="pre">sorry,</span></code> is an example of a tactic.
+<strong>Very Important:</strong> All tactics must end with a comma (,) .</p></li>
+</ul>
+<p>Even though they are not explicitly displayed,
+all the theorems in the Lean library are also hypotheses that you can use to close the goal.</p>
+</div>
+</div>
+<div class="section" id="implications-in-lean">
+<h2><span class="section-number">1.2. </span>Implications in Lean<a class="headerlink" href="#implications-in-lean" title="Permalink to this headline">&#182;</a></h2>
+<p>We&#8217;ll start learning tactics by proving implications in Lean.
+In the following sections, there are tables describing what a tactic does.
+Solve the following exercises to see the tactics in action.</p>
+<p>The first two tactics we&#8217;ll learn are <code class="docutils literal notranslate"><span class="pre">exact</span></code> and <code class="docutils literal notranslate"><span class="pre">intros</span></code>.</p>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 80%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">exact</span></code></p></td>
+<td><p>If
+<code class="docutils literal notranslate"><span class="pre">P</span></code> is the target of the current goal
+and <code class="docutils literal notranslate"><span class="pre">hp</span></code> is a term of type <code class="docutils literal notranslate"><span class="pre">P</span></code>,
+then <code class="docutils literal notranslate"><span class="pre">exact</span> <span class="pre">hp,</span></code> will close the goal.</p>
+<p>Mathematically, this saying &#8220;this is <em>exactly</em> what we were required to prove&#8221;.</p>
+</td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">intro</span></code></p></td>
+<td><p>If the target of the current goal is a function <code class="docutils literal notranslate"><span class="pre">P</span> <span class="pre">&#8594;</span> <span class="pre">Q</span></code>,
+then <code class="docutils literal notranslate"><span class="pre">intro</span> <span class="pre">hp,</span></code> will produce a hypothesis
+<code class="docutils literal notranslate"><span class="pre">hp</span> <span class="pre">:</span> <span class="pre">P</span></code> and change the target to  <code class="docutils literal notranslate"><span class="pre">Q</span></code>.</p>
+<p>Mathematically, this is saying that in order to define a function from <code class="docutils literal notranslate"><span class="pre">P</span></code> to <code class="docutils literal notranslate"><span class="pre">Q</span></code>,
+we first need to choose an arbitrary element of <code class="docutils literal notranslate"><span class="pre">P</span></code>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<div id="exact-intros-examples" style="position: relative">
+<div style='position: absolute; right: 0; top: 0; padding: 1ex'><a href="https://leanprover-community.github.io/lean-web-editor/#code=%2F--------------------------------------------------------------------------%0A%0A%60%60exact%60%60%0A%0A%20%20If%20%60%60P%60%60%20is%20the%20target%20of%20the%20current%20goal%20and%0A%20%20%60%60hp%60%60%20is%20a%20term%20of%20type%20%60%60P%60%60%2C%20then%0A%20%20%60%60exact%20hp%2C%60%60%20will%20close%20the%20goal.%0A%0A%0A%60%60intro%60%60%0A%0A%20%20If%20the%20target%20of%20the%20current%20goal%20is%20a%20function%20%60%60P%20%E2%86%92%20Q%60%60%2C%20then%0A%20%20%60%60intro%20hp%2C%60%60%20will%20produce%20a%20hypothesis%0A%20%20%60%60hp%20%3A%20P%60%60%20and%20change%20the%20target%20to%20%20%60%60Q%60%60.%0A%0ADelete%20the%20%60%60sorry%2C%60%60%20below%20and%20replace%20them%20with%20a%20legitimate%20proof.%0A%0A--------------------------------------------------------------------------%2F%0A%0Atheorem%20tautology%20(P%20%3A%20Prop)%20(hp%20%3A%20P)%20%3A%20P%20%3A%3D%0Abegin%0A%20%20sorry%2C%0Aend%0A%0Atheorem%20tautology'%20(P%20%3A%20Prop)%20%3A%20P%20%E2%86%92%20P%20%3A%3D%0Abegin%0A%20%20sorry%2C%0Aend%0A%0Aexample%20(P%20Q%20%3A%20Prop)%3A%20(P%20%E2%86%92%20(Q%20%E2%86%92%20P))%20%3A%3D%0Abegin%0A%20%20sorry%2C%0Aend%0A%0A--%20Can%20you%20find%20two%20different%20ways%20of%20proving%20the%20following%3F%0Aexample%20(P%20Q%20%3A%20Prop)%20%3A%20((Q%20%E2%86%92%20P)%20%E2%86%92%20(Q%20%E2%86%92%20P))%20%3A%3D%0Abegin%0A%20%20sorry%2C%0Aend" id="exact-intros-examples" target="_blank" tryitfile="../examples/day1/exact_intros_examples.lean">
+try it!</a></div><div class="highlight-lean notranslate" id="exact-intros-examples"><div class="highlight"><pre><span></span><span class="c">/-</span><span class="cm">-------------------------------------------------------------------------</span>
+
+<span class="cm">``exact``</span>
+
+<span class="cm">  If ``P`` is the target of the current goal and</span>
+<span class="cm">  ``hp`` is a term of type ``P``, then</span>
+<span class="cm">  ``exact hp,`` will close the goal.</span>
+
+
+<span class="cm">``intro``</span>
+
+<span class="cm">  If the target of the current goal is a function ``P &#8594; Q``, then</span>
+<span class="cm">  ``intro hp,`` will produce a hypothesis</span>
+<span class="cm">  ``hp : P`` and change the target to  ``Q``.</span>
+
+<span class="cm">Delete the ``sorry,`` below and replace them with a legitimate proof.</span>
+
+<span class="cm">--------------------------------------------------------------------------/</span>
+
+<span class="kn">theorem</span> <span class="n">tautology</span> <span class="o">(</span><span class="n">P</span> <span class="o">:</span> <span class="kt">Prop</span><span class="o">)</span> <span class="o">(</span><span class="n">hp</span> <span class="o">:</span> <span class="n">P</span><span class="o">)</span> <span class="o">:</span> <span class="n">P</span> <span class="o">:=</span>
+<span class="k">begin</span>
+  <span class="n">sorry</span><span class="o">,</span>
+<span class="kn">end</span>
+
+<span class="kn">theorem</span> <span class="n">tautology&#39;</span> <span class="o">(</span><span class="n">P</span> <span class="o">:</span> <span class="kt">Prop</span><span class="o">)</span> <span class="o">:</span> <span class="n">P</span> <span class="bp">&#8594;</span> <span class="n">P</span> <span class="o">:=</span>
+<span class="k">begin</span>
+  <span class="n">sorry</span><span class="o">,</span>
+<span class="kn">end</span>
+
+<span class="kn">example</span> <span class="o">(</span><span class="n">P</span> <span class="n">Q</span> <span class="o">:</span> <span class="kt">Prop</span><span class="o">):</span> <span class="o">(</span><span class="n">P</span> <span class="bp">&#8594;</span> <span class="o">(</span><span class="n">Q</span> <span class="bp">&#8594;</span> <span class="n">P</span><span class="o">))</span> <span class="o">:=</span>
+<span class="k">begin</span>
+  <span class="n">sorry</span><span class="o">,</span>
+<span class="kn">end</span>
+
+<span class="c1">-- Can you find two different ways of proving the following?</span>
+<span class="kn">example</span> <span class="o">(</span><span class="n">P</span> <span class="n">Q</span> <span class="o">:</span> <span class="kt">Prop</span><span class="o">)</span> <span class="o">:</span> <span class="o">((</span><span class="n">Q</span> <span class="bp">&#8594;</span> <span class="n">P</span><span class="o">)</span> <span class="bp">&#8594;</span> <span class="o">(</span><span class="n">Q</span> <span class="bp">&#8594;</span> <span class="n">P</span><span class="o">))</span> <span class="o">:=</span>
+<span class="k">begin</span>
+  <span class="n">sorry</span><span class="o">,</span>
+<span class="kn">end</span>
+</pre></div>
+</div>
+</div><p>The next two tactics are <code class="docutils literal notranslate"><span class="pre">have</span></code> and <code class="docutils literal notranslate"><span class="pre">apply</span></code>.</p>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 80%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">have</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">have</span></code> is used to create intermediate variables.</p>
+<p>If <code class="docutils literal notranslate"><span class="pre">f</span></code> is a term of type <code class="docutils literal notranslate"><span class="pre">P</span> <span class="pre">&#8594;</span> <span class="pre">Q</span></code> and
+<code class="docutils literal notranslate"><span class="pre">hp</span></code> is a term of type <code class="docutils literal notranslate"><span class="pre">P</span></code>, then
+<code class="docutils literal notranslate"><span class="pre">have</span> <span class="pre">hq</span> <span class="pre">:=</span> <span class="pre">f(hp),</span></code> creates the hypothesis <code class="docutils literal notranslate"><span class="pre">hq</span> <span class="pre">:</span> <span class="pre">Q</span></code> .</p>
+</td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">apply</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">apply</span></code> is used for backward reasoning.</p>
+<p>If the target of the current goal is <code class="docutils literal notranslate"><span class="pre">Q</span></code> and
+<code class="docutils literal notranslate"><span class="pre">f</span></code> is a term of type <code class="docutils literal notranslate"><span class="pre">P</span> <span class="pre">&#8594;</span> <span class="pre">Q</span></code>, then
+<code class="docutils literal notranslate"><span class="pre">apply</span> <span class="pre">f,</span></code> changes target to <code class="docutils literal notranslate"><span class="pre">P</span></code>.</p>
+<p>Mathematically, this is equivalent to saying &#8220;because <code class="docutils literal notranslate"><span class="pre">P</span></code> implies <code class="docutils literal notranslate"><span class="pre">Q</span></code>, to prove <code class="docutils literal notranslate"><span class="pre">Q</span></code> it suffices to prove <code class="docutils literal notranslate"><span class="pre">P</span></code>&#8221;.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Often these two tactics can be used interchangeably.
+Think of <code class="docutils literal notranslate"><span class="pre">have</span></code> as reasoning forward and <code class="docutils literal notranslate"><span class="pre">apply</span></code> as reasoning backward.
+When writing a big proof, you often want a healthy combination of the two that makes the proof readable.</p>
+<div id="have-apply-examples" style="position: relative">
+<div style='position: absolute; right: 0; top: 0; padding: 1ex'><a href="https://leanprover-community.github.io/lean-web-editor/#code=%2F--------------------------------------------------------------------------%0A%0A%60%60have%60%60%0A%0A%20%20If%20%60%60f%60%60%20is%20a%20term%20of%20type%20%60%60P%20%E2%86%92%20Q%60%60%20and%0A%20%20%60%60hp%60%60%20is%20a%20term%20of%20type%20%60%60P%60%60%2C%20then%0A%20%20%60%60have%20hq%20%3A%3D%20f(hp)%2C%60%60%20creates%20the%20hypothesis%20%60%60hq%20%3A%20Q%60%60%20.%0A%0A%0A%60%60apply%60%60%0A%0A%20%20If%20the%20target%20of%20the%20current%20goal%20is%20%60%60Q%60%60%20and%0A%20%20%60%60f%60%60%20is%20a%20term%20of%20type%20%60%60P%20%E2%86%92%20Q%60%60%2C%20then%0A%20%20%60%60apply%20f%2C%60%60%20changes%20target%20to%20%60%60P%60%60.%0A%0ADelete%20the%20%60%60sorry%2C%60%60%20below%20and%20replace%20them%20with%20a%20legitimate%20proof.%0A%0A--------------------------------------------------------------------------%2F%0A%0Aexample%20(P%20Q%20R%20%3A%20Prop)%20(hp%20%3A%20P)%20(f%20%3A%20P%20%E2%86%92%20Q)%20(g%20%3A%20Q%20%E2%86%92%20R)%20%3A%20R%20%3A%3D%0Abegin%0A%20%20sorry%2C%0Aend%0A%0Aexample%20(P%20Q%20R%20S%20T%20U%3A%20Type)%0A(hpq%20%3A%20P%20%E2%86%92%20Q)%0A(hqr%20%3A%20Q%20%E2%86%92%20R)%0A(hqt%20%3A%20Q%20%E2%86%92%20T)%0A(hst%20%3A%20S%20%E2%86%92%20T)%0A(htu%20%3A%20T%20%E2%86%92%20U)%0A%3A%20P%20%E2%86%92%20U%20%3A%3D%0Abegin%0A%20%20sorry%2C%0Aend" id="have-apply-examples" target="_blank" tryitfile="../examples/day1/have_apply_examples.lean">
+try it!</a></div><div class="highlight-lean notranslate" id="have-apply-examples"><div class="highlight"><pre><span></span><span class="c">/-</span><span class="cm">-------------------------------------------------------------------------</span>
+
+<span class="cm">``have``</span>
+
+<span class="cm">  If ``f`` is a term of type ``P &#8594; Q`` and</span>
+<span class="cm">  ``hp`` is a term of type ``P``, then</span>
+<span class="cm">  ``have hq := f(hp),`` creates the hypothesis ``hq : Q`` .</span>
+
+
+<span class="cm">``apply``</span>
+
+<span class="cm">  If the target of the current goal is ``Q`` and</span>
+<span class="cm">  ``f`` is a term of type ``P &#8594; Q``, then</span>
+<span class="cm">  ``apply f,`` changes target to ``P``.</span>
+
+<span class="cm">Delete the ``sorry,`` below and replace them with a legitimate proof.</span>
+
+<span class="cm">--------------------------------------------------------------------------/</span>
+
+<span class="kn">example</span> <span class="o">(</span><span class="n">P</span> <span class="n">Q</span> <span class="n">R</span> <span class="o">:</span> <span class="kt">Prop</span><span class="o">)</span> <span class="o">(</span><span class="n">hp</span> <span class="o">:</span> <span class="n">P</span><span class="o">)</span> <span class="o">(</span><span class="n">f</span> <span class="o">:</span> <span class="n">P</span> <span class="bp">&#8594;</span> <span class="n">Q</span><span class="o">)</span> <span class="o">(</span><span class="n">g</span> <span class="o">:</span> <span class="n">Q</span> <span class="bp">&#8594;</span> <span class="n">R</span><span class="o">)</span> <span class="o">:</span> <span class="n">R</span> <span class="o">:=</span>
+<span class="k">begin</span>
+  <span class="n">sorry</span><span class="o">,</span>
+<span class="kn">end</span>
+
+<span class="kn">example</span> <span class="o">(</span><span class="n">P</span> <span class="n">Q</span> <span class="n">R</span> <span class="n">S</span> <span class="n">T</span> <span class="n">U</span><span class="o">:</span> <span class="kt">Type</span><span class="o">)</span>
+<span class="o">(</span><span class="n">hpq</span> <span class="o">:</span> <span class="n">P</span> <span class="bp">&#8594;</span> <span class="n">Q</span><span class="o">)</span>
+<span class="o">(</span><span class="n">hqr</span> <span class="o">:</span> <span class="n">Q</span> <span class="bp">&#8594;</span> <span class="n">R</span><span class="o">)</span>
+<span class="o">(</span><span class="n">hqt</span> <span class="o">:</span> <span class="n">Q</span> <span class="bp">&#8594;</span> <span class="n">T</span><span class="o">)</span>
+<span class="o">(</span><span class="n">hst</span> <span class="o">:</span> <span class="n">S</span> <span class="bp">&#8594;</span> <span class="n">T</span><span class="o">)</span>
+<span class="o">(</span><span class="n">htu</span> <span class="o">:</span> <span class="n">T</span> <span class="bp">&#8594;</span> <span class="n">U</span><span class="o">)</span>
+<span class="o">:</span> <span class="n">P</span> <span class="bp">&#8594;</span> <span class="n">U</span> <span class="o">:=</span>
+<span class="k">begin</span>
+  <span class="n">sorry</span><span class="o">,</span>
+<span class="kn">end</span>
+</pre></div>
+</div>
+</div><p>For the following exercises, recall that <code class="docutils literal notranslate"><span class="pre">&#172;</span> <span class="pre">P</span></code> is defined as <code class="docutils literal notranslate"><span class="pre">P</span> <span class="pre">&#8594;</span> <span class="pre">false</span></code>,
+<code class="docutils literal notranslate"><span class="pre">&#172;</span> <span class="pre">(&#172;</span> <span class="pre">P)</span></code> is <code class="docutils literal notranslate"><span class="pre">(P</span> <span class="pre">&#8594;</span> <span class="pre">false)</span> <span class="pre">&#8594;</span> <span class="pre">false</span></code>, and so on.
+Here are some <a class="reference internal" href="hint_1_negation_exercises.html"><span class="doc">hints</span></a> if you get stuck.</p>
+<div style="position: relative">
+<div style='position: absolute; right: 0; top: 0; padding: 1ex'><a href="https://leanprover-community.github.io/lean-web-editor/#code=%2F--------------------------------------------------------------------------%0A%0ARecall%20that%0A%20%20%60%60%C2%AC%20P%60%60%20is%20%60%60P%20%E2%86%92%20false%60%60%2C%0A%20%20%60%60%C2%AC%20(%C2%AC%20P)%60%60%20is%20%60%60(P%20%E2%86%92%20false)%20%E2%86%92%20false%60%60%2C%20and%20so%20on.%0A%0ADelete%20the%20%60%60sorry%2C%60%60%20below%20and%20replace%20them%20with%20a%20legitimate%20proof.%0A%0A--------------------------------------------------------------------------%2F%0A%0Atheorem%20self_imp_not_not_self%20(P%20%3A%20Prop)%20%3A%20P%20%E2%86%92%20%C2%AC%20(%C2%AC%20P)%20%3A%3D%0Abegin%0A%20%20sorry%2C%0Aend%0A%0Atheorem%20contrapositive%20(P%20Q%20%3A%20Prop)%20%3A%20(P%20%E2%86%92%20Q)%20%E2%86%92%20(%C2%ACQ%20%E2%86%92%20%C2%ACP)%20%3A%3D%0Abegin%0A%20%20sorry%2C%0Aend%0A%0Aexample%20(P%20%3A%20Prop)%20%3A%20%C2%AC%20(%C2%AC%20(%C2%AC%20P))%20%E2%86%92%20%C2%AC%20P%20%3A%3D%0Abegin%0A%20%20sorry%2C%0Aend" target="_blank" tryitfile="../examples/day1/unnamed_244.lean">
+try it!</a></div><div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="c">/-</span><span class="cm">-------------------------------------------------------------------------</span>
+
+<span class="cm">Recall that</span>
+<span class="cm">  ``&#172; P`` is ``P &#8594; false``,</span>
+<span class="cm">  ``&#172; (&#172; P)`` is ``(P &#8594; false) &#8594; false``, and so on.</span>
+
+<span class="cm">Delete the ``sorry,`` below and replace them with a legitimate proof.</span>
+
+<span class="cm">--------------------------------------------------------------------------/</span>
+
+<span class="kn">theorem</span> <span class="n">self_imp_not_not_self</span> <span class="o">(</span><span class="n">P</span> <span class="o">:</span> <span class="kt">Prop</span><span class="o">)</span> <span class="o">:</span> <span class="n">P</span> <span class="bp">&#8594;</span> <span class="bp">&#172;</span> <span class="o">(</span><span class="bp">&#172;</span> <span class="n">P</span><span class="o">)</span> <span class="o">:=</span>
+<span class="k">begin</span>
+  <span class="n">sorry</span><span class="o">,</span>
+<span class="kn">end</span>
+
+<span class="kn">theorem</span> <span class="n">contrapositive</span> <span class="o">(</span><span class="n">P</span> <span class="n">Q</span> <span class="o">:</span> <span class="kt">Prop</span><span class="o">)</span> <span class="o">:</span> <span class="o">(</span><span class="n">P</span> <span class="bp">&#8594;</span> <span class="n">Q</span><span class="o">)</span> <span class="bp">&#8594;</span> <span class="o">(</span><span class="bp">&#172;</span><span class="n">Q</span> <span class="bp">&#8594;</span> <span class="bp">&#172;</span><span class="n">P</span><span class="o">)</span> <span class="o">:=</span>
+<span class="k">begin</span>
+  <span class="n">sorry</span><span class="o">,</span>
+<span class="kn">end</span>
+
+<span class="kn">example</span> <span class="o">(</span><span class="n">P</span> <span class="o">:</span> <span class="kt">Prop</span><span class="o">)</span> <span class="o">:</span> <span class="bp">&#172;</span> <span class="o">(</span><span class="bp">&#172;</span> <span class="o">(</span><span class="bp">&#172;</span> <span class="n">P</span><span class="o">))</span> <span class="bp">&#8594;</span> <span class="bp">&#172;</span> <span class="n">P</span> <span class="o">:=</span>
+<span class="k">begin</span>
+  <span class="n">sorry</span><span class="o">,</span>
+<span class="kn">end</span>
+</pre></div>
+</div>
+</div></div>
+<div class="section" id="proof-by-contradiction">
+<h2><span class="section-number">1.3. </span>Proof by contradiction<a class="headerlink" href="#proof-by-contradiction" title="Permalink to this headline">&#182;</a></h2>
+<p>You can prove exactly one of the converses of the above three using just <code class="docutils literal notranslate"><span class="pre">exact</span></code>, <code class="docutils literal notranslate"><span class="pre">intro</span></code>, <code class="docutils literal notranslate"><span class="pre">have</span></code>, and <code class="docutils literal notranslate"><span class="pre">apply</span></code>.
+Can you find which one?</p>
+<div style="position: relative">
+<div style='position: absolute; right: 0; top: 0; padding: 1ex'><a href="https://leanprover-community.github.io/lean-web-editor/#code=%2F--------------------------------------------------------------------------%0A%0AYou%20can%20prove%20exactly%20one%20of%20the%20following%20three%20using%20just%0A%60%60exact%60%60%2C%20%60%60intro%60%60%2C%20%60%60have%60%60%2C%20and%20%60%60apply%60%60.%0A%0ACan%20you%20find%20which%20one%3F%0A%0A--------------------------------------------------------------------------%2F%0A%0Atheorem%20not_not_self_imp_self%20(P%20%3A%20Prop)%20%3A%20%C2%AC%20%C2%AC%20P%20%E2%86%92%20P%3A%3D%0Abegin%0A%20%20sorry%2C%0Aend%0A%0Atheorem%20contrapositive_converse%20(P%20Q%20%3A%20Prop)%20%3A%20(%C2%ACQ%20%E2%86%92%20%C2%ACP)%20%E2%86%92%20(P%20%E2%86%92%20Q)%20%3A%3D%0Abegin%0A%20%20sorry%2C%0Aend%0A%0Aexample%20(P%20%3A%20Prop)%20%3A%20%C2%AC%20P%20%E2%86%92%20%C2%AC%20%C2%AC%20%C2%AC%20P%20%3A%3D%0Abegin%0A%20%20sorry%2C%0Aend" target="_blank" tryitfile="../examples/day1/unnamed_279.lean">
+try it!</a></div><div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="c">/-</span><span class="cm">-------------------------------------------------------------------------</span>
+
+<span class="cm">You can prove exactly one of the following three using just</span>
+<span class="cm">``exact``, ``intro``, ``have``, and ``apply``.</span>
+
+<span class="cm">Can you find which one?</span>
+
+<span class="cm">--------------------------------------------------------------------------/</span>
+
+<span class="kn">theorem</span> <span class="n">not_not_self_imp_self</span> <span class="o">(</span><span class="n">P</span> <span class="o">:</span> <span class="kt">Prop</span><span class="o">)</span> <span class="o">:</span> <span class="bp">&#172;</span> <span class="bp">&#172;</span> <span class="n">P</span> <span class="bp">&#8594;</span> <span class="n">P</span><span class="o">:=</span>
+<span class="k">begin</span>
+  <span class="n">sorry</span><span class="o">,</span>
+<span class="kn">end</span>
+
+<span class="kn">theorem</span> <span class="n">contrapositive_converse</span> <span class="o">(</span><span class="n">P</span> <span class="n">Q</span> <span class="o">:</span> <span class="kt">Prop</span><span class="o">)</span> <span class="o">:</span> <span class="o">(</span><span class="bp">&#172;</span><span class="n">Q</span> <span class="bp">&#8594;</span> <span class="bp">&#172;</span><span class="n">P</span><span class="o">)</span> <span class="bp">&#8594;</span> <span class="o">(</span><span class="n">P</span> <span class="bp">&#8594;</span> <span class="n">Q</span><span class="o">)</span> <span class="o">:=</span>
+<span class="k">begin</span>
+  <span class="n">sorry</span><span class="o">,</span>
+<span class="kn">end</span>
+
+<span class="kn">example</span> <span class="o">(</span><span class="n">P</span> <span class="o">:</span> <span class="kt">Prop</span><span class="o">)</span> <span class="o">:</span> <span class="bp">&#172;</span> <span class="n">P</span> <span class="bp">&#8594;</span> <span class="bp">&#172;</span> <span class="bp">&#172;</span> <span class="bp">&#172;</span> <span class="n">P</span> <span class="o">:=</span>
+<span class="k">begin</span>
+  <span class="n">sorry</span><span class="o">,</span>
+<span class="kn">end</span>
+</pre></div>
+</div>
+</div><p>This is because it is not true that <code class="docutils literal notranslate"><span class="pre">&#172;</span> <span class="pre">&#172;</span> <span class="pre">P</span> <span class="pre">=</span> <span class="pre">P</span></code> <em>by definition</em>, after all,
+<code class="docutils literal notranslate"><span class="pre">&#172;</span> <span class="pre">&#172;</span> <span class="pre">P</span></code> is <code class="docutils literal notranslate"><span class="pre">(P</span> <span class="pre">&#8594;</span> <span class="pre">false)</span> <span class="pre">&#8594;</span> <span class="pre">false</span></code> which is drastically different from <code class="docutils literal notranslate"><span class="pre">P</span></code>.
+There is an extra axiom called <strong>the law of excluded middle</strong> which says that
+either <code class="docutils literal notranslate"><span class="pre">P</span></code> is inhabited or <code class="docutils literal notranslate"><span class="pre">&#172;</span> <span class="pre">P</span></code> is inhabited (and there is no <em>middle</em> option)
+and so <code class="docutils literal notranslate"><span class="pre">P</span> <span class="pre">&#8596;</span> <span class="pre">&#172;</span> <span class="pre">&#172;</span> <span class="pre">P</span></code>.
+This is the axiom that allows for proofs by contradiction.
+Lean provides us the following tactics to use it.</p>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">exfalso</span></code></p></td>
+<td><p>Changes the target of the current goal to <code class="docutils literal notranslate"><span class="pre">false</span></code>.</p>
+<p>The name derives from <a class="reference external" href="https://en.wikipedia.org/wiki/Principle_of_explosion">&#8220;ex falso, quodlibet&#8221;</a> which translates to &#8220;from contradiction, anything&#8221;.
+You should use this tactic when there are contradictory hypotheses present.</p>
+</td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">by_cases</span></code></p></td>
+<td><p>If <code class="docutils literal notranslate"><span class="pre">P</span> <span class="pre">:</span> <span class="pre">Prop</span></code>, then <code class="docutils literal notranslate"><span class="pre">by_cases</span> <span class="pre">P,</span></code> creates two goals,
+the first with a hypothesis <code class="docutils literal notranslate"><span class="pre">hp:</span> <span class="pre">P</span></code> and second with a hypothesis <code class="docutils literal notranslate"><span class="pre">hp:</span> <span class="pre">&#172;</span> <span class="pre">P</span></code>.</p>
+<p>Mathematically, this is saying either <code class="docutils literal notranslate"><span class="pre">P</span></code> is true or <code class="docutils literal notranslate"><span class="pre">P</span></code> is false.
+<code class="docutils literal notranslate"><span class="pre">by_cases</span></code> is the most direct application of the law of excluded middle.</p>
+</td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">by_contradiction</span></code></p></td>
+<td><p>If the target of the current goal is  <code class="docutils literal notranslate"><span class="pre">Q</span></code>,
+then <code class="docutils literal notranslate"><span class="pre">by_contradiction,</span></code> changes the target to  <code class="docutils literal notranslate"><span class="pre">false</span></code> and
+adds <code class="docutils literal notranslate"><span class="pre">hnq</span> <span class="pre">:</span> <span class="pre">&#172;</span> <span class="pre">Q</span></code> as a hypothesis.</p>
+<p>Mathematically, this is proof by contradiction.</p>
+</td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">push_neg</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">push_neg,</span></code> simplifies negations in the target.</p>
+<p>For example, if the target of the current goal is <code class="docutils literal notranslate"><span class="pre">&#172;</span> <span class="pre">&#172;</span> <span class="pre">P</span></code>, then
+<code class="docutils literal notranslate"><span class="pre">push_neg,</span></code> simplifies it to <code class="docutils literal notranslate"><span class="pre">P</span></code>.</p>
+<p>You can also push negations across a hypothesis <code class="docutils literal notranslate"><span class="pre">hp</span> <span class="pre">:</span> <span class="pre">P</span></code> using <code class="docutils literal notranslate"><span class="pre">push_neg</span> <span class="pre">at</span> <span class="pre">hp,</span></code>.</p>
+</td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">contrapose!</span></code></p></td>
+<td><p>If the target of the current goal is  <code class="docutils literal notranslate"><span class="pre">P</span> <span class="pre">&#8594;</span> <span class="pre">Q</span></code>,
+then <code class="docutils literal notranslate"><span class="pre">contrapose!,</span></code> changes the target to  <code class="docutils literal notranslate"><span class="pre">&#172;</span> <span class="pre">Q</span> <span class="pre">&#8594;</span> <span class="pre">&#172;</span> <span class="pre">P</span></code>.</p>
+<p>If the target of the current goal is <code class="docutils literal notranslate"><span class="pre">Q</span></code>
+and one of the hypotheses is <code class="docutils literal notranslate"><span class="pre">hp</span> <span class="pre">:</span> <span class="pre">P</span></code>,
+then <code class="docutils literal notranslate"><span class="pre">contrapose!</span> <span class="pre">hp,</span></code> changes the target to  <code class="docutils literal notranslate"><span class="pre">&#172;</span> <span class="pre">P</span></code>
+and changes the hypothesis to <code class="docutils literal notranslate"><span class="pre">hp</span> <span class="pre">:</span> <span class="pre">&#172;</span> <span class="pre">Q</span></code>.</p>
+<p>Mathematically, this is replacing the target by its contrapositive.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Even though the list is long, these tactics are almost all <em>obvious</em>.
+The only two slightly unusual tactics are <code class="docutils literal notranslate"><span class="pre">exfalso</span></code> and <code class="docutils literal notranslate"><span class="pre">by_cases</span></code>.
+You&#8217;ll see <code class="docutils literal notranslate"><span class="pre">by_cases</span></code> in action later.
+For the following exercises, you only require <code class="docutils literal notranslate"><span class="pre">exfalso</span></code>, <code class="docutils literal notranslate"><span class="pre">push_neg</span></code>, and <code class="docutils literal notranslate"><span class="pre">contrapose!</span></code>.</p>
+<div style="position: relative">
+<div style='position: absolute; right: 0; top: 0; padding: 1ex'><a href="https://leanprover-community.github.io/lean-web-editor/#code=import%20tactic%0A%0A--%20these%20two%20statements%20tell%20Lean%20to%20use%20the%20law%20of%20excluded%20middle%20as%20necessary%0Anoncomputable%20theory%0Aopen_locale%20classical%0A%0A%0A--BEGIN--%0A%0A%0A%2F--------------------------------------------------------------------------%0A%0A%60%60exfalso%60%60%0A%0A%20%20Changes%20the%20target%20of%20the%20current%20goal%20to%20%60%60false%60%60.%0A%0A%60%60push_neg%60%60%0A%0A%20%20%60%60push_neg%2C%60%60%20simplifies%20negations%20in%20the%20target.%0A%20%20You%20can%20push%20negations%20across%20a%20hypothesis%20%60%60hp%20%3A%20P%60%60%20using%0A%20%20%60%60push_neg%20at%20hp%2C%60%60.%0A%0A%0A%60%60contrapose!%60%60%0A%0A%20%20If%20the%20target%20of%20the%20current%20goal%20is%20%20%60%60P%20%E2%86%92%20Q%60%60%2C%0A%20%20then%20%60%60contrapose!%2C%60%60%20changes%20the%20target%20to%20%20%60%60%C2%AC%20Q%20%E2%86%92%20%C2%AC%20P%60%60.%0A%0A%20%20If%20the%20target%20of%20the%20current%20goal%20is%20%60%60Q%60%60%20and%0A%20%20one%20of%20the%20hypotheses%20is%20%60%60hp%20%3A%20P%60%60%2C%20then%0A%20%20%60%60contrapose!%20hp%2C%60%60%20changes%20the%20target%20to%20%20%60%60%C2%AC%20P%60%60%20and%0A%20%20changes%20the%20hypothesis%20to%20%60%60hp%20%3A%20%C2%AC%20Q%60%60.%0A%0A%0ADelete%20the%20%60%60sorry%2C%60%60%20below%20and%20replace%20them%20with%20a%20legitimate%20proof.%0A%0A--------------------------------------------------------------------------%2F%0A%0Atheorem%20not_not_self_imp_self%20(P%20%3A%20Prop)%20%3A%20%C2%AC%20%C2%AC%20P%20%E2%86%92%20P%3A%3D%0Abegin%0A%20%20sorry%2C%0Aend%0A%0Atheorem%20contrapositive_converse%20(P%20Q%20%3A%20Prop)%20%3A%20(%C2%ACQ%20%E2%86%92%20%C2%ACP)%20%E2%86%92%20(P%20%E2%86%92%20Q)%20%3A%3D%0Abegin%0A%20%20sorry%2C%0Aend%0A%0Aexample%20(P%20%3A%20Prop)%20%3A%20%C2%AC%20P%20%E2%86%92%20%C2%AC%20%C2%AC%20%C2%AC%20P%20%3A%3D%0Abegin%0A%20%20sorry%2C%0Aend%0A%0Atheorem%20principle_of_explosion%20(P%20Q%20%3A%20Prop)%20%3A%20P%20%E2%86%92%20(%C2%AC%20P%20%E2%86%92%20Q)%20%3A%3D%0Abegin%0A%20%20sorry%2C%0Aend%0A%0A--END--" target="_blank" tryitfile="../examples/day1/unnamed_361.lean">
+try it!</a></div><div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="c">/-</span><span class="cm">-------------------------------------------------------------------------</span>
+
+<span class="cm">``exfalso``</span>
+
+<span class="cm">  Changes the target of the current goal to ``false``.</span>
+
+<span class="cm">``push_neg``</span>
+
+<span class="cm">  ``push_neg,`` simplifies negations in the target.</span>
+<span class="cm">  You can push negations across a hypothesis ``hp : P`` using</span>
+<span class="cm">  ``push_neg at hp,``.</span>
+
+
+<span class="cm">``contrapose!``</span>
+
+<span class="cm">  If the target of the current goal is  ``P &#8594; Q``,</span>
+<span class="cm">  then ``contrapose!,`` changes the target to  ``&#172; Q &#8594; &#172; P``.</span>
+
+<span class="cm">  If the target of the current goal is ``Q`` and</span>
+<span class="cm">  one of the hypotheses is ``hp : P``, then</span>
+<span class="cm">  ``contrapose! hp,`` changes the target to  ``&#172; P`` and</span>
+<span class="cm">  changes the hypothesis to ``hp : &#172; Q``.</span>
+
+
+<span class="cm">Delete the ``sorry,`` below and replace them with a legitimate proof.</span>
+
+<span class="cm">--------------------------------------------------------------------------/</span>
+
+<span class="kn">theorem</span> <span class="n">not_not_self_imp_self</span> <span class="o">(</span><span class="n">P</span> <span class="o">:</span> <span class="kt">Prop</span><span class="o">)</span> <span class="o">:</span> <span class="bp">&#172;</span> <span class="bp">&#172;</span> <span class="n">P</span> <span class="bp">&#8594;</span> <span class="n">P</span><span class="o">:=</span>
+<span class="k">begin</span>
+  <span class="n">sorry</span><span class="o">,</span>
+<span class="kn">end</span>
+
+<span class="kn">theorem</span> <span class="n">contrapositive_converse</span> <span class="o">(</span><span class="n">P</span> <span class="n">Q</span> <span class="o">:</span> <span class="kt">Prop</span><span class="o">)</span> <span class="o">:</span> <span class="o">(</span><span class="bp">&#172;</span><span class="n">Q</span> <span class="bp">&#8594;</span> <span class="bp">&#172;</span><span class="n">P</span><span class="o">)</span> <span class="bp">&#8594;</span> <span class="o">(</span><span class="n">P</span> <span class="bp">&#8594;</span> <span class="n">Q</span><span class="o">)</span> <span class="o">:=</span>
+<span class="k">begin</span>
+  <span class="n">sorry</span><span class="o">,</span>
+<span class="kn">end</span>
+
+<span class="kn">example</span> <span class="o">(</span><span class="n">P</span> <span class="o">:</span> <span class="kt">Prop</span><span class="o">)</span> <span class="o">:</span> <span class="bp">&#172;</span> <span class="n">P</span> <span class="bp">&#8594;</span> <span class="bp">&#172;</span> <span class="bp">&#172;</span> <span class="bp">&#172;</span> <span class="n">P</span> <span class="o">:=</span>
+<span class="k">begin</span>
+  <span class="n">sorry</span><span class="o">,</span>
+<span class="kn">end</span>
+
+<span class="kn">theorem</span> <span class="n">principle_of_explosion</span> <span class="o">(</span><span class="n">P</span> <span class="n">Q</span> <span class="o">:</span> <span class="kt">Prop</span><span class="o">)</span> <span class="o">:</span> <span class="n">P</span> <span class="bp">&#8594;</span> <span class="o">(</span><span class="bp">&#172;</span> <span class="n">P</span> <span class="bp">&#8594;</span> <span class="n">Q</span><span class="o">)</span> <span class="o">:=</span>
+<span class="k">begin</span>
+  <span class="n">sorry</span><span class="o">,</span>
+<span class="kn">end</span>
+</pre></div>
+</div>
+</div></div>
+<div class="section" id="final-remarks">
+<h2><span class="section-number">1.4. </span>Final Remarks<a class="headerlink" href="#final-remarks" title="Permalink to this headline">&#182;</a></h2>
+<p>You might be wondering, if type theory is so cool why have I not heard of it before?</p>
+<p>Many programming languages highly depend on type theory (that&#8217;s where the term <code class="docutils literal notranslate"><span class="pre">datatype</span></code> comes from).
+Once you define a term <code class="docutils literal notranslate"><span class="pre">x</span> <span class="pre">:</span> <span class="pre">&#8469;</span></code>, a computer can immediately check that all the manipulations you do with <code class="docutils literal notranslate"><span class="pre">x</span></code>
+are valid manipulations of natural numbers (so you don&#8217;t accidentally divide by 0 <a class="footnote-reference brackets" href="#f1" id="id3">1</a> , for example).</p>
+<p>Unfortunately, this also means that the term <code class="docutils literal notranslate"><span class="pre">1</span> <span class="pre">:</span> <span class="pre">&#8469;</span></code> is different from the term <code class="docutils literal notranslate"><span class="pre">1</span> <span class="pre">:</span> <span class="pre">&#8484;</span></code>.
+In Lean, if you do <code class="docutils literal notranslate"><span class="pre">(1</span> <span class="pre">:</span> <span class="pre">&#8469;</span> <span class="pre">-</span> <span class="pre">2</span> <span class="pre">:</span> <span class="pre">&#8469;)</span></code> you get <code class="docutils literal notranslate"><span class="pre">0</span> <span class="pre">:</span> <span class="pre">&#8469;</span></code> but if you do <code class="docutils literal notranslate"><span class="pre">(1</span> <span class="pre">:</span> <span class="pre">&#8484;</span> <span class="pre">-</span> <span class="pre">2</span> <span class="pre">:</span> <span class="pre">&#8484;)</span></code> you get <code class="docutils literal notranslate"><span class="pre">-1</span> <span class="pre">:</span> <span class="pre">&#8484;</span></code>,
+that&#8217;s because natural numbers and subtraction are not buddies.
+Another issue is that <code class="docutils literal notranslate"><span class="pre">1</span> <span class="pre">:</span> <span class="pre">&#8469;</span> <span class="pre">=</span> <span class="pre">1</span> <span class="pre">:</span> <span class="pre">&#8484;</span></code> is not a valid statement in type theory.
+This is not the end of the world though.
+Lean allows you to <em>coerce</em> <code class="docutils literal notranslate"><span class="pre">1</span> <span class="pre">:</span> <span class="pre">&#8469;</span></code> to <code class="docutils literal notranslate"><span class="pre">1</span> <span class="pre">:</span> <span class="pre">&#8484;</span></code> if you want subtraction to work properly,
+or <code class="docutils literal notranslate"><span class="pre">1</span> <span class="pre">:</span> <span class="pre">&#8469;</span></code> to <code class="docutils literal notranslate"><span class="pre">1</span> <span class="pre">:</span> <span class="pre">&#8474;</span></code> if you want division to work properly.</p>
+<p>This, and a few other such things, is what drives most mathematicians away from type theory.
+But these things are only difficult when you&#8217;re first learning them.
+With practice, type theory becomes second nature, the same as set theory.</p>
+<p class="rubric">footnotes</p>
+<dl class="footnote brackets">
+<dt class="label" id="f1"><span class="brackets"><a class="fn-backref" href="#id3">1</a></span></dt>
+<dd><p>Except under staff supervision.</p>
+</dd>
+</dl>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">Lean at MC 2020</a></h1>
+
+
+
+
+
+
+
+
+<!-- <h3>Navigation</h3> -->
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">1. Logic in Lean - Part 1</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#propositions-as-types">1.1. Propositions as types</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#implications-in-lean">1.2. Implications in Lean</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#proof-by-contradiction">1.3. Proof by contradiction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#final-remarks">1.4. Final Remarks</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="day2.html">2. Logic in Lean - Part 2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="day3.html">3. Infinitely Many Primes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="day4.html">4. Sqrt 2 is irrational</a></li>
+<li class="toctree-l1"><a class="reference internal" href="day5.html">5. Bits &amp; Pieces</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="symbols.html">Pretty Symbols in Lean</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tactics.html">Glossary of tactics</a></li>
+</ul>
+
+
+<hr />
+<ul>
+    
+    <li class="toctree-l1"><a href="latex/lean_at_mc2020.pdf">PDF version</a></li>
+    
+    <li class="toctree-l1"><a href="https://leanprover-community.github.io/lean-web-editor/">Lean Live Editor</a></li>
+    
+    <li class="toctree-l1"><a href="https://leanprover-community.github.io/mathlib_docs/">Lean Documentation</a></li>
+    
+    <li class="toctree-l1"><a href="https://leanprover-community.github.io/">Leanprover Community</a></li>
+    
+</ul>
+
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, Apurva Nakade, Jalex Stark.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.1.2</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="sources/day1.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

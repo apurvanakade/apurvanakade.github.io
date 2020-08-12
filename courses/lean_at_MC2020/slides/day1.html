@@ -1,0 +1,181 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Day 1 - Teaching math to computers</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/serif.css" id="theme">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
+
+    <script src="plugin/highlight/highlight.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+        <section
+          data-markdown data-separator="^\n===\n$"
+          data-separator-vertical="^\n==\n$">
+          <script type="text/template">
+<!-- .slide: class="center" -->
+# Day 1 
+
+## Teaching math to computers
+
+Please join #w1--teaching-math-to-computers on Slack
+
+===
+
+## Class overview:
+
+- 5 - 10 mins I'll talk 
+- 40 - 45 mins you'll work in groups
+- I, Joanna, and Maya will be around to answer questions.
+
+==
+
+## Why work in groups?
+
+- most efficient way to learn a new subject
+- most fun way to learn a new subject
+- you'll make new friends (or enemies?) along the way :) :)
+
+This is how most mathematicians learn new math anyways. 
+Conferences are analog versions of breakout rooms.
+
+==
+
+<!-- .slide: class="center" -->
+# There is no such thing as stupid questions.
+
+
+- <!-- .element: class="fragment" data-fragment-index="1" --> Please ask lots of questions
+- <!-- .element: class="fragment" data-fragment-index="1" --> Please answer lots of questions
+- <!-- .element: class="fragment" data-fragment-index="1" --> But don't forget Rule 1 and Rule 2.
+
+
+==
+
+<!-- .slide: class="center" -->
+# Work at your own pace
+
+- <!-- .element: class="fragment" data-fragment-index="1" --> It is totally fine to be working on Day 1 notes on the 5th day of class.
+- <!-- .element: class="fragment" data-fragment-index="1" --> Starting tomorrow I'll make the breakout rooms according to where you are at in the notes.
+
+
+===
+
+## Type theory
+
+- <!-- .element: class="fragment" data-fragment-index="1" -->  Alternative to Set theory
+- <!-- .element: class="fragment" data-fragment-index="2" --> terms and types
+- <!-- .element: class="fragment" data-fragment-index="3" --> every term has a type
+- <!-- .element: class="fragment" data-fragment-index="4" --> x : X stands for “x is a term of type X” 
+
+It's ok to pretend that a type is a set and terms are its elements. <!-- .element: class="fragment" data-fragment-index="5" --> 
+
+===
+
+## Propositions as types
+
+- <!-- .element: class="fragment" data-fragment-index="1" --> Proposition := any statement that can be true or false 
+	- e.g. 2 + 2 = 4, 2 + 2 = 5, "Fermat’s last theorem", "Riemann hypothesis", etc.
+- <!-- .element: class="fragment" data-fragment-index="2" --> There is a special type called Prop whose inhabitants are propositions.
+- <!-- .element: class="fragment" data-fragment-index="3" --> A proposition is itself a types whose inhabitants are its proofs!!
+
+```lean
+P : Prop   /- P is a proposition -/
+hp : P     /- hp is a proof of P -/
+```
+<!-- .element: class="fragment" data-fragment-index="4" --> 
+
+==
+
+## True or False
+
+- <!-- .element: class="fragment" data-fragment-index="1" --> A proposition is <em>true</em> if it is <em>inhabited</em>.
+- <!-- .element: class="fragment" data-fragment-index="2" --> "Proving a proposition P" is the same as "producing a term of type P".
+
+==
+
+## Implication
+
+- <!-- .element: class="fragment" data-fragment-index="1" --> An implication P ⇒ Q is simply a function f : P → Q.
+	- <!-- .element: class="fragment" data-fragment-index="2" --> If P is true, there exists a term hp : P. Then f(hp) : Q. Hence Q is true.
+	- <!-- .element: class="fragment" data-fragment-index="3" --> If P is false, then P is empty. There always exists the empty function from ∅ → Q. Hence, false implies everything.
+
+==
+
+## Negation
+
+- <!-- .element: class="fragment" data-fragment-index="1" --> There is a special proposition false : Prop which has no proof and hence is empty.
+- <!-- .element: class="fragment" data-fragment-index="2" --> The negation of a proposition, ¬ P, is just the implication P → false.
+	- <!-- .element: class="fragment" data-fragment-index="3" --> Such a function exists if and only if P itself is empty (empty function)
+	- <!-- .element: class="fragment" data-fragment-index="4" --> Hence P → false is inhabited if and only if P is empty which justifies using it as the definition of ¬ P.
+
+==
+
+## To summarize 
+
+- Proving a proposition `P` is equivalent to producing an inhabitant `hp : P`.
+- Proving an implication `P → Q` is equivalent to producing a function `f : P → Q`.
+- The negation, `¬ P`, is defined as the implication `P → false`.
+
+===
+
+<!-- .slide: class="center" -->
+# Start working on <br /> 1.2. Implications in Lean <br /> from <a href="https://apurvanakade.github.io/courses/lean_at_MC2020/day1.html">Day 1 notes</a>.
+
+And remember to save your work!!!
+
+</script>
+        </section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+        center: false,
+        controls: true,
+				progress: true,
+				hash: true,
+        controlsTutorial: true,
+        history: true,
+        overview: true,
+        transition: 'fade',
+				controlsTutorial: false,
+        math: {
+					mathjax: 'http://cdn.mathjax.org/mathjax/latest/MathJax.js',
+					config: 'TeX-AMS_HTML-full'
+				},
+
+				dependencies: [
+        {
+          src: 'http://cdn.jsdelivr.net/reveal.js/3.0.0/plugin/math/math.js',
+          async: true
+        }],
+
+
+
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes]
+			});
+		</script>
+	</body>
+</html>

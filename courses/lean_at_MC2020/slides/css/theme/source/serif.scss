@@ -1,0 +1,77 @@
+/**
+ * A simple theme for reveal.js presentations, similar
+ * to the default theme. The accent color is brown.
+ *
+ * This theme is Copyright (C) 2012-2013 Owen Versteeg, http://owenversteeg.com - it is MIT licensed.
+ */
+
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+
+
+// Override theme settings (see ../template/settings.scss)
+$mainFont: 'Palatino Linotype', 'Book Antiqua', Palatino, FreeSerif, serif;
+$mainColor: #000;
+$headingFont: 'Palatino Linotype', 'Book Antiqua', Palatino, FreeSerif, serif;
+$headingColor: #383D3D;
+$headingTextShadow: none;
+$headingTextTransform: none;
+$backgroundColor: #ffffff;
+$linkColor: #51483D;
+$linkColorHover: lighten( $linkColor, 20% );
+$selectionBackgroundColor: #26351C;
+
+.reveal a {
+  line-height: 1.3em;
+}
+
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------
+
+.reveal * {
+  text-align: left;
+}
+
+.reveal section{
+  &:not(.center){
+    > h2 {
+      border-bottom: 1px lightgrey solid;
+      margin-bottom: 1em;
+      margin-top: 1em;
+    }
+  }
+}
+
+.reveal section.center {
+  h2 {
+    text-align: center;
+  }
+}
+
+.reveal li {
+  margin-bottom: 0.75em;
+  line-height: 125%;
+  font-size: 36px;
+}
+
+.reveal li li {
+  margin-bottom: 0em;
+  list-style-type:'- ';
+  font-size: 30px;
+}
+
+.reveal p {
+  text-align: left;
+  font-size: 0.75em;
+  font-size: 30px;
+}
+
+code.hljs {
+  display: inline;
+}

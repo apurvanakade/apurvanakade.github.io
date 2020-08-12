@@ -1,0 +1,217 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="ascii" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction &#8212; Lean at MC 2020 0.1 documentation</title>
+    <link rel="stylesheet" href="static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="static/pygments.css" type="text/css" />
+    <script id="documentation_options" data-url_root="./" src="static/documentation_options.js"></script>
+    <script src="static/jquery.js"></script>
+    <script src="static/underscore.js"></script>
+    <script src="static/doctools.js"></script>
+    <script src="static/language_data.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="shortcut icon" href="static/favicon.ico"/>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="1. Logic in Lean - Part 1" href="day1.html" />
+    <link rel="prev" title="Lean at MC 2020" href="index.html" />
+   
+  <link rel="stylesheet" href="static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="introduction">
+<span id="id1"></span><h1>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">&#182;</a></h1>
+<div class="section" id="what-is-lean">
+<h2>What is Lean?<a class="headerlink" href="#what-is-lean" title="Permalink to this headline">&#182;</a></h2>
+<p><a class="reference external" href="https://leanprover.github.io/about/">Lean</a> is an open source proof-checker and a proof-assistant.
+One can <em>explain</em> mathematical proofs to it and it can check their correctness.
+It also simplifies the proof writing process by providing <code class="docutils literal notranslate"><span class="pre">goals</span></code> and <code class="docutils literal notranslate"><span class="pre">tactics</span></code>.</p>
+<p>Lean is built on top of a formal system called type theory.
+In type theory, instead of elements we have terms and every term has a type.
+When translated to math, terms can be either mathematical objects, functions, propositions, or proofs.
+The only two things Lean can do is <em>create</em> terms and <em>check</em> their types.
+By iterating these two operations one can teach Lean to verify complex mathematical proofs.</p>
+<div style="position: relative">
+<div style='position: absolute; right: 0; top: 0; padding: 1ex'><a href="https://leanprover-community.github.io/lean-web-editor/#code=def%20x%20%3A%3D%202%20%2B%202%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20--%20a%20natural%20number%0Adef%20f%20(x%20%3A%20%E2%84%95)%20%3A%3D%20x%20%2B%203%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20--%20a%20function%0Adef%20easy_theorem_statement%20%3A%3D%202%20%2B%202%20%3D%204%20%20%20%20%20%20%20%20%20--%20a%20proposition%0Adef%20fermats_last_theorem_statement%20%20%20%20%20%20%20%20%20%20%20%20%20%20--%20another%20proposition%0A%20%20%3A%3D%0A%20%20%E2%88%80%20n%20%3A%20%E2%84%95%2C%0A%20%20n%20%3E%202%0A%20%20%E2%86%92%0A%20%20%C2%AC%20(%E2%88%83%20x%20y%20z%20%3A%20%E2%84%95%2C%20(x%5En%20%2B%20y%5En%20%3D%20z%5En)%20%E2%88%A7%20(x%20%E2%89%A0%200)%20%E2%88%A7%20(y%20%E2%89%A0%200)%20%E2%88%A7%20(z%20%E2%89%A0%200))%0A%0Atheorem%0Aeasy_proof%20%3A%20easy_theorem_statement%20%20%20%20%20%20%20%20%20%20%20%20%20--%20proof%20of%20easy_theorem%0A%3A%3D%0Abegin%0A%20%20exact%20rfl%2C%0Aend%0A%0Atheorem%0Ahard_proof%20%3A%20fermats_last_theorem_statement%20%20%20%20%20--%20cheating!%0A%3A%3D%0Abegin%0A%20%20sorry%2C%0Aend%0A%0A%23check%20x%0A%23check%20f%0A%23check%20easy_theorem_statement%0A%23check%20fermats_last_theorem_statement%0A%23check%20easy_proof%0A%23check%20hard_proof" target="_blank" tryitfile="../examples/introduction/unnamed_27.lean">
+try it!</a></div><div class="highlight-lean notranslate"><div class="highlight"><pre><span></span>def x := 2 + 2                                  -- a natural number
+def f (x : &#8469;) := x + 3                          -- a function
+def easy_theorem_statement := 2 + 2 = 4         -- a proposition
+def fermats_last_theorem_statement              -- another proposition
+  :=
+  &#8704; n : &#8469;,
+  n &gt; 2
+  &#8594;
+  &#172; (&#8707; x y z : &#8469;, (x^n + y^n = z^n) &#8743; (x &#8800; 0) &#8743; (y &#8800; 0) &#8743; (z &#8800; 0))
+
+theorem
+easy_proof : easy_theorem_statement             -- proof of easy_theorem
+:=
+begin
+  exact rfl,
+end
+
+theorem
+hard_proof : fermats_last_theorem_statement     -- cheating!
+:=
+begin
+  sorry,
+end
+
+#check x
+#check f
+#check easy_theorem_statement
+#check fermats_last_theorem_statement
+#check easy_proof
+#check hard_proof
+</pre></div>
+</div>
+</div></div>
+<div class="section" id="how-to-use-these-notes">
+<h2>How to use these notes<a class="headerlink" href="#how-to-use-these-notes" title="Permalink to this headline">&#182;</a></h2>
+<p>Every once in a while, you will see a code snippet like this:</p>
+<div style="position: relative">
+<div style='position: absolute; right: 0; top: 0; padding: 1ex'><a href="https://leanprover-community.github.io/lean-web-editor/#code=%23eval%20%22Hello%2C%20World!%22" target="_blank" tryitfile="../examples/introduction/unnamed_65.lean">
+try it!</a></div><div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="bp">#</span><span class="kn">eval</span> <span class="s2">&quot;Hello, World!&quot;</span>
+</pre></div>
+</div>
+</div><p>Clicking on the <code class="docutils literal notranslate"><span class="pre">try</span> <span class="pre">it!</span></code> button in the upper right corner will
+open a copy in a window
+so that you can edit it,
+and Lean provides feedback in the <code class="docutils literal notranslate"><span class="pre">Lean</span> <span class="pre">Goal</span></code> window.
+There are several exercises in these notes to be done this way.</p>
+<p>These notes are designed for a 5-day Lean crash course at Mathcamp 2020.
+On Days 1 and 2 you&#8217;ll learn the basics of type theory and some basic <code class="docutils literal notranslate"><span class="pre">tactics</span></code> in Lean.
+On Days 3, 4, 5 you&#8217;ll use these to prove increasingly complex theorems, namely the infinitude of primes and irrationality of <span class="math notranslate nohighlight">\(\sqrt{2}\)</span>.</p>
+<p>These notes provide a sneak-peek into the world of theorem proving in Lean and are by no means comprehensive.
+It is recommended that you simultaneously attempt at least one of the following two options.</p>
+<ol class="arabic simple">
+<li><p>Play the <a class="reference external" href="https://wwwf.imperial.ac.uk/~buzzard/xena/natural_number_game/">Natural Number Game</a>.</p></li>
+<li><p>Read <a class="reference external" href="https://leanprover.github.io/theorem_proving_in_lean/">Theorem Proving in Lean</a>.</p></li>
+</ol>
+<p>The <a class="reference external" href="https://wwwf.imperial.ac.uk/~buzzard/xena/natural_number_game/">Natural Number Game</a> is a fun (and highly addictive!) game that proves same basic properties of natural numbers in Lean.
+<a class="reference external" href="https://leanprover.github.io/theorem_proving_in_lean/">Theorem Proving in Lean</a> is a comprehensive online book that covers all the theorem proving aspects of Lean in great detail.</p>
+<p>The Lean community is very welcoming to newcomers, and people are available on the <a class="reference external" href="https://leanprover.zulipchat.com/">Lean Zulip chat group</a> round the clock
+to answer questions.
+You can also join Kevin Buzzard&#8217;s <a class="reference external" href="https://t.co/DSz6mbw4Oc?amp=1">Discord server</a> which has a relatively younger crowd.
+You&#8217;re highly encouraged to join one or both of these channels.</p>
+</div>
+<div class="section" id="acknowledgments">
+<h2>Acknowledgments.<a class="headerlink" href="#acknowledgments" title="Permalink to this headline">&#182;</a></h2>
+<p>These notes are developed by <a class="reference external" href="https://apurvanakade.github.io">Apurva Nakade</a> and <a class="reference external" href="https://jalexstark.com/">Jalex Stark</a> with a lot of help from Mathcamp campers and Mathcamp staff Joanna and Maya (thanks!).
+Large chunks of these notes are taken from various learning resources available on the <a class="reference external" href="https://leanprover-community.github.io/learn.html">leanprover-community website</a>.</p>
+</div>
+<div class="section" id="useful-links">
+<h2>Useful Links.<a class="headerlink" href="#useful-links" title="Permalink to this headline">&#182;</a></h2>
+<ol class="arabic simple">
+<li><p><a class="reference external" href="http://www.cs.ru.nl/~freek/100/index.html">Formalizing 100 theorems</a></p></li>
+<li><p><a class="reference external" href="https://leanprover-community.github.io/100.html">Formalizing 100 theorems in Lean</a></p></li>
+<li><dl class="simple">
+<dt>Articles, videos, blog posts, etc.</dt><dd><ol class="arabic simple">
+<li><p><a class="reference external" href="https://xenaproject.wordpress.com/">The Xena Project</a></p></li>
+<li><p><a class="reference external" href="https://www.ams.org/journals/notices/201806/rnoti-p681.pdf">The Mechanization of Mathematics</a></p></li>
+<li><p><a class="reference external" href="https://www.youtube.com/watch?v=Dp-mQ3HxgDE">The Future of Mathematics</a></p></li>
+<li><p><a class="reference external" href="https://www.twitch.tv/kbuzzard">Kevin Buzzard&#8217;s Twitch channel</a>. In particular, checkout <a class="reference external" href="https://www.twitch.tv/videos/665779560">this video</a> about summer projects.</p></li>
+<li><p><a class="reference external" href="https://www.twitch.tv/jalexstark">Jalex Stark&#8217;s Twitch channel</a>. In particular, checkout <a class="reference external" href="https://www.twitch.tv/videos/665779560">this video</a> about summer projects.</p></li>
+</ol>
+</dd>
+</dl>
+</li>
+<li><p><a class="reference external" href="https://t.co/DSz6mbw4Oc?amp=1">Discord server</a></p></li>
+<li><p><a class="reference external" href="https://leanprover.zulipchat.com/">Lean Zulip chat group</a></p></li>
+</ol>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">Lean at MC 2020</a></h1>
+
+
+
+
+
+
+
+
+<!-- <h3>Navigation</h3> -->
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Introduction</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="day1.html">1. Logic in Lean - Part 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="day2.html">2. Logic in Lean - Part 2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="day3.html">3. Infinitely Many Primes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="day4.html">4. Sqrt 2 is irrational</a></li>
+<li class="toctree-l1"><a class="reference internal" href="day5.html">5. Bits &amp; Pieces</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="symbols.html">Pretty Symbols in Lean</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tactics.html">Glossary of tactics</a></li>
+</ul>
+
+
+<hr />
+<ul>
+    
+    <li class="toctree-l1"><a href="latex/lean_at_mc2020.pdf">PDF version</a></li>
+    
+    <li class="toctree-l1"><a href="https://leanprover-community.github.io/lean-web-editor/">Lean Live Editor</a></li>
+    
+    <li class="toctree-l1"><a href="https://leanprover-community.github.io/mathlib_docs/">Lean Documentation</a></li>
+    
+    <li class="toctree-l1"><a href="https://leanprover-community.github.io/">Leanprover Community</a></li>
+    
+</ul>
+
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, Apurva Nakade, Jalex Stark.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.1.2</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="sources/introduction.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

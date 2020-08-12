@@ -1,0 +1,392 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="ascii" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3. Infinitely Many Primes &#8212; Lean at MC 2020 0.1 documentation</title>
+    <link rel="stylesheet" href="static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="static/pygments.css" type="text/css" />
+    <script id="documentation_options" data-url_root="./" src="static/documentation_options.js"></script>
+    <script src="static/jquery.js"></script>
+    <script src="static/underscore.js"></script>
+    <script src="static/doctools.js"></script>
+    <script src="static/language_data.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="shortcut icon" href="static/favicon.ico"/>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="4. Sqrt 2 is irrational" href="day4.html" />
+    <link rel="prev" title="2. Logic in Lean - Part 2" href="day2.html" />
+   
+  <link rel="stylesheet" href="static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="infinitely-many-primes">
+<span id="day3"></span><h1><span class="section-number">3. </span>Infinitely Many Primes<a class="headerlink" href="#infinitely-many-primes" title="Permalink to this headline">&#182;</a></h1>
+<p>Today we will prove that there are infinitely many primes using <a class="reference external" href="https://leanprover-community.github.io/mathlib_docs/">mathlib library</a>. Our focus will be on how to <em>use</em> the library to prove more complicated theorems. Remember to always <strong>save your work</strong>.</p>
+<div class="section" id="equality">
+<h2><span class="section-number">3.1. </span>Equality<a class="headerlink" href="#equality" title="Permalink to this headline">&#182;</a></h2>
+<p>So far we have not seen how to deal with propositions of the form <code class="docutils literal notranslate"><span class="pre">P</span> <span class="pre">=</span> <span class="pre">Q</span></code>, for example, <code class="docutils literal notranslate"><span class="pre">1</span> <span class="pre">+</span> <span class="pre">2</span> <span class="pre">+</span> <span class="pre">...</span> <span class="pre">+</span> <span class="pre">n</span> <span class="pre">=</span> <span class="pre">n(n</span> <span class="pre">+</span> <span class="pre">1)/2</span></code>. Proving these propositions by hand requires messing around with the axioms of type theory.
+The standard trick is to make the LHS (almost) equal or to the RHS and then use one of the simplifiers (<code class="docutils literal notranslate"><span class="pre">norm_num</span></code>, <code class="docutils literal notranslate"><span class="pre">ring</span></code>, <code class="docutils literal notranslate"><span class="pre">linarith</span></code>, or <code class="docutils literal notranslate"><span class="pre">simp</span></code>) to close the goal. <em>Using</em> equalities on the other hand is very easy. The rewrite tactic (usually shortened to <code class="docutils literal notranslate"><span class="pre">rw</span></code>) let&#8217;s you replace the left hand side of an equality with the right hand side.</p>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">rw</span></code></p></td>
+<td><p>If <code class="docutils literal notranslate"><span class="pre">f</span></code> is a term of type <code class="docutils literal notranslate"><span class="pre">P</span> <span class="pre">=</span> <span class="pre">Q</span></code> (or <code class="docutils literal notranslate"><span class="pre">P</span> <span class="pre">&#8596;</span> <span class="pre">Q</span></code>), then</p>
+<blockquote>
+<div><p><code class="docutils literal notranslate"><span class="pre">rw</span> <span class="pre">f,</span></code> searches for <code class="docutils literal notranslate"><span class="pre">P</span></code> in the target and replaces it with <code class="docutils literal notranslate"><span class="pre">Q</span></code>.</p>
+<p><code class="docutils literal notranslate"><span class="pre">rw</span> <span class="pre">&#8592;f,</span></code> searches for <code class="docutils literal notranslate"><span class="pre">Q</span></code> in the target and replaces it with <code class="docutils literal notranslate"><span class="pre">P</span></code>.</p>
+</div></blockquote>
+<p>Additionally, if <code class="docutils literal notranslate"><span class="pre">hr</span> <span class="pre">:</span> <span class="pre">R</span></code> is a hypothesis, then</p>
+<blockquote>
+<div><p><code class="docutils literal notranslate"><span class="pre">rw</span> <span class="pre">f</span> <span class="pre">at</span> <span class="pre">hr,</span></code> searches for <code class="docutils literal notranslate"><span class="pre">P</span></code> in the expression <code class="docutils literal notranslate"><span class="pre">R</span></code> and replaces it with <code class="docutils literal notranslate"><span class="pre">Q</span></code>.</p>
+<p><code class="docutils literal notranslate"><span class="pre">rw</span> <span class="pre">&#8592;f</span> <span class="pre">at</span> <span class="pre">hr,</span></code> searches for <code class="docutils literal notranslate"><span class="pre">Q</span></code> in the expression <code class="docutils literal notranslate"><span class="pre">R</span></code> and replaces it with <code class="docutils literal notranslate"><span class="pre">P</span></code>.</p>
+</div></blockquote>
+<p>Mathematically, this is saying &#8220;because <code class="docutils literal notranslate"><span class="pre">P</span> <span class="pre">=</span> <span class="pre">Q</span></code>, we can replace <code class="docutils literal notranslate"><span class="pre">P</span></code> with <code class="docutils literal notranslate"><span class="pre">Q</span></code> (or the other way around)&#8221;.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>To get the left arrow, type <code class="docutils literal notranslate"><span class="pre">\l</span></code> followed by tab.</p>
+<div style="position: relative">
+<div style='position: absolute; right: 0; top: 0; padding: 1ex'><a href="https://leanprover-community.github.io/lean-web-editor/#code=import%20tactic%20data.nat.basic%0Aopen%20nat%0A%0A%2F--------------------------------------------------------------------------%0A%0A%20%20%60%60rw%60%60%0A%0A%20%20%20%20If%20%60%60f%60%60%20is%20a%20term%20of%20type%20%60%60P%20%3D%20Q%60%60%20(or%20%60%60P%20%E2%86%94%20Q%60%60)%2C%20then%0A%20%20%20%20%60%60rw%20f%60%60%20replaces%20%60%60P%60%60%20with%20%60%60Q%60%60%20in%20the%20target.%0A%20%20%20%20Other%20variants%3A%0A%20%20%20%20%20%20%60%60rw%20f%20at%20hp%60%60%2C%20%60%60rw%20%E2%86%90f%60%60%2C%20%60%60rw%20%E2%86%90f%20at%20hr%60%60.%0A%0A%20%20Delete%20the%20%60%60sorry%2C%60%60%20below%20and%20replace%20them%20with%20a%20legitimate%20proof.%0A%0A%20%20--------------------------------------------------------------------------%2F%0A%0Atheorem%20add_self_self_eq_double%0A%20%20(x%20%3A%20%E2%84%95)%0A%3A%20x%20%2B%20x%20%3D%202%20*%20x%20%3A%3D%0Abegin%0A%20%20ring%2C%0Aend%0A%0A%2F-%0AFor%20the%20following%20problem%2C%20use%0A%20%20mul_comm%20a%20b%20%3A%20a%20*%20b%20%3D%20b%20*%20a%0A-%2F%0A%0Aexample%20(a%20b%20c%20d%20%3A%20%E2%84%95)%0A%20%20(hyp%20%3A%20c%20%3D%20d%20*%20a%20%2B%20b)%0A%20%20(hyp'%20%3A%20b%20%3D%20a%20*%20d)%0A%3A%20c%20%3D%202%20*%20(a%20*%20d)%20%3A%3D%0Abegin%0A%20%20sorry%2C%0Aend%0A%0A%2F-%0AFor%20the%20following%20problem%2C%20use%0A%20%20sub_self%20(x%20%3A%20%E2%84%95)%20%3A%20x%20-%20x%20%3D%200%0A-%2F%0A%0Aexample%20(a%20b%20c%20d%20%3A%20%E2%84%95)%0A%20%20(hyp%20%3A%20c%20%3D%20b%20*%20a%20-%20d)%0A%20%20(hyp'%20%3A%20d%20%3D%20a%20*%20b)%0A%3A%20c%20%3D%200%20%3A%3D%0Abegin%0A%20%20sorry%2C%0Aend" target="_blank" tryitfile="../examples/day3/unnamed_39.lean">
+try it!</a></div><div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="n">tactic</span> <span class="n">data</span><span class="bp">.</span><span class="n">nat</span><span class="bp">.</span><span class="n">basic</span>
+<span class="kn">open</span> <span class="n">nat</span>
+
+<span class="c">/-</span><span class="cm">-------------------------------------------------------------------------</span>
+
+<span class="cm">  ``rw``</span>
+
+<span class="cm">    If ``f`` is a term of type ``P = Q`` (or ``P &#8596; Q``), then</span>
+<span class="cm">    ``rw f`` replaces ``P`` with ``Q`` in the target.</span>
+<span class="cm">    Other variants:</span>
+<span class="cm">      ``rw f at hp``, ``rw &#8592;f``, ``rw &#8592;f at hr``.</span>
+
+<span class="cm">  Delete the ``sorry,`` below and replace them with a legitimate proof.</span>
+
+<span class="cm">  --------------------------------------------------------------------------/</span>
+
+<span class="kn">theorem</span> <span class="n">add_self_self_eq_double</span>
+  <span class="o">(</span><span class="n">x</span> <span class="o">:</span> <span class="bp">&#8469;</span><span class="o">)</span>
+<span class="o">:</span> <span class="n">x</span> <span class="bp">+</span> <span class="n">x</span> <span class="bp">=</span> <span class="mi">2</span> <span class="bp">*</span> <span class="n">x</span> <span class="o">:=</span>
+<span class="k">begin</span>
+  <span class="n">ring</span><span class="o">,</span>
+<span class="kn">end</span>
+
+<span class="c">/-</span><span class="cm"></span>
+<span class="cm">For the following problem, use</span>
+<span class="cm">  mul_comm a b : a * b = b * a</span>
+<span class="cm">-/</span>
+
+<span class="kn">example</span> <span class="o">(</span><span class="n">a</span> <span class="n">b</span> <span class="n">c</span> <span class="n">d</span> <span class="o">:</span> <span class="bp">&#8469;</span><span class="o">)</span>
+  <span class="o">(</span><span class="n">hyp</span> <span class="o">:</span> <span class="n">c</span> <span class="bp">=</span> <span class="n">d</span> <span class="bp">*</span> <span class="n">a</span> <span class="bp">+</span> <span class="n">b</span><span class="o">)</span>
+  <span class="o">(</span><span class="n">hyp&#39;</span> <span class="o">:</span> <span class="n">b</span> <span class="bp">=</span> <span class="n">a</span> <span class="bp">*</span> <span class="n">d</span><span class="o">)</span>
+<span class="o">:</span> <span class="n">c</span> <span class="bp">=</span> <span class="mi">2</span> <span class="bp">*</span> <span class="o">(</span><span class="n">a</span> <span class="bp">*</span> <span class="n">d</span><span class="o">)</span> <span class="o">:=</span>
+<span class="k">begin</span>
+  <span class="n">sorry</span><span class="o">,</span>
+<span class="kn">end</span>
+
+<span class="c">/-</span><span class="cm"></span>
+<span class="cm">For the following problem, use</span>
+<span class="cm">  sub_self (x : &#8469;) : x - x = 0</span>
+<span class="cm">-/</span>
+
+<span class="kn">example</span> <span class="o">(</span><span class="n">a</span> <span class="n">b</span> <span class="n">c</span> <span class="n">d</span> <span class="o">:</span> <span class="bp">&#8469;</span><span class="o">)</span>
+  <span class="o">(</span><span class="n">hyp</span> <span class="o">:</span> <span class="n">c</span> <span class="bp">=</span> <span class="n">b</span> <span class="bp">*</span> <span class="n">a</span> <span class="bp">-</span> <span class="n">d</span><span class="o">)</span>
+  <span class="o">(</span><span class="n">hyp&#39;</span> <span class="o">:</span> <span class="n">d</span> <span class="bp">=</span> <span class="n">a</span> <span class="bp">*</span> <span class="n">b</span><span class="o">)</span>
+<span class="o">:</span> <span class="n">c</span> <span class="bp">=</span> <span class="mi">0</span> <span class="o">:=</span>
+<span class="k">begin</span>
+  <span class="n">sorry</span><span class="o">,</span>
+<span class="kn">end</span>
+</pre></div>
+</div>
+</div><div class="section" id="surjective-functions">
+<h3><span class="section-number">3.1.1. </span>Surjective functions<a class="headerlink" href="#surjective-functions" title="Permalink to this headline">&#182;</a></h3>
+<p>Recall that a function <code class="docutils literal notranslate"><span class="pre">f</span> <span class="pre">:</span> <span class="pre">X</span> <span class="pre">&#8594;</span> <span class="pre">Y</span></code> is surjective if for every <code class="docutils literal notranslate"><span class="pre">y</span> <span class="pre">:</span> <span class="pre">Y</span></code> there exists a term <code class="docutils literal notranslate"><span class="pre">x</span> <span class="pre">:</span> <span class="pre">X</span></code>
+such that <code class="docutils literal notranslate"><span class="pre">f(x)</span> <span class="pre">=</span> <span class="pre">y</span></code>.
+In type theory, for every function <code class="docutils literal notranslate"><span class="pre">f</span></code> we can define a corresponding proposition
+<code class="docutils literal notranslate"><span class="pre">surjective</span> <span class="pre">(f)</span> <span class="pre">:=</span> <span class="pre">&#8704;</span> <span class="pre">y,</span> <span class="pre">&#8707;</span> <span class="pre">x,</span> <span class="pre">f</span> <span class="pre">x</span> <span class="pre">=</span> <span class="pre">y</span></code> and a function being surjective is equivalent to saying that the proposition <code class="docutils literal notranslate"><span class="pre">surjective(f)</span></code> is inhabited.</p>
+<div style="position: relative">
+<div style='position: absolute; right: 0; top: 0; padding: 1ex'><a href="https://leanprover-community.github.io/lean-web-editor/#code=import%20tactic%0Aopen%20function%0A%0A%2F--------------------------------------------------------------------------%0A%0A%60%60unfold%60%60%0A%0A%20%20If%20it%20gets%20hard%20to%20keep%20track%20of%20the%20definition%20of%20%60%60surjective%60%60%2C%0A%20%20you%20can%20use%20%60%60unfold%20surjective%2C%60%60%20or%20%60%60unfold%20surjective%20at%20h%2C%60%60%0A%20%20to%20get%20rid%20of%20it.%0A%0ADelete%20the%20%60%60sorry%2C%60%60%20below%20and%20replace%20them%20with%20a%20legitimate%20proof.%0A%0A--------------------------------------------------------------------------%2F%0A%0Avariables%20X%20Y%20Z%20%3A%20Type%0Avariables%20(f%20%3A%20X%20%E2%86%92%20Y)%20(g%20%3A%20Y%20%E2%86%92%20Z)%0A%0A%2F-%0Asurjective%20(f%20%3A%20X%20%E2%86%92%20Y)%20%3A%3D%20%E2%88%80%20y%2C%20%E2%88%83%20x%2C%20f%20x%20%3D%20y%0A-%2F%0A%0Aexample%0A%20%20(hf%20%3A%20surjective%20f)%0A%20%20(hg%20%3A%20surjective%20g)%0A%20%20%3A%20surjective%20(g%20%E2%88%98%20f)%20%3A%3D%0Abegin%0A%20%20sorry%2C%0Aend%0A%0Aexample%0A%20%20(hgf%20%3A%20surjective%20(g%20%E2%88%98%20f))%0A%20%20%3A%20surjective%20g%20%3A%3D%0Abegin%0A%20%20sorry%2C%0Aend" target="_blank" tryitfile="../examples/day3/unnamed_98.lean">
+try it!</a></div><div class="highlight-lean notranslate"><div class="highlight"><pre><span></span>import tactic
+open function
+
+/--------------------------------------------------------------------------
+
+``unfold``
+
+  If it gets hard to keep track of the definition of ``surjective``,
+  you can use ``unfold surjective,`` or ``unfold surjective at h,``
+  to get rid of it.
+
+Delete the ``sorry,`` below and replace them with a legitimate proof.
+
+--------------------------------------------------------------------------/
+
+variables X Y Z : Type
+variables (f : X &#8594; Y) (g : Y &#8594; Z)
+
+/-
+surjective (f : X &#8594; Y) := &#8704; y, &#8707; x, f x = y
+-/
+
+example
+  (hf : surjective f)
+  (hg : surjective g)
+  : surjective (g &#8728; f) :=
+begin
+  sorry,
+end
+
+example
+  (hgf : surjective (g &#8728; f))
+  : surjective g :=
+begin
+  sorry,
+end
+</pre></div>
+</div>
+</div></div>
+</div>
+<div class="section" id="creating-subgoals">
+<h2><span class="section-number">3.2. </span>Creating subgoals<a class="headerlink" href="#creating-subgoals" title="Permalink to this headline">&#182;</a></h2>
+<p>Often when we write a long proof in math, we break it up into simpler problems.
+This is done in Lean using the <code class="docutils literal notranslate"><span class="pre">have</span></code> tactic.</p>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">have</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">have</span> <span class="pre">hp</span> <span class="pre">:</span> <span class="pre">P,</span></code> creates a new goal with target <code class="docutils literal notranslate"><span class="pre">P</span></code> and
+adds <code class="docutils literal notranslate"><span class="pre">hp</span> <span class="pre">:</span> <span class="pre">P</span></code> as a hypothesis to the original goal.</p></td>
+</tr>
+</tbody>
+</table>
+<p>The use of <code class="docutils literal notranslate"><span class="pre">have</span></code> that we have already seen is related to this one.
+When you use the tactic <code class="docutils literal notranslate"><span class="pre">have</span> <span class="pre">hq</span> <span class="pre">:=</span> <span class="pre">f(hp),</span></code>
+Lean is internally replacing it with <code class="docutils literal notranslate"><span class="pre">have</span> <span class="pre">hq</span> <span class="pre">:</span> <span class="pre">Q,</span> <span class="pre">exact</span> <span class="pre">f(hp),</span></code>.</p>
+<p><code class="docutils literal notranslate"><span class="pre">have</span></code> is crucial for being able to use theorems from the library.
+To use these theorems you have to create terms that match the hypothesis <em>exactly</em>.
+Consider the following example.
+The type <code class="docutils literal notranslate"><span class="pre">n</span> <span class="pre">&gt;</span> <span class="pre">0</span></code> is not the same as <code class="docutils literal notranslate"><span class="pre">0</span> <span class="pre">&lt;</span> <span class="pre">n</span></code>.
+If you need a term of type <code class="docutils literal notranslate"><span class="pre">n</span> <span class="pre">&gt;</span> <span class="pre">0</span></code> and you only have <code class="docutils literal notranslate"><span class="pre">hn</span> <span class="pre">:</span> <span class="pre">0</span> <span class="pre">&lt;</span> <span class="pre">n</span></code>, then you can use
+<code class="docutils literal notranslate"><span class="pre">have</span> <span class="pre">hn2</span> <span class="pre">:</span> <span class="pre">n</span> <span class="pre">&gt;</span> <span class="pre">0,</span> <span class="pre">linarith,</span></code> and you will have constructed a term <code class="docutils literal notranslate"><span class="pre">hn2</span></code> of type <code class="docutils literal notranslate"><span class="pre">n</span> <span class="pre">&gt;</span> <span class="pre">0</span></code>.</p>
+<p>We will need the following lemma later. Remember to save your proof.
+(Here&#8217;s a <a class="reference internal" href="hint_1_have_exercise.html"><span class="doc">hint</span></a> if you need one.)
+<strong>Warning:</strong> If you need to type the divisibility symbol, type <code class="docutils literal notranslate"><span class="pre">\mid</span></code>.
+This is <strong>not</strong> the vertical line on your keyboard.</p>
+<div style="position: relative">
+<div style='position: absolute; right: 0; top: 0; padding: 1ex'><a href="https://leanprover-community.github.io/lean-web-editor/#code=import%20tactic%20data.nat.prime%0Aopen%20nat%0A%0A%2F--------------------------------------------------------------------------%0A%0A%60%60have%60%60%0A%0A%20%20%60%60have%20hp%20%3A%20P%2C%60%60%20creates%20a%20new%20goal%20with%20target%20%60%60P%60%60%20and%0A%20%20adds%20%60%60hp%20%3A%20P%60%60%20as%20a%20hypothesis%20to%20the%20original%20goal.%0A%0AYou'll%20need%20the%20following%20theorem%20from%20the%20library%3A%0A%0Anat.dvd_sub%20%3A%20n%20%E2%89%A4%20m%20%E2%86%92%20k%20%E2%88%A3%20m%20%E2%86%92%20k%20%E2%88%A3%20n%20%E2%86%92%20k%20%E2%88%A3%20m%20-%20n%0A%0A%20%20%20(Note%20that%20you%20don't%20need%20to%20provide%20n%20m%20k%20as%20inputs%20to%20dvd_sub%0A%20%20%20Lean%20can%20infer%20these%20from%20the%20rest%20of%20the%20expression.%0A%20%20%20More%20on%20this%20tomorrow.)%0A%0ADelete%20the%20%60%60sorry%2C%60%60%20below%20and%20replace%20it%20with%20a%20legitimate%20proof.%0A%0A--------------------------------------------------------------------------%2F%0A%0Atheorem%20dvd_sub_one%20%7Bp%20a%20%3A%20%E2%84%95%7D%20%3A%20(p%20%E2%88%A3%20a)%20%E2%86%92%20(p%20%E2%88%A3%20a%20%2B%201)%20%E2%86%92%20(p%20%E2%88%A3%201)%20%3A%3D%0Abegin%0A%20%20sorry%2C%0Aend" target="_blank" tryitfile="../examples/day3/unnamed_168.lean">
+try it!</a></div><div class="highlight-lean notranslate"><div class="highlight"><pre><span></span>import tactic data.nat.prime
+open nat
+
+/--------------------------------------------------------------------------
+
+``have``
+
+  ``have hp : P,`` creates a new goal with target ``P`` and
+  adds ``hp : P`` as a hypothesis to the original goal.
+
+You&#39;ll need the following theorem from the library:
+
+nat.dvd_sub : n &#8804; m &#8594; k &#8739; m &#8594; k &#8739; n &#8594; k &#8739; m - n
+
+   (Note that you don&#39;t need to provide n m k as inputs to dvd_sub
+   Lean can infer these from the rest of the expression.
+   More on this tomorrow.)
+
+Delete the ``sorry,`` below and replace it with a legitimate proof.
+
+--------------------------------------------------------------------------/
+
+theorem dvd_sub_one {p a : &#8469;} : (p &#8739; a) &#8594; (p &#8739; a + 1) &#8594; (p &#8739; 1) :=
+begin
+  sorry,
+end
+</pre></div>
+</div>
+</div></div>
+<div class="section" id="id2">
+<h2><span class="section-number">3.3. </span>Infinitely many primes<a class="headerlink" href="#id2" title="Permalink to this headline">&#182;</a></h2>
+<p>We&#8217;ll now prove that there are infinitely many primes.
+The strategy is to show that there is a prime greater than <code class="docutils literal notranslate"><span class="pre">n</span></code>, for every natural number <code class="docutils literal notranslate"><span class="pre">n</span></code>.
+We will choose this prime to be smallest non-trivial factor of <code class="docutils literal notranslate"><span class="pre">n!</span> <span class="pre">+</span> <span class="pre">1</span></code>.
+We&#8217;ll need the following definitions and theorems from the library.</p>
+<dl class="simple">
+<dt><strong>Primes</strong></dt><dd><ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">m</span> <span class="pre">&#8739;</span> <span class="pre">n</span> <span class="pre">:=</span> <span class="pre">&#8707;</span> <span class="pre">k</span> <span class="pre">:</span> <span class="pre">&#8469;,</span> <span class="pre">m</span> <span class="pre">=</span> <span class="pre">n</span> <span class="pre">*</span> <span class="pre">k</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">m.prime</span> <span class="pre">:=</span>&#160; <span class="pre">2</span> <span class="pre">&#8804;</span> <span class="pre">p</span> <span class="pre">&#8743;</span> <span class="pre">(&#8704;</span> <span class="pre">(m</span> <span class="pre">:</span> <span class="pre">&#8469;),</span> <span class="pre">m</span> <span class="pre">&#8739;</span> <span class="pre">p</span> <span class="pre">&#8594;</span> <span class="pre">m</span> <span class="pre">=</span> <span class="pre">1</span> <span class="pre">&#8744;</span> <span class="pre">m</span> <span class="pre">=</span> <span class="pre">p)</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">prime.not_dvd_one</span> <span class="pre">:</span> <span class="pre">(prime</span> <span class="pre">p)</span> <span class="pre">&#8594;</span> <span class="pre">&#172;</span> <span class="pre">p</span> <span class="pre">&#8739;</span> <span class="pre">1</span></code></p></li>
+</ul>
+</dd>
+<dt><strong>Factorials</strong></dt><dd><ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">n.fact</span> <span class="pre">:=</span> <span class="pre">n!</span>&#160; <span class="pre">--n</span> <span class="pre">factorial</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">fact_pos</span> <span class="pre">:</span> <span class="pre">&#8704;</span> <span class="pre">(n</span> <span class="pre">:</span> <span class="pre">&#8469;),</span> <span class="pre">0</span> <span class="pre">&lt;</span> <span class="pre">n.fact</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">dvd_fact</span> <span class="pre">:</span> <span class="pre">0</span> <span class="pre">&lt;</span> <span class="pre">m</span> <span class="pre">&#8594;</span> <span class="pre">m</span> <span class="pre">&#8804;</span> <span class="pre">n</span> <span class="pre">&#8594;</span> <span class="pre">m</span> <span class="pre">&#8739;</span> <span class="pre">n.fact</span></code></p></li>
+</ul>
+</dd>
+<dt><strong>Smallest factor</strong></dt><dd><ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">n.min_fac</span> <span class="pre">:=</span></code> smallest non-trivial factor of <code class="docutils literal notranslate"><span class="pre">n</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">min_fac_prime</span> <span class="pre">:</span> <span class="pre">n</span> <span class="pre">&#8800;</span> <span class="pre">1</span> <span class="pre">&#8594;</span> <span class="pre">n.min_fac.prime</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">min_fac_pos</span> <span class="pre">:</span> <span class="pre">&#8704;</span> <span class="pre">(n</span> <span class="pre">:</span> <span class="pre">&#8469;),</span> <span class="pre">0</span> <span class="pre">&lt;</span> <span class="pre">n.min_fac</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">min_fac_dvd</span> <span class="pre">:</span> <span class="pre">&#8704;</span> <span class="pre">(n</span> <span class="pre">:</span> <span class="pre">&#8469;),</span> <span class="pre">n.min_fac</span> <span class="pre">&#8739;</span> <span class="pre">n</span></code></p></li>
+</ul>
+</dd>
+</dl>
+<p>Check out <a class="reference external" href="https://leanprover-community.github.io/mathlib_docs/data/nat/prime.html">data.nat.prime</a> for more theorems about primes.
+The exercise below is very open-ended.
+You should take your time, check the goal window at every step, and sketch out the proof on paper whenever you get lost.</p>
+<div style="position: relative">
+<div style='position: absolute; right: 0; top: 0; padding: 1ex'><a href="https://leanprover-community.github.io/lean-web-editor/#code=import%20tactic%20data.nat.prime%0Anoncomputable%20theory%0Aopen_locale%20classical%0A%0Aopen%20nat%0A%0Atheorem%20dvd_sub_one%20%7Bp%20a%20%3A%20%E2%84%95%7D%20%3A%20(p%20%E2%88%A3%20a)%20%E2%86%92%20(p%20%E2%88%A3%20a%20%2B%201)%20%E2%86%92%20(p%20%E2%88%A3%201)%20%3A%3D%0Abegin%0A%20%20sorry%2C%0Aend%0A%0A%2F-%0Advd_sub_one%20%3A%20(p%20%E2%88%A3%20a)%20%E2%86%92%20(p%20%E2%88%A3%20a%20%2B%201)%20%E2%86%92%20(p%20%E2%88%A3%201)%0A%0Am%20%E2%88%A3%20n%20%3A%3D%20%E2%88%83%20k%20%3A%20%E2%84%95%2C%20m%20%3D%20n%20*%20k%0Am.prime%20%3A%3D%20%202%20%E2%89%A4%20p%20%E2%88%A7%20(%E2%88%80%20(m%20%3A%20%E2%84%95)%2C%20m%20%E2%88%A3%20p%20%E2%86%92%20m%20%3D%201%20%E2%88%A8%20m%20%3D%20p)%0Aprime.not_dvd_one%20%3A%20(prime%20p)%20%E2%86%92%20%C2%AC%20p%20%E2%88%A3%201%0A%0An.fact%20%3A%3D%20n!%20(n%20factorial)%0Afact_pos%20%3A%20%E2%88%80%20(n%20%3A%20%E2%84%95)%2C%200%20%3C%20n.fact%0Advd_fact%20%3A%200%20%3C%20m%20%E2%86%92%20m%20%E2%89%A4%20n%20%E2%86%92%20m%20%E2%88%A3%20n.fact%0A%0An.min_fac%20%3A%3D%20smallest%20non-trivial%20factor%20of%20n%0Amin_fac_prime%20%3A%20n%20%E2%89%A0%201%20%E2%86%92%20n.min_fac.prime%0Amin_fac_pos%20%3A%20%E2%88%80%20(n%20%3A%20%E2%84%95)%2C%200%20%3C%20n.min_fac%0Amin_fac_dvd%20%3A%20%E2%88%80%20(n%20%3A%20%E2%84%95)%2C%20n.min_fac%20%E2%88%A3%20n%0A-%2F%0A%0Atheorem%20exists_infinite_primes%20(n%20%3A%20%E2%84%95)%20%3A%20%E2%88%83%20p%2C%20nat.prime%20p%20%E2%88%A7%20p%20%E2%89%A5%20n%20%3A%3D%0Abegin%0A%20%20set%20p%3A%3D%20(n.fact%20%2B%201).min_fac%2C%0A%20%20sorry%2C%0Aend" target="_blank" tryitfile="../examples/day3/unnamed_226.lean">
+try it!</a></div><div class="highlight-lean notranslate"><div class="highlight"><pre><span></span>import tactic data.nat.prime
+noncomputable theory
+open_locale classical
+
+open nat
+
+theorem dvd_sub_one {p a : &#8469;} : (p &#8739; a) &#8594; (p &#8739; a + 1) &#8594; (p &#8739; 1) :=
+begin
+  sorry,
+end
+
+/-
+dvd_sub_one : (p &#8739; a) &#8594; (p &#8739; a + 1) &#8594; (p &#8739; 1)
+
+m &#8739; n := &#8707; k : &#8469;, m = n * k
+m.prime :=  2 &#8804; p &#8743; (&#8704; (m : &#8469;), m &#8739; p &#8594; m = 1 &#8744; m = p)
+prime.not_dvd_one : (prime p) &#8594; &#172; p &#8739; 1
+
+n.fact := n! (n factorial)
+fact_pos : &#8704; (n : &#8469;), 0 &lt; n.fact
+dvd_fact : 0 &lt; m &#8594; m &#8804; n &#8594; m &#8739; n.fact
+
+n.min_fac := smallest non-trivial factor of n
+min_fac_prime : n &#8800; 1 &#8594; n.min_fac.prime
+min_fac_pos : &#8704; (n : &#8469;), 0 &lt; n.min_fac
+min_fac_dvd : &#8704; (n : &#8469;), n.min_fac &#8739; n
+-/
+
+theorem exists_infinite_primes (n : &#8469;) : &#8707; p, nat.prime p &#8743; p &#8805; n :=
+begin
+  set p:= (n.fact + 1).min_fac,
+  sorry,
+end
+</pre></div>
+</div>
+</div></div>
+<div class="section" id="final-remarks">
+<h2><span class="section-number">3.4. </span>Final remarks<a class="headerlink" href="#final-remarks" title="Permalink to this headline">&#182;</a></h2>
+<p>It would be great if there was a one-to-one correspondence between &#8220;hand-written proofs&#8221; and proofs in Lean. But that is far from the case. When we write proofs we leave out a lot of details without even realizing it and expect the reader to be intelligent enough to fill them in. This is both a bug and feature. On the one hand this makes proofs readable. On the other hand too many &#8220;obviously true&#8221; arguments make proofs undecipherable and often wrong.</p>
+<p>Unlike human readers, computers are pretty dumb (as of writing these notes). They can only do what you tell them to do and you cannot expect them to &#8220;fill in the details&#8221;. But it is humanly impossible to teach a computer every single trivial fact about, say the natural numbers. The <a class="reference external" href="https://leanprover-community.github.io/mathlib_docs/">Lean math library</a> contains a lot of trivial theorems but this collection is far from comprehensive.
+So theorem proving is Lean often involves the following steps:</p>
+<ul class="simple">
+<li><p>Scan the library to see which definitions and theorems might be useful.</p></li>
+<li><p>Choose the right hypotheses and wording for your theorem to match the theorems in the library. (Sadly, changing the wording slightly might end up making the proof infinitely harder to prove.)</p></li>
+<li><p>Break the theorem into small lemmas so that you can use the simplifiers more frequently.</p></li>
+</ul>
+<p>The hope is that one day we won&#8217;t have to do this and a theorem proving AI will eliminate the difference between human proofs and machine proofs.</p>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">Lean at MC 2020</a></h1>
+
+
+
+
+
+
+
+
+<!-- <h3>Navigation</h3> -->
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="day1.html">1. Logic in Lean - Part 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="day2.html">2. Logic in Lean - Part 2</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">3. Infinitely Many Primes</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#equality">3.1. Equality</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#creating-subgoals">3.2. Creating subgoals</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id2">3.3. Infinitely many primes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#final-remarks">3.4. Final remarks</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="day4.html">4. Sqrt 2 is irrational</a></li>
+<li class="toctree-l1"><a class="reference internal" href="day5.html">5. Bits &amp; Pieces</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="symbols.html">Pretty Symbols in Lean</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tactics.html">Glossary of tactics</a></li>
+</ul>
+
+
+<hr />
+<ul>
+    
+    <li class="toctree-l1"><a href="latex/lean_at_mc2020.pdf">PDF version</a></li>
+    
+    <li class="toctree-l1"><a href="https://leanprover-community.github.io/lean-web-editor/">Lean Live Editor</a></li>
+    
+    <li class="toctree-l1"><a href="https://leanprover-community.github.io/mathlib_docs/">Lean Documentation</a></li>
+    
+    <li class="toctree-l1"><a href="https://leanprover-community.github.io/">Leanprover Community</a></li>
+    
+</ul>
+
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, Apurva Nakade, Jalex Stark.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.1.2</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="sources/day3.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

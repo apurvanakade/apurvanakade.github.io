@@ -1,0 +1,157 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="ascii" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mathematical Induction &#8212; Lean at MC 2020 0.1 documentation</title>
+    <link rel="stylesheet" href="static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="static/pygments.css" type="text/css" />
+    <script id="documentation_options" data-url_root="./" src="static/documentation_options.js"></script>
+    <script src="static/jquery.js"></script>
+    <script src="static/underscore.js"></script>
+    <script src="static/doctools.js"></script>
+    <script src="static/language_data.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="shortcut icon" href="static/favicon.ico"/>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+   
+  <link rel="stylesheet" href="static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="mathematical-induction">
+<h1>Mathematical Induction<a class="headerlink" href="#mathematical-induction" title="Permalink to this headline">&#182;</a></h1>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">induction</span></code></p></td>
+<td><p>If <code class="docutils literal notranslate"><span class="pre">n</span> <span class="pre">:</span> <span class="pre">&#8469;</span></code> is a hypothesis and the target of the current goal is a proposition
+<code class="docutils literal notranslate"><span class="pre">&#8866;</span> <span class="pre">P(n)</span></code> that depends on <code class="docutils literal notranslate"><span class="pre">n</span></code>,
+then <code class="docutils literal notranslate"><span class="pre">induction</span> <span class="pre">n</span> <span class="pre">with</span> <span class="pre">d</span> <span class="pre">hd,</span></code> removes the hypothesis <code class="docutils literal notranslate"><span class="pre">n</span> <span class="pre">:</span> <span class="pre">&#8469;</span></code> produces breaks down the current goal into two goals:</p>
+<ul class="simple">
+<li><p>the first with target <code class="docutils literal notranslate"><span class="pre">&#8866;</span> <span class="pre">P(0)</span></code></p></li>
+<li><p>the second with two added hypotheses <code class="docutils literal notranslate"><span class="pre">d</span> <span class="pre">:</span> <span class="pre">&#8469;</span></code> and <code class="docutils literal notranslate"><span class="pre">hd</span> <span class="pre">:</span> <span class="pre">P(d)</span></code> and target <code class="docutils literal notranslate"><span class="pre">&#8866;</span> <span class="pre">P(d.succ)</span></code>.</p></li>
+</ul>
+<p>This is precisely the statement of mathematical induction.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<div style="position: relative">
+<div style='position: absolute; right: 0; top: 0; padding: 1ex'><a href="https://leanprover-community.github.io/lean-web-editor/#code=def%20f%20%3A%20%E2%84%95%20%E2%86%92%20%E2%84%95%0A%7C%200%20%3A%3D%200%0A%7C%20(n%20%2B%201)%20%3A%3D%20n%20%2B%201%20%2B%20f%20n%0A%0Aexample%20%3A%20f%201%20%3D%201%20%3A%3D%0Abegin%0A%20%20unfold%20f%2C%0Aend%0A%0Aexample%20(n%20%3A%20%E2%84%95)%20%3A%202%20*%20f%20n%20%3D%20n%20*%20(n%20%2B%201)%20%3A%3D%0Abegin%0A%20%20induction%20n%20with%20d%20hd%2C%0A%20%20--%20base%20case%0A%20%20%7B%20unfold%20f%2C%20simp%20%7D%2C%0A%20%20rw%20nat.succ_eq_add_one%2C%0A%20%20unfold%20f%2C%20ring%2C%0A%20%20rw%20hd%2C%20ring%2C%0Aend" target="_blank" tryitfile="../examples/dump/unnamed_20.lean">
+try it!</a></div><div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="n">def</span> <span class="n">f</span> <span class="o">:</span> <span class="bp">&#8469;</span> <span class="bp">&#8594;</span> <span class="bp">&#8469;</span>
+<span class="bp">|</span> <span class="mi">0</span> <span class="o">:=</span> <span class="mi">0</span>
+<span class="bp">|</span> <span class="o">(</span><span class="n">n</span> <span class="bp">+</span> <span class="mi">1</span><span class="o">)</span> <span class="o">:=</span> <span class="n">n</span> <span class="bp">+</span> <span class="mi">1</span> <span class="bp">+</span> <span class="n">f</span> <span class="n">n</span>
+
+<span class="kn">example</span> <span class="o">:</span> <span class="n">f</span> <span class="mi">1</span> <span class="bp">=</span> <span class="mi">1</span> <span class="o">:=</span>
+<span class="k">begin</span>
+  <span class="n">unfold</span> <span class="n">f</span><span class="o">,</span>
+<span class="kn">end</span>
+
+<span class="kn">example</span> <span class="o">(</span><span class="n">n</span> <span class="o">:</span> <span class="bp">&#8469;</span><span class="o">)</span> <span class="o">:</span> <span class="mi">2</span> <span class="bp">*</span> <span class="n">f</span> <span class="n">n</span> <span class="bp">=</span> <span class="n">n</span> <span class="bp">*</span> <span class="o">(</span><span class="n">n</span> <span class="bp">+</span> <span class="mi">1</span><span class="o">)</span> <span class="o">:=</span>
+<span class="k">begin</span>
+  <span class="n">induction</span> <span class="n">n</span> <span class="k">with</span> <span class="n">d</span> <span class="n">hd</span><span class="o">,</span>
+  <span class="c1">-- base case</span>
+  <span class="o">{</span> <span class="n">unfold</span> <span class="n">f</span><span class="o">,</span> <span class="n">simp</span> <span class="o">},</span>
+  <span class="n">rw</span> <span class="n">nat</span><span class="bp">.</span><span class="n">succ_eq_add_one</span><span class="o">,</span>
+  <span class="n">unfold</span> <span class="n">f</span><span class="o">,</span> <span class="n">ring</span><span class="o">,</span>
+  <span class="n">rw</span> <span class="n">hd</span><span class="o">,</span> <span class="n">ring</span><span class="o">,</span>
+<span class="kn">end</span>
+</pre></div>
+</div>
+</div></div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">Lean at MC 2020</a></h1>
+
+
+
+
+
+
+
+
+<!-- <h3>Navigation</h3> -->
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="day1.html">1. Logic in Lean - Part 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="day2.html">2. Logic in Lean - Part 2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="day3.html">3. Infinitely Many Primes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="day4.html">4. Sqrt 2 is irrational</a></li>
+<li class="toctree-l1"><a class="reference internal" href="day5.html">5. Bits &amp; Pieces</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="symbols.html">Pretty Symbols in Lean</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tactics.html">Glossary of tactics</a></li>
+</ul>
+
+
+<hr />
+<ul>
+    
+    <li class="toctree-l1"><a href="latex/lean_at_mc2020.pdf">PDF version</a></li>
+    
+    <li class="toctree-l1"><a href="https://leanprover-community.github.io/lean-web-editor/">Lean Live Editor</a></li>
+    
+    <li class="toctree-l1"><a href="https://leanprover-community.github.io/mathlib_docs/">Lean Documentation</a></li>
+    
+    <li class="toctree-l1"><a href="https://leanprover-community.github.io/">Leanprover Community</a></li>
+    
+</ul>
+
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, Apurva Nakade, Jalex Stark.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.1.2</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="sources/dump.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

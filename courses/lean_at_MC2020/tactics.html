@@ -1,0 +1,351 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="ascii" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glossary of tactics &#8212; Lean at MC 2020 0.1 documentation</title>
+    <link rel="stylesheet" href="static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="static/pygments.css" type="text/css" />
+    <script id="documentation_options" data-url_root="./" src="static/documentation_options.js"></script>
+    <script src="static/jquery.js"></script>
+    <script src="static/underscore.js"></script>
+    <script src="static/doctools.js"></script>
+    <script src="static/language_data.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="shortcut icon" href="static/favicon.ico"/>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Pretty Symbols in Lean" href="symbols.html" />
+   
+  <link rel="stylesheet" href="static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="glossary-of-tactics">
+<span id="tactics"></span><h1>Glossary of tactics<a class="headerlink" href="#glossary-of-tactics" title="Permalink to this headline">&#182;</a></h1>
+<div class="section" id="implications-in-lean">
+<h2>Implications in Lean<a class="headerlink" href="#implications-in-lean" title="Permalink to this headline">&#182;</a></h2>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 80%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">exact</span></code></p></td>
+<td><p>If
+<code class="docutils literal notranslate"><span class="pre">P</span></code> is the target of the current goal
+and <code class="docutils literal notranslate"><span class="pre">hp</span></code> is a term of type <code class="docutils literal notranslate"><span class="pre">P</span></code>,
+then <code class="docutils literal notranslate"><span class="pre">exact</span> <span class="pre">hp,</span></code> will close the goal.</p>
+<p>Mathematically, this saying &#8220;this is <em>exactly</em> what we were required to prove&#8221;.</p>
+</td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">intro</span></code></p></td>
+<td><p>If the target of the current goal is a function <code class="docutils literal notranslate"><span class="pre">P</span> <span class="pre">&#8594;</span> <span class="pre">Q</span></code>,
+then <code class="docutils literal notranslate"><span class="pre">intro</span> <span class="pre">hp,</span></code> will produce a hypothesis
+<code class="docutils literal notranslate"><span class="pre">hp</span> <span class="pre">:</span> <span class="pre">P</span></code> and change the target to  <code class="docutils literal notranslate"><span class="pre">Q</span></code>.</p>
+<p>Mathematically, this is saying that in order to define a function from <code class="docutils literal notranslate"><span class="pre">P</span></code> to <code class="docutils literal notranslate"><span class="pre">Q</span></code>,
+we first need to choose an arbitrary element of <code class="docutils literal notranslate"><span class="pre">P</span></code>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 80%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">have</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">have</span></code> is used to create intermediate variables.</p>
+<p>If <code class="docutils literal notranslate"><span class="pre">f</span></code> is a term of type <code class="docutils literal notranslate"><span class="pre">P</span> <span class="pre">&#8594;</span> <span class="pre">Q</span></code> and
+<code class="docutils literal notranslate"><span class="pre">hp</span></code> is a term of type <code class="docutils literal notranslate"><span class="pre">P</span></code>, then
+<code class="docutils literal notranslate"><span class="pre">have</span> <span class="pre">hq</span> <span class="pre">:=</span> <span class="pre">f(hp),</span></code> creates the hypothesis <code class="docutils literal notranslate"><span class="pre">hq</span> <span class="pre">:</span> <span class="pre">Q</span></code> .</p>
+</td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">apply</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">apply</span></code> is used for backward reasoning.</p>
+<p>If the target of the current goal is <code class="docutils literal notranslate"><span class="pre">Q</span></code> and
+<code class="docutils literal notranslate"><span class="pre">f</span></code> is a term of type <code class="docutils literal notranslate"><span class="pre">P</span> <span class="pre">&#8594;</span> <span class="pre">Q</span></code>, then
+<code class="docutils literal notranslate"><span class="pre">apply</span> <span class="pre">f,</span></code> changes target to <code class="docutils literal notranslate"><span class="pre">P</span></code>.</p>
+<p>Mathematically, this is equivalent to saying &#8220;because <code class="docutils literal notranslate"><span class="pre">P</span></code> implies <code class="docutils literal notranslate"><span class="pre">Q</span></code>, to prove <code class="docutils literal notranslate"><span class="pre">Q</span></code> it suffices to prove <code class="docutils literal notranslate"><span class="pre">P</span></code>&#8221;.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="proof-by-contradiction">
+<h2>Proof by contradiction<a class="headerlink" href="#proof-by-contradiction" title="Permalink to this headline">&#182;</a></h2>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">exfalso</span></code></p></td>
+<td><p>Changes the target of the current goal to <code class="docutils literal notranslate"><span class="pre">false</span></code>.</p>
+<p>The name derives from <a class="reference external" href="https://en.wikipedia.org/wiki/Principle_of_explosion">&#8220;ex falso, quodlibet&#8221;</a> which translates to &#8220;from contradiction, anything&#8221;.
+You should use this tactic when there are contradictory hypotheses present.</p>
+</td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">by_cases</span></code></p></td>
+<td><p>If <code class="docutils literal notranslate"><span class="pre">P</span> <span class="pre">:</span> <span class="pre">Prop</span></code>, then <code class="docutils literal notranslate"><span class="pre">by_cases</span> <span class="pre">P,</span></code> creates two goals,
+the first with a hypothesis <code class="docutils literal notranslate"><span class="pre">hp:</span> <span class="pre">P</span></code> and second with a hypothesis <code class="docutils literal notranslate"><span class="pre">hp:</span> <span class="pre">&#172;</span> <span class="pre">P</span></code>.</p>
+<p>Mathematically, this is saying either <code class="docutils literal notranslate"><span class="pre">P</span></code> is true or <code class="docutils literal notranslate"><span class="pre">P</span></code> is false.
+<code class="docutils literal notranslate"><span class="pre">by_cases</span></code> is the most direct application of the law of excluded middle.</p>
+</td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">by_contradiction</span></code></p></td>
+<td><p>If the target of the current goal is  <code class="docutils literal notranslate"><span class="pre">Q</span></code>,
+then <code class="docutils literal notranslate"><span class="pre">by_contradiction,</span></code> changes the target to  <code class="docutils literal notranslate"><span class="pre">false</span></code> and
+adds <code class="docutils literal notranslate"><span class="pre">hnq</span> <span class="pre">:</span> <span class="pre">&#172;</span> <span class="pre">Q</span></code> as a hypothesis.</p>
+<p>Mathematically, this is proof by contradiction.</p>
+</td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">push_neg</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">push_neg,</span></code> simplifies negations in the target.</p>
+<p>For example, if the target of the current goal is <code class="docutils literal notranslate"><span class="pre">&#172;</span> <span class="pre">&#172;</span> <span class="pre">P</span></code>, then
+<code class="docutils literal notranslate"><span class="pre">push_neg,</span></code> simplifies it to <code class="docutils literal notranslate"><span class="pre">P</span></code>.</p>
+<p>You can also push negations across a hypothesis <code class="docutils literal notranslate"><span class="pre">hp</span> <span class="pre">:</span> <span class="pre">P</span></code> using <code class="docutils literal notranslate"><span class="pre">push_neg</span> <span class="pre">at</span> <span class="pre">hp,</span></code>.</p>
+</td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">contrapose!</span></code></p></td>
+<td><p>If the target of the current goal is  <code class="docutils literal notranslate"><span class="pre">P</span> <span class="pre">&#8594;</span> <span class="pre">Q</span></code>,
+then <code class="docutils literal notranslate"><span class="pre">contrapose!,</span></code> changes the target to  <code class="docutils literal notranslate"><span class="pre">&#172;</span> <span class="pre">Q</span> <span class="pre">&#8594;</span> <span class="pre">&#172;</span> <span class="pre">P</span></code>.</p>
+<p>If the target of the current goal is <code class="docutils literal notranslate"><span class="pre">Q</span></code>
+and one of the hypotheses is <code class="docutils literal notranslate"><span class="pre">hp</span> <span class="pre">:</span> <span class="pre">P</span></code>,
+then <code class="docutils literal notranslate"><span class="pre">contrapose!</span> <span class="pre">hp,</span></code> changes the target to  <code class="docutils literal notranslate"><span class="pre">&#172;</span> <span class="pre">P</span></code>
+and changes the hypothesis to <code class="docutils literal notranslate"><span class="pre">hp</span> <span class="pre">:</span> <span class="pre">&#172;</span> <span class="pre">Q</span></code>.</p>
+<p>Mathematically, this is replacing the target by its contrapositive.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="and-or">
+<h2>And / Or<a class="headerlink" href="#and-or" title="Permalink to this headline">&#182;</a></h2>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">cases</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">cases</span></code> is a general tactic that breaks a complicated term into simpler ones.</p>
+<p>If <code class="docutils literal notranslate"><span class="pre">hpq</span></code> is a term of type <code class="docutils literal notranslate"><span class="pre">P</span> <span class="pre">&#8743;</span> <span class="pre">Q</span></code>, then
+<code class="docutils literal notranslate"><span class="pre">cases</span> <span class="pre">hpq</span> <span class="pre">with</span> <span class="pre">hp</span> <span class="pre">hq,</span></code> breaks it into <code class="docutils literal notranslate"><span class="pre">hp</span> <span class="pre">:</span> <span class="pre">P</span></code> and <code class="docutils literal notranslate"><span class="pre">hp</span> <span class="pre">:</span> <span class="pre">Q</span></code>.</p>
+<p>If <code class="docutils literal notranslate"><span class="pre">hpq</span></code> is a term of type <code class="docutils literal notranslate"><span class="pre">P</span> <span class="pre">&#215;</span> <span class="pre">Q</span></code>, then
+<code class="docutils literal notranslate"><span class="pre">cases</span> <span class="pre">hpq</span> <span class="pre">with</span> <span class="pre">hp</span> <span class="pre">hq,</span></code> breaks it into <code class="docutils literal notranslate"><span class="pre">hp</span> <span class="pre">:</span> <span class="pre">P</span></code> and <code class="docutils literal notranslate"><span class="pre">hp</span> <span class="pre">:</span> <span class="pre">Q</span></code>.</p>
+<p>If <code class="docutils literal notranslate"><span class="pre">fg</span></code> is a term of type <code class="docutils literal notranslate"><span class="pre">P</span> <span class="pre">&#8596;</span> <span class="pre">Q</span></code>, then
+<code class="docutils literal notranslate"><span class="pre">cases</span> <span class="pre">fg</span> <span class="pre">with</span> <span class="pre">f</span> <span class="pre">g,</span></code> breaks it into <code class="docutils literal notranslate"><span class="pre">f</span> <span class="pre">:</span> <span class="pre">P</span> <span class="pre">&#8594;</span> <span class="pre">Q</span></code> and <code class="docutils literal notranslate"><span class="pre">g</span> <span class="pre">:</span> <span class="pre">Q</span> <span class="pre">&#8594;</span> <span class="pre">P</span></code>.</p>
+<p>If <code class="docutils literal notranslate"><span class="pre">hpq</span></code> is a term of type <code class="docutils literal notranslate"><span class="pre">P</span> <span class="pre">&#8744;</span> <span class="pre">Q</span></code>, then
+<code class="docutils literal notranslate"><span class="pre">cases</span> <span class="pre">hpq</span> <span class="pre">with</span> <span class="pre">hp</span> <span class="pre">hq,</span></code> creates two goals and adds the hypotheses <code class="docutils literal notranslate"><span class="pre">hp</span> <span class="pre">:</span> <span class="pre">P</span></code> and <code class="docutils literal notranslate"><span class="pre">hq</span> <span class="pre">:</span> <span class="pre">Q</span></code> to one each.</p>
+</td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">split</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">split</span></code> is a general tactic that breaks a complicated goal into simpler ones.</p>
+<p>If the target of the current goal is <code class="docutils literal notranslate"><span class="pre">P</span> <span class="pre">&#8743;</span> <span class="pre">Q</span></code>, then
+<code class="docutils literal notranslate"><span class="pre">split,</span></code> breaks up the goal into two goals with targets <code class="docutils literal notranslate"><span class="pre">P</span></code> and <code class="docutils literal notranslate"><span class="pre">Q</span></code>.</p>
+<p>If the target of the current goal is <code class="docutils literal notranslate"><span class="pre">P</span> <span class="pre">&#215;</span> <span class="pre">Q</span></code>, then
+<code class="docutils literal notranslate"><span class="pre">split,</span></code> breaks up the goal into two goals with targets <code class="docutils literal notranslate"><span class="pre">P</span></code> and <code class="docutils literal notranslate"><span class="pre">Q</span></code>.</p>
+<p>If the target of the current goal is <code class="docutils literal notranslate"><span class="pre">P</span> <span class="pre">&#8596;</span> <span class="pre">Q</span></code>, then
+<code class="docutils literal notranslate"><span class="pre">split,</span></code> breaks up the goal into two goals with targets <code class="docutils literal notranslate"><span class="pre">P</span> <span class="pre">&#8594;</span> <span class="pre">Q</span></code> and <code class="docutils literal notranslate"><span class="pre">Q</span> <span class="pre">&#8594;</span> <span class="pre">P</span></code>.</p>
+</td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">left</span></code></p></td>
+<td><p>If the target of the current goal is <code class="docutils literal notranslate"><span class="pre">P</span> <span class="pre">&#8744;</span> <span class="pre">Q</span></code>, then
+<code class="docutils literal notranslate"><span class="pre">left,</span></code> changes the target to <code class="docutils literal notranslate"><span class="pre">P</span></code>.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">right</span></code></p></td>
+<td><p>If the target of the current goal is <code class="docutils literal notranslate"><span class="pre">P</span> <span class="pre">&#8744;</span> <span class="pre">Q</span></code>, then
+<code class="docutils literal notranslate"><span class="pre">right,</span></code> changes the target to <code class="docutils literal notranslate"><span class="pre">Q</span></code>.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="quantifiers">
+<h2>Quantifiers<a class="headerlink" href="#quantifiers" title="Permalink to this headline">&#182;</a></h2>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">have</span></code></p></td>
+<td><p>If <code class="docutils literal notranslate"><span class="pre">hp</span></code> is a term of type <code class="docutils literal notranslate"><span class="pre">&#8704;</span> <span class="pre">x</span> <span class="pre">:</span> <span class="pre">X,</span> <span class="pre">P</span> <span class="pre">x</span></code> and
+<code class="docutils literal notranslate"><span class="pre">y</span></code> is a term of type <code class="docutils literal notranslate"><span class="pre">y</span></code> then
+<code class="docutils literal notranslate"><span class="pre">have</span> <span class="pre">hpy</span> <span class="pre">:=</span> <span class="pre">hp(y)</span></code> creates a hypothesis <code class="docutils literal notranslate"><span class="pre">hpy</span> <span class="pre">:</span> <span class="pre">P</span> <span class="pre">y</span></code>.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">intro</span></code></p></td>
+<td><p>If the target of the current goal is <code class="docutils literal notranslate"><span class="pre">&#8704;</span> <span class="pre">x</span> <span class="pre">:</span> <span class="pre">X,</span> <span class="pre">P</span> <span class="pre">x</span></code>, then
+<code class="docutils literal notranslate"><span class="pre">intro</span> <span class="pre">x,</span></code> creates a hypothesis <code class="docutils literal notranslate"><span class="pre">x</span> <span class="pre">:</span> <span class="pre">X</span></code> and
+changes the target to <code class="docutils literal notranslate"><span class="pre">P</span> <span class="pre">x</span></code>.</p></td>
+</tr>
+</tbody>
+</table>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">cases</span></code></p></td>
+<td><p>If <code class="docutils literal notranslate"><span class="pre">hp</span></code> is a term of type <code class="docutils literal notranslate"><span class="pre">&#8707;</span> <span class="pre">x</span> <span class="pre">:</span> <span class="pre">X,</span> <span class="pre">P</span> <span class="pre">x</span></code>, then
+<code class="docutils literal notranslate"><span class="pre">cases</span> <span class="pre">hp</span> <span class="pre">with</span> <span class="pre">x</span> <span class="pre">key,</span></code> breaks it into
+<code class="docutils literal notranslate"><span class="pre">x</span> <span class="pre">:</span> <span class="pre">X</span></code> and <code class="docutils literal notranslate"><span class="pre">key</span> <span class="pre">:</span> <span class="pre">P</span> <span class="pre">x</span></code>.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">use</span></code></p></td>
+<td><p>If the target of the current goal is <code class="docutils literal notranslate"><span class="pre">&#8707;</span> <span class="pre">x</span> <span class="pre">:</span> <span class="pre">X,</span> <span class="pre">P</span> <span class="pre">x</span></code>
+and <code class="docutils literal notranslate"><span class="pre">y</span></code> is a term of type <code class="docutils literal notranslate"><span class="pre">X</span></code>, then
+<code class="docutils literal notranslate"><span class="pre">use</span> <span class="pre">y,</span></code> changes the target to <code class="docutils literal notranslate"><span class="pre">P</span> <span class="pre">y</span></code> and tries to close the goal.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="proving-trivial-statements">
+<h2>Proving &#8220;trivial&#8221; statements<a class="headerlink" href="#proving-trivial-statements" title="Permalink to this headline">&#182;</a></h2>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">norm_num</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">norm_num</span></code> is Lean&#8217;s calculator. If the target has a proof that involves <em>only</em> numbers and arithmetic operations,
+then <code class="docutils literal notranslate"><span class="pre">norm_num</span></code> will close this goal.</p>
+<p>If <code class="docutils literal notranslate"><span class="pre">hp</span> <span class="pre">:</span> <span class="pre">P</span></code> is an assumption then <code class="docutils literal notranslate"><span class="pre">norm_num</span> <span class="pre">at</span> <span class="pre">hp,</span></code> tries to use simplify <code class="docutils literal notranslate"><span class="pre">hp</span></code> using basic arithmetic operations.</p>
+</td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">ring</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">ring,</span></code> is Lean&#8217;s symbolic manipulator.
+If the target has a proof that involves <em>only</em> algebraic operations,
+then <code class="docutils literal notranslate"><span class="pre">ring,</span></code> will close the goal.</p>
+<p>If <code class="docutils literal notranslate"><span class="pre">hp</span> <span class="pre">:</span> <span class="pre">P</span></code> is an assumption then <code class="docutils literal notranslate"><span class="pre">ring</span> <span class="pre">at</span> <span class="pre">hp,</span></code> tries to use simplify <code class="docutils literal notranslate"><span class="pre">hp</span></code> using basic algebraic operations.</p>
+</td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">linarith</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">linarith,</span></code> is Lean&#8217;s inequality solver.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">simp</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">simp,</span></code> is a very complex tactic that tries to use theorems from the mathlib library to close the goal.
+You should only ever use <code class="docutils literal notranslate"><span class="pre">simp,</span></code> to <em>close a goal</em> because its behavior changes as more theorems get added to the library.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="equality">
+<h2>Equality<a class="headerlink" href="#equality" title="Permalink to this headline">&#182;</a></h2>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">rw</span></code></p></td>
+<td><p>If <code class="docutils literal notranslate"><span class="pre">f</span></code> is a term of type <code class="docutils literal notranslate"><span class="pre">P</span> <span class="pre">=</span> <span class="pre">Q</span></code> (or <code class="docutils literal notranslate"><span class="pre">P</span> <span class="pre">&#8596;</span> <span class="pre">Q</span></code>), then</p>
+<blockquote>
+<div><p><code class="docutils literal notranslate"><span class="pre">rw</span> <span class="pre">f,</span></code> searches for <code class="docutils literal notranslate"><span class="pre">P</span></code> in the target and replaces it with <code class="docutils literal notranslate"><span class="pre">Q</span></code>.</p>
+<p><code class="docutils literal notranslate"><span class="pre">rw</span> <span class="pre">&#8592;f,</span></code> searches for <code class="docutils literal notranslate"><span class="pre">Q</span></code> in the target and replaces it with <code class="docutils literal notranslate"><span class="pre">P</span></code>.</p>
+</div></blockquote>
+<p>If additionally, <code class="docutils literal notranslate"><span class="pre">hr</span> <span class="pre">:</span> <span class="pre">R</span></code> is a hypothesis, then</p>
+<blockquote>
+<div><p><code class="docutils literal notranslate"><span class="pre">rw</span> <span class="pre">f</span> <span class="pre">at</span> <span class="pre">hr,</span></code> searches for <code class="docutils literal notranslate"><span class="pre">P</span></code> in the expression <code class="docutils literal notranslate"><span class="pre">R</span></code> and replaces it with <code class="docutils literal notranslate"><span class="pre">Q</span></code>.</p>
+<p><code class="docutils literal notranslate"><span class="pre">rw</span> <span class="pre">&#8592;f</span> <span class="pre">at</span> <span class="pre">hr,</span></code> searches for <code class="docutils literal notranslate"><span class="pre">Q</span></code> in the expression <code class="docutils literal notranslate"><span class="pre">R</span></code> and replaces it with <code class="docutils literal notranslate"><span class="pre">P</span></code>.</p>
+</div></blockquote>
+<p>Mathematically, this is saying because <code class="docutils literal notranslate"><span class="pre">P</span> <span class="pre">=</span> <span class="pre">Q</span></code>, we can replace <code class="docutils literal notranslate"><span class="pre">P</span></code> with <code class="docutils literal notranslate"><span class="pre">Q</span></code> (or the other way around).</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">Lean at MC 2020</a></h1>
+
+
+
+
+
+
+
+
+<!-- <h3>Navigation</h3> -->
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="day1.html">1. Logic in Lean - Part 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="day2.html">2. Logic in Lean - Part 2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="day3.html">3. Infinitely Many Primes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="day4.html">4. Sqrt 2 is irrational</a></li>
+<li class="toctree-l1"><a class="reference internal" href="day5.html">5. Bits &amp; Pieces</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="symbols.html">Pretty Symbols in Lean</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Glossary of tactics</a></li>
+</ul>
+
+
+<hr />
+<ul>
+    
+    <li class="toctree-l1"><a href="latex/lean_at_mc2020.pdf">PDF version</a></li>
+    
+    <li class="toctree-l1"><a href="https://leanprover-community.github.io/lean-web-editor/">Lean Live Editor</a></li>
+    
+    <li class="toctree-l1"><a href="https://leanprover-community.github.io/mathlib_docs/">Lean Documentation</a></li>
+    
+    <li class="toctree-l1"><a href="https://leanprover-community.github.io/">Leanprover Community</a></li>
+    
+</ul>
+
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, Apurva Nakade, Jalex Stark.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.1.2</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="sources/tactics.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
