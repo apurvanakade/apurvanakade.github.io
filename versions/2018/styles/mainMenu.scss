@@ -1,0 +1,39 @@
+
+#mainMenu {
+  display: flex;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  @media (min-width: $max-width){
+    left: $unit-margin;
+    right: $unit-margin;
+  }
+  @media (max-width: $max-width){
+    left: 0;
+    right: 0;
+  }
+  background-color: white;
+  line-height: 3em;
+  font-size: small;
+  transition-duration: 0.15s;
+  // width: 100%;
+  &:hover {
+    line-height: 6em;
+  }
+
+  @media (max-width: $max-width) {
+    box-shadow: 0 2px 5px rgba(0,0,0,.2);
+  }
+
+  .menuItem {
+    color: black;
+    width: 100%;
+    align-self: center;
+    text-align: center;
+  }
+
+  .menuSelected {
+    color: white;
+    background-color: #4F2683;
+  }
+}

@@ -1,0 +1,48 @@
+# Etc.
+
+[<img src="images/books.gif" width="250px" class="right" />](https://www.gocomics.com/sarahs-scribbles/2014/1/17)
+  
+Fun for me is [reading books] and writing on [my blog] about random
+things. I love to design websites like this one, and my blog\'s theme
+using [Hugo]. I have also started a couple of wikis for dumping [math-ed
+resources] and [computer hacks]. I love to [travel]. I type in [dvorak].
+
+In a past life I was involved with and highly recommend the following:
+
+-   London, ON
+    -   [Yoga Shack]
+    -   [West Coast Swing]
+
+-   Baltimore
+    -   [Yogaworks]
+    -   [Hiking at JHU]
+    -   [Climbing at JHU]
+    -   [Argentine Tango]
+    -   [JHU Ballroom Club]
+    -   [Mobtown Ballroom]
+    -   [Baltimore Bike Party]
+    -   [Baltimore Improv Group]
+
+  [reading books]: ./blog/art/books/index.html
+  [my blog]: ./blog
+  [Hugo]: https://gohugo.io/
+  [math-ed resources]: https://github.com/apurvnakade/math-education/wiki
+  [computer hacks]: https://github.com/apurvanakade/apurvanakade.github.io/wiki
+  [travel]: https://drive.google.com/open?id=1wpCR64gzKc7Zp8V-FIn43ANMA6QULjMS&usp=sharing
+ 
+  [dvorak]: https://en.wikipedia.org/wiki/Dvorak_Simplified_Keyboard
+ 
+  [Yoga Shack]: https://www.yogashack.ca/
+  [West Coast Swing]: https://westcoastswinglondon.ca/
+  [Yogaworks]: https://www.yogaworks.com/baltimore/
+  [Hiking at JHU]: https://studentaffairs.jhu.edu/recreation/experiential-education/trips/
+ 
+  [Climbing at JHU]: https://studentaffairs.jhu.edu/recreation/facilities/climbing-wall/
+ 
+  [Argentine Tango]: http://www.tangoestanoche.com/
+  [JHU Ballroom Club]: https://www.facebook.com/groups/jhuballroom/
+ 
+  [Mobtown Ballroom]: https://mobtownballroom.com/
+  [Baltimore Bike Party]: https://baltimorebikeparty.com/
+ 
+  [Baltimore Improv Group]: http://www.bigimprov.org/

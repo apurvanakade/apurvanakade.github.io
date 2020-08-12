@@ -1,0 +1,47 @@
+// @media (min-width: $max-width){
+  figure.figure-float-topleft {
+    float: left;
+    margin-left: 0px;
+    margin-top: 1.5*$unit-margin;
+    img {
+      display: block;
+      width: 250px;
+    }
+  }
+  figure.figure-float-right {
+    float: right;
+    margin-right: 0px;
+    // margin-top: 1.5*$unit-margin;
+    img {
+      width: 250px;
+    }
+    figcaption {
+      text-align: right;
+      font-style: italic;
+    }
+  }
+// }
+
+// @media (max-width: $max-width){
+//   figure.figure-float-topleft {
+//     img {
+//       display: block;
+//       width: 250px;
+//       margin-left: auto;
+//       margin-right: auto;
+//     }
+//   }
+
+//   figure.figure-float-right {
+//     text-align: center;
+//     img {
+//       width: 250px;
+//       margin: auto;
+//     }
+//     figcaption {
+//       // font-style: italic;
+//       font-size: 90%  ;
+//       line-height: 1.5;
+//     }
+//   }
+// }

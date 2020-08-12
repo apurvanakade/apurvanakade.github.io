@@ -1,0 +1,45 @@
+.two-column-data {
+  line-height: 1.5em;
+  border-spacing: 0px;
+  margin-left: $unit-margin;
+
+  td:nth-child(1),
+  th:nth-child(1) {
+    padding-right: 1ex;
+  }
+
+  td:nth-child(2) {
+    padding-left: $unit-padding;
+    border-left: 2px solid lightgray;
+  }
+}
+
+.notesTable {
+  @media (min-width: $max-width){
+    margin-right: 5*$unit-margin;
+    margin-left: 2*$unit-margin;
+  }
+  display: grid;
+  grid-template-columns: 18ex 1fr;
+  line-height: 1.25;
+  grid-row-gap: 2em;
+  align-items: start;
+  font-size: small;
+  padding-bottom: $unit-padding;
+
+  h3 {
+    margin: 0;
+    padding: 0.5em;
+    align-self: center;
+  }
+
+  .nestedGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    align-items: start;
+    grid-row-gap: 1em;
+    grid-column-gap: 1em;
+    padding: 0.5em;
+    border-left: 2px solid lightgray;
+  }
+}

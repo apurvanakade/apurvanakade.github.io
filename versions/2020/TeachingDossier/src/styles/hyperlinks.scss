@@ -1,0 +1,23 @@
+a {
+  font-weight: normal;
+  text-decoration: none;
+  color: peru;
+
+  &:link {
+    color: forestgreen;
+  }
+
+  &:hover {
+    color: crimson;
+  }
+}
+
+.external-link {
+  position: relative;
+
+  &:hover::after {
+    content: '➚';
+    position: absolute;
+    top: -0.75em;
+  }
+}

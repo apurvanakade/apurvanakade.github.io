@@ -1,0 +1,10 @@
+@mixin indent {
+  @media (max-width: $max-width){
+    margin-left: $unit-margin;
+    margin-right: $unit-margin;
+  }
+  @media (min-width: $max-width){
+    margin-left: $unit-margin;
+    margin-right: $unit-margin;
+  }
+}

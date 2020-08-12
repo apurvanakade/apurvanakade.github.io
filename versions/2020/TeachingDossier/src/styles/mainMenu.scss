@@ -1,0 +1,81 @@
+#mainMenu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: $header-fonts;
+  position: fixed;
+  opacity: 1;
+  background-color: white;
+  z-index: 2;
+  border-right: 1px solid lightgrey;
+
+  height: 100vh;
+  top: 0px;
+  left: 0px;
+  width: $menu-width;
+  padding-left: 2*$unit-padding;
+
+  line-height: 200%;
+  overflow: hidden;
+  white-space: nowrap;
+
+  width: $menu-width;
+  left: -$menu-width;
+  transition: 0.2s ease-out;
+
+  .menuItem {
+    color: grey;
+    display: block;
+    transition: 0.3s font-weight;
+    font-weight: normal;
+    &:before {
+      content: '';
+    }
+
+    margin-left: 2*$unit-padding;
+    padding-right: 2*$unit-padding;
+
+    &:hover {
+      color: black;
+    }
+  }
+
+  .subMenuItem {
+    padding-left: $unit-padding;
+  }
+
+  .menuSelected {
+    color: black;
+    font-weight: bold;
+    border-right: 0.5px solid black;
+  }
+
+  
+
+  &.closed {
+    transform: translateX(-100%);
+  }
+
+  &.open {
+    transform: translateX(100%);
+  }
+}
+
+
+#menuBtn {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  padding-left: $unit-padding;
+  padding-right: $unit-padding;
+  padding-top: $unit-padding;
+  margin: 0;
+  background: white;
+  opacity: 1;
+  cursor: pointer;
+
+  &:hover {
+    border: 1px solid whitesmoke;
+  }
+}

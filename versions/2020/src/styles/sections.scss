@@ -1,0 +1,30 @@
+.section-wrapper {
+  // this property vertically centers the section if it short
+  display: flex;
+  align-items: center;
+  min-height: calc(100vh - 200px);
+  margin-bottom: 100vh;
+}
+
+.section {
+  width: 100%;
+  @media (max-width: $max-width){
+    scroll-margin-top: 5*$unit-margin;
+  }
+}
+
+.small-section{
+  padding-top: 15*$unit-padding;
+}
+
+.section-title{
+  padding-bottom:3*$unit-padding;
+  border-bottom: 1px solid $border-color;
+  @include margin-small-screen;
+}
+
+.section-body{
+  padding-top: 0.25*$unit-padding;
+  margin-left: $unit-margin;
+  @include margin-small-screen;
+}

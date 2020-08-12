@@ -1,0 +1,38 @@
+--- 
+title: "Teaching Dossier - Apurva Nakade"
+author: "Apurva Nakade"
+output: bookdown::gitbook
+github-repo: apurvanakade/apurvanakade.github.io
+---
+# Teaching Dossier - Apurva Nakade
+
+
+I\'m a postdoc in the [Department of Mathematics] at the University of
+Western Ontario working with [Dan Christensen] and [Chris Kapulkin].
+
+Currently, I\'m teaching at the [USA/Canada Mathcamp]. In the fall,
+I\'ll be teaching Math 2151A (Discrete Math for Engineers) at UWO.
+
+  -------------- ----------------------------------------------------------------------------------------------------------------------------------------------------------
+  Email          [(left as an exercise to the reader)]{onmouseover="this.innerHTML='alastname@uwo.ca'" onmouseout="this.innerHTML='(left as an exercise to the reader)'"}
+  Office Hours   all the time
+  Job Stuff      [ceeeeEEEEEVVVVVeeeee]
+                 [Research Statement]
+  -------------- ----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+I work in the area of algebraic topology and homotopy theory. My broad
+interests are in understanding how homotopy theoretic tools can be used
+to solve problems from other areas of math. While learning homotopy type
+theory, I came across the [Lean theorem prover] and have since gotten
+obsessed with it. I am also very interested in math education. I want to
+modernize math education and bring it to the 21st century through the
+use of new technological innovations in teaching and in the process make
+it more accessible and equitable.
+
+  [Department of Mathematics]: http://www.math.uwo.ca/ {.external-link}
+  [Dan Christensen]: https://jdc.math.uwo.ca/ {.external-link}
+  [Chris Kapulkin]: http://www.math.uwo.ca/faculty/kapulkin/
+  [ceeeeEEEEEVVVVVeeeee]: docs/CV.pdf
+  [Research Statement]: docs/ResearchStatement.pdf
+  [USA/Canada Mathcamp]: https://www.mathcamp.org/current_program/
+  [Lean theorem prover]: https://leanprover-community.github.io/

@@ -1,0 +1,6 @@
+@mixin margin-small-screen {
+  @media (max-width: $max-width){
+    margin-left: $unit-margin;
+    margin-right: $unit-margin;
+  }
+}

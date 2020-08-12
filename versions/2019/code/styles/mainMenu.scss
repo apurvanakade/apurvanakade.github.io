@@ -1,0 +1,34 @@
+#mainMenu {
+  display: flex;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  opacity: 0.9;
+  left: 0;
+  right: 0;
+  background-color: white;
+  line-height: 3em;
+  transition: top 0.5s;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+
+  @media (max-width: $max-width) {
+    box-shadow: 0 2px 5px rgba(0,0,0,.2);
+  }
+
+  .menuItem {
+    color: black;
+    width: 100%;
+    align-self: center;
+    text-align: center;
+
+    &:not(.menuSelected):hover {
+      border-bottom: 2px solid lighten(#4F2683, 50%);
+    }
+  }
+
+  .menuSelected {
+    color: #4F2683;
+    border-bottom: 2px solid #4F2683;
+    font-weight: bold;
+  }
+}

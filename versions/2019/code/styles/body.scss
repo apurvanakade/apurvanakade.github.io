@@ -1,0 +1,29 @@
+body {
+  font-family: $text-fonts;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+
+
+    // better font rendering
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $header-fonts;
+  font-weight: normal;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    justify-content: center;
+    text-align: center;
+    img {
+      width: 80%;
+      max-width: 500px;
+    }
+}

@@ -1,0 +1,41 @@
+body {
+  font-family: $text-fonts;
+  // max-width: $max-width;
+  color: $text-color;
+  font-size: $font-size;
+  font-weight: $font-weight;
+  background-color: $background-color;
+
+  margin: auto;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  line-height: $line-height;
+
+  @media(min-width: $max-width){
+    margin-left: $menu-width;
+    margin-right: $menu-width;
+    padding-left: 5*$unit-padding;
+    padding-right: 5*$unit-padding;
+  }
+
+  // better font rendering
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $header-fonts;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    justify-content: center;
+    text-align: center;
+    img {
+      width: 80%;
+      max-width: 500px;
+    }
+}
