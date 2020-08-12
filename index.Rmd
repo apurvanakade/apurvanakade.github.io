@@ -37,10 +37,10 @@ it more accessible and equitable.
 |              | [Research Statement]                  |
 
 
-  [Department of Mathematics]: http://www.math.uwo.ca/ {.external-link}
-  [Dan Christensen]: https://jdc.math.uwo.ca/ {.external-link}
+  [Department of Mathematics]: http://www.math.uwo.ca/ 
+  [Dan Christensen]: https://jdc.math.uwo.ca/ 
   [Chris Kapulkin]: http://www.math.uwo.ca/faculty/kapulkin/
-  [ceeeeEEEEEVVVVVeeeee]: docs/CV.pdf
-  [Research Statement]: docs/ResearchStatement.pdf
+  [ceeeeEEEEEVVVVVeeeee]: https://drive.google.com/file/d/1CZJ4_A2ssI0-V_HszcPoEJyQC1EY2s5u/view?usp=sharing
+  [Research Statement]: https://drive.google.com/file/d/15HeOJjr6BuuxA0ZNCwSYeHpB2d5Z2sci/view?usp=sharing
   [USA/Canada Mathcamp]: https://www.mathcamp.org/current_program/
   [Lean theorem prover]: https://leanprover-community.github.io/
