@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Series on PostDoc Problems</title>
+    <link>https://apurvanakade.github.io/blog/art/series/</link>
+    <description>Recent content in Series on PostDoc Problems</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 16 Dec 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://apurvanakade.github.io/blog/art/series/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Revisionist History</title>
+      <link>https://apurvanakade.github.io/blog/art/series/revisionisthistory/</link>
+      <pubDate>Mon, 16 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://apurvanakade.github.io/blog/art/series/revisionisthistory/</guid>
+      <description>Every day for the past few months I would excitedly look forward to my work commute across this dreary city; I was listening to Malcolm Gladwell&amp;rsquo;s Revisionist History. As I was fiddling around with the various podcast apps trying to find one that I could use while driving without getting myself into an accident (whatever happened to intuitive design?), I accidentally started listening to the series in the reverse order. Fortuitously for me, these episodes were The Queen of Cuba and The Obscure Virus Club and they got me hooked real fast.</description>
+    </item>
+    
+    <item>
+      <title>Russian Doll</title>
+      <link>https://apurvanakade.github.io/blog/art/series/russian-doll/</link>
+      <pubDate>Mon, 18 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://apurvanakade.github.io/blog/art/series/russian-doll/</guid>
+      <description>Russian Doll is a modern day interpretation of the Groundhog Day. While the theme itself is quite cliché and played out, Russian Doll brings in Netflix&amp;rsquo;s awesome production to create a mostly enjoyable series. With eight short episodes this is basically the length of a long movie, perfect length which prevents the series from feeling draggy. It&amp;rsquo;s short enough that it does not have to delve deeply into philosophy but long enough for the characters to evolve organically.</description>
+    </item>
+    
+  </channel>
+</rss>

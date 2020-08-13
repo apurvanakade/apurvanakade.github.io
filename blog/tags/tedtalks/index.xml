@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TedTalks on PostDoc Problems</title>
+    <link>https://apurvanakade.github.io/blog/tags/tedtalks/</link>
+    <description>Recent content in TedTalks on PostDoc Problems</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 04 Aug 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://apurvanakade.github.io/blog/tags/tedtalks/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Adaptability</title>
+      <link>https://apurvanakade.github.io/blog/random/stray-thoughts/adaptability/</link>
+      <pubDate>Sun, 04 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://apurvanakade.github.io/blog/random/stray-thoughts/adaptability/</guid>
+      <description>I used to love watching Ted Talks, but of late I think the institution has very much lost its way and its originality and has become overly preachy and full of generic platitudes. It is great then to come across a Ted talk that I feel happy to share.
+  It has helped me a lot during my grad school to be able to adapt my research as needed. It took me a while, but I eventually figured out that I am not very keen on proving grand conjectures but prefer working on small projects.</description>
+    </item>
+    
+  </channel>
+</rss>

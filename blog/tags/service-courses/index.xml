@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>service-courses on PostDoc Problems</title>
+    <link>https://apurvanakade.github.io/blog/tags/service-courses/</link>
+    <description>Recent content in service-courses on PostDoc Problems</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 07 Dec 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://apurvanakade.github.io/blog/tags/service-courses/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Calc1000</title>
+      <link>https://apurvanakade.github.io/blog/maths-science/teaching/calc1000/</link>
+      <pubDate>Sat, 07 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://apurvanakade.github.io/blog/maths-science/teaching/calc1000/</guid>
+      <description>I just finished teaching the largest class I have taught so far. It went as well as one would expect a class, that is held in the bleak Canadian fall nights for two hours straight twice a week with a student to faculty ratio of 200:1, to go.
+  Biweekly quizzes. This was the one thing that worked really well. Frequent evaluation is the key to keeping students on schedule, especially freshmen.</description>
+    </item>
+    
+  </channel>
+</rss>
