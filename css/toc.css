@@ -125,3 +125,17 @@
 #TOC ul {
   font-size: 1.2rem;
 }
+
+.book .book-summary {
+  width: 250px;
+}
+
+@media (min-width: 600px) {
+  .book.with-summary .book-body {
+    left: 250px;
+  }
+
+  .book.with-summary .book-header.fixed {
+    left: 250px;
+  }
+}
