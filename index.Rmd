@@ -24,7 +24,7 @@ While learning homotopy type
 theory, I came across the [Lean theorem prover] and have since gotten
 obsessed with it. 
 
-I am also very interested in math education. I want to
+I am interested in improving math education. I want to
 modernize math education and bring it to the 21st century through the
 use of new technological innovations in teaching and in the process make
 it more accessible and equitable.
