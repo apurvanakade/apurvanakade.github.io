@@ -7,7 +7,6 @@ It is intended to help motivated students explore topics in more depth than poss
 I co-organize the [DRP at UWO] and in the past have co-organized the [DRP at JHU].
 Following is the list of projects I've mentored.
 
-
 -   Jacob Fabe, *Fundamental Group* from Topology by Munkres ([DRP, Fall
     2020])
 -   Tim Yau, *An Introduction to Manifolds* by Loring Tu. ([DRP, Fall
@@ -18,7 +17,7 @@ Following is the list of projects I've mentored.
     Spring 2018])
 -   Chris Chia, *The Knot Book* by Adams Collins. ([DRP, Fall 2017])
 
-## Mathcamp
+## Canada/USA Mathcamp
 
 I am fortunate to have been able to participate in the amazing place that is the Mathcamp for the past four years. 
 [Canada/USA Mathcamp](https://www.mathcamp.org/) is an immersive summer experience for mathematically talented students ages 13‑18 from all over the world.
@@ -65,7 +64,7 @@ Reading project: Edgar Wang, *Algebraic Topology* and Alan Yan, *Algebraic Topol
 - [Representation theory]
 - [Lagrangian and Hamiltonian Mechanics]
 
-## JHU
+## Johns Hopkins University
 
 At JHU, I designed and taught a full semester (IBL) Honors Single Variable Calculus course twice and also a couple of shorter intersession courses.
 
@@ -98,15 +97,13 @@ They have not been proofread and are likely to contain several mistakes, viewer 
 - [Geometry of Dirac Operators]
 - [Finite Group Gauge Theory]
 - [FIOs and Lagrangian Submanifolds]
-- [Lie Groups]
+- [Classical Lie Groups]
 - [Connections on Principal Bundles and Classical Electromagnetism]
 
 #### Algebra
 
 - [Commutative Algebra Notes]
 - [Rep Theory of Symmetric Group]
-
-
 
 ## Complete List of Courses
 
@@ -147,14 +144,13 @@ was a month long summer course which covered semester-worth of material. The cla
 #### Online Linear Algebra (JHU, Summer 2014)
 was a fully online two month long summer course which covered semester-worth of material. The class regularly met for 4-5 hours every week.
 
-
   [DiffEq \'15]: https://drive.google.com/drive/folders/1X7WKPhBljbXt6dBt278t2lKUlWUKIU5Z?usp=sharing
   [Calc \'16]: https://drive.google.com/drive/folders/199dY1MF3TWhJ6gUKQyPf_7YK6rO36HZc?usp=sharing
   [H2G2 Algebraic Topology \'17]: https://drive.google.com/drive/folders/1UmhBnhqXzL1b9kb1zn-7qkYgSSW-Gmwz?usp=sharing
   [DiffEq \'17]: https://drive.google.com/drive/folders/1_lSraXoUwk7CmStg23T1nHpYvf9zq9jA?usp=sharing
   [Honors Single Variable Calculus \'17 (IBL)]: https://drive.google.com/drive/folders/16gJLOf0L6RJ09yRL_b7AozVyq3wHsTMG?usp=sharing
   [Honors Single Variable Calculus \'18 (IBL)]: https://drive.google.com/drive/folders/1xF37VjqpQfSI9W5PmrK19bp8OybGmmpW?usp=sharing
-  [Calc \'19]: https://drive.google.com/drive/folders/1HFqAhHYG4m_BtwQSXGeSyItFt1xBHtWE?usp=sharing
+  [Calc \'19]: https://www.youtube.com/playlist?list=PLXAOfwfSuiKkdSQB2tVu_KcYMWhZpK19J
   [Calc \'20]: https://drive.google.com/drive/folders/1MkXy0CPOKqSJANr9QSD4gwYdMYjVcdmV?usp=sharing
   [Symmetries & Polynomials \'18 (IBL)]: https://drive.google.com/file/d/1dChuk8J7s31C8xGurzsbf988VORnyXgb/view?usp=sharing
 

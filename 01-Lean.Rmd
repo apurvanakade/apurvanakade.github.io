@@ -1,4 +1,6 @@
-# Machine, Math, and Me
+# Me, Math, Machine
+
+[<img src="https://leanprover.github.io/images/lean_logo.svg" width="200px" class="right" />](https://en.wikipedia.org/wiki/Lean_(proof_assistant))
 
 I have recently gotten interesting in teaching math to computers. 
 This is different from doing computations as here we are trying to teach math to computers the same way we understand it.
@@ -10,7 +12,7 @@ It was developed my computer scientists at Microsoft Research but has since been
 My primary interest in Lean is as a potential tool for teaching math proofs. 
 When it comes to learning to write proofs, the biggest hurdle is the lack of immediate feedback.
 Even well meaning students often find it difficult to spot logical errors in their proofs.
-I strongly believe that having a software that can pinpoint out errors in proofs will effectively solve this problem.
+I strongly believe that having a software that can pinpoint errors in proofs will effectively solve this problem.
 
 My secondary interest lies in combining machine learning and theorem proving. 
 [Some progress](https://github.com/metamath/set.mm/wiki/Automated-proving) is already being made on this front for a more basic theorem prover called [Metamath](http://us.metamath.org/). 
@@ -28,7 +30,7 @@ However, online resources are not enough for learning the language as there are 
 There are very helpful and supportive Lean communities on [zulipchat](https://leanprover.zulipchat.com/) and [discord](https://discord.gg/AnHKcDm) where you can ask questions and get help to your heart's content.
 
 The best way to learn is by teaching. 
-As such, I taught a course [Lean at MC2020](courses/lean_at_MC2020/index.html) at Mathcamp 2020 where we taught Lean the proof of irrationality of \( \sqrt{2} \).
+And so, I taught a course [Lean at MC2020](courses/lean_at_MC2020/index.html) at Mathcamp 2020 where we taught Lean the proof of irrationality of \( \sqrt{2} \).
 
 ## Read more
 
