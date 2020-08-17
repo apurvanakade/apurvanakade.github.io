@@ -1,6 +1,6 @@
 # Math Projects
 
-## Current{-}
+## Current Projects
 
 ### 2-groups in Equivariant Elliptic Cohomology
 
@@ -25,7 +25,7 @@ library. I taught a course about it at [Mathcamp 2020]. In a group that
 includes some students from Mathcamp, we are trying to add [new
 mathematical content] to the mathlib library.
 
-## Past
+## Past Projects
 
 ### An application of the h-principle to Manifold Calculus.
 
