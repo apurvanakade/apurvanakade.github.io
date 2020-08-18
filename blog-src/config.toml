@@ -1,0 +1,21 @@
+baseurl = "https://apurvanakade.github.io/blog/"
+languageCode = "en"
+contentDir = "content"
+paginate = 15
+publishDir = "/Users/apurv/gitHub/apurvanakade.github.io/gh-pages/blog"
+buildDrafts = false
+
+canonifyURLs = true
+relativeURLs = true
+
+title = "PostDoc Problems"
+theme = "ApurvasTheme"
+
+[taxonomies]
+  tag = "tags"
+
+[author]
+  name = "Apurva Nakade"
+
+[markup.goldmark.renderer]
+  unsafe = true
