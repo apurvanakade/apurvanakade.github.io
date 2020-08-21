@@ -3,12 +3,12 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://apurvanakade.github.io/blog/art/</loc>
+    <loc>https://apurvanakade.github.io/blog/reviews/</loc>
     <lastmod>2020-08-17T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://apurvanakade.github.io/blog/art/series/</loc>
+    <loc>https://apurvanakade.github.io/blog/reviews/series/</loc>
     <lastmod>2020-08-17T00:00:00+00:00</lastmod>
   </url>
   
@@ -38,7 +38,7 @@
   </url>
   
   <url>
-    <loc>https://apurvanakade.github.io/blog/art/books/</loc>
+    <loc>https://apurvanakade.github.io/blog/reviews/books/</loc>
     <lastmod>2020-06-06T00:00:00+00:00</lastmod>
   </url>
   
@@ -53,7 +53,7 @@
   </url>
   
   <url>
-    <loc>https://apurvanakade.github.io/blog/art/movies/</loc>
+    <loc>https://apurvanakade.github.io/blog/reviews/movies/</loc>
     <lastmod>2019-09-22T00:00:00+00:00</lastmod>
   </url>
   
@@ -65,11 +65,6 @@
   <url>
     <loc>https://apurvanakade.github.io/blog/journal/improv/</loc>
     <lastmod>2019-02-19T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://apurvanakade.github.io/blog/random/fun/</loc>
-    <lastmod>2018-08-27T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -93,11 +88,11 @@
   </url>
   
   <url>
-    <loc>https://apurvanakade.github.io/blog/art/lists/</loc>
+    <loc>https://apurvanakade.github.io/blog/reviews/lists/</loc>
   </url>
   
   <url>
-    <loc>https://apurvanakade.github.io/blog/art/series/dark/</loc>
+    <loc>https://apurvanakade.github.io/blog/reviews/series/dark/</loc>
     <lastmod>2020-08-17T00:00:00+00:00</lastmod>
   </url>
   
@@ -107,7 +102,7 @@
   </url>
   
   <url>
-    <loc>https://apurvanakade.github.io/blog/art/series/haji-giri/</loc>
+    <loc>https://apurvanakade.github.io/blog/reviews/series/haji-giri/</loc>
     <lastmod>2020-08-17T00:00:00+00:00</lastmod>
   </url>
   
@@ -182,7 +177,7 @@
   </url>
   
   <url>
-    <loc>https://apurvanakade.github.io/blog/art/books/myth-of-sisyphus/</loc>
+    <loc>https://apurvanakade.github.io/blog/reviews/books/myth-of-sisyphus/</loc>
     <lastmod>2020-06-06T00:00:00+00:00</lastmod>
   </url>
   
@@ -247,7 +242,7 @@
   </url>
   
   <url>
-    <loc>https://apurvanakade.github.io/blog/art/series/revisionisthistory/</loc>
+    <loc>https://apurvanakade.github.io/blog/reviews/series/revisionisthistory/</loc>
     <lastmod>2019-12-16T00:00:00+00:00</lastmod>
   </url>
   
@@ -262,7 +257,7 @@
   </url>
   
   <url>
-    <loc>https://apurvanakade.github.io/blog/art/books/left-hand-of-darkness/</loc>
+    <loc>https://apurvanakade.github.io/blog/reviews/books/left-hand-of-darkness/</loc>
     <lastmod>2019-10-05T00:00:00+00:00</lastmod>
   </url>
   
@@ -277,7 +272,7 @@
   </url>
   
   <url>
-    <loc>https://apurvanakade.github.io/blog/art/movies/ad-astra/</loc>
+    <loc>https://apurvanakade.github.io/blog/reviews/movies/ad-astra/</loc>
     <lastmod>2019-09-22T00:00:00+00:00</lastmod>
   </url>
   
@@ -287,7 +282,7 @@
   </url>
   
   <url>
-    <loc>https://apurvanakade.github.io/blog/art/books/running-murakami/</loc>
+    <loc>https://apurvanakade.github.io/blog/reviews/books/running-murakami/</loc>
     <lastmod>2019-09-01T00:00:00+00:00</lastmod>
   </url>
   
@@ -307,12 +302,17 @@
   </url>
   
   <url>
-    <loc>https://apurvanakade.github.io/blog/art/movies/intothespiderverse/</loc>
+    <loc>https://apurvanakade.github.io/blog/reviews/movies/intothespiderverse/</loc>
     <lastmod>2019-08-24T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://apurvanakade.github.io/blog/random/stray-thoughts/adaptability/</loc>
+    <lastmod>2019-08-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://apurvanakade.github.io/blog/tags/ted/</loc>
     <lastmod>2019-08-04T00:00:00+00:00</lastmod>
   </url>
   
@@ -332,7 +332,7 @@
   </url>
   
   <url>
-    <loc>https://apurvanakade.github.io/blog/art/books/graphic-novels/</loc>
+    <loc>https://apurvanakade.github.io/blog/reviews/books/graphic-novels/</loc>
     <lastmod>2019-05-24T00:00:00+00:00</lastmod>
   </url>
   
@@ -357,7 +357,7 @@
   </url>
   
   <url>
-    <loc>https://apurvanakade.github.io/blog/art/books/rereading-sherlock-holmes/</loc>
+    <loc>https://apurvanakade.github.io/blog/reviews/books/rereading-sherlock-holmes/</loc>
     <lastmod>2019-04-29T00:00:00+00:00</lastmod>
   </url>
   
@@ -382,7 +382,7 @@
   </url>
   
   <url>
-    <loc>https://apurvanakade.github.io/blog/art/series/russian-doll/</loc>
+    <loc>https://apurvanakade.github.io/blog/reviews/series/russian-doll/</loc>
     <lastmod>2019-02-18T00:00:00+00:00</lastmod>
   </url>
   
@@ -397,7 +397,7 @@
   </url>
   
   <url>
-    <loc>https://apurvanakade.github.io/blog/art/books/three-body-problem/</loc>
+    <loc>https://apurvanakade.github.io/blog/reviews/books/three-body-problem/</loc>
     <lastmod>2018-12-02T00:00:00+00:00</lastmod>
   </url>
   
@@ -417,7 +417,7 @@
   </url>
   
   <url>
-    <loc>https://apurvanakade.github.io/blog/art/movies/the-handmaiden/</loc>
+    <loc>https://apurvanakade.github.io/blog/reviews/movies/the-handmaiden/</loc>
     <lastmod>2018-10-01T20:00:00+00:00</lastmod>
   </url>
   
@@ -442,7 +442,7 @@
   </url>
   
   <url>
-    <loc>https://apurvanakade.github.io/blog/art/movies/night-is-short-walk-on-girl/</loc>
+    <loc>https://apurvanakade.github.io/blog/reviews/movies/night-is-short-walk-on-girl/</loc>
     <lastmod>2018-09-26T20:00:00+00:00</lastmod>
   </url>
   
@@ -467,12 +467,12 @@
   </url>
   
   <url>
-    <loc>https://apurvanakade.github.io/blog/art/books/neuromancer/</loc>
+    <loc>https://apurvanakade.github.io/blog/reviews/books/neuromancer/</loc>
     <lastmod>2018-09-19T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://apurvanakade.github.io/blog/random/fun/ronswanson/</loc>
+    <loc>https://apurvanakade.github.io/blog/random/stray-thoughts/ronswanson/</loc>
     <lastmod>2018-08-27T00:00:00+00:00</lastmod>
   </url>
   
@@ -517,7 +517,7 @@
   </url>
   
   <url>
-    <loc>https://apurvanakade.github.io/blog/art/books/rendezvous-with-rama/</loc>
+    <loc>https://apurvanakade.github.io/blog/reviews/books/rendezvous-with-rama/</loc>
     <lastmod>2018-08-12T00:00:00+00:00</lastmod>
   </url>
   
@@ -537,7 +537,7 @@
   </url>
   
   <url>
-    <loc>https://apurvanakade.github.io/blog/art/books/breakfast-for-champions/</loc>
+    <loc>https://apurvanakade.github.io/blog/reviews/books/breakfast-for-champions/</loc>
     <lastmod>2018-05-19T00:00:00+00:00</lastmod>
   </url>
   
@@ -557,7 +557,7 @@
   </url>
   
   <url>
-    <loc>https://apurvanakade.github.io/blog/art/books/the-gods-themselves/</loc>
+    <loc>https://apurvanakade.github.io/blog/reviews/books/the-gods-themselves/</loc>
     <lastmod>2018-05-16T00:00:00+00:00</lastmod>
   </url>
   
@@ -582,7 +582,7 @@
   </url>
   
   <url>
-    <loc>https://apurvanakade.github.io/blog/art/books/bird-by-bird/</loc>
+    <loc>https://apurvanakade.github.io/blog/reviews/books/bird-by-bird/</loc>
     <lastmod>2018-04-22T00:00:00+00:00</lastmod>
   </url>
   
@@ -607,7 +607,7 @@
   </url>
   
   <url>
-    <loc>https://apurvanakade.github.io/blog/art/movies/isle-of-dogs/</loc>
+    <loc>https://apurvanakade.github.io/blog/reviews/movies/isle-of-dogs/</loc>
     <lastmod>2018-03-31T20:00:00+00:00</lastmod>
   </url>
   
@@ -642,7 +642,7 @@
   </url>
   
   <url>
-    <loc>https://apurvanakade.github.io/blog/art/books/checklist-manifesto/</loc>
+    <loc>https://apurvanakade.github.io/blog/reviews/books/checklist-manifesto/</loc>
     <lastmod>2018-03-16T00:00:00+00:00</lastmod>
   </url>
   
@@ -682,7 +682,7 @@
   </url>
   
   <url>
-    <loc>https://apurvanakade.github.io/blog/art/books/remains-of-the-day/</loc>
+    <loc>https://apurvanakade.github.io/blog/reviews/books/remains-of-the-day/</loc>
     <lastmod>2018-02-16T00:00:00+00:00</lastmod>
   </url>
   
@@ -692,7 +692,7 @@
   </url>
   
   <url>
-    <loc>https://apurvanakade.github.io/blog/art/books/station-eleven/</loc>
+    <loc>https://apurvanakade.github.io/blog/reviews/books/station-eleven/</loc>
     <lastmod>2018-02-09T00:00:00+00:00</lastmod>
   </url>
   
@@ -717,7 +717,7 @@
   </url>
   
   <url>
-    <loc>https://apurvanakade.github.io/blog/art/books/never-let-me-go/</loc>
+    <loc>https://apurvanakade.github.io/blog/reviews/books/never-let-me-go/</loc>
     <lastmod>2018-01-29T09:00:00+00:00</lastmod>
   </url>
   
@@ -747,7 +747,7 @@
   </url>
   
   <url>
-    <loc>https://apurvanakade.github.io/blog/art/books/gtd-method/</loc>
+    <loc>https://apurvanakade.github.io/blog/reviews/books/gtd-method/</loc>
     <lastmod>2018-01-19T00:00:00+00:00</lastmod>
   </url>
   
@@ -762,7 +762,7 @@
   </url>
   
   <url>
-    <loc>https://apurvanakade.github.io/blog/art/movies/paddington-2/</loc>
+    <loc>https://apurvanakade.github.io/blog/reviews/movies/paddington-2/</loc>
     <lastmod>2018-01-14T20:00:00+00:00</lastmod>
   </url>
   
@@ -772,7 +772,7 @@
   </url>
   
   <url>
-    <loc>https://apurvanakade.github.io/blog/art/books/norwegian-wood/</loc>
+    <loc>https://apurvanakade.github.io/blog/reviews/books/norwegian-wood/</loc>
     <lastmod>2018-01-12T09:20:00+00:00</lastmod>
   </url>
   
@@ -782,7 +782,7 @@
   </url>
   
   <url>
-    <loc>https://apurvanakade.github.io/blog/art/movies/shape-of-water/</loc>
+    <loc>https://apurvanakade.github.io/blog/reviews/movies/shape-of-water/</loc>
     <lastmod>2018-01-11T23:00:00+00:00</lastmod>
   </url>
   
@@ -827,7 +827,7 @@
   </url>
   
   <url>
-    <loc>https://apurvanakade.github.io/blog/art/books/an-area-of-darkness/</loc>
+    <loc>https://apurvanakade.github.io/blog/reviews/books/an-area-of-darkness/</loc>
     <lastmod>2017-12-30T09:20:00+00:00</lastmod>
   </url>
   
@@ -837,12 +837,12 @@
   </url>
   
   <url>
-    <loc>https://apurvanakade.github.io/blog/art/books/thinking-fast-and-slow/</loc>
+    <loc>https://apurvanakade.github.io/blog/reviews/books/thinking-fast-and-slow/</loc>
     <lastmod>2017-12-26T12:40:44-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://apurvanakade.github.io/blog/art/movies/icarus/</loc>
+    <loc>https://apurvanakade.github.io/blog/reviews/movies/icarus/</loc>
     <lastmod>2017-12-22T22:00:00+00:00</lastmod>
   </url>
   
@@ -857,7 +857,7 @@
   </url>
   
   <url>
-    <loc>https://apurvanakade.github.io/blog/art/movies/jumanji/</loc>
+    <loc>https://apurvanakade.github.io/blog/reviews/movies/jumanji/</loc>
     <lastmod>2017-12-21T23:30:13-05:00</lastmod>
   </url>
   
@@ -867,12 +867,7 @@
   </url>
   
   <url>
-    <loc>https://apurvanakade.github.io/blog/random/fun/jolabokafloo/</loc>
-    <lastmod>2017-12-14T21:15:13-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://apurvanakade.github.io/blog/tags/ted/</loc>
+    <loc>https://apurvanakade.github.io/blog/random/stray-thoughts/jolabokafloo/</loc>
     <lastmod>2017-12-14T21:15:13-05:00</lastmod>
   </url>
   
@@ -887,7 +882,7 @@
   </url>
   
   <url>
-    <loc>https://apurvanakade.github.io/blog/random/fun/zugzwang/</loc>
+    <loc>https://apurvanakade.github.io/blog/random/stray-thoughts/zugzwang/</loc>
     <lastmod>2017-12-12T12:41:13-05:00</lastmod>
   </url>
   
@@ -932,7 +927,7 @@
   </url>
   
   <url>
-    <loc>https://apurvanakade.github.io/blog/random/fun/my-first-post/</loc>
+    <loc>https://apurvanakade.github.io/blog/random/stray-thoughts/my-first-post/</loc>
     <lastmod>2017-11-11T12:40:44-05:00</lastmod>
   </url>
   
