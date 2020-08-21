@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Asimov on PostDoc Problems</title>
+    <link>https://apurvanakade.github.io/blog/tags/asimov/</link>
+    <description>Recent content in Asimov on PostDoc Problems</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 16 May 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://apurvanakade.github.io/blog/tags/asimov/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>The Gods Themselves</title>
+      <link>https://apurvanakade.github.io/blog/reviews/books/the-gods-themselves/</link>
+      <pubDate>Wed, 16 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://apurvanakade.github.io/blog/reviews/books/the-gods-themselves/</guid>
+      <description>In the opening scene of Nolan&amp;rsquo;s Prestige, Michael Caine explains what a magic trick consists of - a pledge, a turn, and the hardest part - the Prestige. This is what Asimov&amp;rsquo;s stories are like. He starts with an ordinary world with something slightly extraordinary about it, takes you around on a tour through the wonders of the world to distract you and slowly builds up the mystery in plain sight, until the big reveal in the final act.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -27,7 +27,7 @@ You can find several learning resources [here](https://leanprover-community.gith
 I personally learned Lean by playing the [Natural numbers game](https://wwwf.imperial.ac.uk/~buzzard/xena/natural_number_game/), reading [Theorem Proving in Lean](https://leanprover.github.io/theorem_proving_in_lean/introduction.html), and banging my head against the wall while solving some problems on [Codewars](https://www.codewars.com/kata/search/lean).
 
 However, online resources are not enough for learning the language as there are far too many subtle, technical difficulties that arise in practice.
-There are very helpful and supportive Lean communities on [zulipchat](https://leanprover.zulipchat.com/) and [discord](https://discord.gg/AnHKcDm) where you can ask questions and get help to your heart's content.
+There is a very helpful and supportive Lean community on [zulipchat](https://leanprover.zulipchat.com/) where you can ask questions and get help to your heart's content.
 
 The best way to learn is by teaching. 
 And so, I taught a course [Lean at MC2020](courses/lean_at_MC2020/index.html) at Mathcamp 2020 where we taught Lean the proof of irrationality of \( \sqrt{2} \).
