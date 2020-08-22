@@ -1,5 +1,7 @@
 # Teaching
 
+This page contains several notes from the various courses and projects I've taken, taught, or mentored. 
+
 ## Directed Reading Program
 The Directed Reading Program is a program for undergrads and grad students/postdocs.
 Undergrads are paired with a mentor whose interests align with theirs and they study a topic of their choice for one semester. 

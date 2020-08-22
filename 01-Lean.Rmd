@@ -38,3 +38,5 @@ And so, I taught a course [Lean at MC2020](courses/lean_at_MC2020/index.html) at
 - [Missing undergraduate mathematics in mathlib](https://leanprover-community.github.io/undergrad_todo.html)
 - [The sphere eversion project](https://leanprover-community.github.io/sphere-eversion/blueprint/sect0001.html)
 - [Sudoku in Lean](https://github.com/TwoFX/sudoku)
+
+If you wish to learn some Lean or already know Lean and would like to discuss/do a project, feel free to email with me.
