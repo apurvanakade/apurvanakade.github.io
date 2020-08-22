@@ -1,7 +1,7 @@
-.author,
+/* .author,
 .title {
   display: none;
-}
+} */
 
 p.caption {
   color: #777;
@@ -16,8 +16,4 @@ pre {
 }
 pre code {
   white-space: inherit;
-}
-
-.small {
-  font-size: small;
 }

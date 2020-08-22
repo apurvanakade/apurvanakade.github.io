@@ -1,0 +1,43 @@
+
+# Complete List of Courses
+
+| University | Course                                             | Years             | # of students |                             |
+|------------|----------------------------------------------------|-------------------|---------------|-----------------------------|
+| UWO        | Algebraic Topology                                 | Winter 2021       | -             | Grad                        |
+|            | Discrete Structures for Engineering                | Fall 2020         | -             | First year undergrad        |
+|            | Calculus II for Mathematical and Physical Sciences | Winter 2020       | 150           | First year undergrad        |
+|            | Calculus I for Mathematical and Physical Sciences  | Fall 2019         | 176           | First year undergrad        |
+|            | Topics in Category Theory                          | Fall 2019         | 3             | Grad                        |
+| JHU        | Symmetries & Polynomials                           | Intersession 2018 | 10            | All years undergrad         |
+|            | Honors Single Variable Calculus                    | Spring 2017, 18   | 7             | First year undergrad        |
+|            | Hitchhiker’s Guide to Algebraic Topology           | Intersession 2017 | 11            | All years undergrad         |
+|            | Calculus II (For Biology and Social Science)       | Summer 2016       | 5             | First year undergrad        |
+|            | Differential Equations with Applications           | Summer 2015, 17   | 11            | First year undergrad        |
+|            | Online Linear Algebra                              | Summer 2014       | 34            | All years undergrad         |
+| Mathcamp   | Several                                            | Summers 2015-19   | -             | High school & middle school |
+
+Course websites: [Calc \'19], [Calc \'20], [DiffEq \'17], [Calc \'16], [DiffEq \'15].
+
+#### Calculus II for Mathematical and Physical Sciences (UWO, Winter 2020) {-}
+was a full semester 4 credit course with more than 300 students divided into 2 sections. I was the instructor for one of the sections and was solely responsible for making weekly WebWork homeworks and making exams along with the course coordinator. The class regularly met for 4 hours every week.
+
+#### Calculus I for Mathematical and Physical Sciences (UWO, Fall 2019) {-}
+was a full semester course with more than 1000 students divided into 10 sections. I was the instructor for one of the sections and was solely responsible for making weekly WebWork homeworks and in-class quizzes. The class regularly met for 4 hours every week.
+
+#### Topics in Category Theory (UWO, Fall 2019) {-}
+was a full semester reading course for math graduate students that I supervised. We worked through Chapter 1 of Ravi Vakil's [*Foundations of Algebraic Geometry*] with some help from Emily Riehl's [*Category Theory in Context*].
+
+#### Calculus II For Biology and Social Science (JHU, Summer 2019) {-}
+was a month long summer course which covered semester-worth of material. The class regularly met for 10 hours every week and had weekly exams.
+
+#### Differential Equations with Applications (JHU, Summer 2015, 17)
+was a month long summer course which covered semester-worth of material. The class regularly met for 10 hours every week and had weekly exams.
+
+#### Online Linear Algebra (JHU, Summer 2014) {-}
+was a fully online two month long summer course which covered semester-worth of material. The class regularly met for 4-5 hours every week.
+
+  [DiffEq \'15]: https://drive.google.com/drive/folders/1X7WKPhBljbXt6dBt278t2lKUlWUKIU5Z?usp=sharing
+  [DiffEq \'17]: https://drive.google.com/drive/folders/1_lSraXoUwk7CmStg23T1nHpYvf9zq9jA?usp=sharing
+  [Calc \'16]: https://drive.google.com/drive/folders/199dY1MF3TWhJ6gUKQyPf_7YK6rO36HZc?usp=sharing
+  [Calc \'19]: https://www.youtube.com/playlist?list=PLXAOfwfSuiKkdSQB2tVu_KcYMWhZpK19J
+  [Calc \'20]: https://drive.google.com/drive/folders/1MkXy0CPOKqSJANr9QSD4gwYdMYjVcdmV?usp=sharing
