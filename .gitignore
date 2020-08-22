@@ -1,9 +1,3 @@
 .DS_Store
-.Rproj.user
-.Rhistory
-.RData
-_publish.R
-_book
-_bookdown_files
-rsconnect
-.DS_Store
+themes/
+
