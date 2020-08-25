@@ -5,8 +5,7 @@ bookdown::gitbook:
   number_sections: false
   config:
     toc:
-      before: |
-        <p> &nbsp; </p>
+      # before: | 
       after: |
         <p> &nbsp; </p>
       collapse: subsection
