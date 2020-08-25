@@ -1,7 +1,7 @@
 bookdown::gitbook:
-  css: [css/style.css, css/images.css, css/toc.css]
   includes:
-      in_header: header/header.html
+      in_header: html/header.html
+      in_footer: html/footer.html
   number_sections: false
   config:
     toc:

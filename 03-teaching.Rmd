@@ -154,7 +154,7 @@ They have not been proofread and are likely to contain several mistakes, viewer 
   [Geometry of Dirac Operators]: https://drive.google.com/drive/folders/19GanFw6odpL4tRUJa-mPsVmVKcK52jaW?usp=sharing
   [Finite Group Gauge Theory]: https://drive.google.com/drive/folders/1OyE4ADuxnFIJ3-wuEifCNYWcCF2-iiRd?usp=sharing
   [FIOs and Lagrangian Submanifolds]: https://drive.google.com/drive/folders/1lkx7z7ht5XuRAhhKnhVgLiPHJ2GLSrT3?usp=sharing
-  [Lie Groups]: https://drive.google.com/file/d/15SwA8TDmLUMElPQYvhMcIAttXgNzuKbz/view?usp=sharing
+  [Classical Lie Groups]: https://drive.google.com/file/d/15SwA8TDmLUMElPQYvhMcIAttXgNzuKbz/view?usp=sharing
   [Connections on Principal Bundles and Classical Electromagnetism]: https://drive.google.com/file/d/1kFh_-_DmR4wt-sDBiOggM5a5U-5W7V_l/view?usp=sharing
   [Commutative Algebra Notes]: https://drive.google.com/file/d/1iwjYv6a5myfnvFKXg8VGAd2fsMZTDXin/view?usp=sharing
   [Rep Theory of Symmetric Group]: https://drive.google.com/file/d/1xMliaDffPi6yUzp5U2d_wIdPJ6yyfLE1/view?usp=sharing
