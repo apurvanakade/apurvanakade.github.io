@@ -1,11 +1,11 @@
 --- 
-title: "Teaching Dossier"
-author: "Apurva Nakade"
+title: "Teaching Portfolio"
+author: "Apurva Nakade <br /> Postdoctoral Fellow <br /> Department of Mathematics <br /> University of Western Ontario. "
 output: bookdown::gitbook
 github-repo: apurvanakade/apurvanakade.github.io
 ---
 
-# {-}
+# Brief Introduction
 
 I'm a postdoc in the Department of Mathematics at the University of Western Ontario working with Dan Christensen and Chris Kapulkin.
 

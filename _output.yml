@@ -1,13 +1,11 @@
 bookdown::gitbook:
-  css: [css/style.css, css/images.css, css/toc.css]
   includes:
-      in_header: header/header.html
+      in_header: html/header.html
   number_sections: true
   config:
     toc:
       collapse: section
-      before: |
-        <p> &nbsp; </p>
+      # before: |
       after: |
         <li><a href="https://drive.google.com/file/d/1CZJ4_A2ssI0-V_HszcPoEJyQC1EY2s5u/view">CV</a> </li>
       scroll_highlight: yes
