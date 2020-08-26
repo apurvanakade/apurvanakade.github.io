@@ -27,13 +27,14 @@ span.search-highlight {
 }
 @media (max-width: 600px) {
   .book.with-summary .book-header.fixed {
-    left: calc(100% - 60px);
-    min-width: 300px;
+    /* left: min(250px, calc(100% - 60px)); */
+    left: 0px;
+    min-width: 250px;
   }
   .book.with-summary .book-body {
     transform: none;
-    left: calc(100% - 60px);
-    min-width: 300px;
+    left: min(250px, calc(100% - 60px));
+    min-width: 250px;
   }
   .book .book-body.fixed {
     top: 0;
