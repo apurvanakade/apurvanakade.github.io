@@ -2612,9 +2612,9 @@ table {
 .book .book-summary ul.summary li a,
 .book .book-summary ul.summary li span {
   display: block;
-  padding-top: 20px;
+  padding-top: 15px;
   padding-right: 15px;
-  padding-bottom: 10px;
+  padding-bottom: 15px;
   padding-left: 25px;
   border-bottom: none;
   color: #364149;
@@ -2644,7 +2644,7 @@ table {
 
 @media (max-width:600px) {
   .book .book-summary {
-    width: calc(100% - 60px);
+    width: min(250, calc(100% - 60px));
     bottom: 0;
     left: -100%
   }
@@ -2692,8 +2692,9 @@ table {
 }
 
 .book .book-body .page-wrapper .page-inner {
-  max-width: 800px;
+  max-width: 1000px;
   margin: 0 auto;
+  margin-bottom: 25vh;
   padding: 20px 0 40px
 }
 
@@ -2739,11 +2740,11 @@ table {
   }
 
   .book.with-summary .book-body {
-    -webkit-transform: translate(calc(100% - 60px), 0);
-    -moz-transform: translate(calc(100% - 60px), 0);
-    -ms-transform: translate(calc(100% - 60px), 0);
-    -o-transform: translate(calc(100% - 60px), 0);
-    transform: translate(calc(100% - 60px), 0)
+    -webkit-transform: translate(min(250, calc(100% - 60px)), 0);
+    -moz-transform: translate(min(250, calc(100% - 60px)), 0);
+    -ms-transform: translate(min(250, calc(100% - 60px)), 0);
+    -o-transform: translate(min(250, calc(100% - 60px)), 0);
+    transform: translate(min(250, calc(100% - 60px)), 0)
   }
 }
 
@@ -2908,7 +2909,7 @@ table {
 }
 
 .book .book-body .page-wrapper .page-inner section.normal h1 {
-  font-size: 2em
+  font-size: 4em
 }
 
 .book .book-body .page-wrapper .page-inner section.normal h2 {
@@ -2916,7 +2917,7 @@ table {
 }
 
 .book .book-body .page-wrapper .page-inner section.normal h3 {
-  font-size: 1.5em
+  font-size: 1.25em
 }
 
 .book .book-body .page-wrapper .page-inner section.normal h4 {

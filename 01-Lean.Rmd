@@ -1,32 +1,22 @@
 # Me, Math, Machine
 
-[<img src="https://leanprover.github.io/images/lean_logo.svg" width="200px" class="right" />](https://en.wikipedia.org/wiki/Lean_(proof_assistant))
-
-I have recently gotten interesting in teaching math to computers. 
+I have recently gotten interesting in teaching math to computers using [Lean](https://leanprover.github.io/about/). 
 This is different from doing computations as here we are trying to teach math to computers the same way we understand it.
-
-The software I use for this is [Lean](https://leanprover.github.io/about/). 
+[<img src="https://leanprover.github.io/images/lean_logo2.svg" width="70%" style="display:block; margin:auto" />](courses/lean_at_MC2020/index.html)
 [Lean](https://leanprover.github.io/live/latest/) is an open-source software that understands mathematics and can check correctness of proofs. 
-It was developed my computer scientists at Microsoft Research but has since been overtaken my mathematicians who now form the [leanprover-community](https://leanprover-community.github.io/) and maintain the rapidly growing [mathlib library](https://github.com/leanprover-community/mathlib/).
+It was developed my computer scientists at Microsoft Research but has since been overtaken my mathematicians who now form the [leanprover-community](https://leanprover-community.github.io/) and maintain its rapidly growing [math library](https://github.com/leanprover-community/mathlib/).
 
 My primary interest in Lean is as a potential tool for teaching math proofs. 
-When it comes to learning to write proofs, the biggest hurdle is the lack of immediate feedback.
-Even well meaning students often find it difficult to spot logical errors in their proofs.
-I strongly believe that having a software that can pinpoint errors in proofs will effectively solve this problem.
-
 My secondary interest lies in combining machine learning and theorem proving. 
-[Some progress](https://github.com/metamath/set.mm/wiki/Automated-proving) is already being made on this front for a more basic theorem prover called [Metamath](http://us.metamath.org/). 
-
+<!-- [Some progress](https://github.com/metamath/set.mm/wiki/Automated-proving) is already being made on this front for a more basic theorem prover called [Metamath](http://us.metamath.org/).  -->
 These are very long term goals as the field of theorem proving, although rapidly growing, is still very nascent.
-Currently, I try to teach Lean to students and am working on developing and expanding the Linear Algebra component of Lean's math library.
+Currently, I try to teach Lean to students and am working on contributing to Lean's math library.
 
 ## Learning to Lean
 
 Lean is accessible to anyone who understands basic theorem proving in math.
 You can find several learning resources [here](https://leanprover-community.github.io/learn.html).
-I personally learned Lean by playing the [Natural numbers game](https://wwwf.imperial.ac.uk/~buzzard/xena/natural_number_game/), reading [Theorem Proving in Lean](https://leanprover.github.io/theorem_proving_in_lean/introduction.html), and banging my head against the wall while solving some problems on [Codewars](https://www.codewars.com/kata/search/lean).
-
-However, online resources are not enough for learning the language as there are far too many subtle, technical difficulties that arise in practice.
+I personally learned Lean by playing the [Natural numbers game](https://wwwf.imperial.ac.uk/~buzzard/xena/natural_number_game/), reading [Theorem Proving in Lean](https://leanprover.github.io/theorem_proving_in_lean/introduction.html), and banging my head against the wall while solving some problems on [Codewars](https://www.codewars.com/kata/search/lean). However, online resources are not enough for learning the language.
 There is a very helpful and supportive Lean community on [zulipchat](https://leanprover.zulipchat.com/) where you can ask questions and get help to your heart's content.
 
 The best way to learn is by teaching. 
@@ -39,4 +29,4 @@ And so, I taught a course [Lean at MC2020](courses/lean_at_MC2020/index.html) at
 - [The sphere eversion project](https://leanprover-community.github.io/sphere-eversion/blueprint/sect0001.html)
 - [Sudoku in Lean](https://github.com/TwoFX/sudoku)
 
-If you wish to learn some Lean or already know Lean and would like to discuss/do a project, feel free to email with me.
+If you wish to learn some Lean or already know Lean and would like to discuss/do a project, feel free to get in touch.

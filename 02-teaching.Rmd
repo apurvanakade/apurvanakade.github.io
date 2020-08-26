@@ -1,6 +1,8 @@
 # Teaching
 
-This page contains several notes from the various courses and projects I've taken, taught, or mentored. 
+This page contains notes from the various courses and projects I've taken, taught, or mentored. 
+
+[<img src="images/donuts.png" width="70%" style="display:block; margin:auto">](https://drive.google.com/file/d/1iQ_-iqu1x4ueYT4ucNbb_WgAeaf19Ysc/view?usp=sharing)
 
 ## Directed Reading Program
 The Directed Reading Program is a program for undergrads and grad students/postdocs.
@@ -23,57 +25,40 @@ Following is the list of projects I've mentored.
 
 I am fortunate to have been able to participate in the amazing place that is the Mathcamp for the past four years. 
 [Canada/USA Mathcamp](https://www.mathcamp.org/) is an immersive summer experience for mathematically talented students ages 13‑18 from all over the world.
-Among other things, I have been designing and teaching some fun courses there. 
+Among other things, I have been designing and teaching some fun courses there and mentoring reading and Lean projects. 
 Following are notes from some of the courses I've taught and projects I've done with mathcampers.
 
-### [![Canada/USA Mathcamp] 2020][2020]
+|                                     |                                                   |
+|-------------------------------------|---------------------------------------------------|
+| [![Canada/USA Mathcamp] 2020][2020] | [Lean at MC2020]                                  |
+| [How to glue donuts]                              | [How Riemann *finally* understood logarithms]     |
+| [![Canada/USA Mathcamp] 2019][2019] | |
+| [From High School Arithmetic to Group Cohomology] | [Crash Course on Linear Algebra]                  |
+| [Riemann Surfaces]                                | [Galois Correspondence of Covering Spaces]        |
+| [![Canada/USA Mathcamp] 2018][2018] | |
+| [Cohomology via Sheaves] | [The Quantum Spring] | 
+| [Would I ever Lie Group to you?] | [How Curved Is a Potato?] |
+| [![Canada/USA Mathcamp] 2017][2017] |  |
+| [Euler Characteristic] | [Symmetries of Spaces] |
+| [What is Homology?] | [Representation theory] |
+| [Lagrangian and Hamiltonian Mechanics] | [All things manifoldy] |
+  
+Reading projects:
 
-- [Lean at MC2020]
-- [How to glue donuts]
-- [How Riemann *finally* understood logarithms]
+- Daniel Koizumi, [Riemann Surfaces](https://drive.google.com/file/d/1bv-dCvd4nwfD68RxDeuDFoJ3dZIOoqPq/view) from *Algebraic Curves and Riemann Surfaces* by Rick Miranda.
+- Kenji, Dedekind Domains in Lean and Michael, Konigsberg Bridge Problem in Lean ([code]).
+- Ezra Erives, *Differential Geometry and Lie Groups for Physicists* by Marián Fecko.
+- Edgar Wang, *Algebraic Topology* and Alan Yan, *Algebraic Topology* by Hatcher.
 
-Reading project: Daniel Koizumi, [Riemann Surfaces](https://drive.google.com/file/d/1bv-dCvd4nwfD68RxDeuDFoJ3dZIOoqPq/view) from *Algebraic Curves and Riemann Surfaces* by Rick Miranda.
-
-Lean projects: Kenji, Dedekind Domains in Lean and Michael, Konigsberg Bridge Problem in Lean ([code]).
-
-
-### [![Canada/USA Mathcamp] 2019][2019]
-
-- [Galois Correspondence of Covering Spaces]
-- [From High School Arithmetic to Group Cohomology]
-- [Crash Course on Linear Algebra]
-- [Riemann Surfaces]
-
-Reading project: Ezra Erives, *Differential Geometry and Lie Groups for Physicists*
-    by Marián Fecko.
-
-### [![Canada/USA Mathcamp] 2018][2018]
-
-- [How Curved Is a Potato?]
-- [Cohomology via Sheaves]
-- [The Quantum
-Spring]
-- [Would I ever Lie Group to you?]
-
-Reading project: Edgar Wang, *Algebraic Topology* and Alan Yan, *Algebraic Topology* by Hatcher.
-
-### [![Canada/USA Mathcamp] 2017][2017]
-
-- [All things manifoldy]
-- [Euler Characteristic]
-- [Symmetries of Spaces]
-- [What is Homology?]
-- [Representation theory]
-- [Lagrangian and Hamiltonian Mechanics]
 
 ## Johns Hopkins University
 
 At JHU, I designed and taught a full semester (IBL) Honors Single Variable Calculus course twice and also a couple of shorter intersession courses.
 
-- [Honors Single Variable Calculus \'18 (IBL)]
-- [Honors Single Variable Calculus \'17 (IBL)]
-- [Symmetries & Polynomials \'18 (IBL)]
-- [H2G2 Algebraic Topology \'17]
+|                                              |                                              |
+|----------------------------------------------|----------------------------------------------|
+| [Symmetries & Polynomials \'18 (IBL)]        | [H2G2 Algebraic Topology \'17]               |
+| [Honors Single Variable Calculus \'18 (IBL)] | [Honors Single Variable Calculus \'17 (IBL)] |
 
 ## Expository Notes
 
@@ -82,30 +67,18 @@ The entire folder can be found [here](https://drive.google.com/drive/folders/1UR
 They have not been proofread and are likely to contain several mistakes, viewer discretion is advised.
 ("One day" when I get some free time I intend to clean them up.)
 
-#### Homotopy Theory
-
-- [ What is a Spectrum? ]
-- [ Vector fields on Spheres ]
-- [Mosher and Tangora Notes]
-- [ Steifel Whitney Numbers ] 
-- [Homotopy of  MO]
-- [ Model Categories ]
-- [Infinity Categories]
-
-#### Symplectic Topology & Physics
-
-- [h-principles MSRI Summer School]
-- [Symplectic Geometry]
-- [Geometry of Dirac Operators]
-- [Finite Group Gauge Theory]
-- [FIOs and Lagrangian Submanifolds]
-- [Classical Lie Groups]
-- [Connections on Principal Bundles and Classical Electromagnetism]
-
-#### Algebra
-
-- [Commutative Algebra Notes]
-- [Rep Theory of Symmetric Group]
+|                              |                                                                   |
+|------------------------------|-------------------------------------------------------------------|
+| **Homotopy Theory**          | [ What is a Spectrum? ]                                           |
+| [ Vector fields on Spheres ] | [ Steifel Whitney Numbers ]                                       |
+| [Homotopy of  MO]            | [ Model Categories ]                                              |
+| [Mosher and Tangora Notes]   | [Infinity Categories]                                             |
+| **Symplectic Topology**      | [h-principles MSRI Summer School]                                 |
+| [Symplectic Geometry]        | [Geometry of Dirac Operators]                                     |
+| [Finite Group Gauge Theory]  | [FIOs and Lagrangian Submanifolds]                                |
+| [Classical Lie Groups]       | [Connections on Principal Bundles and Classical Electromagnetism] |
+| **Algebra**                  |                                                                   |
+| [Commutative Algebra Notes]  | [Rep Theory of Symmetric Group]                                   |
 
 
   [H2G2 Algebraic Topology \'17]: https://drive.google.com/drive/folders/1UmhBnhqXzL1b9kb1zn-7qkYgSSW-Gmwz?usp=sharing

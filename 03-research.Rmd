@@ -1,4 +1,8 @@
-# Math Projects
+# Research 
+
+I work in the area of algebraic topology and homotopy theory. My broad
+interests are in understanding how homotopy theoretic tools can be used
+to solve problems from other areas of math. 
 
 ## Current Projects
 
