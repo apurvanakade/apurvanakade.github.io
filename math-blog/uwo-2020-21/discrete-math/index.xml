@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>discrete math on Math Problems</title>
+    <link>https://apurvanakade.github.io/math-blog/uwo-2020-21/discrete-math/</link>
+    <description>Recent content in discrete math on Math Problems</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 26 Aug 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://apurvanakade.github.io/math-blog/uwo-2020-21/discrete-math/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Let&#39;s do this</title>
+      <link>https://apurvanakade.github.io/math-blog/uwo-2020-21/discrete-math/init/</link>
+      <pubDate>Wed, 26 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://apurvanakade.github.io/math-blog/uwo-2020-21/discrete-math/init/</guid>
+      <description>teaching is a complex process. where i&amp;rsquo;m using the word complex in the same way that atul gawande uses in the checklist manifesto. there are so a lot of moving parts from planning to execution and a lot of room for error. sometimes small changes have large effects and sometimes a huge effort goes to complete waste.
+the way university math education currently works is that it is taken as self-evident that someone who is good at math is going to excel at teaching.</description>
+    </item>
+    
+  </channel>
+</rss>
