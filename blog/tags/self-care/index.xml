@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>self-care on PostDoc Problems</title>
+    <link>https://apurvanakade.github.io/blog/tags/self-care/</link>
+    <description>Recent content in self-care on PostDoc Problems</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 29 Aug 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://apurvanakade.github.io/blog/tags/self-care/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Sleep</title>
+      <link>https://apurvanakade.github.io/blog/journal/lockdown-diaries/sleep/</link>
+      <pubDate>Sat, 29 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://apurvanakade.github.io/blog/journal/lockdown-diaries/sleep/</guid>
+      <description>I have heard Matthew Walker talk about sleep, a lot. But I never really took him seriously. I find him preachy and his talks are always exaggerated. The first time I got really curious about sleep is when I heard this talk:   One of the silver linings of this depressing lockdown is that this has given me a lot of time to reflect and introspect, look inwards as they say.</description>
+    </item>
+    
+  </channel>
+</rss>
