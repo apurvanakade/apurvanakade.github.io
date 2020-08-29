@@ -1,7 +1,7 @@
 ---
 title: "Observing Your Thoughts"
 date: 2020-06-26T00:00:00-00:00
-tags : []
+tags : ["introspection"]
 type : "post"
 
 ---
