@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>book on Math Problems</title>
+    <link>https://apurvanakade.github.io/math-blog/tags/book/</link>
+    <description>Recent content in book on Math Problems</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 30 Aug 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://apurvanakade.github.io/math-blog/tags/book/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Zybooks</title>
+      <link>https://apurvanakade.github.io/math-blog/uwo-f20/discrete-math/zybooks/</link>
+      <pubDate>Sun, 30 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://apurvanakade.github.io/math-blog/uwo-f20/discrete-math/zybooks/</guid>
+      <description>I was going to write a long rant about how much i despise north american math textbooks but I&amp;rsquo;ll leave that for later. I&amp;rsquo;ll just say that if I had studied math using these books I&amp;rsquo;d probably never have decided to pursue it as a career.
+I&amp;rsquo;m very glad that one of the casualties of this pandemic is going to be the calculus textbook (and its siblings). While planning for this course I came across several online textbooks that I plan to explore in detail sometime.</description>
+    </item>
+    
+  </channel>
+</rss>
