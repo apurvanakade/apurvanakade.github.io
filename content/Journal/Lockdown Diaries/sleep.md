@@ -32,4 +32,4 @@ The good news is that I don't think that I'm a night owl.
 The sad news is that I'm probably extremely sleep deprived. 
 I think I need at least 9 hours of sleep every night but I can't remember the last time I got that much sleep on a regular basis.
 
-Data is beautiful. Now getting enough sleep is on my top goals.
+Data is beautiful. Now getting enough sleep is one my top goals.
