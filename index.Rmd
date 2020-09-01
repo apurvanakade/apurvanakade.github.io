@@ -1,6 +1,8 @@
 --- 
 title: "Apurva Nakade"
-author: "email: \"a\" + lowercase(lastname) + \"@uwo.ca\" <br /> [CV], [Research Statement] (outdated) "
+author: "email: <span onMouseOver=\"this.innerHTML='alastname@uwo.ca'\"
+                onMouseOut=\"this.innerHTML='(left as an exercise to the reader)'\">(left as an exercise to the
+                reader)</span> <br /> [CV], [Research Statement] "
 output: bookdown::gitbook
 github-repo: apurvanakade/apurvanakade.github.io
 description: "Personal Website."

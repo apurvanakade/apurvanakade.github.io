@@ -51,7 +51,7 @@ Reading projects:
 - Edgar Wang, *Algebraic Topology* and Alan Yan, *Algebraic Topology* by Hatcher.
 
 
-## Johns Hopkins University
+## Johns Hopkins
 
 At JHU, I designed and taught a full semester (IBL) Honors Single Variable Calculus course twice and also a couple of shorter intersession courses.
 

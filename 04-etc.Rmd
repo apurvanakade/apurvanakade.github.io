@@ -2,12 +2,16 @@
 
 [<img src="images/books.gif" width="250px" class="right" />](https://www.gocomics.com/sarahs-scribbles/2014/1/17)
   
-Fun for me is [reading books] and writing on [my blog] about random
-things. I love to [travel]. I type in [dvorak].
+Fun for me is [reading books]. I love to [travel]. I type in [dvorak].
+I love designing websites like this one (built using [bookdown]), [my blog\'s theme]
+(built using [Hugo]), and the [JHU DRP website].
 
-I love designing websites like this one (built using [bookdown]) and [my blog\'s theme]
-(built using [Hugo]). I have also started a couple of wikis for dumping [math-ed
-resources] and [computer hacks]. 
+I maintain several blogs and wikis:
+
+- [Personal blog]
+- [Blog about teaching]
+- [Wiki for dumping computer hacks]
+- [Wiki for dumping math-ed resources]
 
 In a past life I was involved with and highly recommend the following:
 
@@ -27,11 +31,14 @@ In a past life I was involved with and highly recommend the following:
 
   [my blog\'s theme]: https://github.com/apurvnakade/HugoTheme
   [reading books]: ./blog/art/books/index.html
-  [my blog]: ./blog
+  [Personal blog]: ./blog
+  [Blog about teaching]: https://notleftasanexercise.wordpress.com/
   [bookdown]: https://bookdown.org/
   [Hugo]: https://gohugo.io/
-  [math-ed resources]: https://www.notion.so/Math-Wiki-01783c0807aa4fa18d7d28a7f724fcde
-  [computer hacks]: https://www.notion.so/Wiki-1b656cca9c964d79b932d4c76cc8ed7d
+  [JHU DRP website]: http://www.math.jhu.edu/drp.html
+
+  [Wiki for dumping math-ed resources]: https://www.notion.so/Math-Wiki-01783c0807aa4fa18d7d28a7f724fcde
+  [Wiki for dumping computer hacks]: https://www.notion.so/Wiki-1b656cca9c964d79b932d4c76cc8ed7d
   [travel]: https://drive.google.com/open?id=1wpCR64gzKc7Zp8V-FIn43ANMA6QULjMS&usp=sharing
  
   [dvorak]: https://en.wikipedia.org/wiki/Dvorak_Simplified_Keyboard
