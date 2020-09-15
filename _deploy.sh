@@ -1,5 +1,8 @@
 #!/bin/sh
 
+./_clean.sh 
+./_build.sh
+
 rm -rf ../gh-pages/css/
 rm -rf ../gh-pages/images/
 rm -rf ../gh-pages/libs/

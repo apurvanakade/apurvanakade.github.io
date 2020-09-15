@@ -28,20 +28,20 @@ I am fortunate to have been able to participate in the amazing place that is the
 Among other things, I have been designing and teaching some fun courses there and mentoring reading and Lean projects. 
 Following are notes from some of the courses I've taught and projects I've done with mathcampers.
 
-|                                     |                                                   |
-|-------------------------------------|---------------------------------------------------|
-| [![Canada/USA Mathcamp] 2020][2020] | [Lean at MC2020]                                  |
-| [How to glue donuts]                              | [How Riemann *finally* understood logarithms]     |
-| [![Canada/USA Mathcamp] 2019][2019] | |
-| [From High School Arithmetic to Group Cohomology] | [Crash Course on Linear Algebra]                  |
-| [Riemann Surfaces]                                | [Galois Correspondence of Covering Spaces]        |
-| [![Canada/USA Mathcamp] 2018][2018] | |
-| [Cohomology via Sheaves] | [The Quantum Spring] | 
-| [Would I ever Lie Group to you?] | [How Curved Is a Potato?] |
-| [![Canada/USA Mathcamp] 2017][2017] |  |
-| [Euler Characteristic] | [Symmetries of Spaces] |
-| [What is Homology?] | [Representation theory] |
-| [Lagrangian and Hamiltonian Mechanics] | [All things manifoldy] |
+|                                                   |                                               |
+|---------------------------------------------------|-----------------------------------------------|
+| [![Canada/USA Mathcamp] 2020][2020]               | [Lean at MC2020]                              |
+| [How to glue donuts]                              | [How Riemann *finally* understood logarithms] |
+| [![Canada/USA Mathcamp] 2019][2019]               |                                               |
+| [From High School Arithmetic to Group Cohomology] | [Crash Course on Linear Algebra]              |
+| [Riemann Surfaces]                                | [Galois Correspondence of Covering Spaces]    |
+| [![Canada/USA Mathcamp] 2018][2018]               |                                               |
+| [Cohomology via Sheaves]                          | [The Quantum Spring]                          |
+| [Would I ever Lie Group to you?]                  | [How Curved Is a Potato?]                     |
+| [![Canada/USA Mathcamp] 2017][2017]               |                                               |
+| [Euler Characteristic]                            | [Symmetries of Spaces]                        |
+| [What is Homology?]                               | [Representation theory]                       |
+| [Lagrangian and Hamiltonian Mechanics]            | [All things manifoldy]                        |
   
 Reading projects:
 
@@ -73,7 +73,7 @@ They have not been proofread and are likely to contain several mistakes, viewer 
 | [ Vector fields on Spheres ] | [ Steifel Whitney Numbers ]                                       |
 | [Homotopy of  MO]            | [ Model Categories ]                                              |
 | [Mosher and Tangora Notes]   | [Infinity Categories]                                             |
-| **Symplectic Topology**      | [h-principles MSRI Summer School]                                 |
+| **Mathematical Physics**     | [h-principles MSRI Summer School]                                 |
 | [Symplectic Geometry]        | [Geometry of Dirac Operators]                                     |
 | [Finite Group Gauge Theory]  | [FIOs and Lagrangian Submanifolds]                                |
 | [Classical Lie Groups]       | [Connections on Principal Bundles and Classical Electromagnetism] |
@@ -81,9 +81,11 @@ They have not been proofread and are likely to contain several mistakes, viewer 
 | [Commutative Algebra Notes]  | [Rep Theory of Symmetric Group]                                   |
 
 
-  [H2G2 Algebraic Topology \'17]: https://drive.google.com/drive/folders/1UmhBnhqXzL1b9kb1zn-7qkYgSSW-Gmwz?usp=sharing
-  [Honors Single Variable Calculus \'17 (IBL)]: https://drive.google.com/drive/folders/16gJLOf0L6RJ09yRL_b7AozVyq3wHsTMG?usp=sharing
-  [Honors Single Variable Calculus \'18 (IBL)]: https://drive.google.com/drive/folders/1xF37VjqpQfSI9W5PmrK19bp8OybGmmpW?usp=sharing
+  [Math 2151A (Discrete Math for Engineers)]: https://owl.uwo.ca/portal/site/5a31b856-d356-4278-9a3a-1dfebc96e873
+
+  [H2G2 Algebraic Topology \'17]: courses/2017_h2g2_alg_top/index.html
+  [Honors Single Variable Calculus \'17 (IBL)]: courses/2017_Honors_Calc/index.html
+  [Honors Single Variable Calculus \'18 (IBL)]: courses/2018_Honors_Calc/index.html
   
   [Symmetries & Polynomials \'18 (IBL)]: https://drive.google.com/file/d/1dChuk8J7s31C8xGurzsbf988VORnyXgb/view?usp=sharing
 
@@ -101,9 +103,9 @@ They have not been proofread and are likely to contain several mistakes, viewer 
   [Galois Correspondence of Covering Spaces]: https://drive.google.com/file/d/1yMpw52rjMrBRj5q8W2PIDRDp9yXmDYVN/view?usp=sharing
   [From High School Arithmetic to Group Cohomology]: https://drive.google.com/file/d/1L7urIOuiu4JIfI6ry2lkKin6Xof8yJdd/view?usp=sharing
   [Crash Course on Linear Algebra]: https://drive.google.com/file/d/1lnX4p_K75vMl0rt0JtOeTYPm9eA6Zi2j/view?usp=sharing
-  [Riemann Surfaces]: https://drive.google.com/drive/folders/16o9Slgd4YvhjUCEp_BHSc-xf-2ubKHlo?usp=sharing
+  [Riemann Surfaces]: courses/Mathcamp/2019_riemann_surfaces/index.html
   
-  [How Curved Is a Potato?]: https://drive.google.com/drive/folders/1zZ49l7ZrmVfg4Lrt7iiCZrk3YH_kVVSg?usp=sharing
+  [How Curved Is a Potato?]: courses/Mathcamp/2018_how_curved_is_a_potato/index.html
   [Cohomology via Sheaves]: https://drive.google.com/file/d/1C21oAC_dH0EX-el2mdT9lH_taY2xZNMm/view?usp=sharing
   [The Quantum Spring]: https://drive.google.com/file/d/1UxZK5drBPLGt4GCC22VtEgYsGLT3p8Nu/view?usp=sharing
   [Would I ever Lie Group to you?]: https://drive.google.com/file/d/1QSPZ5WpFDLCa1AzFrJiE57NXRhwRo8Ra/view?usp=sharing
@@ -123,10 +125,10 @@ They have not been proofread and are likely to contain several mistakes, viewer 
   [Homotopy of MO]: https://drive.google.com/drive/folders/1ns-S54As89Srb8Hlz2ypOmzoOA-CW3il?usp=sharing
   [Infinity Categories]: https://drive.google.com/drive/folders/12tMk47gvY0B8cL0LmtRxLMcrVudd73y-?usp=sharing
   [h-principles MSRI Summer School]: https://drive.google.com/file/d/1uecVJP6Xl1vScsswWGqBtJ1s3o9PwG8C/view?usp=sharing
-  [Symplectic Geometry]: https://drive.google.com/drive/folders/1NJllhRgGV5uMSg3hfbp2wcJgScIwhhSZ?usp=sharing
+  [Symplectic Geometry]: https://drive.google.com/file/d/1YbjFhmTt6yvCdxyb4nT7aVz9g4w0E-PN/view?usp=sharing
   [Geometry of Dirac Operators]: https://drive.google.com/drive/folders/19GanFw6odpL4tRUJa-mPsVmVKcK52jaW?usp=sharing
   [Finite Group Gauge Theory]: https://drive.google.com/drive/folders/1OyE4ADuxnFIJ3-wuEifCNYWcCF2-iiRd?usp=sharing
-  [FIOs and Lagrangian Submanifolds]: https://drive.google.com/drive/folders/1lkx7z7ht5XuRAhhKnhVgLiPHJ2GLSrT3?usp=sharing
+  [FIOs and Lagrangian Submanifolds]: https://drive.google.com/file/d/1jrV_2VjR1xGa6eham0FIxiVvMngsF8Xs/view?usp=sharing
   [Classical Lie Groups]: https://drive.google.com/file/d/15SwA8TDmLUMElPQYvhMcIAttXgNzuKbz/view?usp=sharing
   [Connections on Principal Bundles and Classical Electromagnetism]: https://drive.google.com/file/d/1kFh_-_DmR4wt-sDBiOggM5a5U-5W7V_l/view?usp=sharing
   [Commutative Algebra Notes]: https://drive.google.com/file/d/1iwjYv6a5myfnvFKXg8VGAd2fsMZTDXin/view?usp=sharing

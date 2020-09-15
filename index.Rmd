@@ -20,7 +20,7 @@ In addition to research, I am very passionate about improving math education. I 
 modernize math-ed and bring it to the 21st century through the use of new technological innovations 
 in teaching and in the process make it more accessible and equitable.
 
-I\'m currently teaching [Math 2151A (Discrete Math for Engineers)].
+Things that keep me busy these days: teaching [Math 2151A (Discrete Math for Engineers)], making [video lectures], organizing the [DRP], applying for jobs.
 
   [University of Western Ontario]: http://www.math.uwo.ca/ 
   [Dan Christensen]: https://jdc.math.uwo.ca/ 
@@ -28,3 +28,5 @@ I\'m currently teaching [Math 2151A (Discrete Math for Engineers)].
   [CV]: https://drive.google.com/file/d/1CZJ4_A2ssI0-V_HszcPoEJyQC1EY2s5u/view?usp=sharing
   [Research Statement]: https://drive.google.com/file/d/15HeOJjr6BuuxA0ZNCwSYeHpB2d5Z2sci/view?usp=sharing
   [Math 2151A (Discrete Math for Engineers)]: https://owl.uwo.ca/portal/site/5a31b856-d356-4278-9a3a-1dfebc96e873
+  [DRP]: https://www.math.uwo.ca/undergraduate/directed_reading_program.html 
+  [video lectures]: https://www.youtube.com/playlist?list=PLXAOfwfSuiKm3cL-JftD9ndrjYi7fPcqN
