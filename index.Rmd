@@ -20,7 +20,7 @@ In addition to research, I am very passionate about improving math education. I 
 modernize math-ed and bring it to the 21st century through the use of new technological innovations 
 in teaching and in the process make it more accessible and equitable.
 
-Things that keep me busy these days: teaching [Math 2151A (Discrete Math for Engineers)], making [video lectures], organizing the [DRP], applying for jobs.
+Things that keep me busy these days: teaching [Math 2151A (Discrete Math for Engineers)], making [video lectures], organizing the [DRP].
 
   [University of Western Ontario]: http://www.math.uwo.ca/ 
   [Dan Christensen]: https://jdc.math.uwo.ca/ 
