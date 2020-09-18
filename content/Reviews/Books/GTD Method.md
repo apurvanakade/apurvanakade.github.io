@@ -5,6 +5,12 @@ tags : ["notes","non-fiction"]
 type : "post"
 ---
 
+<figure class="right xsmall">
+<a target="_blank" href="https://en.wikipedia.org/wiki/Getting_Things_Done">
+<img src="https://upload.wikimedia.org/wikipedia/en/e/e1/Getting_Things_Done.jpg">
+</a>
+</figure>
+
 These are some notes I took from the book *Getting Things Done* by David Allen. Let me first start with the cons of the book. First the book is tediously repetitive, while some repetition is good to drill the concepts deep in your mind, the book overdoes it. Second, the book is clearly intended for people who've white collar jobs, mostly managers and executives. 
 
 But that does not mean that you cannot gatecrash the party. This book has really good ideas and insights that are helpful in *unloading* your mind and bringing order in your day-to-day life. Further David Allen makes it very clear that the *GTD* method, is helpful for, but is not the main tool for making decisions about the big things in your life, those are for you, and you alone, to figure out.
