@@ -6,10 +6,37 @@
     <description>Recent content in Tags on PostDoc Problems</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 29 Aug 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 23 Sep 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://apurvanakade.github.io/blog/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>comics</title>
+      <link>https://apurvanakade.github.io/blog/tags/comics/</link>
+      <pubDate>Wed, 23 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://apurvanakade.github.io/blog/tags/comics/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>drama</title>
+      <link>https://apurvanakade.github.io/blog/tags/drama/</link>
+      <pubDate>Wed, 23 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://apurvanakade.github.io/blog/tags/drama/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>sci-fi</title>
+      <link>https://apurvanakade.github.io/blog/tags/sci-fi/</link>
+      <pubDate>Wed, 23 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://apurvanakade.github.io/blog/tags/sci-fi/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>introspection</title>
@@ -75,29 +102,11 @@
     </item>
     
     <item>
-      <title>drama</title>
-      <link>https://apurvanakade.github.io/blog/tags/drama/</link>
-      <pubDate>Mon, 17 Aug 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://apurvanakade.github.io/blog/tags/drama/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>japan</title>
       <link>https://apurvanakade.github.io/blog/tags/japan/</link>
       <pubDate>Mon, 17 Aug 2020 00:00:00 +0000</pubDate>
       
       <guid>https://apurvanakade.github.io/blog/tags/japan/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>sci-fi</title>
-      <link>https://apurvanakade.github.io/blog/tags/sci-fi/</link>
-      <pubDate>Mon, 17 Aug 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://apurvanakade.github.io/blog/tags/sci-fi/</guid>
       <description></description>
     </item>
     
