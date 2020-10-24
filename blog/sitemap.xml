@@ -3,8 +3,13 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://apurvanakade.github.io/blog/reviews/books/</loc>
+    <lastmod>2020-09-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://apurvanakade.github.io/blog/reviews/</loc>
-    <lastmod>2020-09-23T00:00:00+00:00</lastmod>
+    <lastmod>2020-09-24T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -20,11 +25,6 @@
   <url>
     <loc>https://apurvanakade.github.io/blog/journal/lockdown-diaries/</loc>
     <lastmod>2020-09-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://apurvanakade.github.io/blog/reviews/books/</loc>
-    <lastmod>2020-08-20T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -92,6 +92,41 @@
   </url>
   
   <url>
+    <loc>https://apurvanakade.github.io/blog/tags/absurd/</loc>
+    <lastmod>2020-09-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://apurvanakade.github.io/blog/tags/camus/</loc>
+    <lastmod>2020-09-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://apurvanakade.github.io/blog/tags/fiction/</loc>
+    <lastmod>2020-09-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://apurvanakade.github.io/blog/tags/philosophy/</loc>
+    <lastmod>2020-09-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://apurvanakade.github.io/blog/</loc>
+    <lastmod>2020-09-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://apurvanakade.github.io/blog/tags/</loc>
+    <lastmod>2020-09-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://apurvanakade.github.io/blog/reviews/books/the-fall/</loc>
+    <lastmod>2020-09-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://apurvanakade.github.io/blog/tags/comics/</loc>
     <lastmod>2020-09-23T00:00:00+00:00</lastmod>
   </url>
@@ -102,17 +137,7 @@
   </url>
   
   <url>
-    <loc>https://apurvanakade.github.io/blog/</loc>
-    <lastmod>2020-09-23T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://apurvanakade.github.io/blog/tags/sci-fi/</loc>
-    <lastmod>2020-09-23T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://apurvanakade.github.io/blog/tags/</loc>
     <lastmod>2020-09-23T00:00:00+00:00</lastmod>
   </url>
   
@@ -153,16 +178,6 @@
   
   <url>
     <loc>https://apurvanakade.github.io/blog/tags/dostoevsky/</loc>
-    <lastmod>2020-08-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://apurvanakade.github.io/blog/tags/fiction/</loc>
-    <lastmod>2020-08-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://apurvanakade.github.io/blog/tags/philosophy/</loc>
     <lastmod>2020-08-20T00:00:00+00:00</lastmod>
   </url>
   
@@ -224,11 +239,6 @@
   <url>
     <loc>https://apurvanakade.github.io/blog/journal/lockdown-diaries/not-knowing/</loc>
     <lastmod>2020-06-07T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://apurvanakade.github.io/blog/tags/camus/</loc>
-    <lastmod>2020-06-06T00:00:00+00:00</lastmod>
   </url>
   
   <url>
