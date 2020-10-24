@@ -33,8 +33,8 @@ He then quits his comfortable life in Paris and moves to Africa as a form of rep
 Then he gives up on penitence and decides to embrace his demons. 
 He turns to Amsterdam to use his law skills in service of the criminal class.
 To be both physically and socially in one of the lowest places in the world. 
-To him the canals of the city represents the circles of hell and this final transition completes his *fall* from the heaven of Paris to the hell of Amsterdam.
+To him, the canals of the city represent the circles of hell and this final transition completes his *fall* from the heaven of Paris to the hell of Amsterdam.
 
-The story is a parable whose intended meaning is something that one can only guess at. The [wiki page](https://en.wikipedia.org/wiki/The_Fall_(Camus_novel)) claims that this is a story about universal guilt, the absence of innocence, and the impossibility of penitence. And I can see all of that. But to me this story seems to be another manifestation of his philosophy of the absurd. It reflects his great insight into the human condition about the futility of reason and what drives humans. 
-Our hero slowly goes from action, to awareness and reflection, to acceptance - acceptance of his own nature and the nature of reality and his inability to run from it. 
+The story is a parable whose intended meaning is something that one can only guess at. The [wiki page](https://en.wikipedia.org/wiki/The_Fall_(Camus_novel)) claims that this is a story about universal guilt, the absence of innocence, and the impossibility of penitence. And I can see all of that. But to me, this story seems to be another manifestation of his philosophy of the absurd. It reflects his great insight into the human condition about the futility of reason and what drives humans. 
+Our hero slowly goes from action to awareness to reflection,and finally to acceptance - acceptance of his own nature and the nature of reality and his inability to run from it. 
 Through his fall he rises out of naivety and achieves enlightenment. As he puts it at the end of his story, "It's too late now, it will always be too late. Fortunately!"
