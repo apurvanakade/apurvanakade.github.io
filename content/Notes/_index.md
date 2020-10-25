@@ -1,4 +1,4 @@
 ---
-title: "Reviews"
+title: "Notes"
 weight: 1
 ---
