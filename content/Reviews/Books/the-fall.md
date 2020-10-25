@@ -20,7 +20,7 @@ He is the most enlightened person I've ever read.
 
 *The Fall* is the story of a benevolent lawyer who is always going out of his ways to help others, a hugely successful lawyer who offers his services to the poor for free. He is the perfect partner in love and best friend one can possibly hope for.
 
-One unfortunate night he hears a women scream while jumping off a bridge into the cold Seine. 
+One unfortunate night he hears a woman scream while jumping off a bridge into the cold Seine. 
 Instead of stopping and doing something about it, he looks around, and seeing that there is no one nearby he continues walking pretending as if nothing has happened. 
 This singular incident then completely unravels his life and becomes the beginning of his *fall*.  
 
@@ -36,5 +36,5 @@ To be both physically and socially in one of the lowest places in the world.
 To him, the canals of the city represent the circles of hell and this final transition completes his *fall* from the heaven of Paris to the hell of Amsterdam.
 
 The story is a parable whose intended meaning is something that one can only guess at. The [wiki page](https://en.wikipedia.org/wiki/The_Fall_(Camus_novel)) claims that this is a story about universal guilt, the absence of innocence, and the impossibility of penitence. And I can see all of that. But to me, this story seems to be another manifestation of his philosophy of the absurd. It reflects his great insight into the human condition about the futility of reason and what drives humans. 
-Our hero slowly goes from action to awareness to reflection,and finally to acceptance - acceptance of his own nature and the nature of reality and his inability to run from it. 
+Our hero slowly goes from action to awareness to reflection, and finally to acceptance - acceptance of his own nature and the nature of reality and his inability to run from it. 
 Through his fall he rises out of naivety and achieves enlightenment. As he puts it at the end of his story, "It's too late now, it will always be too late. Fortunately!"
