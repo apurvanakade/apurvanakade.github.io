@@ -5,10 +5,10 @@
 |------------|----------------------------------------------------|-------------------|---------------|-----------------------------|
 | UWO        | Algebraic Topology                                 | Winter 2021       | -             | Grad                        |
 |            | Discrete Structures for Engineering                | Fall 2020         | -             | First year undergrad        |
-|            | Calculus II for Mathematical and Physical Sciences | Winter 2020       | 150           | First year undergrad        |
+|            | Calculus II for Mathematical and Physical Sciences | Winter 2020       | 198           | First year undergrad        |
 |            | Calculus I for Mathematical and Physical Sciences  | Fall 2019         | 176           | First year undergrad        |
 |            | Topics in Category Theory                          | Fall 2019         | 3             | Grad                        |
-| JHU        | Symmetries & Polynomials                           | Intersession 2018 | 10            | All years undergrad         |
+| JHU        | Symmetries & Polynomials                           | Intersession 2018 | 15            | All years undergrad         |
 |            | Honors Single Variable Calculus                    | Spring 2017, 18   | 7             | First year undergrad        |
 |            | Hitchhiker’s Guide to Algebraic Topology           | Intersession 2017 | 11            | All years undergrad         |
 |            | Calculus II (For Biology and Social Science)       | Summer 2016       | 5             | First year undergrad        |

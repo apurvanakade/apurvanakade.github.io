@@ -7,29 +7,10 @@ github-repo: apurvanakade/apurvanakade.github.io
 
 # Brief Introduction
 
-I'm a postdoc in the Department of Mathematics at the University of Western Ontario working with Dan Christensen and Chris Kapulkin.
-
-In the Fall of 2020, I'll be teaching Math 2151A (Discrete Math for Engineers).
-
-I work in the area of algebraic topology and homotopy theory. My broad interests are in understanding how homotopy theoretic tools can be used to solve problems from other areas of math.
-
-While learning homotopy type theory, I came across the Lean theorem prover and have since gotten obsessed with it.
-
-I am interested in improving math education. I want to modernize math education and bring it to the 21st century through the use of new technological innovations in teaching and in the process make it more accessible and equitable.
-
-
-  -------------- ----------------------------------------------------------------------------------------------------------------------------------------------------------
-  Email          [(left as an exercise to the reader)]{onmouseover="this.innerHTML='alastname@uwo.ca'" onmouseout="this.innerHTML='(left as an exercise to the reader)'"}
-  Office Hours   all the time
-  Job Stuff      [ceeeeEEEEEVVVVVeeeee]
-                 [Research Statement]
-  -------------- ----------------------------------------------------------------------------------------------------------------------------------------------------------
-
-
-  [Department of Mathematics]: http://www.math.uwo.ca/ {.external-link}
-  [Dan Christensen]: https://jdc.math.uwo.ca/ {.external-link}
-  [Chris Kapulkin]: http://www.math.uwo.ca/faculty/kapulkin/
-  [ceeeeEEEEEVVVVVeeeee]: docs/CV.pdf
-  [Research Statement]: docs/ResearchStatement.pdf
-  [USA/Canada Mathcamp]: https://www.mathcamp.org/current_program/
-  [Lean theorem prover]: https://leanprover-community.github.io/
+I am a postdoc in the math department at the University of Western Ontario.
+As a math educator, I consider cheap and easy accessibility of education as my primary motivation. 
+I believe that higher education is a fundamental right and hence should be freely available to anyone who is willing to put in the time and the right kind of effort.
+We now have the technological tools that can make this possible.
+My computer engineering background puts me in a unique position to leverage these tools and use them to supplement (and not replace) math teachers everywhere. These can be used to create courses that can reach a much wider audience than was previously possible without comprising the quality of education.
+I do not see online classes as being subpar to in-person classes. 
+If anything, I see the current situation as an opportunity for us, math educators, to radically rethink our definition of a math classroom.
