@@ -1,0 +1,188 @@
+# Teaching Effectiveness
+
+## End of Course Surveys
+
+
+The following table presents scores from questions posed through the end
+of semester survey collected and are based on a scale of 1 (Strongly
+Disagree) to 5 (Strongly Agree) for JHU and 1 (Strongly Disagree) to 7
+(Strongly Agree) for UWO.
+
+  Course                                           Teaching Effectiveness   Usefulness of Feedback
+  ------------------------------------------------ ------------------------ ------------------------
+  Discrete Structures for Engineering, 2020        6.61/7                   \-
+  Calculus I, 2019                                 6.84/7                   5.38/7
+  Symmetries & Polynomials, 2018                   4.53/5                   4.63/5
+  Honors Single Variable Calculus, 2018            3.78/5                   4.22/5
+  Differential Equations, 2017                     4.56/5                   4.33/5
+  Hitchhiker's Guide to Algebraic Topology, 2017   5/5                      4.43/5
+  Differential Equations, 2015                     4.25/5                   4.13/5
+  Online Linear Algebra, 2014                      3.33/5                   3.36/5
+
+The data for Discrete Structures for Engineering 2020 is based on
+Midterm Check-in as the course is ongoing. There was no end of course
+survey for the Winter 2019 semester because of Covid. The complete data,
+which includes student comments, can be found here:
+<https://tinyurl.com/nakade-evals>
+
+
+## Student Comments
+
+**Discrete Structures for Engineering, UWO 2020**
+
+-   The instructor for this course has done a very good job, easy
+    communication between students and instructors is essential
+    especially this year, and he has done the best job out of all my
+    courses. I appreciate the work he has put into the course to ensure
+    that we get the most out of it
+
+-   Professor Apurva is one of the rare professors that is excellent in
+    explaining mathematics using examples and helping build the
+    conceptual image in my mind. I am taking this course again because I
+    dropped it simply because I wasn't understanding the basic concept
+    that the professor explained by using proof. Professor's method of
+    using an iPad and explain videos is parallel to watching Khan
+    Academy. His explanations are clear and also states what is common
+    for some things we learn about in the real world and what is not. He
+    also gives boundaries about what a concept is and what it isn't on
+    top of explaining the concept. And the PA activities do an excellent
+    job of visualising the imagined concept that Professor Apurva
+    sparked. We also utilize Piazza to communicate with friends and ask
+    questions. It is also especially useful for seeing what most
+    students are struggling with and try to attempt those problems
+    yourselves and also get an opportunity to answer if you do know the
+    solution.
+
+-   While some of the material was at first a bit confusing, Professor
+    Nakade does an excellent job at explaining and giving examples
+    during his pre--filmed lectures that help a lot with my
+    understanding. Additionally, he adds comments that helps reassure
+    students that some material will take a long time to understand but
+    is doable with practice. Personally I find this very helpful as this
+    shows me that he recognizes when the course would be a little
+    difficult and tries to minimize the confusion and disappointment
+    students have when they don't get it the first time. Furthermore,
+    the midterm evaluation was a very fair assessment and despite being
+    proctored differently, it seems like something we would likely
+    receive in an in--person evaluation and that is very much
+    appreciated.
+
+
+**Calculus I, UWO 2019**
+
+-   You are easily the best professor I have had so far. I find that
+    your teaching methods are very effective in terms of fully
+    explaining and presenting the concepts of calculus, and the
+    integration of examples within the notes have been very helpful as
+    they relate to the questions given on webwork and the exams.
+
+-   Instructor Nakade is always willing to help us solve any problems we
+    are stuck on or unsure of. He will make many efforts to make time to
+    meet with us outside of his office hours if we are unable to meet
+    him during those times, to provide us with as much help as he can
+    about any of the concepts covered in this class.
+
+-   Apurva Nakade has so far been the best professor I have had. I
+    believe that his methods for teaching and leading a class is highly
+    effective in terms of presenting ideas and concepts in a way that
+    can be learned efficiently. The examples and homework provided have
+    been very helpful in preparation for the quizzes and exams, and his
+    direct communication with the students is extremely helpful and
+    effective. The notes are very structured and planned, and this level
+    of focus improves the ability of the students to learn from the
+    notes.
+
+**Honors Single Variable Calculus, JHU 2018**
+
+-   The course was heavily tailored to the students and was a good
+    introduction to proofs. It was pretty enjoyable, and I liked the
+    class structure. The professor was generally pretty helpful,
+    especially during office hours. I understand how to write
+    mathematical proofs much better and I feel more confident in my
+    understanding of calculus.
+
+-   You learn a lot in this course in a very short period of time. The
+    deeper understanding of calculus and proofs. Working through
+    problems in class in groups. He makes himself available often for
+    office hours and is helpful during them. He made the homework sheets
+    himself and they are very well done and put together. The course
+    website with the accumulative note sheet is super helpful. There is
+    a lot of forgiveness in the grading, so it's okay if you screw
+    something up.
+
+-   Its a brilliant course thats very stimulating and provides you
+    detailed grounding in the proofs for calculus.
+
+**Mathcamp**
+
+-   I loved Apurva's enthusiasm for the subjects he taught! I like how
+    he connected everything to topology. It was really fun doing chat
+    blasts as well as breakout room activities because we were able to
+    stay engaged. Also, I appreciate that the problems we solved in
+    breakout rooms were relatively easy so we weren't stuck, and then we
+    would have the remaining time to make more connections. Overall
+    Apurva is super cheery and fun to be around!
+
+-   Apurva is an amazing teacher! His explanations are very clear and
+    easy to understand. He includes plenty of examples that support the
+    lecture. He has also been very helpful during TAU, guiding me
+    through any material I don't completely understand and answering
+    questions. Apurva has also heavily contributed to the positive
+    atmosphere at Mathcamp. He is very friendly and his humor never
+    fails to make campers laugh.
+
+-   Even though a lot of Apurva's classes have been challenging for me,
+    he was still able to help me follow the material. He's great at
+    explaining topics in math and is really good at making any idea feel
+    intuitive and finally make sense. He's also very encouraging and
+    enthusiastic when explaining and happy to walk through a problem
+    slowly with you for any class. Finally, he's super fun to talk to
+    about basically anything (math and otherwise) and is overall a
+    really friendly and approachable person.
+
+
+Teaching Awards
+---------------
+
+-   [*William Kelso Morrill Award for Excellence in Mathematics*], JHU
+    2019\
+    The William Kelso Morrill Award for Excellence in Mathematics is
+    given each year to the graduate student in the department of
+    mathematics who best displays the traits of Kelso Morrill in his
+    teaching - love of teaching, love of mathematics, and concern for
+    students.
+
+-   Finalist for the [*KSAS Excellence in Teaching Awards*], JHU 2019\
+    Excellence in Teaching Awards honor the best graduate TAs in the
+    Krieger School of Arts and Sciences for the care and concern they
+    take with their subject and their students. The criterion for
+    selection include: engaging students, building community,
+    influencing and inspiring students, promoting diversity and culture
+    of inclusion, and developing relationships beyond the classroom.
+
+-   [*Prof. Joel Dean award for Excellence in Teaching in
+    Mathematics*][*William Kelso Morrill Award for Excellence in Mathematics*],
+    JHU 2016\
+    Prof. Joel Dean award for Excellence in Teaching in Mathematics is
+    an annual award to recognize graduate students and faculty in the
+    department of mathematics who have exhibited extraordinary
+    performance in teaching undergraduates. The award was initiated by
+    Joel and Monia Dean with the objective of promoting excellence in
+    undergraduate education at the Krieger School and funded by the Joel
+    Dean Foundation created by Professor Dean in 1957.
+
+  [*William Kelso Morrill Award for Excellence in Mathematics*]: https://sites.krieger.jhu.edu/math-intranet/for-graduate-students/graduate-awards/
+  [*KSAS Excellence in Teaching Awards*]: https://krieger.jhu.edu/teachingaward/
+
+
+
+## Peer Comments
+
+In Winter 2020, I participated in the Teaching Mentor Program at UWO.
+  The Teaching Mentor Program is a cohort-based hands-on learning experience. Participants work with a group of 4-5 interdisciplinary graduate students and postdoctoral scholars to observe and offer feedback on one another's teaching. Groups will meet multiple times over the semester to act as students in one another's teaching demonstrations. My group had four participants whose feedback is attached here.
+
+<iframe 
+  src="https://drive.google.com/file/d/1Dl5DvyAlWiH6yxc4AmfXEOpvDb5z48ri/preview" 
+  style="width: 100%; 
+  height: 100vh;">
+</iframe>

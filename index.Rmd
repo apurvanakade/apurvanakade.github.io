@@ -5,12 +5,107 @@ output: bookdown::gitbook
 github-repo: apurvanakade/apurvanakade.github.io
 ---
 
-# Brief Introduction
+# Introduction
 
 I am a postdoc in the math department at the University of Western Ontario.
-As a math educator, I consider cheap and easy accessibility of education as my primary motivation. 
+
 I believe that higher education is a fundamental right and hence should be freely available to anyone who is willing to put in the time and the right kind of effort.
+Figuring out how to provide cheap, easily accessible, and yet high-quality education as my primary motivation for being in academia.
+
+<img src="https://apurvanakade.github.io/images/me0.jpg" width="200px" class="left" />
+
 We now have the technological tools that can make this possible.
+I'm very passionate about the use of technology in education.
 My computer engineering background puts me in a unique position to leverage these tools and use them to supplement (and not replace) math teachers everywhere. These can be used to create courses that can reach a much wider audience than was previously possible without comprising the quality of education.
+
 I do not see online classes as being subpar to in-person classes. 
 If anything, I see the current situation as an opportunity for us, math educators, to radically rethink our definition of a math classroom.
+
+## Teaching Philosophy
+
+**Teaching Philosophy.**
+  The guiding principle for my teaching is ``the objective of education is learning, not teaching.''
+  In my classrooms, I'm merely a coach and a facilitator and teach with the core philosophy that my primary goal is to provide my students with a welcoming and inclusive environment where experimentation is encouraged, and students aren't penalized for making honest mistakes.
+  I use active learning techniques in all my classes. I believe that the best way to learn math is through making mistakes, getting confused, and struggling toward a solution and a math classroom is a place for students, and even the instructor, to grow as mathematicians.
+
+  My teaching experience ranges from creating advanced electives and short boot camp courses for small groups of students, managing and teaching in-person courses with several hundred students, and adapting extensive service courses for asynchronous education.  I have taught topics spanning calculus, linear algebra, discrete math, proof checking using computers, manifolds, and topology.
+
+**Online Teaching.**
+  My most exciting project has been the fully asynchronous Discrete Math course that I'm currently teaching, which has nearly 200 students. 
+  I've had to redevelop every aspect of the course from scratch to fit the current unprecedented situation.
+
+  Because this is an overwhelming time for many students, my priority has been to alleviate student anxiety. 
+  I've spread out the grades more evenly throughout all assessments and have informed my students beforehand that the exams will test competence and not expertise.
+  I maintain an active discussion forum on Piazza to develop a sense of an online community.
+  Following design principles, I've made my course as easy to follow as possible, and all assignments, forums, exams, deadlines, textbook, video lectures, and course resources are available in one place.
+  Over the summer, I explored several textbooks and chose an online one that allowed me to provide an active learning environment asynchronously.
+  Each week, I make short introductory videos and embed them directly at the start of each section, along with learning objectives and any special comments.
+  I assign weekly, short auto-graded assignments within the textbook, which provide immediate feedback.
+  I maintain a blog (\href{https://notleftasanexercise.wordpress.com/.**{notleftasanexercise.wordpress.com.**) to document and reflect upon my teaching.
+  Students have been very receptive, and I have received a lot of positive feedback from them.
+
+
+  For the exams, my focus has been on ensuring that students who do not cheat are not at a disadvantage while still ensuring that students' mental health is not adversely affected by the pressures of online assessments.
+  In a team consisting of me, my postdoc advisor, and two students, we created a randomized pool of hundreds of questions on WeBWork (open source platform supported by MAA).
+
+  **UWO.** In the previous year, I taught in large coordinated courses where I was the sole point of contact for over 150 students.
+  This challenging but rewarding learning experience taught me how to be more inclusive and considerate of students from very diverse backgrounds and to ensure that even those who had other priorities could benefit from learning math in whatever way possible.
+  I made myself available by having many office hours, which often ended up having high attendance.
+  I memorized as many of my students' names as I could to connect with them on a personal level and more effectively coach when guiding them through worksheets;
+  I learned this skill while teaching at a five-week summer program, Mathcamp, where I learned to memorize 120 students' names in a short period.
+  One of my students is now participating in the Directed Reading Program.
+ 
+**Mentoring.**
+  At JHU, I participated in a Directed Reading Program (first as a mentor and later as a co-organizer) that pairs undergraduate students with graduate students/junior faculty to undertake independent study projects. 
+  After moving to UWO, I started a DRP chapter here with one of my colleagues' help. 
+  Our motivation has slowly morphed from getting more students to major in math to building a thriving and welcoming undergraduate math community.
+  These programs have been successful at both universities, and we've seen significant and continuing growth in student interest and participation.
+  
+  This semester I'm also organizing a small topology boot camp, a crash course on point-set topology for undergraduates who'll be taking the graduate Algebraic Topology course that I'll be teaching next semester. I am also helping out the graduate students at UWO start a math-circles styled outreach program for the local schools. We are aiming to reach students from less privileged schools in the city to get them interested in math. It has been quite a challenge, given the current circumstances, but we have been making slow but steady progress. Adhering to my principle of letting students figure things out for themselves, I'm participating in an advisory capacity, providing feedback and direction, and trusting the grad students to do the decision-making.
+
+  
+**JHU.**
+  At JHU, I was fortunate to be given an opportunity to develop and teach Honors Single Variable Calculus for two semesters. 
+  I developed and taught two intersession courses introducing non-math majors to algebraic topology and Galois theory. 
+  While preparing the materials from scratch, I learned a lot about looking at things from a student's perspective.
+  I structured all of these classes in an inquiry-based format where instead of listening to lectures students learned the material by solving worksheets. My goal was to get students to understand the messy process of discovery in math.
+  The class size went up from 4 to 10 in the years I taught, and then close to 20 in the year after. 
+  
+  
+  
+  
+  
+  
+  
+
+**USA/Canada Mathcamp.**
+  My biggest influences have come from being a mentor (2017-20) and an academic coordinator
+  (2018) at the Canada/USA Mathcamp, a summer program for high school students.
+  Mathcamp allowed me to be a part of a loving and caring community, surrounded by people who love math and love to teach it and excel at it.
+  I took on an academic coordinator's role to contribute back to Mathcamp, challenge myself, and learn more about teaching. 
+  The academic coordinators are responsible for designing and running all the educational activities, including inviting and hosting external visitors, planning a balanced five-week class schedule (nearly 100 classes), assigning (110) students to projects, and teaching. 
+
+**Commitment to Diversity.**
+  I am very much aware of the biases unconsciously ingrained in a math classroom culture, which discourages women and minorities. 
+  I became especially mindful of this at Mathcamp, where we have serious conversations about inclusiveness, especially as a part of the staff hiring committee.
+  In my classroom, I try to mitigate these biases by deemphasizing the role of genius and discouraging aggressive competitiveness instead of encouraging persistence and hard work. 
+  I make sure that everyone gets a chance to speak in class and participate in the classroom. I try to educate myself on diversity issues by attending talks and reading books.
+
+**Professional Development.**
+  I am a member of the Project NExT'20 cohort, a professional development program sponsored by the MAA for math educators at the university level.
+  Participating in the summer workshop exposed me to a beautiful community of math educators from whom I hope to learn from in the long run.
+  I've already found fellow Discrete Math educators with whom I share teaching tips on the MAA Connect forum.
+  I have completed a certification course at the Teaching Academy at JHU, where I learned several critical pedagogical concepts such as inquiry-based learning, backward course design, learning objectives, etc. I regularly incorporate these into my teaching.
+  I also attend the workshops and seminars organized at the Center for Teaching and Learning at UWO. 
+
+**Personal Experiences.**
+  I consider myself an avid learner and keen listener and observer. 
+  My current course design is influenced by the online courses I've taken on Coursera and Kaggle.
+  I was introduced to active learning methods through a brilliant French language class I took during my grad school.
+  I am a regular practitioner of yoga and (pre-Covid) improv comedy and various forms of dance. 
+  These non-academic interests help me take a holistic approach toward my pedagogy.
+
+  My next big goal is to figure out ways to quantitatively self-assess my teaching and pedagogical effectiveness and concretely implement evidence-driven methodologies in my classrooms.
+  I'm also interested in understanding how scale affects pedagogy and how psychological research insights can enhance student learning.
+  The current situation calls for an educational revolution in both the philosophy and teaching techniques, which can only be achieved through a deliberate, long-term effort.
+  I hope to be able to participate in this and even facilitate it in some meaningful way.
