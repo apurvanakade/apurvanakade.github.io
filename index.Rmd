@@ -3,7 +3,7 @@ title: "Apurva Nakade"
 author: "email: <span onMouseOver=\"this.innerHTML='alastname@uwo.ca'\"
                 onMouseOut=\"this.innerHTML='(left as an exercise to the reader)'\">(left as an exercise to the
                 reader)</span> <br /> 
-                Academic Info: [CV], [Research Statement (pdf)], [Research Statement (video)], [Teaching Statement], [Teaching Dossier] "
+                Academic Info: [CV], [Research Statement (video)], [Teaching Portfolio] "
 output: bookdown::gitbook
 github-repo: apurvanakade/apurvanakade.github.io
 description: "Personal Website."
@@ -26,11 +26,9 @@ Things that keep me busy these days: teaching [Math 2151A (Discrete Math for Eng
   [University of Western Ontario]: http://www.math.uwo.ca/ 
   [Dan Christensen]: https://jdc.math.uwo.ca/ 
   [Chris Kapulkin]: http://www.math.uwo.ca/faculty/kapulkin/
-  [CV]: https://drive.google.com/file/d/10uLHSlp8ZBvHBC6zXaLsxmSuYq-M59xL/view?usp=sharing
-  [Research Statement (pdf)]: https://drive.google.com/file/d/15HeOJjr6BuuxA0ZNCwSYeHpB2d5Z2sci/view?usp=sharing
+  [CV]: https://drive.google.com/file/d/1CZJ4_A2ssI0-V_HszcPoEJyQC1EY2s5u/view?usp=sharing
   [Research Statement (video)]: https://youtu.be/rlyzT1PWw5I
   [Math 2151A (Discrete Math for Engineers)]: https://owl.uwo.ca/portal/site/5a31b856-d356-4278-9a3a-1dfebc96e873
   [DRP]: https://www.math.uwo.ca/undergraduate/directed_reading_program.html 
   [video lectures]: https://www.youtube.com/playlist?list=PLXAOfwfSuiKm3cL-JftD9ndrjYi7fPcqN
-  [Teaching Statement]: https://drive.google.com/file/d/1ePTk8yzz96OEb7kpJUzF9Du4cc1bK5zE/view?usp=sharing
-  [Teaching Dossier]: https://drive.google.com/file/d/1v_ij1QMzXKLxECifXnMILIJlW3DQBNSY/view?usp=sharing
+  [Teaching Portfolio]: teaching-portfolio/
