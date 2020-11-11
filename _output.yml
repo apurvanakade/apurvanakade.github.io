@@ -5,9 +5,10 @@ bookdown::gitbook:
   config:
     toc:
       collapse: subsection
-      # before: |
       after: |
-        <li><a href="https://drive.google.com/file/d/1CZJ4_A2ssI0-V_HszcPoEJyQC1EY2s5u/view">CV</a> </li>
+        &nbsp;
+      before: |
+        <li><a href="https://drive.google.com/file/d/1CZJ4_A2ssI0-V_HszcPoEJyQC1EY2s5u/view?usp=sharing">CV</a> </li>
       scroll_highlight: yes
     sharing:
       facebook: no

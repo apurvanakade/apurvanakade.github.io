@@ -9,8 +9,8 @@ github-repo: apurvanakade/apurvanakade.github.io
 
 I am a postdoc in the math department at the University of Western Ontario.
 
-I believe that higher education is a fundamental right and hence should be freely available to anyone who is willing to put in the time and the right kind of effort.
-Figuring out how to provide cheap, easily accessible, and yet high-quality education as my primary motivation for being in academia.
+I believe that higher education is a fundamental right and should be freely available to anyone who is willing to put in the time and the right kind of effort.
+Figuring out how to provide cheap, easily accessible, and yet high-quality education is one of my primary motivations for being in academia.
 
 <img src="https://apurvanakade.github.io/images/me0.jpg" width="200px" class="left" />
 

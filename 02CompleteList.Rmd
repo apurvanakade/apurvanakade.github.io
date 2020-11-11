@@ -5,8 +5,8 @@
 | University | Course                                             | Years             | # of students |                             |
 |------------|----------------------------------------------------|-------------------|---------------|-----------------------------|
 | UWO        | Algebraic Topology                                 | Winter 2021       | -             | Grad                        |
-|            | Discrete Structures for Engineering                | Fall 2020         | -             | First year undergrad        |
-|            | Calculus II for Mathematical and Physical Sciences | Winter 2020       | 198           | First year undergrad        |
+|            | Discrete Structures for Engineering                | Fall 2020         | 198             | First year undergrad        |
+|            | Calculus II for Mathematical and Physical Sciences | Winter 2020       | 150           | First year undergrad        |
 |            | Calculus I for Mathematical and Physical Sciences  | Fall 2019         | 176           | First year undergrad        |
 |            | Topics in Category Theory                          | Fall 2019         | 3             | Grad                        |
 | JHU        | Symmetries & Polynomials                           | Intersession 2018 | 15            | All years undergrad         |
@@ -166,7 +166,7 @@ much as possible, and minimize the screen time for students.
     questions and encourage them to answer each other's problems. Piazza
     is very intuitive, easily searchable, and allows for anonymous
     posts. A demo of the discussion forum can be found here:
-    [https://piazza.com/demo_login?nid=kd1rr8nxc6z4b5&auth=f76e59e]
+    https://piazza.com/demo_login?nid=kd1rr8nxc6z4b5&auth=f76e59e
 
 -   **Centralized access:** 
     With students getting overwhelmed with the onslaught of online tools, it was necessary to make easily accessible. For this, with a little bit of hacking, I embedded all the above websites onto the school's LMS. 
@@ -212,11 +212,8 @@ In the *Symmetries & Polynomials* course, I taught students group theory
 using permutations of elements and its connection to Galois theory using
 roots of polynomials. During class, I would divide students into groups
 of two or three to work on problems together. The problem sets for this
-course can be found here:
-[drive.google.com/file/d/1dChuk8J7s31C8xGurzsbf988VORnyXgb/view]
+course can be found [here](drive.google.com/file/d/1dChuk8J7s31C8xGurzsbf988VORnyXgb/view).
 
-  [apurvanakade.github.io/courses/2017_h2g2_alg_top/index.html]: https://apurvanakade.github.io/courses/2017_h2g2_alg_top/index.html
-  [drive.google.com/file/d/1dChuk8J7s31C8xGurzsbf988VORnyXgb/view]: https://drive.google.com/file/d/1dChuk8J7s31C8xGurzsbf988VORnyXgb/view
 
 Directed Reading Programs
 -------------------------
@@ -249,6 +246,8 @@ more than 100 courses offered each summer, covering material typically
 only encountered in college or grad school. My non-teaching duties
 included living in the dorms with students as an RA, being an academic
 advisor, and advising students on which courses to take.
+More information can be found [here](https://www.mathcamp.org/jobs/grad_students/).
+
 
 -   **Mentor:** I designed and taught week-long courses on advanced
     mathematical topics such as linear algebra, manifolds, Riemann
@@ -264,13 +263,16 @@ advisor, and advising students on which courses to take.
     traditional courses, I taught using Jamboard, which allowed students
     to scroll through the previous pages.
 
+    Notes from my Mathcamp classes can be found [here](https://apurvanakade.github.io/teaching.html#canadausa-mathcamp).
+
 -   **Academic Coordinator:** In the summer of 2017, I was one of the
     two academic coordinators at Mathcamp. The academic coordinators are
     responsible for designing and running all the educational
     activities, including inviting and hosting external visitors,
     preparing a balanced five-week class schedule (more than 100
     classes), assigning (110) students to projects, teaching, and being
-    a part of the hiring team.
+    a part of the hiring team. More information can be found [here](https://www.mathcamp.org/2018/staff/).
+
 
   [apurvanakade.github.io/courses/2018_Honors_Calc/]: https://apurvanakade.github.io/courses/2018_Honors_Calc/index.html
 
@@ -278,7 +280,6 @@ advisor, and advising students on which courses to take.
   [Zybooks]: https://learn.zybooks.com/zybook/UWOMath2151ANakadeFall2020
   [www.youtube.com/playlist?list=PLXAOfwfSuiKm3cL-JftD9ndrjYi7fPcqN]: https://www.youtube.com/playlist?list=PLXAOfwfSuiKm3cL-JftD9ndrjYi7fPcqN
   [WeBWork]: https://webwork.maa.org/
-  [piazza.com/class/kd1rr8nxc6zfourb5]: https://piazza.com/class/kd1rr8nxc6zfourb5
 
 
 
