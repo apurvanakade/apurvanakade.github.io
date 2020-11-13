@@ -6,11 +6,7 @@
     <description>Recent content in Tags on PostDoc Problems</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 24 Sep 2020 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://apurvanakade.github.io/blog/tags/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Thu, 24 Sep 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://apurvanakade.github.io/blog/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>absurd</title>
       <link>https://apurvanakade.github.io/blog/tags/absurd/</link>
@@ -80,15 +76,6 @@
       <pubDate>Sat, 29 Aug 2020 00:00:00 +0000</pubDate>
       
       <guid>https://apurvanakade.github.io/blog/tags/introspection/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>self</title>
-      <link>https://apurvanakade.github.io/blog/tags/self/</link>
-      <pubDate>Sat, 29 Aug 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://apurvanakade.github.io/blog/tags/self/</guid>
       <description></description>
     </item>
     
@@ -282,15 +269,6 @@
     </item>
     
     <item>
-      <title>TED</title>
-      <link>https://apurvanakade.github.io/blog/tags/ted/</link>
-      <pubDate>Sun, 04 Aug 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://apurvanakade.github.io/blog/tags/ted/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>TedTalks</title>
       <link>https://apurvanakade.github.io/blog/tags/tedtalks/</link>
       <pubDate>Sun, 04 Aug 2019 00:00:00 +0000</pubDate>
@@ -323,6 +301,15 @@
       <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
       
       <guid>https://apurvanakade.github.io/blog/tags/conan-doyle/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>self</title>
+      <link>https://apurvanakade.github.io/blog/tags/self/</link>
+      <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://apurvanakade.github.io/blog/tags/self/</guid>
       <description></description>
     </item>
     
@@ -674,6 +661,15 @@
       <pubDate>Thu, 14 Dec 2017 21:15:13 -0500</pubDate>
       
       <guid>https://apurvanakade.github.io/blog/tags/books/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>TED</title>
+      <link>https://apurvanakade.github.io/blog/tags/ted/</link>
+      <pubDate>Thu, 14 Dec 2017 21:15:13 -0500</pubDate>
+      
+      <guid>https://apurvanakade.github.io/blog/tags/ted/</guid>
       <description></description>
     </item>
     
