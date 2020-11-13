@@ -30,7 +30,7 @@ In a past life I was involved with and highly recommend the following:
     -   [Baltimore Improv Group]
 
   [my blog\'s theme]: https://github.com/apurvnakade/HugoTheme
-  [reading books]: ./blog/art/books/index.html
+  [reading books]: https://apurvanakade.github.io/blog/notes/books/
   [Personal blog]: ./blog
   [Blog about teaching]: https://notleftasanexercise.wordpress.com/
   [bookdown]: https://bookdown.org/
