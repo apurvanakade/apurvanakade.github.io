@@ -2,7 +2,7 @@ baseurl = "https://apurvanakade.github.io/blog/"
 languageCode = "en"
 contentDir = "content"
 paginate = 15
-publishDir = "/home/apurva/github/apurvanakade.github.io/gh-pages/blog"
+publishDir = "../gh-pages/blog"
 buildDrafts = false
 
 canonifyURLs = true
