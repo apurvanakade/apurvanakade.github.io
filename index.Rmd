@@ -41,7 +41,7 @@ If anything, I see the current situation as an opportunity for us, math educator
   Over the summer, I explored several textbooks and chose an online one that allowed me to provide an active learning environment asynchronously.
   Each week, I make short introductory videos and embed them directly at the start of each section, along with learning objectives and any special comments.
   I assign weekly, short auto-graded assignments within the textbook, which provide immediate feedback.
-  I maintain a blog (\href{https://notleftasanexercise.wordpress.com/.**{notleftasanexercise.wordpress.com.**) to document and reflect upon my teaching.
+  I maintain a [blog](https://notleftasanexercise.wordpress.com/) to document and reflect upon my teaching.
   Students have been very receptive, and I have received a lot of positive feedback from them.
 
 

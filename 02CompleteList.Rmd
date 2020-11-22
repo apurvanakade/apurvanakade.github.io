@@ -153,12 +153,10 @@ much as possible, and minimize the screen time for students.
     questions. Having an extensive repository of questions enables me to
     create unique exams for every student.
 
--   **Summer prep:** With my postdoc advisor and two students' help, we
-    designed a repository of several hundred problems for discrete math
-    on WeBWork. This repository is easily portable and can be easily
-    adapted to any discrete math course. Furthermore, because WebWork is
-    open-source this repository can be used by anyone freely. Providing
-    cheap and accessible education has always been one of my priorities.
+-   **WeBWorK questions repository:** With my postdoc
+    advisor and two students’ help, we designed a
+    repository of several hundred problems for discrete math on WeBWork. This repository is easily
+    portable and can be adapted to any discrete math course. Furthermore, because WeBWorK is open-source this repository can be used by anyone freely
 
 -   **Discussion forums:** I realized early on that communication was
     going to be the key to this course's smooth running. For this
@@ -169,7 +167,9 @@ much as possible, and minimize the screen time for students.
     https://piazza.com/demo_login?nid=kd1rr8nxc6z4b5&auth=f76e59e
 
 -   **Centralized access:** 
-    With students getting overwhelmed with the onslaught of online tools, it was necessary to make easily accessible. For this, with a little bit of hacking, I embedded all the above websites onto the school's LMS. 
+    With students getting overwhelmed with the onslaught of online tools, it was
+    necessary to make easily accessible. For this, with a little bit of tweaking, I embedded all the above
+    websites into the school’s LMS. 
 
 
 ### Honors Single Variable Calculus (JHU, Fall 2018,19) {#sec:honors-single-variable}
