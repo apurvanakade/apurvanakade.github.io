@@ -15,13 +15,13 @@ favicon: "images/sisyphus.svg"
 <img src="images/me0.jpg" width="200px" class="left" />
 
 I\'m a postdoc at the [University of Western Ontario] working with [Dan Christensen] and [Chris Kapulkin]. 
-I am doing research in algebraic topology and homotopy theory.
+I do research in algebraic topology and homotopy theory.
 
 In addition to research, I am very passionate about improving math education. I want to
 modernize math-ed and bring it to the 21st century through the use of new technological innovations 
 in teaching and in the process make it more accessible and equitable.
 
-Things that keep me busy these days: teaching [Math 2151A (Discrete Math for Engineers)], making [video lectures], organizing the [DRP], organizing the topology boot-camp, applying for jobs.
+Things that keep me busy these days: teaching [Math 2151A (Discrete Math for Engineers)], making [video lectures], organizing the [DRP], applying for jobs.
 
   [University of Western Ontario]: http://www.math.uwo.ca/ 
   [Dan Christensen]: https://jdc.math.uwo.ca/ 

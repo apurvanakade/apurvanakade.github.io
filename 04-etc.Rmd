@@ -10,8 +10,8 @@ I maintain several blogs and wikis:
 
 - [Personal blog]
 - [Blog about teaching]
-- [Wiki for dumping computer hacks]
-- [Wiki for dumping math-ed resources]
+- [Computer hacks]
+- [Math-ed resources]
 
 In a past life I was involved with and highly recommend the following:
 
@@ -37,8 +37,8 @@ In a past life I was involved with and highly recommend the following:
   [Hugo]: https://gohugo.io/
   [JHU DRP website]: http://www.math.jhu.edu/drp.html
 
-  [Wiki for dumping math-ed resources]: https://www.notion.so/Math-Wiki-01783c0807aa4fa18d7d28a7f724fcde
-  [Wiki for dumping computer hacks]: https://www.notion.so/Wiki-1b656cca9c964d79b932d4c76cc8ed7d
+  [Math-ed resources]: https://www.notion.so/Math-Wiki-01783c0807aa4fa18d7d28a7f724fcde
+  [Computer hacks]: https://www.notion.so/Wiki-1b656cca9c964d79b932d4c76cc8ed7d
   [travel]: https://drive.google.com/open?id=1wpCR64gzKc7Zp8V-FIn43ANMA6QULjMS&usp=sharing
  
   [dvorak]: https://en.wikipedia.org/wiki/Dvorak_Simplified_Keyboard
