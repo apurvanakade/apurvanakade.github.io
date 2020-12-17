@@ -3,7 +3,7 @@ title: "Apurva Nakade"
 author: "email: <span onMouseOver=\"this.innerHTML='alastname@uwo.ca'\"
                 onMouseOut=\"this.innerHTML='(left as an exercise to the reader)'\">(left as an exercise to the
                 reader)</span> <br /> 
-                Academic Info: [CV], [Research Statement (video)], [Teaching Portfolio] "
+                Résumé: [CV], [Research Statement (video)], [Teaching Portfolio] "
 output: bookdown::gitbook
 github-repo: apurvanakade/apurvanakade.github.io
 description: "Personal Website."
@@ -12,23 +12,25 @@ favicon: "images/sisyphus.svg"
 
 # Apurva Nakade 
 
+<p>&nbsp;</p>
+
 <img src="images/me0.jpg" width="200px" class="left" />
 
+<p>&nbsp;</p>
+
 I\'m a postdoc at the [University of Western Ontario] working with [Dan Christensen] and [Chris Kapulkin]. 
-I do research in algebraic topology and homotopy theory.
+My research is in the areas of algebraic topology and homotopy theory.
 
 In addition to research, I am very passionate about improving math education. I want to
-modernize math-ed and bring it to the 21st century through the use of new technological innovations 
+modernize university math education and bring it to the 21st century through the use of new technological innovations 
 in teaching and in the process make it more accessible and equitable.
 
-Things that keep me busy these days: teaching [Math 2151A (Discrete Math for Engineers)], making [video lectures], organizing the [DRP], applying for jobs.
+
 
   [University of Western Ontario]: http://www.math.uwo.ca/ 
   [Dan Christensen]: https://jdc.math.uwo.ca/ 
   [Chris Kapulkin]: http://www.math.uwo.ca/faculty/kapulkin/
   [CV]: https://drive.google.com/file/d/1CZJ4_A2ssI0-V_HszcPoEJyQC1EY2s5u/view?usp=sharing
   [Research Statement (video)]: https://youtu.be/rlyzT1PWw5I
-  [Math 2151A (Discrete Math for Engineers)]: https://owl.uwo.ca/portal/site/5a31b856-d356-4278-9a3a-1dfebc96e873
   [DRP]: https://www.math.uwo.ca/undergraduate/directed_reading_program.html 
-  [video lectures]: https://www.youtube.com/playlist?list=PLXAOfwfSuiKm3cL-JftD9ndrjYi7fPcqN
   [Teaching Portfolio]: teaching-portfolio/
