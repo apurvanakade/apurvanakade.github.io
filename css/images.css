@@ -11,3 +11,23 @@ img.left {
   margin-bottom: 10px;
   margin-top: 10px;
 }
+
+figure.right {
+  float: right;
+  text-align: center;
+  margin-left: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+figure.left {
+  float: left;
+  text-align: center;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+figcaption {
+  font-size: small;
+}
