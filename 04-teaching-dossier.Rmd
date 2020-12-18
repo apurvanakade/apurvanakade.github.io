@@ -27,8 +27,8 @@ Every class is unique and presents its own set of goals and challenges.
 Every class is like a puzzle that I am trying to solve. 
 I love the fact that there is no limit to how much you can improve your teaching.
 
-Finally, I'm interested in learning about research related to education. 
-My background is in hard sciences so I'm skeptical about the validity of educational research but I'm hoping that this opinion will change once I read more about it in depth.
+<!-- Finally, I'm interested in learning about research related to education. 
+My background is in hard sciences so I'm skeptical about the validity of educational research but I'm hoping that this opinion will change once I read more about it in depth. -->
 
 ## Teaching Responsibilities 
 
