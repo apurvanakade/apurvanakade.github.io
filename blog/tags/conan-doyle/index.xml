@@ -6,7 +6,11 @@
     <description>Recent content in Conan Doyle on PostDoc Problems</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 29 Apr 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://apurvanakade.github.io/blog/tags/conan-doyle/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 29 Apr 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://apurvanakade.github.io/blog/tags/conan-doyle/index.xml" rel="self" type="application/rss+xml" />
+    
+    
     <item>
       <title>Rereading Sherlock Holmes</title>
       <link>https://apurvanakade.github.io/blog/notes/books/rereading-sherlock-holmes/</link>

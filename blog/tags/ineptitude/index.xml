@@ -6,7 +6,11 @@
     <description>Recent content in ineptitude on PostDoc Problems</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 03 May 2018 00:00:00 +0000</lastBuildDate><atom:link href="https://apurvanakade.github.io/blog/tags/ineptitude/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 03 May 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://apurvanakade.github.io/blog/tags/ineptitude/index.xml" rel="self" type="application/rss+xml" />
+    
+    
     <item>
       <title>Canadian Visa</title>
       <link>https://apurvanakade.github.io/blog/random/professional-assholes/canadian-visa/</link>

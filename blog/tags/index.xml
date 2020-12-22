@@ -6,7 +6,38 @@
     <description>Recent content in Tags on PostDoc Problems</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 24 Sep 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://apurvanakade.github.io/blog/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 22 Dec 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://apurvanakade.github.io/blog/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>comedy</title>
+      <link>https://apurvanakade.github.io/blog/tags/comedy/</link>
+      <pubDate>Tue, 22 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://apurvanakade.github.io/blog/tags/comedy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>douglas-adams</title>
+      <link>https://apurvanakade.github.io/blog/tags/douglas-adams/</link>
+      <pubDate>Tue, 22 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://apurvanakade.github.io/blog/tags/douglas-adams/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>science-fiction</title>
+      <link>https://apurvanakade.github.io/blog/tags/science-fiction/</link>
+      <pubDate>Tue, 22 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://apurvanakade.github.io/blog/tags/science-fiction/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>absurd</title>
       <link>https://apurvanakade.github.io/blog/tags/absurd/</link>
@@ -76,6 +107,15 @@
       <pubDate>Sat, 29 Aug 2020 00:00:00 +0000</pubDate>
       
       <guid>https://apurvanakade.github.io/blog/tags/introspection/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>self</title>
+      <link>https://apurvanakade.github.io/blog/tags/self/</link>
+      <pubDate>Sat, 29 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://apurvanakade.github.io/blog/tags/self/</guid>
       <description></description>
     </item>
     
@@ -215,15 +255,6 @@
     </item>
     
     <item>
-      <title>science-fiction</title>
-      <link>https://apurvanakade.github.io/blog/tags/science-fiction/</link>
-      <pubDate>Sat, 05 Oct 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://apurvanakade.github.io/blog/tags/science-fiction/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Ursula-Le-Guin</title>
       <link>https://apurvanakade.github.io/blog/tags/ursula-le-guin/</link>
       <pubDate>Sat, 05 Oct 2019 00:00:00 +0000</pubDate>
@@ -269,6 +300,15 @@
     </item>
     
     <item>
+      <title>TED</title>
+      <link>https://apurvanakade.github.io/blog/tags/ted/</link>
+      <pubDate>Sun, 04 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://apurvanakade.github.io/blog/tags/ted/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>TedTalks</title>
       <link>https://apurvanakade.github.io/blog/tags/tedtalks/</link>
       <pubDate>Sun, 04 Aug 2019 00:00:00 +0000</pubDate>
@@ -305,15 +345,6 @@
     </item>
     
     <item>
-      <title>self</title>
-      <link>https://apurvanakade.github.io/blog/tags/self/</link>
-      <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://apurvanakade.github.io/blog/tags/self/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>shipping-delays</title>
       <link>https://apurvanakade.github.io/blog/tags/shipping-delays/</link>
       <pubDate>Sun, 24 Feb 2019 00:00:00 +0000</pubDate>
@@ -346,15 +377,6 @@
       <pubDate>Wed, 26 Sep 2018 20:00:00 +0000</pubDate>
       
       <guid>https://apurvanakade.github.io/blog/tags/anime/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>comedy</title>
-      <link>https://apurvanakade.github.io/blog/tags/comedy/</link>
-      <pubDate>Wed, 26 Sep 2018 20:00:00 +0000</pubDate>
-      
-      <guid>https://apurvanakade.github.io/blog/tags/comedy/</guid>
       <description></description>
     </item>
     
@@ -661,15 +683,6 @@
       <pubDate>Thu, 14 Dec 2017 21:15:13 -0500</pubDate>
       
       <guid>https://apurvanakade.github.io/blog/tags/books/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>TED</title>
-      <link>https://apurvanakade.github.io/blog/tags/ted/</link>
-      <pubDate>Thu, 14 Dec 2017 21:15:13 -0500</pubDate>
-      
-      <guid>https://apurvanakade.github.io/blog/tags/ted/</guid>
       <description></description>
     </item>
     

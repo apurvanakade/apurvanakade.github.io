@@ -6,7 +6,11 @@
     <description>Recent content in coffee on PostDoc Problems</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 06 Dec 2017 14:21:13 -0500</lastBuildDate><atom:link href="https://apurvanakade.github.io/blog/tags/coffee/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 06 Dec 2017 14:21:13 -0500</lastBuildDate>
+    
+	<atom:link href="https://apurvanakade.github.io/blog/tags/coffee/index.xml" rel="self" type="application/rss+xml" />
+    
+    
     <item>
       <title>Hubble</title>
       <link>https://apurvanakade.github.io/blog/journal/lifejhu/hubble/</link>
