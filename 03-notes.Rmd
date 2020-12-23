@@ -8,6 +8,13 @@ This page contains notes from various courses, projects, and research.
 Many of the notes have not been proofread and are likely to contain errors. 
 Reader discretion is advised.
 
+## Discrete Math 
+
+I made some [youtube videos] for the Discrete Math course I taught at UWO in Fall 2020.
+
+[youtube videos]: https://www.youtube.com/playlist?list=PLXAOfwfSuiKm3cL-JftD9ndrjYi7fPcqN
+
+
 ## Mathcamp
 |                                     |                                                                   |
 |-------------------------------------|-------------------------------------------------------------------|
