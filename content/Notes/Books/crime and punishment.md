@@ -36,19 +36,20 @@ However, unlike Orwell Dostoevsky sees this happening on an individual rather th
 
 
 He almost never presents a one-sided story.
- Each character is juxtaposed with their extreme opposite.
- A philosopher to a practical person, a criminal to a detective, an atheist to a Christian.
- The entire book is a tug of war between these opposing factions that split the protagonist's soul and drive him to insanity while inflicting unbearable pain upon him and those around him.
+Each character is juxtaposed with their extreme opposite.
+A philosopher to a practical person, a criminal to a detective, an atheist to a Christian.
+The entire book is a tug of war between these opposing factions that split the protagonist's soul and drive him to insanity while inflicting unbearable pain upon him and those around him.
  
 
 Not for one moment is there any question about the immorality of the crime and the inevitability of the consequences.
- The genius of Dostoevsky is that you really cannot argue against what Raskolnikov using just reason.
- with reason he wins with morality he loses.
- The question then no longer is who is right but what is the right philosophy.
- Who exactly is guilty and who should be punished? what should the punishment be and would punishment lead to redemption? or would redemption come from performing good deeds? can you offset your murder footprint?
+The genius of Dostoevsky is that you really cannot argue against what Raskolnikov using just reason.
+With reason he wins with morality he loses.
+The question then no longer is who is right but what is the right philosophy.
+Who exactly is guilty and who should be punished? What should the punishment be and would punishment lead to redemption? 
+Or would redemption come from performing good deeds? Can you offset your murder footprint?
 
 Perhaps the thing that affected me the most was the way Dostoevsky wrote about Raskolnikov's innermost thoughts, how he described his delirium, his suffering, and his descent into insanity.
-I usually don't find decay poetic or beautiful but in this case, I just could not stop admiring the writer's genius and skill.
+I usually don't find decay poetic or beautiful but in this case I just could not stop admiring the writer's genius and skill.
  
 Although this is a bad thing to do while reading this book, I could not prevent myself from identifying with some aspects of the protagonist's personality and thoughts.
 This book has given me a lot to think about and perhaps made a little more humble and a little less cocky.
