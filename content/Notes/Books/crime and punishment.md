@@ -27,7 +27,7 @@ However, unlike Orwell Dostoevsky sees this happening on an individual rather th
 
  This is a disturbing book on many levels.
  On the plot level, we have Raskolnikov planning, executing, and rationalizing a murder.
- In the background, Dostoevsky's creates an unbearably bleak and miserable St.
+ In the background, Dostoevsky creates an unbearably bleak and miserable St.
  Petersburg which makes the city the biggest villain of the story.
  On the level of characters, he creates these vile creatures whose baseness is a deep, inseparable part of their existence.
  Then there is the society and the Russian bureaucracy which is hell-bent on doublespeak and whose sole purpose is crushing its denizens and making their lives unbearable.
