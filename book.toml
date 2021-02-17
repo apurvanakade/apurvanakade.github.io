@@ -7,8 +7,8 @@ title = "Apurva Nakade"
 
 [output.html]
 mathjax-support = true
-additional-css = ["src/css/custom.css"]
-additional-js = ["src/js/custom.js"]
+additional-css = ["css/custom.css"]
+additional-js = ["js/custom.js"]
 no-section-label = true
 git-repository-url = "https://github.com/apurvnakade"
 git-repository-icon = "fa-github"
@@ -23,6 +23,6 @@ enable = true
 level = 0
 
 [output.html.playground]
-editable = true
+editable = false
 copy-js = true
 line-numbers = true

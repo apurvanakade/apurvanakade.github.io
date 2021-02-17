@@ -4,8 +4,9 @@
 
 <br/>
 
+**Pronunciation** : [əpuɾʋə nakade](https://en.wikipedia.org/wiki/Help:IPA/Marathi) <br/>
 **Contact info** : [Here](https://www.uwo.ca/math/people/postdocs.html) <br/>
-**Résumé**: [CV] <br/>
+**Résumé**: [CV] <span class="small">(Updated on: December 24, 2020)</span> <br/>
 **Currently teaching** : [Algebraic Topology](https://owl.uwo.ca/portal/site/1fda099f-409e-45c6-ba83-c81bf40a4798) 
 <br/>
 
@@ -13,10 +14,9 @@
 I\'m a postdoc at the [University of Western Ontario] working with [Dan Christensen] and [Chris Kapulkin]. 
 My research is in the areas of algebraic topology and homotopy theory.
 
-My interest lies somewhere in the intersection (or should it be union?) of math research, math education, and programming.
-I am very passionate about improving math education and I want to
-modernize university math education and bring it to the 21st century through the use of new technological innovations 
-in teaching and in the process make it more accessible and equitable.
+My interests lie somewhere in the intersection (or union?) of math research, math education, and programming.
+I am very passionate about improving math education and want to modernize it and bring it to the 21st century through the use of new technological innovations 
+in teaching, and in the process make it more accessible and equitable.
 
 
 
