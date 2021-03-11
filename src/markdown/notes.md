@@ -105,7 +105,7 @@ I made some [youtube videos] for the Discrete Math course I taught at UWO in Fal
   [How to glue donuts]: https://drive.google.com/file/d/1iQ_-iqu1x4ueYT4ucNbb_WgAeaf19Ysc/view?usp=sharing
   [How Riemann *finally* understood logarithms]: https://drive.google.com/file/d/1T1iJ2Mw4VupMr9CKs_NriwSWdoPHmMUL/view?usp=sharing
 
-  [Canada/USA Mathcamp]: images/mathcamp-icon.png
+  [Canada/USA Mathcamp]: ../images/mathcamp-icon.png
   [2020]: https://www.mathcamp.org/2020/index.php 
   [2019]: https://www.mathcamp.org/2019/index.php 
   [2018]: https://www.mathcamp.org/2018/index.php 
