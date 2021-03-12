@@ -2,40 +2,6 @@
 
 [<img src="images/donuts.png" width="70%" style="display:block; margin:auto">](https://drive.google.com/file/d/1iQ_-iqu1x4ueYT4ucNbb_WgAeaf19Ysc/view?usp=sharing)
 
-## Teaching Projects
-
-### Directed Reading Program
-  
-The Directed Reading Program is a program for undergrads and grad students/postdocs.
-Undergrads are paired with a mentor whose interests align with theirs and they study a topic of their choice for one semester. 
-It is intended to help motivated students explore topics in more depth than possible in a classroom setting.
-I co-organize the [DRP at UWO] and in the past have co-organized the [DRP at JHU].
-Following is the list of projects I've mentored.
--   Jacob Fabe, *Fundamental Group* from Topology by Munkres ([DRP, Fall
-    2020])
--   Tim Yau, *An Introduction to Manifolds* by Loring Tu. ([DRP, Fall
-    2019][DRP, Fall 2020])
--   Hannah Wool, *Topology* by Munkres. ([DRP, Spring 2019])
--   Sydney Timmerman, [*Differential Geometry and Lie Groups for Physicists*] by Marián Fecko. ([DRP, Fall 2018])
--   Eric Cochran, *An Introduction to Manifolds* by Loring Tu. ([DRP,
-    Spring 2018])
--   Chris Chia, *The Knot Book* by Adams Collins. ([DRP, Fall 2017])
-
-### Discrete math course - Fall 2020
-
-Most of my time in Fall 2020 was spent designing and teaching an online Discrete Math course. 
-This involved making [youtube videos], making and editing [WeBWorK] problem sets, managing discussion forums, other standard course related chores, and not going insane.
-I occasionally write about it on my [my wordpress blog].
-
-### Canada/USA Mathcamp
-
-Canada/USA Mathcamp is a summer camp for mathematically talented students ages 13‑18 from all over the world. 
-Among other things, I have been designing and teaching some fun courses there.
-Notes for my courses can be found [here](#notes). I've also supervised the following reading projects:
-- Daniel Koizumi, [Riemann Surfaces](https://drive.google.com/file/d/1bv-dCvd4nwfD68RxDeuDFoJ3dZIOoqPq/view) from *Algebraic Curves and Riemann Surfaces* by Rick Miranda.
-- Kenji, Dedekind Domains in Lean and Michael, Konigsberg Bridge Problem in Lean ([code]).
-- Ezra Erives, *Differential Geometry and Lie Groups for Physicists* by Marián Fecko.
-- Edgar Wang, *Algebraic Topology* and Alan Yan, *Algebraic Topology* by Hatcher.
 
 ### JHU Intersession courses 
 
