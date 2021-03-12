@@ -8,11 +8,11 @@
 ("org-notes"
  :base-directory "~/github/apurvanakade.github.io/develop/"
  :base-extension "org"
- :publishing-directory "~/github/apurvanakade.github.io/develop/test/"
+ :publishing-directory "~/github/apurvanakade.github.io/develop/"
  :recursive t
  :publishing-function org-html-publish-to-html
  :headline-levels 4             ; Just the default for this project.
- :auto-preamble t
+ :auto-preamble f
  )
 
 ("org-static"

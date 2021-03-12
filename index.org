@@ -1,0 +1,39 @@
+#+options: f:nil
+#+options: date:nil author:nil creator:nil
+#+title: Apurva Nakade
+#+author: Apurva Nakade
+#+email: apurvnakade@gmail.com
+#+language: en
+
+#+options: html-preamble:t
+#+options: html-postamble:nil
+#+options: toc:nil num:nil
+#+options: html-scripts:t html-style:t html5-fancy:nil
+#+html_doctype: xhtml-strict
+#+html_container: div
+#+description:
+#+html_head:
+
+* Hi!
+:PROPERTIES:
+:CUSTOM_ID: hi
+:END:
+
+
+*Contact info* : [[https://www.uwo.ca/math/people/postdocs.html][Here]]
+*Résumé*:
+[[https://drive.google.com/file/d/1gjjdAYYkMuSBC6xEMi96PKej3IxA25VC/view?usp=sharing][CV]]
+(Updated on: December 24, 2020) *Currently teaching* :
+[[https://owl.uwo.ca/portal/site/1fda099f-409e-45c6-ba83-c81bf40a4798][Algebraic
+Topology]]
+
+I'm a postdoc at the [[http://www.math.uwo.ca/][University of Western
+Ontario]] working with [[https://jdc.math.uwo.ca/][Dan Christensen]] and
+[[http://www.math.uwo.ca/faculty/kapulkin/][Chris Kapulkin]].
+
+I like math, teaching, coding, and lots of other things.
+
+something in here.
+let's try link here:[[*Discrete math]]
+** what about now?
+* Discrete math
