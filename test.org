@@ -1,0 +1,140 @@
+#+TITLE:      Blogs and Wikis with Org
+#+AUTHOR:     Worg people
+#+EMAIL:      mdl AT imapmail DOT org
+#+STARTUP:    align fold nodlcheck hidestars oddeven lognotestate
+#+SEQ_TODO:   TODO(t) INPROGRESS(i) WAITING(w@) | DONE(d) CANCELED(c@)
+#+TAGS:       Write(w) Update(u) Fix(f) Check(c)
+#+LANGUAGE:   en
+#+PRIORITIES: A C B
+#+CATEGORY:   worg
+#+OPTIONS:    H:3 num:nil toc:nil \n:nil ::t |:t ^:t -:t f:t *:t tex:t d:(HIDE) tags:not-in-toc
+#+HTML_LINK_UP:    index.html
+#+HTML_LINK_HOME:  https://orgmode.org/worg/
+
+{Back to Worg's index}
+
+There is a strong desire to use Org-mode to manage both blogs and
+wikis.  There are a number of tools which address parts of this need, this
+page will serve as a collecting of the names of these tools with links and
+brief descriptions.  I'm sure I've forgotten many relevant tools so *please
+contribute*!
+
+* Blogging tools
+
+- o-blog :: Stand-alone blogging system that does not require any external
+     software (features, Github source).
+
+- Jekyll :: a simple, blog aware, static site generator.  There are
+     instructions for combining Org-mode with jekyll at Org-Jekyll.
+
+- Projects :: In most cases using Org-mode publishing projects with
+     its many options should be sufficient for publishing a blog.
+
+- Blorgit :: publish an interactive website based on Org-mode
+     documents.  While blorgit has many nice features including the
+     fact that Org-mode documents can be edited through the web
+     interface with automatic commits to a git or svn repository
+     however it is fairly complicated to set up.  Blorgit is one or
+     two small changes from being a full-fledged Org-mode based wiki.
+     This is no longer maintained, see org-ehtml in the wiki section
+     below.
+
+- blog-files :: A simple system based on ideas and code from
+     org-jekyll and reprise.py to publish a blog using simple static
+     html pages.
+
+- org2blog :: allows publishing directly from Org-mode to WordPress
+
+- Org-mode and Octopress :: Instructions for blogging With Org-mode
+     and Octopress.  There is also this dedicated exporter by Tom
+     Alexander (instructions here.)
+
+- Blorg :: the original Org-mode blogging engine (but it's not
+     maintained anymore).  Roland Kaufmann is maintaining a fork here.
+
+- a blog-like sitemap for org-publish :: see this post by Jon Anders
+     Skorpen.
+
+- Org-mode and Nikola :: A plugin for Nikola (a static site generator
+     in Python), that lets you write your posts in org-mode syntax.
+
+- org-page :: A static blog-site generator, written in elisp. Very
+     light weight. Integrated with git. Supports themeing. Uses
+     mustache for templating. Highly customizable. Key difference from
+     o-blog is that org-page posts are in *separate* org-files. Built-in
+     support for disqus, google-analytics and RSS.
+
+- lazyblorg :: a static blog-site generator written in Python (HTML5,
+     CSS3). Focus is to have only an absolutely /minimum/ of things to
+     do to write a new blog entry /everywhere/ in your set of Org-mode
+     files. The software is currently in development. However, basic
+     functionality is working: tagging, Atom feeds, basic Org-mode
+     syntax parser with Pandoc fall-back, hidden blog entries,
+     auto-tags for language, tag cloud link page, tag description
+     pages, and such. You can take a look at Karl Voit's personal web
+     page to see an example result. Great features are planned for the
+     future: auto-tags for article length, overview pages for
+     navigation, extremely easy integration of image files through a
+     memacs module, and so forth.
+
+- Hugo :: Hugo fast static blog engine supports Org files natively.
+
+- ox-hugo :: An Org exporter backend that exports to
+     Hugo/Blackfriday-friendly Markdown, along with Hugo front-matter
+     in TOML or YAML. This package was developed after being aware of
+     the fact that Hugo natively supports parsing Org (but that
+     support is only partial).. read more on Why =ox-hugo=?
+
+     =ox-hugo= enables writing posts for Hugo in *native Org mode*. It
+     allows converting your existing Org files to blog posts with
+     almost no modification. Two common Org blogging flows are
+     supported:
+  - Exporting multiple Org sub-trees from a single file to multiple
+    Hugo posts. With this feature, one can produce a whole web site
+    from a single Org file (the =ox-hugo= documentation site is one
+    such example, which is generated from this one Org file). It also
+    leverages Org tag and property inheritance, and much more!
+  - Exporting a single Org file to a single Hugo post.
+
+  See the package's website for complete documentation, and the test
+  site [source] for hundreds of test cases and feature
+  demonstrations.
+
+- org-static-blog :: This is a blog generator that focuses on being
+     simple.  It has no dependency beside Emacs.  All files are simple
+     org-mode files in a directory.  The index, the archive and the
+     RSS feed are automatically generated.  See Basti's website for an
+     example.
+
+* Wiki tools
+
+- ikiwiki is a web site compiler written in Perl.  In many ways it is
+  similar to Jekyll, but has closer integration with version control
+  systems.  It supports blogging and has many plugins.
+
+  There is an org mode plugin by Manoj, which lets you write your posts in
+  org and converts them to html suitable for processing by ikiwiki.
+
+  There is another plugin by Chris Gray that interprets org files.  It
+  is still under intermittent development, but is stable enough for
+  general use.
+
+- Org-ehtml defines an editable HTML backend for the new exporting
+  engine.  Org-ehtml runs on an Emacs web server.  Exported Org-mode
+  web pages may be edited through a web browser, the edits may then be
+  saved to Org-mode files on the computer running the server, and may
+  even be committed to a version control system (experimental)
+  providing wiki functionality.  There is also experimental support
+  for password authentication.  Also see the initial announcement
+  email on the Org-mode mailing list.
+
+* Other tools
+
+- org-ruby is a Ruby gem for converting org-mode files to HTML. The goal is
+  to make it easier to use org-mode files in website tools like Webby,
+  Jekyll, or webgen.
+
+* More links
+
+- Writing and blogging with org-mode
+- Using Emacs org-mode for web publishing

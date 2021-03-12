@@ -1,22 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta name="author" content="Apurva Nakade">
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="shortcut icon" href="code/images/plus.svg" type="image/x-icon">
-  <link rel="icon" href="code/images/plus.svg" type="image/x-icon">
-  <link rel="stylesheet" href="style.css" type="text/css" media="screen" />
-  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="code/scripts/scroll.js"></script>
-  <title>Apurva Nakade</title>
+  @@include('src/html/header.html')
 </head>
 
 <body>
-    @@include('./dist/itme.html')
-    @@include('./dist/teach.html')
-    @@include('./dist/math.html')
+  <button class="btn-toggle">Toggle Dark-Mode</button>
+    @@include('dist/itme.html')
+    @@include('dist/notes.html')
+    @@include('dist/projects.html')
+    @@include('dist/math.html')
 </body>
-
+  @@include('src/html/footer.html')
 </html>

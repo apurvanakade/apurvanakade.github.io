@@ -1,0 +1,7 @@
+Canada/USA Mathcamp is a summer camp for mathematically talented students ages 13‑18 from all over the world.
+Among other things, I have been designing and teaching some fun courses there.
+Notes for my courses can be found [here](#notes). I've also supervised the following reading projects:
+- Daniel Koizumi, [Riemann Surfaces](https://drive.google.com/file/d/1bv-dCvd4nwfD68RxDeuDFoJ3dZIOoqPq/view) from *Algebraic Curves and Riemann Surfaces* by Rick Miranda.
+- Kenji, Dedekind Domains in Lean and Michael, Konigsberg Bridge Problem in Lean ([code]).
+- Ezra Erives, *Differential Geometry and Lie Groups for Physicists* by Marián Fecko.
+- Edgar Wang, *Algebraic Topology* and Alan Yan, *Algebraic Topology* by Hatcher.

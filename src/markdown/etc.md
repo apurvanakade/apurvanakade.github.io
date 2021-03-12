@@ -3,10 +3,8 @@
 
 Fun for me is [reading books]. I love to [travel]. I type in [dvorak].
 I love designing websites like this one (built using [bookdown]), [my blog\'s theme]
-(built using [Hugo]), and the [JHU DRP website].
-
-[<img src="images/books.gif" width="250px" class="right" />](https://www.gocomics.com/sarahs-scribbles/2014/1/17)
-
+(built using [Hugo]), and the [JHU DRP website]. I write on my [personal blog] and on my [blog about teaching].
+    
 I maintain a few blogs:
 
 - [Personal blog]
@@ -32,8 +30,8 @@ In a past life I was involved with and highly recommend the following:
 
   [my blog\'s theme]: https://github.com/apurvnakade/HugoTheme
   [reading books]: https://apurvanakade.github.io/blog/notes/books/
-  [Personal blog]: ./blog
-  [Blog about teaching]: https://notleftasanexercise.wordpress.com/
+  [personal blog]: ./blog
+  [blog about teaching]: https://notleftasanexercise.wordpress.com/
   [bookdown]: https://bookdown.org/
   [Hugo]: https://gohugo.io/
   [JHU DRP website]: http://www.math.jhu.edu/drp.html
