@@ -1,137 +1,144 @@
-#+options: f:nil
 #+options: date:nil author:nil creator:nil
 #+title: Apurva Nakade
 #+author: Apurva Nakade
 #+email: apurvnakade@gmail.com
 #+language: en
 
+#+html_doctype: html5
 #+options: html-preamble:t
 #+options: html-postamble:nil
-#+options: toc:nil num:nil
-#+options: html-scripts:t html-style:t html5-fancy:nil
-#+html_doctype: xhtml-strict
-#+html_container: div
-#+description:
+#+options: num:nil toc:nil  html5-fancy:t
 #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="css/org.css"/>
-#+INFOJS_OPT: view:info toc:nil
 
 * Hi!
 :PROPERTIES:
 :CUSTOM_ID: hi
 :END:
 
+| *Links:* | [[https://drive.google.com/file/d/1gjjdAYYkMuSBC6xEMi96PKej3IxA25VC/view?usp=sharing][CV]] | [[https://www.uwo.ca/math/people/postdocs.html][Contact]] | [[https://owl.uwo.ca/portal/site/1fda099f-409e-45c6-ba83-c81bf40a4798][Algebraic Topology]] |
 
-#+attr_html: :alt  :align left :class img
-[[file:images/me0.jpg]]
+#+BEGIN_details
+#+BEGIN_summary
+aeoeu
+#+END_summary
+ending this
+#+END_details
 
+#+BEGIN_aside
+  Lorem ipsum
+#+END_aside
+exports to:
+
+#+ATTR_HTML: :controls controls :width 350
+#+BEGIN_video
+#+HTML: <source src="movie.mp4" type="video/mp4">
+#+HTML: <source src="movie.ogg" type="video/ogg">
+Your browser does not support the video tag.
+#+END_video
 
 I'm a postdoc at the [[http://www.math.uwo.ca/][University of Western
 Ontario]] working with [[https://jdc.math.uwo.ca/][Dan Christensen]] and
 [[http://www.math.uwo.ca/faculty/kapulkin/][Chris Kapulkin]].
-
 I like math, teaching, coding, and lots of other things.
-
-something in here.
-let's try link here:[[*Discrete math]]
-| *Quick Links:* | [[https://drive.google.com/file/d/1gjjdAYYkMuSBC6xEMi96PKej3IxA25VC/view?usp=sharing][Resume]] | [[https://www.uwo.ca/math/people/postdocs.html][Contact]] | [[https://owl.uwo.ca/portal/site/1fda099f-409e-45c6-ba83-c81bf40a4798][Algebraic Topology]] |
+#+TOC: headlines 2
 * Discrete math
 * Projects
-  :PROPERTIES:
-  :CUSTOM_ID: projects
-  :END:
+:PROPERTIES:
+:CUSTOM_ID: projects
+:END:
 [[https://drive.google.com/file/d/1iQ_-iqu1x4ueYT4ucNbb_WgAeaf19Ysc/view?usp=sharing][]]
 
 ** Teaching Projects
-   :PROPERTIES:
-   :CUSTOM_ID: teaching-projects
-   :END:
+:PROPERTIES:
+:CUSTOM_ID: teaching-projects
+:END:
 
 ** Directed Reading Program
 
-  The Directed Reading Program is a program for undergrads and grad
-  students/postdocs. Undergrads are paired with a mentor whose interests
-  align with theirs and they study a topic of their choice for one
-  semester. It is intended to help motivated students explore topics in
-  more depth than possible in a classroom setting. I co-organize the
-  [DRP at UWO] and in the past have co-organized the [DRP at JHU].
-  Following is the list of projects I've mentored.
+The Directed Reading Program is a program for undergrads and grad
+students/postdocs. Undergrads are paired with a mentor whose interests
+align with theirs and they study a topic of their choice for one
+semester. It is intended to help motivated students explore topics in
+more depth than possible in a classroom setting. I co-organize the
+[DRP at UWO] and in the past have co-organized the [DRP at JHU].
+Following is the list of projects I've mentored.
 
-  - Jacob Fabe, /Fundamental Group/ from Topology by Munkres ([DRP, Fall
-    2020])
-  - Tim Yau, /An Introduction to Manifolds/ by Loring Tu. ([DRP, Fall
-    2019][DRP, Fall 2020])
-  - Hannah Wool, /Topology/ by Munkres. ([DRP, Spring 2019])
-  - Sydney Timmerman, [/Differential Geometry and Lie Groups for
-    Physicists/] by Marián Fecko. ([DRP, Fall 2018])
-  - Eric Cochran, /An Introduction to Manifolds/ by Loring Tu. ([DRP,
-    Spring 2018])
-  - Chris Chia, /The Knot Book/ by Adams Collins. ([DRP, Fall 2017])
+- Jacob Fabe, /Fundamental Group/ from Topology by Munkres ([DRP, Fall
+  2020])
+- Tim Yau, /An Introduction to Manifolds/ by Loring Tu. ([DRP, Fall
+  2019][DRP, Fall 2020])
+- Hannah Wool, /Topology/ by Munkres. ([DRP, Spring 2019])
+- Sydney Timmerman, [/Differential Geometry and Lie Groups for
+  Physicists/] by Marián Fecko. ([DRP, Fall 2018])
+- Eric Cochran, /An Introduction to Manifolds/ by Loring Tu. ([DRP,
+  Spring 2018])
+- Chris Chia, /The Knot Book/ by Adams Collins. ([DRP, Fall 2017])
 
 ** Discrete math course - Fall 2020
 
-  Most of my time in Fall 2020 was spent designing and teaching an
-  online Discrete Math course. This involved making [youtube videos],
-  making and editing [WeBWorK] problem sets, managing discussion forums,
-  other standard course related chores, and not going insane. I
-  occasionally write about it on my [my wordpress blog].
+Most of my time in Fall 2020 was spent designing and teaching an
+online Discrete Math course. This involved making [youtube videos],
+making and editing [WeBWorK] problem sets, managing discussion forums,
+other standard course related chores, and not going insane. I
+occasionally write about it on my [my wordpress blog].
 
 ** Canada/USA Mathcamp
 
-  Canada/USA Mathcamp is a summer camp for mathematically talented
-  students ages 13‑18 from all over the world. Among other things, I
-  have been designing and teaching some fun courses there. Notes for my
-  courses can be found notes. I've also supervised the
-  following reading projects:
+Canada/USA Mathcamp is a summer camp for mathematically talented
+students ages 13‑18 from all over the world. Among other things, I
+have been designing and teaching some fun courses there. Notes for my
+courses can be found notes. I've also supervised the
+following reading projects:
 
-  - Daniel Koizumi,
-    [[https://drive.google.com/file/d/1bv-dCvd4nwfD68RxDeuDFoJ3dZIOoqPq/view][Riemann
-    Surfaces]] from /Algebraic Curves and Riemann Surfaces/ by Rick
-    Miranda.
-  - Kenji, Dedekind Domains in Lean and Michael, Konigsberg Bridge
-    Problem in Lean ([code]).
-  - Ezra Erives, /Differential Geometry and Lie Groups for Physicists/
-    by Marián Fecko.
-  - Edgar Wang, /Algebraic Topology/ and Alan Yan, /Algebraic Topology/
-    by Hatcher.
+- Daniel Koizumi,
+  [[https://drive.google.com/file/d/1bv-dCvd4nwfD68RxDeuDFoJ3dZIOoqPq/view][Riemann
+  Surfaces]] from /Algebraic Curves and Riemann Surfaces/ by Rick
+  Miranda.
+- Kenji, Dedekind Domains in Lean and Michael, Konigsberg Bridge
+  Problem in Lean ([code]).
+- Ezra Erives, /Differential Geometry and Lie Groups for Physicists/
+  by Marián Fecko.
+- Edgar Wang, /Algebraic Topology/ and Alan Yan, /Algebraic Topology/
+  by Hatcher.
 
 ** JHU Intersession courses
 
-  I taught two week-long intersession courses titled Hitchhiker's Guide
-  to Algebraic Topology and Symmetries & Polynomials. I taught both of
-  these courses in a flipped classroom format. I assigned students
-  guided exercises, which they solved to learn more about the subject.
+I taught two week-long intersession courses titled Hitchhiker's Guide
+to Algebraic Topology and Symmetries & Polynomials. I taught both of
+these courses in a flipped classroom format. I assigned students
+guided exercises, which they solved to learn more about the subject.
 
-  - /Hitchhiker's Guide to Algebraic Topology/
+- /Hitchhiker's Guide to Algebraic Topology/
 
-    For Hitchhiker's Guide to Algebraic Topology, I asked the students
-    to read and present applications of algebraic topology to other
-    fields of science of their choosing. We had several exciting
-    conversations about things like applications of knot theory to
-    protein folding and data science. The notes and the student
-    presentations can be found
-    [[https://apurvanakade.github.io/courses/2017_h2g2_alg_top/index.html][here]].
+  For Hitchhiker's Guide to Algebraic Topology, I asked the students
+  to read and present applications of algebraic topology to other
+  fields of science of their choosing. We had several exciting
+  conversations about things like applications of knot theory to
+  protein folding and data science. The notes and the student
+  presentations can be found
+  [[https://apurvanakade.github.io/courses/2017_h2g2_alg_top/index.html][here]].
 
-  - /Symmetries & Polynomials/
+- /Symmetries & Polynomials/
 
-    In the Symmetries & Polynomials course, I taught group theory using
-    permutations of elements and its connection to Galois theory using
-    roots of polynomials. The problem sets for this course can be found
-    [[https://apurvanakade.github.io/teaching-portfolio/drive.google.com/file/d/1dChuk8J7s31C8xGurzsbf988VORnyXgb/view][here]].
+  In the Symmetries & Polynomials course, I taught group theory using
+  permutations of elements and its connection to Galois theory using
+  roots of polynomials. The problem sets for this course can be found
+  [[https://apurvanakade.github.io/teaching-portfolio/drive.google.com/file/d/1dChuk8J7s31C8xGurzsbf988VORnyXgb/view][here]].
 
 ** Honors Single Variable Calculus
 
-  At JHU, I designed and taught a full semester Honors Single Variable
-  Calculus course for two semesters. This was an experimental full
-  semester four-credit course offered at JHU to first-year
-  undergraduates. The course covered all of the first-year calculus and
-  introduced students to proof writing. This is the first course I had
-  to design from scratch. The materials for this course can be found
-  [[https://apurvanakade.github.io/courses/2018_Honors_Calc/][here]].
+At JHU, I designed and taught a full semester Honors Single Variable
+Calculus course for two semesters. This was an experimental full
+semester four-credit course offered at JHU to first-year
+undergraduates. The course covered all of the first-year calculus and
+introduced students to proof writing. This is the first course I had
+to design from scratch. The materials for this course can be found
+[[https://apurvanakade.github.io/courses/2018_Honors_Calc/][here]].
 
 ** Research Projects
-   :PROPERTIES:
-   :CUSTOM_ID: research-projects
-   :END:
+:PROPERTIES:
+:CUSTOM_ID: research-projects
+:END:
 I work in the area of algebraic topology and homotopy theory. My broad
 interests are in understanding how homotopy theoretic tools can be used
 to solve problems from other areas of math.
