@@ -8,7 +8,6 @@
 #+options: html-preamble:t
 #+options: html-postamble:nil
 #+options: num:nil toc:nil  html5-fancy:t
-#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="css/org.css"/>
 
 * Hi!
 :PROPERTIES:
@@ -17,183 +16,52 @@
 
 | *Links:* | [[https://drive.google.com/file/d/1gjjdAYYkMuSBC6xEMi96PKej3IxA25VC/view?usp=sharing][CV]] | [[https://www.uwo.ca/math/people/postdocs.html][Contact]] | [[https://owl.uwo.ca/portal/site/1fda099f-409e-45c6-ba83-c81bf40a4798][Algebraic Topology]] |
 
-#+BEGIN_details
-#+BEGIN_summary
-aeoeu
-#+END_summary
-ending this
-#+END_details
-
-#+BEGIN_aside
-  Lorem ipsum
-#+END_aside
-exports to:
-
-#+ATTR_HTML: :controls controls :width 350
-#+BEGIN_video
-#+HTML: <source src="movie.mp4" type="video/mp4">
-#+HTML: <source src="movie.ogg" type="video/ogg">
-Your browser does not support the video tag.
-#+END_video
 
 I'm a postdoc at the [[http://www.math.uwo.ca/][University of Western
 Ontario]] working with [[https://jdc.math.uwo.ca/][Dan Christensen]] and
 [[http://www.math.uwo.ca/faculty/kapulkin/][Chris Kapulkin]].
-I like math, teaching, coding, and lots of other things.
-#+TOC: headlines 2
-* Discrete math
-* Projects
-:PROPERTIES:
-:CUSTOM_ID: projects
-:END:
-[[https://drive.google.com/file/d/1iQ_-iqu1x4ueYT4ucNbb_WgAeaf19Ysc/view?usp=sharing][]]
 
-** Teaching Projects
-:PROPERTIES:
-:CUSTOM_ID: teaching-projects
-:END:
+I'm currently teaching Algebraic Topology.
 
-** Directed Reading Program
+* Research
 
-The Directed Reading Program is a program for undergrads and grad
-students/postdocs. Undergrads are paired with a mentor whose interests
-align with theirs and they study a topic of their choice for one
-semester. It is intended to help motivated students explore topics in
-more depth than possible in a classroom setting. I co-organize the
-[DRP at UWO] and in the past have co-organized the [DRP at JHU].
-Following is the list of projects I've mentored.
+* Mathcamp
+#+BEGIN_details
+#+HTML: <summary>Notes</summary>
+| testing tables inside summary | hello there | let's see |
+#+END_details
 
-- Jacob Fabe, /Fundamental Group/ from Topology by Munkres ([DRP, Fall
-  2020])
-- Tim Yau, /An Introduction to Manifolds/ by Loring Tu. ([DRP, Fall
-  2019][DRP, Fall 2020])
-- Hannah Wool, /Topology/ by Munkres. ([DRP, Spring 2019])
-- Sydney Timmerman, [/Differential Geometry and Lie Groups for
-  Physicists/] by Marián Fecko. ([DRP, Fall 2018])
-- Eric Cochran, /An Introduction to Manifolds/ by Loring Tu. ([DRP,
-  Spring 2018])
-- Chris Chia, /The Knot Book/ by Adams Collins. ([DRP, Fall 2017])
+* DRP
+Directed Reading Program is a program for undergrads and grad students/postdocs.
+Undergrads are paired with a mentor whose interests align with theirs and they study a topic of their choice for one semester.
+It is intended to help motivated students explore topics in more depth than possible in a classroom setting.
+I co-organize the [[https://www.math.uwo.ca/undergraduate/directed_reading_program.html][DRP at UWO]] and in the past have co-organized the [[https://math.jhu.edu/drp.html][DRP at JHU]].
+#+BEGIN_details
+#+HTML: <summary>List of projects I've mentored:</summary>
+- Clare Bedford, [[https://www.whitman.edu/documents/Academics/Mathematics/Grimm.pdf][Surreal numbers]], ([[https://www.math.uwo.ca/undergraduate/directed_reading_program.html][DRP,
+  Winter 2021]])
+- Jacob Fabe, /Fundamental Group/ from Topology by Munkres
+  ([[https://www.math.uwo.ca/undergraduate/directed_reading_program.html][DRP,
+  Fall 2020]])
+- Tim Yau, /An Introduction to Manifolds/ by Loring Tu.
+  ([[https://www.math.uwo.ca/undergraduate/directed_reading_program.html][DRP,
+  Fall 2019]])
+- Hannah Wool, /Topology/ by Munkres.
+  ([[http://www.math.jhu.edu/drp.html#Spring2019][DRP, Spring 2019]])
+- Sydney Timmerman,
+  [[http://www.math.jhu.edu/drpfiles/F2018%20-%20Sydney.pdf][/Differential
+  Geometry and Lie Groups for Physicists/]] by Marián Fecko.
+  ([[http://www.math.jhu.edu/drp.html#Fall2018][DRP, Fall 2018]])
+- Eric Cochran, /An Introduction to Manifolds/ by Loring Tu.
+  ([[http://www.math.jhu.edu/drp.html#Spring2018][DRP, Spring 2018]])
+- Chris Chia, /The Knot Book/ by Adams Collins.
+  ([[http://www.math.jhu.edu/drp.html#Fall2017][DRP, Fall 2017]])
+#+END_details
 
-** Discrete math course - Fall 2020
+* Notes
 
-Most of my time in Fall 2020 was spent designing and teaching an
-online Discrete Math course. This involved making [youtube videos],
-making and editing [WeBWorK] problem sets, managing discussion forums,
-other standard course related chores, and not going insane. I
-occasionally write about it on my [my wordpress blog].
+* Lean
 
-** Canada/USA Mathcamp
+* Writing
 
-Canada/USA Mathcamp is a summer camp for mathematically talented
-students ages 13‑18 from all over the world. Among other things, I
-have been designing and teaching some fun courses there. Notes for my
-courses can be found notes. I've also supervised the
-following reading projects:
-
-- Daniel Koizumi,
-  [[https://drive.google.com/file/d/1bv-dCvd4nwfD68RxDeuDFoJ3dZIOoqPq/view][Riemann
-  Surfaces]] from /Algebraic Curves and Riemann Surfaces/ by Rick
-  Miranda.
-- Kenji, Dedekind Domains in Lean and Michael, Konigsberg Bridge
-  Problem in Lean ([code]).
-- Ezra Erives, /Differential Geometry and Lie Groups for Physicists/
-  by Marián Fecko.
-- Edgar Wang, /Algebraic Topology/ and Alan Yan, /Algebraic Topology/
-  by Hatcher.
-
-** JHU Intersession courses
-
-I taught two week-long intersession courses titled Hitchhiker's Guide
-to Algebraic Topology and Symmetries & Polynomials. I taught both of
-these courses in a flipped classroom format. I assigned students
-guided exercises, which they solved to learn more about the subject.
-
-- /Hitchhiker's Guide to Algebraic Topology/
-
-  For Hitchhiker's Guide to Algebraic Topology, I asked the students
-  to read and present applications of algebraic topology to other
-  fields of science of their choosing. We had several exciting
-  conversations about things like applications of knot theory to
-  protein folding and data science. The notes and the student
-  presentations can be found
-  [[https://apurvanakade.github.io/courses/2017_h2g2_alg_top/index.html][here]].
-
-- /Symmetries & Polynomials/
-
-  In the Symmetries & Polynomials course, I taught group theory using
-  permutations of elements and its connection to Galois theory using
-  roots of polynomials. The problem sets for this course can be found
-  [[https://apurvanakade.github.io/teaching-portfolio/drive.google.com/file/d/1dChuk8J7s31C8xGurzsbf988VORnyXgb/view][here]].
-
-** Honors Single Variable Calculus
-
-At JHU, I designed and taught a full semester Honors Single Variable
-Calculus course for two semesters. This was an experimental full
-semester four-credit course offered at JHU to first-year
-undergraduates. The course covered all of the first-year calculus and
-introduced students to proof writing. This is the first course I had
-to design from scratch. The materials for this course can be found
-[[https://apurvanakade.github.io/courses/2018_Honors_Calc/][here]].
-
-** Research Projects
-:PROPERTIES:
-:CUSTOM_ID: research-projects
-:END:
-I work in the area of algebraic topology and homotopy theory. My broad
-interests are in understanding how homotopy theoretic tools can be used
-to solve problems from other areas of math.
-
-- *Proof Formalization*
-
-  I have recently gotten interesting in teaching math to computers using
-  [[https://leanprover.github.io/about/][Lean]]. This is different from
-  doing computations as here we are trying to teach math to computers
-  the same way we understand it.
-  [[file:courses/lean_at_MC2020/index.html][]] I taught a course about
-  it at [Mathcamp 2020].
-
-  My primary interest in Lean is as a potential tool for teaching math
-  proofs. My secondary interest lies in combining machine learning and
-  theorem proving. These are very long term goals as the field of
-  theorem proving, although rapidly growing, is still very nascent.
-- *2-groups in Equivariant Elliptic Cohomology*
-
-  I got involved in this project thanks to an
-  [[http://www.ams.org/programs/research-communities/2019MRC-Geometry][MRC
-  Workshop]]. 2-groups are higher categorical variants of groups. The
-  goal of this project is to find a 2-categorical interpretation of some
-  of naturally occurring objects (Drinfield double of a group) in
-  mathematical physics and extend them using ideas from Equivariant
-  Elliptic Cohomology.
-
-- *2-groups in HoTT*
-
-  I'm trying to understand how to express and analyze 2-groups in
-  homotopy type theory. Homotopy type theory is a branch of logic that
-  encored homotopy equivalences into one of its fundamental axioms
-  thereby providing a natural formalism for describing homotopy theory.
-
-- *An application of the h-principle to Manifold Calculus*
-
-  This was my PhD thesis, in which I applied homotopy theoretic
-  techniques to study problems for differential geometry. Here is
-  [[https://doi.org/10.1007/s40062-020-00255-3][the paper]]
-  ([[https://arxiv.org/abs/1711.07670][arXiv version]]) based on the
-  [[https://drive.google.com/file/d/1fHkImG-CTB2liHDIAo3YmzqBmN-Qibx6/view?usp=sharing][thesis]]
-  (Updated on: May 07, 2019). Here are some notes
-  [[https://drive.google.com/file/d/1h8pHb-5HmM55_bwdzPYDB7cVHo4MHy-I/view?usp=sharing][notes1]],
-  [[https://drive.google.com/file/d/1D8TSRQFVUVjM3wQ74npbH2hibrHsDho_/view?usp=sharing][notes2]]
-  from the talks I gave on this topic.
-
-- *Protein folding using Markov chains*
-
-  During my undergrad, I briefly worked on a project involving some
-  protein folding models using basic linear algebra.
-  [[https://drive.google.com/file/d/1xT6C4O_fMvpqoJCfnSq1ypeikM6XNMjw/view?usp=sharing][Information
-  Processing Letters, IPL4801]].
-
-- *Projects that did not quite work out*
-
-  - Spectral lifts of Soergel bimodules, joint with V. Lorman
-  - Finding loop space structures in exotic Kac-Moody groups
-  - Equivariant Embedding Calculus
+* Etc.
