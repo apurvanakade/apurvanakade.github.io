@@ -9,10 +9,7 @@
 #+options: html-postamble:nil
 #+options: num:nil toc:nil  html5-fancy:t
 
-* Hi!
-:PROPERTIES:
-:CUSTOM_ID: hi
-:END:
+# * Hi!
 
 | *Links:* | [[https://drive.google.com/file/d/1gjjdAYYkMuSBC6xEMi96PKej3IxA25VC/view?usp=sharing][CV]] | [[https://www.uwo.ca/math/people/postdocs.html][Contact]] | [[https://owl.uwo.ca/portal/site/1fda099f-409e-45c6-ba83-c81bf40a4798][Algebraic Topology]] |
 
@@ -22,6 +19,28 @@ Ontario]] working with [[https://jdc.math.uwo.ca/][Dan Christensen]] and
 [[http://www.math.uwo.ca/faculty/kapulkin/][Chris Kapulkin]].
 
 I'm currently teaching Algebraic Topology.
+
+* Teaching
+
+** 2021 - Winter - UWO - Algebraic Topology
+I taught an introduction to algebraic topology course in Winter 2021 at UWO. The homework for this course can be found here: https://www.overleaf.com/read/pnhsgyffnsqj
+
+** 2020 - Fall - UWO - Discrete Math
+I made some [[https://www.youtube.com/playlist?list=PLXAOfwfSuiKm3cL-JftD9ndrjYi7fPcqN][youtube videos]] for the Discrete Math course I taught at UWO in Fall 2020.
+
+** 2018 - Fall - JHU - Honors Single Variable Calculus
+I designed and taught an IBL-proof based Honors Single Variable Calculus course at JHU the notes of which can be found [[https://apurvanakade.github.io/courses/2018_Honors_Calc/index.html][here]].
+
+** 2018 - Intersession - JHU - Symmetries and Polynomials
+I designed and taught a no-prerequisite two week IBL course introducing students to the unsolvability of polynomials using Galois theory. Notes for the course can be found [[https://drive.google.com/file/d/1dChuk8J7s31C8xGurzsbf988VORnyXgb/view?usp=sharing][here]].
+
+** 2017 - Fall - JHU - Honors Single Variable Calculus
+I designed and taught a IBL-proof based Honors Single Variable Calculus course at JHU the notes of which can be found [[https://apurvanakade.github.io/courses/2017_Honors_Calc/index.html][here]].
+
+** 2017 - Intersession - JHU - Hitchhiker's Guide to Algebraic Topology
+I taught a two week course introducing non-math majors to algebraic topology. The notes can be found [[https://apurvanakade.github.io/courses/2017_h2g2_alg_top/index.html][here]].
+
+
 
 * Research
 
