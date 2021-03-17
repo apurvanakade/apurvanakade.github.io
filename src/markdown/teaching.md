@@ -1,0 +1,68 @@
+# Teaching
+
+
+## Teaching Philosophy
+
+
+<figure class="right">
+  <a href="https://en.wikipedia.org/wiki/Don_Quixote_(Picasso)"><img src="https://upload.wikimedia.org/wikipedia/en/7/73/Don_Quixote_%281955%29_by_Pablo_Picasso.jpg" width="200px" /></a>
+  <figcaption>Too much sanity may be madness<br/> and maddest of all: to see life as it is, <br/> and not as it should be!</figcaption>
+</figure>
+
+I believe that my primary responsibility is to teach students how to become good learners. 
+Learning is a skill and like other skills it can be acquired through deliberate practice.
+Once you become good at learning you can pick up any subject by yourself.
+
+However, we do not fully understand how we learn. 
+As such, I try to incorporate a variety of different techniques and methodologies in my classroom.
+I consider myself a coach and a facilitator and aim at providing a welcoming and supportive environment in my classes, and the rest is up to the students.
+
+Learning is also a habit that can only be developed over time.
+It requires a lot of observation and introspection on the part of both the student and the teacher and is not something that can be rushed.
+I practice a lot of patience and mindfulness in my teaching.
+
+Finally, I teach because it's fun.
+I am constantly experimenting with my teaching and learning from my experiences.
+Every class is unique and presents its own set of goals and challenges. 
+Every class is like a puzzle that I am trying to solve. 
+I love the fact that there is no limit to how much you can improve your teaching.
+
+<!-- Finally, I'm interested in learning about research related to education. 
+My background is in hard sciences so I'm skeptical about the validity of educational research but I'm hoping that this opinion will change once I read more about it in depth. -->
+
+## Teaching Responsibilities 
+
+| University | Course                                             | Years             | # of students |                             |
+|------------|----------------------------------------------------|-------------------|---------------|-----------------------------|
+| UWO        | Algebraic Topology                                 | Winter 2021       | -             | Grad                        |
+|            | Discrete Structures for Engineering                | Fall 2020         | 198           | First year undergrad        |
+|            | Calculus II for Mathematical and Physical Sciences | Winter 2020       | 150           | First year undergrad        |
+|            | Calculus I for Mathematical and Physical Sciences  | Fall 2019         | 176           | First year undergrad        |
+|            | Topics in Category Theory                          | Fall 2019         | 3             | Grad                        |
+| JHU        | Symmetries & Polynomials                           | Intersession 2018 | 15            | All years undergrad         |
+|            | Honors Single Variable Calculus                    | Spring 2017, 18   | 7             | First year undergrad        |
+|            | Hitchhiker’s Guide to Algebraic Topology           | Intersession 2017 | 11            | All years undergrad         |
+|            | Calculus II (For Biology and Social Science)       | Summer 2016       | 5             | First year undergrad        |
+|            | Differential Equations with Applications           | Summer 2015, 17   | 11            | First year undergrad        |
+|            | Online Linear Algebra                              | Summer 2014       | 34            | All years undergrad         |
+| Mathcamp   | Several                                            | Summers 2015-19   | -             | High school & middle school |
+
+Course websites: [Calc \'19], [Calc \'20], [DiffEq \'17], [Calc \'16], [DiffEq \'15].
+
+Teaching evaluations for all my courses can be found [here](https://tinyurl.com/nakade-evals).
+
+
+[apurvanakade.github.io/courses/2018_Honors_Calc/]: https://apurvanakade.github.io/courses/2018_Honors_Calc/index.html
+
+
+[Zybooks]: https://learn.zybooks.com/zybook/UWOMath2151ANakadeFall2020
+[www.youtube.com/playlist?list=PLXAOfwfSuiKm3cL-JftD9ndrjYi7fPcqN]: https://www.youtube.com/playlist?list=PLXAOfwfSuiKm3cL-JftD9ndrjYi7fPcqN
+[WeBWork]: https://webwork.maa.org/
+
+
+
+[DiffEq \'15]: https://drive.google.com/drive/folders/1X7WKPhBljbXt6dBt278t2lKUlWUKIU5Z?usp=sharing
+[DiffEq \'17]: https://drive.google.com/drive/folders/1_lSraXoUwk7CmStg23T1nHpYvf9zq9jA?usp=sharing
+[Calc \'16]: https://drive.google.com/drive/folders/199dY1MF3TWhJ6gUKQyPf_7YK6rO36HZc?usp=sharing
+[Calc \'19]: https://www.youtube.com/playlist?list=PLXAOfwfSuiKkdSQB2tVu_KcYMWhZpK19J
+[Calc \'20]: https://drive.google.com/drive/folders/1MkXy0CPOKqSJANr9QSD4gwYdMYjVcdmV?usp=sharing

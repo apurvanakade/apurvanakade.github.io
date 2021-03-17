@@ -1,0 +1,34 @@
+#+options: date:nil author:nil creator:nil
+#+title: Apurva Nakade
+#+author: Apurva Nakade
+#+email: apurvnakade@gmail.com
+#+language: en
+
+#+html_doctype: html5
+#+options: html-preamble:t
+#+options: html-postamble:nil
+#+options: num:nil toc:t html5-fancy:nil
+#+OPTIONS: html-style:nil
+
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="normalize.css" />
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="main.css" />
+#+HTML_HEAD: <script src="main.js"></script>
+
+# * Hi!
+
+
+*Links:*  [[https://drive.google.com/file/d/1gjjdAYYkMuSBC6xEMi96PKej3IxA25VC/view?usp=sharing][CV]]  [[https://www.uwo.ca/math/people/postdocs.html][Contact]]  [[https://owl.uwo.ca/portal/site/1fda099f-409e-45c6-ba83-c81bf40a4798][Algebraic Topology]]
+
+#+attr_html: :alt  :align left :class img
+
+
+I'm a postdoc at the [[http://www.math.uwo.ca/][University of Western
+Ontario]] working with [[https://jdc.math.uwo.ca/][Dan Christensen]] and
+[[http://www.math.uwo.ca/faculty/kapulkin/][Chris Kapulkin]].
+
+I'm currently teaching Algebraic Topology.
+
+#+INCLUDE: "content/teaching-notes.org"
+#+INCLUDE: "content/mathcamp.org"
+#+INCLUDE: "content/dump.org"
+

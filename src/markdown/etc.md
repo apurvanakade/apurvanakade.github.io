@@ -1,0 +1,58 @@
+# Etc.
+
+
+Fun for me is [reading books]. I love to [travel]. I type in [dvorak].
+I love designing websites like this one (built using [bookdown]), [my blog\'s theme]
+(built using [Hugo]), and the [JHU DRP website]. I write on my [personal blog] and on my [blog about teaching].
+    
+I maintain a few blogs:
+
+- [Personal blog]
+- [Blog about teaching]
+- [Computer hacks]
+- [Math-ed resources]
+
+In a past life I was involved with and highly recommend the following:
+
+-   London, ON
+    -   [Yoga Shack]
+    -   [West Coast Swing]
+
+-   Baltimore
+    -   [Yogaworks]
+    -   [Hiking at JHU]
+    -   [Climbing at JHU]
+    -   [Argentine Tango]
+    -   [JHU Ballroom Club]
+    -   [Mobtown Ballroom]
+    -   [Baltimore Bike Party]
+    -   [Baltimore Improv Group]
+
+  [my blog\'s theme]: https://github.com/apurvnakade/HugoTheme
+  [reading books]: https://apurvanakade.github.io/blog/notes/books/
+  [personal blog]: ./blog
+  [blog about teaching]: https://notleftasanexercise.wordpress.com/
+  [bookdown]: https://bookdown.org/
+  [Hugo]: https://gohugo.io/
+  [JHU DRP website]: http://www.math.jhu.edu/drp.html
+
+  [Math-ed resources]: https://www.notion.so/Math-Wiki-01783c0807aa4fa18d7d28a7f724fcde
+  [Computer hacks]: https://www.notion.so/Wiki-1b656cca9c964d79b932d4c76cc8ed7d
+  [travel]: https://drive.google.com/open?id=1wpCR64gzKc7Zp8V-FIn43ANMA6QULjMS&usp=sharing
+ 
+  [dvorak]: https://en.wikipedia.org/wiki/Dvorak_Simplified_Keyboard
+ 
+  [Yoga Shack]: https://www.yogashack.ca/
+  [West Coast Swing]: https://westcoastswinglondon.ca/
+  [Yogaworks]: https://www.yogaworks.com/baltimore/
+  [Hiking at JHU]: https://studentaffairs.jhu.edu/recreation/experiential-education/trips/
+ 
+  [Climbing at JHU]: https://studentaffairs.jhu.edu/recreation/facilities/climbing-wall/
+ 
+  [Argentine Tango]: http://www.tangoestanoche.com/
+  [JHU Ballroom Club]: https://www.facebook.com/groups/jhuballroom/
+ 
+  [Mobtown Ballroom]: https://mobtownballroom.com/
+  [Baltimore Bike Party]: https://baltimorebikeparty.com/
+ 
+  [Baltimore Improv Group]: http://www.bigimprov.org/
