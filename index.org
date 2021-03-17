@@ -7,11 +7,19 @@
 #+html_doctype: html5
 #+options: html-preamble:t
 #+options: html-postamble:nil
-#+options: num:nil toc:nil  html5-fancy:t
+#+options: num:nil toc:t html5-fancy:nil
+#+OPTIONS: html-style:nil
+
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="normalize.css" />
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="main.css" />
+#+HTML_HEAD: <script src="main.js"></script>
 
 # * Hi!
 
-| *Links:* | [[https://drive.google.com/file/d/1gjjdAYYkMuSBC6xEMi96PKej3IxA25VC/view?usp=sharing][CV]] | [[https://www.uwo.ca/math/people/postdocs.html][Contact]] | [[https://owl.uwo.ca/portal/site/1fda099f-409e-45c6-ba83-c81bf40a4798][Algebraic Topology]] |
+
+*Links:*  [[https://drive.google.com/file/d/1gjjdAYYkMuSBC6xEMi96PKej3IxA25VC/view?usp=sharing][CV]]  [[https://www.uwo.ca/math/people/postdocs.html][Contact]]  [[https://owl.uwo.ca/portal/site/1fda099f-409e-45c6-ba83-c81bf40a4798][Algebraic Topology]]
+
+#+attr_html: :alt  :align left :class img
 
 
 I'm a postdoc at the [[http://www.math.uwo.ca/][University of Western
@@ -20,67 +28,7 @@ Ontario]] working with [[https://jdc.math.uwo.ca/][Dan Christensen]] and
 
 I'm currently teaching Algebraic Topology.
 
-* Teaching
+#+INCLUDE: "content/teaching-notes.org"
+#+INCLUDE: "content/mathcamp.org"
+#+INCLUDE: "content/dump.org"
 
-** 2021 - Winter - UWO - Algebraic Topology
-I taught an introduction to algebraic topology course in Winter 2021 at UWO. The homework for this course can be found here: https://www.overleaf.com/read/pnhsgyffnsqj
-
-** 2020 - Fall - UWO - Discrete Math
-I made some [[https://www.youtube.com/playlist?list=PLXAOfwfSuiKm3cL-JftD9ndrjYi7fPcqN][youtube videos]] for the Discrete Math course I taught at UWO in Fall 2020.
-
-** 2018 - Fall - JHU - Honors Single Variable Calculus
-I designed and taught an IBL-proof based Honors Single Variable Calculus course at JHU the notes of which can be found [[https://apurvanakade.github.io/courses/2018_Honors_Calc/index.html][here]].
-
-** 2018 - Intersession - JHU - Symmetries and Polynomials
-I designed and taught a no-prerequisite two week IBL course introducing students to the unsolvability of polynomials using Galois theory. Notes for the course can be found [[https://drive.google.com/file/d/1dChuk8J7s31C8xGurzsbf988VORnyXgb/view?usp=sharing][here]].
-
-** 2017 - Fall - JHU - Honors Single Variable Calculus
-I designed and taught a IBL-proof based Honors Single Variable Calculus course at JHU the notes of which can be found [[https://apurvanakade.github.io/courses/2017_Honors_Calc/index.html][here]].
-
-** 2017 - Intersession - JHU - Hitchhiker's Guide to Algebraic Topology
-I taught a two week course introducing non-math majors to algebraic topology. The notes can be found [[https://apurvanakade.github.io/courses/2017_h2g2_alg_top/index.html][here]].
-
-
-
-* Research
-
-* Mathcamp
-#+BEGIN_details
-#+HTML: <summary>Notes</summary>
-| testing tables inside summary | hello there | let's see |
-#+END_details
-
-* DRP
-Directed Reading Program is a program for undergrads and grad students/postdocs.
-Undergrads are paired with a mentor whose interests align with theirs and they study a topic of their choice for one semester.
-It is intended to help motivated students explore topics in more depth than possible in a classroom setting.
-I co-organize the [[https://www.math.uwo.ca/undergraduate/directed_reading_program.html][DRP at UWO]] and in the past have co-organized the [[https://math.jhu.edu/drp.html][DRP at JHU]].
-#+BEGIN_details
-#+HTML: <summary>List of projects I've mentored:</summary>
-- Clare Bedford, [[https://www.whitman.edu/documents/Academics/Mathematics/Grimm.pdf][Surreal numbers]], ([[https://www.math.uwo.ca/undergraduate/directed_reading_program.html][DRP,
-  Winter 2021]])
-- Jacob Fabe, /Fundamental Group/ from Topology by Munkres
-  ([[https://www.math.uwo.ca/undergraduate/directed_reading_program.html][DRP,
-  Fall 2020]])
-- Tim Yau, /An Introduction to Manifolds/ by Loring Tu.
-  ([[https://www.math.uwo.ca/undergraduate/directed_reading_program.html][DRP,
-  Fall 2019]])
-- Hannah Wool, /Topology/ by Munkres.
-  ([[http://www.math.jhu.edu/drp.html#Spring2019][DRP, Spring 2019]])
-- Sydney Timmerman,
-  [[http://www.math.jhu.edu/drpfiles/F2018%20-%20Sydney.pdf][/Differential
-  Geometry and Lie Groups for Physicists/]] by Marián Fecko.
-  ([[http://www.math.jhu.edu/drp.html#Fall2018][DRP, Fall 2018]])
-- Eric Cochran, /An Introduction to Manifolds/ by Loring Tu.
-  ([[http://www.math.jhu.edu/drp.html#Spring2018][DRP, Spring 2018]])
-- Chris Chia, /The Knot Book/ by Adams Collins.
-  ([[http://www.math.jhu.edu/drp.html#Fall2017][DRP, Fall 2017]])
-#+END_details
-
-* Notes
-
-* Lean
-
-* Writing
-
-* Etc.
