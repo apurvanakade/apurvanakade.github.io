@@ -1,0 +1,5 @@
+* Mathcamp
+#+BEGIN_details
+#+HTML: <summary>Notes</summary>
+| testing tables inside summary | hello there | let's see |
+#+END_details
