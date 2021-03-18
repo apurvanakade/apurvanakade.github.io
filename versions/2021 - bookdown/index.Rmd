@@ -29,7 +29,7 @@ I'm currently teaching [Algebraic Topology](https://owl.uwo.ca/portal/site/1fda0
   [University of Western Ontario]: http://www.math.uwo.ca/ 
   [Dan Christensen]: https://jdc.math.uwo.ca/ 
   [Chris Kapulkin]: http://www.math.uwo.ca/faculty/kapulkin/
-  [CV]: https://drive.google.com/file/d/1gjjdAYYkMuSBC6xEMi96PKej3IxA25VC/view?usp=sharing
+  [CV]: https://drive.google.com/file/d/1btfqsqUae_ixeT-If2lqVYPeEKHi8gb4/view?usp=sharing
   [Research Statement (video)]: https://youtu.be/rlyzT1PWw5I
   [DRP]: https://www.math.uwo.ca/undergraduate/directed_reading_program.html 
   [Teaching Portfolio]: teaching-portfolio/
