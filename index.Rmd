@@ -1,9 +1,9 @@
 --- 
 title: "Apurva Nakade"
-author: "[CV], email: <span onMouseOver=\"this.innerHTML='alastname@uwo.ca'\"
-        onMouseOut=\"this.innerHTML='(left as an exercise to the reader)'\">(left as an exercise to the
-        reader)</span> <br />" 
-        # Résumé: [CV], [Research Statement (video)], [Teaching Portfolio] 
+author: "email: <span onMouseOver=\"this.innerHTML='alastname@uwo.ca'\"
+                onMouseOut=\"this.innerHTML='(left as an exercise to the reader)'\">(left as an exercise to the
+                reader)</span>, [CV] <br />" 
+                # Résumé: [CV], [Research Statement (video)], [Teaching Portfolio] 
 output: bookdown::gitbook
 github-repo: apurvanakade/apurvanakade.github.io
 description: "Personal Website."
