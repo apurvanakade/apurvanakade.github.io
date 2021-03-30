@@ -3,6 +3,16 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://apurvanakade.github.io/blog/notes/books/</loc>
+    <lastmod>2021-03-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://apurvanakade.github.io/blog/notes/</loc>
+    <lastmod>2021-03-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://apurvanakade.github.io/blog/random/meditations/</loc>
     <lastmod>2021-02-17T00:00:00+00:00</lastmod>
   </url>
@@ -10,16 +20,6 @@
   <url>
     <loc>https://apurvanakade.github.io/blog/random/</loc>
     <lastmod>2021-02-17T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://apurvanakade.github.io/blog/notes/books/</loc>
-    <lastmod>2020-12-22T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://apurvanakade.github.io/blog/notes/</loc>
-    <lastmod>2020-12-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -92,8 +92,33 @@
   </url>
   
   <url>
+    <loc>https://apurvanakade.github.io/blog/notes/books/1q84/</loc>
+    <lastmod>2021-03-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://apurvanakade.github.io/blog/tags/fiction/</loc>
+    <lastmod>2021-03-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://apurvanakade.github.io/blog/tags/magical-realism/</loc>
+    <lastmod>2021-03-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://apurvanakade.github.io/blog/tags/murakami/</loc>
+    <lastmod>2021-03-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://apurvanakade.github.io/blog/</loc>
-    <lastmod>2021-02-17T00:00:00+00:00</lastmod>
+    <lastmod>2021-03-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://apurvanakade.github.io/blog/tags/</loc>
+    <lastmod>2021-03-29T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -122,22 +147,12 @@
   </url>
   
   <url>
-    <loc>https://apurvanakade.github.io/blog/tags/</loc>
-    <lastmod>2020-12-22T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://apurvanakade.github.io/blog/tags/absurd/</loc>
     <lastmod>2020-09-24T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://apurvanakade.github.io/blog/tags/camus/</loc>
-    <lastmod>2020-09-24T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://apurvanakade.github.io/blog/tags/fiction/</loc>
     <lastmod>2020-09-24T00:00:00+00:00</lastmod>
   </url>
   
@@ -359,11 +374,6 @@
   <url>
     <loc>https://apurvanakade.github.io/blog/notes/movies/ad-astra/</loc>
     <lastmod>2019-09-22T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://apurvanakade.github.io/blog/tags/murakami/</loc>
-    <lastmod>2019-09-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
