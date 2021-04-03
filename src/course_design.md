@@ -11,6 +11,7 @@ The homework for this course can be found here.
 ## Discrete Math
 
 In Fall 2020, I taught a semester-long at [UWO] on Discrete Math aimed at second-year undergrads majoring in computer science. The course was _fully asynchronous_ and I had to come up with several innovations to make it work.
+
 I _curated_ a textbook on [zyBooks] and created several [videos on YouTube](https://www.youtube.com/playlist?list=PLXAOfwfSuiKm3cL-JftD9ndrjYi7fPcqN) to accompany the text. We used [Piazza] as a platform for asking questions and discussing math.
 
 [piazza]: https://piazza.com/class/kd1rr8nxc6z4b5
