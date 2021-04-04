@@ -7,7 +7,7 @@ title = "Apurva Nakade"
 
 [output.html]
 additional-css = ["theme/css/tufte.css"]
-copy-fonts = false
+copy-fonts = true 
 
 [output.html.print]
 enable = false
@@ -15,3 +15,7 @@ enable = false
 [output.html.fold]
 enable = false 
 level = 1 
+
+[output.html.font]
+enable = false 
+woff = false
