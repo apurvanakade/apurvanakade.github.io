@@ -1,1 +1,20 @@
 # Apurva Nakade
+
+<img src="images/me0.jpg" width="200px" class="left" />
+
+I\'m a postdoc at the [University of Western Ontario] working with [Dan Christensen] and [Chris Kapulkin].
+My research is in the areas of algebraic topology and homotopy theory.
+
+In addition to research, I am very passionate about improving math education. I want to
+modernize university math education and bring it to the 21st century through the use of new technological innovations
+in teaching and in the process make it more accessible and equitable.
+
+I'm currently teaching [Algebraic Topology](https://owl.uwo.ca/portal/site/1fda099f-409e-45c6-ba83-c81bf40a4798).
+
+[university of western ontario]: http://www.math.uwo.ca/
+[dan christensen]: https://jdc.math.uwo.ca/
+[chris kapulkin]: http://www.math.uwo.ca/faculty/kapulkin/
+[cv]: https://drive.google.com/file/d/1gjjdAYYkMuSBC6xEMi96PKej3IxA25VC/view?usp=sharing
+[research statement (video)]: https://youtu.be/rlyzT1PWw5I
+[drp]: https://www.math.uwo.ca/undergraduate/directed_reading_program.html
+[teaching portfolio]: teaching-portfolio/
