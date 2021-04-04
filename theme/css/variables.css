@@ -96,7 +96,8 @@
   --bg: #fffff8;
   --fg: #112;
 
-  --sidebar-bg: #fafafa;
+  /* --sidebar-bg: #fafafa; */
+  --sidebar-bg: #fffff8;
   --sidebar-fg: hsl(0, 0%, 0%);
   --sidebar-non-existant: #aaaaaa;
   --sidebar-active: #1f1fff;
