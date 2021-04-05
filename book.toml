@@ -6,8 +6,7 @@ src = "src"
 title = "Apurva Nakade"
 
 [output.html]
-additional-css = ["theme/css/tufte.css"]
-copy-fonts = true 
+copy-fonts = false 
 
 [output.html.print]
 enable = false
