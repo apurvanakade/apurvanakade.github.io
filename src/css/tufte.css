@@ -101,7 +101,12 @@ figcaption {
   line-height: 1.6;
   vertical-align: baseline;
   position: relative;
-  max-width: 40%;
+}
+
+@media (min-width: 786px) {
+  figcaption {
+    max-width: 50%;
+  }
 }
 
 figure.fullwidth figcaption {

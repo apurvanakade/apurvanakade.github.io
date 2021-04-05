@@ -109,6 +109,11 @@ h6:target::before {
   text-decoration-line: underline;
   text-decoration-thickness: 1px;
 }
+
+.content figcaption a {
+  text-decoration: none;
+}
+
 .content a:hover {
   text-decoration: underline;
 }
