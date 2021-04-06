@@ -1,0 +1,22 @@
+[book]
+authors = ["Apurva Nakade"]
+language = "en"
+multilingual = false
+src = "src"
+title = "Apurva Nakade"
+
+[output.html]
+copy-fonts = false 
+no-section-label = true
+mathjax-support = true
+
+[output.html.print]
+enable = false
+
+[output.html.fold]
+enable = false 
+level = 1 
+
+[output.html.font]
+enable = false 
+woff = false
