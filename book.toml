@@ -8,6 +8,7 @@ title = "Apurva Nakade"
 [output.html]
 copy-fonts = false 
 no-section-label = true
+mathjax-support = true
 
 [output.html.print]
 enable = false

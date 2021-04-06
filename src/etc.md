@@ -1,21 +1,19 @@
 # Etc.
 
-<!-- [<img src="images/books.gif" width="250px" class="right" />](https://www.gocomics.com/sarahs-scribbles/2014/1/17) -->
+<figure class="right">
+    <a href="https://www.gocomics.com/sarahs-scribbles/2014/1/17">
+        <img src="images/books.gif" width="250px" class="right" />
+    </a>
+</figure>
 
 Fun for me is [reading books]. I love to [travel]. I type in [dvorak].
 I love designing websites like this one (built using [bookdown]), [my blog\'s theme]
-(built using [Hugo]), and the [JHU DRP website].
-
-I maintain a few blogs:
-
-- [Personal blog]
-- [Blog about teaching]
-- [Computer hacks]
-- [Math-ed resources]
+(built using [Hugo]), and the [JHU DRP website]. I also love to write in my [personal blog]
+and a [blog about teaching].
 
 In a past life I was involved with and highly recommend the following:
 
-### London, ON
+### London, Ontario
 
 - [Yoga Shack]
 - [West Coast Swing]

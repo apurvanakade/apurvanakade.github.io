@@ -12,7 +12,7 @@
 </figure>
 
 I\'m a postdoc at the [University of Western Ontario] working with [Dan Christensen] and [Chris Kapulkin].
-My research is in the areas of algebraic topology and homotopy theory.
+In Fall 2021, I'll be starting a postdoctoral lecturership at [Northwestern University].
 
 I am very passionate about improving math education. I want to
 modernize university math education and bring it forward to the 21st century through the use of new technological innovations in teaching and in the process make it more accessible and equitable.
@@ -26,3 +26,4 @@ I'm currently teaching [Algebraic Topology](https://owl.uwo.ca/portal/site/1fda0
 [research statement (video)]: https://youtu.be/rlyzT1PWw5I
 [drp]: https://www.math.uwo.ca/undergraduate/directed_reading_program.html
 [teaching portfolio]: teaching-portfolio/
+[northwestern university]: https://www.math.northwestern.edu/
