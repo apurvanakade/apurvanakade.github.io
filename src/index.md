@@ -1,12 +1,13 @@
 # Apurva Nakade
 
-<figure>
+<figure class="right">
     <img src="images/me0.jpg" width="200px"/>
     <figcaption> 
-    Marathi: <a href="https://en.wikipedia.org/wiki/Help:IPA/Marathi" style="font-family: monospace; font-size: 0.75em">[əpurʋə nakade]</a>
-    Quick links:
-    <a href="https://www.uwo.ca/math/people/postdocs.html">Contact</a>, 
-    <a href="https://drive.google.com/file/d/1gjjdAYYkMuSBC6xEMi96PKej3IxA25VC/view?usp=sharing">CV</a>
+        Marathi: <a href="https://en.wikipedia.org/wiki/Help:IPA/Marathi" style="font-family: monospace; font-size: 0.75em">[əpurʋə nakade]</a>
+        <br/>
+        Quick links:
+        <a href="https://www.uwo.ca/math/people/postdocs.html">Contact</a>, 
+        <a href="https://drive.google.com/file/d/1gjjdAYYkMuSBC6xEMi96PKej3IxA25VC/view?usp=sharing">CV</a>
     </figcaption>
 </figure>
 

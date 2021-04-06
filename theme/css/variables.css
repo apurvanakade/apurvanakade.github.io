@@ -1,9 +1,9 @@
 /* Globals */
 
 :root {
-  --sidebar-width: 300px;
+  --sidebar-width: 200px;
   --page-padding: 15px;
-  --content-max-width: 750px; /*750px*/
+  --content-max-width: 850px; /*750px*/
   --menu-bar-height: 50px;
 }
 
@@ -93,13 +93,11 @@
 
 .light {
   /* --bg: hsl(0, 0%, 100%); */
-  /* --fg: hsl(0, 0%, 0%); */
-
+  /* --fg: #222; */
   --bg: #fffff8;
   --fg: #112;
 
-  /* --sidebar-bg: #fafafa; */
-  --sidebar-bg: #fffff8;
+  --sidebar-bg: #fafafa;
   --sidebar-fg: hsl(0, 0%, 0%);
   --sidebar-non-existant: #aaaaaa;
   --sidebar-active: #1f1fff;
