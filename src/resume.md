@@ -1,16 +1,21 @@
 # Résumé
 
-My detailed CV is [here](https://drive.google.com/file/d/1gjjdAYYkMuSBC6xEMi96PKej3IxA25VC/view?usp=sharing). You can find teaching evaluations for my courses [here](https://tinyurl.com/nakade-evals).
+[CV](https://drive.google.com/file/d/1gjjdAYYkMuSBC6xEMi96PKej3IxA25VC/view?usp=sharing)
+
+[Teaching Evaluations](https://tinyurl.com/nakade-evals)
 
 I completed my PhD in Math at the Johns Hopkins University in 2019.
 My PhD thesis is titled _Manifold Calculus and Convex Integration_ (more [here](./research.html)).
+From 2019-21, I was a postdoctoral fellow at the University of Western Ontario.
+Starting Fall 2021, I'll be a postdoctoral lecturer at Northwestern University.
 
-I have been teaching university level math courses for quite some time now.
-I taught summer courses, semester-long courses, and intersession courses at JHU from 2014-19.
-I taught semester-long courses at UWO from 2019-21.
+From 2014-19, I taught several summer courses, semester-long courses, and intersession courses at JHU.
+From 2019-21, I taught several semester-long courses at UWO.
 I was a mentor for Canada/USA Mathcamp from 2017-2019 and an academic coordinator for the summer of 2018.
 
-Below is a list of courses I've taught so far. You can find the course notes in [Course Design](./course_design.html).
+I'm a participant in the [Project NExT](https://www.maa.org/programs-and-communities/professional-development/project-next) Brown'20 cohort. I also have a [Certificate of Completion](https://cer.jhu.edu/teaching-academy/coc/overview) from the [Teaching Academy](https://cer.jhu.edu/teaching-academy) at JHU.
+
+Below is a complete list of courses I've taught so far. You can find the course notes in [Course Design](./course_design.html).
 
 | University | Course                                             | Years             | # of students |                             |
 | ---------- | -------------------------------------------------- | ----------------- | ------------- | --------------------------- |
