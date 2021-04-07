@@ -6,7 +6,7 @@
 html {
   color: var(--fg);
   background-color: var(--bg);
-  font-size: 14px;
+  font-size: 13px;
   text-size-adjust: none;
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
