@@ -3,11 +3,53 @@
 :root {
   --sidebar-width: 200px;
   --page-padding: 15px;
-  --content-max-width: 850px; /*750px*/
+  --content-max-width: 750px; /*750px*/
   --menu-bar-height: 50px;
 }
 
 /* Themes */
+
+.light {
+  /* --bg: hsl(0, 0%, 100%); */
+  /* --fg: #222; */
+  --bg: #fffff8;
+  --fg: #112;
+
+  --sidebar-bg: #fafafa;
+  --sidebar-fg: hsl(0, 0%, 0%);
+  --sidebar-non-existant: #aaaaaa;
+  --sidebar-active: #1f1fff;
+  --sidebar-spacer: #f4f4f4;
+
+  --scrollbar: #8f8f8f;
+
+  --icons: #747474;
+  --icons-hover: #000000;
+
+  --links: #20609f;
+
+  --inline-code-color: #301900;
+
+  --theme-popup-bg: #fafafa;
+  --theme-popup-border: #cccccc;
+  --theme-hover: #e6e6e6;
+
+  --quote-bg: hsl(197, 37%, 96%);
+  --quote-border: hsl(197, 37%, 91%);
+
+  --table-border-color: hsl(0, 0%, 95%);
+  --table-header-bg: hsl(0, 0%, 80%);
+  --table-alternate-bg: hsl(0, 0%, 97%);
+
+  --searchbar-border-color: #aaa;
+  --searchbar-bg: #fafafa;
+  --searchbar-fg: #000;
+  --searchbar-shadow-color: #aaa;
+  --searchresults-header-fg: #666;
+  --searchresults-border-color: #888;
+  --searchresults-li-bg: #e4f2fe;
+  --search-mark-bg: #a2cff5;
+}
 
 .ayu {
   --bg: hsl(210, 25%, 8%);
@@ -24,8 +66,7 @@
   --icons: #737480;
   --icons-hover: #b7b9cc;
 
-  /* --links: #0096cf; */
-  --links: #c5c5c5;
+  --links: #0096cf;
 
   --inline-code-color: #ffb454;
 
@@ -65,8 +106,7 @@
   --icons: #43484d;
   --icons-hover: #b3c0cc;
 
-  /* --links: #2b79a2; */
-  --links: #98a3ad;
+  --links: #2b79a2;
 
   --inline-code-color: #c5c8c6;
 
@@ -91,49 +131,6 @@
   --search-mark-bg: #355c7d;
 }
 
-.light {
-  /* --bg: hsl(0, 0%, 100%); */
-  /* --fg: #222; */
-  --bg: #fffff8;
-  --fg: #112;
-
-  --sidebar-bg: #fafafa;
-  --sidebar-fg: hsl(0, 0%, 0%);
-  --sidebar-non-existant: #aaaaaa;
-  --sidebar-active: #1f1fff;
-  --sidebar-spacer: #f4f4f4;
-
-  --scrollbar: #8f8f8f;
-
-  --icons: #747474;
-  --icons-hover: #000000;
-
-  /* --links: #20609f; */
-  --links: #112;
-
-  --inline-code-color: #301900;
-
-  --theme-popup-bg: #fafafa;
-  --theme-popup-border: #cccccc;
-  --theme-hover: #e6e6e6;
-
-  --quote-bg: hsl(197, 37%, 96%);
-  --quote-border: hsl(197, 37%, 91%);
-
-  --table-border-color: hsl(0, 0%, 95%);
-  --table-header-bg: hsl(0, 0%, 80%);
-  --table-alternate-bg: hsl(0, 0%, 97%);
-
-  --searchbar-border-color: #aaa;
-  --searchbar-bg: #fafafa;
-  --searchbar-fg: #000;
-  --searchbar-shadow-color: #aaa;
-  --searchresults-header-fg: #666;
-  --searchresults-border-color: #888;
-  --searchresults-li-bg: #e4f2fe;
-  --search-mark-bg: #a2cff5;
-}
-
 .navy {
   --bg: hsl(226, 23%, 11%);
   --fg: #bcbdd0;
@@ -149,8 +146,7 @@
   --icons: #737480;
   --icons-hover: #b7b9cc;
 
-  /* --links: #2b79a2; */
-  --links: #bcbdd0;
+  --links: #2b79a2;
 
   --inline-code-color: #c5c8c6;
 
@@ -190,8 +186,7 @@
   --icons: #737480;
   --icons-hover: #262625;
 
-  /* --links: #2b79a2; */
-  --links: #262625;
+  --links: #2b79a2;
 
   --inline-code-color: #6e6b5e;
 
@@ -232,8 +227,7 @@
     --icons: #43484d;
     --icons-hover: #b3c0cc;
 
-    /* --links: #2b79a2; */
-    --links: #98a3ad;
+    --links: #2b79a2;
 
     --inline-code-color: #c5c8c6;
 

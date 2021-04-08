@@ -41,10 +41,12 @@ h1 {
 main h1::after {
   position: relative;
   content: "";
-  filter: opacity(15%);
+  /* filter: opacity(15%); */
   padding-top: 1rem;
-  border-bottom: 0.5px solid var(--fg);
+  /* border-bottom: 0.5px solid var(--fg); */
   display: block;
+
+  border-bottom: solid 1px var(--table-header-bg);
 }
 
 h2 {
@@ -144,12 +146,8 @@ h6:target::before {
   margin-bottom: 1.3em;
 }
 .content a {
-  text-decoration-line: underline;
-  text-decoration-thickness: 1px;
-}
-
-.content figcaption a {
   text-decoration: none;
+  color: var(--links);
 }
 
 .content a:hover {
@@ -165,6 +163,10 @@ h6:target::before {
 .content .header:link,
 .content .header:visited:hover {
   text-decoration: none;
+}
+
+.sidebar {
+  border-right: solid 1px var(--table-header-bg);
 }
 
 table {

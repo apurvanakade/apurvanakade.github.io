@@ -1,141 +1,124 @@
 <!-- # Mathcamp -->
-<h1> 
-Canada/USA <img src="images/mathcamp.png" width="200rem" id="mathcamp"> 
+<h1>
+    <a href="#Mathcamp" id="Mathcamp" class="header">
+        Canada/USA <img src="images/mathcamp.png" width="200rem" id="mathcamp"> 
+    </a>
 </h1>
 
-[Canada/USA ![Mathcamp](images/mathcamp-icon.png)](https://www.mathcamp.org/) is an intensive 5-week-long summer program for mathematically talented high school students.
-More than just a summer camp, Mathcamp is a <strike>vibrant community</strike> cult, made up of a wide variety of people who share a common love of learning and passion for mathematics.
-
-I was fortunate to be able to teach several week-long courses at the amazing place that is Mathcamp.
-Without a shadow of doubt, my teaching is highly influenced by my experiences at the camp.
-Here I experimented a lot with my teaching and learned a lot from my fellow educators and students.
-
-If you are a high-school student/graduate student interested in participating in/teaching at Mathcamp, please do not hesitate to reach out to me for information.
-Below are some notes from some of the courses I taught at Mathcamp.
-
-<!-- markdown-toc start - Don't edit this section. Run M-x markdown-toc-refresh-toc -->
-
-- [Lean at MC2020](#lean-at-mc2020)
-- [Crash Course on Linear Algebra](#crash-course-on-linear-algebra)
-- [Galois Correspondence of Covering Spaces](#galois-correspondence-of-covering-spaces)
-- [[From High School Arithmetic to Group Cohomology]](#from-high-school-arithmetic-to-group-cohomology)
-- [Riemann Surfaces](#riemann-surfaces)
-- [[The Quantum Spring]](#the-quantum-spring)
-- [[Cohomology via Sheaves]](#cohomology-via-sheaves)
-- [[How Curved Is a Potato?]](#how-curved-is-a-potato)
-- [[Would I ever Lie Group to you?]](#would-i-ever-lie-group-to-you)
-- [[Symmetries of Spaces]](#symmetries-of-spaces)
-- [[Representation theory]](#representation-theory)
-- [[All things manifoldy]](#all-things-manifoldy)
-- [[Euler Characteristic]](#euler-characteristic)
-- [[What is Homology?]](#what-is-homology)
-- [[Lagrangian and Hamiltonian Mechanics]](#lagrangian-and-hamiltonian-mechanics)
-- [[How Riemann *finally* understood logarithms]](#how-riemann-finally-understood-logarithms)
-- [[How to glue donuts]](#how-to-glue-donuts)
-
-<!-- markdown-toc end -->
+[Canada/USA ![Mathcamp](images/mathcamp-icon.png)](https://www.mathcamp.org/) is an intensive 5-week-long <strike>summer program</strike> cult for mathematically talented high school students.
+I was fortunate to be able to participate in this amazing place for four summers.
+Here, I had the unique opportunity to constantly experiment with my teaching and I learned a lot from my fellow educators and students.
+If you are a high-school student/graduate student interested in Canada/USA Mathcamp, please do not hesitate to reach out to me for information.
+Below are notes from some of the classes I designed and taught at Mathcamp.
 
 ## Lean at MC2020
 
 [Notes.](https://apurvanakade.github.io/courses/lean_at_MC2020/index.html)
 
-<!-- [Lean theorem prover] is a proof checker that can check the correctness of mathematical proofs. -->
-<!-- One can also think of it as a proof assistant that can be used to teach math to computers. -->
-<!-- Proofs _written in Lean_ are unique in that they're both human and machine readable. -->
-<!-- Furthermore, Lean has an [extremely active and helpful community](https://leanprover.zulipchat.com/) which makes learning Lean an "easy" and enjoyable experience. -->
-<!-- [lean theorem prover]: https://leanprover-community.github.io/ -->
-
-I taught this week long course at Mathcamp 2020 introducing students to Lean.
-The course is completely interactive - you learn by solving exercises and coding snippets online.
-The only prerequisites for this course are basic proof techniques, although it is recommended to simultaneously use the other resources linked in the notes.
-Toward the end of the course we teach Lean the proof of irrationality of \\( \sqrt{2} \\).
+I taught this week long class at Mathcamp 2020 introducing students to the Lean theorem prover.
+The class is completely interactive - you learn by solving exercises and coding snippets online.
+The only prerequisites for this class are basic proof techniques, although it is recommended that you simultaneously use the other resources linked in the notes.
+Towards the end of the class we teach Lean the proof of irrationality of \\( \sqrt{2} \\).
 
 ## Crash Course on Linear Algebra
 
-[Notes.](https://drive.google.com/file/d/1lnX4p_K75vMl0rt0JtOeTYPm9eA6Zi2j/view?usp=sharing)
+[Notes.](https://github.com/apurvnakade/mc2019-linear-algebra/blob/master/output/index.pdf)
 
-I taught this week-long course at Mathcamp 2018 as a proof-based introduction to Linear Algebra.
-The prerequisites for this course are basic proof techniques.
-The course is complete in an IBL-format - you're expected to solve all the problems in each section before moving to the next.
-The notes are quite terse and challenging.
+I taught this week-long class at Mathcamp 2018 as a proof-based introduction to Linear Algebra.
+The prerequisites for this class are basic proof techniques.
+The class is designed in an IBL-format - you're expected to solve all the problems in each section before moving to the next and in the process learn the subject.
+The notes are quite terse and are meant to be challenging.
 
 ## Galois Correspondence of Covering Spaces
 
-[Notes.](https://drive.google.com/file/d/1yMpw52rjMrBRj5q8W2PIDRDp9yXmDYVN/view?usp=sharing)
+[Notes.](https://github.com/apurvnakade/mc2019-Galois-correspondence-of-covering-spaces/blob/main/output/index.pdf)
 
-I taught this course at Mathcamp 2019. It is about the covering space theory for graphs and is meant to be an introduction to algebraic topology and its connection to group theory.
-The prerequisites are group theory and basic exposure to topology/analysis.
+I taught this week-long class at Mathcamp 2019.
+It covers (pun intended) the covering space theory for graphs and surfaces and is meant to be an introduction to algebraic topology and its connection to group theory.
+The prerequisites are group theory and basic minimal exposure to topology/analysis.
 
-## [From High School Arithmetic to Group Cohomology]
+## From High School Arithmetic to Group Cohomology
 
-## [Cohomology via Sheaves]
+[Notes.](https://github.com/apurvnakade/mc2019-group-cohomology/blob/main/output/index.pdf)
 
-## [How Curved Is a Potato?]
+I taught this week-long class Mathcamp 2019.
+It is based on a fun paper by Dan Isaken called [A cohomological viewpoint of elementary school arithmetic](https://www.jstor.org/stable/3072368?seq=1).
+The class introduces the notions of group extensions and exact sequences as a way of interpreting addition of multi-digit numbers.
+It is designed in an IBL-format - you're expected to solve all the problems in each section before moving to the next and in the process learn the subject.
+The prerequisites are group theory.
 
-[Gauss Bonnet.pdf]
+## Cohomology via Sheaves
 
-[How Curved Is a Potato?.pdf]
+[Notes.](https://github.com/apurvnakade/mc2018-cohomology-via-sheaves/blob/main/output/index.pdf)
 
-[gauss bonnet.pdf]: https://drive.google.com/file/d/19A5nwYHviACkiAkT67T1vq3_JOSgKvxO/view?usp=sharing
-[how curved is a potato?.pdf]: https://drive.google.com/file/d/1uLixD87ZnHKAHZkMT29diq0xbRvvmSc8/view?usp=sharing
+I taught this week-long class at Mathcamp 2018.
+It introduces the notion of Čech cohomology on graphs and we compute cohomologies of some simple spaces.
+The class is designed in an IBL-format - you're expected to solve all the problems in each section before moving to the next and in the process learn the subject.
+The prerequisites are linear algebra (over finite fields).
 
-## [Would I ever Lie Group to you?]
+## How Curved Is a Potato?
 
-## [The Quantum Spring]
+[Notes.](https://github.com/apurvnakade/mc2018-how-curved-is-a-potato/blob/main/output/index.pdf)
 
-## [Symmetries of Spaces]
+I taught this week-long class at Mathcamp 2018.
+In this class, we discuss the curvatures of potatoes embedded in \\( \mathbb{R}^3\\) and systematically derive the notions of principal, Gaussian, and mean curvatures.
+The prerequisites are linear algebra, in particular, the notions of eigenvalues and eigenvectors, and multi-variable calculus.
 
-## [Representation theory]
+## Would I Ever Lie Group to You?
 
-## [All things manifoldy]
+[Notes.](https://github.com/apurvnakade/mc2018-would-i-ever-Lie-group-to-you/blob/main/output/index.pdf)
+
+I taught this week-long class at Mathcamp 2018.
+This is a class about matrix groups and how they arise as symmetries of spaces.
+The prerequisites are linear algebra and group theory, in particular, group actions.
 
 ## Riemann Surfaces
 
-[ComplexAnalysisTheorems.pdf]
+[Problem Sets.](https://github.com/apurvnakade/mc2019-Riemann-surfaces/tree/main/output)
 
-[PSet01.pdf]
+I taught this week-long class at Mathcamp 2019.
+In this class, we construct Riemann surfaces as "graphs" of holomorphic functions.
+Towards the end we prove Fermat's last theorem for function fields.
+The prerequisites are complex analysis.
 
-[PSet02.pdf]
+<!-- Move this to Expository notes. -->
 
-[PSet03.pdf]
+<!-- ## The Quantum Spring -->
 
-[PSet04.pdf]
+<!-- [Notes.](https://github.com/apurvnakade/mc2018-the-quantum-spring/blob/main/output/index.pdf) -->
 
-[PSet05.pdf]
+<!-- These are notes from a 2-day talk I gave at Mathcamp 2018 about the harmonic oscillator. -->
 
-[TopologyTheorems.pdf]
+## Assorted notes
 
-[complexanalysistheorems.pdf]: https://drive.google.com/file/d/1JeBK4FGzjyvUug3tWz4M6eCDcQW8Yi7h/view?usp=sharing
-[pset01.pdf]: https://drive.google.com/file/d/1RqDpKYY-WuiPnLZWvgC108gPHkXzKoEj/view?usp=sharing
-[pset02.pdf]: https://drive.google.com/file/d/1_BpKLSMsUdjV0yZVmqgo6trH7EhE-e8R/view?usp=sharing
-[pset03.pdf]: https://drive.google.com/file/d/12IKUtp1u3JM9xh0rnQ_YRIsB9iGZOOe5/view?usp=sharing
-[pset04.pdf]: https://drive.google.com/file/d/1VYxcgeBmUPYjpz7ZKX0F07U-GylnOphC/view?usp=sharing
-[pset05.pdf]: https://drive.google.com/file/d/1Jgb1DzLQABoYQZm1bz7CyViPkdvfCiOW/view?usp=sharing
-[topologytheorems.pdf]: https://drive.google.com/file/d/16XphMFGFi7kv27j-wX8-UwHEJ3troG6u/view?usp=sharing
+The following are a few other classes I taught at Mathcamp. The notes are not very polished.
 
-## [Euler Characteristic]
+### How Riemann finally understood logarithms
 
-## [What is Homology?]
+[Notes.](https://drive.google.com/file/d/1T1iJ2Mw4VupMr9CKs_NriwSWdoPHmMUL/view)
+I taught this week-long class at Mathcamp 2019.
+In this class, we talked about inverses of holomorphic functions, branch cuts, and Riemann surfaces.
 
-## [Lagrangian and Hamiltonian Mechanics]
+### How to glue donuts
 
-## [How Riemann *finally* understood logarithms]
+[Notes.](https://drive.google.com/file/d/1iQ_-iqu1x4ueYT4ucNbb_WgAeaf19Ysc/view)
+I taught this week-long class at Mathcamp 2019.
+In this class, we talked about cutting and pasting methods in topology and concluded with the Heegard splittings of the 3-sphere.
 
-## [How to glue donuts]
+### All things manifoldy
 
-[code]: https://github.com/apurvnakade/mc2020-projects
-[how to glue donuts]: https://drive.google.com/file/d/1iQ_-iqu1x4ueYT4ucNbb_WgAeaf19Ysc/view?usp=sharing
-[how riemann *finally* understood logarithms]: https://drive.google.com/file/d/1T1iJ2Mw4VupMr9CKs_NriwSWdoPHmMUL/view?usp=sharing
-[canada/usa mathcamp]: images/mathcamp-icon.png
-[from high school arithmetic to group cohomology]: https://drive.google.com/file/d/1L7urIOuiu4JIfI6ry2lkKin6Xof8yJdd/view?usp=sharing
-[riemann surfaces]: courses/Mathcamp/2019_riemann_surfaces/index.html
-[how curved is a potato?]: courses/Mathcamp/2018_how_curved_is_a_potato/index.html
-[cohomology via sheaves]: https://drive.google.com/file/d/1C21oAC_dH0EX-el2mdT9lH_taY2xZNMm/view?usp=sharing
-[the quantum spring]: https://drive.google.com/file/d/1UxZK5drBPLGt4GCC22VtEgYsGLT3p8Nu/view?usp=sharing
-[would i ever lie group to you?]: https://drive.google.com/file/d/1QSPZ5WpFDLCa1AzFrJiE57NXRhwRo8Ra/view?usp=sharing
-[all things manifoldy]: https://drive.google.com/drive/folders/1_ksj5iK0wjRhCcMH2r3a6t-5Y_IXTG49?usp=sharing
-[euler characteristic]: https://drive.google.com/drive/folders/13-oarucRe06Mi7jWdGFAQoW1Z9h0lcWM?usp=sharing
-[symmetries of spaces]: https://drive.google.com/drive/folders/18f1YeG10HfZ-keih3sbdkXNTybVcjY38?usp=sharing
-[what is homology?]: https://drive.google.com/drive/folders/1xardSdDjo__hk7os2CR5BUOPjvAwuD-q?usp=sharing
-[representation theory]: https://drive.google.com/drive/folders/1gCkxfiQ09TKmofzZKd6TlNikzWV3Ltum?usp=sharing
-[lagrangian and hamiltonian mechanics]: https://drive.google.com/drive/folders/1sCCXN0ffj0SP216WOwTwe7LJgIXJtPpg?usp=sharing
+[Notes.](https://github.com/apurvnakade/mc2017/tree/main/01%20All%20things%20manifoldy)
+I taught this week-long class at Mathcamp 2017.
+In this class, we talked about topological manifolds, cutting and pasting methods in topology, classification of surfaces, Dehn twists, and concluded with the Heegard splittings of the 3-sphere.
+
+### Euler Characteristic
+
+[Notes.](https://github.com/apurvnakade/mc2017/tree/main/02%20Euler%20Characteristic)
+I taught this week-long class at Mathcamp 2017.
+In this class, we talked about Euler characteristics of surfaces, vector fields, the hairy-ball theorem, and the Gauss-Bonnet theorem.
+
+### Symmetries of Spaces
+
+[Notes.](https://github.com/apurvnakade/mc2017/tree/main/03%20Symmetries%20of%20Spaces)
+I taught this week-long class at Mathcamp 2017.
+This is a class about matrix groups and how they arise as symmetries of spaces.

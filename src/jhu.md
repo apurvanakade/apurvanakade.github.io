@@ -1,37 +1,32 @@
 # JHU
 
-## Honors Single Variable Calculus, Fall '18-'19
-
-## Symmetries \& Polynomials, Intersession '18
-
-## Hitchhiker's Guide to Algebraic Topology, Intersession '17
-
-[uwo]: https://www.math.uwo.ca/
-
-For Hitchhiker’s Guide to Algebraic Topology, I asked the students to read and present applications of algebraic topology to other fields of science of their choosing. We had several exciting conversations about things like applications of knot theory to protein folding and data science. The notes and the student presentations can be found [here](https://apurvanakade.github.io/courses/2017_h2g2_alg_top/index.html).
-
-Most of my time in Fall 2020 was spent designing and teaching an online Discrete Math course.
-This involved making [youtube videos], making and editing [WeBWorK] problem sets, managing discussion forums, other standard course related chores, and not going insane.
-I occasionally write about it on my [my wordpress blog].
-
-## Symmetries & Polynomials
-
-In the Symmetries & Polynomials course, I taught group theory using permutations of elements and its connection to Galois theory using roots of polynomials. The problem sets for this course can be found [here](https://apurvanakade.github.io/teaching-portfolio/drive.google.com/file/d/1dChuk8J7s31C8xGurzsbf988VORnyXgb/view).
-I taught two week-long intersession courses titled Hitchhiker’s Guide to Algebraic Topology and Symmetries & Polynomials. I taught both of these courses in a flipped classroom format. I assigned students guided exercises, which they solved to learn more about the subject.
+While I was a grad student at JHU I got a chance to design and teach a couple of intersession courses and a semester long honors single variable course for two semesters.
 
 ## Honors Single Variable Calculus
 
-For Hitchhiker’s Guide to Algebraic Topology, I asked the students to read and present applications of algebraic topology to other fields of science of their choosing. We had several exciting conversations about things like applications of knot theory to protein folding and data science. The notes and the student presentations can be found [here](https://apurvanakade.github.io/courses/2017_h2g2_alg_top/index.html).
-This was an experimental full semester four-credit course offered at JHU to first-year undergraduates.
-The course covered all of the first-year calculus and introduced students to proof writing.
-This is the first course I had to design from scratch.
-The materials for this course can be found [here](https://apurvanakade.github.io/courses/2018_Honors_Calc/).
+[Notes v2017.](https://github.com/apurvnakade/jhu2017-18-honors-single-variable-calculus/blob/main/2017/output/ClassNotes.pdf) &nbsp; [Notes v2018.](https://github.com/apurvnakade/jhu2017-18-honors-single-variable-calculus/blob/main/2018/output/ClassNotes.pdf)
 
-|                          |                                              |
-| ------------------------ | -------------------------------------------- |
-| **Intersession courses** |                                              |
-|                          | [H2G2 Algebraic Topology \'17]               |
-|                          | [Symmetries & Polynomials \'18 (IBL)]        |
-| **Honors Calculus**      |                                              |
-|                          | [Honors Single Variable Calculus \'18 (IBL)] |
-|                          | [Honors Single Variable Calculus \'17 (IBL)] |
+For two semesters, Fall 2017 \& 2018, I taught an accelerated honors single variable calculus course at JHU.
+The course covers two semesters worth of calculus (integration and differentiation) in one semester.
+The course is designed in an IBL-format - you're expected to solve all the problems in each section before moving to the next and in the process learn the subject.
+The first iteration of the notes contain only problems and is quite challenging.
+The second iteration contains more theory and explanations and is relatively easier to follow.
+The prerequisites are pre-calculus.
+It is recommended to have done an introductory course on basic calculus and have some exposure to mathematical proofs before using these notes.
+
+## Symmetries \& Polynomials
+
+[Notes.](https://github.com/apurvnakade/jhu2018-symmetries-and-polynomials/blob/main/output/index.pdf)
+
+I taught this 2-week class in the winter break (intersession) of 2018 at JHU.
+This class introduces non-math majors to group theory and its connections to roots of polynomials, in particular, the unsolvability of the quintic.
+The class is designed in an IBL-format - you're expected to solve all the problems in each section before moving to the next and in the process learn the subject.
+The prerequisites are basic proof techniques.
+
+## Hitchhiker's Guide to Algebraic Topology, Intersession '17
+
+[Course Website.](https://apurvanakade.github.io/courses/2017_h2g2_alg_top/index.html)
+
+I taught this 2-week class in the winter break (intersession) of 2017 at JHU.
+The goal was to introduce non-math majors to algebraic topology and to explore some of its applications to other areas of math and science.
+There are no prerequisites and the notes for this course (available on the course website) are mostly expository in nature.

@@ -1,6 +1,6 @@
 # Research
 
-[<img src="images/donuts.png" width="70%" style="display:block; margin:auto">](https://drive.google.com/file/d/1iQ_-iqu1x4ueYT4ucNbb_WgAeaf19Ysc/view?usp=sharing)
+<!-- [<img src="images/donuts.png" width="70%" style="display:block; margin:auto">](https://drive.google.com/file/d/1iQ_-iqu1x4ueYT4ucNbb_WgAeaf19Ysc/view?usp=sharing) -->
 
 I work in the area of algebraic topology and homotopy theory. My broad
 interests are in understanding how homotopy theoretic tools can be used
@@ -10,7 +10,11 @@ to solve problems from other areas of math.
 
 I have recently gotten interesting in teaching math to computers using [Lean](https://leanprover.github.io/about/).
 This is different from doing computations as here we are trying to teach math to computers the same way we understand it.
-[<img src="https://leanprover.github.io/images/lean_logo2.svg" width="300px" class="right" />](courses/lean_at_MC2020/index.html)
+
+<figure class="right">
+<img src="https://leanprover.github.io/images/lean_logo2.svg" width="300px" />
+</figure>
+
 I taught a course about it at [Mathcamp 2020].
 
 My primary interest in Lean is as a potential tool for teaching math proofs.
@@ -52,9 +56,6 @@ protein folding models using basic linear algebra.
 - Finding loop space structures in exotic Kac-Moody groups
 - Equivariant Embedding Calculus
 
-[youtube videos]: https://www.youtube.com/playlist?list=PLXAOfwfSuiKm3cL-JftD9ndrjYi7fPcqN
-[webwork]: https://webwork.maa.org/
-[my wordpress blog]: https://notleftasanexercise.wordpress.com/category/discrete-math/
 [code]: https://github.com/apurvnakade/mc2020-projects
 [the paper]: https://doi.org/10.1007/s40062-020-00255-3
 [arxiv version]: https://arxiv.org/abs/1711.07670
@@ -66,10 +67,22 @@ protein folding models using basic linear algebra.
 [lean theorem prover]: https://leanprover-community.github.io/
 [mathcamp 2020]: https://apurvanakade.github.io/courses/lean_at_MC2020/
 [new mathematical content]: https://github.com/apurvnakade/mc2020-projects
-[drp at uwo]: https://www.math.uwo.ca/undergraduate/directed_reading_program.html
-[drp at jhu]: http://www.math.jhu.edu/drp.html
-[drp, fall 2020]: https://www.math.uwo.ca/undergraduate/directed_reading_program.html
-[drp, spring 2019]: http://www.math.jhu.edu/drp.html#Spring2019
-[drp, fall 2018]: http://www.math.jhu.edu/drp.html#Fall2018
-[drp, spring 2018]: http://www.math.jhu.edu/drp.html#Spring2018
-[drp, fall 2017]: http://www.math.jhu.edu/drp.html#Fall2017
+
+## Research
+
+|                  |                         |
+| ---------------- | ----------------------- |
+| **Talks**        |                         |
+|                  | [ What is a Spectrum? ] |
+|                  | [ Talk at OSU ]         |
+|                  | [ Thesis Defense ]      |
+| **Dissertation** |                         |
+|                  | [ Published Paper ]     |
+|                  | [ Arxiv Paper ]         |
+|                  | [ Dissertation ]        |
+
+[published paper]: https://doi.org/10.1007/s40062-020-00255-3
+[arxiv paper]: https://arxiv.org/abs/1711.07670
+[dissertation]: https://drive.google.com/file/d/1fHkImG-CTB2liHDIAo3YmzqBmN-Qibx6/view?usp=sharing
+[talk at osu]: https://drive.google.com/file/d/1h8pHb-5HmM55_bwdzPYDB7cVHo4MHy-I/view?usp=sharing
+[thesis defense]: https://drive.google.com/file/d/1D8TSRQFVUVjM3wQ74npbH2hibrHsDho_/view?usp=sharing
