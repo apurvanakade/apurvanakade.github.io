@@ -1,5 +1,27 @@
 # Expository Notes
 
+Following are some of my personal math notes.
+They're mostly written for myself but might be useful to others.
+The notes have not been proofread and might contain errors.
+
+<!-- markdown-toc start - Don't edit this section. Run M-x markdown-toc-refresh-toc -->
+
+- [What is a Spectrum?](#what-is-a-spectrum)
+- [h-principles MSRI Summer School](#h-principles-msri-summer-school)
+- [Connections on Principal Bundles and Classical Electromagnetism](#connections-on-principal-bundles-and-classical-electromagnetism)
+- [Vector Fields on Spheres](#vector-fields-on-spheres)
+- [Steifel Whitney Numbers](#steifel-whitney-numbers)
+- [Homotopy of MO](#homotopy-of-mo)
+- [Representation Theory of Symmetric Group](#representation-theory-of-symmetric-group)
+- [Geometry of Dirac Operators](#geometry-of-dirac-operators)
+- [FIOs and Lagrangian Submanifolds](#fios-and-lagrangian-submanifolds)
+- [Symplectic Geometry Course Notes](#symplectic-geometry-course-notes)
+- [Finite Gauge Groups TQFTs](#finite-gauge-groups-tqfts)
+- [Classical Lie Groups](#classical-lie-groups)
+- [Mosher and Tangora Notes](#mosher-and-tangora-notes)
+
+<!-- markdown-toc end -->
+
 ### What is a Spectrum?
 
 [Slides](https://drive.google.com/file/d/16zRKLkBl4skQ0UNKRXfM7d51qWnBLwGF/view?usp=sharing)

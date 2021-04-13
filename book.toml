@@ -9,6 +9,8 @@ title = "Apurva Nakade"
 copy-fonts = false 
 no-section-label = true
 mathjax-support = true
+git-repository-url = "https://github.com/apurvnakade?tab=repositories"
+git-repository-icon = "fa-github"
 
 [output.html.print]
 enable = false

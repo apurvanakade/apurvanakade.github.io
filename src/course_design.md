@@ -31,4 +31,4 @@ Most notes are accessible to undergraduate and advanced high-school students.
 - [Algebraic Topology](uwo.html#algebraic-topology)
 - [Discrete Math](uwo.html#discrete-math)
 
-Note that most notes have not been thoroughly proofread and are likely to contain typos.
+The notes have not been proofread and are likely to contain typos.

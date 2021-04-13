@@ -6,21 +6,6 @@ I work in the area of algebraic topology and homotopy theory. My broad
 interests are in understanding how homotopy theoretic tools can be used
 to solve problems from other areas of math.
 
-## Proof Formalization
-
-I have recently gotten interesting in teaching math to computers using [Lean](https://leanprover.github.io/about/).
-This is different from doing computations as here we are trying to teach math to computers the same way we understand it.
-
-<figure class="right">
-<img src="https://leanprover.github.io/images/lean_logo2.svg" width="300px" />
-</figure>
-
-I taught a course about it at [Mathcamp 2020].
-
-My primary interest in Lean is as a potential tool for teaching math proofs.
-My secondary interest lies in combining machine learning and theorem proving.
-These are very long term goals as the field of theorem proving, although rapidly growing, is still very nascent.
-
 ## 2-groups in Equivariant Elliptic Cohomology
 
 I got involved in this project thanks to an [MRC Workshop]. 2-groups are
