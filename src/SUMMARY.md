@@ -8,11 +8,13 @@
   - [JHU](./jhu.md)
   - [UWO](./uwo.md)
 - [Math](./math.md)
+  - [Math \& Computers](./math_computers.md)
   - [Research](./research.md)
   - [Expository Notes](./expository_notes.md)
-  - [Math Software](./math_software.md)
 - [Teaching](./teaching.md)
   - [Teaching Philosophy](./teaching_philosophy.md)
   - [Professional Development](./professional_development.md)
   - [DRP](./drp.md)
   - [Resources](./resources.md)
+---
+Add links for blog here.

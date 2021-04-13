@@ -13,7 +13,7 @@ This page is under construction. I intend to post useful links here about only m
 - [American Institute of Mathematics]
 - [Discrete Mathematics](http://discrete.openmathbooks.org/dmoi3.html)
 
-## IBL textbooks
+### IBL textbooks
 
 - [Active Calculus Textbooks]
 

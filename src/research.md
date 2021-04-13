@@ -2,7 +2,7 @@
 
 <!-- [<img src="images/donuts.png" width="70%" style="display:block; margin:auto">](https://drive.google.com/file/d/1iQ_-iqu1x4ueYT4ucNbb_WgAeaf19Ysc/view?usp=sharing) -->
 
-I work in the area of algebraic topology and homotopy theory. My broad
+My research is in the area of algebraic topology and homotopy theory. My broad
 interests are in understanding how homotopy theoretic tools can be used
 to solve problems from other areas of math.
 
@@ -14,20 +14,24 @@ find a 2-categorical interpretation of some of naturally occurring
 objects (Drinfield double of a group) in mathematical physics and extend
 them using ideas from Equivariant Elliptic Cohomology.
 
-## 2-groups in HoTT
-
-I\'m trying to understand how to express and analyze 2-groups in
-homotopy type theory. Homotopy type theory is a branch of logic that
-encored homotopy equivalences into one of its fundamental axioms thereby
-providing a natural formalism for describing homotopy theory.
+[mrc workshop]: http://www.ams.org/programs/research-communities/2019MRC-Geometry
 
 ## An application of the h-principle to Manifold Calculus
 
-This was my PhD thesis, in which I applied homotopy theoretic techniques
+This was my PhD thesis. I applied homotopy theoretic techniques
 to study problems for differential geometry. Here is [the paper] ([arXiv
-version]) based on the [thesis] [(Updated on: May 07, 2019)]{.small}.
+version]) based on the [thesis].
 Here are some notes [notes1], [notes2] from the talks I gave on this
 topic.
+
+[the paper]: https://doi.org/10.1007/s40062-020-00255-3
+[arxiv version]: https://arxiv.org/abs/1711.07670
+[thesis]: https://drive.google.com/file/d/1fHkImG-CTB2liHDIAo3YmzqBmN-Qibx6/view?usp=sharing
+[notes1]: https://drive.google.com/file/d/1h8pHb-5HmM55_bwdzPYDB7cVHo4MHy-I/view?usp=sharing
+[notes2]: https://drive.google.com/file/d/1D8TSRQFVUVjM3wQ74npbH2hibrHsDho_/view?usp=sharing
+
+[lean theorem prover]: https://leanprover-community.github.io/
+[mathcamp 2020]: https://apurvanakade.github.io/courses/lean_at_MC2020/
 
 ## Protein folding using Markov chains
 
@@ -35,39 +39,11 @@ During my undergrad, I briefly worked on a project involving some
 protein folding models using basic linear algebra.
 [Information Processing Letters, IPL4801].
 
+[information processing letters, ipl4801]: https://drive.google.com/file/d/1xT6C4O_fMvpqoJCfnSq1ypeikM6XNMjw/view?usp=sharing
+
 ## Projects that did not quite work out
 
+- 2-groups in HoTT
 - Spectral lifts of Soergel bimodules, joint with V. Lorman
 - Finding loop space structures in exotic Kac-Moody groups
 - Equivariant Embedding Calculus
-
-[code]: https://github.com/apurvnakade/mc2020-projects
-[the paper]: https://doi.org/10.1007/s40062-020-00255-3
-[arxiv version]: https://arxiv.org/abs/1711.07670
-[thesis]: https://drive.google.com/file/d/1fHkImG-CTB2liHDIAo3YmzqBmN-Qibx6/view?usp=sharing
-[notes1]: https://drive.google.com/file/d/1h8pHb-5HmM55_bwdzPYDB7cVHo4MHy-I/view?usp=sharing
-[notes2]: https://drive.google.com/file/d/1D8TSRQFVUVjM3wQ74npbH2hibrHsDho_/view?usp=sharing
-[information processing letters, ipl4801]: https://drive.google.com/file/d/1xT6C4O_fMvpqoJCfnSq1ypeikM6XNMjw/view?usp=sharing
-[mrc workshop]: http://www.ams.org/programs/research-communities/2019MRC-Geometry
-[lean theorem prover]: https://leanprover-community.github.io/
-[mathcamp 2020]: https://apurvanakade.github.io/courses/lean_at_MC2020/
-[new mathematical content]: https://github.com/apurvnakade/mc2020-projects
-
-## Research
-
-|                  |                         |
-| ---------------- | ----------------------- |
-| **Talks**        |                         |
-|                  | [ What is a Spectrum? ] |
-|                  | [ Talk at OSU ]         |
-|                  | [ Thesis Defense ]      |
-| **Dissertation** |                         |
-|                  | [ Published Paper ]     |
-|                  | [ Arxiv Paper ]         |
-|                  | [ Dissertation ]        |
-
-[published paper]: https://doi.org/10.1007/s40062-020-00255-3
-[arxiv paper]: https://arxiv.org/abs/1711.07670
-[dissertation]: https://drive.google.com/file/d/1fHkImG-CTB2liHDIAo3YmzqBmN-Qibx6/view?usp=sharing
-[talk at osu]: https://drive.google.com/file/d/1h8pHb-5HmM55_bwdzPYDB7cVHo4MHy-I/view?usp=sharing
-[thesis defense]: https://drive.google.com/file/d/1D8TSRQFVUVjM3wQ74npbH2hibrHsDho_/view?usp=sharing
