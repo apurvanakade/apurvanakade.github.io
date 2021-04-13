@@ -1,6 +1,6 @@
 # JHU
 
-While I was a grad student at JHU I got a chance to design and teach a couple of intersession courses and a semester long honors single variable course for two semesters.
+<!-- While I was a grad student at JHU I got a chance to design and teach a couple of intersession courses and a semester long honors single variable course for two semesters. -->
 
 ## Honors Single Variable Calculus
 
@@ -12,7 +12,7 @@ The course is designed in an IBL-format - you're expected to solve all the probl
 The first iteration of the notes contain only problems and is quite challenging.
 The second iteration contains more theory and explanations and is relatively easier to follow.
 The prerequisites are pre-calculus.
-It is recommended to have done an introductory course on basic calculus and have some exposure to mathematical proofs before using these notes.
+It is recommended to have done an introductory course on basic calculus and to have some exposure to mathematical proofs before using these notes.
 
 ## Symmetries \& Polynomials
 
@@ -23,7 +23,7 @@ This class introduces non-math majors to group theory and its connections to roo
 The class is designed in an IBL-format - you're expected to solve all the problems in each section before moving to the next and in the process learn the subject.
 The prerequisites are basic proof techniques.
 
-## Hitchhiker's Guide to Algebraic Topology, Intersession '17
+## Hitchhiker's Guide to Algebraic Topology
 
 [Course Website.](https://apurvanakade.github.io/courses/2017_h2g2_alg_top/index.html)
 

@@ -3,12 +3,15 @@
 [CV](https://drive.google.com/file/d/1gjjdAYYkMuSBC6xEMi96PKej3IxA25VC/view?usp=sharing) &nbsp;
 [Teaching Evaluations](https://tinyurl.com/nakade-evals)
 
+I did my bachelor's in computer science and engineering from Indian Institute of Technology, Kanpur.
+I did a masters in mathematics from Chennai Mathematical Institute followed by Ph.D. in mathematics from Johns Hopkins University.
+
+Since 2019, I have been a postdoctoral fellow at University of Western Ontario.
 Starting Fall 2021, I'll be a postdoctoral lecturer at Northwestern University.
 I'm a member of the [Project NExT](https://www.maa.org/programs-and-communities/professional-development/project-next) Brown'20 cohort. I also have a [Certificate of Completion](https://cer.jhu.edu/teaching-academy/coc/overview) from the Teaching Academy at JHU.
 
-Since 2019, I have been a postdoctoral fellow at University of Western Ontario.
 I was a mentor for Canada/USA Mathcamp from 2017-2019 and an academic coordinator for the summer of 2018.
-Below is a complete list of courses I've taught so far. You can find the course notes in [Course Design](./course_design.html).
+Below is a complete list of courses I've taught so far.
 
 | University | Course                                             | Years             | # of students |                             |
 | ---------- | -------------------------------------------------- | ----------------- | ------------- | --------------------------- |

@@ -388,8 +388,9 @@ ul#searchresults span.teaser em {
 
 .chapter {
   list-style: none outside none;
-  padding-left: 0;
   line-height: 2em;
+  padding-left: 10px;
+  padding-top: 2em;
 }
 
 .chapter ol {

@@ -12,9 +12,12 @@
   - [Research](./research.md)
   - [Expository Notes](./expository_notes.md)
 - [Teaching](./teaching.md)
-  - [Teaching Philosophy](./teaching_philosophy.md)
+  - [Teaching Philosophy]()
+  - [Advice to Students]()
   - [Professional Development](./professional_development.md)
   - [DRP](./drp.md)
   - [Resources](./resources.md)
+
 ---
+
 Add links for blog here.

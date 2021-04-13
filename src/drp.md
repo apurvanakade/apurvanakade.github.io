@@ -1,13 +1,13 @@
 # DRP
 
-The Directed Reading Program is in which undergrads are paired with a graduate student/postdoc whose interests align with theirs and they study a topic of their choice for one semester.
+The Directed Reading Program is a program in which undergrads are paired with a graduate student/postdoc whose interests align with theirs and they study a topic of their choice for one semester.
 It is intended to help motivated students explore topics in more depth than possible in a classroom setting.
 
 I've helped start and organize the [DRP at UWO] and in the past have co-organized the [DRP at JHU].
-If you are interested in the DRP or wanting to run one at your university, please don't hesitate to reach out to me.
-Following is the list of projects I've mentored.
+If you are interested in the DRP or would like to run one at your university, please don't hesitate to reach out to me.
+Following is the list of projects I've mentored in the past.
 
-- Clare Bedford, Surreal Numbers. ([UWO, Fall 2021])
+- Clare Bedford, Surreal Numbers. ([UWO, Winter 2021])
 - Jacob Fabe, Fundamental Group from Topology by Munkres. ([UWO, Fall
   2020])
 - Tim Yau, An Introduction to Manifolds by Loring Tu. ([UWO, Fall
@@ -20,7 +20,7 @@ Following is the list of projects I've mentored.
 
 [drp at uwo]: https://www.math.uwo.ca/undergraduate/directedreadingprogram.html
 [drp at jhu]: http://www.math.jhu.edu/drp.html
-[uwo, fall 2021]: https://www.math.uwo.ca/undergraduate/directedreadingprogram.html
+[uwo, winter 2021]: https://www.math.uwo.ca/undergraduate/directedreadingprogram.html
 [uwo, fall 2020]: https://www.math.uwo.ca/undergraduate/directedreadingprogram.html
 [uwo, fall 2019]: https://www.math.uwo.ca/undergraduate/directedreadingprogram.html
 [jhu, spring 2019]: http://www.math.jhu.edu/drp.html#Spring2019
