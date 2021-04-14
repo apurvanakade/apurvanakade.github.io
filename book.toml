@@ -16,8 +16,8 @@ git-repository-icon = "fa-github"
 enable = false
 
 [output.html.fold]
-enable = false 
-level = 1 
+enable = true 
+level = 0 
 
 [output.html.font]
 enable = false 
