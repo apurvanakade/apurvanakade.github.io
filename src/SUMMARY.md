@@ -3,7 +3,7 @@
 - [Apurva Nakade](./index.md)
   - [Résumé](./resume.md)
   - [Etc.](./etc.md)
-- [Course Design](./course_design.md)
+- [Course Notes](./course_notes.md)
   - [Mathcamp](./mathcamp.md)
   - [JHU](./jhu.md)
   - [UWO](./uwo.md)

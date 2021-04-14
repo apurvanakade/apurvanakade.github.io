@@ -1,4 +1,4 @@
-# Course Design
+# Course Notes
 
 I love to design and teach new, and sometimes old, courses.
 Below are notes and problem sets from several of my course.
