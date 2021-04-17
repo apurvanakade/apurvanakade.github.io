@@ -3,12 +3,17 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://apurvanakade.github.io/blog/notes/books/</loc>
-    <lastmod>2021-03-29T00:00:00+00:00</lastmod>
+    <loc>https://apurvanakade.github.io/blog/notes/</loc>
+    <lastmod>2021-04-17T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://apurvanakade.github.io/blog/notes/</loc>
+    <loc>https://apurvanakade.github.io/blog/notes/series/</loc>
+    <lastmod>2021-04-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://apurvanakade.github.io/blog/notes/books/</loc>
     <lastmod>2021-03-29T00:00:00+00:00</lastmod>
   </url>
   
@@ -20,11 +25,6 @@
   <url>
     <loc>https://apurvanakade.github.io/blog/random/</loc>
     <lastmod>2021-02-17T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://apurvanakade.github.io/blog/notes/series/</loc>
-    <lastmod>2020-09-23T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -92,6 +92,36 @@
   </url>
   
   <url>
+    <loc>https://apurvanakade.github.io/blog/tags/crime/</loc>
+    <lastmod>2021-04-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://apurvanakade.github.io/blog/tags/drama/</loc>
+    <lastmod>2021-04-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://apurvanakade.github.io/blog/notes/series/peakyblinders/</loc>
+    <lastmod>2021-04-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://apurvanakade.github.io/blog/</loc>
+    <lastmod>2021-04-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://apurvanakade.github.io/blog/tags/</loc>
+    <lastmod>2021-04-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://apurvanakade.github.io/blog/tags/uk/</loc>
+    <lastmod>2021-04-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://apurvanakade.github.io/blog/notes/books/1q84/</loc>
     <lastmod>2021-03-29T00:00:00+00:00</lastmod>
   </url>
@@ -108,16 +138,6 @@
   
   <url>
     <loc>https://apurvanakade.github.io/blog/tags/murakami/</loc>
-    <lastmod>2021-03-29T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://apurvanakade.github.io/blog/</loc>
-    <lastmod>2021-03-29T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://apurvanakade.github.io/blog/tags/</loc>
     <lastmod>2021-03-29T00:00:00+00:00</lastmod>
   </url>
   
@@ -168,11 +188,6 @@
   
   <url>
     <loc>https://apurvanakade.github.io/blog/tags/comics/</loc>
-    <lastmod>2020-09-23T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://apurvanakade.github.io/blog/tags/drama/</loc>
     <lastmod>2020-09-23T00:00:00+00:00</lastmod>
   </url>
   
