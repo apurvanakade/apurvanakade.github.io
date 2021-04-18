@@ -1,7 +1,7 @@
 # Course Notes
 
 I love to design and teach new, and sometimes old, courses.
-Below are notes and problem sets from several of my course.
+Below are notes and problem sets from several of my courses.
 Most notes are accessible to undergraduate and advanced high-school students.
 
 ### [Canada/USA Mathcamp](mathcamp.html)
