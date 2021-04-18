@@ -1,6 +1,6 @@
 <!-- # Mathcamp -->
-<h1>
-    <a href="#Mathcamp" id="Mathcamp" class="header">
+<h1 id="Mathcamp">
+    <a href="#Mathcamp" class="header">
         Canada/USA <img src="images/mathcamp.png" width="200rem" id="mathcamp"> 
     </a>
 </h1>
