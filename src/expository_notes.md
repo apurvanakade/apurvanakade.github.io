@@ -24,62 +24,65 @@ The notes have not been proofread and might contain errors.
 
 ### What is a Spectrum?
 
-[Slides](https://drive.google.com/file/d/16zRKLkBl4skQ0UNKRXfM7d51qWnBLwGF/view?usp=sharing)
+[Slides](https://github.com/apurvnakade/PDFs/blob/main/assorted%20notes/Bits%20and%20Pieces/What%20is%20a%20Spectrum_.pdf)
 from a talk I gave on an introduction to spectra in homotopy theory.
 
 ### h-principles MSRI Summer School
 
-[Notes](https://drive.google.com/file/d/1uecVJP6Xl1vScsswWGqBtJ1s3o9PwG8C/view?usp=sharing)
+[Notes](https://github.com/apurvnakade/PDFs/blob/main/assorted%20notes/Conference%20Notes/MSRI-h-principles.pdf)
 from the MSRI summer school on the h-principle.
 
 ### Connections on Principal Bundles and Classical Electromagnetism
 
-[Notes](https://drive.google.com/file/d/1kFh_-_DmR4wt-sDBiOggM5a5U-5W7V_l/view?usp=sharing)
+[Notes](https://github.com/apurvnakade/PDFs/blob/main/assorted%20notes/Bits%20and%20Pieces/Connections%20on%20Principal%20Bundles%20and%20Classical%20Electromagnetism.pdf)
 on the connection between connections on principal bundles and electromagnetism.
 
 ### Vector Fields on Spheres
 
-[Summary](https://drive.google.com/file/d/13R3_9BLfbkL9PDbhaHt9aa4FDWacEsMZ/view?usp=sharing)
+[Summary](https://github.com/apurvnakade/PDFs/blob/main/assorted%20notes/CMI/vector%20fields%20on%20spheres/vector_fields_on_spheres.pdf)
 of Adams' paper titled _Vector Fields on Spheres_.
 
 ### Steifel Whitney Numbers
 
-[Proof](https://drive.google.com/file/d/1W9TDU1SaWVLghrSaw8Dg04vdfW9veW_C/view?usp=sharing)
+[Proof](https://github.com/apurvnakade/PDFs/blob/main/assorted%20notes/Bits%20and%20Pieces/SW%20numbers.pdf)
 of Thom's theorem about the vanishing of Steifel-Whitney numbers.
 
 ### Homotopy of MO
 
-[Computation](https://drive.google.com/file/d/1vLUuLchIv4M-uVHcykqFLByWQ76ezZtq/view?usp=sharing)
+[Computation](https://github.com/apurvnakade/PDFs/blob/main/assorted%20notes/Bits%20and%20Pieces/Homotopy%20of%20MO/Homotopy%20of%20MO.pdf)
 of \\( \mathbb{Z}/2 \\) homotopy groups of real bordism spectrum.
 
 ### Representation Theory of Symmetric Group
 
-[Notes](https://drive.google.com/file/d/1xMliaDffPi6yUzp5U2d_wIdPJ6yyfLE1/view?usp=sharing)
+[Notes](https://github.com/apurvnakade/PDFs/blob/main/assorted%20notes/CMI/Representation%20Theory%20of%20Symmetric%20Group.pdf)
 on the Okounkov-Vershik approach to representations of symmetric groups.
 
 ### Geometry of Dirac Operators
 
-[Notes](https://drive.google.com/file/d/1I5uhi9sli2ebSAedRjjFWHSVw7nNhBZ9/view?usp=sharing)
+[Notes](https://github.com/apurvnakade/PDFs/blob/main/assorted%20notes/Bits%20and%20Pieces/Geometry%20of%20Dirac%20Operators/Student_talk.pdf)
 on Dirac operators and the Atiyah-Singer index theorem.
 
 ### FIOs and Lagrangian Submanifolds
 
-[Talk](https://drive.google.com/file/d/1jrV_2VjR1xGa6eham0FIxiVvMngsF8Xs/view?usp=sharing) on Fourier integral operators and Lagrangian submanifolds.
+[Talk](https://github.com/apurvnakade/PDFs/blob/main/assorted%20notes/Bits%20and%20Pieces/FIOs%20and%20Lagrangian%20Submanifolds.pdf)
+on Fourier integral operators and Lagrangian submanifolds.
 
 ### Symplectic Geometry Course Notes
 
-[Notes](https://drive.google.com/file/d/1YbjFhmTt6yvCdxyb4nT7aVz9g4w0E-PN/view) on a course on symplectic geometry.
+[Notes](https://github.com/apurvnakade/PDFs/blob/main/assorted%20notes/Bits%20and%20Pieces/Symplectic%20Geometry.pdf)
+on a course on symplectic geometry.
 
 ### Finite Gauge Groups TQFTs
 
-[Notes](https://drive.google.com/file/d/18_vHDgWnKtO9qgqfhRP4YLeDT26l_Fay/view?usp=sharing)
+[Notes](https://github.com/apurvnakade/PDFs/blob/main/assorted%20notes/Bits%20and%20Pieces/Finite%20Gauge%20Group%20Theory/Finite%20Group%20Gauge%20Theory.pdf)
 on finite gauge group TQFTs.
 
 ### Classical Lie Groups
 
-[Notes](https://drive.google.com/file/d/15SwA8TDmLUMElPQYvhMcIAttXgNzuKbz/view?usp=sharing)
+[Notes](https://github.com/apurvnakade/PDFs/blob/main/assorted%20notes/Bits%20and%20Pieces/Classical%20Lie%20Groups.pdf)
 on computations from the book by _Brocker - Tom Dieck_.
 
 ### Mosher and Tangora Notes
 
-[Handwritten notes](https://drive.google.com/drive/folders/1vSFBZh3cuDoJPglIeBmLUV1Ur0RvhZ-p?usp=sharing) taken from studying the book _Mosher and Tangora_.
+[Handwritten notes](https://github.com/apurvnakade/PDFs/tree/main/assorted%20notes/JHU%20Course%20Notes/Mosher%20and%20Tangora)
+taken from studying the book _Mosher and Tangora_.

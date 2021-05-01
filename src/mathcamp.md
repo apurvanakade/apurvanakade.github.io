@@ -89,13 +89,13 @@ The following are a few other classes I taught at Mathcamp. The notes are not ve
 
 ### How Riemann finally understood logarithms
 
-[Notes.](https://drive.google.com/file/d/1T1iJ2Mw4VupMr9CKs_NriwSWdoPHmMUL/view)
+[Notes.](https://github.com/apurvnakade/PDFs/blob/main/course%20notes/2020MathCamp/How%20Riemann%20finally%20understood%20the%20logarithms.pdf)
 I taught this week-long class at Mathcamp 2019.
 In this class, we talked about inverses of holomorphic functions, branch cuts, and Riemann surfaces.
 
 ### How to glue donuts
 
-[Notes.](https://drive.google.com/file/d/1iQ_-iqu1x4ueYT4ucNbb_WgAeaf19Ysc/view)
+[Notes.](https://github.com/apurvnakade/PDFs/blob/main/course%20notes/2020MathCamp/How%20to%20Glue%20donuts.pdf)
 I taught this week-long class at Mathcamp 2019.
 In this class, we talked about cutting and pasting methods in topology and concluded with the Heegard splittings of the 3-sphere.
 

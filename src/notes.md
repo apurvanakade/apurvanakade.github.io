@@ -21,7 +21,6 @@ Reader discretion is advised.
 
 [published paper]: https://doi.org/10.1007/s40062-020-00255-3
 [arxiv paper]: https://arxiv.org/abs/1711.07670
-[dissertation]: https://drive.google.com/file/d/1fHkImG-CTB2liHDIAo3YmzqBmN-Qibx6/view?usp=sharing
-[talk at osu]: https://drive.google.com/file/d/1h8pHb-5HmM55_bwdzPYDB7cVHo4MHy-I/view?usp=sharing
-[thesis defense]: https://drive.google.com/file/d/1D8TSRQFVUVjM3wQ74npbH2hibrHsDho_/view?usp=sharing
-
+[dissertation]: https://github.com/apurvnakade/PDFs/blob/main/assorted%20notes/Research/PhD%20Thesis.pdf
+[talk at osu]: https://github.com/apurvnakade/PDFs/blob/main/assorted%20notes/Research/2019%20-%20OSU%20Conference.pdf
+[thesis defense]: https://github.com/apurvnakade/PDFs/blob/main/assorted%20notes/Research/2019%20-%20Thesis%20Defense.pdf

@@ -1,6 +1,7 @@
 # Résumé
 
-[CV](https://drive.google.com/file/d/1gjjdAYYkMuSBC6xEMi96PKej3IxA25VC/view?usp=sharing) &nbsp;
+[CV](https://github.com/apurvnakade/PDFs/blob/main/CV.pdf)
+&nbsp;
 [Teaching Evaluations](https://tinyurl.com/nakade-evals)
 
 I did my bachelor's in computer science and engineering from Indian Institute of Technology, Kanpur.
@@ -28,14 +29,13 @@ Below is a complete list of courses I've taught so far.
 |            | Online Linear Algebra                              | Summer 2014       | 34            | All years undergrad         |
 | Mathcamp   | Several                                            | Summers 2017-20   | -             | High school & middle school |
 
-Course websites: [Calc \'19], [Calc \'20], [DiffEq \'17], [Calc \'16], [DiffEq \'15].
+Course websites: [Calc \'19], [DiffEq \'17], [Calc \'16], [DiffEq \'15].
 
 [apurvanakade.github.io/courses/2018_honors_calc/]: https://apurvanakade.github.io/courses/2018_Honors_Calc/index.html
 [zybooks]: https://learn.zybooks.com/zybook/UWOMath2151ANakadeFall2020
 [www.youtube.com/playlist?list=plxaofwfsuikm3cl-jftd9ndrjyi7fpcqn]: https://www.youtube.com/playlist?list=PLXAOfwfSuiKm3cL-JftD9ndrjYi7fPcqN
 [webwork]: https://webwork.maa.org/
-[diffeq \'15]: https://drive.google.com/drive/folders/1X7WKPhBljbXt6dBt278t2lKUlWUKIU5Z?usp=sharing
-[diffeq \'17]: https://drive.google.com/drive/folders/1_lSraXoUwk7CmStg23T1nHpYvf9zq9jA?usp=sharing
-[calc \'16]: https://drive.google.com/drive/folders/199dY1MF3TWhJ6gUKQyPf_7YK6rO36HZc?usp=sharing
-[calc \'19]: https://www.youtube.com/playlist?list=PLXAOfwfSuiKkdSQB2tVu_KcYMWhZpK19J
-[calc \'20]: https://drive.google.com/drive/folders/1MkXy0CPOKqSJANr9QSD4gwYdMYjVcdmV?usp=sharing
+[diffeq \'15]: https://github.com/apurvnakade/PDFs/tree/main/course%20notes/2015DiffEq
+[diffeq \'17]: https://github.com/apurvnakade/PDFs/tree/main/course%20notes/2017DiffEq
+[calc \'16]: https://github.com/apurvnakade/PDFs/tree/main/course%20notes/2017DiffEq
+[calc \'19]: https://github.com/apurvnakade/PDFs/tree/main/course%20notes/2019Calc1000A
