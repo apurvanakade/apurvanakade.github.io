@@ -6,7 +6,7 @@
 html {
   color: var(--fg);
   background-color: var(--bg);
-  font-size: 13px;
+  font-size: 15px;
   text-size-adjust: none;
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
@@ -33,7 +33,7 @@ body {
 h1 {
   font-weight: 400;
   margin-top: 10rem;
-  margin-bottom: 5rem;
+  margin-bottom: 3.5rem;
   font-size: 3.2rem;
   line-height: 1;
 }
