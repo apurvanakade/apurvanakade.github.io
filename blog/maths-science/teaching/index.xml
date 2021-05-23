@@ -6,11 +6,7 @@
     <description>Recent content in Teaching on PostDoc Problems</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 02 Aug 2020 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://apurvanakade.github.io/blog/maths-science/teaching/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sun, 02 Aug 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://apurvanakade.github.io/blog/maths-science/teaching/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Project NExT Workshop</title>
       <link>https://apurvanakade.github.io/blog/maths-science/teaching/projectnext/</link>
@@ -47,7 +43,7 @@ It is understood that unlike, say, in fiction, mystery is undesirable in mathema
       
       <guid>https://apurvanakade.github.io/blog/maths-science/teaching/symmetries-polynomials/</guid>
       <description>&amp;ldquo;In the broad light of day mathematicians check their equations and their proofs, leaving no stone unturned in their search for rigour. But, at night, under the full moon, they dream, they float among the stars and wonder at the miracle of the heavens. They are inspired. Without dreams there is no art, no mathematics, no life.&amp;rdquo; -Michael Atiyah
- I finally finished my week long class on the ideas behind Galois&amp;rsquo; proof of why a quintic cannot be solved using radicals.</description>
+ I finally finished my week long class on the ideas behind Galois&#39; proof of why a quintic cannot be solved using radicals.</description>
     </item>
     
   </channel>

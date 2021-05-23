@@ -6,44 +6,9 @@
     <description>Recent content on PostDoc Problems</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 17 Apr 2021 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://apurvanakade.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Tue, 22 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://apurvanakade.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Peaky Blinders</title>
-      <link>https://apurvanakade.github.io/blog/notes/series/peakyblinders/</link>
-      <pubDate>Sat, 17 Apr 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://apurvanakade.github.io/blog/notes/series/peakyblinders/</guid>
-      <description>Of late, I&amp;rsquo;ve lost the patience to watch long TV shows. Paradoxically, the pandemic made me want to watch series even less and I instead wasted a lot of time on YouTube watching short British comedy clips. I was then pleasantly surprised when I got hooked to watching Peaky Blinders on Netflix.
-Growing up reading primarily British authors, I have developed some fascination with their history. It doesn&amp;rsquo;t hurt that their history is intertwined with India.</description>
-    </item>
-    
-    <item>
-      <title>1Q84</title>
-      <link>https://apurvanakade.github.io/blog/notes/books/1q84/</link>
-      <pubDate>Mon, 29 Mar 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://apurvanakade.github.io/blog/notes/books/1q84/</guid>
-      <description>&amp;ldquo;If you can&amp;rsquo;t understand it without an explanation, you can&amp;rsquo;t understand it with an explanation.&amp;ldquo;
-- 1Q84
- What most surprised me about this book is that I actually liked reading it! I have read enough Murakami novels by now that as I was reading the book I knew that he was not going to explain anything in it and yet I did not feel frustrated. I have developed a taste for his writing.</description>
-    </item>
-    
-    <item>
-      <title>Unstructured Thoughts</title>
-      <link>https://apurvanakade.github.io/blog/random/meditations/unstructured-thoughts/</link>
-      <pubDate>Wed, 17 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://apurvanakade.github.io/blog/random/meditations/unstructured-thoughts/</guid>
-      <description>I often take long walks and think about things while walking. Being a mathematician, I have a tendency to figure things out in my head. While this works great most of the time, there are occasions when this causes me a great deal of anxiety and frustration. As life becomes more complex, the latter situation is only becoming more frequent.
-I used to think that this has to do with overthinking but I no longer believe that it is possible for the brain to overthink.</description>
-    </item>
-    
-    <item>
-      <title>DON&#39;T PANIC.</title>
+      <title>Hitchhiker&#39;s Guide to the Galaxy</title>
       <link>https://apurvanakade.github.io/blog/notes/books/h2g2/</link>
       <pubDate>Tue, 22 Dec 2020 00:00:00 +0000</pubDate>
       
@@ -139,10 +104,10 @@ The comics are a collection of short stories whereas the series is closer to a n
     
     <item>
       <title>Observing Your Thoughts</title>
-      <link>https://apurvanakade.github.io/blog/random/meditations/observing-your-thoughts/</link>
+      <link>https://apurvanakade.github.io/blog/journal/meditation/observing-your-thoughts/</link>
       <pubDate>Fri, 26 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://apurvanakade.github.io/blog/random/meditations/observing-your-thoughts/</guid>
+      <guid>https://apurvanakade.github.io/blog/journal/meditation/observing-your-thoughts/</guid>
       <description>&amp;ldquo;You are right, Watson,&amp;rdquo; said he. &amp;ldquo;It does seem a most preposterous way of settling a dispute.&amp;quot;
   &amp;ldquo;Most preposterous!&amp;rdquo; I exclaimed, and then suddenly realizing how he had echoed the inmost thought of my soul, I sat up in my chair and stared at him in blank amazement&amp;rdquo; - Adventures of the Cardboard Box
  Sherlock Holmes might have been able to predict the thoughts of Dr. Watson but I have found out that predicting my own thoughts is enough of a challenge for me.</description>
@@ -169,19 +134,19 @@ Starting from here, he develops the philosophy of the absurd.</description>
     
     <item>
       <title>Everyday Meditation</title>
-      <link>https://apurvanakade.github.io/blog/random/meditations/everyday-meditation/</link>
+      <link>https://apurvanakade.github.io/blog/journal/meditation/everyday-meditation/</link>
       <pubDate>Thu, 21 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://apurvanakade.github.io/blog/random/meditations/everyday-meditation/</guid>
+      <guid>https://apurvanakade.github.io/blog/journal/meditation/everyday-meditation/</guid>
       <description>Meditation sucks at first. It sucks badly for a long long time. It is SO bad, SO sucky. The harder you try the more you suck at it. But it is hubris to assume that you would naturally be an expert at it. I have been trying it on and off unsuccessfully for many years. Only now, thanks to the lockdown, I have finally been able to do it consistently and have started liking it.</description>
     </item>
     
     <item>
       <title>Why Meditation?</title>
-      <link>https://apurvanakade.github.io/blog/random/meditations/why-meditation/</link>
+      <link>https://apurvanakade.github.io/blog/journal/meditation/why-meditation/</link>
       <pubDate>Mon, 18 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://apurvanakade.github.io/blog/random/meditations/why-meditation/</guid>
+      <guid>https://apurvanakade.github.io/blog/journal/meditation/why-meditation/</guid>
       <description>An idea from psychology I really like is the four stages of competence. Here&amp;rsquo;s an excerpt directly from Wikipedia:
    Unconscious incompetence. The individual does not understand or know how to do something and does not necessarily recognize the deficit. They may deny the usefulness of the skill. The individual must recognize their own incompetence, and the value of the new skill, before moving on to the next stage.</description>
     </item>
@@ -739,7 +704,7 @@ This is, in fact, true for almost all art forms. All good movies have those mome
       <pubDate>Mon, 29 Jan 2018 09:00:00 +0000</pubDate>
       
       <guid>https://apurvanakade.github.io/blog/notes/books/never-let-me-go/</guid>
-      <description>&amp;ldquo;I keep thinking about this river somewhere, with the water moving really fast. And these two people in the water, trying to hold onto each other, holding on as hard as they can, but in the end it&amp;rsquo;s just too much. The current&amp;rsquo;s too strong. They&amp;rsquo;ve got to let go, drift apart.&amp;ldquo;
+      <description>&amp;ldquo;I keep thinking about this river somewhere, with the water moving really fast. And these two people in the water, trying to hold onto each other, holding on as hard as they can, but in the end it&amp;rsquo;s just too much. The current&amp;rsquo;s too strong. They&amp;rsquo;ve got to let go, drift apart.&amp;quot;
 - Never Let Me Go
  Ishiguro is a Japanese author brought up in the UK.</description>
     </item>
@@ -790,7 +755,7 @@ But that does not mean that you cannot gatecrash the party.</description>
       
       <guid>https://apurvanakade.github.io/blog/maths-science/teaching/symmetries-polynomials/</guid>
       <description>&amp;ldquo;In the broad light of day mathematicians check their equations and their proofs, leaving no stone unturned in their search for rigour. But, at night, under the full moon, they dream, they float among the stars and wonder at the miracle of the heavens. They are inspired. Without dreams there is no art, no mathematics, no life.&amp;rdquo; -Michael Atiyah
- I finally finished my week long class on the ideas behind Galois&amp;rsquo; proof of why a quintic cannot be solved using radicals.</description>
+ I finally finished my week long class on the ideas behind Galois&#39; proof of why a quintic cannot be solved using radicals.</description>
     </item>
     
     <item>
@@ -820,7 +785,7 @@ I resisted and just laid myself down on my bed staring at the ceiling. Perhaps f
       <pubDate>Fri, 12 Jan 2018 09:20:00 +0000</pubDate>
       
       <guid>https://apurvanakade.github.io/blog/notes/books/norwegian-wood/</guid>
-      <description>&amp;ldquo;What happens when people open their hearts?&amp;ldquo;
+      <description>&amp;ldquo;What happens when people open their hearts?&amp;quot;
 &amp;ldquo;They get better.” - Norwegian Wood
  Norwegian Wood is a teenage love story/coming of age story set mainly in Tokyo and the mountains of Kyoto. The name derives from the eponymous song by the Beatles.
 I have very mixed feelings about the book. On one hand, the book has a very pulp feeling to it. There are too many sex scenes described with unnecessary details (the scenes aren&amp;rsquo;t even interesting, just teenagers jerking each other off) and every conversation between the protagonists eventually converges towards sex, love, and masturbation.</description>
@@ -832,7 +797,7 @@ I have very mixed feelings about the book. On one hand, the book has a very pulp
       <pubDate>Thu, 11 Jan 2018 23:00:00 +0000</pubDate>
       
       <guid>https://apurvanakade.github.io/blog/notes/movies/shape-of-water/</guid>
-      <description>Guillermo del Toro&amp;lsquo;s best work is undoubtedly Pan&amp;rsquo;s Labyrinth, a bittersweet dreamlike tale of a young girl who finds herself in the unknown forests of Spain.
+      <description>Guillermo del Toro&amp;rsquo;s best work is undoubtedly Pan&amp;rsquo;s Labyrinth, a bittersweet dreamlike tale of a young girl who finds herself in the unknown forests of Spain.
 This new movie of his, Shape of Water, in some ways tries to recreate the same feel. The premise is completely different but the setting is exactly as in Pan&amp;rsquo;s Labyrinth. There is an unfortunate damsel with evil parents/bosses who comes in contact with magical creatures and finds an escape from &amp;ldquo;reality&amp;rdquo;.</description>
     </item>
     

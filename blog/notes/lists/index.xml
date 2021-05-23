@@ -5,10 +5,6 @@
     <link>https://apurvanakade.github.io/blog/notes/lists/</link>
     <description>Recent content in Lists on PostDoc Problems</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    
-	<atom:link href="https://apurvanakade.github.io/blog/notes/lists/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <language>en</language><atom:link href="https://apurvanakade.github.io/blog/notes/lists/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
