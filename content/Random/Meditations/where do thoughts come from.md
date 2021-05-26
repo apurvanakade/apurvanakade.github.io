@@ -25,4 +25,4 @@ This could potentially lead to nihilsm but I like to think of this as more of a 
 In Daniel Kahnemann's terms, the System 1 is in control. It is the one that makes all the decisions but then it creates an illusion that the System 2 is in control. Harris goes further to say that *"there is not even an illusion of free-will"*. I don't quite understand what he means by this. He is interested in understanding the nature of consciousness but I'm more curious about *"why we feel like we've free-will?"*. Much of my worldview and understanding rests on the assumption of human agency and takes free will as an assumption. Ironically, I never made this choice but rather this was imposed upon me by society. If you throw free will out of the window then the question becomes *"how to reframe living without the assumption of free will?"* 
 
 
-I have started listening to Sam Harris' meditation app to see if I can figure out some answers to these questions. 
+I have started listening to Sam Harris' meditation app to see if I can find some answers to these questions. 
