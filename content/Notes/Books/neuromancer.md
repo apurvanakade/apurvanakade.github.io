@@ -35,4 +35,10 @@ And all the while there is a deeper mystery unfurling in the background. New sin
 
 Books like this are the reason I love sci-fi.
 
+---
 
+**Update on [2021-05-23 Sun]**
+
+I reread the Neuromancer and the second time around I was able to understand and appreciate it even more. Now that I new the overall arc of the story, I could follows Gibson's words without getting lost. Space poetry. The original Cowboy Bebop. You could see the hidden order in the chaos, feel the grandness of his vision. There is a quality of crispness to the book, existentialness. This time I could see the complexity of its characters. Clearer even more were the philosophical questions raised by Gibson, about technology, simulations, and artificial intelligence, humans losing their humanity and machines losing their machinity.
+
+And then I went forth and read the other two books in the Sprawl trilogy. I have never been more disappointed. In the first short book, Gibson beautifully develops the characters of Case and Molly and Wintermute and Neuromancer, but then in the remaining two books he does not manage to build even a single good character. It all seems fake and contrived, forcefully cool. Absolutely nothing is explained or attains closure. The AIs become too anthropomorphic. The characters are poor quality xeroxes of Case and Molly and the books have completely unnecessary story arcs and POVs which never amount to anything. Just some lazy writing, wanting and pretending to be grand without any content. Big waste of time.
