@@ -2,14 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://apurvanakade.github.io/blog/notes/books/</loc>
-    <lastmod>2020-12-22T00:00:00+00:00</lastmod>
+    <loc>https://apurvanakade.github.io/blog/random/meditations/</loc>
+    <lastmod>2021-05-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://apurvanakade.github.io/blog/random/</loc>
+    <lastmod>2021-05-26T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://apurvanakade.github.io/blog/notes/</loc>
-    <lastmod>2020-12-22T00:00:00+00:00</lastmod>
+    <lastmod>2021-04-17T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://apurvanakade.github.io/blog/notes/series/</loc>
-    <lastmod>2020-09-23T00:00:00+00:00</lastmod>
+    <lastmod>2021-04-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://apurvanakade.github.io/blog/notes/books/</loc>
+    <lastmod>2021-03-29T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://apurvanakade.github.io/blog/journal/</loc>
     <lastmod>2020-09-01T00:00:00+00:00</lastmod>
@@ -22,12 +28,6 @@
   </url><url>
     <loc>https://apurvanakade.github.io/blog/maths-science/teaching/</loc>
     <lastmod>2020-08-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://apurvanakade.github.io/blog/journal/meditation/</loc>
-    <lastmod>2020-06-26T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://apurvanakade.github.io/blog/random/</loc>
-    <lastmod>2020-01-20T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://apurvanakade.github.io/blog/random/stray-thoughts/</loc>
     <lastmod>2020-01-20T00:00:00+00:00</lastmod>
@@ -55,31 +55,64 @@
   </url><url>
     <loc>https://apurvanakade.github.io/blog/notes/lists/</loc>
   </url><url>
-    <loc>https://apurvanakade.github.io/blog/tags/comedy/</loc>
-    <lastmod>2020-12-22T00:00:00+00:00</lastmod>
+    <loc>https://apurvanakade.github.io/blog/tags/free-will/</loc>
+    <lastmod>2021-05-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://apurvanakade.github.io/blog/tags/douglas-adams/</loc>
+    <loc>https://apurvanakade.github.io/blog/</loc>
+    <lastmod>2021-05-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://apurvanakade.github.io/blog/tags/sam-harris/</loc>
+    <lastmod>2021-05-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://apurvanakade.github.io/blog/tags/</loc>
+    <lastmod>2021-05-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://apurvanakade.github.io/blog/random/meditations/where-do-thoughts-come-from/</loc>
+    <lastmod>2021-05-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://apurvanakade.github.io/blog/tags/crime/</loc>
+    <lastmod>2021-04-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://apurvanakade.github.io/blog/tags/drama/</loc>
+    <lastmod>2021-04-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://apurvanakade.github.io/blog/notes/series/peakyblinders/</loc>
+    <lastmod>2021-04-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://apurvanakade.github.io/blog/tags/uk/</loc>
+    <lastmod>2021-04-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://apurvanakade.github.io/blog/notes/books/1q84/</loc>
+    <lastmod>2021-03-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://apurvanakade.github.io/blog/tags/fiction/</loc>
+    <lastmod>2021-03-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://apurvanakade.github.io/blog/tags/magical-realism/</loc>
+    <lastmod>2021-03-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://apurvanakade.github.io/blog/tags/murakami/</loc>
+    <lastmod>2021-03-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://apurvanakade.github.io/blog/random/meditations/unstructured-thoughts/</loc>
+    <lastmod>2021-02-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://apurvanakade.github.io/blog/tags/comedy/</loc>
     <lastmod>2020-12-22T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://apurvanakade.github.io/blog/notes/books/h2g2/</loc>
     <lastmod>2020-12-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://apurvanakade.github.io/blog/</loc>
+    <loc>https://apurvanakade.github.io/blog/tags/douglas-adams/</loc>
     <lastmod>2020-12-22T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://apurvanakade.github.io/blog/tags/science-fiction/</loc>
-    <lastmod>2020-12-22T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://apurvanakade.github.io/blog/tags/</loc>
     <lastmod>2020-12-22T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://apurvanakade.github.io/blog/tags/absurd/</loc>
     <lastmod>2020-09-24T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://apurvanakade.github.io/blog/tags/camus/</loc>
-    <lastmod>2020-09-24T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://apurvanakade.github.io/blog/tags/fiction/</loc>
     <lastmod>2020-09-24T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://apurvanakade.github.io/blog/tags/philosophy/</loc>
@@ -89,9 +122,6 @@
     <lastmod>2020-09-24T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://apurvanakade.github.io/blog/tags/comics/</loc>
-    <lastmod>2020-09-23T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://apurvanakade.github.io/blog/tags/drama/</loc>
     <lastmod>2020-09-23T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://apurvanakade.github.io/blog/tags/sci-fi/</loc>
@@ -148,7 +178,7 @@
     <loc>https://apurvanakade.github.io/blog/journal/lockdown-diaries/rip-conferences/</loc>
     <lastmod>2020-07-29T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://apurvanakade.github.io/blog/journal/meditation/observing-your-thoughts/</loc>
+    <loc>https://apurvanakade.github.io/blog/random/meditations/observing-your-thoughts/</loc>
     <lastmod>2020-06-26T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://apurvanakade.github.io/blog/journal/lockdown-diaries/not-knowing/</loc>
@@ -157,10 +187,10 @@
     <loc>https://apurvanakade.github.io/blog/notes/books/myth-of-sisyphus/</loc>
     <lastmod>2020-06-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://apurvanakade.github.io/blog/journal/meditation/everyday-meditation/</loc>
+    <loc>https://apurvanakade.github.io/blog/random/meditations/everyday-meditation/</loc>
     <lastmod>2020-05-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://apurvanakade.github.io/blog/journal/meditation/why-meditation/</loc>
+    <loc>https://apurvanakade.github.io/blog/random/meditations/why-meditation/</loc>
     <lastmod>2020-05-18T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://apurvanakade.github.io/blog/tags/radiolab/</loc>
@@ -210,9 +240,6 @@
   </url><url>
     <loc>https://apurvanakade.github.io/blog/notes/movies/ad-astra/</loc>
     <lastmod>2019-09-22T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://apurvanakade.github.io/blog/tags/murakami/</loc>
-    <lastmod>2019-09-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://apurvanakade.github.io/blog/notes/books/running-murakami/</loc>
     <lastmod>2019-09-01T00:00:00+00:00</lastmod>
