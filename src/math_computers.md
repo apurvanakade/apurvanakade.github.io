@@ -11,7 +11,7 @@ My primary interest in Lean is as a potential tool for teaching math proofs. My 
 [mathcamp 2020]: mathcamp.html#lean-at-mc2020
 [github]: https://github.com/apurvnakade?tab=repositories&q=lean
 
-## Work in Progress
+## Other Interests
 
 I am interested in exploring languages that allow you to create various webapps for math exposition. Following are some that I'm interested in exploring further:
 

@@ -11,7 +11,7 @@
   - [Math \& Computers](./math_computers.md)
   - [Research](./research.md)
   - [Expository Notes](./expository_notes.md)
-- [Teaching](./teaching.md)
+- [Pedagogy](./pedagogy.md)
   - [Teaching Philosophy]()
   - [Advice to Students]()
   - [Professional Development](./professional_development.md)

@@ -1,4 +1,4 @@
-# Teaching
+# Pedagogy
 
 <figure class="right">
 <a href="https://en.wikipedia.org/wiki/Don_Quixote_(Picasso)"><img src="https://upload.wikimedia.org/wikipedia/en/7/73/Don_Quixote_%281955%29_by_Pablo_Picasso.jpg" width="200px" /></a>

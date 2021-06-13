@@ -9,6 +9,11 @@
 
 [Notes.](https://apurvanakade.github.io/courses/lean_at_MC2020/index.html)
 
+<img src="https://leanprover.github.io/images/lean_logo2.svg"
+     alt="Lean"
+     style="float:right"
+     width="40%"/>
+
 I taught this week long class at Mathcamp 2020 introducing students to the Lean theorem prover.
 The class is completely interactive - you learn by solving exercises and coding snippets online.
 The only prerequisites for this class are basic proof techniques, although it is recommended that you simultaneously use the other resources linked in the notes.
@@ -18,12 +23,22 @@ Towards the end of the class we teach Lean the proof of irrationality of \\( \sq
 
 [Notes.](https://github.com/apurvnakade/mc2019-linear-algebra/blob/master/output/index.pdf)
 
+<img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/fe4ee3f1ce8e028da5bd4219c9dc7fc2216543e4"
+     alt="Lean"
+     style="float:right"
+     width="25%"/>
+
 I taught this week-long class at Mathcamp 2018 as a proof-based introduction to Linear Algebra.
 The prerequisites for this class are basic proof techniques.
 The class is designed in an IBL-format - you're expected to solve all the problems in each section before moving to the next and in the process learn the subject.
 The notes are quite terse and are meant to be challenging.
 
 ## Galois Correspondence of Covering Spaces
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/e/e8/F2_Cayley_Graph.png"
+     alt="Lean"
+     style="float:right"
+     width="25%"/>
 
 [Notes.](https://github.com/apurvnakade/mc2019-Galois-correspondence-of-covering-spaces/blob/main/output/index.pdf)
 
@@ -32,6 +47,11 @@ It covers (pun intended) the covering space theory for graphs and surfaces and i
 The prerequisites are group theory and basic minimal exposure to topology/analysis.
 
 ## From High School Arithmetic to Group Cohomology
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/b/b4/Optellen3.JPG"
+     alt="Lean"
+     style="float:right"
+     width="25%"/>
 
 [Notes.](https://github.com/apurvnakade/mc2019-group-cohomology/blob/main/output/index.pdf)
 
@@ -45,12 +65,22 @@ The prerequisites are group theory.
 
 [Notes.](https://github.com/apurvnakade/mc2018-cohomology-via-sheaves/blob/main/output/index.pdf)
 
+<img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Penrose-dreieck.svg"
+     alt="Lean"
+     style="float:right"
+     width="25%"/>
+
 I taught this week-long class at Mathcamp 2018.
 It introduces the notion of Čech cohomology on graphs and we compute cohomologies of some simple spaces.
 The class is designed in an IBL-format - you're expected to solve all the problems in each section before moving to the next and in the process learn the subject.
 The prerequisites are linear algebra (over finite fields).
 
 ## How Curved Is a Potato?
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/6/61/Gaussian_curvature.svg"
+     alt="Lean"
+     style="float:right"
+     width="25%"/>
 
 [Notes.](https://github.com/apurvnakade/mc2018-how-curved-is-a-potato/blob/main/output/index.pdf)
 
@@ -60,6 +90,11 @@ The prerequisites are linear algebra, in particular, the notions of eigenvalues 
 
 ## Would I Ever Lie Group to You?
 
+<img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/89b22ff1bbea0c7f1bb5f7a0304905108a1a704e"
+     alt="Lean"
+     style="float:right"
+     width="25%"/>
+
 [Notes.](https://github.com/apurvnakade/mc2018-would-i-ever-Lie-group-to-you/blob/main/output/index.pdf)
 
 I taught this week-long class at Mathcamp 2018.
@@ -67,6 +102,11 @@ This is a class about matrix groups and how they arise as symmetries of spaces.
 The prerequisites are linear algebra and group theory, in particular, group actions.
 
 ## Riemann Surfaces
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/9/9c/Riemann_sqrt.svg"
+     alt="Lean"
+     style="float:right"
+     width="30%"/>
 
 [Problem Sets.](https://github.com/apurvnakade/mc2019-Riemann-surfaces/tree/main/output)
 
