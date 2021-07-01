@@ -1,8 +1,8 @@
 ---
 title: "Myth of Sisyphus"
 date: 2020-06-06T00:00:00-00:00
-tags : ["philosophy","Camus"]
-type : "post"
+tags: ["philosophy", "Camus"]
+type: "post"
 ---
 
 <figure class="left xsmall">
@@ -11,14 +11,13 @@ type : "post"
 </a>
 </figure>
 
-
-> *“Man stands face to face with the irrational. He feels within him his longing for happiness and for reason. The absurd is born of this confrontation between the human need and the unreasonable silence of the world.”* <br>
+> _“Man stands face to face with the irrational. He feels within him his longing for happiness and for reason. The absurd is born of this confrontation between the human need and the unreasonable silence of the world.”_ <br>
 
 The central question, says Camus, is that of suicide. If you are going to die one day, why not just kill yourself now?
 
-Starting from here, he develops the philosophy of the *absurd*. The word absurd comes from the failed attempts of our limited logical minds to try and rationalize the limitless, mostly chaotic, unreasonable world. The absurd lies at the boundary of chaos and order and is both inevitable and essential. Camus strongly objects to the human program of trying to use reason for making every single decision. He thinks this only stifles us and prevents us from fully realizing ourselves. 
+Starting from here, he develops the philosophy of the _absurd_. The word absurd comes from the failed attempts of our limited logical minds to try and rationalize the limitless, mostly chaotic, unreasonable world. The absurd lies at the boundary of chaos and order and is both inevitable and essential. Camus strongly objects to the human program of trying to use reason for making every single decision. He thinks this only stifles us and prevents us from fully realizing ourselves.
 
-I do not particularly like this name - the absurd. It suggests that Camus is nihilistic and against all truth. That is anything but the truth. He is trying to refrain from nihilism *in spite* of a lack of meaning. To me, the term absurd does not precisely encapsulate Camus' ideas. It focuses on only one aspect of his theory. I would like to petition that its name be changed to the philosophy of the *ephemeral*. 
+I do not particularly like this name - the absurd. It suggests that Camus is nihilistic and against all truth. That is anything but the truth. He is trying to refrain from nihilism _in spite_ of a lack of meaning. To me, the term absurd does not precisely encapsulate Camus' ideas. It focuses on only one aspect of his theory. I would like to petition that its name be changed to the philosophy of the _relentless_ or the _undaunted_ or the _ephemeral_ or something like that.
 
 Another one of his big criticisms is that of hope. But he also does not ask you to live in despair. Instead, he simply asks you to not live for the future but to live fully in the present. For him, hope is another feeble attempt by the human mind at controlling the world (the future) using reason.
 
