@@ -5,7 +5,7 @@ tags: ["meditation"]
 type: "post"
 ---
 
-I'm quite sold on Meditation and do it pretty regularly. In a separate post, I would like to write about what about it interests me. Here, I want to collect all the things about the cult of Meditation that offend me in some way. I'm mostly doing for my own clarification so that I can articulate my concerns precisely and then move on and focus on the positive aspects of Meditation.
+I'm quite sold on Meditation and do it pretty regularly. In a separate post, I'll write about what about Meditation interests me. Here, I want to collect all the things about the cult of Meditation that offend me in some way. I'm mostly doing this for my own clarification so that I can articulate my concerns precisely and then move on and focus on the positive aspects of Meditation.
 
 ---
 
