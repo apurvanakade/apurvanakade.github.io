@@ -5,6 +5,8 @@ tags: ["meditation"]
 type: "post"
 ---
 
+> _"Do not try to use what you learn from Buddhism to be a Buddhist; use it to be a better whatever-you-already-are."_ <br> <span class="right"> -- Dalai Lama</span> <br>
+
 1. **Mental Health**
 
    This is the most obvious reason to meditate. If you think of your mind as another organ, then just as you need to keep your muscles healthy so too your mind. It's not entirely clear to me what a healthy mind means. To me, this is not the same thing as getting rid of negative emotions. Just as you can have a healthy body in various ways - you can be a slim runner or a buffed-up body-builder or a gymnast or a cross-fitter - so too you can be mentally fit in various ways. I suspect that the two kinds of fitnesses are highly correlated - I would love to be mentally agile and flexible in much the same way that I think I'm physically agile and flexible. One needs to be a bit careful with overgeneralization. Meditation is not a panacea. Running can make you healthy but if you catch COVID it is not going to get rid of the virus for you. The same is true with meditation. It can only help you maintain a general level of mental fitness and even raise your baseline to high levels but it is not going to eliminate your repressed trauma for you. The onus of that, unfortunately, lies entirely on you.
