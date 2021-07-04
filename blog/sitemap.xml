@@ -2,6 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://apurvanakade.github.io/blog/notes/</loc>
+    <lastmod>2021-07-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://apurvanakade.github.io/blog/notes/series/</loc>
+    <lastmod>2021-07-04T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://apurvanakade.github.io/blog/random/meditations/</loc>
     <lastmod>2021-07-03T00:00:00+00:00</lastmod>
   </url><url>
@@ -10,12 +16,6 @@
   </url><url>
     <loc>https://apurvanakade.github.io/blog/notes/books/</loc>
     <lastmod>2021-06-12T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://apurvanakade.github.io/blog/notes/</loc>
-    <lastmod>2021-06-12T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://apurvanakade.github.io/blog/notes/series/</loc>
-    <lastmod>2021-05-27T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://apurvanakade.github.io/blog/journal/</loc>
     <lastmod>2020-09-01T00:00:00+00:00</lastmod>
@@ -55,13 +55,25 @@
   </url><url>
     <loc>https://apurvanakade.github.io/blog/notes/lists/</loc>
   </url><url>
-    <loc>https://apurvanakade.github.io/blog/tags/meditation/</loc>
-    <lastmod>2021-07-03T00:00:00+00:00</lastmod>
+    <loc>https://apurvanakade.github.io/blog/tags/drama/</loc>
+    <lastmod>2021-07-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://apurvanakade.github.io/blog/tags/japanese/</loc>
+    <lastmod>2021-07-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://apurvanakade.github.io/blog/notes/series/midnight-diner/</loc>
+    <lastmod>2021-07-04T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://apurvanakade.github.io/blog/</loc>
-    <lastmod>2021-07-03T00:00:00+00:00</lastmod>
+    <lastmod>2021-07-04T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://apurvanakade.github.io/blog/tags/</loc>
+    <lastmod>2021-07-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://apurvanakade.github.io/blog/tags/wholesome/</loc>
+    <lastmod>2021-07-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://apurvanakade.github.io/blog/tags/meditation/</loc>
     <lastmod>2021-07-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://apurvanakade.github.io/blog/random/meditations/why-i-meditate/</loc>
@@ -102,9 +114,6 @@
   </url><url>
     <loc>https://apurvanakade.github.io/blog/random/meditations/waking-up/</loc>
     <lastmod>2021-06-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://apurvanakade.github.io/blog/tags/drama/</loc>
-    <lastmod>2021-05-27T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://apurvanakade.github.io/blog/tags/korean/</loc>
     <lastmod>2021-05-27T00:00:00+00:00</lastmod>
