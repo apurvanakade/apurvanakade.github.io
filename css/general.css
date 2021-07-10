@@ -218,6 +218,12 @@ blockquote {
   display: inline;
 }
 
+.footnote {
+  border-top: dotted var(--icons) 1px;
+  margin-top: 5em;
+  padding-top: 0.5em;
+}
+
 .tooltiptext {
   position: absolute;
   visibility: hidden;
