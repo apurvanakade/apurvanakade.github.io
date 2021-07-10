@@ -8,7 +8,7 @@
 
 Fun for me is [reading books]. I love to [travel]. I type in dvorak.
 I love designing websites like this one (built using mdbook), [my blog\'s theme]
-(built using Hugo), and the [JHU DRP website]. I also love to write in my [personal blog]
+(built for Hugo), and the [JHU DRP website]. I also love to write in my [personal blog]
 and my [blog about teaching].
 I bake a lot and am an avid yoga practitioner.
 I'm a huge organizational nerd and a big fan of org-mode.

@@ -28,3 +28,7 @@ This simultaneously the most challenging and the most rewarding course I've ever
 [piazza]: https://piazza.com/class/kd1rr8nxc6z4b5
 [zybooks]: https://learn.zybooks.com/zybook/UWOMath2151ANakadeFall2020
 [webwork]: https://webwork.maa.org/
+
+<div class="footnote">
+    Disclaimer: The images on this page are from Wikipedia and other online open access sources.
+</div>

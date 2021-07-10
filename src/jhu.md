@@ -45,3 +45,7 @@ The prerequisites are basic proof techniques.
 I taught this 2-week class in the winter break (intersession) of 2017 at JHU.
 The goal was to introduce non-math majors to algebraic topology and to explore some of its applications to other areas of math and science.
 There are no prerequisites and the notes for this course (available on the course website) are mostly expository in nature.
+
+<div class="footnote">
+    Disclaimer: The images on this page are from Wikipedia and other online open access sources.
+</div>

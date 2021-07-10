@@ -8,6 +8,8 @@
 ## Lean at MC2020
 
 [Notes.](https://apurvanakade.github.io/courses/lean_at_MC2020/index.html)
+&nbsp;
+[Source Code.](https://github.com/apurvnakade/mc2020-Lean)
 
 <img src="https://leanprover.github.io/images/lean_logo2.svg"
      alt="Lean"
@@ -156,3 +158,7 @@ In this class, we talked about Euler characteristics of surfaces, vector fields,
 [Notes.](https://github.com/apurvnakade/mc2017/tree/main/03%20Symmetries%20of%20Spaces)
 I taught this week-long class at Mathcamp 2017.
 This is a class about matrix groups and how they arise as symmetries of spaces.
+
+<div class="footnote">
+    Disclaimer: The images on this page are from Wikipedia and other online open access sources.
+</div>
