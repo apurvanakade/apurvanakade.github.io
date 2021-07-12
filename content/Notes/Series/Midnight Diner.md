@@ -11,6 +11,6 @@ draft: false
 {{< youtube OCGDVHjPX0c >}}
 
 This is the most wholesome TV series ever. Every night _Master_ opens his Izakaya in Shinjuku, Tokyo, making whatever dishes his customers request. The diner is a very cozy place; a place to stop by if you don't want to go home after work. All kinds of people show up at the _Shinya shokudō_ with all kinds of stories. The stories are sometimes sad, sometimes happy, sometimes poignant, sometimes silly, sometimes simple, sometimes complicated, but always wholesome. In this small diner nobody hides anything from anyone. They all share their stories with the world without judgement.
-At the diner there is the beauty of the simple, comfort of the familiar, wisdom of the old, the melancholy of nostalgia. The opening song by _Tsunekichi Suzuki_ captures the feel of this beautiful series .
+At the diner there is the beauty of the simple, comfort of the familiar, wisdom of the old, the melancholy of nostalgia. The opening song by _Tsunekichi Suzuki_ captures the feel of this beautiful series.
 
 {{<youtube 2t9yQYyXpSE>}}
