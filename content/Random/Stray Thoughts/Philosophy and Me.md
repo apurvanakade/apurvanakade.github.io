@@ -1,11 +1,13 @@
 ---
-title: "Me & Philosophy"
+title: "Philosophy & Me"
 date: 2021-07-12T00:00:00-00:00
 tags: ["philosophy"]
 type: "post"
 ---
 
-I grew up with a deep distaste for Philosophy, thanks to having seen the perils of Eastern Philosophies first hand, and also thanks to the disdain that physicists like Feynman (whom I greatly admire) showed toward the subject. Of late my attitude has changed completely. I now "like" Philosophy a lot, so much so that I spend more time thinking of Philosophical questions than other things. (This is probably a temporary phase, like getting a new toy or discovering a new artist you like.) And yet, there are times when I feel deep disgust and loathing toward it. I think I now understand the reason behind this cognitive dissonance. The issue is with the "use" of Philosophy. As long as I use it for the right thing there is no paradox, but as soon as it spills over outside of its domain there is conflict.
+_Disclaimer:_ I'm using the term Philosophy in a ill-defined manner. For me, it means something like an analytical tool or a way of thinking, and not as a subject studied in universities.
+
+I grew up with a deep distaste for Philosophy, thanks to having seen the perils of Eastern Philosophies first hand, and also thanks to the disdain that physicists like Feynman (whom I greatly admire) showed toward the subject. However, of late, my attitude has changed completely. I now "like" Philosophy a lot, so much so that I spend more time thinking of Philosophical questions than other things. (This is probably a temporary phase, like getting a new toy or discovering a new artist.) And yet, there are times when I feel deep disgust and loathing toward it. I think I now understand the reason behind this cognitive dissonance. The issue is with the "use" of Philosophy. As long as I use it for the right thing there is no paradox, but as soon as it spills over outside of its domain there is conflict.
 
 ## What is Philosophy?
 
@@ -23,7 +25,7 @@ For me, it is mainly for fun. It is fun to think about hard questions honestly a
 
 Anything practical.
 
-I do not make decisions based on Philosophy. The question of whether we have Free-will or not is irrelevant when it comes to deciding what to watch next on Netflix. I don't need to know the meaning of life when I'm running. I don't need to know the true nature of things when I'm pooping. I'm a pragmatist before I'm a theorist. For me, there is no difference between Philosophy and going to the gym.
+I do not make decisions based on Philosophy. The question of whether we have free-will or not is irrelevant when it comes to deciding what to watch next on Netflix. I don't need to know the meaning of life when I'm running. I don't need to know the true nature of things when I'm pooping. I'm a pragmatist before I'm a theorist. For me, there is no difference between Philosophy and going to the gym.
 
 That is not to say that Philosophy does not affect my decisions.
 In much the same way that I don't make decisions based on how many kilometers I ran this week, I don't make decisions based on Philosophical arguments. Nevertheless, being in good physical shape helps me live my life better, same with having better analytical skills.
