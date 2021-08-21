@@ -1,7 +1,7 @@
 import data.nat.prime 
 open nat
 
-theorem infinitude_of_primes (n : ℕ) : ∃ p, prime p ∧ n ≤ p :=
+theorem infinitude_of_primes (n : ℕ) : ∃ (p : ℕ), prime p ∧ n ≤ p :=
 -- For every natural number n, 
 -- there exists a number p, such that 
 -- n is less than or equal to p and p is prime

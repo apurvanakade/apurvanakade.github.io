@@ -30,7 +30,7 @@ end
 /--------------------------------------------------------------------------
 ``split``
 
-  If the target of the current goal is ``P ∧ Q`` then use
+  If the current target is ``P ∧ Q`` then use
   ``split,``.
 
 English translation:
@@ -47,11 +47,11 @@ end
 /--------------------------------------------------------------------------
 ``left``/``right``
 
-  If the target of the current goal is ``P ∨ Q``, then use
+  If the current target is ``P ∨ Q``, then use
   either ``left,`` or ``right,`` (choose wisely).
 
 English translation:
-To prove ``P ∨ Q`` we need to prove either ``P`` or ``Q``.
+To prove ``P ∨ Q`` we need to prove either ``P`` (left) or ``Q`` (right).
 --------------------------------------------------------------------------/
 
 theorem ex4 : P → (P ∨ Q) :=
@@ -62,10 +62,8 @@ begin
 end
 
 /--------------------------------------------------------------------------
-
 Delete the ``sorry,`` below and replace them with valid proofs.
 Don't forget the ``,`` at the end of each tactic.
-
 --------------------------------------------------------------------------/
 
 theorem comm_and : P ∧ Q → Q ∧ P :=
@@ -89,15 +87,14 @@ begin
   sorry,
 end
 
-theorem implies_or : ((P ∨ Q) → R) → (P → R) ∧ (Q → R) := 
+theorem or_implies_converse : (P → R) ∧ (Q → R) → ((P ∨ Q) → R):= 
 begin
   sorry,
 end
 
--- you can also use ``apply`` for a sequence of implications ``P → Q → R``.
+-- you can also use ``apply`` for a sequence of implications ``P → Q → R``
+-- if the target is ``R``.
 theorem uncurrying : (P → (Q → R)) → (P ∧ Q → R) := 
 begin 
   sorry,
 end
-
--- Note that the converses of all the above statements are true.

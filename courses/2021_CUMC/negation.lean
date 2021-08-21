@@ -4,7 +4,7 @@ variables P Q : Prop
 
 Negation:
   ``¬ P`` is ``P → false``,
-  ``¬ (¬ P)`` is ``(P → false) → false``, and so on.
+  ``¬ ¬ P`` is ``(P → false) → false``, and so on.
 
 Delete the ``sorry,`` below and replace them with valid proofs.
 --------------------------------------------------------------------------/

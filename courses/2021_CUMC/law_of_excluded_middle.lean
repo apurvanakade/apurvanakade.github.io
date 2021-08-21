@@ -7,7 +7,7 @@ variables P Q R : Prop
 /--------------------------------------------------------------------------
 ``push_neg``
 
-  Simplifies negations in the goal, if possible. 
+  Simplifies negations in the target, if possible. 
   If ``hp : P`` is a hypothesis, then 
   ``push_neg at hp,`` simplyfies the negations at ``hp``, if possible.
 --------------------------------------------------------------------------/
@@ -29,7 +29,7 @@ end
 /--------------------------------------------------------------------------
 ``by_contradiction``
 
-  If the current goal is ``P``,
+  If the current target is ``P``,
   then ``by_contradiction hnp,`` changes the target to  ``false``
   and adds a hypothesis ``hnp : ¬P``.
 --------------------------------------------------------------------------/
@@ -85,7 +85,6 @@ begin
   sorry,
 end
 
--- you can also use ``apply`` for a sequence of implications ``P → Q → R``.
 theorem contrapositive_converse : (¬Q → ¬P) → (P → Q) :=
 begin
   sorry,
