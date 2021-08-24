@@ -6,13 +6,12 @@
         <a href = "https://en.wikipedia.org/wiki/Help:IPA/Marathi"
            style = "font-size: 0.75em"
            target = "_blank">
-            [əpurʋə nakade]
+            [əpuːrʋə nakade]
         </a>
     </figcaption>
 </figure>
 
-I\'m a postdoc at University of Western Ontario working with Dan Christensen and Chris Kapulkin.
-In Fall 2021, I'll be starting a postdoctoral lecturership at Northwestern University.
+I\'m a postdoctoral lecturer in the [Math Department](https://www.math.northwestern.edu/) at [Northwestern University](https://www.northwestern.edu/). 
+If you're a student or an educator, please feel free to [email](mailto:apurva.nakade@northwestern.edu) me.
 
-If you're a student or an educator, please feel free to reach out to me.
-The best way to contact me is by [email](https://www.uwo.ca/math/people/postdocs.html).
+In Fall 2021, I'm teaching Math 220-2 (Single-Variable Integral Calculus) and Math 290-1 (MENU: Linear Algebra and Multivariable Calculus).

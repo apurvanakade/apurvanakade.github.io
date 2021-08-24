@@ -2,6 +2,12 @@
 
 The Directed Reading Program is a program in which undergrads are paired with a graduate student/postdoc whose interests align with theirs and they study a topic of their choice for one semester.
 It is intended to help motivated students explore topics in more depth than possible in a classroom setting.
+
+I've helped start and organize the [DRP at UWO] and in the past have co-organized the [DRP at JHU].
+If you are interested in participating in the DRP or would like to run one at your university, please don't hesitate to reach out to me.
+
+---
+
 Following is the list of projects I've mentored in the past.
 
 - Clare Bedford, Surreal Numbers. ([UWO, Winter 2021])
@@ -15,8 +21,6 @@ Following is the list of projects I've mentored in the past.
   Spring 2018])
 - Chris Chia, The Knot Book by Adams Collins. ([JHU, Fall 2017])
 
-I've helped start and organize the [DRP at UWO] and in the past have co-organized the [DRP at JHU].
-If you are interested in participating in the DRP or would like to run one at your university, please don't hesitate to reach out to me.
 
 [drp at uwo]: https://www.math.uwo.ca/undergraduate/directedreadingprogram.html
 [drp at jhu]: http://www.math.jhu.edu/drp.html

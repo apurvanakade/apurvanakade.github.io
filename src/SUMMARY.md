@@ -8,16 +8,18 @@
   - [JHU](./jhu.md)
   - [UWO](./uwo.md)
 - [Math](./math.md)
-  - [Math \& Computers](./math_computers.md)
+  - [Lean](./lean.md)
   - [Research](./research.md)
   - [Expository Notes](./expository_notes.md)
 - [Pedagogy](./pedagogy.md)
-  - [Teaching Philosophy]()
-  - [Advice to Students]()
-  - [Professional Development](./professional_development.md)
   - [DRP](./drp.md)
+  - [Professional Development](./professional_development.md)
   - [Resources](./resources.md)
 
 ---
 
 Add links for blog here.
+
+Drafts:
+Teaching Philosophy
+Advice to Students
