@@ -5,9 +5,9 @@ tags: ["philosophy"]
 type: "post"
 ---
 
-_Disclaimer:_ I'm using the term Philosophy in a ill-defined manner. For me, it means something like an analytical tool or a way of thinking, and not as a subject studied in universities.
+_Disclaimer:_ I'm using the term Philosophy in an ill-defined manner. For me, it means something like an analytical tool or a way of thinking, and not a subject studied in universities.
 
-I grew up with a deep distaste for Philosophy, thanks to having seen the perils of Eastern Philosophies first hand, and also thanks to the disdain that physicists like Feynman (whom I greatly admire) showed toward the subject. However, of late, my attitude has changed completely. I now "like" Philosophy a lot, so much so that I spend more time thinking of Philosophical questions than other things. (This is probably a temporary phase, like getting a new toy or discovering a new artist.) And yet, there are times when I feel deep disgust and loathing toward it. I think I now understand the reason behind this cognitive dissonance. The issue is with the "use" of Philosophy. As long as I use it for the right thing there is no paradox, but as soon as it spills over outside of its domain there is conflict.
+I grew up with a deep distaste for Philosophy, thanks to having seen the perils of eastern philosophies first hand, and also thanks to the disdain that physicists like Feynman (whom I greatly admire) showed toward the subject. However, of late, my attitude toward it has changed completely. I now "like" Philosophy a lot, so much so that I spend more time thinking of Philosophical questions than other things. (This is probably a temporary phase, like getting a new toy, or discovering a new artist.) And yet, there are times when I feel deep disgust and loathing toward it. I think I now understand the reason behind this cognitive dissonance. The issue is with the "use" of Philosophy. As long as I use it for the right thing there is no paradox, but as soon as it spills over outside of its domain there is conflict.
 
 ## What is Philosophy?
 

@@ -1,0 +1,98 @@
+{
+  "main": {
+    "id": "92f186f9b0d5df49",
+    "type": "split",
+    "children": [
+      {
+        "id": "bed3d88e8b61b57b",
+        "type": "leaf",
+        "state": {
+          "type": "empty",
+          "state": {}
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "a19caa9f95a172b8",
+    "type": "split",
+    "children": [
+      {
+        "id": "309fa95e7ecc596b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4ab745724df1ece4",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "4660cb5c6586afdf",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 196
+  },
+  "right": {
+    "id": "57efa6b7c99c27b1",
+    "type": "split",
+    "children": [
+      {
+        "id": "8348be02ccc266da",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "714bed84d6d9f3b3",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "bed3d88e8b61b57b",
+  "lastOpenFiles": [
+    "Random/Stray Thoughts/Philosophy and Me.md",
+    "Random/Stray Thoughts/Why I Dance.md",
+    "Random/Stray Thoughts/RonSwanson.md",
+    "Random/Stray Thoughts/On History.md",
+    "Random/Stray Thoughts/know thyself.md",
+    "Random/Stray Thoughts/Joy of Running.md",
+    "Random/Stray Thoughts/Jolabokafloo.md",
+    "Random/Stray Thoughts/Blank Spaces.md",
+    "Random/Stray Thoughts/Being Alone.md",
+    "Random/Stray Thoughts/Adaptability.md"
+  ]
+}
