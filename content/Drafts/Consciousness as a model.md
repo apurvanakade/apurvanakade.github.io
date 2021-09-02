@@ -1,3 +1,11 @@
+---
+title: "Beyond Van Gogh"
+date: 2021-07-26T00:00:00-00:00
+tags : []
+type : "post"
+draft: true
+---
+
 - Add link to Lex Fridman podcast here.
 
 After listerining to the Lex Fridman podcast I had some thoughts on what consciousness might be. 

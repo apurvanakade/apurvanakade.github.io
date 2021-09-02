@@ -3,6 +3,7 @@ title: "Beyond Van Gogh"
 date: 2021-07-26T00:00:00-00:00
 tags : []
 type : "post"
+draft: true
 ---
 
 I saw this interesting "show" (not sure what to call it, experience?) yesterday about Van Gogh. What it was was a wide open room surrounded by tall walls on which Van Gogh's paintings were being projected while beautiful music played in the background. That's an understatement. The artist(s) had very literally taken apart his paintings and turned them into dynamic objects.

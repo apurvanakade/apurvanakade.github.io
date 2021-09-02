@@ -1,3 +1,11 @@
+---
+title: "Beyond Van Gogh"
+date: 2021-07-26T00:00:00-00:00
+tags : []
+type : "post"
+draft: true
+---
+
 The fundamental insight of Buddhism, and I'm paraphrasing here, is that *suffering* is a result of an incorrect model of the world. 
 
 Our brain builds models of the world and whenever there's a discrepancy it updates the model. These models are almost never accurate, by definition, a model is just an approximation of reality. Whenever there's a discrepancy, we try to correct the model. This discrepancy *is* conflict and suffering. 

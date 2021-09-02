@@ -4,11 +4,14 @@
     "type": "split",
     "children": [
       {
-        "id": "bed3d88e8b61b57b",
+        "id": "ebb30cc03663a943",
         "type": "leaf",
         "state": {
-          "type": "empty",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "Random/Philosophy/what is an idea.md",
+            "mode": "source"
+          }
         }
       }
     ],
@@ -65,6 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Random/Philosophy/what is an idea.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -82,17 +86,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "bed3d88e8b61b57b",
+  "active": "ebb30cc03663a943",
   "lastOpenFiles": [
-    "Random/Stray Thoughts/Philosophy and Me.md",
-    "Random/Stray Thoughts/Why I Dance.md",
-    "Random/Stray Thoughts/RonSwanson.md",
-    "Random/Stray Thoughts/On History.md",
-    "Random/Stray Thoughts/know thyself.md",
-    "Random/Stray Thoughts/Joy of Running.md",
-    "Random/Stray Thoughts/Jolabokafloo.md",
+    "Random/Philosophy/what is an idea.md",
+    "Random/Philosophy/Philosophy and Me.md",
+    "Random/Philosophy/Untitled.md",
+    "Random/Philosophy/_index.md",
+    "Random/Stray Thoughts/_index.md",
+    "Random/Philosophy/know thyself.md",
     "Random/Stray Thoughts/Blank Spaces.md",
     "Random/Stray Thoughts/Being Alone.md",
-    "Random/Stray Thoughts/Adaptability.md"
+    "Random/Stray Thoughts/know thyself.md",
+    "Drafts/Suffering.md"
   ]
 }
