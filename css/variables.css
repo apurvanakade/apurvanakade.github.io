@@ -1,19 +1,19 @@
 /* Globals */
 
 :root {
-  --sidebar-width: 200px;
+  --sidebar-width: 160px;
   --page-padding: 15px;
-  --content-max-width: 800px; /*750px*/
+  --content-max-width: 750px;
   --menu-bar-height: 50px;
 }
 
 /* Themes */
 
 .light {
-  /* --bg: hsl(0, 0%, 100%); */
-  /* --fg: #222; */
-  --bg: #fffff8;
-  --fg: #112;
+  --bg: hsl(0, 0%, 100%);
+  --fg: #222;
+  /* --bg: #fffff8;
+  --fg: #112; */
 
   --sidebar-bg: #fafafa;
   --sidebar-fg: hsl(0, 0%, 0%);
