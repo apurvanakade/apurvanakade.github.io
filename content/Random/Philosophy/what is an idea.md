@@ -7,11 +7,11 @@ type: "post"
 
 A couple of weeks ago, on an evening of drinking and philosophizing, a friend asked me this question and I did not have any answer then. 
 
-[Chris Anderson's video](https://www.youtube.com/watch?v=-FOCpMAww28) about giving TED talks get popping into my mind; I remembered mostly for the pretty visuals it had representing an idea. But I could not extract out an exact definition from it. Just this morning, as I was reading [Siddhartha Mukherjee's book](https://en.wikipedia.org/wiki/The_Gene:_An_Intimate_History) about genes, the answer popped into my mind. 
+[Chris Anderson's video](https://www.youtube.com/watch?v=-FOCpMAww28) about giving TED talks kept popping into my mind; I remembered it mostly for the pretty visuals it had representing what an idea is. But I could not extract out an exact definition from it. Just this morning, as I was reading [Siddhartha Mukherjee's book](https://en.wikipedia.org/wiki/The_Gene:_An_Intimate_History) about genes, the answer popped into my mind. 
 
 > An idea is a "mental gene". It is any thought pattern that can be transmitted and copied from one mind to another.
 
-Ideas can be simple or complex, verbal, visual, auditory, or relating to touch or some combination of these. Whatever they are, the central property an *idea* shares is that it can be transmitted from one mind to another. During the process of copying, the *original idea* often gets corrupted, i.e. it *mutates* and *evolves*. 
+Ideas can be simple or complex, verbal, visual, auditory, or relating to touch or some combination of these. Whatever they are, the defining property of an *idea* is that it can be transmitted from one mind to another. During the process of copying, the *original idea* often gets corrupted, i.e. it *mutates* and *evolves*. 
 
 In much the same way that a *gene* is a unit of *physical* heredity - that in humans it is manifested in the DNA is an independent fact - an *idea* is a unit of *mental* "heredity". It can be passed from one mind to another through various means: words (spoken or written), art, music, etc.
 
