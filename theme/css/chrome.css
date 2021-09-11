@@ -326,7 +326,7 @@ ul#searchresults span.teaser em {
   top: 0;
   bottom: 0;
   width: var(--sidebar-width);
-  font-size: 0.875em;
+  font-size: 1.2em;
   box-sizing: border-box;
   -webkit-overflow-scrolling: touch;
   overscroll-behavior-y: contain;
@@ -437,7 +437,6 @@ ul#searchresults span.teaser em {
 .chapter li.chapter-item {
   line-height: 1.5em;
   margin-top: 0.6em;
-  font-size: 18px;
 }
 
 .chapter li.expanded > a.toggle div {

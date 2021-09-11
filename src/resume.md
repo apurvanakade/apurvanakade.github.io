@@ -7,8 +7,8 @@
 I did my bachelor's in computer science and engineering from Indian Institute of Technology, Kanpur.
 I did a masters in mathematics from Chennai Mathematical Institute followed by Ph.D. in mathematics from Johns Hopkins University.
 
-Since 2019, I have been a postdoctoral fellow at University of Western Ontario.
-Starting Fall 2021, I'll be a postdoctoral lecturer at Northwestern University.
+I currently a postdoctoral lecturer at Northwestern University.
+Before this, I was a postdoctoral fellow at University of Western Ontario.
 I'm a member of the [Project NExT](https://www.maa.org/programs-and-communities/professional-development/project-next) Brown'20 cohort.
 I also a [certification](https://cer.jhu.edu/teaching-academy/coc/overview) from the [Teaching Academy at JHU](https://cer.jhu.edu/teaching-academy/).
 

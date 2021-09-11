@@ -1,12 +1,11 @@
 /* Base styles and content styles */
 
 @import "variables.css";
-@import "et-book.css";
 
 html {
   color: var(--fg);
   background-color: var(--bg);
-  font-size: 15px;
+  font-size: 12px;
   text-size-adjust: none;
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
@@ -17,7 +16,8 @@ html {
 body {
   margin: 0;
   overflow-x: hidden;
-  line-height: 1.4;
+  line-height: 1.5;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .boring {
@@ -128,19 +128,19 @@ h6:target::before {
   margin-bottom: 300px;
 }
 .content p {
-  line-height: 1.45em;
+  line-height: 1.75em;
   font-size: 1.4em;
   margin-top: 1.3em;
   margin-bottom: 1.3em;
 }
 .content ol {
-  line-height: 1.45em;
+  line-height: 1.75em;
   font-size: 1.4em;
   margin-top: 1.3em;
   margin-bottom: 1.3em;
 }
 .content ul {
-  line-height: 1.45em;
+  line-height: 1.75em;
   font-size: 1.4em;
   margin-top: 1.3em;
   margin-bottom: 1.3em;
@@ -278,8 +278,10 @@ figcaption {
 figure.left {
   float: left;
   padding-right: 1rem;
+  padding-top: 1.3em;
 }
 figure.right {
   float: right;
   padding-left: 1rem;
+  padding-top: 1.3em;
 }
