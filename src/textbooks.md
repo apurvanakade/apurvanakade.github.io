@@ -1,4 +1,4 @@
-# Resources
+# Textbooks
 
 This page is under construction. I intend to post useful links here about only math resources.
 

@@ -15,15 +15,15 @@
 </figure>
 
 I\'m a postdoctoral lecturer in the [Math Department](https://www.math.northwestern.edu/) at Northwestern University. 
-In Fall 2021, I'm teaching [Single-Variable Integral Calculus](https://canvas.northwestern.edu/courses/152730) and [MENU: Linear Algebra and Multivariable Calculus](https://canvas.northwestern.edu/courses/152713).
+In Fall 2021, I'm teaching [Math 220-1](https://canvas.northwestern.edu/courses/152729) and [Math 290-1](https://canvas.northwestern.edu/courses/152713).
 
-| | |
-| - | - | 
-| Office: | Locy 204 |
-| In-person office hours: | TBA |
-| Zoom office hours: | TBA |
-| Email: | apurva.nakade@northwestern.edu |
+**Office:** Locy 204 <br/>
+**Email:** apurva.nakade@northwestern.edu
 
+**Math 290-1 Lectures:**  MWF 12 - 1 in Tech Building, LG66 <br/>
+**Math 220-1 Lectures:**  MWF 1 - 2 in Frances Searle Building, 2407
+
+**Office hours:** TBD
 
 <!-- You can make an appointment between **M-F 2-5pm**, with me on Zoom using the above link. You can see the availablity in the calendar below -->
 <!-- 

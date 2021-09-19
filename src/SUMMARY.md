@@ -10,11 +10,14 @@
 - [Math](./math.md)
   - [Lean](./lean.md)
   - [Research](./research.md)
-  - [Expository Notes](./expository_notes.md)
-- [Pedagogy](./pedagogy.md)
+  - [Expository Notes](./expository_notes.md)  
+  - [Textbooks](./textbooks.md)
+
+- [Professional Development](./professional_development.md)
   - [DRP](./drp.md)
-  - [Professional Development](./professional_development.md)
-  - [Resources](./resources.md)
+  - [Mathcamp](./canada_usa_mathcamp.md)
+  - [Teaching Academy, JHU](./teaching_academy_jhu.md)
+  - [Project NExT](./project_next.md)
 
 ---
 

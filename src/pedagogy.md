@@ -1,4 +1,6 @@
-# Pedagogy
+# Professional Development
+
+Following are some programs that have helped me greatly on my journey of becoming a math educator.
 
 <figure class="right">
 <a href="https://en.wikipedia.org/wiki/Don_Quixote_(Picasso)"><img src="https://upload.wikimedia.org/wikipedia/en/7/73/Don_Quixote_%281955%29_by_Pablo_Picasso.jpg" width="200px" /></a>
@@ -10,5 +12,5 @@
 </figcaption>
 </figure>
 
-I'm not entirely sure what I want this section of my website to look like.
-Right now, it contains an assortment of links and resources about teaching.
+x
+Following are some programs that have helped me greatly on my journey of becoming a math educator.
