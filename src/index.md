@@ -17,13 +17,13 @@
 I\'m a postdoctoral lecturer in the [Math Department](https://www.math.northwestern.edu/) at Northwestern University. 
 In Fall 2021, I'm teaching [Math 220-1](https://canvas.northwestern.edu/courses/152729) and [Math 290-1](https://canvas.northwestern.edu/courses/152713).
 
-**Office:** Locy 204 <br/>
-**Email:** apurva.nakade@northwestern.edu
+| | |
+| - | - |
+| **Email:** | [apurva.nakade@northwestern.edu](mailto:apurva.nakade@northwestern.edu) |
+| **Office:** | Locy 204 |
+| **Office hours:** | MW 3:30 - 4:30 pm |
+| **Zoom office hours:** | T 2:30 - 4:30 pm (link on Canvas) |
 
-**Math 290-1 Lectures:**  MWF 12 - 1 in Tech Building, LG66 <br/>
-**Math 220-1 Lectures:**  MWF 1 - 2 in Frances Searle Building, 2407
-
-**Office hours:** TBD
 
 <!-- You can make an appointment between **M-F 2-5pm**, with me on Zoom using the above link. You can see the availablity in the calendar below -->
 <!-- 
