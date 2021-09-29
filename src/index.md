@@ -21,5 +21,5 @@ In Fall 2021, I'm teaching [Math 220-1](https://canvas.northwestern.edu/courses/
 | - | - |
 | **Email:** | [apurva.nakade@northwestern.edu](mailto:apurva.nakade@northwestern.edu) |
 | **Office:** | Locy 204 |
-| **Office hours:** | MW 3:00 - 4:00 pm |
+| **Office hours:** | MW 3:00 - 4:30 pm + [by appointment](mailto:apurva.nakade@northwestern.edu)|
 | **Zoom office hours:** | T 2:30 - 4:30 pm (link on Canvas) |
