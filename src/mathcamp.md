@@ -7,7 +7,7 @@
 
 ## Lean at MC2020
 
-[Notes.](https://apurvanakade.github.io/courses/lean_at_MC2020/index.html)
+[Notes.](https://apurvnakade.github.io/mc2020-Lean/)
 &nbsp;
 [Source Code.](https://github.com/apurvnakade/mc2020-Lean)
 
