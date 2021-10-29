@@ -2,6 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://apurvanakade.github.io/blog/random/</loc>
+    <lastmod>2021-10-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://apurvanakade.github.io/blog/random/stray-thoughts/</loc>
+    <lastmod>2021-10-29T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://apurvanakade.github.io/blog/notes/books/</loc>
     <lastmod>2021-10-26T00:00:00+00:00</lastmod>
   </url><url>
@@ -9,9 +15,6 @@
     <lastmod>2021-10-26T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://apurvanakade.github.io/blog/random/philosophy/</loc>
-    <lastmod>2021-09-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://apurvanakade.github.io/blog/random/</loc>
     <lastmod>2021-09-02T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://apurvanakade.github.io/blog/notes/series/</loc>
@@ -31,9 +34,6 @@
   </url><url>
     <loc>https://apurvanakade.github.io/blog/maths-science/teaching/</loc>
     <lastmod>2020-08-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://apurvanakade.github.io/blog/random/stray-thoughts/</loc>
-    <lastmod>2020-01-20T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://apurvanakade.github.io/blog/notes/movies/</loc>
     <lastmod>2019-09-22T00:00:00+00:00</lastmod>
@@ -58,6 +58,21 @@
   </url><url>
     <loc>https://apurvanakade.github.io/blog/notes/lists/</loc>
   </url><url>
+    <loc>https://apurvanakade.github.io/blog/tags/anti-meditation/</loc>
+    <lastmod>2021-10-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://apurvanakade.github.io/blog/</loc>
+    <lastmod>2021-10-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://apurvanakade.github.io/blog/tags/</loc>
+    <lastmod>2021-10-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://apurvanakade.github.io/blog/random/stray-thoughts/television/</loc>
+    <lastmod>2021-10-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://apurvanakade.github.io/blog/tags/white-noise/</loc>
+    <lastmod>2021-10-29T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://apurvanakade.github.io/blog/tags/biology/</loc>
     <lastmod>2021-10-26T00:00:00+00:00</lastmod>
   </url><url>
@@ -67,16 +82,10 @@
     <loc>https://apurvanakade.github.io/blog/tags/non-fiction/</loc>
     <lastmod>2021-10-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://apurvanakade.github.io/blog/</loc>
-    <lastmod>2021-10-26T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://apurvanakade.github.io/blog/tags/science/</loc>
     <lastmod>2021-10-26T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://apurvanakade.github.io/blog/tags/siddhartha-mukherjee/</loc>
-    <lastmod>2021-10-26T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://apurvanakade.github.io/blog/tags/</loc>
     <lastmod>2021-10-26T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://apurvanakade.github.io/blog/notes/books/gene/</loc>
