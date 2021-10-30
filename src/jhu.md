@@ -4,7 +4,7 @@
 
 ## Honors Single Variable Calculus
 
-[Notes v2017.](https://github.com/apurvnakade/jhu2017-18-honors-single-variable-calculus/blob/main/2017/output/ClassNotes.pdf) &nbsp; [Notes v2018.](https://github.com/apurvnakade/jhu2017-18-honors-single-variable-calculus/blob/main/2018/output/ClassNotes.pdf)
+[Notes v2017.](https://github.com/apurvnakade/jhu2017-18-honors-single-variable-calculus/blob/main/2017/output/Final.pdf) &nbsp; [Notes v2018.](https://github.com/apurvnakade/jhu2017-18-honors-single-variable-calculus/blob/main/2018/output/ClassNotes.pdf)
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/6/60/WeierstrassFunction.svg"
      alt="Lean"
