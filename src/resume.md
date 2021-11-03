@@ -17,8 +17,8 @@ Below is a complete list of courses I've taught so far.
 
 | University   | Course                                             | Years             | # of students |                   |
 |--------------|----------------------------------------------------|-------------------|---------------|-------------------|
-| Northwestern | Single Variable Calculus <br> (Math 220-1)         | Fall 2021         | 25            | First year        |
-|              | Honors Linear Algebra <br> (Math 290-1)            | fall 2021         | 45            | First/second year |
+| Northwestern | Single Variable Calculus <br> (Math 220-1)         | Fall 2021         | 45            | First year        |
+|              | Honors Linear Algebra <br> (Math 290-1)            | fall 2021         | 25            | First/second year |
 | UWO          | Algebraic Topology                                 | Winter 2021       | 10            | Grad              |
 |              | Discrete Structures for Engineering                | Fall 2020         | 198           | First year        |
 |              | Calculus II for Mathematical and Physical Sciences | Winter 2020       | 150           | First year        |
