@@ -4,33 +4,35 @@
 &nbsp;
 [Teaching Evaluations.](https://tinyurl.com/nakade-evals)
 
-I did my bachelor's in computer science and engineering from Indian Institute of Technology, Kanpur.
+I got my bachelor's in computer science and engineering from Indian Institute of Technology, Kanpur.
 I did a masters in mathematics from Chennai Mathematical Institute followed by Ph.D. in mathematics from Johns Hopkins University.
 
-I currently a postdoctoral lecturer at Northwestern University.
+I'm currently a postdoctoral lecturer at Northwestern University.
 Before this, I was a postdoctoral fellow at University of Western Ontario.
 I'm a member of the [Project NExT](https://www.maa.org/programs-and-communities/professional-development/project-next) Brown'20 cohort.
-I also a [certification](https://cer.jhu.edu/teaching-academy/coc/overview) from the [Teaching Academy at JHU](https://cer.jhu.edu/teaching-academy/).
+I also have a [certification](https://cer.jhu.edu/teaching-academy/coc/overview) from the [Teaching Academy at JHU](https://cer.jhu.edu/teaching-academy/).
 
 I was a mentor for [Canada/USA Mathcamp](https://www.mathcamp.org/) from 2017-2019 and an academic coordinator for the summer of 2018.
 Below is a complete list of courses I've taught so far.
 
-| University | Course                                             | Years             | # of students |                             |
-| ---------- | -------------------------------------------------- | ----------------- | ------------- | --------------------------- |
-| UWO        | Algebraic Topology                                 | Winter 2021       | 10            | Grad                        |
-|            | Discrete Structures for Engineering                | Fall 2020         | 198           | First year undergrad        |
-|            | Calculus II for Mathematical and Physical Sciences | Winter 2020       | 150           | First year undergrad        |
-|            | Calculus I for Mathematical and Physical Sciences  | Fall 2019         | 176           | First year undergrad        |
-|            | Topics in Category Theory                          | Fall 2019         | 3             | Grad                        |
-| JHU        | Symmetries & Polynomials                           | Intersession 2018 | 15            | All years undergrad         |
-|            | Honors Single Variable Calculus                    | Spring 2017, 18   | 7             | First year undergrad        |
-|            | Hitchhiker’s Guide to Algebraic Topology           | Intersession 2017 | 11            | All years undergrad         |
-|            | Calculus II (For Biology and Social Science)       | Summer 2016       | 5             | First year undergrad        |
-|            | Differential Equations with Applications           | Summer 2015, 17   | 11            | First year undergrad        |
-|            | Online Linear Algebra                              | Summer 2014       | 34            | All years undergrad         |
-| Mathcamp   | Several                                            | Summers 2017-20   | -             | High school & middle school |
+| University   | Course                                             | Years             | # of students |                   |
+|--------------|----------------------------------------------------|-------------------|---------------|-------------------|
+| Northwestern | Single Variable Calculus <br> (Math 220-1)         | Fall 2021         | 25            | First year        |
+|              | Honors Linear Algebra <br> (Math 290-1)            | fall 2021         | 45            | First/second year |
+| UWO          | Algebraic Topology                                 | Winter 2021       | 10            | Grad              |
+|              | Discrete Structures for Engineering                | Fall 2020         | 198           | First year        |
+|              | Calculus II for Mathematical and Physical Sciences | Winter 2020       | 150           | First year        |
+|              | Calculus I for Mathematical and Physical Sciences  | Fall 2019         | 176           | First year        |
+|              | Topics in Category Theory                          | Fall 2019         | 3             | Grad              |
+| JHU          | Symmetries & Polynomials                           | Intersession 2018 | 15            | All years         |
+|              | Honors Single Variable Calculus                    | Spring 2017, 18   | 7             | First year        |
+|              | Hitchhiker’s Guide to Algebraic Topology           | Intersession 2017 | 11            | All years         |
+|              | Calculus II (For Biology and Social Science)       | Summer 2016       | 5             | First year        |
+|              | Differential Equations with Applications           | Summer 2015, 17   | 11            | First year        |
+|              | Online Linear Algebra                              | Summer 2014       | 34            | All years         |
+| Mathcamp     | Several                                            | Summers 2017-20   | -             | High school       |
 
-Course websites: [Calc \'19], [DiffEq \'17], [Calc \'16], [DiffEq \'15].
+Course materials: [Calc \'19], [DiffEq \'17], [Calc \'16], [DiffEq \'15].
 
 [apurvanakade.github.io/courses/2018_honors_calc/]: https://apurvanakade.github.io/courses/2018_Honors_Calc/index.html
 [zybooks]: https://learn.zybooks.com/zybook/UWOMath2151ANakadeFall2020
