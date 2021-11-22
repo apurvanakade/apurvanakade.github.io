@@ -1,3 +1,5 @@
 .DS_Store
 themes/
-
+.obsidian/
+*.swp
+.hugo_build.lock
