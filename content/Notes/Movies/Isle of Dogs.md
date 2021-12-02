@@ -1,7 +1,7 @@
 ---
 title: "Isle of Dogs"
 date: 2018-03-31T20:00:00-00:00
-tags : ["comedy"]
+tags : ["comedy", "Wes-Anderson"]
 type : "post"
 ---
 
