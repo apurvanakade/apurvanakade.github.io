@@ -11,8 +11,8 @@ Going in, I was quite skeptical of this movie. I had seen the trailer and it loo
 
 Gradually though I warmed up to the movie. It was during the third "story" about the French revolutionary kids that I started really enjoying it and, weirdly, even started liking the earlier parts retrospectively. 
 
-Wes Anderson manages, has always managed, to translate the absurdity of real life into cinema. He fully embraces the fact that his characters have lives lasting only minutes. Most of them are like cartoon caricatures made human, but only partially. They live out these few colorful and innocent qualities to the fullest. The mad artist, the virgin revolutionary, the migrant chef, all fantastic beasts from a kid's story, their short lives full of drama, romance, heart-break, despair, and adventure. When the final story ended I was sad that it did, I did not want to go to bed just yet. 
+Wes Anderson manages, has always managed, to translate the absurdity of real life into cinema. He fully embraces the fact that his characters have lives lasting only minutes. Most of them are like cartoon caricatures made human, but only partially. They live out their few colorful and innocent qualities to the fullest. The mad artist, the virgin revolutionary, the migrant chef, all fantastic beasts from a kid's story; their short lives full of drama, romance, heart-break, despair, and adventure. When the final story ended I was sad that it did, I did not want to go to bed just yet. 
 
-> *"Maybe with luck, we will find the things that eluded us in places we once called home."*
+> *"Maybe with good luck we’ll find what eluded us in the places we once called home."*
 
 {{< youtube NU9qYbLtPog >}}
