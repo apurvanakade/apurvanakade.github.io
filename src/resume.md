@@ -2,7 +2,7 @@
 
 [CV.](https://github.com/apurvnakade/PDFs/blob/main/CV.pdf)
 &nbsp;
-[Teaching Evaluations.](https://tinyurl.com/nakade-evals)
+[Teaching Evaluations.](https://github.com/apurvnakade/PDFs/tree/main/teaching%20evaluations)
 
 I got my bachelor's in computer science and engineering from Indian Institute of Technology, Kanpur.
 I did a masters in mathematics from Chennai Mathematical Institute followed by Ph.D. in mathematics from Johns Hopkins University.
