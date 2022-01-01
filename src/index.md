@@ -15,11 +15,10 @@
 </figure>
 
 I\'m a postdoctoral lecturer in the [Math Department](https://www.math.northwestern.edu/) at Northwestern University. 
-In Fall 2021, I'm teaching [Math 220-1](https://canvas.northwestern.edu/courses/152729) and [Math 290-1](https://canvas.northwestern.edu/courses/152713).
+In Winter, I'm teaching [Math 368](https://canvas.northwestern.edu/courses/158162/assignments/syllabus) and [Math 290-2](https://canvas.northwestern.edu/courses/160841).
 
 | | |
 | - | - |
 | **Email:** | [apurva.nakade@northwestern.edu](mailto:apurva.nakade@northwestern.edu) |
 | **Office:** | Locy 204 |
-| **Office hours:** | MW 3:00 - 4:30 pm + [by appointment](mailto:apurva.nakade@northwestern.edu)|
-| **Zoom office hours:** | T 2:30 - 4:30 pm (link on Canvas) |
+| **Zoom Office hours:** | TTh 3:30 - 5:00 pm + [by appointment](mailto:apurva.nakade@northwestern.edu)|
