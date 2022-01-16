@@ -1,0 +1,33 @@
+bookdown::gitbook:
+  css: [css/style.css]
+  config:
+    toc:
+      before: |
+        <li><a href="mailto:apurva.nakade@northwestern.edu">apurva.nakade@northwestern.edu</a></li>
+      after: |
+        <li><a href="https://github.com/apurvnakade/PDFs/blob/main/CV.pdf" target="blank">CV</a></li>
+        <li><a href="https://github.com/apurvnakade/PDFs/tree/main/teaching%20evaluations" target="blank">Teaching Evals</a></li>
+      collapse: section
+      scroll_highlight: true
+    toolbar:
+      position: fixed
+    edit : null
+    download: true
+    search:
+      engine: lunr
+      options: null
+    fontsettings:
+      theme: white
+      family: sans
+      size: 2
+    sharing:
+      facebook: false
+      github: true
+      twitter: false
+      linkedin: false
+      weibo: false
+      instapaper: false
+      vk: false
+      whatsapp: false
+      all: ['github']
+    info: true

@@ -1,14 +1,8 @@
-all: clean build deploy
+all: html
+
+html:
+	Rscript -e "bookdown::render_book('index.Rmd', 'bookdown::gitbook')"
 
 clean:
-	mdbook clean
-
-build:
-	mdbook build
-
-deploy:
-	rm ../gh-pages/*.html
-	rm -rf ../gh-pages/css/
-	rm -rf ../gh-pages/images/
-	rm -rf ../gh-pages/FontAwesome/
-	cp -r book/* ../gh-pages/
+	rm -rf docs/*
+	rm -rf _bookdown_files/*

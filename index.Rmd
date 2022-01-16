@@ -1,0 +1,17 @@
+# Apurva Nakade {.unnumbered}
+
+<div style="text-align:right; font-size: 90%;">
+
+**Email:** [apurva.nakade@northwestern.edu](mailto:apurva.nakade@northwestern.edu) <br/>
+**Zoom Office hours:** TW 4:00 - 5:30 pm
+
+</div>
+
+![](images/me0.jpg "Apurva Nakade")
+
+I\'m a postdoctoral lecturer in the [Math Department](https://www.math.northwestern.edu/) at Northwestern University. 
+The following keeps me busy these days.
+
+- Teaching [Math 368](https://canvas.northwestern.edu/courses/158162/assignments/syllabus) and [Math 290-2](https://canvas.northwestern.edu/courses/160841).
+- Typing [notes for my course](https://apurvanakade.github.io/Introduction-to-Optimization/).
+- Programming Lean. 
