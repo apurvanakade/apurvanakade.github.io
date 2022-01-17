@@ -3,15 +3,24 @@
 <div style="text-align:right; font-size: 90%;">
 
 **Email:** [apurva.nakade@northwestern.edu](mailto:apurva.nakade@northwestern.edu) <br/>
-**Zoom Office hours:** TW 4:00 - 5:30 pm
+**Office hours:** TW 4:00 - 5:30 pm
 
 </div>
 
 ![](images/me0.jpg "Apurva Nakade")
 
-I\'m a postdoctoral lecturer in the [Math Department](https://www.math.northwestern.edu/) at Northwestern University. 
-The following keeps me busy these days.
+I\'m a postdoctoral lecturer in the [Math Department](https://www.math.northwestern.edu/) at Northwestern University. In Winter 2022, I'm
 
 - Teaching [Math 368](https://canvas.northwestern.edu/courses/158162/assignments/syllabus) and [Math 290-2](https://canvas.northwestern.edu/courses/160841).
 - Typing [notes for my course](https://apurvanakade.github.io/Introduction-to-Optimization/).
-- Programming Lean. 
+- Formalizing math in Lean. 
+
+## Work history {.unnumbered}
+
+Before coming to Northwestern, I was a postdoctoral fellow at University of Western Ontario.
+I'm a member of the [Project NExT](https://www.maa.org/programs-and-communities/professional-development/project-next) Brown'20 cohort.
+I have a [certification](https://cer.jhu.edu/teaching-academy/coc/overview) from the [Teaching Academy at JHU](https://cer.jhu.edu/teaching-academy/).
+I was a mentor for [Canada/USA Mathcamp](https://www.mathcamp.org/) from 2017-2019 and an academic coordinator for the summer of 2018.
+
+I completed my PhD from JHU in 2019 with a thesis titled [An application of the h-principle to Manifold Calculus]().
+I have Masters in Mathematics from Chennai Mathematical Institute a Bachelor's in Computer Science and Engineering from Indian Institute of Technology, Kanpur.
