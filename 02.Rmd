@@ -60,6 +60,9 @@ The prerequisites for this class are basic proof techniques.
   arrows(0, 0, 1, 0, lwd=2)
   arrows(0, 0, -1/2, sqrt(3)/2, lwd=2)
   arrows(0, 0, -1/2, -sqrt(3)/2, lwd=2)
+  text(1, 0.15, "e1 - e2")
+  text(-1/2 + 0.25, sqrt(3)/2, "e2 - e3")
+  text(-1/2 + 0.25, -sqrt(3)/2, "e1 - e3")
   ```
 
 [Notes.](https://github.com/apurvnakade/mc2019-linear-algebra/blob/master/output/index.pdf)

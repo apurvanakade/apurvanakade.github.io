@@ -12,7 +12,7 @@ I got involved in this project thanks to the [MRC Workshop](http://www.ams.org/p
 2-groups are higher categorical variants of groups.
 In this project, we provide a 2-categorical interpretation of some of naturally occurring objects (Drinfield double of a group) in mathematical physics and extend them using ideas from Equivariant Elliptic Cohomology. This is a joint work with Daniel Berwick-Evans, Emily Cliff, Laura Murray, and Emma Phillips.
 
-### PhD thesis: An application of the h-principle to Manifold Calculus {-}
+### PhD thesis: An application of the $h$-principle to Manifold Calculus {-}
 
 [Paper in *Journal of Homotopy and Related Structures*](https://doi.org/10.1007/s40062-020-00255-3) <br/>
 [ArXiv preprint](https://arxiv.org/abs/1711.07670) <br/>
@@ -21,14 +21,14 @@ In this project, we provide a 2-categorical interpretation of some of naturally 
 [Thesis defense presentation](https://github.com/apurvnakade/PDFs/blob/main/assorted%20notes/Research/2019%20-%20Thesis%20Defense.pdf)
 
 In my PhD thesis, I applied homotopy theoretic techniques to study problems for differential geometry. 
-I show that the technique of manifold calculus cannot be used to analyze the space of isosymplectic embeddings of symplectic manifolds.
-This thesis also provides a big class of examples of non-analytic embedding functors in the sense of manifold calculus.
+I showed that the technique of manifold calculus cannot be used to analyze the space of isosymplectic embeddings of symplectic manifolds.
+This thesis also provides a broad class of examples of non-analytic embedding functors (in the sense of manifold calculus).
 
 ### Protein folding using Markov chains {-}
 
 [Paper in Information Processing Letters, IPL4801](https://github.com/apurvnakade/PDFs/blob/main/assorted%20notes/Research/2012%20-%20Protein%20Folding.pdf)
 
-During my undergrad, I briefly worked on a project analyzing protein folding models using basic linear algebra.  We show that the mixing time of the Metropolis algorithm is not a decreasing function of the value of gap between the lowest and the second lowest energies.
+During my undergrad, I briefly worked on a project analyzing a Markov chain model of protein folding. We showed that the mixing time of the Metropolis algorithm is not a decreasing function of the value of gap between the lowest and the second lowest energies.
 This is joint work with Somenath Biswas.
 
 ### Projects that did not quite work out {-}

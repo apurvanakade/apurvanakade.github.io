@@ -15,7 +15,7 @@ I\'m a postdoctoral lecturer in the [Math Department](https://www.math.northwest
 - Typing [notes for my course](https://apurvanakade.github.io/Introduction-to-Optimization/).
 - Formalizing math in Lean. 
 
-## Work history {.unnumbered}
+## Education {.unnumbered}
 
 Before coming to Northwestern, I was a postdoctoral fellow at University of Western Ontario.
 I'm a member of the [Project NExT](https://www.maa.org/programs-and-communities/professional-development/project-next) Brown'20 cohort.
@@ -23,4 +23,4 @@ I have a [certification](https://cer.jhu.edu/teaching-academy/coc/overview) from
 I was a mentor for [Canada/USA Mathcamp](https://www.mathcamp.org/) from 2017-2019 and an academic coordinator for the summer of 2018.
 
 I completed my PhD from JHU in 2019 with a thesis titled [An application of the h-principle to Manifold Calculus]().
-I have Masters in Mathematics from Chennai Mathematical Institute a Bachelor's in Computer Science and Engineering from Indian Institute of Technology, Kanpur.
+I have an MSc in Mathematics from Chennai Mathematical Institute and a BTech in Computer Science and Engineering from Indian Institute of Technology, Kanpur.
