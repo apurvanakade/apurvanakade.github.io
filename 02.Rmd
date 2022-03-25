@@ -1,4 +1,41 @@
-# Math Notes {-}
+# For Students 
+
+## Recommendation Letters
+
+This section contains advice for people asking for a letter of recommendation from me.
+
+I understand that asking for a recommendation letter can be unnerving and daunting. As a student, you might even be unsure as to whether you can ask me for a letter. Please understand that *letter-writing is one of my most important duties*. If you were in any of my classes and received a *decent* grade, you are entitled to get rec letters from me. You do not have to have "interacted" with me or "participated" in the lecture in any way. Having said that, if I do not know you personally or if you do not provide me enough time/information, my rec letter would be extremely short, just describing your scores in the course. 
+
+### How to ask for a rec letter
+
+**It is in your interest to make your letter writer's job as easy as possible.**
+    
+  - Timeline: 
+    - Please give me as much notice as possible so I can write as detailed a letter as I would like. At least a month is reasonable. Any shorter notice, and you should expect a brief, superficial letter.
+
+  - Email:
+    - Send a formal email request. I'll neglect any other kind of messaging (including "oral requests").
+    - Include all the information *in a single email* (see below).
+    - Minimize the number of email interactions necessary. 
+
+  - Documents: 
+    - Create a shared folder for your documents and include the sharing link in the email. This way, I'll always have an updated copy of your statements. 
+    - Provide as much information as you think might be relevant. More information is always preferred to less. Here are some common documents to share (drafts are acceptable):
+      - A document/email will all the deadlines
+      - CV 
+      - Unofficial transcripts
+      - Statement of Purpose 
+      - Cover letter(s)
+      - Program information 
+      - Upload instructions
+
+  - Reminders:
+    - It's ok to send reminders. In fact, I encourage you to send me a reminder email a week before a deadline.
+    - Verbal reminders are useless. Send your reminder by email. 
+
+
+
+## Math Notes {-}
 
 
 I love to design and teach new, and sometimes old, courses.
