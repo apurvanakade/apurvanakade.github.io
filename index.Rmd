@@ -1,9 +1,15 @@
-# Apurva Nakade {.unnumbered}
+---
+title: "Apurva Nakade"
+github-repo: apurvanakade/apurvanakade.github.io
+url: https\://apurvanakade.github.io/
+---
+
+# Apurva Nakade
 
 <div style="text-align:right; font-size: 90%;">
 
 **Email:** [apurva.nakade@northwestern.edu](mailto:apurva.nakade@northwestern.edu) <br/>
-**Office hours:** TBD, in Loc 204
+**Office hours:** M 3-4:30 on Zoom, F 2-4, in Loc 204
 
 </div>
 
@@ -14,4 +20,4 @@ I\'m a postdoctoral lecturer in the [Math Department](https://www.math.northwest
 - Teaching [Math 368](https://canvas.northwestern.edu/courses/164403/assignments/syllabus) and [Math 290-3](https://canvas.northwestern.edu/courses/166989).
 - Typing [notes for my course](https://apurvanakade.github.io/2022S-Introduction-to-Optimization/).
 - Formalizing math in Lean. 
-- Participating in the [Inclusive Teaching Practicum](https://www.northwestern.edu/searle/initiatives/faculty/inclusive-teaching-practicum1/index.html) and the [Excellence in Teaching Alliance](https://www.northwestern.edu/searle/initiatives/faculty/excellence-in-teaching-alliance-for-nte-faculty.html).
+- Participating in the [Excellence in Teaching Alliance](https://www.northwestern.edu/searle/initiatives/faculty/excellence-in-teaching-alliance-for-nte-faculty.html).

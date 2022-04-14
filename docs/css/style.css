@@ -54,6 +54,14 @@ pre.numberSource code>span>a:first-child::before {
   border-bottom: 1px solid;
 }
 
+.level1 {
+  padding-bottom: 5em;
+}
+
+.title {
+  display: none;
+}
+
 h1,
 h2,
 h3,
