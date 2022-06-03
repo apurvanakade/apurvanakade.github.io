@@ -1,18 +1,3 @@
-.todo {
-  padding: 1em 1em 1em 4em;
-  margin-bottom: 10px;
-  background: lightgray 5px center/3em no-repeat;
-  border: 2px solid orange;
-}
-
-.boxed {
-  border: 1px solid black;
-  padding-top: 1em;
-  padding-left: 0.5em;
-  padding-right: 0.5em;
-  margin-bottom: 1em;
-}
-
 p.caption {
   color: #777;
   margin-top: 10px;
@@ -62,30 +47,42 @@ pre.numberSource code>span>a:first-child::before {
   display: none;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: normal;
+.book .book-body .page-wrapper .page-inner section.normal h1,
+.book .book-body .page-wrapper .page-inner section.normal h2,
+.book .book-body .page-wrapper .page-inner section.normal h3,
+.book .book-body .page-wrapper .page-inner section.normal h4,
+.book .book-body .page-wrapper .page-inner section.normal h5,
+.book .book-body .page-wrapper .page-inner section.normal h6 {
+  font-weight: unset;
 }
 
-h1.title {
-  font-weight: 700;
+h1 { 
+  text-transform: uppercase;
+}
+
+h2 {
+  padding-top: 2.5em;
+  font-style: italic;
+}
+
+h3 {
+  padding-top: 1em;
+}
+
+h4 {
+  padding-top: 0.5em;
+  font-style: italic;
+  text-align: center;
+  border-top: 1px solid lightgrey;
 }
 
 .book .book-body .page-wrapper .page-inner section.normal strong {
   font-weight: 600;
-}
+}  
 
 .book .book-body .page-wrapper .page-inner section.normal pre a {
   color: inherit;
-}
-
-h2 {
-  padding-top: 1em;
-}
+}  
 
 details[open] {
   padding-bottom: 1em;
