@@ -9,15 +9,17 @@ url: https\://apurvanakade.github.io/
 <div style="text-align:right; font-size: 90%;">
 
 **Email:** [apurva.nakade@northwestern.edu](mailto:apurva.nakade@northwestern.edu) <br/>
-**Office hours:** M 3-4:30 on Zoom, F 2-4, in Loc 204
+**Office hours:** 
 
 </div>
 
 ![](images/me0.jpg "Apurva Nakade")
 
-I\'m a postdoctoral lecturer in the [Math Department](https://www.math.northwestern.edu/) at Northwestern University. In Spring 2022, I'm
+I\'m a postdoctoral lecturer in the [Math Department](https://www.math.northwestern.edu/) at Northwestern University. In Summer 2022, I'm
 
-- Teaching [Math 368](https://canvas.northwestern.edu/courses/164403/assignments/syllabus) and [Math 290-3](https://canvas.northwestern.edu/courses/166989).
-- Typing [notes for my course](https://apurvanakade.github.io/2022S-Introduction-to-Optimization/).
-- Formalizing math in Lean. 
-- Participating in the [Excellence in Teaching Alliance](https://www.northwestern.edu/searle/initiatives/faculty/excellence-in-teaching-alliance-for-nte-faculty.html).
+- Cleaning up [notes](https://apurvanakade.github.io/Introduction-to-Optimization/) for Introduction to Optimization.
+- Formalizing [linear programming](https://github.com/apurvnakade/linear-programming) in Lean. 
+- Working on [PreText](https://pretextbook.org/) and [WeBWorK](https://webwork.maa.org/) for [OER linear algebra textbook](http://linear-algebra.northwestern.pub/frontmatter-1.html).
+- Participating in a [SIMIODE](https://www.simiode.org/) workshop on [Modeling Inspiration for Differential Equations
+](https://connect.maa.org/events/event-description?CalendarEventKey=94352b84-7079-4eff-bc2e-52a06cf84900&Home=%2Fevents%2Fcalendar).
+- Prepping for coordinating [Math 290-1](https://canvas.northwestern.edu/courses/173693) in Fall 2022.
