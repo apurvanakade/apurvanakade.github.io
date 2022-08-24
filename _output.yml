@@ -7,8 +7,8 @@ bookdown::gitbook:
       before: |
         <li><a href="mailto:apurva.nakade@northwestern.edu">apurva.nakade@northwestern.edu</a></li>
       after: |
-        <li><a href="https://github.com/apurvnakade/PDFs/blob/main/CV.pdf" target="blank">CV</a></li>
-        <li><a href="https://github.com/apurvnakade/PDFs/tree/main/teaching%20evaluations" target="blank">Teaching Evals</a></li>
+        <li><a href="https://github.com/apurvnakade/PDFs/blob/main/CV.pdf" target="_blank">CV</a></li>
+        <li><a href="https://apurvanakade.github.io/teaching-portfolio" target="_blank">Teaching Portfolio</a></li>
       collapse: section
       scroll_highlight: true
     toolbar:

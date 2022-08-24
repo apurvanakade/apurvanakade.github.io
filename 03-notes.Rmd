@@ -1,45 +1,13 @@
-# For Students 
 
-## Recommendation Letters
-
-This section contains advice for people asking for a letter of recommendation from me.
-
-> *It is in your interest to make your letter writer's job as easy as possible.*
-
-I understand that asking for a recommendation letter can be unnerving and daunting. As a student, you might even be unsure as to whether you can ask me for a letter. Please understand that *letter-writing is one of my most important duties*. If you were in any of my classes and received a *good* grade, you are entitled to get rec letters from me. You do not have to have "interacted" with me or "participated" in the lecture in any way.^[Having said that, if I do not know you personally or if you do not provide me enough time/information, my rec letter would be extremely short, just describing your scores in the course.] 
-
-### How to ask for a rec letter
-
-    
-  **Timeline:** 
-  Please give me as much notice as possible so I can write as detailed a letter as I would like. At least a month is reasonable. Any shorter notice, and you should expect a brief, superficial letter.
-
-  **Email:**
-  Send a *formal email request*. 
-  Try to include all the information in a single email. 
-  If you do not have everything available, just share a folder with the information you have and update it regularly.
-  Provide as much information as you think might be relevant. More information is always preferred to less. Here are some common documents to share (drafts are acceptable):
-
-  - A document/email will all the deadlines
-  - CV 
-  - Unofficial transcripts
-  - Statement of Purpose 
-  - Program information 
-  - Upload instructions
-
-  **Reminders:**
-  It's ok to send reminders. In fact, I encourage you to send me a reminder email a week before a deadline.
-  Verbal reminders are useless. Send your reminder by email. 
-
-
-
-## Math Notes {-}
+# Math Notes {-}
 
 
 I love to design and teach new, and sometimes old, courses.
 Below are notes and problem sets from several of my courses.
 Most notes are accessible to undergraduate and advanced high-school students.
 
+- Northwestern
+  - [Introduction to Optimization](#introduction-to-optimization)
 - UWO 
   - [Algebraic topology](#algebraic-topology)
   - [Discrete math](#discrete-math)
@@ -59,10 +27,31 @@ Most notes are accessible to undergraduate and advanced high-school students.
 - Expository notes
 
 
-### UWO {-}
+## Northwestern {-}
 
+### Introduction to Optimization 
 
-#### Algebraic topology  
+\begin{equation}
+  \begin{array}{lrrrrrrrrr}
+    \mbox{maximize: } & c_0 & + & c_1 x_1 & + & \dots & + & c_n x_n & \\
+    \mbox{subject to: }
+      & & & a_{11} x_1 & + & \dots & + & a_{1n} x_n & \leq & b_1 \\
+      & & & a_{21} x_1 & + & \dots & + & a_{2n} x_n & \leq & b_2 \\
+      & & & & & \vdots &  \\
+      & & & a_{m1} x_1 & + & \dots & + & a_{mn} x_n & \leq & b_m \\
+      & & & x_1, & x_2, & \dots &, & x_n & \geq & 0
+  \end{array}
+\end{equation}
+
+[Course Notes](https://apurvanakade.github.io/Introduction-to-Optimization/)
+
+In Winter and Spring 2022, I taught a quarter-long course at Northwestern on Introduction to Optimization.
+The course covers mainly linear programming and duality theory.
+The above course notes are accessible to students who have done linear algebra and some basic multivariable calculus (gradients).
+
+## UWO {-}
+
+### Algebraic topology  
 ![](https://upload.wikimedia.org/wikipedia/commons/8/8f/Winding_Number_Around_Point.svg){width="30%"}
 
 [Problem Sets.](https://github.com/apurvnakade/uwo2021-algebraic-topology/tree/main/output)
@@ -73,7 +62,7 @@ The course covers the fundamental group, covering spaces, and singular homology.
 
 
 
-#### Discrete math
+### Discrete math
 
 $$
 \begin{align}
@@ -95,10 +84,10 @@ This has been the most challenging and the most rewarding course I've ever taugh
 
 
 
-### Canada/USA ![](images/mathcamp.png){width="3.5em"} {-}
+## Canada/USA ![](images/mathcamp.png){width="3.5em"} {-}
 
 
-#### Lean at MC2020
+### Lean at MC2020
 ![](https://leanprover.github.io/images/lean_logo.svg){width=30%}
 
 [Notes.](https://apurvnakade.github.io/mc2020-Lean/)
@@ -111,7 +100,7 @@ The prerequisites for this class are basic proof techniques.
 
 
 
-#### Crash course on linear algebra
+### Crash course on linear algebra
 
 ```{r, vectors-3D, echo=FALSE, warning=FALSE, comments = NA, out.width="50%"}
 plot(c(0,1,-1/2,-1/2), c(0,0,sqrt(3)/2,-sqrt(3)/2), yaxt="n", xaxt="n", ylab="", xlab="", asp=1, bty="n", pch = 16)
@@ -133,7 +122,7 @@ The class is designed in an IBL-format - you're expected to solve all the proble
 
 
 
-#### Galois correspondence of covering spaces
+### Galois correspondence of covering spaces
 
 <!-- ![](https://upload.wikimedia.org/wikipedia/commons/1/16/Covering_space_diagram.svg){width="25%"} -->
 
@@ -154,7 +143,7 @@ This week-long class from Mathcamp 2019 covers (pun intended) the covering space
 
 
 
-#### From high school arithmetic to group cohomology
+### From high school arithmetic to group cohomology
 
 $$
 \begin{align}
@@ -172,7 +161,7 @@ The prerequisites are group theory.
 
 
 
-#### Cohomology via sheaves
+### Cohomology via sheaves
 
 ![](https://upload.wikimedia.org/wikipedia/commons/c/c1/Penrose-dreieck.svg){width="20%"}
 
@@ -185,7 +174,7 @@ The prerequisites are linear algebra (over finite fields).
 
 
 
-#### How curved is a potato?
+### How curved is a potato?
 
 ![](https://upload.wikimedia.org/wikipedia/commons/4/47/Russet_potato_cultivar_with_sprouts.jpg){width="40%"}
 
@@ -197,7 +186,7 @@ The prerequisites are linear algebra, in particular, the notions of eigenvalues 
 
 
 
-#### Would I ever lie group to you?
+### Would I ever lie group to you?
 
 ![](https://upload.wikimedia.org/wikipedia/commons/b/b7/Icosahedron.svg){width="20%"}
 
@@ -210,7 +199,7 @@ The prerequisites are linear algebra and group theory, in particular, group acti
 
 
 
-#### Riemann surfaces
+### Riemann surfaces
 ![](https://upload.wikimedia.org/wikipedia/commons/9/9c/Riemann_sqrt.svg){width="50%"}
 
 [Problem Sets.](https://github.com/apurvnakade/mc2019-Riemann-surfaces/tree/main/output)
@@ -232,10 +221,10 @@ The following are a few other classes I taught at Mathcamp. The notes are not ve
   
 
 
-### JHU {-}
+## JHU {-}
 
 
-#### Honors single variable calculus
+### Honors single variable calculus
 ![](https://upload.wikimedia.org/wikipedia/commons/6/60/WeierstrassFunction.svg){width="50%"}
 
 [Notes v2017.](https://github.com/apurvnakade/jhu2017-18-honors-single-variable-calculus/blob/main/2017/output/Final.pdf) 
@@ -250,7 +239,7 @@ The prerequisites are pre-calculus and basic theorem proving.
 
 
 
-#### Symmetries & polynomials
+### Symmetries & polynomials
 
 $$
 \begin{align}
@@ -266,7 +255,7 @@ The prerequisites are basic proof techniques.
 
 
 
-#### Hitchhiker's guide to algebraic topology
+### Hitchhiker's guide to algebraic topology
 
 ![](https://upload.wikimedia.org/wikipedia/commons/9/98/Thistlethwaite_unknot.svg){width="30%"}
 
@@ -277,7 +266,7 @@ There are no prerequisites.
 
 
 
-### Expository notes {-}
+## Expository notes {-}
 
 Following are some of my personal math notes. The notes have not been proofread and might contain errors.
 
