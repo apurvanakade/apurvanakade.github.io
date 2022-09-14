@@ -15,11 +15,10 @@ url: https\://apurvanakade.github.io/
 
 ![](images/me0.jpg "Apurva Nakade")
 
-I\'m a postdoctoral lecturer in the [Math Department](https://www.math.northwestern.edu/) at Northwestern University. In Summer 2022, I'm
+I\'m a postdoctoral lecturer in the [Math Department](https://www.math.northwestern.edu/) at Northwestern University. 
+In Fall 2022, I'm
 
-- Cleaning up [notes](https://apurvanakade.github.io/Introduction-to-Optimization/) for Introduction to Optimization.
-- Formalizing [linear programming](https://github.com/apurvnakade/linear-programming) in Lean. 
-- Working on [PreText](https://pretextbook.org/) and [WeBWorK](https://webwork.maa.org/) for [OER linear algebra textbook](http://linear-algebra.northwestern.pub/frontmatter-1.html).
-- Participating in a [SIMIODE](https://www.simiode.org/) workshop on [Modeling Inspiration for Differential Equations
-](https://connect.maa.org/events/event-description?CalendarEventKey=94352b84-7079-4eff-bc2e-52a06cf84900&Home=%2Fevents%2Fcalendar).
-- Prepping for coordinating [Math 290-1](https://canvas.northwestern.edu/courses/173693) in Fall 2022.
+- Coordinating [Math 290-1](https://canvas.northwestern.edu/courses/173693),
+- Working on [PreText](https://pretextbook.org/) and [WeBWorK](https://webwork.maa.org/) for Aaron Greicius' [linear algebra textbook](http://linear-algebra.northwestern.pub/frontmatter-1.html),
+- Co-organizing [Northwestern Emerging Scholar's Program](https://www.math.northwestern.edu/undergraduate/prizes-competitions-organizations/northwestern-emerging-scholars.html),
+- Mentoring for the [Causeway Postbac Program](https://sites.northwestern.edu/causeway/).
