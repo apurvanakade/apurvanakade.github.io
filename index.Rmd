@@ -21,4 +21,5 @@ In Fall 2022, I'm
 - Coordinating [Math 290-1](https://canvas.northwestern.edu/courses/173693),
 - Working on [PreText](https://pretextbook.org/) and [WeBWorK](https://webwork.maa.org/) for Aaron Greicius' [linear algebra textbook](http://linear-algebra.northwestern.pub/frontmatter-1.html),
 - Co-organizing [Northwestern Emerging Scholar's Program](https://www.math.northwestern.edu/undergraduate/prizes-competitions-organizations/northwestern-emerging-scholars.html),
-- Mentoring for the [Causeway Postbac Program](https://sites.northwestern.edu/causeway/).
+- Mentoring for the [Causeway Postbac Program](https://sites.northwestern.edu/causeway/),
+- Formalizing math for [mathlib](https://github.com/leanprover-community/mathlib) in [Lean](https://leanprover.github.io/).
