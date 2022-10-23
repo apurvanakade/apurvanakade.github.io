@@ -22,7 +22,7 @@ Most notes are accessible to undergraduate and advanced high-school students.
   - [Riemann surfaces](#riemann-surfaces)
 - JHU
   - [Honors single variable calculus](#honors-single-variable-calculus)
-  - [Symmetries & polynomials](#symmetries--polynomials)
+  - [Symmetries & polynomials](#symmetries-polynomials)
   - [Hitchhiker's guide to algebraic topology](#hitchhikers-guide-to-algebraic-topology)
 - Expository notes
 
