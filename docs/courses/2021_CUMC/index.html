@@ -1,0 +1,529 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Teaching Math to Computers - CUMC at UWO</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/serif.css">
+		<link rel="stylesheet" href="dist/my_style.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<section>
+					  <p>CUMC 2021 at UWO</p>
+  					<h1 class="title">Teaching Math to Computers</h1>
+						<p>Apurva Nakade</p>
+						<p>apurva.nakade@northwestern.edu</p>
+					</section>
+					<section>
+						<p>Load the worksheets using the following link to run Lean: </p>
+						<p style="text-align: center;"><a href="https://leanprover-community.github.io/lean-web-editor/">https://leanprover-community.github.io/lean-web-editor/</a></p>
+						<p>Here are all the worksheets that we'll be using throughout this workshop:</p>
+						<ol>
+							<li><a href="worksheets/infinitude_of_primes.lean">infinitude_of_primes.lean</a></li>
+							<li><a href="worksheets/implies.lean">implies.lean</a></li>
+							<li><a href="worksheets/negation.lean">negation.lean</a></li>
+							<li><a href="worksheets/and, or.lean">and, or.lean</a></li>
+							<li><a href="worksheets/law_of_excluded_middle.lean">law_of_excluded_middle.lean</a></li>
+						</ol>
+					</section>
+					<section>
+						<h2>Plan</h2>
+						<ol>
+							<li>Overview of Proof Assistants/Theorem Provers</li>
+							<li>Introduction to Lean Theorem Prover</li>
+							<li>Work on Lean worksheets in breakout rooms
+								<ul>
+									<li>You'll be learning a new programming language.</li>
+								</ul>
+							</li>
+						</ol>
+					</section>
+					<section>
+						<h2>Big Questions: <br/>Will computers ever be able to ...</h2>
+						<ul>
+							<li class="fragment" data-fragment-index="1">Verify existing math?
+								<ul class="fragment" data-fragment-index="5">
+									<li>eg. Formal proof of Feit–Thompson theorem, Liquid tensor experiment</li>
+								</ul></li>
+							<li class="fragment" data-fragment-index="2">Help humans write proofs?
+								<ul class="fragment" data-fragment-index="6">
+									<li>Train an AI that can understand existing proofs!</li>
+								</ul></li>
+							<li class="fragment" data-fragment-index="3">Understand existing math?
+								<ul class="fragment" data-fragment-index="6">
+									<li>Train an AI that can understand existing proofs!</li>
+								</ul>
+							</li>
+							<li class="fragment" data-fragment-index="4">Create new math?
+								<ul class="fragment" data-fragment-index="6">
+									<li>Train an AI that can understand existing proofs!</li>
+								</ul>
+							</li>
+						</ul>
+						<p class="fragment" data-fragment-index="7">
+							Progress so far: Lean-gptf (<a href="https://github.com/jesse-michael-han/lean-gptf">Code</a>, <a href="https://cmsa.fas.harvard.edu/wp-content/uploads/2021/03/LeanStep-Talk-New-Technology-in-Mathematics-Seminar.pdf">Presentation</a>).
+						</p>
+					</section>
+					<section>
+						<h2>Current goal: <br/>Create a database of existing math</h2>
+						<ul>
+							<li class="fragment">Computers cannot understand <i>natural language proofs</i>.</li>
+							<li class="fragment">Need to translate <i>natural language proofs</i> into <i>programs</i>.</li>
+							<li class="fragment">Curry–Howard correspondence (mid 1900's)</li>
+							<li class="fragment">Several competing languages for writing these <i>programs</i>:</li>
+							<ul>
+								<li class="fragment">Mizar, HOL, Isabelle, Coq, <b>Lean</b>, PVS, MetaMath, and more</li>
+							</ul>	
+							<li class="fragment"><a href="https://www.cs.ru.nl/~freek/100/">Formalizing 100 Theorems</a> (https://www.cs.ru.nl/~freek/100/)</li>
+						</ul>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h1>Lean Theorem Prover</h1>
+					</section>
+					<section>
+						<h2>Lean Theorem Prover</h2>
+						<h3>Pros:</h3>
+						<ul>
+							<li class="fragment">Open source</li>
+							<li class="fragment">Large math library <i>actively</i> maintained by mathematicians
+							<ul>
+								<li><a href="https://leanprover-community.github.io/mathlib-overview.html">https://leanprover-community.github.io/mathlib-overview.html</a></li>
+							</ul></li>
+							<li class="fragment">Welcoming and friendly community
+								<ul>
+									<li><a href="https://leanprover.zulipchat.com/#">Leanprover Zulipchat</a></li>
+								</ul>
+							</li>
+							<li class="fragment">A LOT of online resources for learning
+								<ul><li><a href="https://leanprover-community.github.io/learn.html">https://leanprover-community.github.io/learn.html</a></li></ul>
+							</li>
+							<li class="fragment">Somewhat human readable</li>
+							<li class="fragment"><i>Undergraduate students contribute to the Lean math library.</i></li>
+						</ul>
+						</section>
+					<section>
+						<h2>Lean Theorem Prover</h2>
+						<h3>Cons:</h3>
+						<ul>
+							<li>Kernel developed and maintained by Microsoft Research</li>
+							<li>Relatively new (still being developed)</li>
+							<li>Based on <i>type theory</i> instead of <i>set theory</i></li>
+						</ul>
+					</section>
+					<section>
+						<h2>Sample Lean Code</h2>
+						<h3 class="fragment"><b>Theorem:</b> There are infinitely many prime numbers.</h3>
+						<h3 class="fragment"><b>Theorem:</b> For every natural number $n$, there exists a prime $p$ which is greater than or equal to $n$.</h3>
+
+						<ol>
+							<li class="fragment">Let $m = n! + 1$.</li>
+							<li class="fragment">Let $p$ be the smallest prime factor of $m$.</li>
+							<li class="fragment">$p$ is prime, by construction.</li>
+							<li class="fragment">Remains to show that $p$ is greater than or equal to $n$.
+								<ol>
+									<li class="fragment">Proof by contradiction:</li>
+									<li class="fragment">Suppose $p < n$.</li>
+									<li class="fragment">Then $p$ divides $n!$.</li>
+									<li class="fragment">Hence, $p$ divides $m - n!$ which equals $1$. Contradiction!</li>
+								</ol>
+							</li>
+						</ol>
+					</section>
+					<section>
+						<pre><code data-trim data-noescape data-line-numbers="1-3,20|4-6|7-12|13-19|">
+							theorem infinitude_of_primes (n : ℕ) : ∃ (p : ℕ), prime p ∧ n ≤ p :=
+
+							begin
+								let m := n.factorial + 1,
+								let p := min_fac m,
+								use p,
+
+								have p_is_prime : prime p := min_fac_prime (ne_of_gt (succ_lt_succ (factorial_pos n))),
+								split,
+								begin
+									exact p_is_prime,
+								end,
+
+								begin
+									by_contradiction h, push_neg at h,
+									have p_dvd_n : p ∣ n.factorial := dvd_factorial (min_fac_pos _) (le_of_lt h),
+									have p_dvd_one : p ∣ 1 := (nat.dvd_add_iff_right p_dvd_n).2 (min_fac_dvd _),
+									exact p_is_prime.not_dvd_one p_dvd_one,
+								end
+							end
+						</code></pre>
+					</section>
+					<section>
+						<ul>
+							<li>Download <a href="worksheets/infinitude_of_primes.lean">infinitude_of_primes.lean</a>.</li>
+							<li>Go to: <a href="https://leanprover-community.github.io/lean-web-editor/">https://leanprover-community.github.io/lean-web-editor/</a></li>
+							<li>Click on "Choose file" and select the downloaded file (infinitude_of_primes.lean).</li>
+							<li>Wait for the bar on the top to change color from <span style="color:orange">orange</span> to <span style="color:green">green</span>.</li>
+							<li><b>Place your cursor at the end of any line to see the "goal state" at that point.</b></li>
+							<li><b>Hover your mouse over a command to see more info about it.</b></li>
+						</ul>
+					</section>
+					<section>
+						<h2>Lean jargon</h2>
+						<ul>
+							<li class="fragment">Every theorem in Lean has some <i>hypotheses</i> (can be empty) and a single <i>target</i>.</li>
+							<li class="fragment">In the previous example, 
+								<ul>
+									<li>"(n : ℕ)" is a hypothesis, and</li>
+									<li>"∃ (p : ℕ), prime p ∧ n ≤ p" is the target.</li>
+								</ul></li> 
+							<li class="fragment">The goal is to construct a proof of the target using the hypotheses (and already proven theorems) and logically valid arguments.</li>
+							<li class="fragment">Lean lets you do this dynamically using "tactics".</li>
+							<li class="fragment">After each valid "tactic" command, the "goal state" is updated and is visible in the "goal window".</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Goal window</h2>
+						In the previous example, the initial proof state as shown in the goal window is:
+						<pre><code data-trim data-noescape> 
+							n : ℕ
+							⊢ ∃ (p : ℕ), prime p ∧ n ≤ p
+						</code></pre>
+						After the tactics 
+						<pre><code data-trim data-noescape> 
+							let m := n.factorial + 1,
+							let p := min_fac m,
+							use p,
+						</code></pre>
+						the new proof state becomes:
+						<pre><code data-trim data-noescape>
+							n : ℕ,
+							m : ℕ := n.factorial + 1,
+							p : ℕ := m.min_fac
+							⊢ prime p ∧ n ≤ p
+						</code></pre>
+						The content after the symbol "⊢" is the current target and the rest are the current hypotheses.
+					</section>
+				</section>
+				<section>
+					<section>
+						<h1>Propositional logic in Lean</h1>
+					</section>
+					<section>
+						<h2>Propositional logic in Lean</h2>
+						<p>We'll learn how to prove theorems involving</p>
+						<ul>
+							<li>Implication</li>
+							<li>Negation</li>
+							<li>And</li>
+							<li>Or</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Proofs in Lean</h2>
+						<ul>
+							<li class="fragment">For a computer, proofs are "more important" than theorems.
+								<ul><li>This is (arguably) the fundamental difference between the way we do math and the way machines "do math".</li>
+								</ul></li>
+							<li class="fragment">Proof checkers like Lean need to keep track of <i>proofs</i>.</li>
+						</ul>
+						<p class="fragment"><b>We pass proofs as arguments to tactics.</b></p>
+					</section>
+					<section>
+						<h2>Notation</h2>
+						<ul>
+							<li> $P$, $Q$, $R$ will denote propositions.</li>
+							<li> $h : P$ stands for "$h$ is a proof of $P$".</li>
+						</ul>
+						<div class="fragment"><p><b>We pass proofs as arguments to tactics.</b></p>
+						For today,
+						<pre><code data-trim data-noescape> 
+							exact h,
+						</code></pre>
+						is a valid tactic but 
+						<pre><code data-trim data-noescape> 
+							exact P,
+						</code></pre>
+						is invalid.
+					</div>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h1>Implication</h1>
+					</section>
+					<section>
+						<h2>Implication</h2>
+						<ul>
+							<li>"$P$ implies $Q$" is denoted by $P \to Q$.</li>
+							<li>Three basic tactics:
+								<ul>
+									<li>exact</li>
+									<li>intro</li>
+									<li>apply</li>
+								</ul>
+							</li>
+						</ul>
+						<p>Worksheet: <a href="worksheets/implies.lean">implies.lean</a></p>
+					</section>
+					<section>
+						<h2>Cheat Sheet</h2>
+						<table style="float:left">
+							<tr>
+								<th>Purpose</th>
+								<th>Tactic</th>
+							</tr>
+							<tr>
+								<td>Closing goal</td>
+								<td>exact</td>
+							</tr>
+						</table>
+						<table style="float:right">
+							<tr>
+								<th></th>
+								<th>Hypothesis</th>
+								<th>Target</th>
+							</tr>
+							<tr>
+								<td>Implication</td>
+								<td>apply</td>
+								<td>intro</td>
+							</tr>
+						</table>
+					</section>
+				</section>
+				<section>
+					<section><h1>Negation</h1></section>
+					<section>
+						<h2>Negation</h2>
+						<ul>
+							<li>"Negation of $P$" is denoted by $\lnot P$.</li>
+							<li class="fragment">There is an in-built proposition <b>false</b> which is false.</li>
+							<li class="fragment">$\lnot P$ is defined as the proposition "$P$ implies <b>false</b>".
+								<ul class="fragment">
+									<li>If $P$ is true then "$P$ implies <b>false</b>" is false.</li>
+									<li>If $P$ is false then "$P$ implies <b>false</b>" is true.</li>
+								</ul>
+							</li>
+							<li class="fragment">Implications are all you need for manipulating negations!</li>
+						</ul>
+						<p>Worksheet: <a href="worksheets/negation.lean">negation.lean</a></p>
+					</section>
+					<section>
+						<h2>Cheat Sheet</h2>
+						<table style="float:left">
+							<tr>
+								<th>Purpose</th>
+								<th>Tactic</th>
+							</tr>
+							<tr>
+								<td>Closing goal</td>
+								<td>exact</td>
+							</tr>
+						</table>
+						<table style="float:right">
+							<tr>
+								<th></th>
+								<th>Hypothesis</th>
+								<th>Target</th>
+							</tr>
+							<tr>
+								<td>Implication</td>
+								<td>apply</td>
+								<td>intro</td>
+							</tr>
+							<tr>
+								<td>Negation</td>
+								<td>apply</td>
+								<td>intro</td>
+							</tr>
+						</table>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h1>And, Or</h1>
+					</section>
+					<section>
+						<h2>And, Or</h2>
+						<ul>
+							<li>"P and Q" is denoted by $P \land Q$ and "P or Q" is denoted by $P \lor Q$.</li>
+							<li>Tactics for "And" and "Or" operators:
+								<ul>
+									<li>cases</li>
+									<li>split</li>
+									<li>left</li>
+									<li>right</li>
+								</ul>
+							</li>
+						</ul>
+						<p>Worksheet: <a href="worksheets/and, or.lean">and, or.lean</a></p>
+					</section>
+					<section>
+						<h2>Cheat Sheet</h2>
+						<table style="float:left">
+							<tr>
+								<th>Purpose</th>
+								<th>Tactic</th>
+							</tr>
+							<tr>
+								<td>Closing goal</td>
+								<td>exact</td>
+							</tr>
+						</table>
+						<table style="float:right">
+							<tr>
+								<th></th>
+								<th>Hypothesis</th>
+								<th>Target</th>
+							</tr>
+							<tr>
+								<td>Implication</td>
+								<td>apply</td>
+								<td>intro</td>
+							</tr>
+							<tr>
+								<td>Negation</td>
+								<td>apply</td>
+								<td>intro</td>
+							</tr>
+							<tr>
+								<td>And</td>
+								<td>cases</td>
+								<td>split</td>
+							</tr>
+							<tr>
+								<td>Or</td>
+								<td>cases</td>
+								<td>left/right</td>
+							</tr>
+						</table>
+					</section>
+				</section>
+				</section>
+				<section>
+					<section><h1>Law of excluded middle</h1></section>
+					<section>
+						<h2>Law of excluded middle</h2>
+						<ul>
+							<li class="fragment">So far, we've "constructed proofs" from <i>hypotheses</i>.</li>
+							<li class="fragment">Constructive proofs cannot be used to prove "$\lnot \lnot P$ implies $P$". </li>
+							<li class="fragment">This requires on an extra axiom called the <i>Law of excluded middle</i>.</li>
+							<li class="fragment">The <i>Law of excluded</i> middle states that 
+								<ul>
+									<li>For any proposition $P$, either $P$ is true or $\lnot P$ is true.</li>
+								</ul>
+							</li>
+							<li class="fragment">Proof by contradiction relies on the <i>Law of excluded middle</i>.</li>
+						</ul>
+						<p>Worksheet: <a href="worksheets/law_of_excluded_middle.lean">law_of_excluded_middle.lean</a></p>
+					</section>
+					<section>
+						<h2>Proof by Contradiction</h2>
+						<ul>
+							<li>Tactics that use the law of excluded middle:
+								<ul>
+									<li>push_neg</li>
+									<li>by_cases</li>
+									<li>by_contradiction</li>
+								</ul>
+							</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Cheat Sheet</h2>
+						<table style="float:left">
+							<tr>
+								<th>Purpose</th>
+								<th>Tactic</th>
+							</tr>
+							<tr>
+								<td>Closing goal</td>
+								<td>exact</td>
+							</tr>
+							<tr>
+								<td>Simplify negations</td>
+								<td>push_neg</td>
+							</tr>
+							<tr>
+								<td>Proof by contradiction</td>
+								<td>by_contradiction</td>
+							</tr>
+							<tr>
+								<td>LEM</td>
+								<td>by_cases</td>
+							</tr>
+						</table>
+						<table style="float:right">
+							<tr>
+								<th></th>
+								<th>Hypothesis</th>
+								<th>Target</th>
+							</tr>
+							<tr>
+								<td>Implication</td>
+								<td>apply</td>
+								<td>intro</td>
+							</tr>
+							<tr>
+								<td>Negation</td>
+								<td>apply</td>
+								<td>intro</td>
+							</tr>
+							<tr>
+								<td>And</td>
+								<td>cases</td>
+								<td>split</td>
+							</tr>
+							<tr>
+								<td>Or</td>
+								<td>cases</td>
+								<td>left/right</td>
+							</tr>
+						</table>
+					</section>
+				</section>
+				<section>
+					<h2>Learning resources</h2>
+						<ul>
+							<li><a href="https://leanprover-community.github.io/learn.html">https://leanprover-community.github.io/learn.html</a></li>
+							<li><a href="https://leanprover.zulipchat.com/">https://leanprover.zulipchat.com/</a></li>
+						</ul>
+				</section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script type="text/javascript" charset="UTF-8" src="plugin/highlight/lean.min.js"></script>
+		<script type="text/javascript"> hljs.initHighlightingOnLoad(); </script>
+		<script src="plugin/math/math.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				fragments: false,
+				hash: true,
+				math: {
+      		mathjax: 'https://cdn.jsdelivr.net/gh/mathjax/mathjax@2.7.8/MathJax.js',
+      		config: 'TeX-AMS_HTML-full',
+      		// pass other options into `MathJax.Hub.Config()`
+      		TeX: { Macros: { RR: "{\\bf R}" } }
+    		},
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath ]
+			});
+			Reveal.configure({ pdfSeparateFragments: false });
+		</script>
+	</body>
+</html>
