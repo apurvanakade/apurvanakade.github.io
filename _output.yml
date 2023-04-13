@@ -8,6 +8,7 @@ bookdown::gitbook:
         <li><a href="mailto:apurva.nakade@northwestern.edu">apurva.nakade@northwestern.edu</a></li>
       after: |
         <li><a href="https://raindrop.io/apurvnakade/math-33312353/sort=-created&perpage=50" target="_blank">Math Bookmarks</a></li>
+        <li><a href="https://apurvanakade.github.io/teaching-portfolio/" target="_blank">Teaching Portfolio</a></li>
         <li><a href="https://github.com/apurvnakade/PDFs/blob/main/CV.pdf" target="_blank">CV</a></li>
       collapse: section
       scroll_highlight: true
