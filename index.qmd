@@ -1,7 +1,7 @@
 ---
 about:
-  template: trestles
-  image: https://apurvanakade.github.io/images/me0.jpg
+  template: solana
+  image: images/me0.jpg
 toc: false
 ---
 
@@ -9,6 +9,4 @@ toc: false
 
 I'm a Senior Lecturer in the Applied Math & Stats department <!-- why is Math singular but Stats plural? --> at Johns Hopkins University. 
 
-I love to learn and am constantly trying to learn something new. My latest interest is math formalization using the Lean theorem prover. I am also deeply interested in the process of learning. Whenever I learn something new, I try to find ways to make the learning process easier for the next reader. 
-
-I have several non-academics interests, all of which I take just as seriously: web design, yoga, meditation, philosophy of mind, reading, writing, dancing, hiking, backpacking.
+This website is under construction.
