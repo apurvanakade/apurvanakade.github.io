@@ -1,0 +1,30 @@
+project:
+  type: website
+
+website:
+  title: "Apurva Nakade"
+  navbar:
+    left:
+      - notes.qmd
+      - CV.qmd
+    
+  # sidebar: 
+  #   style: floating
+  #   search: true
+  #   contents: auto
+  open-graph: true
+  site-url: https://quarto.org
+  repo-url: https://github.com/quarto-dev/quarto-web
+  search:
+    type: overlay
+    location: navbar
+  
+
+format:
+  html:
+    theme:
+      light: cosmo
+      dark: cyborg
+    css: styles.css
+
+output-dir: docs
