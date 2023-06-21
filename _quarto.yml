@@ -6,6 +6,7 @@ website:
   navbar:
     left:
       - notes.qmd
+      - CV.qmd
     right:
       - icon: github
         href: https://github.com/apurvnakade/

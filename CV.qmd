@@ -1,5 +1,174 @@
 ---
-toc: false
+title: CV
+toc: true
 ---
 
-# CV
+Senior Lecturer, Department of Applied Mathematics & Statistics, Johns Hopkins University. 
+
+email: [apurva.nakade@jhu.edu](mailto:apurva.nakade@jhu.edu)
+
+website: [apurvanakade.github.io](https://apurvanakade.github.io/)
+
+
+## Teaching Experience
+
+### Instructor, Northwestern
+
+- Elementary Differential Equations, Spring 2023
+- MENU Linear Algebra and Multivariable Calculus, (Coordinator) 2022-23
+- Introduction to Optimization, Winter, Spring 2022
+- Single Variable Calculus, Fall 2021
+- MENU Linear Algebra and Multivariable Calculus, 2021-22
+- Foundations of Mathematics, Winter 2023
+- Elementary Differential Equations, Spring 2023
+
+### Instructor, UWO
+
+- Algebraic Topology (graduate level), Winter 2021
+- Topology Bootcamp, Fall 2020
+- Discrete Structures for Engineering, Fall 2020
+- Calculus II for Mathematical and Physical Sciences, Winter 2020
+- Calculus I for Mathematical and Physical Sciences, Fall 2019
+- Topics in Category Theory, Fall 2019
+
+### Instructor, JHU
+
+- Honors Single Variable Calculus, Fall 2018, 2017
+- Symmetries & Polynomials, Intersession 2018
+- Hitchhikers Guide to Algebraic Topology, Intersession 2017
+- Differential Equations with Applications, Summer 2017, 2015
+- Online Linear Algebra, Summer 2014
+
+### Academic Co-coordinator, Canada/USA Mathcamp
+
+- Planned the five week academic schedule
+- Part of the mentor hiring committee
+- Invited visiting speakers
+
+### Mentor/Staff, Canada/USA Mathcamp
+
+- Designed and taught a variety of undergraduate-level courses
+- Was residential and academic advisor at camp
+- Part of the mentor hiring committee - Taught a course at Mathcamp 2020
+- Contributed to Lean's surreal numbers math library
+- Contributed to Lean's convex optimization math library
+
+## Projects 
+
+Open Educational Resources Textbook for Linear Algebra
+
+- Added WeBWorK problems to a Linear Algebra PreTeXt OER textbook
+
+Course Design: Introduction to Optimization, UWO
+
+- Restructured the course to include applications and modeling
+- Created course notes in RMarkdown
+- Created Excel worksheet assignments for modeling scenarios
+
+Course Design: Discrete Structures for Engineering, UWO
+
+- Adapted the course for online asynchronous delivery
+- Helped code (in a team) hundreds of problems on WeBWork
+- Made short weekly video lectures to support the course text
+- Maintained an active discussion forum on Piazza
+- Gave a talk about the course design at a conference on E-Assessment in Mathematical Sciences
+
+Course Design: Honors Single Variable Course (IBL), JHU
+
+- Designed and taught a semester long course structured in a flipped classroom format for two semesters
+
+Course Design: Intersession courses, JHU
+
+- Designed and taught a 2-week course titled Symmetries \\& Polynomials introducing Galois theory to non-math majors
+- Designed and taught a 2-week course Hitchhiker's Guide to Algebraic Topology introducing algebraic topology to non-math majors
+
+Course Design: Canada/USA Mathcamp courses
+
+- Designed and taught several week-long math courses to advanced highschool students
+- Course topics: Theorem proving in Lean, Visualizing 3-manifolds, Riemann surfaces, Crash Course on Linear Algebra, Covering Spaces, Cohomology etc.
+
+## Experience 
+
+Postdoctoral Lecturer, Northwestern University, 2019-2021
+
+Postdoctoral Fellow, University of Western Ontario, 2017-2019
+
+Ph.D. in Mathematics, Johns Hopkins University, 2019
+
+Academic Coordinator, Canada/USA Mathcamp, 2013
+
+Mentor, Canada/USA Mathcamp, 2017-2020
+
+M.Sc. in Mathematics, Chennai Mathematical Institute, 2013
+
+Exotic Derivatives Trader, Nomura Capital India Pvt Ltd, 2010
+
+B.Tech. in Computer Science & Engineering, IIT Kanpur, 2010
+
+## Papers
+
+String structures, 2-group bundles, and a categorification of the Freed-Quinn line bundle arXiv:2110.07571, joint with D. Berwick-Evans, E. Cliff, L. Murray, and E. Phillips, 2021
+
+Manifold Calculus and the h-principle, The Journal of Homotopy and Related Structures, 2019
+
+Effect of increasing the energy gap between the two lowest energy states on the mixing time of the Metropolis algorithm (with Somenath Biswas), Information Processing Letters, IPL4801 (2012.08.012), 2012
+
+## Grants & Awards
+
+Open Educational Resources Faculty Grant (joint with Aaron Greicius), NU, 2022
+
+William Kelso Morrill Award for Excellence in Mathematics, JHU, 2019
+<!-- Awarded each year to the math graduate student who best displays love of teaching, love of mathematics, and concern for students -->
+
+Finalist for the KSAS Excellence in Teaching Awards, JHU, 2019
+
+<!-- The award honors the best graduate TAs in the School of Arts and Sciences for the care and concern they take with their subject and their students. -->
+
+Prof. Joel Dean Award for Excellence in Teaching in Mathematics, JHU, 2016
+
+<!-- Annual award to recognize math graduate students who have exhibited extraordinary performance in teaching undergraduates -->
+
+AMS Graduate Student Travel Grant, 2019
+
+<!-- \\$250 travel grant for giving a talk at AMS Sectional Meetings -->
+
+## Mentoring 
+
+Supplementary Instructor for the Causeway Postbaccalaureate Program, NU, 2022
+<!-- 
+5025
+
+Yearlong experience in mathematics that seeks to increase the number of graduate students in the mathematical sciences from historically underrepresented groups -->
+
+Directed Reading Program, UWO, JHU, 2017-2021
+
+- Started DRP at UWO in Fall 2019
+- Organizer and mentor for DRP at JHU and UWO Professional Development
+
+## Professional development
+
+MAA Project NExT Fellow, Brown'20 cohort, 2020
+ <!-- program for new or recent Ph.D.s in the mathematical sciences. -->
+
+Teaching Academy Certification, JHU, 2019
+
+<!-- Program to help prepare for academic careers and to provide assistance in acquiring a foundation for the teaching responsibilities -->
+
+Participated in several workshops by the Center of Teaching & Learning at UWO, 2019-2020
+
+Participated in the MSRI Critical Issues in Mathematics Education Workshop, 2022
+
+Participated in the MAA Modeling Inspiration for Differential Equations Workshop, 2022
+
+Participated in online Mastery Grading Workshop, 2019
+
+Attended the Science of Learning Symposium, JHU, 2014-2018
+
+## Pre-College 
+
+IMO bronze medal, Slovenia, highest scorer from India, 2006
+
+273 rank in the Indian Institute of Technology Joint Entrance Exam
+
+Cleared national astronomy and regional physics and chemistry olympiads
+

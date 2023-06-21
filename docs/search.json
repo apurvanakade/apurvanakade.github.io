@@ -46,7 +46,63 @@
     "href": "CV.html",
     "title": "CV",
     "section": "",
-    "text": "CV"
+    "text": "Senior Lecturer, Department of Applied Mathematics & Statistics, Johns Hopkins University.\nemail: apurva.nakade@jhu.edu\nwebsite: apurvanakade.github.io"
+  },
+  {
+    "objectID": "CV.html#teaching-experience",
+    "href": "CV.html#teaching-experience",
+    "title": "CV",
+    "section": "Teaching Experience",
+    "text": "Teaching Experience\n\nInstructor, Northwestern\n\nElementary Differential Equations, Spring 2023\nMENU Linear Algebra and Multivariable Calculus, (Coordinator) 2022-23\nIntroduction to Optimization, Winter, Spring 2022\nSingle Variable Calculus, Fall 2021\nMENU Linear Algebra and Multivariable Calculus, 2021-22\nFoundations of Mathematics, Winter 2023\nElementary Differential Equations, Spring 2023\n\n\n\nInstructor, UWO\n\nAlgebraic Topology (graduate level), Winter 2021\nTopology Bootcamp, Fall 2020\nDiscrete Structures for Engineering, Fall 2020\nCalculus II for Mathematical and Physical Sciences, Winter 2020\nCalculus I for Mathematical and Physical Sciences, Fall 2019\nTopics in Category Theory, Fall 2019\n\n\n\nInstructor, JHU\n\nHonors Single Variable Calculus, Fall 2018, 2017\nSymmetries & Polynomials, Intersession 2018\nHitchhikers Guide to Algebraic Topology, Intersession 2017\nDifferential Equations with Applications, Summer 2017, 2015\nOnline Linear Algebra, Summer 2014\n\n\n\nAcademic Co-coordinator, Canada/USA Mathcamp\n\nPlanned the five week academic schedule\nPart of the mentor hiring committee\nInvited visiting speakers\n\n\n\nMentor/Staff, Canada/USA Mathcamp\n\nDesigned and taught a variety of undergraduate-level courses\nWas residential and academic advisor at camp\nPart of the mentor hiring committee - Taught a course at Mathcamp 2020\nContributed to Lean’s surreal numbers math library\nContributed to Lean’s convex optimization math library"
+  },
+  {
+    "objectID": "CV.html#projects",
+    "href": "CV.html#projects",
+    "title": "CV",
+    "section": "Projects",
+    "text": "Projects\nOpen Educational Resources Textbook for Linear Algebra\n\nAdded WeBWorK problems to a Linear Algebra PreTeXt OER textbook\n\nCourse Design: Introduction to Optimization, UWO\n\nRestructured the course to include applications and modeling\nCreated course notes in RMarkdown\nCreated Excel worksheet assignments for modeling scenarios\n\nCourse Design: Discrete Structures for Engineering, UWO\n\nAdapted the course for online asynchronous delivery\nHelped code (in a team) hundreds of problems on WeBWork\nMade short weekly video lectures to support the course text\nMaintained an active discussion forum on Piazza\nGave a talk about the course design at a conference on E-Assessment in Mathematical Sciences\n\nCourse Design: Honors Single Variable Course (IBL), JHU\n\nDesigned and taught a semester long course structured in a flipped classroom format for two semesters\n\nCourse Design: Intersession courses, JHU\n\nDesigned and taught a 2-week course titled Symmetries \\& Polynomials introducing Galois theory to non-math majors\nDesigned and taught a 2-week course Hitchhiker’s Guide to Algebraic Topology introducing algebraic topology to non-math majors\n\nCourse Design: Canada/USA Mathcamp courses\n\nDesigned and taught several week-long math courses to advanced highschool students\nCourse topics: Theorem proving in Lean, Visualizing 3-manifolds, Riemann surfaces, Crash Course on Linear Algebra, Covering Spaces, Cohomology etc."
+  },
+  {
+    "objectID": "CV.html#experience",
+    "href": "CV.html#experience",
+    "title": "CV",
+    "section": "Experience",
+    "text": "Experience\nPostdoctoral Lecturer, Northwestern University, 2019-2021\nPostdoctoral Fellow, University of Western Ontario, 2017-2019\nPh.D. in Mathematics, Johns Hopkins University, 2019\nAcademic Coordinator, Canada/USA Mathcamp, 2013\nMentor, Canada/USA Mathcamp, 2017-2020\nM.Sc. in Mathematics, Chennai Mathematical Institute, 2013\nExotic Derivatives Trader, Nomura Capital India Pvt Ltd, 2010\nB.Tech. in Computer Science & Engineering, IIT Kanpur, 2010"
+  },
+  {
+    "objectID": "CV.html#papers",
+    "href": "CV.html#papers",
+    "title": "CV",
+    "section": "Papers",
+    "text": "Papers\nString structures, 2-group bundles, and a categorification of the Freed-Quinn line bundle arXiv:2110.07571, joint with D. Berwick-Evans, E. Cliff, L. Murray, and E. Phillips, 2021\nManifold Calculus and the h-principle, The Journal of Homotopy and Related Structures, 2019\nEffect of increasing the energy gap between the two lowest energy states on the mixing time of the Metropolis algorithm (with Somenath Biswas), Information Processing Letters, IPL4801 (2012.08.012), 2012"
+  },
+  {
+    "objectID": "CV.html#grants-awards",
+    "href": "CV.html#grants-awards",
+    "title": "CV",
+    "section": "Grants & Awards",
+    "text": "Grants & Awards\nOpen Educational Resources Faculty Grant (joint with Aaron Greicius), NU, 2022\nWilliam Kelso Morrill Award for Excellence in Mathematics, JHU, 2019 \nFinalist for the KSAS Excellence in Teaching Awards, JHU, 2019\n\nProf. Joel Dean Award for Excellence in Teaching in Mathematics, JHU, 2016\n\nAMS Graduate Student Travel Grant, 2019"
+  },
+  {
+    "objectID": "CV.html#mentoring",
+    "href": "CV.html#mentoring",
+    "title": "CV",
+    "section": "Mentoring",
+    "text": "Mentoring\nSupplementary Instructor for the Causeway Postbaccalaureate Program, NU, 2022 \nDirected Reading Program, UWO, JHU, 2017-2021\n\nStarted DRP at UWO in Fall 2019\nOrganizer and mentor for DRP at JHU and UWO Professional Development"
+  },
+  {
+    "objectID": "CV.html#professional-development",
+    "href": "CV.html#professional-development",
+    "title": "CV",
+    "section": "Professional development",
+    "text": "Professional development\nMAA Project NExT Fellow, Brown’20 cohort, 2020 \nTeaching Academy Certification, JHU, 2019\n\nParticipated in several workshops by the Center of Teaching & Learning at UWO, 2019-2020\nParticipated in the MSRI Critical Issues in Mathematics Education Workshop, 2022\nParticipated in the MAA Modeling Inspiration for Differential Equations Workshop, 2022\nParticipated in online Mastery Grading Workshop, 2019\nAttended the Science of Learning Symposium, JHU, 2014-2018"
+  },
+  {
+    "objectID": "CV.html#pre-college",
+    "href": "CV.html#pre-college",
+    "title": "CV",
+    "section": "Pre-College",
+    "text": "Pre-College\nIMO bronze medal, Slovenia, highest scorer from India, 2006\n273 rank in the Indian Institute of Technology Joint Entrance Exam\nCleared national astronomy and regional physics and chemistry olympiads"
   },
   {
     "objectID": "index.html",
