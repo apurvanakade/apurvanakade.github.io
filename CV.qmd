@@ -73,7 +73,7 @@ B.Tech. in Computer Science & Engineering, IIT Kanpur, 2010
 
 ## Projects 
 
-Open Educational Resources Textbook for Linear Algebra
+Open Educational Resources Textbook for Linear Algebra, NU
 
 - Added WeBWorK problems to a Linear Algebra PreTeXt OER textbook
 
