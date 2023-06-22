@@ -10,7 +10,25 @@ email: [apurva.nakade@jhu.edu](mailto:apurva.nakade@jhu.edu)
 website: [apurvanakade.github.io](https://apurvanakade.github.io/)
 
 
-## Teaching Experience
+## Experience 
+
+Postdoctoral Lecturer, Northwestern University, 2019-2021
+
+Postdoctoral Fellow, University of Western Ontario, 2017-2019
+
+Ph.D. in Mathematics, Johns Hopkins University, 2019
+
+Academic Coordinator, Canada/USA Mathcamp, 2013
+
+Mentor, Canada/USA Mathcamp, 2017-2020
+
+M.Sc. in Mathematics, Chennai Mathematical Institute, 2013
+
+Exotic Derivatives Trader, Nomura Capital India Pvt Ltd, 2010
+
+B.Tech. in Computer Science & Engineering, IIT Kanpur, 2010
+
+## Teaching
 
 ### Instructor, Northwestern
 
@@ -79,31 +97,13 @@ Course Design: Honors Single Variable Course (IBL), JHU
 
 Course Design: Intersession courses, JHU
 
-- Designed and taught a 2-week course titled Symmetries \\& Polynomials introducing Galois theory to non-math majors
+- Designed and taught a 2-week course titled Symmetries & Polynomials introducing Galois theory to non-math majors
 - Designed and taught a 2-week course Hitchhiker's Guide to Algebraic Topology introducing algebraic topology to non-math majors
 
 Course Design: Canada/USA Mathcamp courses
 
 - Designed and taught several week-long math courses to advanced highschool students
 - Course topics: Theorem proving in Lean, Visualizing 3-manifolds, Riemann surfaces, Crash Course on Linear Algebra, Covering Spaces, Cohomology etc.
-
-## Experience 
-
-Postdoctoral Lecturer, Northwestern University, 2019-2021
-
-Postdoctoral Fellow, University of Western Ontario, 2017-2019
-
-Ph.D. in Mathematics, Johns Hopkins University, 2019
-
-Academic Coordinator, Canada/USA Mathcamp, 2013
-
-Mentor, Canada/USA Mathcamp, 2017-2020
-
-M.Sc. in Mathematics, Chennai Mathematical Institute, 2013
-
-Exotic Derivatives Trader, Nomura Capital India Pvt Ltd, 2010
-
-B.Tech. in Computer Science & Engineering, IIT Kanpur, 2010
 
 ## Papers
 
@@ -130,7 +130,7 @@ Prof. Joel Dean Award for Excellence in Teaching in Mathematics, JHU, 2016
 
 AMS Graduate Student Travel Grant, 2019
 
-<!-- \\$250 travel grant for giving a talk at AMS Sectional Meetings -->
+<!-- $250 travel grant for giving a talk at AMS Sectional Meetings -->
 
 ## Mentoring 
 
@@ -145,7 +145,7 @@ Directed Reading Program, UWO, JHU, 2017-2021
 - Started DRP at UWO in Fall 2019
 - Organizer and mentor for DRP at JHU and UWO Professional Development
 
-## Professional development
+## Professional Development
 
 MAA Project NExT Fellow, Brown'20 cohort, 2020
  <!-- program for new or recent Ph.D.s in the mathematical sciences. -->
@@ -163,12 +163,138 @@ Participated in the MAA Modeling Inspiration for Differential Equations Workshop
 Participated in online Mastery Grading Workshop, 2019
 
 Attended the Science of Learning Symposium, JHU, 2014-2018
+<!-- 
+## Talks
 
-## Pre-College 
+ & *Discrete Chern--Simmons via 2-group bundles on elliptic
+curves* & 2020\
+& CMS Session on Homotopy Theory\
+\
+& [*What is a
+Spectrum?*](https://drive.google.com/file/d/16zRKLkBl4skQ0UNKRXfM7d51qWnBLwGF/view)
+& 2020\
+& University of Western Ontario, Basic Notions Seminar\
+\
+&*Manifold calculus and the $h$-principle*
 
-IMO bronze medal, Slovenia, highest scorer from India, 2006
+-   University of Regina, Geometry & Topology Seminar, 2019
 
-273 rank in the Indian Institute of Technology Joint Entrance Exam
+-   University of Western Ontario, Geometry & Topology Seminar, 2019
 
-Cleared national astronomy and regional physics and chemistry olympiads
+-   University of Rochester, Topology Seminar, 2019
 
+-   Workshop on Functor Calculus, Ohio State University, 2019
+
+-   Spaces of Embeddings, BIRS, Banff, 2019
+
+-   AMS Special Session in Homotopy Theory, UC Riverside, 2017
+
+& 2017-19\
+&[*Weiss fibration
+sequence*](http://math.mit.edu/conferences/talbot/index.php?year=2019&sub=talks)
+& 2019\
+& MIT Talbot Workshop\
+\
+&*Constructing a Homotopy Type For Triply-Graded Link Homology* & 2019\
+& AMS Sectional Meeting, University of Hawaii\
+\
+& *Homotopy colimits and limits* & 2017\
+& European Autumn School in Topology\
+\ -->
+
+## Conference Attended 
+
+[United States Conference on Teaching Statistics](https://www.causeweb.org/cause/uscots/uscots23), 2023
+
+[MSRI CIME Workshop](https://www.msri.org/workshops/1028), 2022 
+
+[Project NExT](https://www.maa.org/programs-and-communities/professional-development/project-next) at MAA Mathfest, Online, 2021
+
+[Lean for the curious mathematician](https://leanprover-community.github.io/lftcm2020/), 2020
+
+Spaces of Embeddings, BIRS, Banff, 2019 
+
+MSRI Summer School, Cortona, Italy, 2019 
+
+MRC Workshop, Providence RI, 2019 
+
+MIT Talbot Workshop, Austin TX, 2019 
+
+Workshop on Functor Calculus, Ohio State University, 2019 
+
+AMS Sectional Meeting, University of Hawaii, 2019 
+
+Arizona Winter School, Arizona State University, 2019 
+
+Joint Mathematical Meetings, Baltimore, 2019 
+
+Symplectic Geometry and Homotopy Theory, UCLA, 2018
+
+MSRI Summer School, Fields Institute, Toronto, 2018
+
+Graduate Student Conference, Temple University, 2018
+
+AMS Sectional Meeting, UC Riverside, 2017
+
+European Autumn School in Topology, Netherlands, 2017
+
+Topology Festival, Cornell University, 2017
+
+Georgia International Topology Conference, University of Georgia, 2017
+
+Alpine Algebraic \& Applied Topology Conference, Switzerland, 2016 
+
+WCATSS, University of Oregon, Eugene, 2016 
+
+GSTSC, Indiana University, Bloomington, 2016 
+
+Mid-Atlantic Topology Conference, Johns Hopkins University, 2016 
+
+Midwest Topology Seminar, Northwestern University, 2016 
+
+Geometry and Topology Conference, Lehigh University, 2015
+
+Mid-Atlantic Topology Conference, University of Virginia, 2015  
+
+Midwest Topology Seminar, University of Illinois Chicago, 2015 
+
+Midwest Topology Seminar, Northwestern University, 2015
+
+Modular invariants in Topology and Analysis, Regensburg, 2015 
+
+WCATSS on Field theories, UBC, 2015 
+
+Introductory Workshop on Algebraic Topology, MSRI, 2015
+
+Joint Mathematical Meetings, Baltimore, 2015
+
+Classification of Manifolds, NEHU, 2013
+
+H-principle, Chennai Mathematical Institute, 2012
+
+Groups and geometries, ISI, Bangalore, 2012
+
+String Topology, Vivekananda University, 2012
+
+Kervaire Invariant One, ISI, Kolkata, 2012
+
+Number Theory workshop, Tezpur University, 2011
+
+Lie algebras and their representations, CMI, 2011
+
+Nurture camp, Institute of Mathematical Sciences, 2007
+  
+[IMO](https://www.imo-official.org/participant_r.aspx?id=8956), Slovenia, 2006 
+<!-- (bronze medal) highest scorer from India,  -->
+
+IMOTC, HBCSC, 2003-2006
+
+<!-- 273 rank at Indian Institutes of Technology (IITs), 2006 -->
+
+<!-- Elegant solution award at IMO training camp -->
+
+<!-- Cleared national astronomy and regional physics and chemistry olympiads -->
+
+<!-- National Talent Search Examination, (NTSE) scholarship  -->
+
+Kishore Vaigyanik Protsahan Yojana (KVPY), 2005

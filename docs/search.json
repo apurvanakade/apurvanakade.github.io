@@ -49,25 +49,25 @@
     "text": "Senior Lecturer, Department of Applied Mathematics & Statistics, Johns Hopkins University.\nemail: apurva.nakade@jhu.edu\nwebsite: apurvanakade.github.io"
   },
   {
-    "objectID": "CV.html#teaching-experience",
-    "href": "CV.html#teaching-experience",
+    "objectID": "CV.html#experience",
+    "href": "CV.html#experience",
     "title": "CV",
-    "section": "Teaching Experience",
-    "text": "Teaching Experience\n\nInstructor, Northwestern\n\nElementary Differential Equations, Spring 2023\nMENU Linear Algebra and Multivariable Calculus, (Coordinator) 2022-23\nIntroduction to Optimization, Winter, Spring 2022\nSingle Variable Calculus, Fall 2021\nMENU Linear Algebra and Multivariable Calculus, 2021-22\nFoundations of Mathematics, Winter 2023\nElementary Differential Equations, Spring 2023\n\n\n\nInstructor, UWO\n\nAlgebraic Topology (graduate level), Winter 2021\nTopology Bootcamp, Fall 2020\nDiscrete Structures for Engineering, Fall 2020\nCalculus II for Mathematical and Physical Sciences, Winter 2020\nCalculus I for Mathematical and Physical Sciences, Fall 2019\nTopics in Category Theory, Fall 2019\n\n\n\nInstructor, JHU\n\nHonors Single Variable Calculus, Fall 2018, 2017\nSymmetries & Polynomials, Intersession 2018\nHitchhikers Guide to Algebraic Topology, Intersession 2017\nDifferential Equations with Applications, Summer 2017, 2015\nOnline Linear Algebra, Summer 2014\n\n\n\nAcademic Co-coordinator, Canada/USA Mathcamp\n\nPlanned the five week academic schedule\nPart of the mentor hiring committee\nInvited visiting speakers\n\n\n\nMentor/Staff, Canada/USA Mathcamp\n\nDesigned and taught a variety of undergraduate-level courses\nWas residential and academic advisor at camp\nPart of the mentor hiring committee - Taught a course at Mathcamp 2020\nContributed to Lean’s surreal numbers math library\nContributed to Lean’s convex optimization math library"
+    "section": "Experience",
+    "text": "Experience\nPostdoctoral Lecturer, Northwestern University, 2019-2021\nPostdoctoral Fellow, University of Western Ontario, 2017-2019\nPh.D. in Mathematics, Johns Hopkins University, 2019\nAcademic Coordinator, Canada/USA Mathcamp, 2013\nMentor, Canada/USA Mathcamp, 2017-2020\nM.Sc. in Mathematics, Chennai Mathematical Institute, 2013\nExotic Derivatives Trader, Nomura Capital India Pvt Ltd, 2010\nB.Tech. in Computer Science & Engineering, IIT Kanpur, 2010"
+  },
+  {
+    "objectID": "CV.html#teaching",
+    "href": "CV.html#teaching",
+    "title": "CV",
+    "section": "Teaching",
+    "text": "Teaching\n\nInstructor, Northwestern\n\nElementary Differential Equations, Spring 2023\nMENU Linear Algebra and Multivariable Calculus, (Coordinator) 2022-23\nIntroduction to Optimization, Winter, Spring 2022\nSingle Variable Calculus, Fall 2021\nMENU Linear Algebra and Multivariable Calculus, 2021-22\nFoundations of Mathematics, Winter 2023\nElementary Differential Equations, Spring 2023\n\n\n\nInstructor, UWO\n\nAlgebraic Topology (graduate level), Winter 2021\nTopology Bootcamp, Fall 2020\nDiscrete Structures for Engineering, Fall 2020\nCalculus II for Mathematical and Physical Sciences, Winter 2020\nCalculus I for Mathematical and Physical Sciences, Fall 2019\nTopics in Category Theory, Fall 2019\n\n\n\nInstructor, JHU\n\nHonors Single Variable Calculus, Fall 2018, 2017\nSymmetries & Polynomials, Intersession 2018\nHitchhikers Guide to Algebraic Topology, Intersession 2017\nDifferential Equations with Applications, Summer 2017, 2015\nOnline Linear Algebra, Summer 2014\n\n\n\nAcademic Co-coordinator, Canada/USA Mathcamp\n\nPlanned the five week academic schedule\nPart of the mentor hiring committee\nInvited visiting speakers\n\n\n\nMentor/Staff, Canada/USA Mathcamp\n\nDesigned and taught a variety of undergraduate-level courses\nWas residential and academic advisor at camp\nPart of the mentor hiring committee - Taught a course at Mathcamp 2020\nContributed to Lean’s surreal numbers math library\nContributed to Lean’s convex optimization math library"
   },
   {
     "objectID": "CV.html#projects",
     "href": "CV.html#projects",
     "title": "CV",
     "section": "Projects",
-    "text": "Projects\nOpen Educational Resources Textbook for Linear Algebra\n\nAdded WeBWorK problems to a Linear Algebra PreTeXt OER textbook\n\nCourse Design: Introduction to Optimization, UWO\n\nRestructured the course to include applications and modeling\nCreated course notes in RMarkdown\nCreated Excel worksheet assignments for modeling scenarios\n\nCourse Design: Discrete Structures for Engineering, UWO\n\nAdapted the course for online asynchronous delivery\nHelped code (in a team) hundreds of problems on WeBWork\nMade short weekly video lectures to support the course text\nMaintained an active discussion forum on Piazza\nGave a talk about the course design at a conference on E-Assessment in Mathematical Sciences\n\nCourse Design: Honors Single Variable Course (IBL), JHU\n\nDesigned and taught a semester long course structured in a flipped classroom format for two semesters\n\nCourse Design: Intersession courses, JHU\n\nDesigned and taught a 2-week course titled Symmetries \\& Polynomials introducing Galois theory to non-math majors\nDesigned and taught a 2-week course Hitchhiker’s Guide to Algebraic Topology introducing algebraic topology to non-math majors\n\nCourse Design: Canada/USA Mathcamp courses\n\nDesigned and taught several week-long math courses to advanced highschool students\nCourse topics: Theorem proving in Lean, Visualizing 3-manifolds, Riemann surfaces, Crash Course on Linear Algebra, Covering Spaces, Cohomology etc."
-  },
-  {
-    "objectID": "CV.html#experience",
-    "href": "CV.html#experience",
-    "title": "CV",
-    "section": "Experience",
-    "text": "Experience\nPostdoctoral Lecturer, Northwestern University, 2019-2021\nPostdoctoral Fellow, University of Western Ontario, 2017-2019\nPh.D. in Mathematics, Johns Hopkins University, 2019\nAcademic Coordinator, Canada/USA Mathcamp, 2013\nMentor, Canada/USA Mathcamp, 2017-2020\nM.Sc. in Mathematics, Chennai Mathematical Institute, 2013\nExotic Derivatives Trader, Nomura Capital India Pvt Ltd, 2010\nB.Tech. in Computer Science & Engineering, IIT Kanpur, 2010"
+    "text": "Projects\nOpen Educational Resources Textbook for Linear Algebra\n\nAdded WeBWorK problems to a Linear Algebra PreTeXt OER textbook\n\nCourse Design: Introduction to Optimization, UWO\n\nRestructured the course to include applications and modeling\nCreated course notes in RMarkdown\nCreated Excel worksheet assignments for modeling scenarios\n\nCourse Design: Discrete Structures for Engineering, UWO\n\nAdapted the course for online asynchronous delivery\nHelped code (in a team) hundreds of problems on WeBWork\nMade short weekly video lectures to support the course text\nMaintained an active discussion forum on Piazza\nGave a talk about the course design at a conference on E-Assessment in Mathematical Sciences\n\nCourse Design: Honors Single Variable Course (IBL), JHU\n\nDesigned and taught a semester long course structured in a flipped classroom format for two semesters\n\nCourse Design: Intersession courses, JHU\n\nDesigned and taught a 2-week course titled Symmetries & Polynomials introducing Galois theory to non-math majors\nDesigned and taught a 2-week course Hitchhiker’s Guide to Algebraic Topology introducing algebraic topology to non-math majors\n\nCourse Design: Canada/USA Mathcamp courses\n\nDesigned and taught several week-long math courses to advanced highschool students\nCourse topics: Theorem proving in Lean, Visualizing 3-manifolds, Riemann surfaces, Crash Course on Linear Algebra, Covering Spaces, Cohomology etc."
   },
   {
     "objectID": "CV.html#papers",
@@ -94,15 +94,15 @@
     "objectID": "CV.html#professional-development",
     "href": "CV.html#professional-development",
     "title": "CV",
-    "section": "Professional development",
-    "text": "Professional development\nMAA Project NExT Fellow, Brown’20 cohort, 2020 \nTeaching Academy Certification, JHU, 2019\n\nParticipated in several workshops by the Center of Teaching & Learning at UWO, 2019-2020\nParticipated in the MSRI Critical Issues in Mathematics Education Workshop, 2022\nParticipated in the MAA Modeling Inspiration for Differential Equations Workshop, 2022\nParticipated in online Mastery Grading Workshop, 2019\nAttended the Science of Learning Symposium, JHU, 2014-2018"
+    "section": "Professional Development",
+    "text": "Professional Development\nMAA Project NExT Fellow, Brown’20 cohort, 2020 \nTeaching Academy Certification, JHU, 2019\n\nParticipated in several workshops by the Center of Teaching & Learning at UWO, 2019-2020\nParticipated in the MSRI Critical Issues in Mathematics Education Workshop, 2022\nParticipated in the MAA Modeling Inspiration for Differential Equations Workshop, 2022\nParticipated in online Mastery Grading Workshop, 2019\nAttended the Science of Learning Symposium, JHU, 2014-2018"
   },
   {
-    "objectID": "CV.html#pre-college",
-    "href": "CV.html#pre-college",
+    "objectID": "CV.html#conference-attended",
+    "href": "CV.html#conference-attended",
     "title": "CV",
-    "section": "Pre-College",
-    "text": "Pre-College\nIMO bronze medal, Slovenia, highest scorer from India, 2006\n273 rank in the Indian Institute of Technology Joint Entrance Exam\nCleared national astronomy and regional physics and chemistry olympiads"
+    "section": "Conference Attended",
+    "text": "Conference Attended\nUnited States Conference on Teaching Statistics, 2023\nMSRI CIME Workshop, 2022\nProject NExT at MAA Mathfest, Online, 2021\nLean for the curious mathematician, 2020\nSpaces of Embeddings, BIRS, Banff, 2019\nMSRI Summer School, Cortona, Italy, 2019\nMRC Workshop, Providence RI, 2019\nMIT Talbot Workshop, Austin TX, 2019\nWorkshop on Functor Calculus, Ohio State University, 2019\nAMS Sectional Meeting, University of Hawaii, 2019\nArizona Winter School, Arizona State University, 2019\nJoint Mathematical Meetings, Baltimore, 2019\nSymplectic Geometry and Homotopy Theory, UCLA, 2018\nMSRI Summer School, Fields Institute, Toronto, 2018\nGraduate Student Conference, Temple University, 2018\nAMS Sectional Meeting, UC Riverside, 2017\nEuropean Autumn School in Topology, Netherlands, 2017\nTopology Festival, Cornell University, 2017\nGeorgia International Topology Conference, University of Georgia, 2017\nAlpine Algebraic & Applied Topology Conference, Switzerland, 2016\nWCATSS, University of Oregon, Eugene, 2016\nGSTSC, Indiana University, Bloomington, 2016\nMid-Atlantic Topology Conference, Johns Hopkins University, 2016\nMidwest Topology Seminar, Northwestern University, 2016\nGeometry and Topology Conference, Lehigh University, 2015\nMid-Atlantic Topology Conference, University of Virginia, 2015\nMidwest Topology Seminar, University of Illinois Chicago, 2015\nMidwest Topology Seminar, Northwestern University, 2015\nModular invariants in Topology and Analysis, Regensburg, 2015\nWCATSS on Field theories, UBC, 2015\nIntroductory Workshop on Algebraic Topology, MSRI, 2015\nJoint Mathematical Meetings, Baltimore, 2015\nClassification of Manifolds, NEHU, 2013\nH-principle, Chennai Mathematical Institute, 2012\nGroups and geometries, ISI, Bangalore, 2012\nString Topology, Vivekananda University, 2012\nKervaire Invariant One, ISI, Kolkata, 2012\nNumber Theory workshop, Tezpur University, 2011\nLie algebras and their representations, CMI, 2011\nNurture camp, Institute of Mathematical Sciences, 2007\nIMO, Slovenia, 2006 \nIMOTC, HBCSC, 2003-2006\n\n\n\n\nKishore Vaigyanik Protsahan Yojana (KVPY), 2005"
   },
   {
     "objectID": "index.html",
