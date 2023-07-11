@@ -9,9 +9,6 @@ website:
       - CV.qmd
     right:
       - icon: github
-        href: https://github.com/apurvnakade/
-        aria-label: GitHub
-      - icon: github
         href: https://github.com/apurvanakade/
         aria-label: GitHub
     
