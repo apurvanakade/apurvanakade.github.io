@@ -1,5 +1,5 @@
 ---
-title: "Math Notes"
+title: "Notes"
 toc: true
 ---
 

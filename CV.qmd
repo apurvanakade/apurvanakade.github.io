@@ -12,13 +12,15 @@ website: [apurvanakade.github.io](https://apurvanakade.github.io/)
 
 ## Experience 
 
-Postdoctoral Lecturer, Northwestern University, 2019-2021
+Senior Lecturer, Johns Hopkins University, 2023-Present
 
-Postdoctoral Fellow, University of Western Ontario, 2017-2019
+Postdoctoral Lecturer, Northwestern University, 2021-2023
+
+Postdoctoral Fellow, University of Western Ontario, 2019-2021
 
 Ph.D. in Mathematics, Johns Hopkins University, 2019
 
-Academic Coordinator, Canada/USA Mathcamp, 2013
+Academic Coordinator, Canada/USA Mathcamp, 2019
 
 Mentor, Canada/USA Mathcamp, 2017-2020
 
@@ -29,6 +31,12 @@ Exotic Derivatives Trader, Nomura Capital India Pvt Ltd, 2010
 B.Tech. in Computer Science & Engineering, IIT Kanpur, 2010
 
 ## Teaching
+
+[Teaching Evaluations](https://github.com/apurvanakade/PDFs/tree/main/teaching%20evaluations)
+
+### Instructor, JHU AMS
+
+- Discrete Math, Fall 2023
 
 ### Instructor, Northwestern
 
