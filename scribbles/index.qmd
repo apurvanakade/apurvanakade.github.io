@@ -2,6 +2,7 @@
 title: Scribbles
 subtitle: Repository of my thoughts.
 listing:
+  fields: [date, title, description, categories, author]
   sort: "date desc"
   contents: "posts/*.qmd"
   sort-ui: false
