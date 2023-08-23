@@ -1,6 +1,5 @@
 ---
-title: History of Math Resources
-subtitle: Transforming Instruction In Undergraduate Mathematics Via Primary Historical Sources (TRIUMPHS)
+title: History of math resources
 categories:
   - resources
   - history-of-math
@@ -16,6 +15,6 @@ I was pleasantly surprised to come across the following resources for learning m
 )
 - [https://digitalcommons.ursinus.edu/triumphs/](https://digitalcommons.ursinus.edu/triumphs/)
 
-Apparently, these resources are part of an NSF-funded project known as [TRIUMPHS](https://blogs.ursinus.edu/triumphs/).  I hope I find the time to read through with these materials.
+Apparently, these resources are part of an NSF-funded project *Transforming Instruction In Undergraduate Mathematics Via Primary Historical Sources* [TRIUMPHS](https://blogs.ursinus.edu/triumphs/).  I hope I find the time to read through with these materials.
 
 [^1]: [Who Gave You the Epsilon? Cauchy and the Origins of Rigorous Calculus Judith V. Grabiner](https://www.jstor.org/stable/2975545)

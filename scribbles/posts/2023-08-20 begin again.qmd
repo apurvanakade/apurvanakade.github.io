@@ -1,6 +1,5 @@
 ---
-title: Begin Again
-subtitle: Starting to write again
+title: Begin again
 categories:
   - journal
 author: Apurva Nakade

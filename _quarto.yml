@@ -12,7 +12,8 @@ website:
       - icon: github
         href: https://github.com/apurvanakade/
         aria-label: GitHub
-    
+      - icon: rss
+        href: scribbles/index.xml
   # sidebar: 
   #   style: floating
   #   search: true

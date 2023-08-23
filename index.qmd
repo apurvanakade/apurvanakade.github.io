@@ -10,7 +10,10 @@ toc: false
 I'm a Senior Lecturer in the Applied Math & Stats department <!-- why is Math singular but Stats plural? --> at Johns Hopkins University. 
 Currently, I'm teaching [EN.553.171 Discrete Mathematics](https://jhu.instructure.com/courses/48284).
 
-I dedicate most of my mental energy to improving math education in my courses and more broadly.
-My academic interests and experience span a wide range in Math, CS, and Math Education. Lately, I've gotten very interested in the field of math formalization using the Lean theorem prover. I thoroughly enjoy discussing all these topics. Whether you're a student, mathematician, or educator, please feel free to [reach out to me](mailto:apurva.nakade@jhu.edu) without hesitation.
+I invest the majority of my mental energy in seeking ways to enhance math education, both within my courses and on a broader scale.
+My academic interests and experience span a wide range in Math, CS, and Math Education. 
+Lately, I've gotten very interested in the field of math formalization using the [Lean theorem prover](https://leanprover-community.github.io/). 
+I thoroughly enjoy discussing all these topics. 
+Whether you're a student, mathematician, or educator, please feel free to [reach out to me](mailto:apurva.nakade@jhu.edu) without hesitation.
 
 

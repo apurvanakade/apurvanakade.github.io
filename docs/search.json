@@ -107,36 +107,43 @@
   {
     "objectID": "scribbles/posts/2023-08-21 history of math.html",
     "href": "scribbles/posts/2023-08-21 history of math.html",
-    "title": "History of Math Resources",
+    "title": "History of math resources",
     "section": "",
-    "text": "I’ve always been fascinated by the history of mathematics. Some of the classic and dramatic discoveries I read a kid were those of non-Euclidean geometry, Galois theory, the proof of Fermat’s last theorem, as well as Cantor and Gödel’s breakthroughs in logic. However, some of the more commonplace achievements, such as the invention of calculus by Newton and its subsequent formalization a century later through \\(\\epsilon \\delta\\) proofs, also possess a very intriguing narrative that involves not only mathematicians but also philosophers and theologians1.\nI was pleasantly surprised to come across the following resources for learning mathematical concepts through historical sources:\nApparently, these resources are part of an NSF-funded project known as TRIUMPHS. I hope I find the time to read through with these materials."
+    "text": "I’ve always been fascinated by the history of mathematics. Some of the classic and dramatic discoveries I read a kid were those of non-Euclidean geometry, Galois theory, the proof of Fermat’s last theorem, as well as Cantor and Gödel’s breakthroughs in logic. However, some of the more commonplace achievements, such as the invention of calculus by Newton and its subsequent formalization a century later through \\(\\epsilon \\delta\\) proofs, also possess a very intriguing narrative that involves not only mathematicians but also philosophers and theologians1.\nI was pleasantly surprised to come across the following resources for learning mathematical concepts through historical sources:\nApparently, these resources are part of an NSF-funded project Transforming Instruction In Undergraduate Mathematics Via Primary Historical Sources TRIUMPHS. I hope I find the time to read through with these materials."
   },
   {
     "objectID": "scribbles/posts/2023-08-21 history of math.html#footnotes",
     "href": "scribbles/posts/2023-08-21 history of math.html#footnotes",
-    "title": "History of Math Resources",
+    "title": "History of math resources",
     "section": "Footnotes",
     "text": "Footnotes\n\n\nWho Gave You the Epsilon? Cauchy and the Origins of Rigorous Calculus Judith V. Grabiner↩︎"
   },
   {
     "objectID": "scribbles/posts/2023-08-20 begin again.html",
     "href": "scribbles/posts/2023-08-20 begin again.html",
-    "title": "Begin Again",
+    "title": "Begin again",
     "section": "",
     "text": "I’ve been blogging for as long as I can remember, starting from the early days of Blogger, Wordpress, and Tumblr, to the newer self-hosted realms of Github, Jekyll, and Hugo. Now that I’m entering a new phase of my life at JHU, here I am once again. I plan to write about the topics that currently occupy my thoughts: math, teaching learning, Lean, programming, philosophy of mind, books, movies, and more…\nFor me, writing serves as a way to clarify my thoughts while staying honest and consistent. As the wise Feynman once said “The first principle is not to fool yourself – and you are the easiest person to fool.” Expressing your thoughts and putting them out in the world (for nobody to read) is the first step towards that.\nThe title of this post is a meditation prompt by Sam Harris. I’m serious about practicing meditation and mindfulness, but regrettably, not very good at it. Whenever I catch myself doing something I would rather not (like procrastinating writing), I just remind myself to Begin Again.\nSo here’s to not fooling yourself and to new beginnings."
+  },
+  {
+    "objectID": "scribbles/posts/2023-08-23 starting your day right.html",
+    "href": "scribbles/posts/2023-08-23 starting your day right.html",
+    "title": "Starting your day right",
+    "section": "",
+    "text": "There is a strong correlation between my daily habits and my level of productivity. When I’m at my peak performance, everything feels automated and flowing.\nIn the past month, I relocated to Baltimore. Prior to that, I was frequently on the move, both for work and family commitments. As a result of which, my routine has been completely upended, and my habits are in complete disarray.\nI came across this post on Stoicism (something I greatly admire) which, among other things, talks about starting your day right. This made me realize how I’ve been swept up by the unproductive habit of checking my phone first thing in the morning.\nFortunately, I’ve just finished assembling up my writing desk by a lovely corner window. My coffee is brewing and my trusty iPad is charged. Time to get back to morning journaling again. Hopefully, even when life gets busy and chaotic, I’ll have the stamina and discipline to keep up with this incredibly useful habit.\n\n\n\nMy Writing Desk"
   },
   {
     "objectID": "scribbles/index.html",
     "href": "scribbles/index.html",
     "title": "Scribbles",
     "section": "",
-    "text": "History of Math Resources\n\n\nTransforming Instruction In Undergraduate Mathematics Via Primary Historical Sources (TRIUMPHS)\n\n\n\n\nresources\n\n\nhistory-of-math\n\n\n\n\n\n\n\n\n\n\n\nAug 21, 2023\n\n\nApurva Nakade\n\n\n\n\n\n\n\n\nBegin Again\n\n\nStarting to write again\n\n\n\n\njournal\n\n\n\n\n\n\n\n\n\n\n\nAug 20, 2023\n\n\nApurva Nakade\n\n\n\n\n\n\nNo matching items"
+    "text": "Starting your day right\n\n\n\n\n\n\n\nstoicism\n\n\nhabits\n\n\n\n\n\n\n\n\n\n\n\nAug 23, 2023\n\n\nApurva Nakade\n\n\n\n\n\n\n\n\nHistory of math resources\n\n\n\n\n\n\n\nresources\n\n\nhistory-of-math\n\n\n\n\n\n\n\n\n\n\n\nAug 21, 2023\n\n\nApurva Nakade\n\n\n\n\n\n\n\n\nBegin again\n\n\n\n\n\n\n\njournal\n\n\n\n\n\n\n\n\n\n\n\nAug 20, 2023\n\n\nApurva Nakade\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Hi!",
     "section": "",
-    "text": "Hi!\nI’m a Senior Lecturer in the Applied Math & Stats department  at Johns Hopkins University. Currently, I’m teaching EN.553.171 Discrete Mathematics.\nI dedicate most of my mental energy to improving math education in my courses and more broadly. My academic interests and experience span a wide range in Math, CS, and Math Education. Lately, I’ve gotten very interested in the field of math formalization using the Lean theorem prover. I thoroughly enjoy discussing all these topics. Whether you’re a student, mathematician, or educator, please feel free to reach out to me without hesitation."
+    "text": "Hi!\nI’m a Senior Lecturer in the Applied Math & Stats department  at Johns Hopkins University. Currently, I’m teaching EN.553.171 Discrete Mathematics.\nI invest the majority of my mental energy in seeking ways to enhance math education, both within my courses and on a broader scale. My academic interests and experience span a wide range in Math, CS, and Math Education. Lately, I’ve gotten very interested in the field of math formalization using the Lean theorem prover. I thoroughly enjoy discussing all these topics. Whether you’re a student, mathematician, or educator, please feel free to reach out to me without hesitation."
   }
 ]
