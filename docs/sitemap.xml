@@ -1,31 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://quarto.org/notes.html</loc>
-    <lastmod>2023-08-23T15:09:41.507Z</lastmod>
-  </url>
-  <url>
     <loc>https://quarto.org/CV.html</loc>
-    <lastmod>2023-08-23T15:09:41.879Z</lastmod>
-  </url>
-  <url>
-    <loc>https://quarto.org/scribbles/posts/2023-08-21 history of math.html</loc>
-    <lastmod>2023-08-23T15:09:42.127Z</lastmod>
-  </url>
-  <url>
-    <loc>https://quarto.org/scribbles/posts/2023-08-20 begin again.html</loc>
-    <lastmod>2023-08-23T15:09:42.347Z</lastmod>
+    <lastmod>2023-08-23T20:52:03.273Z</lastmod>
   </url>
   <url>
     <loc>https://quarto.org/scribbles/posts/2023-08-23 starting your day right.html</loc>
-    <lastmod>2023-08-23T15:09:42.571Z</lastmod>
+    <lastmod>2023-08-23T20:52:02.529Z</lastmod>
   </url>
   <url>
-    <loc>https://quarto.org/scribbles/index.html</loc>
-    <lastmod>2023-08-23T15:09:42.895Z</lastmod>
+    <loc>https://quarto.org/scribbles/posts/2023-08-20 begin again.html</loc>
+    <lastmod>2023-08-23T20:52:02.060Z</lastmod>
   </url>
   <url>
     <loc>https://quarto.org/index.html</loc>
-    <lastmod>2023-08-23T15:09:43.115Z</lastmod>
+    <lastmod>2023-08-23T20:52:01.514Z</lastmod>
+  </url>
+  <url>
+    <loc>https://quarto.org/notes.html</loc>
+    <lastmod>2023-08-23T20:52:01.264Z</lastmod>
+  </url>
+  <url>
+    <loc>https://quarto.org/scribbles/posts/2023-08-21 history of math.html</loc>
+    <lastmod>2023-08-23T20:52:01.802Z</lastmod>
+  </url>
+  <url>
+    <loc>https://quarto.org/scribbles/posts/2023-08-23 chandrayaan 3.html</loc>
+    <lastmod>2023-08-23T20:52:02.283Z</lastmod>
+  </url>
+  <url>
+    <loc>https://quarto.org/scribbles/index.html</loc>
+    <lastmod>2023-08-23T20:52:02.904Z</lastmod>
   </url>
 </urlset>
