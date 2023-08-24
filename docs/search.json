@@ -1,5 +1,26 @@
 [
   {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Hi!",
+    "section": "",
+    "text": "Hi!\nI’m a Senior Lecturer in the Applied Math & Stats department  at Johns Hopkins University. Currently, I’m teaching EN.553.171 Discrete Mathematics.\nI invest the majority of my mental energy in seeking ways to enhance math education, both within my courses and on a broader scale. My academic interests and experience span a wide range in Math, CS, and Math Education. Lately, I’ve gotten very interested in the field of math formalization using the Lean theorem prover. I thoroughly enjoy discussing all these topics. Whether you’re a student, mathematician, or educator, please feel free to reach out to me without hesitation."
+  },
+  {
+    "objectID": "scribbles/posts/2023-08-23 starting your day right.html",
+    "href": "scribbles/posts/2023-08-23 starting your day right.html",
+    "title": "Starting your day right",
+    "section": "",
+    "text": "There is a strong correlation between my daily habits and my level of productivity. When I’m at my peak performance, everything feels automated and flowing.\nIn the past month, I relocated to Baltimore. Prior to that, I was frequently on the move, both for work and family commitments. As a result of which, my routine has been completely upended, and my habits are in complete disarray.\nI came across this post on Stoicism (something I greatly admire) which, among other things, talks about starting your day right. This made me realize how I’ve been swept up by the unproductive habit of checking my phone first thing in the morning.\nFortunately, I’ve just finished assembling my writing desk by a lovely corner window. My coffee is brewing and my trusty iPad is charged. Time to get back to morning journaling again. Hopefully, even when life gets busy and chaotic, I’ll have the stamina and discipline to keep up with this incredibly useful habit.\n\n\n\nMy writing desk"
+  },
+  {
+    "objectID": "scribbles/posts/2023-08-23 chandrayaan 3.html",
+    "href": "scribbles/posts/2023-08-23 chandrayaan 3.html",
+    "title": "Chandrayaan-3",
+    "section": "",
+    "text": "India landed Chandrayaan-3 on the Moon! Amazing!!!"
+  },
+  {
     "objectID": "CV.html",
     "href": "CV.html",
     "title": "CV",
@@ -63,27 +84,6 @@
     "text": "Conference Attended\nUnited States Conference on Teaching Statistics, 2023\nMSRI CIME Workshop, 2022\nProject NExT at MAA Mathfest, Online, 2021\nLean for the curious mathematician, 2020\nSpaces of Embeddings, BIRS, Banff, 2019\nMSRI Summer School, Cortona, Italy, 2019\nMRC Workshop, Providence RI, 2019\nMIT Talbot Workshop, Austin TX, 2019\nWorkshop on Functor Calculus, Ohio State University, 2019\nAMS Sectional Meeting, University of Hawaii, 2019\nArizona Winter School, Arizona State University, 2019\nJoint Mathematical Meetings, Baltimore, 2019\nSymplectic Geometry and Homotopy Theory, UCLA, 2018\nMSRI Summer School, Fields Institute, Toronto, 2018\nGraduate Student Conference, Temple University, 2018\nAMS Sectional Meeting, UC Riverside, 2017\nEuropean Autumn School in Topology, Netherlands, 2017\nTopology Festival, Cornell University, 2017\nGeorgia International Topology Conference, University of Georgia, 2017\nAlpine Algebraic & Applied Topology Conference, Switzerland, 2016\nWCATSS, University of Oregon, Eugene, 2016\nGSTSC, Indiana University, Bloomington, 2016\nMid-Atlantic Topology Conference, Johns Hopkins University, 2016\nMidwest Topology Seminar, Northwestern University, 2016\nGeometry and Topology Conference, Lehigh University, 2015\nMid-Atlantic Topology Conference, University of Virginia, 2015\nMidwest Topology Seminar, University of Illinois Chicago, 2015\nMidwest Topology Seminar, Northwestern University, 2015\nModular invariants in Topology and Analysis, Regensburg, 2015\nWCATSS on Field theories, UBC, 2015\nIntroductory Workshop on Algebraic Topology, MSRI, 2015\nJoint Mathematical Meetings, Baltimore, 2015\nClassification of Manifolds, NEHU, 2013\nH-principle, Chennai Mathematical Institute, 2012\nGroups and geometries, ISI, Bangalore, 2012\nString Topology, Vivekananda University, 2012\nKervaire Invariant One, ISI, Kolkata, 2012\nNumber Theory workshop, Tezpur University, 2011\nLie algebras and their representations, CMI, 2011\nNurture camp, Institute of Mathematical Sciences, 2007\nIMO, Slovenia, 2006 \nIMOTC, HBCSC, 2003-2006\n\n\n\n\nKishore Vaigyanik Protsahan Yojana (KVPY), 2005"
   },
   {
-    "objectID": "scribbles/posts/2023-08-23 starting your day right.html",
-    "href": "scribbles/posts/2023-08-23 starting your day right.html",
-    "title": "Starting your day right",
-    "section": "",
-    "text": "There is a strong correlation between my daily habits and my level of productivity. When I’m at my peak performance, everything feels automated and flowing.\nIn the past month, I relocated to Baltimore. Prior to that, I was frequently on the move, both for work and family commitments. As a result of which, my routine has been completely upended, and my habits are in complete disarray.\nI came across this post on Stoicism (something I greatly admire) which, among other things, talks about starting your day right. This made me realize how I’ve been swept up by the unproductive habit of checking my phone first thing in the morning.\nFortunately, I’ve just finished assembling my writing desk by a lovely corner window. My coffee is brewing and my trusty iPad is charged. Time to get back to morning journaling again. Hopefully, even when life gets busy and chaotic, I’ll have the stamina and discipline to keep up with this incredibly useful habit.\n\n\n\nMy writing desk"
-  },
-  {
-    "objectID": "scribbles/posts/2023-08-20 begin again.html",
-    "href": "scribbles/posts/2023-08-20 begin again.html",
-    "title": "Begin again",
-    "section": "",
-    "text": "I’ve been blogging for as long as I can remember, starting from the early days of Blogger, Wordpress, and Tumblr, to the newer self-hosted realms of Github, Jekyll, and Hugo. Now that I’m entering a new phase of my life at JHU, here I am once again. I plan to write about the topics that currently occupy my thoughts: math, teaching learning, Lean, programming, philosophy of mind, books, movies, and more…\nFor me, writing serves as a way to clarify my thoughts while staying honest and consistent. As the wise Feynman once said “The first principle is not to fool yourself – and you are the easiest person to fool.” Expressing your thoughts and putting them out in the world (for nobody to read) is the first step towards that.\nThe title of this post is a meditation prompt by Sam Harris. I’m serious about practicing meditation and mindfulness, but regrettably, not very good at it. Whenever I catch myself doing something I would rather not (like procrastinating writing), I just remind myself to Begin Again.\nSo here’s to not fooling yourself and to new beginnings."
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Hi!",
-    "section": "",
-    "text": "Hi!\nI’m a Senior Lecturer in the Applied Math & Stats department  at Johns Hopkins University. Currently, I’m teaching EN.553.171 Discrete Mathematics.\nI invest the majority of my mental energy in seeking ways to enhance math education, both within my courses and on a broader scale. My academic interests and experience span a wide range in Math, CS, and Math Education. Lately, I’ve gotten very interested in the field of math formalization using the Lean theorem prover. I thoroughly enjoy discussing all these topics. Whether you’re a student, mathematician, or educator, please feel free to reach out to me without hesitation."
-  },
-  {
     "objectID": "notes.html",
     "href": "notes.html",
     "title": "Notes",
@@ -140,11 +140,11 @@
     "text": "Footnotes\n\n\nWho Gave You the Epsilon? Cauchy and the Origins of Rigorous Calculus Judith V. Grabiner↩︎"
   },
   {
-    "objectID": "scribbles/posts/2023-08-23 chandrayaan 3.html",
-    "href": "scribbles/posts/2023-08-23 chandrayaan 3.html",
-    "title": "Chandrayaan-3",
+    "objectID": "scribbles/posts/2023-08-20 begin again.html",
+    "href": "scribbles/posts/2023-08-20 begin again.html",
+    "title": "Begin again",
     "section": "",
-    "text": "India landed Chandrayaan-3 on the Moon! Amazing!!!"
+    "text": "I’ve been blogging for as long as I can remember, starting from the early days of Blogger, Wordpress, and Tumblr, to the newer self-hosted realms of Github, Jekyll, and Hugo. Now that I’m entering a new phase of my life at JHU, here I am once again. I plan to write about the topics that currently occupy my thoughts: math, teaching learning, Lean, programming, philosophy of mind, books, movies, and more…\nFor me, writing serves as a way to clarify my thoughts while staying honest and consistent. As the wise Feynman once said “The first principle is not to fool yourself – and you are the easiest person to fool.” Expressing your thoughts and putting them out in the world (for nobody to read) is the first step towards that.\nThe title of this post is a meditation prompt by Sam Harris. I’m serious about practicing meditation and mindfulness, but regrettably, not very good at it. Whenever I catch myself doing something I would rather not (like procrastinating writing), I just remind myself to Begin Again.\nSo here’s to not fooling yourself and to new beginnings."
   },
   {
     "objectID": "scribbles/index.html",

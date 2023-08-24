@@ -1,7 +1,7 @@
 ---
 about:
   template: solana
-  image: images/me0.jpg
+  image: images/me1.jpg
 toc: false
 ---
 
