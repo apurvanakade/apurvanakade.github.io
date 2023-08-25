@@ -7,6 +7,9 @@ toc: false
 
 # Hi! 
 
+
+How to pronounce my name: *Ap* as in **ap**art, *u* as in m**oo**n, *rva* as in cu**rve**.
+
 I'm a Senior Lecturer in the Applied Math & Stats department <!-- why is Math singular but Stats plural? --> at Johns Hopkins University. 
 Currently, I'm teaching [EN.553.171 Discrete Mathematics](https://jhu.instructure.com/courses/48284).
 
@@ -15,5 +18,3 @@ My academic interests and experience span a wide range in Math, CS, and Math Edu
 Lately, I've gotten very interested in the field of math formalization using the [Lean theorem prover](https://leanprover-community.github.io/). 
 I thoroughly enjoy discussing all these topics. 
 Whether you're a student, mathematician, or educator, please feel free to [reach out to me](mailto:apurva.nakade@jhu.edu) without hesitation.
-
-
