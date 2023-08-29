@@ -2,34 +2,38 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://quarto.org/index.html</loc>
-    <lastmod>2023-08-25T20:12:22.336Z</lastmod>
+    <lastmod>2023-08-29T13:27:47.917Z</lastmod>
   </url>
   <url>
-    <loc>https://quarto.org/scribbles/posts/2023-08-23 starting your day right.html</loc>
-    <lastmod>2023-08-25T20:12:21.776Z</lastmod>
-  </url>
-  <url>
-    <loc>https://quarto.org/scribbles/posts/2023-08-23 chandrayaan 3.html</loc>
-    <lastmod>2023-08-25T20:12:21.328Z</lastmod>
-  </url>
-  <url>
-    <loc>https://quarto.org/CV.html</loc>
-    <lastmod>2023-08-25T20:12:20.900Z</lastmod>
-  </url>
-  <url>
-    <loc>https://quarto.org/notes.html</loc>
-    <lastmod>2023-08-25T20:12:20.540Z</lastmod>
-  </url>
-  <url>
-    <loc>https://quarto.org/scribbles/posts/2023-08-21 history of math.html</loc>
-    <lastmod>2023-08-25T20:12:21.132Z</lastmod>
+    <loc>https://quarto.org/scribbles/posts/2023-08-29 integers.html</loc>
+    <lastmod>2023-08-29T13:27:47.317Z</lastmod>
   </url>
   <url>
     <loc>https://quarto.org/scribbles/posts/2023-08-20 begin again.html</loc>
-    <lastmod>2023-08-25T20:12:21.548Z</lastmod>
+    <lastmod>2023-08-29T13:27:46.881Z</lastmod>
+  </url>
+  <url>
+    <loc>https://quarto.org/scribbles/posts/2023-08-21 history of math.html</loc>
+    <lastmod>2023-08-29T13:27:46.457Z</lastmod>
+  </url>
+  <url>
+    <loc>https://quarto.org/notes.html</loc>
+    <lastmod>2023-08-29T13:27:45.857Z</lastmod>
+  </url>
+  <url>
+    <loc>https://quarto.org/CV.html</loc>
+    <lastmod>2023-08-29T13:27:46.221Z</lastmod>
+  </url>
+  <url>
+    <loc>https://quarto.org/scribbles/posts/2023-08-23 chandrayaan 3.html</loc>
+    <lastmod>2023-08-29T13:27:46.657Z</lastmod>
+  </url>
+  <url>
+    <loc>https://quarto.org/scribbles/posts/2023-08-23 starting your day right.html</loc>
+    <lastmod>2023-08-29T13:27:47.101Z</lastmod>
   </url>
   <url>
     <loc>https://quarto.org/scribbles/index.html</loc>
-    <lastmod>2023-08-25T20:12:22.124Z</lastmod>
+    <lastmod>2023-08-29T13:27:47.709Z</lastmod>
   </url>
 </urlset>

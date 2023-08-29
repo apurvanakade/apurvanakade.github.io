@@ -10,7 +10,26 @@
 <atom:link href="https://quarto.org/scribbles/index.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.3.450</generator>
-<lastBuildDate>Wed, 23 Aug 2023 18:45:49 GMT</lastBuildDate>
+<lastBuildDate>Tue, 29 Aug 2023 13:13:31 GMT</lastBuildDate>
+<item>
+  <title>Etymology of integer</title>
+  <dc:creator>Apurva Nakade</dc:creator>
+  <link>https://quarto.org/scribbles/posts/2023-08-29 integers.html</link>
+  <description><![CDATA[ 
+
+
+
+<p>We use integers so much in math that it never occurred to me before yesterday that this is a weird word with a weirder symbol associated to it. <a href="https://en.wikipedia.org/wiki/Integer#History">Wikipedia</a> explains this very nicely.</p>
+<p>The words <em>integer</em> and <em>entire</em> share the same Latin root: <em>in</em> (“not”) plus <em>tangere</em> (“to touch”). Google says that the first known use of the word integer was in <strong>1571</strong> by <em>Thomas Digges</em> in a book called <em>A Geometrical Practise Named Pantometria</em>. The word origin still doesn’t make complete sense to me but then I don’t know any Latin. The symbol <img src="https://latex.codecogs.com/png.latex?%5Cmathbb%7BZ%7D"> comes from <em>Zahlen</em>, which is German for numbers, and was first used by Hilbert.</p>
+
+
+
+ ]]></description>
+  <category>history-of-math</category>
+  <guid>https://quarto.org/scribbles/posts/2023-08-29 integers.html</guid>
+  <pubDate>Tue, 29 Aug 2023 13:13:31 GMT</pubDate>
+  <media:content url="https://upload.wikimedia.org/wikipedia/commons/c/c1/Latex_integers.svg" medium="image" type="image/svg+xml"/>
+</item>
 <item>
   <title>Chandrayaan-3</title>
   <dc:creator>Apurva Nakade</dc:creator>
@@ -59,7 +78,7 @@
   <pubDate>Wed, 23 Aug 2023 14:00:00 GMT</pubDate>
 </item>
 <item>
-  <title>History of math resources</title>
+  <title>History-of-math resources</title>
   <dc:creator>Apurva Nakade</dc:creator>
   <link>https://quarto.org/scribbles/posts/2023-08-21 history of math.html</link>
   <description><![CDATA[ 
