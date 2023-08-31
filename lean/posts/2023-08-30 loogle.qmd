@@ -1,0 +1,20 @@
+---
+title: Loogle!
+author: Apurva Nakade
+date: 2023-08-31 16:37:51
+categories: 
+  - search
+  - tactic
+  - web
+---
+
+An improved search engine for Lean: 
+
+- [https://loogle.lean-fro.org/](https://loogle.lean-fro.org/)
+- [https://github.com/nomeata/loogle](https://github.com/nomeata/loogle)
+
+I haven't used it yet but it looks promising. 
+I personally don't like the search on [mathlib4_docs](https://leanprover-community.github.io/mathlib4_docs/index.html) and find it very glitchy, slow, and cumbersome. 
+Normally, I just use `grep` in VSCode instead, which is better but still very cumbersome and requires a lot of regex jujitsu.
+Hopefully this search is better and more useful.
+Looking forward to trying it out.

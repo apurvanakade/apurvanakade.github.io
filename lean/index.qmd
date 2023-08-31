@@ -1,0 +1,14 @@
+---
+title: Lean
+listing:
+  fields: [date, title, description, categories, author]
+  sort: "date desc"
+  contents: "posts/*.qmd"
+  sort-ui: false
+  filter-ui: false
+  categories: true
+  feed: true
+page-layout: full
+---
+
+An assortment of interesting resources about Lean and a journal of my Lean adventures.

@@ -1,5 +1,11 @@
 [
   {
+    "listing": "/lean/index.html",
+    "items": [
+      "/lean/posts/2023-08-30 loogle.html"
+    ]
+  },
+  {
     "listing": "/scribbles/index.html",
     "items": [
       "/scribbles/posts/2023-08-29 integers.html",

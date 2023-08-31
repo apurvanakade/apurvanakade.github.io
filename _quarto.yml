@@ -6,6 +6,7 @@ website:
   navbar:
     left:
       - notes.qmd
+      - lean/index.qmd
       - CV.qmd
       - scribbles/index.qmd
     right:
