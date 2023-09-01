@@ -10,7 +10,32 @@
 <atom:link href="https://quarto.org/lean/index.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.3.450</generator>
-<lastBuildDate>Thu, 31 Aug 2023 20:37:51 GMT</lastBuildDate>
+<lastBuildDate>Fri, 01 Sep 2023 01:13:45 GMT</lastBuildDate>
+<item>
+  <title>Short tactics tutorial</title>
+  <dc:creator>Apurva Nakade</dc:creator>
+  <link>https://quarto.org/lean/posts/2023-08-30 tactics.html</link>
+  <description><![CDATA[ 
+
+
+
+<p>I have always wanted to learn tactics writing in Lean. But for whatever reason, none of the tutorials that exist online have been helpful. I suspect that the best way to learn to write tactics to play around and modify the existing ones. I came across this short, 4-page tactics tutorial that looks promising. I’ll give it a go when I get some time.</p>
+<ul>
+<li><a href="https://www.vladasedlacek.cz/en/posts/lean-01-intro">https://www.vladasedlacek.cz/en/posts/lean-01-intro</a></li>
+<li><a href="https://www.vladasedlacek.cz/en/posts/lean-02-demo">https://www.vladasedlacek.cz/en/posts/lean-02-demo</a></li>
+<li><a href="https://www.vladasedlacek.cz/en/posts/lean-03-tactics">https://www.vladasedlacek.cz/en/posts/lean-03-tactics</a></li>
+<li><a href="https://www.vladasedlacek.cz/en/posts/lean-04-linperm">https://www.vladasedlacek.cz/en/posts/lean-04-linperm</a></li>
+</ul>
+
+
+
+ ]]></description>
+  <category>tactics</category>
+  <category>tutorial</category>
+  <category>to-read</category>
+  <guid>https://quarto.org/lean/posts/2023-08-30 tactics.html</guid>
+  <pubDate>Fri, 01 Sep 2023 01:13:45 GMT</pubDate>
+</item>
 <item>
   <title>Loogle!</title>
   <dc:creator>Apurva Nakade</dc:creator>
@@ -30,7 +55,6 @@
 
  ]]></description>
   <category>search</category>
-  <category>tactics</category>
   <category>web</category>
   <guid>https://quarto.org/lean/posts/2023-08-30 loogle.html</guid>
   <pubDate>Thu, 31 Aug 2023 20:37:51 GMT</pubDate>

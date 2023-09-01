@@ -39,7 +39,14 @@
     "href": "lean/index.html",
     "title": "Lean",
     "section": "",
-    "text": "An assortment of interesting resources about Lean and a journal of my Lean adventures.\n\n\n\n\n\n\n\n\n\n\nLoogle!\n\n\n\n\n\n\n\nsearch\n\n\ntactics\n\n\nweb\n\n\n\n\n\n\n\n\n\n\n\nAug 31, 2023\n\n\nApurva Nakade\n\n\n\n\n\n\nNo matching items"
+    "text": "An assortment of interesting resources about Lean and a journal of my Lean adventures.\n\n\n\n\n\n\n\n\n\n\nShort tactics tutorial\n\n\n\n\n\n\n\ntactics\n\n\ntutorial\n\n\nto-read\n\n\n\n\n\n\n\n\n\n\n\nAug 31, 2023\n\n\nApurva Nakade\n\n\n\n\n\n\n\n\nLoogle!\n\n\n\n\n\n\n\nsearch\n\n\nweb\n\n\n\n\n\n\n\n\n\n\n\nAug 31, 2023\n\n\nApurva Nakade\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "lean/posts/2023-08-30 loogle.html",
+    "href": "lean/posts/2023-08-30 loogle.html",
+    "title": "Loogle!",
+    "section": "",
+    "text": "An improved search engine for Lean:\n\nhttps://loogle.lean-fro.org/\nhttps://github.com/nomeata/loogle\n\nI haven’t used it yet but it looks promising. I personally don’t like the search on mathlib4_docs and find it very glitchy, slow, and cumbersome. Normally, I just use grep in VSCode instead, which is better but still very cumbersome and requires a lot of regex jujitsu. Hopefully this search is better and more useful. Looking forward to trying it out."
   },
   {
     "objectID": "notes.html",
@@ -84,11 +91,11 @@
     "text": "Expository notes\nFollowing are some of my personal math notes. The notes have not been proofread and might contain errors.\n\nWhat is a Spectrum?\nh-principles MSRI Summer School\nConnections on Principal Bundles and Classical Electromagnetism\nVector Fields on Spheres\nSteifel Whitney Numbers\nHomotopy of MO\nRepresentation Theory of Symmetric Group\nGeometry of Dirac Operators\nFIOs and Lagrangian Submanifolds\nSymplectic Geometry Course Notes\nFinite Gauge Groups TQFTs\nClassical Lie Groups\nMosher and Tangora Notes"
   },
   {
-    "objectID": "lean/posts/2023-08-30 loogle.html",
-    "href": "lean/posts/2023-08-30 loogle.html",
-    "title": "Loogle!",
+    "objectID": "lean/posts/2023-08-30 tactics.html",
+    "href": "lean/posts/2023-08-30 tactics.html",
+    "title": "Short tactics tutorial",
     "section": "",
-    "text": "An improved search engine for Lean:\n\nhttps://loogle.lean-fro.org/\nhttps://github.com/nomeata/loogle\n\nI haven’t used it yet but it looks promising. I personally don’t like the search on mathlib4_docs and find it very glitchy, slow, and cumbersome. Normally, I just use grep in VSCode instead, which is better but still very cumbersome and requires a lot of regex jujitsu. Hopefully this search is better and more useful. Looking forward to trying it out."
+    "text": "I have always wanted to learn tactics writing in Lean. But for whatever reason, none of the tutorials that exist online have been helpful. I suspect that the best way to learn to write tactics to play around and modify the existing ones. I came across this short, 4-page tactics tutorial that looks promising. I’ll give it a go when I get some time.\n\nhttps://www.vladasedlacek.cz/en/posts/lean-01-intro\nhttps://www.vladasedlacek.cz/en/posts/lean-02-demo\nhttps://www.vladasedlacek.cz/en/posts/lean-03-tactics\nhttps://www.vladasedlacek.cz/en/posts/lean-04-linperm"
   },
   {
     "objectID": "CV.html",

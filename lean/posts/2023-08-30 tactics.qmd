@@ -1,0 +1,20 @@
+---
+title: Short tactics tutorial
+author: Apurva Nakade
+date: 2023-08-31 21:13:45
+categories: 
+  - tactics
+  - tutorial
+  - to-read
+---
+
+I have always wanted to learn tactics writing in Lean. 
+But for whatever reason, none of the tutorials that exist online have been helpful.
+I suspect that the best way to learn to write tactics to play around and modify the existing ones.
+I came across this short, 4-page tactics tutorial that looks promising. 
+I'll give it a go when I get some time.
+
+- [https://www.vladasedlacek.cz/en/posts/lean-01-intro](https://www.vladasedlacek.cz/en/posts/lean-01-intro)
+- [https://www.vladasedlacek.cz/en/posts/lean-02-demo](https://www.vladasedlacek.cz/en/posts/lean-02-demo)
+- [https://www.vladasedlacek.cz/en/posts/lean-03-tactics](https://www.vladasedlacek.cz/en/posts/lean-03-tactics)
+- [https://www.vladasedlacek.cz/en/posts/lean-04-linperm](https://www.vladasedlacek.cz/en/posts/lean-04-linperm)

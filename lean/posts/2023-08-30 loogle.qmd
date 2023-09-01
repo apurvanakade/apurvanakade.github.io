@@ -4,7 +4,6 @@ author: Apurva Nakade
 date: 2023-08-31 16:37:51
 categories: 
   - search
-  - tactics
   - web
 ---
 
