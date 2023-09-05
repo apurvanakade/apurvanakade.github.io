@@ -39,7 +39,7 @@
     "href": "lean/index.html",
     "title": "Lean",
     "section": "",
-    "text": "An assortment of interesting resources about Lean and a journal of my Lean adventures.\n\n\n\n\n\n\n\n\n\n\nShort tactics tutorial\n\n\n\n\n\n\n\ntactics\n\n\ntutorial\n\n\nto-read\n\n\n\n\n\n\n\n\n\n\n\nAug 31, 2023\n\n\nApurva Nakade\n\n\n\n\n\n\n\n\nLoogle!\n\n\n\n\n\n\n\nsearch\n\n\nweb\n\n\n\n\n\n\n\n\n\n\n\nAug 31, 2023\n\n\nApurva Nakade\n\n\n\n\n\n\nNo matching items"
+    "text": "An assortment of interesting resources about Lean and a journal of my Lean adventures.\n\n\n\n\n\n\n\n\n\n\nLeanDojo\n\n\n\n\n\n\n\nML\n\n\nweb\n\n\n\n\n\n\n\n\n\n\n\nSep 4, 2023\n\n\nApurva Nakade\n\n\n\n\n\n\n\n\nShort tactics tutorial\n\n\n\n\n\n\n\ntactics\n\n\ntutorial\n\n\nto-read\n\n\n\n\n\n\n\n\n\n\n\nAug 31, 2023\n\n\nApurva Nakade\n\n\n\n\n\n\n\n\nLoogle!\n\n\n\n\n\n\n\nsearch\n\n\nweb\n\n\n\n\n\n\n\n\n\n\n\nAug 31, 2023\n\n\nApurva Nakade\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "lean/posts/2023-08-30 loogle.html",
@@ -89,6 +89,13 @@
     "title": "Notes",
     "section": "Expository notes",
     "text": "Expository notes\nFollowing are some of my personal math notes. The notes have not been proofread and might contain errors.\n\nWhat is a Spectrum?\nh-principles MSRI Summer School\nConnections on Principal Bundles and Classical Electromagnetism\nVector Fields on Spheres\nSteifel Whitney Numbers\nHomotopy of MO\nRepresentation Theory of Symmetric Group\nGeometry of Dirac Operators\nFIOs and Lagrangian Submanifolds\nSymplectic Geometry Course Notes\nFinite Gauge Groups TQFTs\nClassical Lie Groups\nMosher and Tangora Notes"
+  },
+  {
+    "objectID": "lean/posts/2023-09-04 leandojo.html",
+    "href": "lean/posts/2023-09-04 leandojo.html",
+    "title": "LeanDojo",
+    "section": "",
+    "text": "This was posted a while back on the Lean Zulip:\nLeanDojo\nLeanDojo: Theorem Proving with Retrieval-Augmented Language Models\nAccording to their description, LeanDojo is an open-source Lean playground consisting of toolkits, data, models, and benchmarks. Plus they also provide an LLM-based prover and a chatGPT plugin. All of this looks amazing and something worth learning more about."
   },
   {
     "objectID": "lean/posts/2023-08-30 tactics.html",
