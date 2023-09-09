@@ -3,7 +3,6 @@ title: Etymology of *integer*
 author: Apurva Nakade
 date: 2023-08-29 09:13:31
 categories: history-of-math
-image: https://upload.wikimedia.org/wikipedia/commons/c/c1/Latex_integers.svg
 ---
 
 We use integers so much in math that it never occurred to me before yesterday that this is a weird word with a weirder symbol associated to it. 
