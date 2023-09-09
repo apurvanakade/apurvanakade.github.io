@@ -1,5 +1,5 @@
 ---
-title: Begin again
+title: Begin Again
 categories:
   - journal
 author: Apurva Nakade

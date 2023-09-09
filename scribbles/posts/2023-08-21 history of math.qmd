@@ -1,5 +1,5 @@
 ---
-title: History-of-math resources
+title: History-of-Math Resources
 categories:
   - resources
   - history-of-math
