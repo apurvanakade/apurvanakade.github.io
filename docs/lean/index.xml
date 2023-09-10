@@ -10,7 +10,30 @@
 <atom:link href="https://quarto.org/lean/index.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.3.450</generator>
-<lastBuildDate>Mon, 04 Sep 2023 20:22:19 GMT</lastBuildDate>
+<lastBuildDate>Sun, 10 Sep 2023 02:37:41 GMT</lastBuildDate>
+<item>
+  <title>llmstep and LeanInfer</title>
+  <dc:creator>Apurva Nakade</dc:creator>
+  <link>https://quarto.org/lean/posts/2023-09-09 llm.html</link>
+  <description><![CDATA[ 
+
+
+
+<p>I came across two LLM based tactics for Lean</p>
+<ul>
+<li><a href="https://github.com/wellecks/llmstep">llmstep: [L]LM proofstep suggestions in Lean</a></li>
+<li><a href="https://github.com/lean-dojo/LeanInfer">LeanInfer: Neural Network Inference in Lean 4</a></li>
+</ul>
+<p>They both use <a href="../../lean/posts/2023-09-04 leandojo.html">LeanDojo</a> somehow and I don’t understand the difference between the two. Unfortunately, I do not know enough about LLM and AI to tell if this is actually good or just hot gas.</p>
+
+
+
+ ]]></description>
+  <category>ML</category>
+  <category>tactics</category>
+  <guid>https://quarto.org/lean/posts/2023-09-09 llm.html</guid>
+  <pubDate>Sun, 10 Sep 2023 02:37:41 GMT</pubDate>
+</item>
 <item>
   <title>LeanDojo</title>
   <dc:creator>Apurva Nakade</dc:creator>

@@ -1,110 +1,5 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Hi!",
-    "section": "",
-    "text": "Hi!\nHow to pronounce my name: Ap as in apart, u as in moon, rva as in curve.\nI’m a Senior Lecturer in the Applied Math & Stats department  at Johns Hopkins University. Currently, I’m teaching EN.553.171 Discrete Mathematics.\nI invest the majority of my mental energy in seeking ways to enhance math education, both within my courses and on a broader scale. My academic interests and experience span a wide range in Math, CS, and Math Education. Lately, I’ve gotten very interested in the field of math formalization using the Lean theorem prover. I thoroughly enjoy discussing all these topics. Whether you’re a student, mathematician, or educator, please feel free to reach out to me without hesitation."
-  },
-  {
-    "objectID": "scribbles/posts/2023-08-29 integers.html",
-    "href": "scribbles/posts/2023-08-29 integers.html",
-    "title": "Etymology of integer",
-    "section": "",
-    "text": "We use integers so much in math that it never occurred to me before yesterday that this is a weird word with a weirder symbol associated to it. Wikipedia explains this very nicely.\nThe words integer and entire share the same Latin root: in (“not”) plus tangere (“to touch”). Google says that the first known use of the word integer was in 1571 by Thomas Digges in a book called A Geometrical Practise Named Pantometria. The word origin still doesn’t make complete sense to me but then I don’t know any Latin. The symbol \\(\\mathbb{Z}\\) comes from Zahlen, which is German for numbers, and was first used by Hilbert."
-  },
-  {
-    "objectID": "scribbles/posts/2023-08-20 begin again.html",
-    "href": "scribbles/posts/2023-08-20 begin again.html",
-    "title": "Begin again",
-    "section": "",
-    "text": "I’ve been blogging for as long as I can remember, starting from the early days of Blogger, Wordpress, and Tumblr, to the newer self-hosted realms of Github, Jekyll, and Hugo. Now that I’m entering a new phase of my life at JHU, here I am once again. I plan to write about the topics that currently occupy my thoughts: math, teaching learning, Lean, programming, philosophy of mind, books, movies, and more…\nFor me, writing serves as a way to clarify my thoughts while staying honest and consistent. As the wise Feynman once said “The first principle is not to fool yourself – and you are the easiest person to fool.” Expressing your thoughts and putting them out in the world (for nobody to read) is the first step towards that.\nThe title of this post is a meditation prompt by Sam Harris. I’m serious about practicing meditation and mindfulness, but regrettably, not very good at it. Whenever I catch myself doing something I would rather not (like procrastinating writing), I just remind myself to Begin Again.\nSo here’s to not fooling yourself and to new beginnings."
-  },
-  {
-    "objectID": "scribbles/posts/2023-08-21 history of math.html",
-    "href": "scribbles/posts/2023-08-21 history of math.html",
-    "title": "History-of-math resources",
-    "section": "",
-    "text": "I’ve always been fascinated by the history of mathematics. Some of the classic and dramatic discoveries I read a kid were those of non-Euclidean geometry, Galois theory, the proof of Fermat’s last theorem, as well as Cantor and Gödel’s breakthroughs in logic. However, some of the more commonplace achievements, such as the invention of calculus by Newton and its subsequent formalization a century later through \\(\\epsilon \\delta\\) proofs, also possess a very intriguing narrative that involves not only mathematicians but also philosophers and theologians1.\nI was pleasantly surprised to come across the following resources for learning mathematical concepts through historical sources:\nApparently, these resources are part of an NSF-funded project Transforming Instruction In Undergraduate Mathematics Via Primary Historical Sources TRIUMPHS. I hope I find the time to read through with these materials."
-  },
-  {
-    "objectID": "scribbles/posts/2023-08-21 history of math.html#footnotes",
-    "href": "scribbles/posts/2023-08-21 history of math.html#footnotes",
-    "title": "History-of-math resources",
-    "section": "Footnotes",
-    "text": "Footnotes\n\n\nWho Gave You the Epsilon? Cauchy and the Origins of Rigorous Calculus Judith V. Grabiner↩︎"
-  },
-  {
-    "objectID": "lean/index.html",
-    "href": "lean/index.html",
-    "title": "Lean",
-    "section": "",
-    "text": "An assortment of interesting resources about Lean and a journal of my Lean adventures.\n\n\n\n\n\n\n\n\n\n\nLeanDojo\n\n\n\n\n\n\n\nML\n\n\nweb\n\n\n\n\n\n\n\n\n\n\n\nSep 4, 2023\n\n\nApurva Nakade\n\n\n\n\n\n\n\n\nShort tactics tutorial\n\n\n\n\n\n\n\ntactics\n\n\ntutorial\n\n\nto-read\n\n\n\n\n\n\n\n\n\n\n\nAug 31, 2023\n\n\nApurva Nakade\n\n\n\n\n\n\n\n\nLoogle!\n\n\n\n\n\n\n\nsearch\n\n\nweb\n\n\n\n\n\n\n\n\n\n\n\nAug 31, 2023\n\n\nApurva Nakade\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "lean/posts/2023-08-30 loogle.html",
-    "href": "lean/posts/2023-08-30 loogle.html",
-    "title": "Loogle!",
-    "section": "",
-    "text": "An improved search engine for Lean:\n\nhttps://loogle.lean-fro.org/\nhttps://github.com/nomeata/loogle\n\nI haven’t used it yet but it looks promising. I personally don’t like the search on mathlib4_docs and find it very glitchy, slow, and cumbersome. Normally, I just use grep in VSCode instead, which is better but still very cumbersome and requires a lot of regex jujitsu. Hopefully this search is better and more useful. Looking forward to trying it out."
-  },
-  {
-    "objectID": "notes.html",
-    "href": "notes.html",
-    "title": "Notes",
-    "section": "",
-    "text": "I love to (re)design math courses. Below are notes and problem sets from several of my courses. Most notes are accessible to undergraduate and advanced high-school students."
-  },
-  {
-    "objectID": "notes.html#northwestern",
-    "href": "notes.html#northwestern",
-    "title": "Notes",
-    "section": "Northwestern",
-    "text": "Northwestern\n\nIntroduction to Optimization\n\\[\\begin{equation}\n  \\begin{array}{lrrrrrrrrr}\n    \\mbox{maximize: } & c_0 & + & c_1 x_1 & + & \\dots & + & c_n x_n & \\\\\n    \\mbox{subject to: }\n      & & & a_{11} x_1 & + & \\dots & + & a_{1n} x_n & \\leq & b_1 \\\\\n      & & & a_{21} x_1 & + & \\dots & + & a_{2n} x_n & \\leq & b_2 \\\\\n      & & & & & \\vdots &  \\\\\n      & & & a_{m1} x_1 & + & \\dots & + & a_{mn} x_n & \\leq & b_m \\\\\n      & & & x_1, & x_2, & \\dots &, & x_n & \\geq & 0\n  \\end{array}\n\\end{equation}\\]\nCourse Notes\nIn Winter and Spring 2022, I taught a quarter-long course at Northwestern on Introduction to Optimization. The course covers mainly linear programming and duality theory. The above course notes are accessible to students who have done linear algebra and some basic multivariable calculus (gradients)."
-  },
-  {
-    "objectID": "notes.html#uwo",
-    "href": "notes.html#uwo",
-    "title": "Notes",
-    "section": "UWO",
-    "text": "UWO\n\nAlgebraic topology\n\nProblem Sets.\nIn Winter 2021, I taught a semester-long course at UWO on Algebraic Topology aimed at graduate students and upper-level undergrads. The main textbook for the course was Hatcher but I rarely used the book at all. The course covers the fundamental group, covering spaces, and singular homology.\n\n\nDiscrete math\n\\[\n\\begin{align}\n\\left|\\bigcup _{i=1}^{n}A_{i}\\right|=\\sum _{i=1}^{n}|A_{i}|-\\sum _{1\\leqslant i&lt;j\\leqslant n}|A_{i}\\cap A_{j}|+\\sum _{1\\leqslant i&lt;j&lt;k\\leqslant n}|A_{i}\\cap A_{j}\\cap A_{k}|-\\cdots +(-1)^{n-1}\\left|A_{1}\\cap \\cdots \\cap A_{n}\\right|\n\\end{align}\n\\]\nVideo lectures\nIn Fall 2020, I taught a semester-long at UWO on Discrete Math aimed at second-year undergrads majoring in computer science. The course was fully asynchronous and I had to come up with several innovations to make it work. I curated a textbook on zyBooks and created several videos on YouTube to accompany the text. I used Piazza as a platform for discussions. With a lot of help from my department, we also created hundreds of questions on WeBWork which were then used the exams. This has been the most challenging and the most rewarding course I’ve ever taught."
-  },
-  {
-    "objectID": "notes.html#canadausa",
-    "href": "notes.html#canadausa",
-    "title": "Notes",
-    "section": "Canada/USA ",
-    "text": "Canada/USA \n\nLean at MC2020\n\nNotes.   Source Code.\nThis is a completely interactive class on the Lean theorem prover from Mathcamp 2020 - you learn by solving exercises online. The prerequisites for this class are basic proof techniques.\n\n\nCrash course on linear algebra\n\n\n\n\n\nNotes.\nThis is a week-long proof-based introduction to Linear Algebra class from Mathcamp 2018. The prerequisites are basic proof techniques. The class is designed in an IBL-format - you’re expected to solve all the problems in each section before moving to the next and in the process learn the subject.\n\n\nGalois correspondence of covering spaces\n\n\n\n\n\n\nNotes.\nThis week-long class from Mathcamp 2019 covers (pun intended) the covering space theory for graphs and surfaces and is meant to be an introduction to algebraic topology and its connection to group theory. The prerequisites are group theory and basic minimal exposure to topology/analysis.\n\n\nFrom high school arithmetic to group cohomology\n\\[\n\\begin{align}\n  0 \\longrightarrow \\mathbb{Z}/10 \\longrightarrow \\mathbb{Z}/100 \\longrightarrow \\mathbb{Z}/10 \\longrightarrow 0\n\\end{align}\n\\]\nNotes.\nThis is a week-long class from Mathcamp 2019 based on a fun paper by Dan Isaken titled A cohomological viewpoint of elementary school arithmetic. It introduces the notions of group extensions and exact sequences as means to interpret addition of multi-digit numbers. It is designed in an IBL-format - you’re expected to solve all the problems in each section before moving to the next and in the process learn the subject. The prerequisites are group theory.\n\n\nCohomology via sheaves\n\nNotes.\nThis is a week-long class from Mathcamp 2018 about Čech cohomology on graphs and cohomology computations for simple spaces. The class is designed in an IBL-format - you’re expected to solve all the problems in each section before moving to the next and in the process learn the subject. The prerequisites are linear algebra (over finite fields).\n\n\nHow curved is a potato?\n\nNotes.\nThis is a week-long class from Mathcamp 2018 about principal, Gaussian, and mean curvature of potatoes embedded in \\(\\mathbb{R}^3\\). The prerequisites are linear algebra, in particular, the notions of eigenvalues and eigenvectors, and multi-variable calculus.\n\n\nWould I ever lie group to you?\n\nNotes.\nI taught this week-long class at Mathcamp 2018. This is a class about matrix groups and how they arise as symmetries of spaces. The prerequisites are linear algebra and group theory, in particular, group actions.\n\n\nRiemann surfaces\n\nProblem Sets.\nI taught this week-long class at Mathcamp 2019. In this class, we construct Riemann surfaces as “graphs” of holomorphic functions. Towards the end we prove Fermat’s last theorem for function fields. The prerequisites are complex analysis.\nThe following are a few other classes I taught at Mathcamp. The notes are not very polished.\n\nHow Riemann finally understood logarithms\nHow to glue donuts\nAll things manifoldy\nEuler Characteristic\nSymmetries of Spaces"
-  },
-  {
-    "objectID": "notes.html#jhu",
-    "href": "notes.html#jhu",
-    "title": "Notes",
-    "section": "JHU",
-    "text": "JHU\n\nHonors single variable calculus\n\nNotes v2017.   Notes v2018.\nFor two semesters, Fall 2017 & 2018, I taught an accelerated honors single variable calculus course at JHU. The course covers two semesters worth of calculus (integration and differentiation) in one semester. The course is designed in an IBL-format - you’re expected to solve all the problems in each section before moving to the next and in the process learn the subject. The prerequisites are pre-calculus and basic theorem proving.\n\n\nSymmetries & polynomials\n\\[\n\\begin{align}\n{\\sqrt[{3}]{-{\\frac {q}{2}}+{\\sqrt {{\\frac {q^{2}}{4}}+{\\frac {p^{3}}{27}}}}}}+{\\sqrt[{3}]{-{\\frac {q}{2}}-{\\sqrt {{\\frac {q^{2}}{4}}+{\\frac {p^{3}}{27}}}}}}.\\end{align}\n\\]\nNotes.\nThis 2-week class from Intersession 2018 at JHU non-math majors to group theory and its connections to roots of polynomials, in particular, the unsolvability of the quintic. The class is designed in an IBL-format - you’re expected to solve all the problems in each section before moving to the next and in the process learn the subject. The prerequisites are basic proof techniques.\n\n\nHitchhiker’s guide to algebraic topology\n\nCourse Website.\nThis 2-week class from the Intersession 2017 at JHU introduces non-math majors to algebraic topology and its applications. There are no prerequisites."
-  },
-  {
-    "objectID": "notes.html#expository-notes",
-    "href": "notes.html#expository-notes",
-    "title": "Notes",
-    "section": "Expository notes",
-    "text": "Expository notes\nFollowing are some of my personal math notes. The notes have not been proofread and might contain errors.\n\nWhat is a Spectrum?\nh-principles MSRI Summer School\nConnections on Principal Bundles and Classical Electromagnetism\nVector Fields on Spheres\nSteifel Whitney Numbers\nHomotopy of MO\nRepresentation Theory of Symmetric Group\nGeometry of Dirac Operators\nFIOs and Lagrangian Submanifolds\nSymplectic Geometry Course Notes\nFinite Gauge Groups TQFTs\nClassical Lie Groups\nMosher and Tangora Notes"
-  },
-  {
-    "objectID": "lean/posts/2023-09-04 leandojo.html",
-    "href": "lean/posts/2023-09-04 leandojo.html",
-    "title": "LeanDojo",
-    "section": "",
-    "text": "This was posted a while back on the Lean Zulip:\nLeanDojo\nLeanDojo: Theorem Proving with Retrieval-Augmented Language Models\nAccording to their description, LeanDojo is an open-source Lean playground consisting of toolkits, data, models, and benchmarks. Plus they also provide an LLM-based prover and a chatGPT plugin. All of this looks amazing and something worth learning more about."
-  },
-  {
-    "objectID": "lean/posts/2023-08-30 tactics.html",
-    "href": "lean/posts/2023-08-30 tactics.html",
-    "title": "Short tactics tutorial",
-    "section": "",
-    "text": "I have always wanted to learn tactics writing in Lean. But for whatever reason, none of the tutorials that exist online have been helpful. I suspect that the best way to learn to write tactics to play around and modify the existing ones. I came across this short, 4-page tactics tutorial that looks promising. I’ll give it a go when I get some time.\n\nhttps://www.vladasedlacek.cz/en/posts/lean-01-intro\nhttps://www.vladasedlacek.cz/en/posts/lean-02-demo\nhttps://www.vladasedlacek.cz/en/posts/lean-03-tactics\nhttps://www.vladasedlacek.cz/en/posts/lean-04-linperm"
-  },
-  {
     "objectID": "CV.html",
     "href": "CV.html",
     "title": "CV",
@@ -168,6 +63,153 @@
     "text": "Conference Attended\nUnited States Conference on Teaching Statistics, 2023\nMSRI CIME Workshop, 2022\nProject NExT at MAA Mathfest, Online, 2021\nLean for the curious mathematician, 2020\nSpaces of Embeddings, BIRS, Banff, 2019\nMSRI Summer School, Cortona, Italy, 2019\nMRC Workshop, Providence RI, 2019\nMIT Talbot Workshop, Austin TX, 2019\nWorkshop on Functor Calculus, Ohio State University, 2019\nAMS Sectional Meeting, University of Hawaii, 2019\nArizona Winter School, Arizona State University, 2019\nJoint Mathematical Meetings, Baltimore, 2019\nSymplectic Geometry and Homotopy Theory, UCLA, 2018\nMSRI Summer School, Fields Institute, Toronto, 2018\nGraduate Student Conference, Temple University, 2018\nAMS Sectional Meeting, UC Riverside, 2017\nEuropean Autumn School in Topology, Netherlands, 2017\nTopology Festival, Cornell University, 2017\nGeorgia International Topology Conference, University of Georgia, 2017\nAlpine Algebraic & Applied Topology Conference, Switzerland, 2016\nWCATSS, University of Oregon, Eugene, 2016\nGSTSC, Indiana University, Bloomington, 2016\nMid-Atlantic Topology Conference, Johns Hopkins University, 2016\nMidwest Topology Seminar, Northwestern University, 2016\nGeometry and Topology Conference, Lehigh University, 2015\nMid-Atlantic Topology Conference, University of Virginia, 2015\nMidwest Topology Seminar, University of Illinois Chicago, 2015\nMidwest Topology Seminar, Northwestern University, 2015\nModular invariants in Topology and Analysis, Regensburg, 2015\nWCATSS on Field theories, UBC, 2015\nIntroductory Workshop on Algebraic Topology, MSRI, 2015\nJoint Mathematical Meetings, Baltimore, 2015\nClassification of Manifolds, NEHU, 2013\nH-principle, Chennai Mathematical Institute, 2012\nGroups and geometries, ISI, Bangalore, 2012\nString Topology, Vivekananda University, 2012\nKervaire Invariant One, ISI, Kolkata, 2012\nNumber Theory workshop, Tezpur University, 2011\nLie algebras and their representations, CMI, 2011\nNurture camp, Institute of Mathematical Sciences, 2007\nIMO, Slovenia, 2006 \nIMOTC, HBCSC, 2003-2006\n\n\n\n\nKishore Vaigyanik Protsahan Yojana (KVPY), 2005"
   },
   {
+    "objectID": "scribbles/posts/2023-08-23 starting your day right.html",
+    "href": "scribbles/posts/2023-08-23 starting your day right.html",
+    "title": "Starting Your Day Right",
+    "section": "",
+    "text": "There is a strong correlation between my daily habits and my level of productivity. When I’m at my peak performance, everything feels automated and flowing.\nIn the past month, I relocated to Baltimore. Prior to that, I was frequently on the move, both for work and family commitments. As a result of which, my routine has been completely upended, and my habits are in complete disarray.\nI came across this post on Stoicism (something I greatly admire) which, among other things, talks about starting your day right. This made me realize how I’ve been swept up by the unproductive habit of checking my phone first thing in the morning.\nFortunately, I’ve just finished assembling my writing desk by a lovely corner window. My coffee is brewing and my trusty iPad is charged. Time to get back to morning journaling again. Hopefully, even when life gets busy and chaotic, I’ll have the stamina and discipline to keep up with this incredibly useful habit.\n\n\n\nMy writing desk"
+  },
+  {
+    "objectID": "scribbles/posts/2023-09-07 smartless willem dafoe.html",
+    "href": "scribbles/posts/2023-09-07 smartless willem dafoe.html",
+    "title": "Smartless - Willem Dafoe",
+    "section": "",
+    "text": "On one of my long drives recently, I was listening to the Smartless episode featuring Willem Dafoe.\nHe shared a perspective that resonated with me. Although he’s American, he lives in Italy, making him an immigrant there. He mentioned that being an immigrant is a liberating experience for him, allowing him to see things from a distance, with an outsider’s perspective.\nI’d never considered it, but it rings true for me as well. Being an immigrant in America, I have the unique vantage point to observe the absurdities, joys, and sorrows of this place, but from a distance. Having lived in another country gives me a completely different perspective, knowing how things could be elsewhere. I can never become too myopic here, as I never get too close to things. There is a sad yet liberating quality to it."
+  },
+  {
+    "objectID": "scribbles/posts/2023-09-02 harpers ferry.html",
+    "href": "scribbles/posts/2023-09-02 harpers ferry.html",
+    "title": "Harper’s Ferry",
+    "section": "",
+    "text": "Over the last couple of years, I lived in Chicago and couldn’t go on hikes. The land there is flatter than a pancake. It’s a perfect place for long-distance biking but an extremely boring one for hiking.\nI hiked the Loudon Heights trail at Harper’s Ferry and absolutely loved it. It was a bit tedious at first with no change in scenery - but that’s the whole point of hiking. It’s not about change, or being comfortable, or getting somewhere, but the journey itself. You walk for hours, letting your mind settle down and taking in the beauty of your surroundings. There’s a deep, ancient instinct that kicks in when you find yourself so close to nature. This feeling is hard to describe and equally hard to recollect.\nWhen I hadn’t hiked for so long, I didn’t particularly miss it, but I was also slowly forgetting how much I liked it. It is a precious thing that I hope I don’t lose as I get busy with life."
+  },
+  {
+    "objectID": "scribbles/posts/2023-08-30 group exercise.html",
+    "href": "scribbles/posts/2023-08-30 group exercise.html",
+    "title": "Group Exercise",
+    "section": "",
+    "text": "I like to think that I am generally a very fit person. I exercise almost everyday and generally lead an active life. Just for fun, I recently tried a Yoga Sculpt class and it kicked my ass.\nThis made me realize two things:\n\nWhen working out alone, it’s easy to not be fully honest with oneself. I probably take longer breaks, get sidetracked by my phone, or choose lighter weights when I could handle heavier ones.\nWe can often push ourselves more than we think. I never knew an hour-long HIIT session with weights, like Yoga Sculpt, was something I could do. I’m surprised I hadn’t tried it earlier.\n\nI once tried a yoga class via livestream, but it didn’t feel the same. The poses might have been identical, but the intensity was different.\nI’ve started to see the benefits of group classes. They push you harder and offer new experiences you might not encounter otherwise."
+  },
+  {
+    "objectID": "scribbles/posts/2023-08-29 integers.html",
+    "href": "scribbles/posts/2023-08-29 integers.html",
+    "title": "Etymology of Integer",
+    "section": "",
+    "text": "We use integers so much in math that it never occurred to me before yesterday that this is a weird word with a weirder symbol associated to it. Wikipedia explains this very nicely.\nThe words integer and entire share the same Latin root: in (“not”) plus tangere (“to touch”). Google says that the first known use of the word integer was in 1571 by Thomas Digges in a book called A Geometrical Practise Named Pantometria. The word origin still doesn’t make complete sense to me but then I don’t know any Latin. The symbol \\(\\mathbb{Z}\\) comes from Zahlen, which is German for numbers, and was first used by Hilbert."
+  },
+  {
+    "objectID": "notes.html",
+    "href": "notes.html",
+    "title": "Notes",
+    "section": "",
+    "text": "I love to (re)design math courses. Below are notes and problem sets from several of my courses. Most notes are accessible to undergraduate and advanced high-school students."
+  },
+  {
+    "objectID": "notes.html#northwestern",
+    "href": "notes.html#northwestern",
+    "title": "Notes",
+    "section": "Northwestern",
+    "text": "Northwestern\n\nIntroduction to Optimization\n\\[\\begin{equation}\n  \\begin{array}{lrrrrrrrrr}\n    \\mbox{maximize: } & c_0 & + & c_1 x_1 & + & \\dots & + & c_n x_n & \\\\\n    \\mbox{subject to: }\n      & & & a_{11} x_1 & + & \\dots & + & a_{1n} x_n & \\leq & b_1 \\\\\n      & & & a_{21} x_1 & + & \\dots & + & a_{2n} x_n & \\leq & b_2 \\\\\n      & & & & & \\vdots &  \\\\\n      & & & a_{m1} x_1 & + & \\dots & + & a_{mn} x_n & \\leq & b_m \\\\\n      & & & x_1, & x_2, & \\dots &, & x_n & \\geq & 0\n  \\end{array}\n\\end{equation}\\]\nCourse Notes\nIn Winter and Spring 2022, I taught a quarter-long course at Northwestern on Introduction to Optimization. The course covers mainly linear programming and duality theory. The above course notes are accessible to students who have done linear algebra and some basic multivariable calculus (gradients)."
+  },
+  {
+    "objectID": "notes.html#uwo",
+    "href": "notes.html#uwo",
+    "title": "Notes",
+    "section": "UWO",
+    "text": "UWO\n\nAlgebraic topology\n\nProblem Sets.\nIn Winter 2021, I taught a semester-long course at UWO on Algebraic Topology aimed at graduate students and upper-level undergrads. The main textbook for the course was Hatcher but I rarely used the book at all. The course covers the fundamental group, covering spaces, and singular homology.\n\n\nDiscrete math\n\\[\n\\begin{align}\n\\left|\\bigcup _{i=1}^{n}A_{i}\\right|=\\sum _{i=1}^{n}|A_{i}|-\\sum _{1\\leqslant i&lt;j\\leqslant n}|A_{i}\\cap A_{j}|+\\sum _{1\\leqslant i&lt;j&lt;k\\leqslant n}|A_{i}\\cap A_{j}\\cap A_{k}|-\\cdots +(-1)^{n-1}\\left|A_{1}\\cap \\cdots \\cap A_{n}\\right|\n\\end{align}\n\\]\nVideo lectures\nIn Fall 2020, I taught a semester-long at UWO on Discrete Math aimed at second-year undergrads majoring in computer science. The course was fully asynchronous and I had to come up with several innovations to make it work. I curated a textbook on zyBooks and created several videos on YouTube to accompany the text. I used Piazza as a platform for discussions. With a lot of help from my department, we also created hundreds of questions on WeBWork which were then used the exams. This has been the most challenging and the most rewarding course I’ve ever taught."
+  },
+  {
+    "objectID": "notes.html#canadausa",
+    "href": "notes.html#canadausa",
+    "title": "Notes",
+    "section": "Canada/USA ",
+    "text": "Canada/USA \n\nLean at MC2020\n\nNotes.   Source Code.\nThis is a completely interactive class on the Lean theorem prover from Mathcamp 2020 - you learn by solving exercises online. The prerequisites for this class are basic proof techniques.\n\n\nCrash course on linear algebra\n\n\n\n\n\nNotes.\nThis is a week-long proof-based introduction to Linear Algebra class from Mathcamp 2018. The prerequisites are basic proof techniques. The class is designed in an IBL-format - you’re expected to solve all the problems in each section before moving to the next and in the process learn the subject.\n\n\nGalois correspondence of covering spaces\n\n\n\n\n\n\nNotes.\nThis week-long class from Mathcamp 2019 covers (pun intended) the covering space theory for graphs and surfaces and is meant to be an introduction to algebraic topology and its connection to group theory. The prerequisites are group theory and basic minimal exposure to topology/analysis.\n\n\nFrom high school arithmetic to group cohomology\n\\[\n\\begin{align}\n  0 \\longrightarrow \\mathbb{Z}/10 \\longrightarrow \\mathbb{Z}/100 \\longrightarrow \\mathbb{Z}/10 \\longrightarrow 0\n\\end{align}\n\\]\nNotes.\nThis is a week-long class from Mathcamp 2019 based on a fun paper by Dan Isaken titled A cohomological viewpoint of elementary school arithmetic. It introduces the notions of group extensions and exact sequences as means to interpret addition of multi-digit numbers. It is designed in an IBL-format - you’re expected to solve all the problems in each section before moving to the next and in the process learn the subject. The prerequisites are group theory.\n\n\nCohomology via sheaves\n\nNotes.\nThis is a week-long class from Mathcamp 2018 about Čech cohomology on graphs and cohomology computations for simple spaces. The class is designed in an IBL-format - you’re expected to solve all the problems in each section before moving to the next and in the process learn the subject. The prerequisites are linear algebra (over finite fields).\n\n\nHow curved is a potato?\n\nNotes.\nThis is a week-long class from Mathcamp 2018 about principal, Gaussian, and mean curvature of potatoes embedded in \\(\\mathbb{R}^3\\). The prerequisites are linear algebra, in particular, the notions of eigenvalues and eigenvectors, and multi-variable calculus.\n\n\nWould I ever lie group to you?\n\nNotes.\nI taught this week-long class at Mathcamp 2018. This is a class about matrix groups and how they arise as symmetries of spaces. The prerequisites are linear algebra and group theory, in particular, group actions.\n\n\nRiemann surfaces\n\nProblem Sets.\nI taught this week-long class at Mathcamp 2019. In this class, we construct Riemann surfaces as “graphs” of holomorphic functions. Towards the end we prove Fermat’s last theorem for function fields. The prerequisites are complex analysis.\nThe following are a few other classes I taught at Mathcamp. The notes are not very polished.\n\nHow Riemann finally understood logarithms\nHow to glue donuts\nAll things manifoldy\nEuler Characteristic\nSymmetries of Spaces"
+  },
+  {
+    "objectID": "notes.html#jhu",
+    "href": "notes.html#jhu",
+    "title": "Notes",
+    "section": "JHU",
+    "text": "JHU\n\nHonors single variable calculus\n\nNotes v2017.   Notes v2018.\nFor two semesters, Fall 2017 & 2018, I taught an accelerated honors single variable calculus course at JHU. The course covers two semesters worth of calculus (integration and differentiation) in one semester. The course is designed in an IBL-format - you’re expected to solve all the problems in each section before moving to the next and in the process learn the subject. The prerequisites are pre-calculus and basic theorem proving.\n\n\nSymmetries & polynomials\n\\[\n\\begin{align}\n{\\sqrt[{3}]{-{\\frac {q}{2}}+{\\sqrt {{\\frac {q^{2}}{4}}+{\\frac {p^{3}}{27}}}}}}+{\\sqrt[{3}]{-{\\frac {q}{2}}-{\\sqrt {{\\frac {q^{2}}{4}}+{\\frac {p^{3}}{27}}}}}}.\\end{align}\n\\]\nNotes.\nThis 2-week class from Intersession 2018 at JHU non-math majors to group theory and its connections to roots of polynomials, in particular, the unsolvability of the quintic. The class is designed in an IBL-format - you’re expected to solve all the problems in each section before moving to the next and in the process learn the subject. The prerequisites are basic proof techniques.\n\n\nHitchhiker’s guide to algebraic topology\n\nCourse Website.\nThis 2-week class from the Intersession 2017 at JHU introduces non-math majors to algebraic topology and its applications. There are no prerequisites."
+  },
+  {
+    "objectID": "notes.html#expository-notes",
+    "href": "notes.html#expository-notes",
+    "title": "Notes",
+    "section": "Expository notes",
+    "text": "Expository notes\nFollowing are some of my personal math notes. The notes have not been proofread and might contain errors.\n\nWhat is a Spectrum?\nh-principles MSRI Summer School\nConnections on Principal Bundles and Classical Electromagnetism\nVector Fields on Spheres\nSteifel Whitney Numbers\nHomotopy of MO\nRepresentation Theory of Symmetric Group\nGeometry of Dirac Operators\nFIOs and Lagrangian Submanifolds\nSymplectic Geometry Course Notes\nFinite Gauge Groups TQFTs\nClassical Lie Groups\nMosher and Tangora Notes"
+  },
+  {
+    "objectID": "lean/posts/2023-08-30 tactics.html",
+    "href": "lean/posts/2023-08-30 tactics.html",
+    "title": "Short tactics tutorial",
+    "section": "",
+    "text": "I have always wanted to learn tactics writing in Lean. But for whatever reason, none of the tutorials that exist online have been helpful. I suspect that the best way to learn to write tactics to play around and modify the existing ones. I came across this short, 4-page tactics tutorial that looks promising. I’ll give it a go when I get some time.\n\nhttps://www.vladasedlacek.cz/en/posts/lean-01-intro\nhttps://www.vladasedlacek.cz/en/posts/lean-02-demo\nhttps://www.vladasedlacek.cz/en/posts/lean-03-tactics\nhttps://www.vladasedlacek.cz/en/posts/lean-04-linperm"
+  },
+  {
+    "objectID": "lean/posts/2023-09-09 llm.html",
+    "href": "lean/posts/2023-09-09 llm.html",
+    "title": "llmstep and LeanInfer",
+    "section": "",
+    "text": "I came across two LLM based tactics for Lean\n\nllmstep: [L]LM proofstep suggestions in Lean\nLeanInfer: Neural Network Inference in Lean 4\n\nThey both use LeanDojo somehow and I don’t understand the difference between the two. Unfortunately, I do not know enough about LLM and AI to tell if this is actually good or just hot gas."
+  },
+  {
+    "objectID": "lean/posts/2023-09-04 leandojo.html",
+    "href": "lean/posts/2023-09-04 leandojo.html",
+    "title": "LeanDojo",
+    "section": "",
+    "text": "This was posted a while back on the Lean Zulip:\nLeanDojo\nLeanDojo: Theorem Proving with Retrieval-Augmented Language Models\nAccording to their description, LeanDojo is an open-source Lean playground consisting of toolkits, data, models, and benchmarks. Plus they also provide an LLM-based prover and a chatGPT plugin. All of this looks amazing and something worth learning more about."
+  },
+  {
+    "objectID": "lean/posts/2023-08-30 loogle.html",
+    "href": "lean/posts/2023-08-30 loogle.html",
+    "title": "Loogle!",
+    "section": "",
+    "text": "An improved search engine for Lean:\n\nhttps://loogle.lean-fro.org/\nhttps://github.com/nomeata/loogle\n\nI haven’t used it yet but it looks promising. I personally don’t like the search on mathlib4_docs and find it very glitchy, slow, and cumbersome. Normally, I just use grep in VSCode instead, which is better but still very cumbersome and requires a lot of regex jujitsu. Hopefully this search is better and more useful. Looking forward to trying it out."
+  },
+  {
+    "objectID": "lean/index.html",
+    "href": "lean/index.html",
+    "title": "Lean",
+    "section": "",
+    "text": "An assortment of interesting resources about Lean and a journal of my Lean adventures.\n\n\n\n\n\n\n\n\n\n\nllmstep and LeanInfer\n\n\n\n\n\n\n\nML\n\n\ntactics\n\n\n\n\n\n\n\n\n\n\n\nSep 9, 2023\n\n\nApurva Nakade\n\n\n\n\n\n\n\n\nLeanDojo\n\n\n\n\n\n\n\nML\n\n\nweb\n\n\n\n\n\n\n\n\n\n\n\nSep 4, 2023\n\n\nApurva Nakade\n\n\n\n\n\n\n\n\nShort tactics tutorial\n\n\n\n\n\n\n\ntactics\n\n\ntutorial\n\n\nto-read\n\n\n\n\n\n\n\n\n\n\n\nAug 31, 2023\n\n\nApurva Nakade\n\n\n\n\n\n\n\n\nLoogle!\n\n\n\n\n\n\n\nsearch\n\n\nweb\n\n\n\n\n\n\n\n\n\n\n\nAug 31, 2023\n\n\nApurva Nakade\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Hi!",
+    "section": "",
+    "text": "Hi!\nHow to pronounce my name: Ap as in apart, u as in moon, rva as in curve.\nI’m a Senior Lecturer in the Applied Math & Stats department  at Johns Hopkins University. Currently, I’m teaching EN.553.171 Discrete Mathematics.\nI invest the majority of my mental energy in seeking ways to enhance math education, both within my courses and on a broader scale. My academic interests and experience span a wide range in Math, CS, and Math Education. Lately, I’ve gotten very interested in the field of math formalization using the Lean theorem prover. I thoroughly enjoy discussing all these topics. Whether you’re a student, mathematician, or educator, please feel free to reach out to me without hesitation."
+  },
+  {
+    "objectID": "scribbles/posts/2023-09-04 boardgames.html",
+    "href": "scribbles/posts/2023-09-04 boardgames.html",
+    "title": "Board Games in Baltimore",
+    "section": "",
+    "text": "I have been trying out some board games groups around Baltimore. Sadly I could not find any in the city itself but I found quite a few in the surrounding areas. I have been to two events of far and already learned quite a few new games.\n\nQuiddler\nCoup\nWavelength\nKarma\nFluxx\nMonopoly Deal\n\nThey were all quick games and fun to play. If I were to buy any of these then it would be Wavelength. All the others were card games and fun to play with people who have never played board games before."
+  },
+  {
+    "objectID": "scribbles/posts/2023-08-21 history of math.html",
+    "href": "scribbles/posts/2023-08-21 history of math.html",
+    "title": "History-of-Math Resources",
+    "section": "",
+    "text": "I’ve always been fascinated by the history of mathematics. Some of the classic and dramatic discoveries I read a kid were those of non-Euclidean geometry, Galois theory, the proof of Fermat’s last theorem, as well as Cantor and Gödel’s breakthroughs in logic. However, some of the more commonplace achievements, such as the invention of calculus by Newton and its subsequent formalization a century later through \\(\\epsilon \\delta\\) proofs, also possess a very intriguing narrative that involves not only mathematicians but also philosophers and theologians1.\nI was pleasantly surprised to come across the following resources for learning mathematical concepts through historical sources:\nApparently, these resources are part of an NSF-funded project Transforming Instruction In Undergraduate Mathematics Via Primary Historical Sources TRIUMPHS. I hope I find the time to read through with these materials."
+  },
+  {
+    "objectID": "scribbles/posts/2023-08-21 history of math.html#footnotes",
+    "href": "scribbles/posts/2023-08-21 history of math.html#footnotes",
+    "title": "History-of-Math Resources",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nWho Gave You the Epsilon? Cauchy and the Origins of Rigorous Calculus Judith V. Grabiner↩︎"
+  },
+  {
+    "objectID": "scribbles/posts/2023-08-20 begin again.html",
+    "href": "scribbles/posts/2023-08-20 begin again.html",
+    "title": "Begin Again",
+    "section": "",
+    "text": "I’ve been blogging for as long as I can remember, starting from the early days of Blogger, Wordpress, and Tumblr, to the newer self-hosted realms of Github, Jekyll, and Hugo. Now that I’m entering a new phase of my life at JHU, here I am once again. I plan to write about the topics that currently occupy my thoughts: math, teaching learning, Lean, programming, philosophy of mind, books, movies, and more…\nFor me, writing serves as a way to clarify my thoughts while staying honest and consistent. As the wise Feynman once said “The first principle is not to fool yourself – and you are the easiest person to fool.” Expressing your thoughts and putting them out in the world (for nobody to read) is the first step towards that.\nThe title of this post is a meditation prompt by Sam Harris. I’m serious about practicing meditation and mindfulness, but regrettably, not very good at it. Whenever I catch myself doing something I would rather not (like procrastinating writing), I just remind myself to Begin Again.\nSo here’s to not fooling yourself and to new beginnings."
+  },
+  {
     "objectID": "scribbles/posts/2023-08-23 chandrayaan 3.html",
     "href": "scribbles/posts/2023-08-23 chandrayaan 3.html",
     "title": "Chandrayaan-3",
@@ -175,17 +217,10 @@
     "text": "India landed Chandrayaan-3 on the Moon! Amazing!!!"
   },
   {
-    "objectID": "scribbles/posts/2023-08-23 starting your day right.html",
-    "href": "scribbles/posts/2023-08-23 starting your day right.html",
-    "title": "Starting your day right",
-    "section": "",
-    "text": "There is a strong correlation between my daily habits and my level of productivity. When I’m at my peak performance, everything feels automated and flowing.\nIn the past month, I relocated to Baltimore. Prior to that, I was frequently on the move, both for work and family commitments. As a result of which, my routine has been completely upended, and my habits are in complete disarray.\nI came across this post on Stoicism (something I greatly admire) which, among other things, talks about starting your day right. This made me realize how I’ve been swept up by the unproductive habit of checking my phone first thing in the morning.\nFortunately, I’ve just finished assembling my writing desk by a lovely corner window. My coffee is brewing and my trusty iPad is charged. Time to get back to morning journaling again. Hopefully, even when life gets busy and chaotic, I’ll have the stamina and discipline to keep up with this incredibly useful habit.\n\n\n\nMy writing desk"
-  },
-  {
     "objectID": "scribbles/index.html",
     "href": "scribbles/index.html",
     "title": "Scribbles",
     "section": "",
-    "text": "Etymology of integer\n\n\n\n\n\n\n\nhistory-of-math\n\n\n\n\n\n\n\n\n\n\n\nAug 29, 2023\n\n\nApurva Nakade\n\n\n\n\n\n\n\n\nChandrayaan-3\n\n\n\n\n\n\n\njournal\n\n\n\n\n\n\n\n\n\n\n\nAug 23, 2023\n\n\nApurva Nakade\n\n\n\n\n\n\n\n\nStarting your day right\n\n\n\n\n\n\n\nstoicism\n\n\nhabits\n\n\n\n\n\n\n\n\n\n\n\nAug 23, 2023\n\n\nApurva Nakade\n\n\n\n\n\n\n\n\nHistory-of-math resources\n\n\n\n\n\n\n\nresources\n\n\nhistory-of-math\n\n\n\n\n\n\n\n\n\n\n\nAug 21, 2023\n\n\nApurva Nakade\n\n\n\n\n\n\n\n\nBegin again\n\n\n\n\n\n\n\njournal\n\n\n\n\n\n\n\n\n\n\n\nAug 20, 2023\n\n\nApurva Nakade\n\n\n\n\n\n\nNo matching items"
+    "text": "Smartless - Willem Dafoe\n\n\n\n\n\n\n\npodcast\n\n\n\n\n\n\n\n\n\n\n\nSep 7, 2023\n\n\nApurva Nakade\n\n\n\n\n\n\n\n\nBoard Games in Baltimore\n\n\n\n\n\n\n\nboardgames\n\n\n\n\n\n\n\n\n\n\n\nSep 4, 2023\n\n\nApurva Nakade\n\n\n\n\n\n\n\n\nHarper’s Ferry\n\n\n\n\n\n\n\njournal\n\n\n\n\n\n\n\n\n\n\n\nSep 2, 2023\n\n\nApurva Nakade\n\n\n\n\n\n\n\n\nGroup Exercise\n\n\n\n\n\n\n\njournal\n\n\n\n\n\n\n\n\n\n\n\nAug 30, 2023\n\n\nApurva Nakade\n\n\n\n\n\n\n\n\nEtymology of Integer\n\n\n\n\n\n\n\nhistory-of-math\n\n\n\n\n\n\n\n\n\n\n\nAug 29, 2023\n\n\nApurva Nakade\n\n\n\n\n\n\n\n\nChandrayaan-3\n\n\n\n\n\n\n\njournal\n\n\n\n\n\n\n\n\n\n\n\nAug 23, 2023\n\n\nApurva Nakade\n\n\n\n\n\n\n\n\nStarting Your Day Right\n\n\n\n\n\n\n\nstoicism\n\n\nhabits\n\n\n\n\n\n\n\n\n\n\n\nAug 23, 2023\n\n\nApurva Nakade\n\n\n\n\n\n\n\n\nHistory-of-Math Resources\n\n\n\n\n\n\n\nresources\n\n\nhistory-of-math\n\n\n\n\n\n\n\n\n\n\n\nAug 21, 2023\n\n\nApurva Nakade\n\n\n\n\n\n\n\n\nBegin Again\n\n\n\n\n\n\n\njournal\n\n\n\n\n\n\n\n\n\n\n\nAug 20, 2023\n\n\nApurva Nakade\n\n\n\n\n\n\nNo matching items"
   }
 ]
