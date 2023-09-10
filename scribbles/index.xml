@@ -10,7 +10,29 @@
 <atom:link href="https://quarto.org/scribbles/index.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.3.450</generator>
-<lastBuildDate>Thu, 07 Sep 2023 04:00:00 GMT</lastBuildDate>
+<lastBuildDate>Sun, 10 Sep 2023 19:35:44 GMT</lastBuildDate>
+<item>
+  <title>Every Prime \(\equiv 1 (\mod 4)\) Is a Sum of Two Squares</title>
+  <dc:creator>Apurva Nakade</dc:creator>
+  <link>https://quarto.org/scribbles/posts/2023-09-10 prime sum of squares.html</link>
+  <description><![CDATA[ 
+
+
+
+<p>I came across this “one sentence” proof that every prime congruent to 1 mod 4 can be written as a sum of two squares:</p>
+<p><a href="https://doi.org/10.2307/2323918">https://doi.org/10.2307/2323918</a></p>
+<p>The proof involves constructing a cryptic involution on a set of numbers and showing that the involution has exactly one fixed point. The details do not seem too hard to check. The real question is - how did the authors come up with this involution?</p>
+
+
+
+ ]]></description>
+  <category>math</category>
+  <category>to read</category>
+  <category>number theory</category>
+  <category>elementary number theory</category>
+  <guid>https://quarto.org/scribbles/posts/2023-09-10 prime sum of squares.html</guid>
+  <pubDate>Sun, 10 Sep 2023 19:35:44 GMT</pubDate>
+</item>
 <item>
   <title>Smartless - Willem Dafoe</title>
   <dc:creator>Apurva Nakade</dc:creator>
@@ -115,7 +137,7 @@
 
 
  ]]></description>
-  <category>history-of-math</category>
+  <category>history of math</category>
   <guid>https://quarto.org/scribbles/posts/2023-08-29 integers.html</guid>
   <pubDate>Tue, 29 Aug 2023 13:13:31 GMT</pubDate>
 </item>
@@ -192,7 +214,7 @@
 </ol>
 </section></div> ]]></description>
   <category>resources</category>
-  <category>history-of-math</category>
+  <category>history of math</category>
   <guid>https://quarto.org/scribbles/posts/2023-08-21 history of math.html</guid>
   <pubDate>Tue, 22 Aug 2023 02:30:11 GMT</pubDate>
 </item>

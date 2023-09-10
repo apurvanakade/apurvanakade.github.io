@@ -1,75 +1,79 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://quarto.org/CV.html</loc>
-    <lastmod>2023-09-10T03:14:53.518Z</lastmod>
-  </url>
-  <url>
-    <loc>https://quarto.org/scribbles/posts/2023-08-23 starting your day right.html</loc>
-    <lastmod>2023-09-10T03:14:51.999Z</lastmod>
-  </url>
-  <url>
-    <loc>https://quarto.org/scribbles/posts/2023-09-07 smartless willem dafoe.html</loc>
-    <lastmod>2023-09-10T03:14:51.177Z</lastmod>
+    <loc>https://quarto.org/index.html</loc>
+    <lastmod>2023-09-10T19:59:18.000Z</lastmod>
   </url>
   <url>
     <loc>https://quarto.org/scribbles/posts/2023-09-02 harpers ferry.html</loc>
-    <lastmod>2023-09-10T03:14:50.346Z</lastmod>
-  </url>
-  <url>
-    <loc>https://quarto.org/scribbles/posts/2023-08-30 group exercise.html</loc>
-    <lastmod>2023-09-10T03:14:49.506Z</lastmod>
-  </url>
-  <url>
-    <loc>https://quarto.org/scribbles/posts/2023-08-29 integers.html</loc>
-    <lastmod>2023-09-10T03:14:48.662Z</lastmod>
-  </url>
-  <url>
-    <loc>https://quarto.org/notes.html</loc>
-    <lastmod>2023-09-10T03:14:47.841Z</lastmod>
-  </url>
-  <url>
-    <loc>https://quarto.org/lean/posts/2023-08-30 tactics.html</loc>
-    <lastmod>2023-09-10T03:14:44.960Z</lastmod>
-  </url>
-  <url>
-    <loc>https://quarto.org/lean/posts/2023-09-09 llm.html</loc>
-    <lastmod>2023-09-10T03:14:44.113Z</lastmod>
-  </url>
-  <url>
-    <loc>https://quarto.org/lean/posts/2023-09-04 leandojo.html</loc>
-    <lastmod>2023-09-10T03:14:43.674Z</lastmod>
-  </url>
-  <url>
-    <loc>https://quarto.org/lean/posts/2023-08-30 loogle.html</loc>
-    <lastmod>2023-09-10T03:14:44.537Z</lastmod>
-  </url>
-  <url>
-    <loc>https://quarto.org/lean/index.html</loc>
-    <lastmod>2023-09-10T03:14:45.623Z</lastmod>
-  </url>
-  <url>
-    <loc>https://quarto.org/index.html</loc>
-    <lastmod>2023-09-10T03:14:48.246Z</lastmod>
+    <lastmod>2023-09-10T19:59:17.248Z</lastmod>
   </url>
   <url>
     <loc>https://quarto.org/scribbles/posts/2023-09-04 boardgames.html</loc>
-    <lastmod>2023-09-10T03:14:49.077Z</lastmod>
+    <lastmod>2023-09-10T19:59:16.836Z</lastmod>
+  </url>
+  <url>
+    <loc>https://quarto.org/scribbles/posts/2023-09-10 prime sum of squares.html</loc>
+    <lastmod>2023-09-10T19:59:16.404Z</lastmod>
+  </url>
+  <url>
+    <loc>https://quarto.org/scribbles/posts/2023-09-07 smartless willem dafoe.html</loc>
+    <lastmod>2023-09-10T19:59:15.972Z</lastmod>
+  </url>
+  <url>
+    <loc>https://quarto.org/scribbles/posts/2023-08-30 group exercise.html</loc>
+    <lastmod>2023-09-10T19:59:15.580Z</lastmod>
+  </url>
+  <url>
+    <loc>https://quarto.org/CV.html</loc>
+    <lastmod>2023-09-10T19:59:15.132Z</lastmod>
+  </url>
+  <url>
+    <loc>https://quarto.org/lean/posts/2023-08-30 tactics.html</loc>
+    <lastmod>2023-09-10T19:59:14.428Z</lastmod>
+  </url>
+  <url>
+    <loc>https://quarto.org/lean/posts/2023-09-09 llm.html</loc>
+    <lastmod>2023-09-10T19:59:14.020Z</lastmod>
+  </url>
+  <url>
+    <loc>https://quarto.org/notes.html</loc>
+    <lastmod>2023-09-10T19:59:13.572Z</lastmod>
+  </url>
+  <url>
+    <loc>https://quarto.org/lean/posts/2023-09-04 leandojo.html</loc>
+    <lastmod>2023-09-10T19:59:13.812Z</lastmod>
+  </url>
+  <url>
+    <loc>https://quarto.org/lean/posts/2023-08-30 loogle.html</loc>
+    <lastmod>2023-09-10T19:59:14.224Z</lastmod>
+  </url>
+  <url>
+    <loc>https://quarto.org/lean/index.html</loc>
+    <lastmod>2023-09-10T19:59:14.796Z</lastmod>
   </url>
   <url>
     <loc>https://quarto.org/scribbles/posts/2023-08-21 history of math.html</loc>
-    <lastmod>2023-09-10T03:14:49.928Z</lastmod>
-  </url>
-  <url>
-    <loc>https://quarto.org/scribbles/posts/2023-08-20 begin again.html</loc>
-    <lastmod>2023-09-10T03:14:50.761Z</lastmod>
+    <lastmod>2023-09-10T19:59:15.360Z</lastmod>
   </url>
   <url>
     <loc>https://quarto.org/scribbles/posts/2023-08-23 chandrayaan 3.html</loc>
-    <lastmod>2023-09-10T03:14:51.571Z</lastmod>
+    <lastmod>2023-09-10T19:59:15.772Z</lastmod>
+  </url>
+  <url>
+    <loc>https://quarto.org/scribbles/posts/2023-08-20 begin again.html</loc>
+    <lastmod>2023-09-10T19:59:16.196Z</lastmod>
+  </url>
+  <url>
+    <loc>https://quarto.org/scribbles/posts/2023-08-23 starting your day right.html</loc>
+    <lastmod>2023-09-10T19:59:16.628Z</lastmod>
+  </url>
+  <url>
+    <loc>https://quarto.org/scribbles/posts/2023-08-29 integers.html</loc>
+    <lastmod>2023-09-10T19:59:17.040Z</lastmod>
   </url>
   <url>
     <loc>https://quarto.org/scribbles/index.html</loc>
-    <lastmod>2023-09-10T03:14:52.837Z</lastmod>
+    <lastmod>2023-09-10T19:59:17.800Z</lastmod>
   </url>
 </urlset>
