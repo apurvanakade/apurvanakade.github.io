@@ -1,0 +1,18 @@
+---
+title: Every Prime $\equiv 1 (\mod 4)$ Is a Sum of Two Squares
+author: Apurva Nakade
+date: 2023-09-10 15:35:44
+categories: 
+  - math
+  - to read
+  - number theory
+  - elementary number theory
+---
+
+I came across this "one sentence" proof that every prime congruent to 1 mod 4 can be written as a sum of two squares:
+
+[https://doi.org/10.2307/2323918](https://doi.org/10.2307/2323918)
+
+The proof involves constructing a cryptic involution on a set of numbers and showing that the involution has exactly one fixed point. 
+The details do not seem too hard to check.
+The real question is - how did the authors come up with this involution?
