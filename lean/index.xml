@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss  xmlns:atom="http://www.w3.org/2005/Atom" 
+      xmlns:media="http://search.yahoo.com/mrss/" 
+      xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+      xmlns:dc="http://purl.org/dc/elements/1.1/" 
+      version="2.0">
+<channel>
+<title>Apurva Nakade</title>
+<link>https://quarto.org/lean/index.html</link>
+<atom:link href="https://quarto.org/lean/index.xml" rel="self" type="application/rss+xml"/>
+<description></description>
+<generator>quarto-1.3.450</generator>
+<lastBuildDate>Sun, 10 Sep 2023 02:37:41 GMT</lastBuildDate>
+<item>
+  <title>llmstep and LeanInfer</title>
+  <dc:creator>Apurva Nakade</dc:creator>
+  <link>https://quarto.org/lean/posts/2023-09-09 llm.html</link>
+  <description><![CDATA[ 
+
+
+
+<p>I came across two LLM based tactics for Lean</p>
+<ul>
+<li><a href="https://github.com/wellecks/llmstep">llmstep: [L]LM proofstep suggestions in Lean</a></li>
+<li><a href="https://github.com/lean-dojo/LeanInfer">LeanInfer: Neural Network Inference in Lean 4</a></li>
+</ul>
+<p>They both use <a href="../../lean/posts/2023-09-04 leandojo.html">LeanDojo</a> somehow and I don’t understand the difference between the two. Unfortunately, I do not know enough about LLM and AI to tell if this is actually good or just hot gas.</p>
+
+
+
+ ]]></description>
+  <category>ML</category>
+  <category>tactics</category>
+  <guid>https://quarto.org/lean/posts/2023-09-09 llm.html</guid>
+  <pubDate>Sun, 10 Sep 2023 02:37:41 GMT</pubDate>
+</item>
+<item>
+  <title>LeanDojo</title>
+  <dc:creator>Apurva Nakade</dc:creator>
+  <link>https://quarto.org/lean/posts/2023-09-04 leandojo.html</link>
+  <description><![CDATA[ 
+
+
+
+<p>This was posted a while back on the Lean Zulip:</p>
+<p><a href="https://leandojo.org/">LeanDojo</a></p>
+<p><a href="https://arxiv.org/abs/2306.15626">LeanDojo: Theorem Proving with Retrieval-Augmented Language Models</a></p>
+<p>According to their description, LeanDojo is an open-source Lean playground consisting of toolkits, data, models, and benchmarks. Plus they also provide an LLM-based prover and a chatGPT plugin. All of this looks amazing and something worth learning more about.</p>
+
+
+
+ ]]></description>
+  <category>ML</category>
+  <category>web</category>
+  <guid>https://quarto.org/lean/posts/2023-09-04 leandojo.html</guid>
+  <pubDate>Mon, 04 Sep 2023 20:22:19 GMT</pubDate>
+</item>
+<item>
+  <title>Short tactics tutorial</title>
+  <dc:creator>Apurva Nakade</dc:creator>
+  <link>https://quarto.org/lean/posts/2023-08-30 tactics.html</link>
+  <description><![CDATA[ 
+
+
+
+<p>I have always wanted to learn tactics writing in Lean. But for whatever reason, none of the tutorials that exist online have been helpful. I suspect that the best way to learn to write tactics to play around and modify the existing ones. I came across this short, 4-page tactics tutorial that looks promising. I’ll give it a go when I get some time.</p>
+<ul>
+<li><a href="https://www.vladasedlacek.cz/en/posts/lean-01-intro">https://www.vladasedlacek.cz/en/posts/lean-01-intro</a></li>
+<li><a href="https://www.vladasedlacek.cz/en/posts/lean-02-demo">https://www.vladasedlacek.cz/en/posts/lean-02-demo</a></li>
+<li><a href="https://www.vladasedlacek.cz/en/posts/lean-03-tactics">https://www.vladasedlacek.cz/en/posts/lean-03-tactics</a></li>
+<li><a href="https://www.vladasedlacek.cz/en/posts/lean-04-linperm">https://www.vladasedlacek.cz/en/posts/lean-04-linperm</a></li>
+</ul>
+
+
+
+ ]]></description>
+  <category>tactics</category>
+  <category>tutorial</category>
+  <category>to-read</category>
+  <guid>https://quarto.org/lean/posts/2023-08-30 tactics.html</guid>
+  <pubDate>Fri, 01 Sep 2023 01:13:45 GMT</pubDate>
+</item>
+<item>
+  <title>Loogle!</title>
+  <dc:creator>Apurva Nakade</dc:creator>
+  <link>https://quarto.org/lean/posts/2023-08-30 loogle.html</link>
+  <description><![CDATA[ 
+
+
+
+<p>An improved search engine for Lean:</p>
+<ul>
+<li><a href="https://loogle.lean-fro.org/">https://loogle.lean-fro.org/</a></li>
+<li><a href="https://github.com/nomeata/loogle">https://github.com/nomeata/loogle</a></li>
+</ul>
+<p>I haven’t used it yet but it looks promising. I personally don’t like the search on <a href="https://leanprover-community.github.io/mathlib4_docs/index.html">mathlib4_docs</a> and find it very glitchy, slow, and cumbersome. Normally, I just use <code>grep</code> in VSCode instead, which is better but still very cumbersome and requires a lot of regex jujitsu. Hopefully this search is better and more useful. Looking forward to trying it out.</p>
+
+
+
+ ]]></description>
+  <category>search</category>
+  <category>web</category>
+  <guid>https://quarto.org/lean/posts/2023-08-30 loogle.html</guid>
+  <pubDate>Thu, 31 Aug 2023 20:37:51 GMT</pubDate>
+</item>
+</channel>
+</rss>

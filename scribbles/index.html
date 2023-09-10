@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Apurva Nakade</title>
+<title>Apurva Nakade - Scribbles</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,23 +23,26 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-listing/list.min.js"></script>
+<script src="../site_libs/quarto-listing/quarto-listing.js"></script>
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -60,22 +63,52 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>
 
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-listing .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
 
-<link rel="stylesheet" href="styles.css">
-<meta property="og:title" content="">
-<meta property="og:description" content="">
+    const options = {
+      valueNames: ['listing-date','listing-title','listing-description','listing-categories','listing-author',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<link rel="stylesheet" href="../styles.css">
+<link rel="alternate" type="application/rss+xml" title="Apurva Nakade" href="index.xml"><meta property="og:title" content="Apurva Nakade - Scribbles">
 <meta property="og:site-name" content="Apurva Nakade">
 </head>
 
-<body class="nav-fixed fullcontent">
+<body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg navbar-dark ">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">Apurva Nakade</span>
     </a>
   </div>
@@ -86,19 +119,19 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./notes.html" rel="" target="">
+    <a class="nav-link" href="../notes.html" rel="" target="">
  <span class="menu-text">Notes</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./lean/index.html" rel="" target="">
+    <a class="nav-link" href="../lean/index.html" rel="" target="">
  <span class="menu-text">Lean</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./scribbles/index.html" rel="" target="">
+    <a class="nav-link active" href="../scribbles/index.html" rel="" target="" aria-current="page">
  <span class="menu-text">Scribbles</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./CV.html" rel="" target="">
+    <a class="nav-link" href="../CV.html" rel="" target="">
  <span class="menu-text">CV</span></a>
   </li>  
 </ul>
@@ -109,7 +142,7 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="./scribbles/index.xml" rel="" target=""><i class="bi bi-rss" role="img">
+    <a class="nav-link" href="../scribbles/index.xml" rel="" target=""><i class="bi bi-rss" role="img">
 </i> 
  <span class="menu-text"></span></a>
   </li>  
@@ -122,30 +155,337 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(9)</span></div><div class="category" data-category="boardgames">boardgames <span class="quarto-category-count">(1)</span></div><div class="category" data-category="habits">habits <span class="quarto-category-count">(1)</span></div><div class="category" data-category="history-of-math">history-of-math <span class="quarto-category-count">(2)</span></div><div class="category" data-category="journal">journal <span class="quarto-category-count">(4)</span></div><div class="category" data-category="podcast">podcast <span class="quarto-category-count">(1)</span></div><div class="category" data-category="resources">resources <span class="quarto-category-count">(1)</span></div><div class="category" data-category="stoicism">stoicism <span class="quarto-category-count">(1)</span></div></div></div>
 <!-- main -->
-<div class="quarto-about-solana column-body">
-  <div class="about-entity">
-    <div class="entity-contents">
-      <div class="about-contents"><main class="content" id="quarto-document-content">
-<section id="hi" class="level1">
-<h1>Hi!</h1>
-<p>How to pronounce my name: <em>Ap</em> as in <strong>ap</strong>art, <em>u</em> as in m<strong>oo</strong>n, <em>rva</em> as in cu<strong>rve</strong>.</p>
-<p>I’m a Senior Lecturer in the Applied Math &amp; Stats department <!-- why is Math singular but Stats plural? --> at Johns Hopkins University. Currently, I’m teaching <a href="https://jhu.instructure.com/courses/48284">EN.553.171 Discrete Mathematics</a>.</p>
-<p>I invest the majority of my mental energy in seeking ways to enhance math education, both within my courses and on a broader scale. My academic interests and experience span a wide range in Math, CS, and Math Education. Lately, I’ve gotten very interested in the field of math formalization using the <a href="https://leanprover-community.github.io/">Lean theorem prover</a>. I thoroughly enjoy discussing all these topics. Whether you’re a student, mathematician, or educator, please feel free to <a href="mailto:apurva.nakade@jhu.edu">reach out to me</a> without hesitation.</p>
+<main class="content column-page-left" id="quarto-document-content">
 
-
-</section>
-</main></div>
-    </div>
-    <img src="images/me1.jpg" class="about-image
-  rounded " style="width: 15em;">
-  </div>
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Scribbles</h1>
 </div>
- <!-- /main -->
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+
+
+
+
+<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
+<div class="list quarto-listing-default">
+<div class="quarto-post image-right" data-index="0" data-categories="podcast" data-listing-date-sort="1694059200000" data-listing-file-modified-sort="1694313132245" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="body">
+<a href="../scribbles/posts/2023-09-07 smartless willem dafoe.html">
+<h3 class="no-anchor listing-title">
+Smartless - Willem Dafoe
+</h3>
+<div class="listing-subtitle">
+
+</div>
+</a>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('podcast'); return false;">
+podcast
+</div>
+</div>
+<a href="../scribbles/posts/2023-09-07 smartless willem dafoe.html">
+<div class="listing-description">
+On one of my long drives recently, I was listening to the Smartless episode featuring Willem Dafoe.
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="../scribbles/posts/2023-09-07 smartless willem dafoe.html">
+<div class="listing-date">
+Sep 7, 2023
+</div>
+<div class="listing-author">
+Apurva Nakade
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="1" data-categories="boardgames" data-listing-date-sort="1693800000000" data-listing-file-modified-sort="1694312477359" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="body">
+<a href="../scribbles/posts/2023-09-04 boardgames.html">
+<h3 class="no-anchor listing-title">
+Board Games in Baltimore
+</h3>
+<div class="listing-subtitle">
+
+</div>
+</a>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('boardgames'); return false;">
+boardgames
+</div>
+</div>
+<a href="../scribbles/posts/2023-09-04 boardgames.html">
+<div class="listing-description">
+I have been trying out some board games groups around…
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="../scribbles/posts/2023-09-04 boardgames.html">
+<div class="listing-date">
+Sep 4, 2023
+</div>
+<div class="listing-author">
+Apurva Nakade
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="2" data-categories="journal" data-listing-date-sort="1693627200000" data-listing-file-modified-sort="1694311923454" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="body">
+<a href="../scribbles/posts/2023-09-02 harpers ferry.html">
+<h3 class="no-anchor listing-title">
+Harper’s Ferry
+</h3>
+<div class="listing-subtitle">
+
+</div>
+</a>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('journal'); return false;">
+journal
+</div>
+</div>
+<a href="../scribbles/posts/2023-09-02 harpers ferry.html">
+<div class="listing-description">
+Over the last couple of…
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="../scribbles/posts/2023-09-02 harpers ferry.html">
+<div class="listing-date">
+Sep 2, 2023
+</div>
+<div class="listing-author">
+Apurva Nakade
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="3" data-categories="journal" data-listing-date-sort="1693368000000" data-listing-file-modified-sort="1694292314769" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="body">
+<a href="../scribbles/posts/2023-08-30 group exercise.html">
+<h3 class="no-anchor listing-title">
+Group Exercise
+</h3>
+<div class="listing-subtitle">
+
+</div>
+</a>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('journal'); return false;">
+journal
+</div>
+</div>
+<a href="../scribbles/posts/2023-08-30 group exercise.html">
+<div class="listing-description">
+I like to…
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="../scribbles/posts/2023-08-30 group exercise.html">
+<div class="listing-date">
+Aug 30, 2023
+</div>
+<div class="listing-author">
+Apurva Nakade
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="4" data-categories="history-of-math" data-listing-date-sort="1693314811000" data-listing-file-modified-sort="1694292300047" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="body">
+<a href="../scribbles/posts/2023-08-29 integers.html">
+<h3 class="no-anchor listing-title">
+Etymology of <em>Integer</em>
+</h3>
+<div class="listing-subtitle">
+
+</div>
+</a>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('history-of-math'); return false;">
+history-of-math
+</div>
+</div>
+<a href="../scribbles/posts/2023-08-29 integers.html">
+<div class="listing-description">
+We use integers so much in math that it never occurred to me before yesterday that this is a weird word with a weirder symbol associated to it. Wikipedia exp…
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="../scribbles/posts/2023-08-29 integers.html">
+<div class="listing-date">
+Aug 29, 2023
+</div>
+<div class="listing-author">
+Apurva Nakade
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="5" data-categories="journal" data-listing-date-sort="1692816349000" data-listing-file-modified-sort="1692823906137" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="body">
+<a href="../scribbles/posts/2023-08-23 chandrayaan 3.html">
+<h3 class="no-anchor listing-title">
+Chandrayaan-3
+</h3>
+<div class="listing-subtitle">
+
+</div>
+</a>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('journal'); return false;">
+journal
+</div>
+</div>
+<a href="../scribbles/posts/2023-08-23 chandrayaan 3.html">
+<div class="listing-description">
+India landed Chandrayaan-3 on the Moon! Amazing!!!
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="../scribbles/posts/2023-08-23 chandrayaan 3.html">
+<div class="listing-date">
+Aug 23, 2023
+</div>
+<div class="listing-author">
+Apurva Nakade
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="6" data-categories="stoicism,habits" data-listing-date-sort="1692799200000" data-listing-file-modified-sort="1694292300047" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="body">
+<a href="../scribbles/posts/2023-08-23 starting your day right.html">
+<h3 class="no-anchor listing-title">
+Starting Your Day Right
+</h3>
+<div class="listing-subtitle">
+
+</div>
+</a>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('stoicism'); return false;">
+stoicism
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('habits'); return false;">
+habits
+</div>
+</div>
+<a href="../scribbles/posts/2023-08-23 starting your day right.html">
+<div class="listing-description">
+There is a strong correlation between my daily habits and my level of productivity. When I’m at my peak performance, everything feels automated and flowing.
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="../scribbles/posts/2023-08-23 starting your day right.html">
+<div class="listing-date">
+Aug 23, 2023
+</div>
+<div class="listing-author">
+Apurva Nakade
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="7" data-categories="resources,history-of-math" data-listing-date-sort="1692671411000" data-listing-file-modified-sort="1694292300046" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="body">
+<a href="../scribbles/posts/2023-08-21 history of math.html">
+<h3 class="no-anchor listing-title">
+History-of-Math Resources
+</h3>
+<div class="listing-subtitle">
+
+</div>
+</a>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('resources'); return false;">
+resources
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('history-of-math'); return false;">
+history-of-math
+</div>
+</div>
+<a href="../scribbles/posts/2023-08-21 history of math.html">
+<div class="listing-description">
+I’ve always been fascinated by the history of mathematics. Some of the classic and dramatic discoveries I read a kid were those of non-Euclidean geometry, Galois theory, the…<span class="math inline"></span><sup></sup>
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="../scribbles/posts/2023-08-21 history of math.html">
+<div class="listing-date">
+Aug 21, 2023
+</div>
+<div class="listing-author">
+Apurva Nakade
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="8" data-categories="journal" data-listing-date-sort="1692543827000" data-listing-file-modified-sort="1694292300046" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="body">
+<a href="../scribbles/posts/2023-08-20 begin again.html">
+<h3 class="no-anchor listing-title">
+Begin Again
+</h3>
+<div class="listing-subtitle">
+
+</div>
+</a>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('journal'); return false;">
+journal
+</div>
+</div>
+<a href="../scribbles/posts/2023-08-20 begin again.html">
+<div class="listing-description">
+I’ve been blogging for as long as I can remember, starting from the early days of Blogger, Wordpress, and Tumblr, to the newer self-hosted realms…<s></s>
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="../scribbles/posts/2023-08-20 begin again.html">
+<div class="listing-date">
+Aug 20, 2023
+</div>
+<div class="listing-author">
+Apurva Nakade
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -281,6 +621,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   } else {
     toggleColorMode(false);
   }
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
   const isCodeAnnotation = (el) => {
     for (const clz of el.classList) {
       if (clz.startsWith('code-annotation-')) {                     

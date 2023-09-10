@@ -1,0 +1,25 @@
+[
+  {
+    "listing": "/lean/index.html",
+    "items": [
+      "/lean/posts/2023-09-09 llm.html",
+      "/lean/posts/2023-09-04 leandojo.html",
+      "/lean/posts/2023-08-30 tactics.html",
+      "/lean/posts/2023-08-30 loogle.html"
+    ]
+  },
+  {
+    "listing": "/scribbles/index.html",
+    "items": [
+      "/scribbles/posts/2023-09-07 smartless willem dafoe.html",
+      "/scribbles/posts/2023-09-04 boardgames.html",
+      "/scribbles/posts/2023-09-02 harpers ferry.html",
+      "/scribbles/posts/2023-08-30 group exercise.html",
+      "/scribbles/posts/2023-08-29 integers.html",
+      "/scribbles/posts/2023-08-23 chandrayaan 3.html",
+      "/scribbles/posts/2023-08-23 starting your day right.html",
+      "/scribbles/posts/2023-08-21 history of math.html",
+      "/scribbles/posts/2023-08-20 begin again.html"
+    ]
+  }
+]
