@@ -25,7 +25,7 @@
     "href": "scribbles/posts/2023-09-10 prime sum of squares.html",
     "title": "Every Prime \\(\\equiv 1 (\\mod 4)\\) Is a Sum of Two Squares",
     "section": "",
-    "text": "I came across this “one sentence” proof that every prime congruent to 1 mod 4 can be written as a sum of two squares:\nhttps://doi.org/10.2307/2323918\nThe proof involves constructing a cryptic involution on a set of numbers and showing that the involution has exactly one fixed point. The details do not seem too hard to check. The real question is - how did the authors come up with this involution?"
+    "text": "I came across this “one sentence” proof that every prime congruent to 1 mod 4 can be written as a sum of two squares:\nhttps://doi.org/10.2307/2323918\nThe proof involves constructing the following cryptic involution \\[\n(x, y, z) \\mapsto \\begin{cases}(x+2 z, z, y-x-z) & \\text { if } x&lt;y-z \\\\ (2 y-x, y, x-y+z) & \\text { if } y-z&lt;x&lt;2 y \\\\ (x-2 y, x-y+z, y) & \\text { if } x&gt;2 y\\end{cases}\n\\] on the set \\(S=\\left\\{(x, y, z) \\in \\mathbb{N}^{3}: x^{2}+4 y z=p\\right\\}\\) and showing that the involution has exactly one fixed point \\((1, 1, k)\\) if and only if \\(p\\) is a prime of the form \\(4k + 1\\).\nThis implies that \\(S\\) contains an odd number of elements and hence every involution of \\(S\\) will have a fixed point. One involution of \\(S\\) is \\((x, y, z) \\mapsto (x, z, y)\\) and a fixed point of this map gives a way of writing \\(p\\) as a sum of two squares.\nThe details do not seem too hard to check (I haven’t checked them though). The real question is - how did the authors come up with this mad involution?"
   },
   {
     "objectID": "scribbles/posts/2023-09-07 smartless willem dafoe.html",

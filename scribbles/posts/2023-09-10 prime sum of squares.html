@@ -171,7 +171,11 @@ ul.task-list li input[type="checkbox"] {
 
 <p>I came across this “one sentence” proof that every prime congruent to 1 mod 4 can be written as a sum of two squares:</p>
 <p><a href="https://doi.org/10.2307/2323918">https://doi.org/10.2307/2323918</a></p>
-<p>The proof involves constructing a cryptic involution on a set of numbers and showing that the involution has exactly one fixed point. The details do not seem too hard to check. The real question is - how did the authors come up with this involution?</p>
+<p>The proof involves constructing the following cryptic involution <span class="math display">\[
+(x, y, z) \mapsto \begin{cases}(x+2 z, z, y-x-z) &amp; \text { if } x&lt;y-z \\ (2 y-x, y, x-y+z) &amp; \text { if } y-z&lt;x&lt;2 y \\ (x-2 y, x-y+z, y) &amp; \text { if } x&gt;2 y\end{cases}
+\]</span> on the set <span class="math inline">\(S=\left\{(x, y, z) \in \mathbb{N}^{3}: x^{2}+4 y z=p\right\}\)</span> and showing that the involution has exactly one fixed point <span class="math inline">\((1, 1, k)\)</span> if and only if <span class="math inline">\(p\)</span> is a prime of the form <span class="math inline">\(4k + 1\)</span>.</p>
+<p>This implies that <span class="math inline">\(S\)</span> contains an odd number of elements and hence every involution of <span class="math inline">\(S\)</span> will have a fixed point. One involution of <span class="math inline">\(S\)</span> is <span class="math inline">\((x, y, z) \mapsto (x, z, y)\)</span> and a fixed point of this map gives a way of writing <span class="math inline">\(p\)</span> as a sum of two squares.</p>
+<p>The details do not seem too hard to check (I haven’t checked them though). The real question is - how did the authors come up with this mad involution?</p>
 
 
 

@@ -21,7 +21,9 @@
 
 <p>I came across this “one sentence” proof that every prime congruent to 1 mod 4 can be written as a sum of two squares:</p>
 <p><a href="https://doi.org/10.2307/2323918">https://doi.org/10.2307/2323918</a></p>
-<p>The proof involves constructing a cryptic involution on a set of numbers and showing that the involution has exactly one fixed point. The details do not seem too hard to check. The real question is - how did the authors come up with this involution?</p>
+<p>The proof involves constructing the following cryptic involution <img src="https://latex.codecogs.com/png.latex?%0A(x,%20y,%20z)%20%5Cmapsto%20%5Cbegin%7Bcases%7D(x+2%20z,%20z,%20y-x-z)%20&amp;%20%5Ctext%20%7B%20if%20%7D%20x%3Cy-z%20%5C%5C%20(2%20y-x,%20y,%20x-y+z)%20&amp;%20%5Ctext%20%7B%20if%20%7D%20y-z%3Cx%3C2%20y%20%5C%5C%20(x-2%20y,%20x-y+z,%20y)%20&amp;%20%5Ctext%20%7B%20if%20%7D%20x%3E2%20y%5Cend%7Bcases%7D%0A"> on the set <img src="https://latex.codecogs.com/png.latex?S=%5Cleft%5C%7B(x,%20y,%20z)%20%5Cin%20%5Cmathbb%7BN%7D%5E%7B3%7D:%20x%5E%7B2%7D+4%20y%20z=p%5Cright%5C%7D"> and showing that the involution has exactly one fixed point <img src="https://latex.codecogs.com/png.latex?(1,%201,%20k)"> if and only if <img src="https://latex.codecogs.com/png.latex?p"> is a prime of the form <img src="https://latex.codecogs.com/png.latex?4k%20+%201">.</p>
+<p>This implies that <img src="https://latex.codecogs.com/png.latex?S"> contains an odd number of elements and hence every involution of <img src="https://latex.codecogs.com/png.latex?S"> will have a fixed point. One involution of <img src="https://latex.codecogs.com/png.latex?S"> is <img src="https://latex.codecogs.com/png.latex?(x,%20y,%20z)%20%5Cmapsto%20(x,%20z,%20y)"> and a fixed point of this map gives a way of writing <img src="https://latex.codecogs.com/png.latex?p"> as a sum of two squares.</p>
+<p>The details do not seem too hard to check (I haven’t checked them though). The real question is - how did the authors come up with this mad involution?</p>
 
 
 
