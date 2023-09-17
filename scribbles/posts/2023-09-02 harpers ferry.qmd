@@ -1,6 +1,5 @@
 ---
 title: Harper's Ferry
-author: Apurva Nakade
 date: 2023-09-02
 categories:
   - journal

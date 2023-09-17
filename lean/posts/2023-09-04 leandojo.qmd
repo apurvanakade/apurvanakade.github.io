@@ -1,6 +1,5 @@
 ---
 title: LeanDojo
-author: Apurva Nakade
 date: 2023-09-04 16:22:19
 categories: 
   - ML

@@ -1,6 +1,5 @@
 ---
 title: Smartless - Willem Dafoe
-author: Apurva Nakade
 date: 2023-09-07
 categories:
   - podcast

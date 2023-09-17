@@ -2,7 +2,6 @@
 title: Begin Again
 categories:
   - journal
-author: Apurva Nakade
 date: 2023-08-20 11:03:47
 ---
 

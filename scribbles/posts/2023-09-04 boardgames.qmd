@@ -1,6 +1,5 @@
 ---
 title: Board Games in Baltimore
-author: Apurva Nakade
 date: 2023-09-04
 categories:
   - boardgames

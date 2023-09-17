@@ -1,6 +1,5 @@
 ---
 title: Etymology of *Integer*
-author: Apurva Nakade
 date: 2023-08-29 09:13:31
 categories: history of math
 ---

@@ -3,7 +3,6 @@ title: History-of-Math Resources
 categories:
   - resources
   - history of math
-author: Apurva Nakade
 date: 2023-08-21 22:30:11
 ---
 

@@ -1,6 +1,5 @@
 ---
 title: Short tactics tutorial
-author: Apurva Nakade
 date: 2023-08-31 21:13:45
 categories: 
   - tactics

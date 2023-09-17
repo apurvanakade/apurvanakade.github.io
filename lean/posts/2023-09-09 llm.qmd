@@ -1,6 +1,5 @@
 ---
 title: llmstep and LeanInfer
-author: Apurva Nakade
 date: 2023-09-09 22:37:41
 categories:
   - ML
