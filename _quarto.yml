@@ -23,8 +23,8 @@ website:
   #   search: true
   #   contents: auto
   open-graph: true
-  site-url: https://quarto.org
-  repo-url: https://github.com/quarto-dev/quarto-web
+  site-url: https://apurvanakade.github.io/
+  repo-url: https://github.com/apurvanakade/apurvanakade.github.io/
   search:
     type: overlay
     location: navbar

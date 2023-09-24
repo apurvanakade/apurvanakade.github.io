@@ -1,15 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://quarto.org/index.html</loc>
-    <lastmod>2023-09-24T16:10:14.182Z</lastmod>
+    <loc>https://apurvanakade.github.io/index.html</loc>
+    <lastmod>2023-09-24T19:18:39.974Z</lastmod>
   </url>
   <url>
-    <loc>https://quarto.org/notes.html</loc>
-    <lastmod>2023-09-24T16:10:13.606Z</lastmod>
+    <loc>https://apurvanakade.github.io/CV.html</loc>
+    <lastmod>2023-09-24T19:18:39.538Z</lastmod>
   </url>
   <url>
-    <loc>https://quarto.org/CV.html</loc>
-    <lastmod>2023-09-24T16:10:13.970Z</lastmod>
+    <loc>https://apurvanakade.github.io/notes.html</loc>
+    <lastmod>2023-09-24T19:18:39.162Z</lastmod>
+  </url>
+  <url>
+    <loc>https://apurvanakade.github.io/rec letters.html</loc>
+    <lastmod>2023-09-24T19:18:39.766Z</lastmod>
   </url>
 </urlset>
