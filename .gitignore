@@ -3,5 +3,5 @@
 .vscode
 .RData
 .Rhistory
-_site/*
+/_site/
 docs/*

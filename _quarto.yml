@@ -6,15 +6,14 @@ website:
   navbar:
     left:
       - notes.qmd
-      - lean/index.qmd
+      - text: Lean
+        href: https://apurvanakade.github.io/scribbles/lean/index.html
       - scribbles/index.qmd
       - CV.qmd
     right:
       - icon: github
         href: https://github.com/apurvanakade/
         aria-label: GitHub
-      - icon: rss
-        href: scribbles/index.xml
   # sidebar: 
   #   style: floating
   #   search: true
