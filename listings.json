@@ -1,14 +1,5 @@
 [
   {
-    "listing": "/lean/index.html",
-    "items": [
-      "/lean/posts/2023-09-09 llm.html",
-      "/lean/posts/2023-09-04 leandojo.html",
-      "/lean/posts/2023-08-30 tactics.html",
-      "/lean/posts/2023-08-30 loogle.html"
-    ]
-  },
-  {
     "listing": "/scribbles/index.html",
     "items": [
       "/scribbles/posts/2023-09-16 when math becomes an art.html",
