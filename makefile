@@ -1,4 +1,4 @@
-DOCS_DIR = _site/
+DOCS_DIR = docs/
 MAKE = quarto render
 
 all: clean build
