@@ -10,7 +10,7 @@ website:
         href: https://apurvanakade.github.io/scribbles/
       - notes.qmd
       - text: Lean
-        href: https://apurvanakade.github.io/scribbles/lean/
+        href: https://apurvanakade.github.io/lean/
       - scribbles/index.qmd
       - CV.qmd
     right:
