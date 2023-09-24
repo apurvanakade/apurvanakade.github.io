@@ -7,48 +7,6 @@
     "text": "Hi!\nHow to pronounce my name: Ap as in apart, u as in moon, rva as in curve.\nI’m a Senior Lecturer in the Applied Math & Stats department  at Johns Hopkins University. Currently, I’m teaching EN.553.171 Discrete Mathematics.\nI invest the majority of my mental energy in seeking ways to enhance math education, both within my courses and on a broader scale. My academic interests and experience span a wide range in Math, CS, and Math Education. Lately, I’ve gotten very interested in the field of math formalization using the Lean theorem prover. I thoroughly enjoy discussing all these topics. Whether you’re a student, mathematician, or educator, please feel free to reach out to me without hesitation."
   },
   {
-    "objectID": "scribbles/posts/2023-09-02 harpers ferry.html",
-    "href": "scribbles/posts/2023-09-02 harpers ferry.html",
-    "title": "Harper’s Ferry",
-    "section": "",
-    "text": "Over the last couple of years, I lived in Chicago and couldn’t go on hikes. The land there is flatter than a pancake. It’s a perfect place for long-distance biking but an extremely boring one for hiking.\nI hiked the Loudon Heights trail at Harper’s Ferry and absolutely loved it. It was a bit tedious at first with no change in scenery - but that’s the whole point of hiking. It’s not about change, or being comfortable, or getting somewhere, but the journey itself. You walk for hours, letting your mind settle down and taking in the beauty of your surroundings. There’s a deep, ancient instinct that kicks in when you find yourself so close to nature. This feeling is hard to describe and equally hard to recollect.\nWhen I hadn’t hiked for so long, I didn’t particularly miss it, but I was also slowly forgetting how much I liked it. It is a precious thing that I hope I don’t lose as I get busy with life."
-  },
-  {
-    "objectID": "scribbles/posts/2023-09-04 boardgames.html",
-    "href": "scribbles/posts/2023-09-04 boardgames.html",
-    "title": "Board Games in Baltimore",
-    "section": "",
-    "text": "I have been trying out some board games groups around Baltimore. Sadly I could not find any in the city itself but I found quite a few in the surrounding areas. I have been to two events of far and already learned quite a few new games.\n\nQuiddler\nCoup\nWavelength\nKarma\nFluxx\nMonopoly Deal\n\nThey were all quick games and fun to play. If I were to buy any of these then it would be Wavelength. All the others were card games and fun to play with people who have never played board games before."
-  },
-  {
-    "objectID": "scribbles/posts/2023-09-10 prime sum of squares.html",
-    "href": "scribbles/posts/2023-09-10 prime sum of squares.html",
-    "title": "Every Prime \\(\\equiv 1 \\mod 4\\) Is a Sum of Two Squares",
-    "section": "",
-    "text": "I came across this “one sentence” proof that every prime congruent to 1 mod 4 can be written as a sum of two squares:\nhttps://doi.org/10.2307/2323918\nThe proof involves constructing the following cryptic involution \\[\n(x, y, z) \\mapsto \\begin{cases}(x+2 z, z, y-x-z) & \\text { if } x&lt;y-z \\\\ (2 y-x, y, x-y+z) & \\text { if } y-z&lt;x&lt;2 y \\\\ (x-2 y, x-y+z, y) & \\text { if } x&gt;2 y\\end{cases}\n\\] on the set \\(S=\\left\\{(x, y, z) \\in \\mathbb{N}^{3}: x^{2}+4 y z=p\\right\\}\\) and showing that the involution has exactly one fixed point \\((1, 1, k)\\) if and only if \\(p\\) is a prime of the form \\(4k + 1\\).\nThis implies that \\(S\\) contains an odd number of elements and hence every involution of \\(S\\) will have a fixed point. One involution of \\(S\\) is \\((x, y, z) \\mapsto (x, z, y)\\) and a fixed point of this map gives a way of writing \\(p\\) as a sum of two squares.\nThe details do not seem too hard to check (I haven’t checked them though). The real question is - how did the authors come up with this mad involution?"
-  },
-  {
-    "objectID": "scribbles/posts/2023-09-07 smartless willem dafoe.html",
-    "href": "scribbles/posts/2023-09-07 smartless willem dafoe.html",
-    "title": "Smartless - Willem Dafoe",
-    "section": "",
-    "text": "On one of my long drives recently, I was listening to the Smartless episode featuring Willem Dafoe.\nHe shared a perspective that resonated with me. Although he’s American, he lives in Italy, making him an immigrant there. He mentioned that being an immigrant is a liberating experience for him, allowing him to see things from a distance, with an outsider’s perspective.\nI’d never considered it, but it rings true for me as well. Being an immigrant in America, I have the unique vantage point to observe the absurdities, joys, and sorrows of this place, but from a distance. Having lived in another country gives me a completely different perspective, knowing how things could be elsewhere. I can never become too myopic here, as I never get too close to things. There is a sad yet liberating quality to it."
-  },
-  {
-    "objectID": "scribbles/posts/2023-08-30 group exercise.html",
-    "href": "scribbles/posts/2023-08-30 group exercise.html",
-    "title": "Group Exercise",
-    "section": "",
-    "text": "I like to think that I am generally a very fit person. I exercise almost everyday and generally lead an active life. Just for fun, I recently tried a Yoga Sculpt class and it kicked my ass.\nThis made me realize two things:\n\nWhen working out alone, it’s easy to not be fully honest with oneself. I probably take longer breaks, get sidetracked by my phone, or choose lighter weights when I could handle heavier ones.\nWe can often push ourselves more than we think. I never knew an hour-long HIIT session with weights, like Yoga Sculpt, was something I could do. I’m surprised I hadn’t tried it earlier.\n\nI once tried a yoga class via livestream, but it didn’t feel the same. The poses might have been identical, but the intensity was different.\nI’ve started to see the benefits of group classes. They push you harder and offer new experiences you might not encounter otherwise."
-  },
-  {
-    "objectID": "scribbles/posts/2023-09-16 when math becomes an art.html",
-    "href": "scribbles/posts/2023-09-16 when math becomes an art.html",
-    "title": "When Math Becomes an Art",
-    "section": "",
-    "text": "View this post on Instagram\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nA post shared by Elle Cordova (@ellecordova)\n\n\n\n\nThere was no up\nThere was no down\nThere was no side to side\nThere was no light\nThere was no dark\nNor shape of any kind\nThere were no stars or planet mars\nOr protons to collide\nThere was no up\nThere was no down\nThere was no side to side\n\nand furthermore to underscore this total lacking state\nThere was no here\nThere was no there\nBecause there was no space\nAnd in this endless void\nWhich can’t be thought of as a place\nThere was no time\nAnd so no passing minutes hours days\n\nOf all the paradoxes\nThat belabor common sense\nI think this one’s the greatest\nThis time before events\nBecause how did we get from nothing\nTo infinitely dense\nFrom immeasurably small\nTo inconceivably immense\n\nBut before we get unmoored\nFrom the question at the start\nLet’s take a breath and marvel\nAt when math becomes an art\nBecause we don’t have to understand it\nTo know there was a time\nWhen there was no up\nThere was no down\nThere was no side to side"
-  },
-  {
     "objectID": "notes.html",
     "href": "notes.html",
     "title": "Notes",
@@ -152,54 +110,5 @@
     "title": "CV",
     "section": "Conference Attended",
     "text": "Conference Attended\nUnited States Conference on Teaching Statistics, 2023\nMSRI CIME Workshop, 2022\nProject NExT at MAA Mathfest, Online, 2021\nLean for the curious mathematician, 2020\nSpaces of Embeddings, BIRS, Banff, 2019\nMSRI Summer School, Cortona, Italy, 2019\nMRC Workshop, Providence RI, 2019\nMIT Talbot Workshop, Austin TX, 2019\nWorkshop on Functor Calculus, Ohio State University, 2019\nAMS Sectional Meeting, University of Hawaii, 2019\nArizona Winter School, Arizona State University, 2019\nJoint Mathematical Meetings, Baltimore, 2019\nSymplectic Geometry and Homotopy Theory, UCLA, 2018\nMSRI Summer School, Fields Institute, Toronto, 2018\nGraduate Student Conference, Temple University, 2018\nAMS Sectional Meeting, UC Riverside, 2017\nEuropean Autumn School in Topology, Netherlands, 2017\nTopology Festival, Cornell University, 2017\nGeorgia International Topology Conference, University of Georgia, 2017\nAlpine Algebraic & Applied Topology Conference, Switzerland, 2016\nWCATSS, University of Oregon, Eugene, 2016\nGSTSC, Indiana University, Bloomington, 2016\nMid-Atlantic Topology Conference, Johns Hopkins University, 2016\nMidwest Topology Seminar, Northwestern University, 2016\nGeometry and Topology Conference, Lehigh University, 2015\nMid-Atlantic Topology Conference, University of Virginia, 2015\nMidwest Topology Seminar, University of Illinois Chicago, 2015\nMidwest Topology Seminar, Northwestern University, 2015\nModular invariants in Topology and Analysis, Regensburg, 2015\nWCATSS on Field theories, UBC, 2015\nIntroductory Workshop on Algebraic Topology, MSRI, 2015\nJoint Mathematical Meetings, Baltimore, 2015\nClassification of Manifolds, NEHU, 2013\nH-principle, Chennai Mathematical Institute, 2012\nGroups and geometries, ISI, Bangalore, 2012\nString Topology, Vivekananda University, 2012\nKervaire Invariant One, ISI, Kolkata, 2012\nNumber Theory workshop, Tezpur University, 2011\nLie algebras and their representations, CMI, 2011\nNurture camp, Institute of Mathematical Sciences, 2007\nIMO, Slovenia, 2006 \nIMOTC, HBCSC, 2003-2006\n\n\n\n\nKishore Vaigyanik Protsahan Yojana (KVPY), 2005"
-  },
-  {
-    "objectID": "scribbles/posts/2023-08-21 history of math.html",
-    "href": "scribbles/posts/2023-08-21 history of math.html",
-    "title": "History-of-Math Resources",
-    "section": "",
-    "text": "I’ve always been fascinated by the history of mathematics. Some of the classic and dramatic discoveries I read a kid were those of non-Euclidean geometry, Galois theory, the proof of Fermat’s last theorem, as well as Cantor and Gödel’s breakthroughs in logic. However, some of the more commonplace achievements, such as the invention of calculus by Newton and its subsequent formalization a century later through \\(\\epsilon \\delta\\) proofs, also possess a very intriguing narrative that involves not only mathematicians but also philosophers and theologians1.\nI was pleasantly surprised to come across the following resources for learning mathematical concepts through historical sources:\nApparently, these resources are part of an NSF-funded project Transforming Instruction In Undergraduate Mathematics Via Primary Historical Sources TRIUMPHS. I hope I find the time to read through with these materials."
-  },
-  {
-    "objectID": "scribbles/posts/2023-08-21 history of math.html#footnotes",
-    "href": "scribbles/posts/2023-08-21 history of math.html#footnotes",
-    "title": "History-of-Math Resources",
-    "section": "Footnotes",
-    "text": "Footnotes\n\n\nWho Gave You the Epsilon? Cauchy and the Origins of Rigorous Calculus Judith V. Grabiner↩︎"
-  },
-  {
-    "objectID": "scribbles/posts/2023-08-23 chandrayaan 3.html",
-    "href": "scribbles/posts/2023-08-23 chandrayaan 3.html",
-    "title": "Chandrayaan-3",
-    "section": "",
-    "text": "India landed Chandrayaan-3 on the Moon! Amazing!!!"
-  },
-  {
-    "objectID": "scribbles/posts/2023-08-20 begin again.html",
-    "href": "scribbles/posts/2023-08-20 begin again.html",
-    "title": "Begin Again",
-    "section": "",
-    "text": "I’ve been blogging for as long as I can remember, starting from the early days of Blogger, Wordpress, and Tumblr, to the newer self-hosted realms of Github, Jekyll, and Hugo. Now that I’m entering a new phase of my life at JHU, here I am once again. I plan to write about the topics that currently occupy my thoughts: math, teaching learning, Lean, programming, philosophy of mind, books, movies, and more…\nFor me, writing serves as a way to clarify my thoughts while staying honest and consistent. As the wise Feynman once said “The first principle is not to fool yourself – and you are the easiest person to fool.” Expressing your thoughts and putting them out in the world (for nobody to read) is the first step towards that.\nThe title of this post is a meditation prompt by Sam Harris. I’m serious about practicing meditation and mindfulness, but regrettably, not very good at it. Whenever I catch myself doing something I would rather not (like procrastinating writing), I just remind myself to Begin Again.\nSo here’s to not fooling yourself and to new beginnings."
-  },
-  {
-    "objectID": "scribbles/posts/2023-08-23 starting your day right.html",
-    "href": "scribbles/posts/2023-08-23 starting your day right.html",
-    "title": "Starting Your Day Right",
-    "section": "",
-    "text": "There is a strong correlation between my daily habits and my level of productivity. When I’m at my peak performance, everything feels automated and flowing.\nIn the past month, I relocated to Baltimore. Prior to that, I was frequently on the move, both for work and family commitments. As a result of which, my routine has been completely upended, and my habits are in complete disarray.\nI came across this post on Stoicism (something I greatly admire) which, among other things, talks about starting your day right. This made me realize how I’ve been swept up by the unproductive habit of checking my phone first thing in the morning.\nFortunately, I’ve just finished assembling my writing desk by a lovely corner window. My coffee is brewing and my trusty iPad is charged. Time to get back to morning journaling again. Hopefully, even when life gets busy and chaotic, I’ll have the stamina and discipline to keep up with this incredibly useful habit.\n\n\n\nMy writing desk"
-  },
-  {
-    "objectID": "scribbles/posts/2023-08-29 integers.html",
-    "href": "scribbles/posts/2023-08-29 integers.html",
-    "title": "Etymology of Integer",
-    "section": "",
-    "text": "We use integers so much in math that it never occurred to me before yesterday that this is a weird word with a weirder symbol associated to it. Wikipedia explains this very nicely.\nThe words integer and entire share the same Latin root: in (“not”) plus tangere (“to touch”). Google says that the first known use of the word integer was in 1571 by Thomas Digges in a book called A Geometrical Practise Named Pantometria. The word origin still doesn’t make complete sense to me but then I don’t know any Latin. The symbol \\(\\mathbb{Z}\\) comes from Zahlen, which is German for numbers, and was first used by Hilbert."
-  },
-  {
-    "objectID": "scribbles/index.html",
-    "href": "scribbles/index.html",
-    "title": "Scribbles",
-    "section": "",
-    "text": "When Math Becomes an Art\n\n\n\n\n\n\n\npoem\n\n\nmath\n\n\n\n\n\n\n\n\n\n\n\nSep 16, 2023\n\n\n\n\n\n\n\n\nEvery Prime \\(\\equiv 1 \\mod 4\\) Is a Sum of Two Squares\n\n\n\n\n\n\n\nmath\n\n\nto read\n\n\nnumber theory\n\n\nelementary number theory\n\n\n\n\n\n\n\n\n\n\n\nSep 10, 2023\n\n\n\n\n\n\n\n\nSmartless - Willem Dafoe\n\n\n\n\n\n\n\npodcast\n\n\n\n\n\n\n\n\n\n\n\nSep 7, 2023\n\n\n\n\n\n\n\n\nBoard Games in Baltimore\n\n\n\n\n\n\n\nboardgames\n\n\n\n\n\n\n\n\n\n\n\nSep 4, 2023\n\n\n\n\n\n\n\n\nHarper’s Ferry\n\n\n\n\n\n\n\njournal\n\n\n\n\n\n\n\n\n\n\n\nSep 2, 2023\n\n\n\n\n\n\n\n\nGroup Exercise\n\n\n\n\n\n\n\njournal\n\n\n\n\n\n\n\n\n\n\n\nAug 30, 2023\n\n\n\n\n\n\n\n\nEtymology of Integer\n\n\n\n\n\n\n\nhistory of math\n\n\n\n\n\n\n\n\n\n\n\nAug 29, 2023\n\n\n\n\n\n\n\n\nChandrayaan-3\n\n\n\n\n\n\n\njournal\n\n\n\n\n\n\n\n\n\n\n\nAug 23, 2023\n\n\n\n\n\n\n\n\nStarting Your Day Right\n\n\n\n\n\n\n\nstoicism\n\n\nhabits\n\n\n\n\n\n\n\n\n\n\n\nAug 23, 2023\n\n\n\n\n\n\n\n\nHistory-of-Math Resources\n\n\n\n\n\n\n\nresources\n\n\nhistory of math\n\n\n\n\n\n\n\n\n\n\n\nAug 21, 2023\n\n\n\n\n\n\n\n\nBegin Again\n\n\n\n\n\n\n\njournal\n\n\n\n\n\n\n\n\n\n\n\nAug 20, 2023\n\n\n\n\n\n\nNo matching items"
   }
 ]

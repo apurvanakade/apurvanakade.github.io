@@ -7,11 +7,12 @@ website:
   navbar:
     left:
       - text: Home
-        href: https://apurvanakade.github.io/scribbles/
+        href: https://apurvanakade.github.io/
       - notes.qmd
       - text: Lean
         href: https://apurvanakade.github.io/lean/
-      - scribbles/index.qmd
+      - text: Scribbles
+        href: https://apurvanakade.github.io/scribbles/
       - CV.qmd
     right:
       - icon: github
