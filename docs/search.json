@@ -1,12 +1,5 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Hi!",
-    "section": "",
-    "text": "Hi!\nHow to pronounce my name: Ap as in apart, u as in moon, rva as in curve.\nI’m a Senior Lecturer in the Applied Math & Stats department  at Johns Hopkins University. Currently, I’m teaching EN.553.171 Discrete Mathematics.\nI invest the majority of my mental energy in seeking ways to enhance math education, both within my courses and on a broader scale. My academic interests and experience span a wide range in Math, CS, and Math Education. Lately, I’ve gotten very interested in the field of math formalization using the Lean theorem prover. I thoroughly enjoy discussing all these topics. Whether you’re a student, mathematician, or educator, please feel free to reach out to me without hesitation."
-  },
-  {
     "objectID": "CV.html",
     "href": "CV.html",
     "title": "CV",
@@ -70,6 +63,13 @@
     "text": "Conference Attended\nUnited States Conference on Teaching Statistics, 2023\nMSRI CIME Workshop, 2022\nProject NExT at MAA Mathfest, Online, 2021\nLean for the curious mathematician, 2020\nSpaces of Embeddings, BIRS, Banff, 2019\nMSRI Summer School, Cortona, Italy, 2019\nMRC Workshop, Providence RI, 2019\nMIT Talbot Workshop, Austin TX, 2019\nWorkshop on Functor Calculus, Ohio State University, 2019\nAMS Sectional Meeting, University of Hawaii, 2019\nArizona Winter School, Arizona State University, 2019\nJoint Mathematical Meetings, Baltimore, 2019\nSymplectic Geometry and Homotopy Theory, UCLA, 2018\nMSRI Summer School, Fields Institute, Toronto, 2018\nGraduate Student Conference, Temple University, 2018\nAMS Sectional Meeting, UC Riverside, 2017\nEuropean Autumn School in Topology, Netherlands, 2017\nTopology Festival, Cornell University, 2017\nGeorgia International Topology Conference, University of Georgia, 2017\nAlpine Algebraic & Applied Topology Conference, Switzerland, 2016\nWCATSS, University of Oregon, Eugene, 2016\nGSTSC, Indiana University, Bloomington, 2016\nMid-Atlantic Topology Conference, Johns Hopkins University, 2016\nMidwest Topology Seminar, Northwestern University, 2016\nGeometry and Topology Conference, Lehigh University, 2015\nMid-Atlantic Topology Conference, University of Virginia, 2015\nMidwest Topology Seminar, University of Illinois Chicago, 2015\nMidwest Topology Seminar, Northwestern University, 2015\nModular invariants in Topology and Analysis, Regensburg, 2015\nWCATSS on Field theories, UBC, 2015\nIntroductory Workshop on Algebraic Topology, MSRI, 2015\nJoint Mathematical Meetings, Baltimore, 2015\nClassification of Manifolds, NEHU, 2013\nH-principle, Chennai Mathematical Institute, 2012\nGroups and geometries, ISI, Bangalore, 2012\nString Topology, Vivekananda University, 2012\nKervaire Invariant One, ISI, Kolkata, 2012\nNumber Theory workshop, Tezpur University, 2011\nLie algebras and their representations, CMI, 2011\nNurture camp, Institute of Mathematical Sciences, 2007\nIMO, Slovenia, 2006 \nIMOTC, HBCSC, 2003-2006\n\n\n\n\nKishore Vaigyanik Protsahan Yojana (KVPY), 2005"
   },
   {
+    "objectID": "rec letters.html",
+    "href": "rec letters.html",
+    "title": "Recommendation Letters",
+    "section": "",
+    "text": "source: https://www.hmc.edu/mathematics/wp-content/uploads/sites/49/2020/03/recommendation-letters.pdf\nIf I have recently agreed to write any recommendation letters for you, then at least two weeks before the first letter is due, please email me • a copy of your personal statement (if applicable), • an unofficial copy of your transcript, and • a copy of your resume. In the same email, please send me your answers to the following questions: 1. What is your name, graduation year, and major? 2. For what are you applying (e.g., graduate school)? List the programs to which you are applying, together with due dates. 3. How long have I known you (in years and months), and what is my relationship to you (e.g., instructor, research advisor, etc.)? 4. For what classes have I had you, what final grades did I assign you, and how did you distinguish yourself in my classes? 5. How would you describe yourself? What are your strengths? What are your weaknesses? Your response to this question is important to me, so the more details the better. 6. What are some of your academic and nonacademic accomplishments? 7. What makes me particularly qualified to write a letter for you? 8. What makes you particularly qualified for this position/honor/award? 9. What are your long term goals and will this position/honor/award help? If so, how? 10. Additional comments (summer research, interesting jobs, hobbies, etc.)? Finally, please send me email reminders as deadlines approach, and feel free to chat with me about other ways you can make the application process go smoothly. Good luck! Michael Orrison Professor of Mathematics Harvey Mudd College"
+  },
+  {
     "objectID": "notes.html",
     "href": "notes.html",
     "title": "Notes",
@@ -112,10 +112,10 @@
     "text": "Expository notes\nFollowing are some of my personal math notes. The notes have not been proofread and might contain errors.\n\nWhat is a Spectrum?\nh-principles MSRI Summer School\nConnections on Principal Bundles and Classical Electromagnetism\nVector Fields on Spheres\nSteifel Whitney Numbers\nHomotopy of MO\nRepresentation Theory of Symmetric Group\nGeometry of Dirac Operators\nFIOs and Lagrangian Submanifolds\nSymplectic Geometry Course Notes\nFinite Gauge Groups TQFTs\nClassical Lie Groups\nMosher and Tangora Notes"
   },
   {
-    "objectID": "rec letters.html",
-    "href": "rec letters.html",
-    "title": "Recommendation Letters",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Hi!",
     "section": "",
-    "text": "source: https://www.hmc.edu/mathematics/wp-content/uploads/sites/49/2020/03/recommendation-letters.pdf\nIf I have recently agreed to write any recommendation letters for you, then at least two weeks before the first letter is due, please email me • a copy of your personal statement (if applicable), • an unofficial copy of your transcript, and • a copy of your resume. In the same email, please send me your answers to the following questions: 1. What is your name, graduation year, and major? 2. For what are you applying (e.g., graduate school)? List the programs to which you are applying, together with due dates. 3. How long have I known you (in years and months), and what is my relationship to you (e.g., instructor, research advisor, etc.)? 4. For what classes have I had you, what final grades did I assign you, and how did you distinguish yourself in my classes? 5. How would you describe yourself? What are your strengths? What are your weaknesses? Your response to this question is important to me, so the more details the better. 6. What are some of your academic and nonacademic accomplishments? 7. What makes me particularly qualified to write a letter for you? 8. What makes you particularly qualified for this position/honor/award? 9. What are your long term goals and will this position/honor/award help? If so, how? 10. Additional comments (summer research, interesting jobs, hobbies, etc.)? Finally, please send me email reminders as deadlines approach, and feel free to chat with me about other ways you can make the application process go smoothly. Good luck! Michael Orrison Professor of Mathematics Harvey Mudd College"
+    "text": "Hi!\nHow to pronounce my name: Ap as in apart, u as in moon, rva as in curve.\nI’m a Senior Lecturer in the Applied Math & Stats department  at Johns Hopkins University. Currently, I’m teaching EN.553.171 Discrete Mathematics.\nI invest the majority of my mental energy in seeking ways to enhance math education, both within my courses and on a broader scale. My academic interests and experience span a wide range in Math, CS, and Math Education. Lately, I’ve gotten very interested in the field of math formalization using the Lean theorem prover. I thoroughly enjoy discussing all these topics. Whether you’re a student, mathematician, or educator, please feel free to reach out to me without hesitation."
   }
 ]

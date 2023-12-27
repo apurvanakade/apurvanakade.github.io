@@ -9,8 +9,6 @@ website:
       - text: Home
         href: https://apurvanakade.github.io/
       - notes.qmd
-      - text: Lean
-        href: https://apurvanakade.github.io/lean/
       - text: Scribbles
         href: https://apurvanakade.github.io/scribbles/
       - CV.qmd
