@@ -36,6 +36,8 @@ B.Tech. in Computer Science & Engineering, IIT Kanpur, 2010
 
 ### Instructor, JHU AMS
 
+- Graph theory, Spring 2024
+- Linear Algebra and Differential Equations, Spring 2024
 - Discrete Math, Fall 2023
 
 ### Instructor, Northwestern
