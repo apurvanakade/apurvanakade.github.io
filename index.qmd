@@ -13,6 +13,6 @@ How to pronounce my name: *Ap* as in **ap**art, *u* as in m**oo**n, *rva* as in 
 
 I invest the majority of my mental energy in seeking ways to improve math education, both within my courses and on a broader scale.
 My academic interests and experience span a wide range in Math, CS, and Math Education. 
-I've also work in the field of math formalization using the [Lean theorem prover](https://leanprover-community.github.io/). 
+I also work on math formalization using the [Lean theorem prover](https://leanprover-community.github.io/). 
 <!-- I thoroughly enjoy discussing all these topics. 
 Whether you're a student, mathematician, or educator, please feel free to [reach out to me](mailto:apurva.nakade@jhu.edu) without hesitation. -->
