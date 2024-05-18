@@ -3,6 +3,8 @@ title: CV
 toc: true
 ---
 
+[PDF version](https://github.com/apurvanakade/PDFs/blob/main/CV.pdf)
+
 Senior Lecturer, Department of Applied Mathematics & Statistics, Johns Hopkins University. 
 
 email: [apurva.nakade@jhu.edu](mailto:apurva.nakade@jhu.edu)
@@ -29,6 +31,32 @@ M.Sc. in Mathematics, Chennai Mathematical Institute, 2013
 Exotic Derivatives Trader, Nomura Capital India Pvt Ltd, 2010
 
 B.Tech. in Computer Science & Engineering, IIT Kanpur, 2010
+
+## Professional Development
+
+Faculty Forward Fellowship, JHU, 2023
+
+Introduction to Education Research Workshop, JHU, 2023
+
+MAA Section NExT Fellow, 2023 cohort
+
+MAA Project NExT Fellow, Brown'20 cohort, 2020
+ <!-- program for new or recent Ph.D.s in the mathematical sciences. -->
+
+Teaching Academy Certification, JHU, 2019
+
+<!-- Program to help prepare for academic careers and to provide assistance in acquiring a foundation for the teaching responsibilities -->
+
+Participated in several workshops by the Center of Teaching & Learning at UWO, 2019-2020
+
+Participated in the MSRI Critical Issues in Mathematics Education Workshop, 2022
+
+Participated in the MAA Modeling Inspiration for Differential Equations Workshop, 2022
+
+Participated in online Mastery Grading Workshop, 2019
+
+Attended the Science of Learning Symposium, JHU, 2014-2018
+
 
 ## Teaching
 
@@ -142,7 +170,9 @@ AMS Graduate Student Travel Grant, 2019
 
 <!-- $250 travel grant for giving a talk at AMS Sectional Meetings -->
 
-## Mentoring 
+## Service
+
+Judge for poster presentations at Fall 2024 MAA MD-DC-VA Section Meeting
 
 Supplementary Instructor for the Causeway Postbaccalaureate Program, NU, 2022
 <!-- 
@@ -155,24 +185,6 @@ Directed Reading Program, UWO, JHU, 2017-2021
 - Started DRP at UWO in Fall 2019
 - Organizer and mentor for DRP at JHU and UWO Professional Development
 
-## Professional Development
-
-MAA Project NExT Fellow, Brown'20 cohort, 2020
- <!-- program for new or recent Ph.D.s in the mathematical sciences. -->
-
-Teaching Academy Certification, JHU, 2019
-
-<!-- Program to help prepare for academic careers and to provide assistance in acquiring a foundation for the teaching responsibilities -->
-
-Participated in several workshops by the Center of Teaching & Learning at UWO, 2019-2020
-
-Participated in the MSRI Critical Issues in Mathematics Education Workshop, 2022
-
-Participated in the MAA Modeling Inspiration for Differential Equations Workshop, 2022
-
-Participated in online Mastery Grading Workshop, 2019
-
-Attended the Science of Learning Symposium, JHU, 2014-2018
 <!-- 
 ## Talks
 
@@ -213,6 +225,10 @@ sequence*](http://math.mit.edu/conferences/talbot/index.php?year=2019&sub=talks)
 \ -->
 
 ## Conference Attended 
+
+[MAA MD-DC-VA Section Meeting](http://sections.maa.org/mddcva/Spring2024Meeting.php), Spring 2024
+
+[MAA MD-DC-VA Section Meeting](http://sections.maa.org/mddcva/Fall2023Meeting.php), Fall 2023
 
 [United States Conference on Teaching Statistics](https://www.causeweb.org/cause/uscots/uscots23), 2023
 
