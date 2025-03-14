@@ -1,6 +1,6 @@
 ---
 about:
-  template: jolla
+  template: trestles
   image: images/me0.jpg
 toc: false
 ---
