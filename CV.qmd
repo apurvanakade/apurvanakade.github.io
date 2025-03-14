@@ -36,12 +36,15 @@ website: [apurvanakade.github.io](https://apurvanakade.github.io/)
 - Intermediate Probability and Statistics, Summer 2025
 - Discrete Math, Spring 2025
 - Monte Carlo Methods, Spring 2025
+- Honors Algebra II, Spring 2025
 - Intermediate Probability and Statistics, Spring 2025
 - Discrete Math, Fall 2024
 - Monte Carlo Methods, Fall 2024
+- Honors Algebra II, Fall 2024
 - Exploring Engineering Innovation, Summer 2024
 - Graph theory, Spring 2024
 - Linear Algebra and Differential Equations, Spring 2024
+- Honors Algebra II, Spring 2024
 - Discrete Math, Fall 2023
 
 ### Instructor, Northwestern
