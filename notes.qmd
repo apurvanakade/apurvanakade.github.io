@@ -27,6 +27,11 @@ Most notes are accessible to undergraduate and advanced high-school students.
   - [Hitchhiker's guide to algebraic topology](#hitchhikers-guide-to-algebraic-topology)
 - Expository notes -->
 
+## JHU
+
+### Monte Carlo Methods
+
+![](https://cdn.pixabay.com/photo/2017/06/16/07/26/under-construction-2408061_640.png){width="30%"}
 
 ## Northwestern {-}
 
@@ -89,7 +94,7 @@ This has been the most challenging and the most rewarding course I've ever taugh
 
 
 ### Lean at MC2020
-![](https://leanprover.github.io/images/lean_logo.svg){width=30%}
+![](https://lean-lang.org/static/lean_logo.svg){width=30%}
 
 [Notes.](https://apurvnakade.github.io/mc2020-Lean/)
 &nbsp;

@@ -14,49 +14,17 @@ website: [apurvanakade.github.io](https://apurvanakade.github.io/)
 
 ## Experience 
 
-Senior Lecturer, Johns Hopkins University, 2023-Present
-
-Postdoctoral Lecturer, Northwestern University, 2021-2023
-
-Postdoctoral Fellow, University of Western Ontario, 2019-2021
-
-Ph.D. in Mathematics, Johns Hopkins University, 2019
-
-Academic Coordinator, Canada/USA Mathcamp, 2019
-
-Mentor, Canada/USA Mathcamp, 2017-2020
-
-M.Sc. in Mathematics, Chennai Mathematical Institute, 2013
-
-Exotic Derivatives Trader, Nomura Capital India Pvt Ltd, 2010
-
-B.Tech. in Computer Science & Engineering, IIT Kanpur, 2010
-
-## Professional Development
-
-Faculty Forward Fellowship, JHU, 2023
-
-Introduction to Education Research Workshop, JHU, 2023
-
-MAA Section NExT Fellow, 2023 cohort
-
-MAA Project NExT Fellow, Brown'20 cohort, 2020
- <!-- program for new or recent Ph.D.s in the mathematical sciences. -->
-
-Teaching Academy Certification, JHU, 2019
-
-<!-- Program to help prepare for academic careers and to provide assistance in acquiring a foundation for the teaching responsibilities -->
-
-Participated in several workshops by the Center of Teaching & Learning at UWO, 2019-2020
-
-Participated in the MSRI Critical Issues in Mathematics Education Workshop, 2022
-
-Participated in the MAA Modeling Inspiration for Differential Equations Workshop, 2022
-
-Participated in online Mastery Grading Workshop, 2019
-
-Attended the Science of Learning Symposium, JHU, 2014-2018
-
+| Position | Institution | Year |
+|----------|-------------|------|
+| Senior Lecturer | Johns Hopkins University | 2023-Present |
+| Postdoctoral Lecturer | Northwestern University | 2021-2023 |
+| Postdoctoral Fellow | University of Western Ontario | 2019-2021 |
+| Ph.D. in Mathematics | Johns Hopkins University | 2019 |
+| Academic Coordinator | Canada/USA Mathcamp | 2019 |
+| Mentor | Canada/USA Mathcamp | 2017-2020 |
+| M.Sc. in Mathematics | Chennai Mathematical Institute | 2013 |
+| Exotic Derivatives Trader | Nomura Capital India Pvt Ltd | 2010 |
+| B.Tech. in Computer Science & Engineering | IIT Kanpur | 2010 |
 
 ## Teaching
 
@@ -64,6 +32,14 @@ Attended the Science of Learning Symposium, JHU, 2014-2018
 
 ### Instructor, JHU AMS
 
+- Mathematical Foundations of AI, Summer 2025
+- Intermediate Probability and Statistics, Summer 2025
+- Discrete Math, Spring 2025
+- Monte Carlo Methods, Spring 2025
+- Intermediate Probability and Statistics, Spring 2025
+- Discrete Math, Fall 2024
+- Monte Carlo Methods, Fall 2024
+- Exploring Engineering Innovation, Summer 2024
 - Graph theory, Spring 2024
 - Linear Algebra and Differential Equations, Spring 2024
 - Discrete Math, Fall 2023
@@ -108,6 +84,34 @@ Attended the Science of Learning Symposium, JHU, 2014-2018
 - Part of the mentor hiring committee - Taught a course at Mathcamp 2020
 - Contributed to Lean's surreal numbers math library
 - Contributed to Lean's convex optimization math library
+
+
+## Professional Development
+
+Faculty Forward Fellowship, JHU, 2023
+
+Introduction to Education Research Workshop, JHU, 2023
+
+MAA Section NExT Fellow, 2023 cohort
+
+MAA Project NExT Fellow, Brown'20 cohort, 2020
+ <!-- program for new or recent Ph.D.s in the mathematical sciences. -->
+
+Teaching Academy Certification, JHU, 2019
+
+<!-- Program to help prepare for academic careers and to provide assistance in acquiring a foundation for the teaching responsibilities -->
+
+Participated in several workshops by the Center of Teaching & Learning at UWO, 2019-2020
+
+Participated in the MSRI Critical Issues in Mathematics Education Workshop, 2022
+
+Participated in the MAA Modeling Inspiration for Differential Equations Workshop, 2022
+
+Participated in online Mastery Grading Workshop, 2019
+
+Attended the Science of Learning Symposium, JHU, 2014-2018
+
+
 
 ## Projects 
 
