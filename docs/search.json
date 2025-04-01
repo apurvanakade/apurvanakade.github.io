@@ -1,5 +1,12 @@
 [
   {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Apurva Nakade",
+    "section": "",
+    "text": "I’m a Senior Lecturer in the Applied Math & Stats department  at Johns Hopkins University. \n\n\nThis year I’m teaching\n\nDiscrete Math\nMonte Carlo Methods\nIntermediate Probability and Statistics\nHonors Algebra II\nMathematical Foundations of AI\n\nI work alongside Dr. Ben Grimmer to connect AMS undergraduate students with research mentors. If you’re an AMS student interested in research, feel free to reach out!\nWhen I’m not swamped with work, I like to work on math formalization using the Lean theorem prover"
+  },
+  {
     "objectID": "CV.html",
     "href": "CV.html",
     "title": "CV",
@@ -11,7 +18,14 @@
     "href": "CV.html#experience",
     "title": "CV",
     "section": "Experience",
-    "text": "Experience\n\n\n\nPosition\nInstitution\nYear\n\n\n\n\nSenior Lecturer\nJohns Hopkins University\n2023-Present\n\n\nPostdoctoral Lecturer\nNorthwestern University\n2021-2023\n\n\nPostdoctoral Fellow\nUniversity of Western Ontario\n2019-2021\n\n\nPh.D. in Mathematics\nJohns Hopkins University\n2019\n\n\nAcademic Coordinator\nCanada/USA Mathcamp\n2019\n\n\nMentor\nCanada/USA Mathcamp\n2017-2020\n\n\nM.Sc. in Mathematics\nChennai Mathematical Institute\n2013\n\n\nExotic Derivatives Trader\nNomura Capital India Pvt Ltd\n2010\n\n\nB.Tech. in Computer Science & Engineering\nIIT Kanpur\n2010"
+    "text": "Experience\n\n\n\nPosition\nInstitution\nYear\n\n\n\n\nSenior Lecturer\nJohns Hopkins University\n2023-Present\n\n\nUG Research Coordinator\nJohns Hopkins University\n2025-Present\n\n\nPostdoctoral Lecturer\nNorthwestern University\n2021-2023\n\n\nPostdoctoral Fellow\nUniversity of Western Ontario\n2019-2021\n\n\nPh.D. in Mathematics\nJohns Hopkins University\n2019\n\n\nAcademic Coordinator\nCanada/USA Mathcamp\n2019\n\n\nMentor\nCanada/USA Mathcamp\n2017-2020\n\n\nM.Sc. in Mathematics\nChennai Mathematical Institute\n2013\n\n\nExotic Derivatives Trader\nNomura Capital India Pvt Ltd\n2010\n\n\nB.Tech. in Computer Science & Engineering\nIIT Kanpur\n2010"
+  },
+  {
+    "objectID": "CV.html#teaching",
+    "href": "CV.html#teaching",
+    "title": "CV",
+    "section": "Teaching",
+    "text": "Teaching\nTeaching Evaluations\n\nInstructor, JHU AMS\n\nMathematical Foundations of AI, Summer 2025\nIntermediate Probability and Statistics, Summer 2025\nDiscrete Math, Spring 2025\nMonte Carlo Methods, Spring 2025\nHonors Algebra II, Spring 2025\nIntermediate Probability and Statistics, Spring 2025\nDiscrete Math, Fall 2024\nMonte Carlo Methods, Fall 2024\nHonors Algebra II, Fall 2024\nExploring Engineering Innovation, Summer 2024\nGraph theory, Spring 2024\nLinear Algebra and Differential Equations, Spring 2024\nHonors Algebra II, Spring 2024\nDiscrete Math, Fall 2023\n\n\n\nInstructor, Northwestern\n\nElementary Differential Equations, Spring 2023\nMENU Linear Algebra and Multivariable Calculus, (Coordinator) 2022-23\nIntroduction to Optimization, Winter, Spring 2022\nSingle Variable Calculus, Fall 2021\nMENU Linear Algebra and Multivariable Calculus, 2021-22\nFoundations of Mathematics, Winter 2023\nElementary Differential Equations, Spring 2023\n\n\n\nInstructor, UWO\n\nAlgebraic Topology (graduate level), Winter 2021\nTopology Bootcamp, Fall 2020\nDiscrete Structures for Engineering, Fall 2020\nCalculus II for Mathematical and Physical Sciences, Winter 2020\nCalculus I for Mathematical and Physical Sciences, Fall 2019\nTopics in Category Theory, Fall 2019\n\n\n\nInstructor, JHU\n\nHonors Single Variable Calculus, Fall 2018, 2017\nSymmetries & Polynomials, Intersession 2018\nHitchhikers Guide to Algebraic Topology, Intersession 2017\nDifferential Equations with Applications, Summer 2017, 2015\nOnline Linear Algebra, Summer 2014\n\n\n\nAcademic Co-coordinator, Canada/USA Mathcamp\n\nPlanned the five week academic schedule\nPart of the mentor hiring committee\nInvited visiting speakers\n\n\n\nMentor/Staff, Canada/USA Mathcamp\n\nDesigned and taught a variety of undergraduate-level courses\nWas residential and academic advisor at camp\nPart of the mentor hiring committee - Taught a course at Mathcamp 2020\nContributed to Lean’s surreal numbers math library\nContributed to Lean’s convex optimization math library"
   },
   {
     "objectID": "CV.html#professional-development",
@@ -19,13 +33,6 @@
     "title": "CV",
     "section": "Professional Development",
     "text": "Professional Development\nFaculty Forward Fellowship, JHU, 2023\nIntroduction to Education Research Workshop, JHU, 2023\nMAA Section NExT Fellow, 2023 cohort\nMAA Project NExT Fellow, Brown’20 cohort, 2020 \nTeaching Academy Certification, JHU, 2019\n\nParticipated in several workshops by the Center of Teaching & Learning at UWO, 2019-2020\nParticipated in the MSRI Critical Issues in Mathematics Education Workshop, 2022\nParticipated in the MAA Modeling Inspiration for Differential Equations Workshop, 2022\nParticipated in online Mastery Grading Workshop, 2019\nAttended the Science of Learning Symposium, JHU, 2014-2018"
-  },
-  {
-    "objectID": "CV.html#teaching",
-    "href": "CV.html#teaching",
-    "title": "CV",
-    "section": "Teaching",
-    "text": "Teaching\nTeaching Evaluations\n\nInstructor, JHU AMS\n\nMathematical Foundations of AI, Summer 2025\nIntermediate Probability and Statistics, Summer 2025\nDiscrete Math, Spring 2025\nMonte Carlo Methods, Spring 2025\nIntermediate Probability and Statistics, Spring 2025\nDiscrete Math, Fall 2024\nMonte Carlo Methods, Fall 2024\nExploring Engineering Innovation, Summer 2024\nGraph theory, Spring 2024\nLinear Algebra and Differential Equations, Spring 2024\nDiscrete Math, Fall 2023\n\n\n\nInstructor, Northwestern\n\nElementary Differential Equations, Spring 2023\nMENU Linear Algebra and Multivariable Calculus, (Coordinator) 2022-23\nIntroduction to Optimization, Winter, Spring 2022\nSingle Variable Calculus, Fall 2021\nMENU Linear Algebra and Multivariable Calculus, 2021-22\nFoundations of Mathematics, Winter 2023\nElementary Differential Equations, Spring 2023\n\n\n\nInstructor, UWO\n\nAlgebraic Topology (graduate level), Winter 2021\nTopology Bootcamp, Fall 2020\nDiscrete Structures for Engineering, Fall 2020\nCalculus II for Mathematical and Physical Sciences, Winter 2020\nCalculus I for Mathematical and Physical Sciences, Fall 2019\nTopics in Category Theory, Fall 2019\n\n\n\nInstructor, JHU\n\nHonors Single Variable Calculus, Fall 2018, 2017\nSymmetries & Polynomials, Intersession 2018\nHitchhikers Guide to Algebraic Topology, Intersession 2017\nDifferential Equations with Applications, Summer 2017, 2015\nOnline Linear Algebra, Summer 2014\n\n\n\nAcademic Co-coordinator, Canada/USA Mathcamp\n\nPlanned the five week academic schedule\nPart of the mentor hiring committee\nInvited visiting speakers\n\n\n\nMentor/Staff, Canada/USA Mathcamp\n\nDesigned and taught a variety of undergraduate-level courses\nWas residential and academic advisor at camp\nPart of the mentor hiring committee - Taught a course at Mathcamp 2020\nContributed to Lean’s surreal numbers math library\nContributed to Lean’s convex optimization math library"
   },
   {
     "objectID": "CV.html#projects",
@@ -39,7 +46,7 @@
     "href": "CV.html#papers",
     "title": "CV",
     "section": "Papers",
-    "text": "Papers\nString structures, 2-group bundles, and a categorification of the Freed-Quinn line bundle arXiv:2110.07571, joint with D. Berwick-Evans, E. Cliff, L. Murray, and E. Phillips, 2021\nManifold Calculus and the h-principle, The Journal of Homotopy and Related Structures, 2019\nEffect of increasing the energy gap between the two lowest energy states on the mixing time of the Metropolis algorithm (with Somenath Biswas), Information Processing Letters, IPL4801 (2012.08.012), 2012"
+    "text": "Papers\nString structures, 2-group bundles, and a categorification of the Freed-Quinn line bundle, Daniel Berwick-Evans, Emily Cliff, Laura Murray, Apurva Nakade, Emma Phillips, Quantum Symmetries, Contemporary Mathematics, vol. 813, Amer. Math. Soc., Providence, RI, 2025, pp. 257-301.\nManifold Calculus and the h-principle, The Journal of Homotopy and Related Structures, 2019\nEffect of increasing the energy gap between the two lowest energy states on the mixing time of the Metropolis algorithm (with Somenath Biswas), Information Processing Letters, IPL4801 (2012.08.012), 2012"
   },
   {
     "objectID": "CV.html#grants-awards",
@@ -63,18 +70,18 @@
     "text": "Conference Attended\nMAA MD-DC-VA Section Meeting, Spring 2024\nMAA MD-DC-VA Section Meeting, Fall 2023\nUnited States Conference on Teaching Statistics, 2023\nMSRI CIME Workshop, 2022\nProject NExT at MAA Mathfest, Online, 2021\nLean for the curious mathematician, 2020\nSpaces of Embeddings, BIRS, Banff, 2019\nMSRI Summer School, Cortona, Italy, 2019\nMRC Workshop, Providence RI, 2019\nMIT Talbot Workshop, Austin TX, 2019\nWorkshop on Functor Calculus, Ohio State University, 2019\nAMS Sectional Meeting, University of Hawaii, 2019\nArizona Winter School, Arizona State University, 2019\nJoint Mathematical Meetings, Baltimore, 2019\nSymplectic Geometry and Homotopy Theory, UCLA, 2018\nMSRI Summer School, Fields Institute, Toronto, 2018\nGraduate Student Conference, Temple University, 2018\nAMS Sectional Meeting, UC Riverside, 2017\nEuropean Autumn School in Topology, Netherlands, 2017\nTopology Festival, Cornell University, 2017\nGeorgia International Topology Conference, University of Georgia, 2017\nAlpine Algebraic & Applied Topology Conference, Switzerland, 2016\nWCATSS, University of Oregon, Eugene, 2016\nGSTSC, Indiana University, Bloomington, 2016\nMid-Atlantic Topology Conference, Johns Hopkins University, 2016\nMidwest Topology Seminar, Northwestern University, 2016\nGeometry and Topology Conference, Lehigh University, 2015\nMid-Atlantic Topology Conference, University of Virginia, 2015\nMidwest Topology Seminar, University of Illinois Chicago, 2015\nMidwest Topology Seminar, Northwestern University, 2015\nModular invariants in Topology and Analysis, Regensburg, 2015\nWCATSS on Field theories, UBC, 2015\nIntroductory Workshop on Algebraic Topology, MSRI, 2015\nJoint Mathematical Meetings, Baltimore, 2015\nClassification of Manifolds, NEHU, 2013\nH-principle, Chennai Mathematical Institute, 2012\nGroups and geometries, ISI, Bangalore, 2012\nString Topology, Vivekananda University, 2012\nKervaire Invariant One, ISI, Kolkata, 2012\nNumber Theory workshop, Tezpur University, 2011\nLie algebras and their representations, CMI, 2011\nNurture camp, Institute of Mathematical Sciences, 2007\nIMO, Slovenia, 2006 \nIMOTC, HBCSC, 2003-2006\n\n\n\n\nKishore Vaigyanik Protsahan Yojana (KVPY), 2005"
   },
   {
-    "objectID": "rec letters.html",
-    "href": "rec letters.html",
-    "title": "Recommendation Letters",
-    "section": "",
-    "text": "source: https://www.hmc.edu/mathematics/wp-content/uploads/sites/49/2020/03/recommendation-letters.pdf\nIf I have recently agreed to write any recommendation letters for you, then at least two weeks before the first letter is due, please email me • a copy of your personal statement (if applicable), • an unofficial copy of your transcript, and • a copy of your resume. In the same email, please send me your answers to the following questions: 1. What is your name, graduation year, and major? 2. For what are you applying (e.g., graduate school)? List the programs to which you are applying, together with due dates. 3. How long have I known you (in years and months), and what is my relationship to you (e.g., instructor, research advisor, etc.)? 4. For what classes have I had you, what final grades did I assign you, and how did you distinguish yourself in my classes? 5. How would you describe yourself? What are your strengths? What are your weaknesses? Your response to this question is important to me, so the more details the better. 6. What are some of your academic and nonacademic accomplishments? 7. What makes me particularly qualified to write a letter for you? 8. What makes you particularly qualified for this position/honor/award? 9. What are your long term goals and will this position/honor/award help? If so, how? 10. Additional comments (summer research, interesting jobs, hobbies, etc.)? Finally, please send me email reminders as deadlines approach, and feel free to chat with me about other ways you can make the application process go smoothly. Good luck! Michael Orrison Professor of Mathematics Harvey Mudd College"
-  },
-  {
     "objectID": "notes.html",
     "href": "notes.html",
     "title": "Class Notes",
     "section": "",
     "text": "I love to (re)design math courses. Below are notes and problem sets from several of my courses. Most notes are accessible to undergraduate and advanced high-school students."
+  },
+  {
+    "objectID": "notes.html#jhu",
+    "href": "notes.html#jhu",
+    "title": "Class Notes",
+    "section": "JHU",
+    "text": "JHU\n\nMonte Carlo Methods"
   },
   {
     "objectID": "notes.html#northwestern",
@@ -98,11 +105,11 @@
     "text": "Canada/USA \n\nLean at MC2020\n\nNotes.   Source Code.\nThis is a completely interactive class on the Lean theorem prover from Mathcamp 2020 - you learn by solving exercises online. The prerequisites for this class are basic proof techniques.\n\n\nCrash course on linear algebra\n\n\n\n\n\nNotes.\nThis is a week-long proof-based introduction to Linear Algebra class from Mathcamp 2018. The prerequisites are basic proof techniques. The class is designed in an IBL-format - you’re expected to solve all the problems in each section before moving to the next and in the process learn the subject.\n\n\nGalois correspondence of covering spaces\n\n\n\n\n\n\nNotes.\nThis week-long class from Mathcamp 2019 covers (pun intended) the covering space theory for graphs and surfaces and is meant to be an introduction to algebraic topology and its connection to group theory. The prerequisites are group theory and basic minimal exposure to topology/analysis.\n\n\nFrom high school arithmetic to group cohomology\n\\[\n\\begin{align}\n  0 \\longrightarrow \\mathbb{Z}/10 \\longrightarrow \\mathbb{Z}/100 \\longrightarrow \\mathbb{Z}/10 \\longrightarrow 0\n\\end{align}\n\\]\nNotes.\nThis is a week-long class from Mathcamp 2019 based on a fun paper by Dan Isaken titled A cohomological viewpoint of elementary school arithmetic. It introduces the notions of group extensions and exact sequences as means to interpret addition of multi-digit numbers. It is designed in an IBL-format - you’re expected to solve all the problems in each section before moving to the next and in the process learn the subject. The prerequisites are group theory.\n\n\nCohomology via sheaves\n\nNotes.\nThis is a week-long class from Mathcamp 2018 about Čech cohomology on graphs and cohomology computations for simple spaces. The class is designed in an IBL-format - you’re expected to solve all the problems in each section before moving to the next and in the process learn the subject. The prerequisites are linear algebra (over finite fields).\n\n\nHow curved is a potato?\n\nNotes.\nThis is a week-long class from Mathcamp 2018 about principal, Gaussian, and mean curvature of potatoes embedded in \\(\\mathbb{R}^3\\). The prerequisites are linear algebra, in particular, the notions of eigenvalues and eigenvectors, and multi-variable calculus.\n\n\nWould I ever lie group to you?\n\nNotes.\nI taught this week-long class at Mathcamp 2018. This is a class about matrix groups and how they arise as symmetries of spaces. The prerequisites are linear algebra and group theory, in particular, group actions.\n\n\nRiemann surfaces\n\nProblem Sets.\nI taught this week-long class at Mathcamp 2019. In this class, we construct Riemann surfaces as “graphs” of holomorphic functions. Towards the end we prove Fermat’s last theorem for function fields. The prerequisites are complex analysis.\nThe following are a few other classes I taught at Mathcamp. The notes are not very polished.\n\nHow Riemann finally understood logarithms\nHow to glue donuts\nAll things manifoldy\nEuler Characteristic\nSymmetries of Spaces"
   },
   {
-    "objectID": "notes.html#jhu",
-    "href": "notes.html#jhu",
+    "objectID": "notes.html#jhu-1",
+    "href": "notes.html#jhu-1",
     "title": "Class Notes",
     "section": "JHU",
-    "text": "JHU\n\nMonte Carlo Methods"
+    "text": "JHU\n\nHonors single variable calculus\n\nNotes v2017.   Notes v2018.\nFor two semesters, Fall 2017 & 2018, I taught an accelerated honors single variable calculus course at JHU. The course covers two semesters worth of calculus (integration and differentiation) in one semester. The course is designed in an IBL-format - you’re expected to solve all the problems in each section before moving to the next and in the process learn the subject. The prerequisites are pre-calculus and basic theorem proving.\n\n\nSymmetries & polynomials\n\\[\n\\begin{align}\n{\\sqrt[{3}]{-{\\frac {q}{2}}+{\\sqrt {{\\frac {q^{2}}{4}}+{\\frac {p^{3}}{27}}}}}}+{\\sqrt[{3}]{-{\\frac {q}{2}}-{\\sqrt {{\\frac {q^{2}}{4}}+{\\frac {p^{3}}{27}}}}}}.\\end{align}\n\\]\nNotes.\nThis 2-week class from Intersession 2018 at JHU non-math majors to group theory and its connections to roots of polynomials, in particular, the unsolvability of the quintic. The class is designed in an IBL-format - you’re expected to solve all the problems in each section before moving to the next and in the process learn the subject. The prerequisites are basic proof techniques.\n\n\nHitchhiker’s guide to algebraic topology\n\nCourse Website.\nThis 2-week class from the Intersession 2017 at JHU introduces non-math majors to algebraic topology and its applications. There are no prerequisites."
   },
   {
     "objectID": "notes.html#expository-notes",
@@ -112,17 +119,10 @@
     "text": "Expository notes\nFollowing are some of my personal math notes. The notes have not been proofread and might contain errors.\n\nWhat is a Spectrum?\nh-principles MSRI Summer School\nConnections on Principal Bundles and Classical Electromagnetism\nVector Fields on Spheres\nSteifel Whitney Numbers\nHomotopy of MO\nRepresentation Theory of Symmetric Group\nGeometry of Dirac Operators\nFIOs and Lagrangian Submanifolds\nSymplectic Geometry Course Notes\nFinite Gauge Groups TQFTs\nClassical Lie Groups\nMosher and Tangora Notes"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Apurva Nakade",
+    "objectID": "rec letters.html",
+    "href": "rec letters.html",
+    "title": "Recommendation Letters",
     "section": "",
-    "text": "I’m a Senior Lecturer in the Applied Math & Stats department  at Johns Hopkins University. \n\n\nThis year I’m teaching\n\nDiscrete Math\nMonte Carlo Methods\nIntermediate Probability and Statistics\nHonors Algebra II\nMathematical Foundations of AI\n\nI work alongside Dr. Ben Grimmer to connect AMS undergraduate students with research mentors. If you’re an AMS student interested in research, feel free to reach out!\nWhen I’m not swamped with work, I like to work on math formalization using the Lean theorem prover"
-  },
-  {
-    "objectID": "notes.html#jhu-1",
-    "href": "notes.html#jhu-1",
-    "title": "Class Notes",
-    "section": "JHU",
-    "text": "JHU\n\nHonors single variable calculus\n\nNotes v2017.   Notes v2018.\nFor two semesters, Fall 2017 & 2018, I taught an accelerated honors single variable calculus course at JHU. The course covers two semesters worth of calculus (integration and differentiation) in one semester. The course is designed in an IBL-format - you’re expected to solve all the problems in each section before moving to the next and in the process learn the subject. The prerequisites are pre-calculus and basic theorem proving.\n\n\nSymmetries & polynomials\n\\[\n\\begin{align}\n{\\sqrt[{3}]{-{\\frac {q}{2}}+{\\sqrt {{\\frac {q^{2}}{4}}+{\\frac {p^{3}}{27}}}}}}+{\\sqrt[{3}]{-{\\frac {q}{2}}-{\\sqrt {{\\frac {q^{2}}{4}}+{\\frac {p^{3}}{27}}}}}}.\\end{align}\n\\]\nNotes.\nThis 2-week class from Intersession 2018 at JHU non-math majors to group theory and its connections to roots of polynomials, in particular, the unsolvability of the quintic. The class is designed in an IBL-format - you’re expected to solve all the problems in each section before moving to the next and in the process learn the subject. The prerequisites are basic proof techniques.\n\n\nHitchhiker’s guide to algebraic topology\n\nCourse Website.\nThis 2-week class from the Intersession 2017 at JHU introduces non-math majors to algebraic topology and its applications. There are no prerequisites."
+    "text": "source: https://www.hmc.edu/mathematics/wp-content/uploads/sites/49/2020/03/recommendation-letters.pdf\nIf I have recently agreed to write any recommendation letters for you, then at least two weeks before the first letter is due, please email me • a copy of your personal statement (if applicable), • an unofficial copy of your transcript, and • a copy of your resume. In the same email, please send me your answers to the following questions: 1. What is your name, graduation year, and major? 2. For what are you applying (e.g., graduate school)? List the programs to which you are applying, together with due dates. 3. How long have I known you (in years and months), and what is my relationship to you (e.g., instructor, research advisor, etc.)? 4. For what classes have I had you, what final grades did I assign you, and how did you distinguish yourself in my classes? 5. How would you describe yourself? What are your strengths? What are your weaknesses? Your response to this question is important to me, so the more details the better. 6. What are some of your academic and nonacademic accomplishments? 7. What makes me particularly qualified to write a letter for you? 8. What makes you particularly qualified for this position/honor/award? 9. What are your long term goals and will this position/honor/award help? If so, how? 10. Additional comments (summer research, interesting jobs, hobbies, etc.)? Finally, please send me email reminders as deadlines approach, and feel free to chat with me about other ways you can make the application process go smoothly. Good luck! Michael Orrison Professor of Mathematics Harvey Mudd College"
   }
 ]
