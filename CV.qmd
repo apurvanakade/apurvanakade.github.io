@@ -17,6 +17,7 @@ website: [apurvanakade.github.io](https://apurvanakade.github.io/)
 | Position | Institution | Year |
 |----------|-------------|------|
 | Senior Lecturer | Johns Hopkins University | 2023-Present |
+| UG Research Coordinator | Johns Hopkins University | 2025-Present |
 | Postdoctoral Lecturer | Northwestern University | 2021-2023 |
 | Postdoctoral Fellow | University of Western Ontario | 2019-2021 |
 | Ph.D. in Mathematics | Johns Hopkins University | 2019 |
@@ -169,7 +170,8 @@ Course Design: Canada/USA Mathcamp courses
 
 ## Papers
 
-String structures, 2-group bundles, and a categorification of the Freed-Quinn line bundle arXiv:2110.07571, joint with D. Berwick-Evans, E. Cliff, L. Murray, and E. Phillips, 2021
+String structures, 2-group bundles, and a categorification of the Freed-Quinn line bundle, Daniel Berwick-Evans, Emily Cliff, Laura Murray, Apurva Nakade, Emma Phillips, Quantum Symmetries, Contemporary Mathematics, vol. 813, Amer. Math. Soc.,
+Providence, RI, 2025, pp. 257-301.
 
 Manifold Calculus and the h-principle, The Journal of Homotopy and Related Structures, 2019
 
