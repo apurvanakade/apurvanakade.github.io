@@ -37,6 +37,7 @@ website: [apurvanakade.github.io](https://apurvanakade.github.io/)
 
 - Mathematical Foundations of AI, Summer 2025
 - Intermediate Probability and Statistics, Summer 2025
+- Honors Algebra II, Summer 2025
 
 #### Spring 2025
 
