@@ -32,19 +32,36 @@ website: [apurvanakade.github.io](https://apurvanakade.github.io/)
 
 ### Instructor, JHU AMS
 
+#### Summer 2025
+
 - Mathematical Foundations of AI, Summer 2025
 - Intermediate Probability and Statistics, Summer 2025
+
+#### Spring 2025
+
 - Discrete Math, Spring 2025
 - Monte Carlo Methods, Spring 2025
 - Honors Algebra II, Spring 2025
 - Intermediate Probability and Statistics, Spring 2025
+
+#### Fall 2024
+
 - Discrete Math, Fall 2024
 - Monte Carlo Methods, Fall 2024
 - Honors Algebra II, Fall 2024
+
+#### Summer 2024
+
 - Exploring Engineering Innovation, Summer 2024
+
+#### Spring 2024
+
 - Graph theory, Spring 2024
 - Linear Algebra and Differential Equations, Spring 2024
 - Honors Algebra II, Spring 2024
+
+#### Fall 2023
+
 - Discrete Math, Fall 2023
 
 ### Instructor, Northwestern
@@ -91,11 +108,11 @@ website: [apurvanakade.github.io](https://apurvanakade.github.io/)
 
 ## Professional Development
 
-Faculty Forward Fellowship, JHU, 2023
+Faculty Forward Fellowship, JHU, 2025
 
 Introduction to Education Research Workshop, JHU, 2023
 
-MAA Section NExT Fellow, 2023 cohort
+MAA Section NExT Fellow, 2023 cohort, 2023-25
 
 MAA Project NExT Fellow, Brown'20 cohort, 2020
  <!-- program for new or recent Ph.D.s in the mathematical sciences. -->
