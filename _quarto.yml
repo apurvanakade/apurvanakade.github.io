@@ -16,10 +16,10 @@ website:
       - icon: github
         href: https://github.com/apurvanakade/
         aria-label: GitHub
-  sidebar: 
-    style: floating
-    search: true
-    contents: auto
+  # sidebar: 
+  #   style: floating
+  #   search: true
+  #   contents: auto
   open-graph: true
   site-url: https://apurvanakade.github.io/
   repo-url: https://github.com/apurvanakade/apurvanakade.github.io/
