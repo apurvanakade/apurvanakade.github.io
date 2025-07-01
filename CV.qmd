@@ -17,7 +17,6 @@ website: [apurvanakade.github.io](https://apurvanakade.github.io/)
 | Position | Institution | Year |
 |----------|-------------|------|
 | Senior Lecturer | Johns Hopkins University | 2023-Present |
-| UG Research Coordinator | Johns Hopkins University | 2025-Present |
 | Postdoctoral Lecturer | Northwestern University | 2021-2023 |
 | Postdoctoral Fellow | University of Western Ontario | 2019-2021 |
 | Ph.D. in Mathematics | Johns Hopkins University | 2019 |
