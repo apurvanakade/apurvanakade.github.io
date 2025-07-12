@@ -1,6 +1,6 @@
 ---
 title: Apurva Nakade
-subtitle: <a href="https://en.wikipedia.org/wiki/Help:IPA/English#:~:text=%5B9%5D-,Vowels,-Strong%20vowels"> əpʊrvə nɑːkɑːdɛ </a>
+subtitle: <a href="https://ipa-reader.com/" target="_blank"> əpʊrvə nɑːkɑːdɛ </a>
 image: images/me0.jpg
 about:
   template: trestles
