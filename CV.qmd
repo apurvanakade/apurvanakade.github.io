@@ -32,6 +32,11 @@ website: [apurvanakade.github.io](https://apurvanakade.github.io/)
 
 ### Instructor, JHU AMS
 
+#### Fall 2025
+
+- Monte Carlo Methods, Fall 2025
+- Discrete Math, Fall 2025
+
 #### Summer 2025
 
 - Mathematical Foundations of AI, Summer 2025
@@ -198,7 +203,9 @@ AMS Graduate Student Travel Grant, 2019
 
 ## Service
 
-Judge for poster presentations at Fall 2024 MAA MD-DC-VA Section Meeting
+Helped connect undergraduate students with research mentors in JHU AMS department, 2024-2025
+
+Judge for poster presentations at MAA MD-DC-VA Section Meeting, Fall 2024
 
 Supplementary Instructor for the Causeway Postbaccalaureate Program, NU, 2022
 <!-- 

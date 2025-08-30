@@ -27,6 +27,4 @@ This year I'm teaching
 - Honors Algebra II
 - Mathematical Foundations of AI
 
-<!-- I work alongside [Dr. Ben Grimmer](https://www.ams.jhu.edu/~grimmer/) to connect AMS undergraduate students with research mentors. If you're an AMS student interested in research, feel free to reach out! -->
-
 When I'm not swamped with work, I like to work on math formalization using the [Lean theorem prover](https://leanprover-community.github.io/)
