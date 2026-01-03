@@ -1,0 +1,94 @@
+---
+title: Teaching Statement
+date: 2026-01-02 12:47:40
+toc: false
+---
+
+A teaching statement with the following items (if appropriate)
+
+- Examples of teaching excellent — course design, classroom effectiveness strategies, effective assessment, breadth of courses taught.
+- Examples of innovation and leadership — new courses, novel teaching approaches, mentoring junior colleagues.
+- Service contributions — committee work (admission, search, IE, etc), administrative duties, supporting student clubs, service to professional organizations.
+
+---
+
+I have been teaching for more than a decade now. And after all these years, I have come to understand that my role in the classroom and outside is to support, motivate, and inspire students. I consider myself a coach and a facilitator and teach with the core philosophy that my primary goal is to provide my students with a welcoming and inclusive environment where experimentation is encouraged and honest mistakes aren't penalized. I believe that the best way to learn math is through making mistakes, getting confused, and struggling toward a solution. It is important to me that students who complete my courses leave with a sense of pride and accomplishment, and an increased interest and curiosity in mathematics. I try to inculcate in them a sense of ... to use their learning for helping others. 
+
+My teaching experience ranges from creating advanced electives and short bootcamp courses for small groups of students, to managing and teaching in-person courses with several hundred students, coordinating multi-section classes, and adapting large service courses for asynchronous education. I have contributed to open source texts using technologies such as Webwork, Quarto, Pretext, and RMarkdown and I'm involved in the long-term project of math-formalization using the Lean theorem prover. I have taught topics spanning calculus, linear algebra, differential equations, discrete math, linear programming, math formalization, manifolds, and algebraic topology, monte carlo methods, computational math.
+
+In keeping pace with the rapid change in AI related technology and it's impact on education, my teaching methods and focus have changed drastically over the past few years. I now deemphasize things that can be done better by AI and instead encourage students to use AI tools to strengthen their learning. In Monte Carlo Methods course, I invite students at the end of the semester to use AI assistants to build projects based on the mathematics learned in class. I have had non-math major students create polished papers and softwares ... Another significant change I made in this course 
+
+
+---
+
+I believe that the best way to learn math is through making mistakes, getting confused, and struggling toward a solution. I consider myself a coach and a facilitator and teach with the core philosophy that my primary goal is to provide my students with a welcoming and inclusive environment where experimentation is encouraged and honest mistakes aren't penalized. 
+  I use active learning techniques in all my classes. 
+  I believe that a math classroom is a place for students, and even the instructor, to grow as mathematicians.
+
+
+  My teaching experience ranges from creating advanced electives and short bootcamp courses for small groups of students, to managing and teaching in-person courses with several hundred students, coordinating multi-section classes, and adapting large service courses for asynchronous education. I have contributed to open source texts using technologies such as Quarto, Webwork, Pretext, and RMarkdown and I'm involved in the long-term project of math-formalization using the Lean theorem prover. I have taught topics spanning calculus, linear algebra, differential equations, discrete math, linear programming, math formalization, manifolds, and algebraic topology.
+
+  ## {Use of Technology}
+  Students retain their knowledge better when they engage with a subject through multiple modalities. I find technological tools to be perfect for accomplishing this. I created weekly Excel worksheets for modeling linear programming scenarios. For Discrete Math, I used an online textbook which had (compulsory) interactive activities scattered throughout the text and made YouTube videos for each section which were embedded directly in the textbook. 
+  Student responses for these have been overwhelming positive.
+
+  I strongly believe in making education more accessible by creating open educational resources (OER). We now have the technological tools to make this possible. 
+  I have co-received an OER Faculty Grant for adding WeBWorK exercises to my colleagues's Linear Algebra OER textbook written in PreTeXt. I also intend to turn my Optimization course notes into an OER textbook. I already make all my course notes available on my personal website.  
+
+  ## {Diversifying Assessments}
+  Students often perform poorly on exams not because of a lack of understanding but because of exam anxiety and lack of exam-taking skills. 
+  Traditional exams do not faithfully represent the challenges students are likely to face in real life either.
+  As such, in every course I teach I try to provide a variety of assessments catered specifically to students' needs. In my Optimization course, students had to submit an Excel Workbook involving several modeling exercises instead of taking a final exam. For Discrete Math, which was taught during Covid, we created a repository of new WeBWorK problems over the summer and replaced in-person exams with ones on WeBWorK and Zoom. Students also had to submit weekly short auto-graded assignments within the textbook which provided immediate feedback. For Algebraic Topology course, I replaced the final exam with an oral exam and a written report as I was more interested in testing students' ability to approach a challenging problem than actually getting a rigorous proof in a short amount of time.
+  
+  ## {Course Design}
+  I continually update my courses as every cohort of students is unique. 
+  I try to imagine the course from students' perspective and adapt it to their level of mathematical maturity while being vigilant of the expert blind spot.
+  It is very important for me that my course is meaningful and intellectually fulfilling to students.
+  I completely restructured my Optimization course to make applications and modeling an essential component. 
+  I wrote my own set of notes using RMarkdown as I did not find books with the right mix of theory and applications. 
+  I have designed and taught a fully flipped Honors Single Variable Calculus course at JHU. 
+  At Canada/USA Mathcamp, I had to develop and teach a short five-day class every week for five weeks while being involved with other camp activities;
+  I could not have asked for better training grounds for course design.  
+
+## {Classroom Environment}
+  I make great efforts to ensure that a course syllabus is welcoming and encouraging, being the first document that students see. 
+  While teaching online during Covid, my priority was to alleviate student anxiety and ensuring that students were not disadvantaged because of lack of face-to-face meetings and technical difficulties. 
+  After each (autograded) exam, I went through all student responses to reassign any points lost due to minor typos and system errors.
+  I also maintained an active discussion forum on Piazza to foster a sense of community.
+  I have taught huge coordinated courses where I was the sole point of contact for over 150 students.
+  This challenging experience taught me how to be more inclusive and considerate of students from very diverse backgrounds and to ensure that even those who had other priorities could benefit from learning math in whatever way possible.
+
+  I strive to get my students comfortable with the messy process of discovery in math.
+  My classes are fun, interactive, and often times flipped.
+  I greatly value one-to-one interactions as these allow students to get to know me as an individual.
+  It is important for me and valuable for students to see me struggle and make mistakes. 
+  I hold a lot of office hours in a collaborative space that encourages group work.
+  My office hours always have a high attendance.
+  I memorize all of my students' names so that I can connect with them on a personal level.
+  % Of late, I've started holding Zoom office hours in addition to in-person ones which has further increased attendance.
+
+## {Professional Development}
+  I try to keep myself updated on the advances in pedagogical techniques and find it valuable to hear about other educators' teaching experiences.
+  I am a member of the Project NExT'20 cohort, a professional development program sponsored by the MAA for math educators at the university level.
+  I have completed a certification course at the Teaching Academy at JHU where I learned about several important pedagogical concepts such as inquiry-based learning, backward course design, learning objectives, etc. which I regularly incorporate into my own teaching.
+  I regularly attend the workshops and seminars organized at the Center for Teaching and Learning at both UWO and NU and most recently Open Math Workshops and SIGMAA IBL workshops by MAA.
+  In addition to providing me new information and skills, these workshops also allow me to take on the role of a student and stay grounded.
+
+## {Mentorship}
+  I find it fulfilling to mentor students outside of the regular classroom setting. 
+  I am currently a supplementary instructor for the Causeway Postbaccalaureate Program, a yearlong experience in mathematics that seeks to increase the number of graduate students in the mathematical sciences from historically underrepresented groups. 
+  I am also a co-organizer of the Northwestern Emerging Scholars Program, which is similar to math circles for first-year students.  
+  I have organized and participated in a Directed Reading Program that pairs undergraduate students with graduate students/junior faculty to undertake independent study projects as a mentor and a co-organizer. 
+  I started a DRP chapter at UWO here with the help of one of my colleagues. 
+
+  My biggest influences have come from being a mentor (2017-20) and an academic coordinator
+  (2018) at the Canada/USA Mathcamp, a summer program for high school students.
+  Mathcamp gave me an opportunity to be a part of a loving and caring community, to be surrounded by people who love math and love to teach it and excel at it.
+  I took on the role of an academic coordinator to contribute back to Mathcamp, to challenge myself, and to learn more about teaching. 
+  The academic coordinators are responsible for designing and running all the academic activities, including, inviting and hosting external visitors, designing a balanced five-week class schedule (nearly 60 classes), assigning (110) students to projects, and teaching. 
+
+  ## {Future Goals}
+  My next big goal is to figure out ways to quantitatively assess my teaching and pedagogical effectiveness.
+  I wish to teach more interdisciplinary courses that involve student projects and real world applications.
+  In the winter quarter, I intend to use SIMIODE textbook, which takes a modeling first approach, for teaching differential equations.
+  I am currently contributing to Open Education Resources and wish to expand these projects in the future with focus on book publishing and online assessments as these resources are bound to play a central role in successfully adapting courses to an online setting.
