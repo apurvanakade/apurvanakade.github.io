@@ -19,6 +19,39 @@ My teaching experience ranges from creating advanced electives and short bootcam
 In keeping pace with the rapid change in AI related technology and it's impact on education, my teaching methods and focus have changed drastically over the past few years. I now deemphasize things that can be done better by AI and instead encourage students to use AI tools to strengthen their learning. In Monte Carlo Methods course, I invite students at the end of the semester to use AI assistants to build projects based on the mathematics learned in class. I have had non-math major students create polished papers and softwares ... Another significant change I made in this course 
 
 
+After more than a decade of teaching, I have come to understand that my primary role in the classroom and outside is to support, motivate, and inspire students. I consider myself a coach and a facilitator and strive to provide my students with a welcoming, inclusive, and engaging environment where experimentation is encouraged and honest mistakes aren't penalized. 
+
+My teaching experience ranges from creating advanced electives and short bootcamp courses for small groups of students, to managing and teaching in-person courses with several hundred students, coordinating multi-section classes, and adapting large service courses for asynchronous education. I have contributed to open source texts using technologies such as Webwork, Quarto, Pretext, and RMarkdown and I'm involved in the long-term project of math-formalization using the Lean theorem prover. I have taught topics spanning calculus, linear algebra, differential equations, discrete math, linear programming, math formalization, manifolds, and algebraic topology, monte carlo methods, computational math.
+
+## Discrete Math
+
+I have been teaching Discrete Math at JHU since Fall 2023. I have taught similar courses in the past at Northwestern University and University of Western Ontario (UWO). At these places, I learned to use technological tools to my advantage. At these place, because of Covid, I had experimented a lot with the use of technology. I made online video lectures and created Webwork problems from scratch. I even gave an exam using Webwork. These experiences guided me towards revamping the Discrete Math course at Hopkins.
+
+I incorporated three big changes into the course:
+
+- three midterms
+- online textbook
+- homework resubmissions
+
+I have had the best teaching assistants. Gone on to TA for other courses.
+
+
+## Monte Carlo Methods
+
+I incorporated three big changes into the course:
+
+- rewrote my own notes, online first approach
+- regular programming + math homework
+- weekly quizzes 
+- final project
+
+## Introduction to Computation
+
+
+## Professional Development
+
+
+
 ---
 
 I believe that the best way to learn math is through making mistakes, getting confused, and struggling toward a solution. I consider myself a coach and a facilitator and teach with the core philosophy that my primary goal is to provide my students with a welcoming and inclusive environment where experimentation is encouraged and honest mistakes aren't penalized. 
