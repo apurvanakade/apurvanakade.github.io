@@ -1,11 +1,10 @@
 ---
 title: Apurva Nakade
-subtitle: <a href="https://ipa-reader.com/" target="_blank"> əpʊrvə nɑːkɑːdɛ </a>
+subtitle: <a href="https://ipa-reader.com/?text=%C9%99p%CA%8Arv%C9%99%20n%C9%91%CB%90k%C9%91d%C9%9B" target="_blank"> əpʊrvə nɑːkɑːdɛ </a>
 image: images/cartoon0.jpg
 about:
   template: trestles
-  image-shape: rectangle
-image-title: test
+  image-shape: rounded
 toc: false
 ---
 
@@ -19,12 +18,12 @@ I also work on math formalization using the [Lean theorem prover](https://leanpr
 <!-- I thoroughly enjoy discussing all these topics. 
 Whether you're a student, mathematician, or educator, please feel free to [reach out to me](mailto:apurva.nakade@jhu.edu) without hesitation. -->
 
-This year I'm teaching 
+This semester I'm teaching Discrete Math, Monte Carlo Methods, and Introduction to Computational Math.
 
-- Discrete Math
-- Monte Carlo Methods
-- Intermediate Probability and Statistics
-- Honors Algebra II
-- Mathematical Foundations of AI
+<!-- When I'm not swamped with work, I like to work on math formalization using the [Lean theorem prover](https://leanprover-community.github.io/) 
 
-When I'm not swamped with work, I like to work on math formalization using the [Lean theorem prover](https://leanprover-community.github.io/)
+I have an open doors policy. You are welcome to come unannounced any time to my office, Wyman N452, between 10-3 PM if I'm available (see calendar below). You can also book a one-on-one appointment with me using [this link](https://calendar.app.google/FjRBJ1B1FBQLaXE86).
+
+<iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=America%2FNew_York&showPrint=0&showTitle=0&showCalendars=0&mode=WEEK&src=YXB1cnZuYWthZGVAZ21haWwuY29t&color=%23039be5" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+
+-->
