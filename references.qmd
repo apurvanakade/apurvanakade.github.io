@@ -1,0 +1,45 @@
+---
+title: References
+toc: true
+toc-expand: true
+toc-depth: 4
+---
+
+## Papers
+
+### Gaussian Periods
+
+[On the Coefficients of the Minimal Polynomials of Gaussian Periods](On the Coefficients of the Minimal Polynomials of Gaussian Periods)
+
+[A Gallery of Gaussian Periods - Ellen Eischen and Stephan Ramon Garcia](https://stephangarcia.sites.pomona.edu/PAPERS/GGP.pdf)
+
+[The graphic nature of Gaussian periods - William Duke, Stephan Ramon Garcia, Bob Lutz](https://arxiv.org/abs/1212.6825)
+
+## Books
+
+### Probability & Statistics
+
+#### Bayesian Inference
+
+[Probabilistic Inference Using Markov Chain Monte Carlo Methods- Radford M Neal](https://www.cs.columbia.edu/~blei/fogm/2025F/readings/Neal1993.pdf)
+
+[A Student's Guide to Bayesian Statistics - Ben Lambert](https://sites.math.rutgers.edu/~zeilberg/EM20/Lambert.pdf)
+
+
+### Computational Math
+
+[Fundamentals of Numerical Computation](https://fncbook.com/)
+
+#### ML & AI
+
+[Mastering Reinforcement Learning](https://gibberblot.github.io/rl-notes/index.html)
+
+[Guide to creating custom chatbots](https://docs.google.com/document/d/1H8YR4dWWSdtkY9NSWOqZULYYNrlABcI0YC4QajKoMtw/edit?tab=t.0)
+
+[Statistical Rethinking - Richard McElreath](https://github.com/rmcelreath/stat_rethinking_2024)
+
+## Problem Banks
+
+### Combinatorics
+
+[Graduate Research Workshop in Combinatorics - Problem Garden](https://sites.google.com/view/grwc/problem-garden?authuser=0)

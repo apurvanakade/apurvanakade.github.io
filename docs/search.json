@@ -194,5 +194,33 @@
     "title": "Teaching Statement",
     "section": "Future Goals",
     "text": "Future Goals\nA central theme in my teaching career has been adapting courses to student needs without watering down the content. I want to keep updating existing courses and create new courses that are first and foremost useful to my students. This requires considerable effort in creating new materials that are interactive and engaging. I’m planning on applying for a CTEI grant for help with this.\nI also want to broaden my work from teaching to mentoring and outreach. Finally, I want to engage more with the broader teaching community. I’m looking forward to the reduced course load, which will allow me to do this."
+  },
+  {
+    "objectID": "references.html",
+    "href": "references.html",
+    "title": "References",
+    "section": "",
+    "text": "On the Coefficients of the Minimal Polynomials of Gaussian Periods\nA Gallery of Gaussian Periods - Ellen Eischen and Stephan Ramon Garcia\nThe graphic nature of Gaussian periods - William Duke, Stephan Ramon Garcia, Bob Lutz"
+  },
+  {
+    "objectID": "references.html#books",
+    "href": "references.html#books",
+    "title": "References",
+    "section": "Books",
+    "text": "Books\n\nProbability & Statistics\n\nBayesian Inference\nProbabilistic Inference Using Markov Chain Monte Carlo Methods- Radford M Neal\nA Student’s Guide to Bayesian Statistics - Ben Lambert\n\n\n\nComputational Math\nFundamentals of Numerical Computation\n\nML & AI\nMastering Reinforcement Learning\nGuide to creating custom chatbots\nStatistical Rethinking - Richard McElreath"
+  },
+  {
+    "objectID": "references.html#problem-banks",
+    "href": "references.html#problem-banks",
+    "title": "References",
+    "section": "Problem Banks",
+    "text": "Problem Banks\n\nCombinatorics\nGraduate Research Workshop in Combinatorics - Problem Garden"
+  },
+  {
+    "objectID": "references.html#papers",
+    "href": "references.html#papers",
+    "title": "References",
+    "section": "",
+    "text": "On the Coefficients of the Minimal Polynomials of Gaussian Periods\nA Gallery of Gaussian Periods - Ellen Eischen and Stephan Ramon Garcia\nThe graphic nature of Gaussian periods - William Duke, Stephan Ramon Garcia, Bob Lutz"
   }
 ]
