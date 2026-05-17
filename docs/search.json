@@ -1,5 +1,131 @@
 [
   {
+    "objectID": "references.html",
+    "href": "references.html",
+    "title": "References",
+    "section": "",
+    "text": "On the Coefficients of the Minimal Polynomials of Gaussian Periods\nA Gallery of Gaussian Periods - Ellen Eischen and Stephan Ramon Garcia\nThe graphic nature of Gaussian periods - William Duke, Stephan Ramon Garcia, Bob Lutz"
+  },
+  {
+    "objectID": "references.html#papers",
+    "href": "references.html#papers",
+    "title": "References",
+    "section": "",
+    "text": "On the Coefficients of the Minimal Polynomials of Gaussian Periods\nA Gallery of Gaussian Periods - Ellen Eischen and Stephan Ramon Garcia\nThe graphic nature of Gaussian periods - William Duke, Stephan Ramon Garcia, Bob Lutz"
+  },
+  {
+    "objectID": "references.html#books",
+    "href": "references.html#books",
+    "title": "References",
+    "section": "Books",
+    "text": "Books\n\nProbability & Statistics\n\nBayesian Inference\nProbabilistic Inference Using Markov Chain Monte Carlo Methods- Radford M Neal\nA Student’s Guide to Bayesian Statistics - Ben Lambert\n\n\n\nComputational Math\nFundamentals of Numerical Computation\n\nML & AI\nMastering Reinforcement Learning\nGuide to creating custom chatbots\nStatistical Rethinking - Richard McElreath"
+  },
+  {
+    "objectID": "references.html#problem-banks",
+    "href": "references.html#problem-banks",
+    "title": "References",
+    "section": "Problem Banks",
+    "text": "Problem Banks\n\nCombinatorics\nGraduate Research Workshop in Combinatorics - Problem Garden"
+  },
+  {
+    "objectID": "teaching statement.html",
+    "href": "teaching statement.html",
+    "title": "Teaching Statement",
+    "section": "",
+    "text": "I have been teaching for more than a decade now. After all these years, I have come to understand that my role in the classroom and beyond is to support, motivate, and inspire students. I believe that the best way to learn mathematics is through making mistakes, getting confused, and struggling toward a solution. I consider myself a coach and a facilitator and teach with the core philosophy that my primary goal is to provide students with a welcoming and inclusive environment where experimentation is encouraged and honest mistakes aren’t penalized. It is important to me that students who complete my courses leave with a sense of pride and accomplishment, and with increased interest in mathematics, curiosity, and self-confidence.\nMy teaching experience ranges from creating advanced electives and short bootcamp courses for small groups of students to managing and teaching in-person courses with several hundred students, coordinating multi-section classes, and adapting large service courses for asynchronous education. I have contributed to open source texts using technologies such as Webwork, Quarto, Pretext, and RMarkdown, and I’m involved in the long-term project of math formalization using the Lean theorem prover. I have taught topics spanning calculus, linear algebra, differential equations, discrete math, linear programming, math formalization, manifolds, algebraic topology, Monte Carlo methods, and computational math."
+  },
+  {
+    "objectID": "teaching statement.html#discrete-math",
+    "href": "teaching statement.html#discrete-math",
+    "title": "Teaching Statement",
+    "section": "Discrete Math",
+    "text": "Discrete Math\nI have been teaching Discrete Math at JHU since Fall 2023. I have taught similar courses in the past at Northwestern University and the University of Western Ontario (UWO). At these institutions, I learned to use technological tools to my advantage. Because of Covid, I experimented extensively with the use of technology—I made online video lectures, created Webwork problems from scratch, and even administered an exam using Webwork. These experiences guided me toward revamping the Discrete Math course at Hopkins.\nI incorporated three big changes into the course:\n\nI wanted to rid students of the habit of rushing to a final answer and help them understand that mathematics is a creative, iterative process. As such, I allow students to resubmit their homework to recover lost points. This is a recurring theme in my teaching.\nThree in-class midterms instead of two longer midterms. This allowed students to focus on a few topics at a time. At the same time, having more exams allowed students to avoid getting bogged down by a single bad score, providing ample opportunities to recover.\nI switched to an online textbook with built-in exercises. I found in my first semester that students would often delay studying until homework deadlines and close to exams. This led to weaker students having extremely bad grades. With the online textbook, students are more accountable to working regularly, and I have seen drastic improvements in the grades of weaker students.\n\nThis required me to overhaul the entire course and recreate it from scratch. I’m grateful to have always had the best teaching assistants. I’m quite proud of my TAs who’ve gone on to TA for other courses after “graduating” from my course."
+  },
+  {
+    "objectID": "teaching statement.html#monte-carlo-methods",
+    "href": "teaching statement.html#monte-carlo-methods",
+    "title": "Teaching Statement",
+    "section": "Monte Carlo Methods",
+    "text": "Monte Carlo Methods\nI have been teaching Monte Carlo Methods for three semesters now. The course as designed by the previous instructor was excellent, but I found that it needed to be updated to align with the ways students learn today.\n\nI rewrote my own notes with an online-first approach. There is a course website instead of a textbook: https://apurvanakade.github.io/Monte-Carlo-Methods/. Having an online textbook also allows me to incorporate code directly in the book. I intend to apply for a CTEI grant to update this textbook and further incorporate interactive components.\nI changed each week’s homework to be part programming and part theory. The two components complement each other—the theory explaining the rationale behind the algorithms and the programming assignment immediately showing students how to apply the theory in real applications.\nThis course has a variety of fragmented topics with no central theory. As such, I felt that a big exam is not appropriate for this course, as there is nothing that we expect students to memorize. Instead, I switched to having weekly quizzes, which allow students to keep up with the fast-paced material and also reduce exam anxiety.\nThe biggest change I made to this course was adding a final project. Most of the students in this course are seniors and master’s students. These students really appreciate having some agency in how they learn and being able to showcase their skills. I have had non-math major students create polished papers and software worthy of being presented at conferences.\n\nA big challenge in this course is adapting it to a post-AI world. I now deemphasize things that can be done better by AI and instead encourage students to use AI tools to strengthen their learning. I encourage students to use AI assistants for their programming assignments and final projects, but I only evaluate their theoretical understanding. In the final project, students are required to submit a detailed report containing the mathematical analysis."
+  },
+  {
+    "objectID": "teaching statement.html#mathematical-foundations-of-ai",
+    "href": "teaching statement.html#mathematical-foundations-of-ai",
+    "title": "Teaching Statement",
+    "section": "Mathematical Foundations of AI",
+    "text": "Mathematical Foundations of AI\nIn the summer, I love to teach high school summer camps. I have taught Exploring Engineering Innovation and Mathematical Foundations of AI at JHU.\nTeaching Mathematical Foundations of AI was a significant learning experience for me. The course was aimed at high school students who were smart, motivated, and highly interested but lacked much mathematical and programming background. I again decided to revamp the entire course to fit the audience. I made the sessions interactive, flipped most classes, and had students work with each other and discuss topics like AI ethics that got students hooked on the subject.\nFor the programming component, I had to teach students Python from scratch but figured out a way to teach it succinctly and get to applications quickly."
+  },
+  {
+    "objectID": "teaching statement.html#professional-development",
+    "href": "teaching statement.html#professional-development",
+    "title": "Teaching Statement",
+    "section": "Professional Development",
+    "text": "Professional Development\nI have completed a Faculty Forward Fellowship and a certification course at the Teaching Academy at JHU, where I learned about several important pedagogical concepts such as inquiry-based learning, backward course design, and learning objectives, which I regularly incorporate into my own teaching. I regularly attend the workshops and seminars organized at the Center for Teaching Excellence and Innovation at JHU. I am a member of the Project NExT’20 cohort, a professional development program sponsored by the MAA for math educators at the university level. I try to keep myself updated on advances in pedagogical techniques and find it valuable to hear about other educators’ teaching experiences. In addition to providing me with new information and skills, these workshops also allow me to take on the role of a student and stay grounded."
+  },
+  {
+    "objectID": "teaching statement.html#future-goals",
+    "href": "teaching statement.html#future-goals",
+    "title": "Teaching Statement",
+    "section": "Future Goals",
+    "text": "Future Goals\nA central theme in my teaching career has been adapting courses to student needs without watering down the content. I want to keep updating existing courses and create new courses that are first and foremost useful to my students. This requires considerable effort in creating new materials that are interactive and engaging. I’m planning on applying for a CTEI grant for help with this.\nI also want to broaden my work from teaching to mentoring and outreach. Finally, I want to engage more with the broader teaching community. I’m looking forward to the reduced course load, which will allow me to do this."
+  },
+  {
+    "objectID": "rec letters.html",
+    "href": "rec letters.html",
+    "title": "Recommendation Letters",
+    "section": "",
+    "text": "source: https://www.hmc.edu/mathematics/wp-content/uploads/sites/49/2020/03/recommendation-letters.pdf\nIf I have recently agreed to write any recommendation letters for you, then at least two weeks before the first letter is due, please email me • a copy of your personal statement (if applicable), • an unofficial copy of your transcript, and • a copy of your resume. In the same email, please send me your answers to the following questions: 1. What is your name, graduation year, and major? 2. For what are you applying (e.g., graduate school)? List the programs to which you are applying, together with due dates. 3. How long have I known you (in years and months), and what is my relationship to you (e.g., instructor, research advisor, etc.)? 4. For what classes have I had you, what final grades did I assign you, and how did you distinguish yourself in my classes? 5. How would you describe yourself? What are your strengths? What are your weaknesses? Your response to this question is important to me, so the more details the better. 6. What are some of your academic and nonacademic accomplishments? 7. What makes me particularly qualified to write a letter for you? 8. What makes you particularly qualified for this position/honor/award? 9. What are your long term goals and will this position/honor/award help? If so, how? 10. Additional comments (summer research, interesting jobs, hobbies, etc.)? Finally, please send me email reminders as deadlines approach, and feel free to chat with me about other ways you can make the application process go smoothly. Good luck! Michael Orrison Professor of Mathematics Harvey Mudd College"
+  },
+  {
+    "objectID": "notes.html",
+    "href": "notes.html",
+    "title": "Class Notes",
+    "section": "",
+    "text": "I love to (re)design math courses. Below are notes and problem sets from several of my courses. Most notes are accessible to undergraduate and advanced high-school students."
+  },
+  {
+    "objectID": "notes.html#jhu",
+    "href": "notes.html#jhu",
+    "title": "Class Notes",
+    "section": "JHU",
+    "text": "JHU\n\nMonte Carlo Methods\n\nMonte Carlo Methods Course Notes"
+  },
+  {
+    "objectID": "notes.html#northwestern",
+    "href": "notes.html#northwestern",
+    "title": "Class Notes",
+    "section": "Northwestern",
+    "text": "Northwestern\n\nIntroduction to Optimization\n\\[\\begin{equation}\n  \\begin{array}{lrrrrrrrrr}\n    \\mbox{maximize: } & c_0 & + & c_1 x_1 & + & \\dots & + & c_n x_n & \\\\\n    \\mbox{subject to: }\n      & & & a_{11} x_1 & + & \\dots & + & a_{1n} x_n & \\leq & b_1 \\\\\n      & & & a_{21} x_1 & + & \\dots & + & a_{2n} x_n & \\leq & b_2 \\\\\n      & & & & & \\vdots &  \\\\\n      & & & a_{m1} x_1 & + & \\dots & + & a_{mn} x_n & \\leq & b_m \\\\\n      & & & x_1, & x_2, & \\dots &, & x_n & \\geq & 0\n  \\end{array}\n\\end{equation}\\]\nCourse Notes\nIn Winter and Spring 2022, I taught a quarter-long course at Northwestern on Introduction to Optimization. The course covers mainly linear programming and duality theory. The above course notes are accessible to students who have done linear algebra and some basic multivariable calculus (gradients)."
+  },
+  {
+    "objectID": "notes.html#uwo",
+    "href": "notes.html#uwo",
+    "title": "Class Notes",
+    "section": "UWO",
+    "text": "UWO\n\nAlgebraic topology\n\nProblem Sets.\nIn Winter 2021, I taught a semester-long course at UWO on Algebraic Topology aimed at graduate students and upper-level undergrads. The main textbook for the course was Hatcher but I rarely used the book at all. The course covers the fundamental group, covering spaces, and singular homology.\n\n\nDiscrete math\n\\[\n\\begin{align}\n\\left|\\bigcup _{i=1}^{n}A_{i}\\right|=\\sum _{i=1}^{n}|A_{i}|-\\sum _{1\\leqslant i&lt;j\\leqslant n}|A_{i}\\cap A_{j}|+\\sum _{1\\leqslant i&lt;j&lt;k\\leqslant n}|A_{i}\\cap A_{j}\\cap A_{k}|-\\cdots +(-1)^{n-1}\\left|A_{1}\\cap \\cdots \\cap A_{n}\\right|\n\\end{align}\n\\]\nVideo lectures\nIn Fall 2020, I taught a semester-long at UWO on Discrete Math aimed at second-year undergrads majoring in computer science. The course was fully asynchronous and I had to come up with several innovations to make it work. I curated a textbook on zyBooks and created several videos on YouTube to accompany the text. I used Piazza as a platform for discussions. With a lot of help from my department, we also created hundreds of questions on WeBWork which were then used the exams. This has been the most challenging and the most rewarding course I’ve ever taught."
+  },
+  {
+    "objectID": "notes.html#canadausa",
+    "href": "notes.html#canadausa",
+    "title": "Class Notes",
+    "section": "Canada/USA ",
+    "text": "Canada/USA \n\nLean at MC2020\n\nNotes.   Source Code.\nThis is a completely interactive class on the Lean theorem prover from Mathcamp 2020 - you learn by solving exercises online. The prerequisites for this class are basic proof techniques.\n\n\nCrash course on linear algebra\n\n\n\n\n\n\n\n\n\nNotes.\nThis is a week-long proof-based introduction to Linear Algebra class from Mathcamp 2018. The prerequisites are basic proof techniques. The class is designed in an IBL-format - you’re expected to solve all the problems in each section before moving to the next and in the process learn the subject.\n\n\nGalois correspondence of covering spaces\n\n\n\n\n\n\n\n\n\n\nNotes.\nThis week-long class from Mathcamp 2019 covers (pun intended) the covering space theory for graphs and surfaces and is meant to be an introduction to algebraic topology and its connection to group theory. The prerequisites are group theory and basic minimal exposure to topology/analysis.\n\n\nFrom high school arithmetic to group cohomology\n\\[\n\\begin{align}\n  0 \\longrightarrow \\mathbb{Z}/10 \\longrightarrow \\mathbb{Z}/100 \\longrightarrow \\mathbb{Z}/10 \\longrightarrow 0\n\\end{align}\n\\]\nNotes.\nThis is a week-long class from Mathcamp 2019 based on a fun paper by Dan Isaken titled A cohomological viewpoint of elementary school arithmetic. It introduces the notions of group extensions and exact sequences as means to interpret addition of multi-digit numbers. It is designed in an IBL-format - you’re expected to solve all the problems in each section before moving to the next and in the process learn the subject. The prerequisites are group theory.\n\n\nCohomology via sheaves\n\nNotes.\nThis is a week-long class from Mathcamp 2018 about Čech cohomology on graphs and cohomology computations for simple spaces. The class is designed in an IBL-format - you’re expected to solve all the problems in each section before moving to the next and in the process learn the subject. The prerequisites are linear algebra (over finite fields).\n\n\nHow curved is a potato?\n\nNotes.\nThis is a week-long class from Mathcamp 2018 about principal, Gaussian, and mean curvature of potatoes embedded in \\(\\mathbb{R}^3\\). The prerequisites are linear algebra, in particular, the notions of eigenvalues and eigenvectors, and multi-variable calculus.\n\n\nWould I ever lie group to you?\n\nNotes.\nI taught this week-long class at Mathcamp 2018. This is a class about matrix groups and how they arise as symmetries of spaces. The prerequisites are linear algebra and group theory, in particular, group actions.\n\n\nRiemann surfaces\n\nProblem Sets.\nI taught this week-long class at Mathcamp 2019. In this class, we construct Riemann surfaces as “graphs” of holomorphic functions. Towards the end we prove Fermat’s last theorem for function fields. The prerequisites are complex analysis.\nThe following are a few other classes I taught at Mathcamp. The notes are not very polished.\n\nHow Riemann finally understood logarithms\nHow to glue donuts\nAll things manifoldy\nEuler Characteristic\nSymmetries of Spaces"
+  },
+  {
+    "objectID": "notes.html#jhu-1",
+    "href": "notes.html#jhu-1",
+    "title": "Class Notes",
+    "section": "JHU",
+    "text": "JHU\n\nHonors single variable calculus\n\nNotes v2017.   Notes v2018.\nFor two semesters, Fall 2017 & 2018, I taught an accelerated honors single variable calculus course at JHU. The course covers two semesters worth of calculus (integration and differentiation) in one semester. The course is designed in an IBL-format - you’re expected to solve all the problems in each section before moving to the next and in the process learn the subject. The prerequisites are pre-calculus and basic theorem proving.\n\n\nSymmetries & polynomials\n\\[\n\\begin{align}\n{\\sqrt[{3}]{-{\\frac {q}{2}}+{\\sqrt {{\\frac {q^{2}}{4}}+{\\frac {p^{3}}{27}}}}}}+{\\sqrt[{3}]{-{\\frac {q}{2}}-{\\sqrt {{\\frac {q^{2}}{4}}+{\\frac {p^{3}}{27}}}}}}.\\end{align}\n\\]\nNotes.\nThis 2-week class from Intersession 2018 at JHU non-math majors to group theory and its connections to roots of polynomials, in particular, the unsolvability of the quintic. The class is designed in an IBL-format - you’re expected to solve all the problems in each section before moving to the next and in the process learn the subject. The prerequisites are basic proof techniques.\n\n\nHitchhiker’s guide to algebraic topology\n\nCourse Website.\nThis 2-week class from the Intersession 2017 at JHU introduces non-math majors to algebraic topology and its applications. There are no prerequisites."
+  },
+  {
+    "objectID": "notes.html#expository-notes",
+    "href": "notes.html#expository-notes",
+    "title": "Class Notes",
+    "section": "Expository notes",
+    "text": "Expository notes\nFollowing are some of my personal math notes. The notes have not been proofread and might contain errors.\n\nWhat is a Spectrum?\nh-principles MSRI Summer School\nConnections on Principal Bundles and Classical Electromagnetism\nVector Fields on Spheres\nSteifel Whitney Numbers\nHomotopy of MO\nRepresentation Theory of Symmetric Group\nGeometry of Dirac Operators\nFIOs and Lagrangian Submanifolds\nSymplectic Geometry Course Notes\nFinite Gauge Groups TQFTs\nClassical Lie Groups\nMosher and Tangora Notes"
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Apurva Nakade",
@@ -68,159 +194,5 @@
     "title": "CV",
     "section": "Conference Attended",
     "text": "Conference Attended\nMAA MD-DC-VA Section Meeting, Spring 2024\nMAA MD-DC-VA Section Meeting, Fall 2023\nUnited States Conference on Teaching Statistics, 2023\nMSRI CIME Workshop, 2022\nProject NExT at MAA Mathfest, Online, 2021\nLean for the curious mathematician, 2020\nSpaces of Embeddings, BIRS, Banff, 2019\nMSRI Summer School, Cortona, Italy, 2019\nMRC Workshop, Providence RI, 2019\nMIT Talbot Workshop, Austin TX, 2019\nWorkshop on Functor Calculus, Ohio State University, 2019\nAMS Sectional Meeting, University of Hawaii, 2019\nArizona Winter School, Arizona State University, 2019\nJoint Mathematical Meetings, Baltimore, 2019\nSymplectic Geometry and Homotopy Theory, UCLA, 2018\nMSRI Summer School, Fields Institute, Toronto, 2018\nGraduate Student Conference, Temple University, 2018\nAMS Sectional Meeting, UC Riverside, 2017\nEuropean Autumn School in Topology, Netherlands, 2017\nTopology Festival, Cornell University, 2017\nGeorgia International Topology Conference, University of Georgia, 2017\nAlpine Algebraic & Applied Topology Conference, Switzerland, 2016\nWCATSS, University of Oregon, Eugene, 2016\nGSTSC, Indiana University, Bloomington, 2016\nMid-Atlantic Topology Conference, Johns Hopkins University, 2016\nMidwest Topology Seminar, Northwestern University, 2016\nGeometry and Topology Conference, Lehigh University, 2015\nMid-Atlantic Topology Conference, University of Virginia, 2015\nMidwest Topology Seminar, University of Illinois Chicago, 2015\nMidwest Topology Seminar, Northwestern University, 2015\nModular invariants in Topology and Analysis, Regensburg, 2015\nWCATSS on Field theories, UBC, 2015\nIntroductory Workshop on Algebraic Topology, MSRI, 2015\nJoint Mathematical Meetings, Baltimore, 2015\nClassification of Manifolds, NEHU, 2013\nH-principle, Chennai Mathematical Institute, 2012\nGroups and geometries, ISI, Bangalore, 2012\nString Topology, Vivekananda University, 2012\nKervaire Invariant One, ISI, Kolkata, 2012\nNumber Theory workshop, Tezpur University, 2011\nLie algebras and their representations, CMI, 2011\nNurture camp, Institute of Mathematical Sciences, 2007\nIMO, Slovenia, 2006 \nIMOTC, HBCSC, 2003-2006\n\n\n\n\nKishore Vaigyanik Protsahan Yojana (KVPY), 2005"
-  },
-  {
-    "objectID": "notes.html",
-    "href": "notes.html",
-    "title": "Class Notes",
-    "section": "",
-    "text": "I love to (re)design math courses. Below are notes and problem sets from several of my courses. Most notes are accessible to undergraduate and advanced high-school students."
-  },
-  {
-    "objectID": "notes.html#jhu",
-    "href": "notes.html#jhu",
-    "title": "Class Notes",
-    "section": "JHU",
-    "text": "JHU\n\nMonte Carlo Methods\n\nMonte Carlo Methods Course Notes"
-  },
-  {
-    "objectID": "notes.html#northwestern",
-    "href": "notes.html#northwestern",
-    "title": "Class Notes",
-    "section": "Northwestern",
-    "text": "Northwestern\n\nIntroduction to Optimization\n\\[\\begin{equation}\n  \\begin{array}{lrrrrrrrrr}\n    \\mbox{maximize: } & c_0 & + & c_1 x_1 & + & \\dots & + & c_n x_n & \\\\\n    \\mbox{subject to: }\n      & & & a_{11} x_1 & + & \\dots & + & a_{1n} x_n & \\leq & b_1 \\\\\n      & & & a_{21} x_1 & + & \\dots & + & a_{2n} x_n & \\leq & b_2 \\\\\n      & & & & & \\vdots &  \\\\\n      & & & a_{m1} x_1 & + & \\dots & + & a_{mn} x_n & \\leq & b_m \\\\\n      & & & x_1, & x_2, & \\dots &, & x_n & \\geq & 0\n  \\end{array}\n\\end{equation}\\]\nCourse Notes\nIn Winter and Spring 2022, I taught a quarter-long course at Northwestern on Introduction to Optimization. The course covers mainly linear programming and duality theory. The above course notes are accessible to students who have done linear algebra and some basic multivariable calculus (gradients)."
-  },
-  {
-    "objectID": "notes.html#uwo",
-    "href": "notes.html#uwo",
-    "title": "Class Notes",
-    "section": "UWO",
-    "text": "UWO\n\nAlgebraic topology\n\nProblem Sets.\nIn Winter 2021, I taught a semester-long course at UWO on Algebraic Topology aimed at graduate students and upper-level undergrads. The main textbook for the course was Hatcher but I rarely used the book at all. The course covers the fundamental group, covering spaces, and singular homology.\n\n\nDiscrete math\n\\[\n\\begin{align}\n\\left|\\bigcup _{i=1}^{n}A_{i}\\right|=\\sum _{i=1}^{n}|A_{i}|-\\sum _{1\\leqslant i&lt;j\\leqslant n}|A_{i}\\cap A_{j}|+\\sum _{1\\leqslant i&lt;j&lt;k\\leqslant n}|A_{i}\\cap A_{j}\\cap A_{k}|-\\cdots +(-1)^{n-1}\\left|A_{1}\\cap \\cdots \\cap A_{n}\\right|\n\\end{align}\n\\]\nVideo lectures\nIn Fall 2020, I taught a semester-long at UWO on Discrete Math aimed at second-year undergrads majoring in computer science. The course was fully asynchronous and I had to come up with several innovations to make it work. I curated a textbook on zyBooks and created several videos on YouTube to accompany the text. I used Piazza as a platform for discussions. With a lot of help from my department, we also created hundreds of questions on WeBWork which were then used the exams. This has been the most challenging and the most rewarding course I’ve ever taught."
-  },
-  {
-    "objectID": "notes.html#canadausa",
-    "href": "notes.html#canadausa",
-    "title": "Class Notes",
-    "section": "Canada/USA ",
-    "text": "Canada/USA \n\nLean at MC2020\n\nNotes.   Source Code.\nThis is a completely interactive class on the Lean theorem prover from Mathcamp 2020 - you learn by solving exercises online. The prerequisites for this class are basic proof techniques.\n\n\nCrash course on linear algebra\n\n\n\n\n\n\n\n\n\nNotes.\nThis is a week-long proof-based introduction to Linear Algebra class from Mathcamp 2018. The prerequisites are basic proof techniques. The class is designed in an IBL-format - you’re expected to solve all the problems in each section before moving to the next and in the process learn the subject.\n\n\nGalois correspondence of covering spaces\n\n\n\n\n\n\n\n\n\n\nNotes.\nThis week-long class from Mathcamp 2019 covers (pun intended) the covering space theory for graphs and surfaces and is meant to be an introduction to algebraic topology and its connection to group theory. The prerequisites are group theory and basic minimal exposure to topology/analysis.\n\n\nFrom high school arithmetic to group cohomology\n\\[\n\\begin{align}\n  0 \\longrightarrow \\mathbb{Z}/10 \\longrightarrow \\mathbb{Z}/100 \\longrightarrow \\mathbb{Z}/10 \\longrightarrow 0\n\\end{align}\n\\]\nNotes.\nThis is a week-long class from Mathcamp 2019 based on a fun paper by Dan Isaken titled A cohomological viewpoint of elementary school arithmetic. It introduces the notions of group extensions and exact sequences as means to interpret addition of multi-digit numbers. It is designed in an IBL-format - you’re expected to solve all the problems in each section before moving to the next and in the process learn the subject. The prerequisites are group theory.\n\n\nCohomology via sheaves\n\nNotes.\nThis is a week-long class from Mathcamp 2018 about Čech cohomology on graphs and cohomology computations for simple spaces. The class is designed in an IBL-format - you’re expected to solve all the problems in each section before moving to the next and in the process learn the subject. The prerequisites are linear algebra (over finite fields).\n\n\nHow curved is a potato?\n\nNotes.\nThis is a week-long class from Mathcamp 2018 about principal, Gaussian, and mean curvature of potatoes embedded in \\(\\mathbb{R}^3\\). The prerequisites are linear algebra, in particular, the notions of eigenvalues and eigenvectors, and multi-variable calculus.\n\n\nWould I ever lie group to you?\n\nNotes.\nI taught this week-long class at Mathcamp 2018. This is a class about matrix groups and how they arise as symmetries of spaces. The prerequisites are linear algebra and group theory, in particular, group actions.\n\n\nRiemann surfaces\n\nProblem Sets.\nI taught this week-long class at Mathcamp 2019. In this class, we construct Riemann surfaces as “graphs” of holomorphic functions. Towards the end we prove Fermat’s last theorem for function fields. The prerequisites are complex analysis.\nThe following are a few other classes I taught at Mathcamp. The notes are not very polished.\n\nHow Riemann finally understood logarithms\nHow to glue donuts\nAll things manifoldy\nEuler Characteristic\nSymmetries of Spaces"
-  },
-  {
-    "objectID": "notes.html#jhu-1",
-    "href": "notes.html#jhu-1",
-    "title": "Class Notes",
-    "section": "JHU",
-    "text": "JHU\n\nHonors single variable calculus\n\nNotes v2017.   Notes v2018.\nFor two semesters, Fall 2017 & 2018, I taught an accelerated honors single variable calculus course at JHU. The course covers two semesters worth of calculus (integration and differentiation) in one semester. The course is designed in an IBL-format - you’re expected to solve all the problems in each section before moving to the next and in the process learn the subject. The prerequisites are pre-calculus and basic theorem proving.\n\n\nSymmetries & polynomials\n\\[\n\\begin{align}\n{\\sqrt[{3}]{-{\\frac {q}{2}}+{\\sqrt {{\\frac {q^{2}}{4}}+{\\frac {p^{3}}{27}}}}}}+{\\sqrt[{3}]{-{\\frac {q}{2}}-{\\sqrt {{\\frac {q^{2}}{4}}+{\\frac {p^{3}}{27}}}}}}.\\end{align}\n\\]\nNotes.\nThis 2-week class from Intersession 2018 at JHU non-math majors to group theory and its connections to roots of polynomials, in particular, the unsolvability of the quintic. The class is designed in an IBL-format - you’re expected to solve all the problems in each section before moving to the next and in the process learn the subject. The prerequisites are basic proof techniques.\n\n\nHitchhiker’s guide to algebraic topology\n\nCourse Website.\nThis 2-week class from the Intersession 2017 at JHU introduces non-math majors to algebraic topology and its applications. There are no prerequisites."
-  },
-  {
-    "objectID": "notes.html#expository-notes",
-    "href": "notes.html#expository-notes",
-    "title": "Class Notes",
-    "section": "Expository notes",
-    "text": "Expository notes\nFollowing are some of my personal math notes. The notes have not been proofread and might contain errors.\n\nWhat is a Spectrum?\nh-principles MSRI Summer School\nConnections on Principal Bundles and Classical Electromagnetism\nVector Fields on Spheres\nSteifel Whitney Numbers\nHomotopy of MO\nRepresentation Theory of Symmetric Group\nGeometry of Dirac Operators\nFIOs and Lagrangian Submanifolds\nSymplectic Geometry Course Notes\nFinite Gauge Groups TQFTs\nClassical Lie Groups\nMosher and Tangora Notes"
-  },
-  {
-    "objectID": "rec letters.html",
-    "href": "rec letters.html",
-    "title": "Recommendation Letters",
-    "section": "",
-    "text": "source: https://www.hmc.edu/mathematics/wp-content/uploads/sites/49/2020/03/recommendation-letters.pdf\nIf I have recently agreed to write any recommendation letters for you, then at least two weeks before the first letter is due, please email me • a copy of your personal statement (if applicable), • an unofficial copy of your transcript, and • a copy of your resume. In the same email, please send me your answers to the following questions: 1. What is your name, graduation year, and major? 2. For what are you applying (e.g., graduate school)? List the programs to which you are applying, together with due dates. 3. How long have I known you (in years and months), and what is my relationship to you (e.g., instructor, research advisor, etc.)? 4. For what classes have I had you, what final grades did I assign you, and how did you distinguish yourself in my classes? 5. How would you describe yourself? What are your strengths? What are your weaknesses? Your response to this question is important to me, so the more details the better. 6. What are some of your academic and nonacademic accomplishments? 7. What makes me particularly qualified to write a letter for you? 8. What makes you particularly qualified for this position/honor/award? 9. What are your long term goals and will this position/honor/award help? If so, how? 10. Additional comments (summer research, interesting jobs, hobbies, etc.)? Finally, please send me email reminders as deadlines approach, and feel free to chat with me about other ways you can make the application process go smoothly. Good luck! Michael Orrison Professor of Mathematics Harvey Mudd College"
-  },
-  {
-    "objectID": "teaching statement.html",
-    "href": "teaching statement.html",
-    "title": "Teaching Statement",
-    "section": "",
-    "text": "I have been teaching for more than a decade now. After all these years, I have come to understand that my role in the classroom and beyond is to support, motivate, and inspire students. I believe that the best way to learn mathematics is through making mistakes, getting confused, and struggling toward a solution. I consider myself a coach and a facilitator and teach with the core philosophy that my primary goal is to provide students with a welcoming and inclusive environment where experimentation is encouraged and honest mistakes aren’t penalized. It is important to me that students who complete my courses leave with a sense of pride and accomplishment, and with increased interest in mathematics, curiosity, and self-confidence.\nMy teaching experience ranges from creating advanced electives and short bootcamp courses for small groups of students to managing and teaching in-person courses with several hundred students, coordinating multi-section classes, and adapting large service courses for asynchronous education. I have contributed to open source texts using technologies such as Webwork, Quarto, Pretext, and RMarkdown, and I’m involved in the long-term project of math formalization using the Lean theorem prover. I have taught topics spanning calculus, linear algebra, differential equations, discrete math, linear programming, math formalization, manifolds, algebraic topology, Monte Carlo methods, and computational math."
-  },
-  {
-    "objectID": "teaching statement.html#classroom-environment",
-    "href": "teaching statement.html#classroom-environment",
-    "title": "Teaching Statement",
-    "section": "{Classroom Environment}",
-    "text": "{Classroom Environment}\nI make great efforts to ensure that a course syllabus is welcoming and encouraging, being the first document that students see. While teaching online during Covid, my priority was to alleviate student anxiety and ensuring that students were not disadvantaged because of lack of face-to-face meetings and technical difficulties. After each (autograded) exam, I went through all student responses to reassign any points lost due to minor typos and system errors. I also maintained an active discussion forum on Piazza to foster a sense of community. I have taught huge coordinated courses where I was the sole point of contact for over 150 students. This challenging experience taught me how to be more inclusive and considerate of students from very diverse backgrounds and to ensure that even those who had other priorities could benefit from learning math in whatever way possible.\nI strive to get my students comfortable with the messy process of discovery in math. My classes are fun, interactive, and often times flipped. I greatly value one-to-one interactions as these allow students to get to know me as an individual. It is important for me and valuable for students to see me struggle and make mistakes. I hold a lot of office hours in a collaborative space that encourages group work. My office hours always have a high attendance. I memorize all of my students’ names so that I can connect with them on a personal level. % Of late, I’ve started holding Zoom office hours in addition to in-person ones which has further increased attendance."
-  },
-  {
-    "objectID": "teaching statement.html#professional-development",
-    "href": "teaching statement.html#professional-development",
-    "title": "Teaching Statement",
-    "section": "Professional Development",
-    "text": "Professional Development\nI have completed a Faculty Forward Fellowship and a certification course at the Teaching Academy at JHU, where I learned about several important pedagogical concepts such as inquiry-based learning, backward course design, and learning objectives, which I regularly incorporate into my own teaching. I regularly attend the workshops and seminars organized at the Center for Teaching Excellence and Innovation at JHU. I am a member of the Project NExT’20 cohort, a professional development program sponsored by the MAA for math educators at the university level. I try to keep myself updated on advances in pedagogical techniques and find it valuable to hear about other educators’ teaching experiences. In addition to providing me with new information and skills, these workshops also allow me to take on the role of a student and stay grounded."
-  },
-  {
-    "objectID": "teaching statement.html#mentorship",
-    "href": "teaching statement.html#mentorship",
-    "title": "Teaching Statement",
-    "section": "{Mentorship}",
-    "text": "{Mentorship}\nI find it fulfilling to mentor students outside of the regular classroom setting. I am currently a supplementary instructor for the Causeway Postbaccalaureate Program, a yearlong experience in mathematics that seeks to increase the number of graduate students in the mathematical sciences from historically underrepresented groups. I am also a co-organizer of the Northwestern Emerging Scholars Program, which is similar to math circles for first-year students.\nI have organized and participated in a Directed Reading Program that pairs undergraduate students with graduate students/junior faculty to undertake independent study projects as a mentor and a co-organizer. I started a DRP chapter at UWO here with the help of one of my colleagues.\nMy biggest influences have come from being a mentor (2017-20) and an academic coordinator (2018) at the Canada/USA Mathcamp, a summer program for high school students. Mathcamp gave me an opportunity to be a part of a loving and caring community, to be surrounded by people who love math and love to teach it and excel at it. I took on the role of an academic coordinator to contribute back to Mathcamp, to challenge myself, and to learn more about teaching. The academic coordinators are responsible for designing and running all the academic activities, including, inviting and hosting external visitors, designing a balanced five-week class schedule (nearly 60 classes), assigning (110) students to projects, and teaching.\n## {Future Goals} My next big goal is to figure out ways to quantitatively assess my teaching and pedagogical effectiveness. I wish to teach more interdisciplinary courses that involve student projects and real world applications. In the winter quarter, I intend to use SIMIODE textbook, which takes a modeling first approach, for teaching differential equations. I am currently contributing to Open Education Resources and wish to expand these projects in the future with focus on book publishing and online assessments as these resources are bound to play a central role in successfully adapting courses to an online setting."
-  },
-  {
-    "objectID": "teaching statement.html#discrete-math",
-    "href": "teaching statement.html#discrete-math",
-    "title": "Teaching Statement",
-    "section": "Discrete Math",
-    "text": "Discrete Math\nI have been teaching Discrete Math at JHU since Fall 2023. I have taught similar courses in the past at Northwestern University and the University of Western Ontario (UWO). At these institutions, I learned to use technological tools to my advantage. Because of Covid, I experimented extensively with the use of technology—I made online video lectures, created Webwork problems from scratch, and even administered an exam using Webwork. These experiences guided me toward revamping the Discrete Math course at Hopkins.\nI incorporated three big changes into the course:\n\nI wanted to rid students of the habit of rushing to a final answer and help them understand that mathematics is a creative, iterative process. As such, I allow students to resubmit their homework to recover lost points. This is a recurring theme in my teaching.\nThree in-class midterms instead of two longer midterms. This allowed students to focus on a few topics at a time. At the same time, having more exams allowed students to avoid getting bogged down by a single bad score, providing ample opportunities to recover.\nI switched to an online textbook with built-in exercises. I found in my first semester that students would often delay studying until homework deadlines and close to exams. This led to weaker students having extremely bad grades. With the online textbook, students are more accountable to working regularly, and I have seen drastic improvements in the grades of weaker students.\n\nThis required me to overhaul the entire course and recreate it from scratch. I’m grateful to have always had the best teaching assistants. I’m quite proud of my TAs who’ve gone on to TA for other courses after “graduating” from my course."
-  },
-  {
-    "objectID": "teaching statement.html#monte-carlo-methods",
-    "href": "teaching statement.html#monte-carlo-methods",
-    "title": "Teaching Statement",
-    "section": "Monte Carlo Methods",
-    "text": "Monte Carlo Methods\nI have been teaching Monte Carlo Methods for three semesters now. The course as designed by the previous instructor was excellent, but I found that it needed to be updated to align with the ways students learn today.\n\nI rewrote my own notes with an online-first approach. There is a course website instead of a textbook: https://apurvanakade.github.io/Monte-Carlo-Methods/. Having an online textbook also allows me to incorporate code directly in the book. I intend to apply for a CTEI grant to update this textbook and further incorporate interactive components.\nI changed each week’s homework to be part programming and part theory. The two components complement each other—the theory explaining the rationale behind the algorithms and the programming assignment immediately showing students how to apply the theory in real applications.\nThis course has a variety of fragmented topics with no central theory. As such, I felt that a big exam is not appropriate for this course, as there is nothing that we expect students to memorize. Instead, I switched to having weekly quizzes, which allow students to keep up with the fast-paced material and also reduce exam anxiety.\nThe biggest change I made to this course was adding a final project. Most of the students in this course are seniors and master’s students. These students really appreciate having some agency in how they learn and being able to showcase their skills. I have had non-math major students create polished papers and software worthy of being presented at conferences.\n\nA big challenge in this course is adapting it to a post-AI world. I now deemphasize things that can be done better by AI and instead encourage students to use AI tools to strengthen their learning. I encourage students to use AI assistants for their programming assignments and final projects, but I only evaluate their theoretical understanding. In the final project, students are required to submit a detailed report containing the mathematical analysis."
-  },
-  {
-    "objectID": "teaching statement.html#introduction-to-computation",
-    "href": "teaching statement.html#introduction-to-computation",
-    "title": "Teaching Statement",
-    "section": "Introduction to Computation",
-    "text": "Introduction to Computation"
-  },
-  {
-    "objectID": "teaching statement.html#professional-development-1",
-    "href": "teaching statement.html#professional-development-1",
-    "title": "Teaching Statement",
-    "section": "{Professional Development}",
-    "text": "{Professional Development}\nI try to keep myself updated on the advances in pedagogical techniques and find it valuable to hear about other educators’ teaching experiences. I am a member of the Project NExT’20 cohort, a professional development program sponsored by the MAA for math educators at the university level. I have completed a certification course at the Teaching Academy at JHU where I learned about several important pedagogical concepts such as inquiry-based learning, backward course design, learning objectives, etc. which I regularly incorporate into my own teaching. I regularly attend the workshops and seminars organized at the Center for Teaching and Learning at both UWO and NU and most recently Open Math Workshops and SIGMAA IBL workshops by MAA. In addition to providing me new information and skills, these workshops also allow me to take on the role of a student and stay grounded."
-  },
-  {
-    "objectID": "teaching statement.html#mathematical-foundations-of-ai",
-    "href": "teaching statement.html#mathematical-foundations-of-ai",
-    "title": "Teaching Statement",
-    "section": "Mathematical Foundations of AI",
-    "text": "Mathematical Foundations of AI\nIn the summer, I love to teach high school summer camps. I have taught Exploring Engineering Innovation and Mathematical Foundations of AI at JHU.\nTeaching Mathematical Foundations of AI was a significant learning experience for me. The course was aimed at high school students who were smart, motivated, and highly interested but lacked much mathematical and programming background. I again decided to revamp the entire course to fit the audience. I made the sessions interactive, flipped most classes, and had students work with each other and discuss topics like AI ethics that got students hooked on the subject.\nFor the programming component, I had to teach students Python from scratch but figured out a way to teach it succinctly and get to applications quickly."
-  },
-  {
-    "objectID": "teaching statement.html#future-goals",
-    "href": "teaching statement.html#future-goals",
-    "title": "Teaching Statement",
-    "section": "Future Goals",
-    "text": "Future Goals\nA central theme in my teaching career has been adapting courses to student needs without watering down the content. I want to keep updating existing courses and create new courses that are first and foremost useful to my students. This requires considerable effort in creating new materials that are interactive and engaging. I’m planning on applying for a CTEI grant for help with this.\nI also want to broaden my work from teaching to mentoring and outreach. Finally, I want to engage more with the broader teaching community. I’m looking forward to the reduced course load, which will allow me to do this."
-  },
-  {
-    "objectID": "references.html",
-    "href": "references.html",
-    "title": "References",
-    "section": "",
-    "text": "On the Coefficients of the Minimal Polynomials of Gaussian Periods\nA Gallery of Gaussian Periods - Ellen Eischen and Stephan Ramon Garcia\nThe graphic nature of Gaussian periods - William Duke, Stephan Ramon Garcia, Bob Lutz"
-  },
-  {
-    "objectID": "references.html#books",
-    "href": "references.html#books",
-    "title": "References",
-    "section": "Books",
-    "text": "Books\n\nProbability & Statistics\n\nBayesian Inference\nProbabilistic Inference Using Markov Chain Monte Carlo Methods- Radford M Neal\nA Student’s Guide to Bayesian Statistics - Ben Lambert\n\n\n\nComputational Math\nFundamentals of Numerical Computation\n\nML & AI\nMastering Reinforcement Learning\nGuide to creating custom chatbots\nStatistical Rethinking - Richard McElreath"
-  },
-  {
-    "objectID": "references.html#problem-banks",
-    "href": "references.html#problem-banks",
-    "title": "References",
-    "section": "Problem Banks",
-    "text": "Problem Banks\n\nCombinatorics\nGraduate Research Workshop in Combinatorics - Problem Garden"
-  },
-  {
-    "objectID": "references.html#papers",
-    "href": "references.html#papers",
-    "title": "References",
-    "section": "",
-    "text": "On the Coefficients of the Minimal Polynomials of Gaussian Periods\nA Gallery of Gaussian Periods - Ellen Eischen and Stephan Ramon Garcia\nThe graphic nature of Gaussian periods - William Duke, Stephan Ramon Garcia, Bob Lutz"
   }
 ]

@@ -10,7 +10,7 @@ website:
         href: index.qmd
       - notes.qmd
       - text: (Math) Blog
-        href: https://apurvanakade.github.io/second-drafts/
+        href: https://apurvanakade.github.io/math-blog/
       - CV.qmd
     right:
       - icon: github
