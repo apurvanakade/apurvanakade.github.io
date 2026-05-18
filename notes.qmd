@@ -31,7 +31,7 @@ Most notes are accessible to undergraduate and advanced high-school students.
 
 ### Monte Carlo Methods
 
-  ![](https://apurvanakade.github.io/Monte-Carlo-Methods/chapters/estimation/estimating_pi_files/figure-html/fig-estimate-pi-combined-output-1.png)
+  ![](https://upload.wikimedia.org/wikipedia/commons/d/d4/Pi_monte_carlo_all.gif){width=50%}
 
   [Monte Carlo Methods Course Notes](https://apurvanakade.github.io/Monte-Carlo-Methods/)
 
@@ -96,7 +96,7 @@ This has been the most challenging and the most rewarding course I've ever taugh
 
 
 ### Lean at MC2020
-![](https://lean-lang.org/static/lean_logo.svg){width=30%}
+![](https://upload.wikimedia.org/wikipedia/commons/d/dc/Lean_logo2.svg){width=50%}
 
 [Notes.](https://apurvnakade.github.io/mc2020-Lean/)
 &nbsp;
