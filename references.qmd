@@ -5,9 +5,8 @@ toc-expand: true
 toc-depth: 4
 ---
 
-## Papers
 
-### Gaussian Periods
+## Gaussian Periods
 
 [On the Coefficients of the Minimal Polynomials of Gaussian Periods](On the Coefficients of the Minimal Polynomials of Gaussian Periods)
 
@@ -15,31 +14,36 @@ toc-depth: 4
 
 [The graphic nature of Gaussian periods - William Duke, Stephan Ramon Garcia, Bob Lutz](https://arxiv.org/abs/1212.6825)
 
-## Books
+## Probability & Statistics
 
-### Probability & Statistics
-
-#### Bayesian Inference
+### Bayesian Inference
 
 [Probabilistic Inference Using Markov Chain Monte Carlo Methods- Radford M Neal](https://www.cs.columbia.edu/~blei/fogm/2025F/readings/Neal1993.pdf)
 
 [A Student's Guide to Bayesian Statistics - Ben Lambert](https://sites.math.rutgers.edu/~zeilberg/EM20/Lambert.pdf)
 
 
-### Computational Math
+
+## Computational Math
 
 [Fundamentals of Numerical Computation](https://fncbook.com/)
 
-#### ML & AI
+[Statistical Rethinking - Richard McElreath](https://github.com/rmcelreath/stat_rethinking_2024)
+
+## ML & AI
+
+
+### Reinforcement Learning 
 
 [Mastering Reinforcement Learning](https://gibberblot.github.io/rl-notes/index.html)
 
 [Guide to creating custom chatbots](https://docs.google.com/document/d/1H8YR4dWWSdtkY9NSWOqZULYYNrlABcI0YC4QajKoMtw/edit?tab=t.0)
 
-[Statistical Rethinking - Richard McElreath](https://github.com/rmcelreath/stat_rethinking_2024)
+### Diffusion 
 
-## Problem Banks
+[The paradox of diffusion distillation](https://sander.ai/2024/02/28/paradox.html)
 
-### Combinatorics
+
+## Combinatorics
 
 [Graduate Research Workshop in Combinatorics - Problem Garden](https://sites.google.com/view/grwc/problem-garden?authuser=0)
