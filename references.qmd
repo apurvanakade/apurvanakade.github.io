@@ -50,8 +50,25 @@ toc-depth: 4
 
 ## Gaussian Periods
 
-[On the Coefficients of the Minimal Polynomials of Gaussian Periods](On the Coefficients of the Minimal Polynomials of Gaussian Periods)
+[On the Coefficients of the Minimal Polynomials of Gaussian Periods](https://www.jstor.org/stable/2153175)
 
 [A Gallery of Gaussian Periods - Ellen Eischen and Stephan Ramon Garcia](https://stephangarcia.sites.pomona.edu/PAPERS/GGP.pdf)
 
+[GRAPHICAL CYCLIC SUPERCHARACTERS FOR COMPOSITE MODULI - BOB LUTZ](https://arxiv.org/pdf/1601.01031)
+
+
 [The graphic nature of Gaussian periods - William Duke, Stephan Ramon Garcia, Bob Lutz](https://arxiv.org/abs/1212.6825)
+
+[GAUSS’ HIDDEN MENAGERIE: FROM CYCLOTOMY TO SUPERCHARACTERS - STEPHAN RAMON GARCIA, TREVOR HYDE, AND BOB LUTZ](https://arxiv.org/pdf/1501.07507)
+
+
+### Expository Journals
+
+[Notices of the American Mathematical Society](https://www.ams.org/notices)
+
+[Expositiones Mathematicae](https://www.sciencedirect.com/journal/expositiones-mathematicae)
+
+
+## History of Math 
+
+[How Gauss Determined The Orbit of Ceres by Jonathan Tennenbaum and Bruce Director](https://archive.schillerinstitute.com/fid_97-01/982_orbit_ceres.pdf)

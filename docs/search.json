@@ -200,7 +200,7 @@
     "href": "references.html#gaussian-periods",
     "title": "References",
     "section": "Gaussian Periods",
-    "text": "Gaussian Periods\nOn the Coefficients of the Minimal Polynomials of Gaussian Periods\nA Gallery of Gaussian Periods - Ellen Eischen and Stephan Ramon Garcia\nThe graphic nature of Gaussian periods - William Duke, Stephan Ramon Garcia, Bob Lutz"
+    "text": "Gaussian Periods\nOn the Coefficients of the Minimal Polynomials of Gaussian Periods\nA Gallery of Gaussian Periods - Ellen Eischen and Stephan Ramon Garcia\nGRAPHICAL CYCLIC SUPERCHARACTERS FOR COMPOSITE MODULI - BOB LUTZ\nThe graphic nature of Gaussian periods - William Duke, Stephan Ramon Garcia, Bob Lutz\nGAUSS’ HIDDEN MENAGERIE: FROM CYCLOTOMY TO SUPERCHARACTERS - STEPHAN RAMON GARCIA, TREVOR HYDE, AND BOB LUTZ\n\nExpository Journals\nNotices of the American Mathematical Society\nExpositiones Mathematicae"
   },
   {
     "objectID": "references.html#probability-statistics",
@@ -236,5 +236,12 @@
     "title": "References",
     "section": "",
     "text": "Buffon’s NOODLE"
+  },
+  {
+    "objectID": "references.html#history-of-math",
+    "href": "references.html#history-of-math",
+    "title": "References",
+    "section": "History of Math",
+    "text": "History of Math\nHow Gauss Determined The Orbit of Ceres by Jonathan Tennenbaum and Bruce Director"
   }
 ]
