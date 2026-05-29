@@ -6,13 +6,10 @@ toc-depth: 4
 ---
 
 
-## Gaussian Periods
+## Fun 
 
-[On the Coefficients of the Minimal Polynomials of Gaussian Periods](On the Coefficients of the Minimal Polynomials of Gaussian Periods)
+[Buffon's NOODLE](https://mbmccoy.dev/posts/buffons-noodle/)
 
-[A Gallery of Gaussian Periods - Ellen Eischen and Stephan Ramon Garcia](https://stephangarcia.sites.pomona.edu/PAPERS/GGP.pdf)
-
-[The graphic nature of Gaussian periods - William Duke, Stephan Ramon Garcia, Bob Lutz](https://arxiv.org/abs/1212.6825)
 
 ## Probability & Statistics
 
@@ -43,7 +40,18 @@ toc-depth: 4
 
 [The paradox of diffusion distillation](https://sander.ai/2024/02/28/paradox.html)
 
+[Lectures on diffusion](https://www.practical-diffusion.org/lectures/)
+
 
 ## Combinatorics
 
 [Graduate Research Workshop in Combinatorics - Problem Garden](https://sites.google.com/view/grwc/problem-garden?authuser=0)
+
+
+## Gaussian Periods
+
+[On the Coefficients of the Minimal Polynomials of Gaussian Periods](On the Coefficients of the Minimal Polynomials of Gaussian Periods)
+
+[A Gallery of Gaussian Periods - Ellen Eischen and Stephan Ramon Garcia](https://stephangarcia.sites.pomona.edu/PAPERS/GGP.pdf)
+
+[The graphic nature of Gaussian periods - William Duke, Stephan Ramon Garcia, Bob Lutz](https://arxiv.org/abs/1212.6825)

@@ -4,7 +4,7 @@
     "href": "references.html",
     "title": "References",
     "section": "",
-    "text": "On the Coefficients of the Minimal Polynomials of Gaussian Periods\nA Gallery of Gaussian Periods - Ellen Eischen and Stephan Ramon Garcia\nThe graphic nature of Gaussian periods - William Duke, Stephan Ramon Garcia, Bob Lutz"
+    "text": "Buffon’s NOODLE"
   },
   {
     "objectID": "references.html#papers",
@@ -199,8 +199,8 @@
     "objectID": "references.html#gaussian-periods",
     "href": "references.html#gaussian-periods",
     "title": "References",
-    "section": "",
-    "text": "On the Coefficients of the Minimal Polynomials of Gaussian Periods\nA Gallery of Gaussian Periods - Ellen Eischen and Stephan Ramon Garcia\nThe graphic nature of Gaussian periods - William Duke, Stephan Ramon Garcia, Bob Lutz"
+    "section": "Gaussian Periods",
+    "text": "Gaussian Periods\nOn the Coefficients of the Minimal Polynomials of Gaussian Periods\nA Gallery of Gaussian Periods - Ellen Eischen and Stephan Ramon Garcia\nThe graphic nature of Gaussian periods - William Duke, Stephan Ramon Garcia, Bob Lutz"
   },
   {
     "objectID": "references.html#probability-statistics",
@@ -221,7 +221,7 @@
     "href": "references.html#ml-ai",
     "title": "References",
     "section": "ML & AI",
-    "text": "ML & AI\n\nReinforcement Learning\nMastering Reinforcement Learning\nGuide to creating custom chatbots\n\n\nDiffusion\nThe paradox of diffusion distillation"
+    "text": "ML & AI\n\nReinforcement Learning\nMastering Reinforcement Learning\nGuide to creating custom chatbots\n\n\nDiffusion\nThe paradox of diffusion distillation\nLectures on diffusion"
   },
   {
     "objectID": "references.html#combinatorics",
@@ -229,5 +229,12 @@
     "title": "References",
     "section": "Combinatorics",
     "text": "Combinatorics\nGraduate Research Workshop in Combinatorics - Problem Garden"
+  },
+  {
+    "objectID": "references.html#fun",
+    "href": "references.html#fun",
+    "title": "References",
+    "section": "",
+    "text": "Buffon’s NOODLE"
   }
 ]
