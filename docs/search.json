@@ -207,7 +207,7 @@
     "href": "references.html#probability-statistics",
     "title": "References",
     "section": "Probability & Statistics",
-    "text": "Probability & Statistics\n\nBayesian Inference\nProbabilistic Inference Using Markov Chain Monte Carlo Methods- Radford M Neal\nA Student’s Guide to Bayesian Statistics - Ben Lambert"
+    "text": "Probability & Statistics\nStatKey\nEconometrics Academy\n\nBayesian Inference\nProbabilistic Inference Using Markov Chain Monte Carlo Methods- Radford M Neal\nA Student’s Guide to Bayesian Statistics - Ben Lambert"
   },
   {
     "objectID": "references.html#computational-math",
@@ -243,5 +243,12 @@
     "title": "References",
     "section": "History of Math",
     "text": "History of Math\nHow Gauss Determined The Orbit of Ceres by Jonathan Tennenbaum and Bruce Director"
+  },
+  {
+    "objectID": "references.html#ug-research-topics",
+    "href": "references.html#ug-research-topics",
+    "title": "References",
+    "section": "UG Research Topics",
+    "text": "UG Research Topics\nMinkowski Geometric Algebra of Complex Sets\nExact Minkowski Products of N Complex Disks - RIDA T. FAROUKI"
   }
 ]

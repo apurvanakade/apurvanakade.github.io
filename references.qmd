@@ -13,13 +13,15 @@ toc-depth: 4
 
 ## Probability & Statistics
 
+[StatKey](https://www.lock5stat.com/StatKey/)
+
+[Econometrics Academy](https://sites.google.com/site/econometricsacademy)
+
 ### Bayesian Inference
 
 [Probabilistic Inference Using Markov Chain Monte Carlo Methods- Radford M Neal](https://www.cs.columbia.edu/~blei/fogm/2025F/readings/Neal1993.pdf)
 
 [A Student's Guide to Bayesian Statistics - Ben Lambert](https://sites.math.rutgers.edu/~zeilberg/EM20/Lambert.pdf)
-
-
 
 ## Computational Math
 
@@ -72,3 +74,9 @@ toc-depth: 4
 ## History of Math 
 
 [How Gauss Determined The Orbit of Ceres by Jonathan Tennenbaum and Bruce Director](https://archive.schillerinstitute.com/fid_97-01/982_orbit_ceres.pdf)
+
+## UG Research Topics
+
+[Minkowski Geometric Algebra of Complex Sets](https://link.springer.com/article/10.1023/A:1010318011860)
+
+[Exact Minkowski Products of N Complex Disks - RIDA T. FAROUKI](https://www.geometrie.tuwien.ac.at/geom/ig/papers/pot114.pdf)
