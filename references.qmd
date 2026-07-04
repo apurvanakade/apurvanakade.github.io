@@ -5,41 +5,78 @@ toc-expand: true
 toc-depth: 4
 ---
 
-## Papers
 
-### Gaussian Periods
+## Fun 
 
-[On the Coefficients of the Minimal Polynomials of Gaussian Periods](On the Coefficients of the Minimal Polynomials of Gaussian Periods)
+[Buffon's NOODLE](https://mbmccoy.dev/posts/buffons-noodle/)
 
-[A Gallery of Gaussian Periods - Ellen Eischen and Stephan Ramon Garcia](https://stephangarcia.sites.pomona.edu/PAPERS/GGP.pdf)
 
-[The graphic nature of Gaussian periods - William Duke, Stephan Ramon Garcia, Bob Lutz](https://arxiv.org/abs/1212.6825)
+## Probability & Statistics
 
-## Books
+[StatKey](https://www.lock5stat.com/StatKey/)
 
-### Probability & Statistics
+[Econometrics Academy](https://sites.google.com/site/econometricsacademy)
 
-#### Bayesian Inference
+### Bayesian Inference
 
 [Probabilistic Inference Using Markov Chain Monte Carlo Methods- Radford M Neal](https://www.cs.columbia.edu/~blei/fogm/2025F/readings/Neal1993.pdf)
 
 [A Student's Guide to Bayesian Statistics - Ben Lambert](https://sites.math.rutgers.edu/~zeilberg/EM20/Lambert.pdf)
 
-
-### Computational Math
+## Computational Math
 
 [Fundamentals of Numerical Computation](https://fncbook.com/)
 
-#### ML & AI
+[Statistical Rethinking - Richard McElreath](https://github.com/rmcelreath/stat_rethinking_2024)
+
+## ML & AI
+
+
+### Reinforcement Learning 
 
 [Mastering Reinforcement Learning](https://gibberblot.github.io/rl-notes/index.html)
 
 [Guide to creating custom chatbots](https://docs.google.com/document/d/1H8YR4dWWSdtkY9NSWOqZULYYNrlABcI0YC4QajKoMtw/edit?tab=t.0)
 
-[Statistical Rethinking - Richard McElreath](https://github.com/rmcelreath/stat_rethinking_2024)
+### Diffusion 
 
-## Problem Banks
+[The paradox of diffusion distillation](https://sander.ai/2024/02/28/paradox.html)
 
-### Combinatorics
+[Lectures on diffusion](https://www.practical-diffusion.org/lectures/)
+
+
+## Combinatorics
 
 [Graduate Research Workshop in Combinatorics - Problem Garden](https://sites.google.com/view/grwc/problem-garden?authuser=0)
+
+
+## Gaussian Periods
+
+[On the Coefficients of the Minimal Polynomials of Gaussian Periods](https://www.jstor.org/stable/2153175)
+
+[A Gallery of Gaussian Periods - Ellen Eischen and Stephan Ramon Garcia](https://stephangarcia.sites.pomona.edu/PAPERS/GGP.pdf)
+
+[GRAPHICAL CYCLIC SUPERCHARACTERS FOR COMPOSITE MODULI - BOB LUTZ](https://arxiv.org/pdf/1601.01031)
+
+
+[The graphic nature of Gaussian periods - William Duke, Stephan Ramon Garcia, Bob Lutz](https://arxiv.org/abs/1212.6825)
+
+[GAUSS’ HIDDEN MENAGERIE: FROM CYCLOTOMY TO SUPERCHARACTERS - STEPHAN RAMON GARCIA, TREVOR HYDE, AND BOB LUTZ](https://arxiv.org/pdf/1501.07507)
+
+
+### Expository Journals
+
+[Notices of the American Mathematical Society](https://www.ams.org/notices)
+
+[Expositiones Mathematicae](https://www.sciencedirect.com/journal/expositiones-mathematicae)
+
+
+## History of Math 
+
+[How Gauss Determined The Orbit of Ceres by Jonathan Tennenbaum and Bruce Director](https://archive.schillerinstitute.com/fid_97-01/982_orbit_ceres.pdf)
+
+## UG Research Topics
+
+[Minkowski Geometric Algebra of Complex Sets](https://link.springer.com/article/10.1023/A:1010318011860)
+
+[Exact Minkowski Products of N Complex Disks - RIDA T. FAROUKI](https://www.geometrie.tuwien.ac.at/geom/ig/papers/pot114.pdf)
