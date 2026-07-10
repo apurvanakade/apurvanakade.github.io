@@ -98,6 +98,8 @@ This has been the most challenging and the most rewarding course I've ever taugh
 
 ![](https://apurvanakade.github.io/2026-Summer-Mathcamp-LeastSquares/index_files/figure-html/cell-2-output-1.png)
 
+[Notes.](https://apurvanakade.github.io/2026-Summer-Mathcamp-LeastSquares/)
+
 My attempt at teaching a week-long class at Mathcamp 2026 on the least squares method and its connection to the normal distribution inspired by Gauss' calculation of Ceres' orbit.
 The prerequisites are basic calculus with a little bit of linear algebra and probability theory.
 
