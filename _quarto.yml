@@ -9,9 +9,13 @@ website:
       - text: Home
         href: index.qmd
       - notes.qmd
-      - text: (Math) Blog
-        href: https://apurvanakade.github.io/math-blog/
+      # - text: (Math) Blog
+      #   href: https://apurvanakade.github.io/math-blog/
       - CV.qmd
+      - text: AMS Courses
+        href: https://apurvanakade.github.io/AMS-courses/
+      - text: VisualMath
+        href: https://apurvanakade.github.io/VisualMath/
     right:
       - icon: github
         href: https://github.com/apurvanakade/
@@ -27,7 +31,6 @@ website:
     type: overlay
     location: navbar
   
-
 format:
   html:
     theme:

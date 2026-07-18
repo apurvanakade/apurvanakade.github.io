@@ -10,7 +10,14 @@ toc: false
 
 <!-- # Hi!  -->
 
-I'm a Senior Lecturer in the Applied Math & Stats department <!-- why is Math singular but Stats plural? --> at Johns Hopkins University. <br />
+I'm an Assistant Teaching Professor in the Applied Math & Stats department <!-- why is Math singular but Stats plural? --> at Johns Hopkins University. <br />
+
+I vibe-coded this app to visualize AMS courses: [https://apurvanakade.github.io/AMS-courses/](https://apurvanakade.github.io/AMS-courses/) <br />
+
+I'm working on a project to build visualizations for various mathematical concepts as a tool for teaching and learning. The goal is to make math more accessible and engaging for students of all levels. You can check out the project here: [https://apurvanakade.github.io/VisualMath/](https://apurvanakade.github.io/VisualMath/)
+
+
+
 
 <!-- I invest the majority of my mental energy in seeking ways to improve math education, both within my courses and on a broader scale.
 My academic interests and experience span a wide range in Math, CS, and Math Education. 
@@ -18,7 +25,7 @@ I also work on math formalization using the [Lean theorem prover](https://leanpr
 <!-- I thoroughly enjoy discussing all these topics. 
 Whether you're a student, mathematician, or educator, please feel free to [reach out to me](mailto:apurva.nakade@jhu.edu) without hesitation. -->
 
-This semester I'm teaching Discrete Math, Monte Carlo Methods, and Introduction to Computational Math.
+<!-- This semester I'm teaching Discrete Math, Monte Carlo Methods, and Introduction to Computational Math. -->
 
 <!-- When I'm not swamped with work, I like to work on math formalization using the [Lean theorem prover](https://leanprover-community.github.io/) 
 
