@@ -1,0 +1,6 @@
+# AI-owned: shared settings for every page in projects/.
+# Keeps the project .qmd files down to frontmatter + prose. See CLAUDE.md.
+toc: false
+title-block-banner: false
+filters:
+  - ../_filters/project-links.lua

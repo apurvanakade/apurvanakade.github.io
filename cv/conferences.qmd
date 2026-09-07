@@ -1,45 +1,4 @@
-<!--
-## Talks
-
- & *Discrete Chern--Simmons via 2-group bundles on elliptic
-curves* & 2020\
-& CMS Session on Homotopy Theory\
-\
-& [*What is a
-Spectrum?*](https://drive.google.com/file/d/16zRKLkBl4skQ0UNKRXfM7d51qWnBLwGF/view)
-& 2020\
-& University of Western Ontario, Basic Notions Seminar\
-\
-&*Manifold calculus and the $h$-principle*
-
--   University of Regina, Geometry & Topology Seminar, 2019
-
--   University of Western Ontario, Geometry & Topology Seminar, 2019
-
--   University of Rochester, Topology Seminar, 2019
-
--   Workshop on Functor Calculus, Ohio State University, 2019
-
--   Spaces of Embeddings, BIRS, Banff, 2019
-
--   AMS Special Session in Homotopy Theory, UC Riverside, 2017
-
-& 2017-19\
-&[*Weiss fibration
-sequence*](http://math.mit.edu/conferences/talbot/index.php?year=2019&sub=talks)
-& 2019\
-& MIT Talbot Workshop\
-\
-&*Constructing a Homotopy Type For Triply-Graded Link Homology* & 2019\
-& AMS Sectional Meeting, University of Hawaii\
-\
-& *Homotopy colimits and limits* & 2017\
-& European Autumn School in Topology\
-\ -->
-
-::: {.content-visible when-format="html"}
-
-## Conference Attended
+## Conferences Attended
 
 [MAA MD-DC-VA Section Meeting](http://sections.maa.org/mddcva/Spring2024Meeting.php), Spring 2024
 
@@ -83,7 +42,7 @@ Topology Festival, Cornell University, 2017
 
 Georgia International Topology Conference, University of Georgia, 2017
 
-Alpine Algebraic \& Applied Topology Conference, Switzerland, 2016
+Alpine Algebraic & Applied Topology Conference, Switzerland, 2016
 
 WCATSS, University of Oregon, Eugene, 2016
 
@@ -139,5 +98,3 @@ IMOTC, HBCSC, 2003-2006
 <!-- National Talent Search Examination, (NTSE) scholarship  -->
 
 Kishore Vaigyanik Protsahan Yojana (KVPY), 2005
-
-:::

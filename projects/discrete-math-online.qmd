@@ -1,0 +1,22 @@
+---
+title: "Discrete Math, Fully Asynchronous"
+description: "Rebuilding a second-year discrete math course for fully asynchronous delivery, with video lectures and hundreds of WeBWorK problems."
+date: 2020-09-01
+weight: 2
+categories: ["course design", "UWO", "combinatorics"]
+image: ../images/projects/discrete-math-online.svg
+links:
+  - text: "Video lectures"
+    href: "https://www.youtube.com/playlist?list=PLXAOfwfSuiKm3cL-JftD9ndrjYi7fPcqN"
+---
+
+In Fall 2020 I taught a semester-long discrete math course at UWO for second-year computer
+science undergraduates. The course was *fully asynchronous*, which forced a number of innovations.
+
+I curated a textbook on zyBooks and recorded a series of
+[videos on YouTube](https://www.youtube.com/playlist?list=PLXAOfwfSuiKm3cL-JftD9ndrjYi7fPcqN) to
+accompany the text, and ran an active discussion forum on Piazza. With a lot of help from my
+department we wrote hundreds of WeBWorK questions, which were then used on the exams.
+
+I gave a talk about the course design at a conference on E-Assessment in Mathematical Sciences.
+This has been the most challenging and the most rewarding course I have ever taught.

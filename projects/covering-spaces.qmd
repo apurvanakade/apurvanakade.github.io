@@ -1,0 +1,17 @@
+---
+title: "Galois Correspondence of Covering Spaces"
+description: "Covering space theory for graphs and surfaces, as an introduction to algebraic topology and its links to group theory."
+date: 2019-07-01
+weight: 1
+categories: ["course notes", "Mathcamp", "topology"]
+image: ../images/projects/covering-spaces-helicoid.png
+links:
+  - text: "Notes"
+    href: "https://github.com/apurvnakade/mc2019-Galois-correspondence-of-covering-spaces/blob/main/output/index.pdf"
+---
+
+This week-long class from Mathcamp 2019 covers (pun intended) covering space theory for
+graphs and surfaces, and is meant as an introduction to algebraic topology and its connection to
+group theory.
+
+The prerequisites are group theory and minimal exposure to topology or analysis.

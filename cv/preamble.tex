@@ -1,14 +1,84 @@
-% Compact CV styling for the PDF build of CV.qmd.
+% AI-owned: LaTeX layout for the PDF build of CV.qmd.
+% Paired with _filters/cv.lua, which emits \begin{cvsection}, \cventry,
+% \cvsubsection and \cvsubsubsection.  See CLAUDE.md.
+
 \usepackage{titling}
-\setlength{\droptitle}{-4em}
-\pretitle{\begin{center}\Large\bfseries}
-\posttitle{\par\end{center}\vspace{-2em}}
-
 \usepackage{enumitem}
-\setlist{nosep}
-\setlist[itemize]{noitemsep, topsep=0pt, leftmargin=1.4em}
+\usepackage{needspace}
 
+% ---------------------------------------------------------------- page setup
 \pagenumbering{gobble}
-
 \setlength{\parindent}{0pt}
-\setlength{\parskip}{0.35em}
+\setlength{\parskip}{0pt}
+\raggedbottom
+
+\setlist{nosep}
+\setlist[itemize]{noitemsep, topsep=1pt, partopsep=0pt, parsep=0pt,
+                  labelindent=0pt, leftmargin=1.25em, labelsep=0.45em,
+                  label=\textperiodcentered, after=\vspace{0.3em}}
+
+% ---------------------------------------------------------------- dimensions
+\newlength{\cvlabelwidth}\setlength{\cvlabelwidth}{1.05in}
+\newlength{\cvlabelsep}\setlength{\cvlabelsep}{0.30in}
+\newlength{\cvyearwidth}\setlength{\cvyearwidth}{0.85in}
+\newlength{\cvyeargap}\setlength{\cvyeargap}{0.15in}
+\newlength{\cvbodyindent}\setlength{\cvbodyindent}{\cvlabelwidth}
+\addtolength{\cvbodyindent}{\cvlabelsep}
+
+% -------------------------------------------------------------- title block
+\setlength{\droptitle}{-3.2em}
+\pretitle{\begin{flushleft}\LARGE\bfseries}
+\posttitle{\par\end{flushleft}\vspace{-1.6em}}
+
+% ------------------------------------------------------------ cv structures
+% A section: bold label hanging in the left margin, entries in the right
+% column.  Built on `list` (not minipage) so it breaks across pages.
+% The label is placed through LaTeX's own \item[...] mechanism (as in a
+% description list) rather than \llap, so it lands exactly labelsep to the
+% left of the body column instead of drifting into the page margin.
+\newenvironment{cvsection}[1]{%
+  \par\needspace{3\baselineskip}%
+  \begin{list}{}{%
+    \setlength{\leftmargin}{\cvbodyindent}%
+    \setlength{\rightmargin}{0pt}%
+    \setlength{\labelwidth}{\cvlabelwidth}%
+    \setlength{\labelsep}{\cvlabelsep}%
+    \setlength{\itemindent}{0pt}%
+    \setlength{\listparindent}{0pt}%
+    \setlength{\topsep}{0pt}\setlength{\partopsep}{0pt}%
+    \setlength{\parsep}{0pt}\setlength{\itemsep}{0pt}%
+    \renewcommand{\makelabel}[1]{%
+      \parbox[t]{\cvlabelwidth}{\raggedright\bfseries ##1}\hfil}%
+  }%
+  \item[#1]\leavevmode\vspace{-\baselineskip}%
+  \ignorespaces
+}{%
+  \end{list}\par\vspace{0.85em}%
+}
+
+% One entry: body on the left, year right-aligned in a fixed gutter.
+% Each entry is short, so unbreakable minipages are fine -- pages break
+% between entries.
+\newcommand{\cventry}[2]{%
+  \par\noindent
+  \begin{minipage}[t]{\dimexpr\linewidth-\cvyearwidth-\cvyeargap\relax}%
+    \raggedright #1%
+  \end{minipage}%
+  \hspace{\cvyeargap}%
+  \begin{minipage}[t]{\cvyearwidth}\raggedleft #2\end{minipage}%
+  \par\vspace{0.20em}%
+}
+
+% Sub-headings inside a section (\subsection is illegal inside a list env).
+\newcommand{\cvsubsection}[1]{%
+  \par\vspace{0.55em}\needspace{2\baselineskip}%
+  {\bfseries #1}\par\vspace{0.12em}%
+}
+\newcommand{\cvsubsubsection}[1]{%
+  \par\vspace{0.35em}\needspace{2\baselineskip}%
+  {\small\scshape #1}\par\vspace{0.06em}%
+}
+
+% Contact block used by CV.qmd's header.
+\newcommand{\cvcontact}[1]{{\small #1}\par}
+\newcommand{\cvrule}{\par\vspace{0.25em}\hrule height 0.8pt\par\vspace{1.4em}}

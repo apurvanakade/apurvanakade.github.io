@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="Introduction to Optimization">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#14535e"/><stop offset="100%" stop-color="#0e3038"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#g)"/>
+  <g fill="none" stroke="#ffffff" stroke-opacity="0.16" stroke-width="1.5"><path d="M80 0 V500"/><path d="M160 0 V500"/><path d="M240 0 V500"/><path d="M320 0 V500"/><path d="M400 0 V500"/><path d="M480 0 V500"/><path d="M560 0 V500"/><path d="M640 0 V500"/><path d="M720 0 V500"/></g>
+  <text x="400" y="138" text-anchor="middle" font-family="Inter, Helvetica, Arial, sans-serif"
+        font-size="20" font-weight="500" fill="#ffffff" fill-opacity="0.72"
+        letter-spacing="2.5">LINEAR PROGRAMMING</text>
+  <text x="400" y="206" text-anchor="middle" font-family="Inter, Helvetica, Arial, sans-serif"
+        font-size="54" font-weight="600" fill="#ffffff" letter-spacing="-1"><tspan x="400" dy="0">Introduction to</tspan><tspan x="400" dy="62.099999999999994">Optimization</tspan></text>
+</svg>

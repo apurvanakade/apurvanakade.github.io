@@ -1,0 +1,18 @@
+---
+title: "Visual Math Lab"
+description: "A growing collection of interactive visualizations for teaching and learning mathematics."
+date: 2025-06-01
+weight: 5
+categories: ["app", "visualization", "teaching"]
+image: ../images/projects/visual-math-lab.svg
+links:
+  - text: "Visit VisualMathLab.com"
+    href: "https://www.VisualMathLab.com/"
+---
+
+An ongoing project to build visualizations for mathematical concepts as a tool for
+teaching and learning. The goal is to make mathematics more accessible and engaging for
+students at all levels --- from a first calculus course through to graduate topics.
+
+Each visualization is designed to be self-contained: drop it into a lecture, a problem set,
+or a student's own exploration without any setup.

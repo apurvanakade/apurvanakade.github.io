@@ -1,0 +1,66 @@
+---
+title: Logarithms and primes
+description: "A NumberPhile video on the density of primes mod 4, and the passing remark in it that I found more interesting than the headline result."
+date: 2023-10-26 09:01:26
+weight: 1
+categories:
+  - todo
+  - infinite series
+  - number theory
+  - riemann zeta
+image: "../../maths/images/ln-series-equation.svg"
+author: Apurva Nakade
+---
+
+I came across [this video](https://youtu.be/YAsHGOwB408?si=Cwpk8X24xNNh2OS9) by NumberPhile and 3Blue1Brown about the density of primes that are 1 mod 4 vs the density of primes that are 3 mod 4. 
+The main fact is quite cool but there was something that he said during in the middle of the video that I found more interesting. 
+
+Define $\chi : \mathbb{N} \to \{-1, 0, 1\}$ as 
+$$ 
+\chi(n) = 
+\begin{cases}
+1 & \text{ if } n \equiv 1 \mod 4 \\
+-1 & \text{ if } n \equiv 3 \mod 4 \\
+0  & \text{ otherwise. }
+\end{cases}
+$$
+The first interesting fact that I do not know how to prove:
+$$
+\sum \limits_{n \in \mathbb{N}} \dfrac{\chi(n)}{n} = \dfrac{\pi}{4}.
+$$
+Note that the series is only conditionally convergent so the order of summation matters.
+
+Now modify the above function as follows $\chi' : \mathbb{N} \to \mathbb{N}$ as 
+$$ 
+\chi'(n) = 
+\begin{cases}
+\dfrac{\chi(n)}{k} & \text{ if } n = p^k \text{ for some prime } p \\
+0  & \text{ otherwise. }
+\end{cases}
+$$
+The even more interesting fact is:
+$$
+\sum \limits_{n \in \mathbb{N}} \dfrac{\chi'(n)}{n} = \ln \left(\dfrac{\pi}{4}\right).
+$$
+
+There is apparently a similar result about the sums of squares of reciprocals of natural numbers. 
+I'll phrase a standard result about sums of squares as follows:
+$$
+\sum \limits_{n \in \mathbb{N}} \dfrac{\xi(n)}{n} = \dfrac{\pi^2}{6}
+$$
+where $\xi(n) = 1/n$. Then modifying the above function in a similar fashion
+$$ 
+\xi'(n) = 
+\begin{cases}
+\dfrac{\xi(n)}{k} & \text{ if } n = p^k \text{ for some prime } p \\
+0  & \text{ otherwise. }
+\end{cases}
+$$
+gives us 
+$$
+\sum \limits_{n \in \mathbb{N}} \dfrac{\xi'(n)}{n} = \ln \left(\dfrac{\pi^2}{6}\right).
+$$
+
+Why does this work? What properties do we need the functions $\chi$ and $\xi$ to satisfy? Why do the modifications result in logarithms?
+
+My guess is that we need to rewrite the series multiplicatively somehow, possibly using primes, take it from there. These series above are of course some of the values of the Riemann Zeta function which we know how to write multiplicatively using primes. 

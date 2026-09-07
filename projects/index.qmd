@@ -1,0 +1,21 @@
+---
+title: "Projects"
+subtitle: "Apps, course notes, problem sets, and things I built while trying to teach something better."
+listing:
+  contents: "*.qmd"
+  sort: "date desc"
+  type: grid
+  grid-columns: 3
+  fields: [image, title, description, categories]
+  categories: numbered
+  sort-ui: [date, title]
+  filter-ui: true
+  image-height: 190px
+  page-size: 60
+page-layout: full
+toc: false
+---
+
+I like (re)designing courses, and most of what follows came out of that. Notes and problem sets
+are written to be usable on their own --- most are accessible to undergraduates and to advanced
+high-school students.

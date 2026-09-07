@@ -1,0 +1,32 @@
+---
+title: Closed Convex Cones in LP
+description: "A theorem I hit while formalizing linear programming in Lean, where the naive topological proof falls apart."
+date: 2024-01-02 00:13:03
+weight: 1
+categories:
+  - analysis
+  - linear programming
+  - convex analysis
+image: "../../maths/images/closed-cones-equation.svg"
+author: Apurva Nakade
+---
+
+I was formalizing some linear programming in Lean and came across one of the most surprisingly difficult to prove theorems.
+
+::: {#thm-closed-convex-cones}
+<br />
+
+Let $A : \mathbb{R}^m \to \mathbb{R}^n$ be a linear transformation. Then the set 
+$$
+\{ A x \: : \: x \ge 0 \}
+$$
+is closed in $\mathbb{R}^n$.
+:::
+
+The naive topological approach doesn't work as this theorem is no longer true if we replace $A$ by an arbitrary continuous map or if we replace $x \ge 0$ by an arbitrary closed set.
+
+This theorem is obviously true if $A$ is invertible. The proof then relies on the fact that 
+$$
+\{ A x \: : \: x \ge 0 \} = \bigcup_i \{ A_i x \: : \: x \ge 0 \}
+$$
+where $A_i$ are the submatrices of $A$ formed using the linearly independent columns. This fact itself is surprisingly hard to prove and relies on [Caratheodory's theorem for vectors in a cone](https://math.stackexchange.com/questions/3759861/caratheodorys-theorem-for-vectors-in-a-cone).

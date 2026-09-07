@@ -1,0 +1,14 @@
+---
+title: "Open Textbook for Linear Algebra"
+description: "WeBWorK problem sets added to a PreTeXt open educational resources linear algebra textbook."
+date: 2022-06-01
+weight: 2
+categories: ["OER", "Northwestern", "linear algebra"]
+image: ../images/projects/oer-linear-algebra.svg
+---
+
+Supported by an Open Educational Resources Faculty Grant at Northwestern (joint with Aaron
+Greicius), this project added WeBWorK problems to a PreTeXt linear algebra OER textbook, so that
+the text ships with a bank of auto-graded exercises attached to each section.
+
+Free textbooks are only half the problem; free assessment is the other half.

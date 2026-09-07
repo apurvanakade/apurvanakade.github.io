@@ -1,0 +1,192 @@
+---
+title: "Random points in a triangle"
+description: "Randomness is hard to simulate. How to generate a uniformly random point inside a triangle, worked out so I could play with Sperner's lemma."
+author: Apurva Nakade
+date: 2025-05-12
+weight: 1
+categories: [randomness, triangles]
+image: "../../maths/images/random-points-triangle.png"
+---
+
+Randomness is a surprisingly hard thing to simulate. Any program, by definition, has a predictable output. The best you can hope for is to predictably generate points that *look* random (pseudo-random) and fool some statistical tests. All random generation relies on two things:
+
+1. A pseudo-random number generator that outputs a stream of numbers that "looks random"
+2. A mathematical function that converts uniform random variable(s) into random variables with other distributions
+
+Mathematicians are mostly interested in engineering Step 2. Step 1 is important but is usually delegated to computer engineers.
+
+So here's the question: **How to generate random points inside a triangle?** I need this in order to play around with Sperner's lemma examples.
+
+The first step is to generate random points in the "standard triangle" with vertices $[0, 0], [1, 0], [0, 1]$. A very simple trick for this is to generate points in the unit square and "reflect the points" across the midpoint of the hypotenuse, $[0.5, 0.5]$. 
+
+Next, we use the [barycentric transformation](barycentric-coordinates.qmd) to transform the standard triangle into the desired triangle—in the example above, the equilateral triangle with vertices $[0, 0], [1, 0], [0.5, \sqrt{3}/2]$.
+
+
+```{ojs}
+import {Plot} from "@observablehq/plot"
+import {slider} from "@jashkenas/inputs"
+
+N = 1000
+
+unit_triangle = [
+  {x: 0, y: 0},
+  {x: 1, y: 0},
+  {x: 0, y: 1},
+  {x: 0, y: 0}
+]
+
+equilateral_triangle = [
+  {x: 0, y: 0},
+  {x: 1, y: 0},
+  {x: 0.5, y: Math.sqrt(3) / 2},
+  {x: 0, y: 0}
+]
+
+// Generate N random points in the unit square
+// and label them as "Inside" or "Reflected points"
+random_points = Array.from({length: N}, () => {
+  let x = Math.random();
+  let y = Math.random();
+  if (x + y <= 1) {
+    return {x, y, label: "Inside"};
+  } else {
+    return {x, y, label: "Reflected points"};
+  }
+});
+
+
+// Reflect the points across the midpoint of the hypotenuse
+unit_triangle_points = random_points.map(d => {
+  if (d.label === "Reflected points") {
+    return {x: 1 - d.x, y: 1 - d.y, label: d.label};
+  } else {
+    return d;
+  }
+});
+
+// Transform the points to the equilateral triangle using barycentric coordinates
+transformed_points = unit_triangle_points.map(d => {
+  const A = equilateral_triangle[0];
+  const B = equilateral_triangle[1];
+  const C = equilateral_triangle[2];
+  return {
+    x: d.x * A.x + d.y * B.x + (1 - d.x - d.y) * C.x,
+    y: d.x * A.y + d.y * B.y + (1 - d.x - d.y) * C.y,
+    label: d.label
+  };
+});
+
+```
+
+```{ojs}
+// Add a slider for M = number of points to plot
+viewof M = slider({
+  min: 0,
+  max: N,
+  step: 1,
+  value: 100,
+  width: 500
+});
+```
+
+```{ojs}
+viewof sideBySidePlots = {
+  // Create the title element
+  const title = document.createElement("h4");
+  title.textContent = "Generate points in a unit square, and reflect the points that lie above the hypotenuse";
+  title.style.marginBottom = "1em";
+
+  // Create the first plot
+  const plot1 = Plot.plot({
+    width: 400,
+    height: 400,
+    x: {domain: [0, 1]},
+    y: {domain: [0, 1]},
+    marks: [
+      Plot.dot(random_points.slice(0, M), {
+        x: "x",
+        y: "y",
+        fill: d => d.label === "Inside" ? "red" : "blue",
+        r: 3
+      }),
+      Plot.lineY(unit_triangle, {x: "x", y: "y", stroke: "black", strokeWidth: 1}),
+      Plot.lineY([{x: 0, y: 0}, {x: 1, y: 0}], {stroke: "black", strokeDasharray: "4,4"}),
+      Plot.lineY([{x: 0, y: 0}, {x: 0, y: 1}], {stroke: "black", strokeDasharray: "4,4"})
+    ]
+  });
+
+  // Create the second plot
+  const plot2 = Plot.plot({
+    width: 400,
+    height: 400,
+    x: {domain: [0, 1]},
+    y: {domain: [0, 1]},
+    marks: [
+      Plot.dot(unit_triangle_points.slice(0, M), {
+        x: "x",
+        y: "y",
+        fill: d => d.label === "Inside" ? "red" : "blue",
+        r: 3
+      }),
+      Plot.lineY(unit_triangle, {x: "x", y: "y", stroke: "black", strokeWidth: 1}),
+      Plot.lineY([{x: 0, y: 0}, {x: 1, y: 0}], {stroke: "black", strokeDasharray: "4,4"}),
+      Plot.lineY([{x: 0, y: 0}, {x: 0, y: 1}], {stroke: "black", strokeDasharray: "4,4"})
+    ]
+  });
+
+  // Layout container
+  const container = document.createElement("div");
+  container.style.display = "flex";
+  container.style.gap = "20px";
+
+  // Outer wrapper with title and plots
+  const wrapper = document.createElement("div");
+  wrapper.append(title, container);
+  container.append(plot1, plot2);
+
+  return wrapper;
+}
+
+
+
+```
+
+```{ojs}
+
+// Plot the first M points and center align it to the screen
+viewof centeredPlot = {
+  // Create the title element
+  const title = document.createElement("h4");
+  title.textContent = "Barycentric transformation to map unit triangle into equilateral triangle";
+  title.style.marginBottom = "1em";
+
+  // Create the plot
+  const plot = Plot.plot({
+    width: 500,
+    height: 500,
+    x: {domain: [0, 1]},
+    y: {domain: [0, Math.sqrt(3) / 2]},
+    marks: [
+      Plot.dot(transformed_points.slice(0, M), {
+        x: "x",
+        y: "y",
+        fill: d => d.label === "Inside" ? "red" : "blue",
+        r: 3
+      }),
+      Plot.lineY(equilateral_triangle, {x: "x", y: "y", stroke: "black", strokeWidth: 1}),
+      Plot.lineY([{x: 0, y: 0}, {x: 1, y: 0}], {stroke: "black", strokeDasharray: "4,4"}),
+      Plot.lineY([{x: 0, y: 0}, {x: 0.5, y: Math.sqrt(3) / 2}], {stroke: "black", strokeDasharray: "4,4"})
+    ]
+  });
+
+  // Center the plot inside a container
+  const container = document.createElement("div");
+  container.style.display = "flex";
+  container.style.flexDirection = "column";
+  container.style.alignItems = "center";
+  container.append(title, plot);
+
+  return container;
+}
+
+```

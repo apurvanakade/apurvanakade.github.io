@@ -1,0 +1,17 @@
+---
+title: "How Curved Is a Potato?"
+description: "Principal, Gaussian, and mean curvature — developed for potatoes embedded in three-space."
+date: 2018-07-03
+weight: 1
+categories: ["course notes", "Mathcamp", "geometry"]
+image: https://upload.wikimedia.org/wikipedia/commons/4/47/Russet_potato_cultivar_with_sprouts.jpg
+links:
+  - text: "Notes"
+    href: "https://github.com/apurvnakade/mc2018-how-curved-is-a-potato/blob/main/output/index.pdf"
+---
+
+A week-long class from Mathcamp 2018 about the principal, Gaussian, and mean curvature of
+potatoes embedded in $\mathbb{R}^3$.
+
+The prerequisites are linear algebra --- in particular eigenvalues and eigenvectors --- and
+multivariable calculus.

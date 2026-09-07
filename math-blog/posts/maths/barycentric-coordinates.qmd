@@ -1,0 +1,330 @@
+---
+title: "Barycentric Coordinates"
+description: "Every point in a triangle is a weighted average of its corners. An interactive look at what those weights mean."
+date: 2025-05-11
+weight: 1
+author: Apurva Nakade
+categories: [triangles, interactive, visualization]
+image: "../../maths/images/barycentric-coordinates.png"
+---
+
+```{ojs}
+// === Class Definitions ===
+class Triangle {
+  constructor(A, B, C, canvasObj) {
+    this.A = A;
+    this.B = B;
+    this.C = C;
+    this.canvasObj = canvasObj;
+    this.ctx = canvasObj.getContext();
+    this.CanvasA = canvasObj.toCanvas(A);
+    this.CanvasB = canvasObj.toCanvas(B);
+    this.CanvasC = canvasObj.toCanvas(C);
+  }
+
+  toCanvas(p) {
+    return this.canvasObj.toCanvas(p);
+  }
+
+  fromCanvas(p) {
+    return this.canvasObj.fromCanvas(p);
+  }
+
+  draw({ fillStyle = null, strokeStyle = "black", vertexColor = null } = {}) {
+    const { CanvasA, CanvasB, CanvasC, ctx } = this;
+    ctx.beginPath();
+    ctx.moveTo(...CanvasA);
+    ctx.lineTo(...CanvasB);
+    ctx.lineTo(...CanvasC);
+    ctx.closePath();
+    if (fillStyle) {
+      ctx.fillStyle = fillStyle;
+      ctx.fill();
+    }
+    if (strokeStyle) {
+      ctx.strokeStyle = strokeStyle;
+      ctx.stroke();
+    }
+    if (vertexColor) {
+      [this.CanvasA, this.CanvasB, this.CanvasC].forEach(([x, y]) => {
+        ctx.beginPath();
+        ctx.arc(x, y, 5, 0, 2 * Math.PI);
+        ctx.fillStyle = vertexColor;
+        ctx.fill();
+      });
+    }
+  }
+
+  drawGrid(spacing = 0.1, color = "rgba(200,200,200,0.5)") {
+    const { ctx } = this;
+    for (let i = 0; i <= 1; i += spacing) {
+      for (let j = 0; j <= 1 - i; j += spacing) {
+        const [x, y] = this.toCanvas(this.barycentricToCartesian(i, j));
+        const neighbors = [
+          [i + spacing, j],
+          [i, j + spacing],
+          [i + spacing, j - spacing]
+        ];
+        for (const [ni, nj] of neighbors) {
+          if (ni >= 0 && nj >= 0 && ni + nj <= 1) {
+            const [x2, y2] = this.toCanvas(this.barycentricToCartesian(ni, nj));
+            ctx.beginPath();
+            ctx.moveTo(x, y);
+            ctx.lineTo(x2, y2);
+            ctx.strokeStyle = color;
+            ctx.stroke();
+          }
+        }
+      }
+    }
+  }
+
+  barycentricToCartesian(i, j) {
+    const k = 1 - i - j;
+    return [
+      i * this.A[0] + j * this.B[0] + k * this.C[0],
+      i * this.A[1] + j * this.B[1] + k * this.C[1]
+    ];
+  }
+
+  cartesianToBarycentric(x, y) {
+    const [Ax, Ay] = this.A;
+    const [Bx, By] = this.B;
+    const [Cx, Cy] = this.C;
+    const v0 = [Bx - Ax, By - Ay];
+    const v1 = [Cx - Ax, Cy - Ay];
+    const v2 = [x - Ax, y - Ay];
+    const d00 = v0[0] * v0[0] + v0[1] * v0[1];
+    const d01 = v0[0] * v1[0] + v0[1] * v1[1];
+    const d11 = v1[0] * v1[0] + v1[1] * v1[1];
+    const d20 = v2[0] * v0[0] + v2[1] * v0[1];
+    const d21 = v2[0] * v1[0] + v2[1] * v1[1];
+    const denom = d00 * d11 - d01 * d01;
+    const j = (d11 * d20 - d01 * d21) / denom;
+    const k = (d00 * d21 - d01 * d20) / denom;
+    const i = 1 - j - k;
+    return [i, j];
+  }
+}
+
+class DraggableTriangle extends Triangle {
+  constructor(A, B, C, canvasObj) {
+    super(A, B, C, canvasObj);
+    this.draggingIndex = null;
+  }
+
+  hitTest([mx, my], radius = 10) {
+    const canvasPoints = [this.CanvasA, this.CanvasB, this.CanvasC];
+    return canvasPoints.findIndex(([x, y]) => Math.hypot(mx - x, my - y) < radius);
+  }
+
+  startDrag([mx, my]) {
+    this.draggingIndex = this.hitTest([mx, my]);
+    return this.draggingIndex !== -1;
+  }
+
+  dragTo([mx, my]) {
+    if (this.draggingIndex === null) return;
+    const newCoord = this.fromCanvas([mx, my]);
+    if (this.draggingIndex === 0) this.A = newCoord;
+    else if (this.draggingIndex === 1) this.B = newCoord;
+    else if (this.draggingIndex === 2) this.C = newCoord;
+
+    this.CanvasA = this.toCanvas(this.A);
+    this.CanvasB = this.toCanvas(this.B);
+    this.CanvasC = this.toCanvas(this.C);
+  }
+
+  endDrag() {
+    this.draggingIndex = null;
+  }
+}
+
+class Canvas {
+  constructor(width, height, scale = 200, offset = [50, 250]) {
+    this.canvas = document.createElement("canvas");
+    this.canvas.width = width;
+    this.canvas.height = height;
+    this.ctx = this.canvas.getContext("2d");
+    this.scale = scale;
+    this.offset = offset;
+  }
+
+  getCanvas() {
+    return this.canvas;
+  }
+
+  getContext() {
+    return this.ctx;
+  }
+
+  toCanvas([x, y]) {
+    return [this.offset[0] + x * this.scale, this.offset[1] - y * this.scale];
+  }
+
+  fromCanvas([x, y]) {
+    return [(x - this.offset[0]) / this.scale, (this.offset[1] - y) / this.scale];
+  }
+
+  drawPoint([x, y], color = "black") {
+    const [canvasX, canvasY] = this.toCanvas([x, y]);
+    this.ctx.beginPath();
+    this.ctx.arc(canvasX, canvasY, 5, 0, 2 * Math.PI);
+    this.ctx.fillStyle = color;
+    this.ctx.fill();
+  }
+
+  newTriangle(A, B, C, draggable = false) {
+    return draggable
+      ? new DraggableTriangle(A, B, C, this)
+      : new Triangle(A, B, C, this);
+  }
+}
+
+// === Observable viewof canvas ===
+viewof canvas = {
+  const width = 800, height = 400;
+  const scale = 200, offset = [50, 250];
+  const canvasInstance = new Canvas(width, height, scale, offset);
+  const canvas = canvasInstance.getCanvas();
+  const ctx = canvasInstance.getContext();
+
+  const A = [0, 0], B = [1, 0], C = [0, 1];
+  const redTri = canvasInstance.newTriangle([1.5, 0], [3, 0], [2, 1], true);
+
+  let target = { i: 0.3, j: 0.3 };
+  let current = { i: 0.3, j: 0.3 };
+
+  function draw() {
+    ctx.clearRect(0, 0, width, height);
+
+    const blackTri = canvasInstance.newTriangle(A, B, C);
+    blackTri.drawGrid();
+    blackTri.draw({ fillStyle: "rgba(0,0,0,0.2)", strokeStyle: "black" });
+
+    redTri.drawGrid();
+    redTri.draw({ strokeStyle: "red", vertexColor: "red" });
+
+    const k = 1 - current.i - current.j;
+    const [x, y] = blackTri.barycentricToCartesian(current.i, current.j);
+    canvasInstance.drawPoint([x, y], "blue");
+
+    const [gx, gy] = redTri.barycentricToCartesian(current.i, current.j);
+    canvasInstance.drawPoint([gx, gy], "green");
+
+    ctx.fillStyle = "black";
+    ctx.font = "14px sans-serif";
+    ctx.fillText(`i = ${current.i.toFixed(2)}, j = ${current.j.toFixed(2)}, k = ${k.toFixed(2)}`, 75, height - 100);
+    ctx.fillText(`x = ${gx.toFixed(2)}, y = ${gy.toFixed(2)}`, 420, height - 100);
+  }
+
+  function animate() {
+    const alpha = 0.2;
+    current.i += alpha * (target.i - current.i);
+    current.j += alpha * (target.j - current.j);
+    draw();
+    requestAnimationFrame(animate);
+  }
+
+  function handleMouse(e) {
+    const rect = canvas.getBoundingClientRect();
+    const mx = e.clientX - rect.left;
+    const my = e.clientY - rect.top;
+    const [x, y] = canvasInstance.fromCanvas([mx, my]);
+    const blackTri = canvasInstance.newTriangle(A, B, C);
+    const [bi, bj] = blackTri.cartesianToBarycentric(x, y);
+    const snapTol = 0.05;
+    const vertices = [[1, 0], [0, 1], [0, 0]];
+    const dists = vertices.map(([vi, vj]) => Math.hypot(bi - vi, bj - vj));
+    const minDist = Math.min(...dists);
+    if (minDist < snapTol) {
+      [target.i, target.j] = vertices[dists.indexOf(minDist)];
+    } else if (bi >= 0 && bj >= 0 && bi + bj <= 1) {
+      target.i = bi;
+      target.j = bj;
+    }
+  }
+
+  canvas.addEventListener("mousedown", e => {
+    const rect = canvas.getBoundingClientRect();
+    const mx = e.clientX - rect.left;
+    const my = e.clientY - rect.top;
+
+    if (redTri.startDrag([mx, my])) {
+      const move = e => {
+        const mx = e.clientX - rect.left;
+        const my = e.clientY - rect.top;
+        redTri.dragTo([mx, my]);
+        draw();
+      };
+      const up = () => {
+        redTri.endDrag();
+        window.removeEventListener("mousemove", move);
+        window.removeEventListener("mouseup", up);
+      };
+      window.addEventListener("mousemove", move);
+      window.addEventListener("mouseup", up);
+    } else {
+      // Start tracking movement to update target continuously
+      const move = e => {
+        const mx = e.clientX - rect.left;
+        const my = e.clientY - rect.top;
+        const [x, y] = canvasInstance.fromCanvas([mx, my]);
+        const blackTri = canvasInstance.newTriangle(A, B, C);
+        const [bi, bj] = blackTri.cartesianToBarycentric(x, y);
+        const snapTol = 0.05;
+        const vertices = [[1, 0], [0, 1], [0, 0]];
+        const dists = vertices.map(([vi, vj]) => Math.hypot(bi - vi, bj - vj));
+        const minDist = Math.min(...dists);
+        if (minDist < snapTol) {
+          [target.i, target.j] = vertices[dists.indexOf(minDist)];
+        } else if (bi >= 0 && bj >= 0 && bi + bj <= 1) {
+          target.i = bi;
+          target.j = bj;
+        }
+      };
+      const up = () => {
+        window.removeEventListener("mousemove", move);
+        window.removeEventListener("mouseup", up);
+      };
+      window.addEventListener("mousemove", move);
+      window.addEventListener("mouseup", up);
+    }
+  });
+
+  requestAnimationFrame(animate);
+  return canvas;
+}
+
+
+```
+
+**Barycentric coordinates** are a coordinate system for describing points inside a triangle.  
+
+For a triangle with vertices $A$, $B$, and $C$, any point $P$ inside the triangle can be expressed as a weighted sum of the vertices:
+$$
+P = iA + jB + kC
+$$
+where $i$, $j$, and $k$ are the barycentric coordinates, satisfying $i + j + k = 1$ and $i, j, k \geq 0$. The barycentric coordinates can be interpreted as the relative areas of the sub-triangles formed with the point $P$ and the vertices of the triangle.
+
+There are many ways to see why this representation is valid. Here's one visual interpretation: first, consider the triangle with vertices $(0, 0)$, $(1, 0)$, and $(0, 1)$. A point $(x, y)$ lies inside this triangle exactly when:
+$$
+0 \le x, \quad 0 \le y, \quad \text{and} \quad x + y \le 1
+$$
+In this case, we can write the point $(x, y)$ as:
+$$
+\begin{bmatrix} x \\ y \end{bmatrix}
+= 
+(1 - x - y) \begin{bmatrix} 0 \\ 0 \end{bmatrix} + 
+x \begin{bmatrix} 1 \\ 0 \end{bmatrix} +
+y \begin{bmatrix} 0 \\ 1 \end{bmatrix}
+$$
+So the barycentric coordinates of $(x, y)$ are $(1 - x - y, x, y)$, all of which are non-negative and sum to 1. 
+
+Now all you need to do is map $(0, 0)$, $(1, 0)$, and $(0, 1)$ to the vertices $A$, $B$, and $C$, respectively, via an affine transformation. The barycentric coordinates of a point $P$ inside the triangle with vertices $A$, $B$, and $C$ are given by the same formula as above, with the standard triangle's vertices replaced by $A$, $B$, and $C$.
+
+In the app above, you can see this in action: move the blue point around the triangle and watch how the barycentric coordinates change. You can also move the vertices of the red triangle and observe how the coordinates adapt.
+
+---
+
+This post was an excuse for me to learn how to use ObservableJS. I was initially planning to use Python and Plotly, but Plotly is absurdly immature in terms of interactivity. Most of the code was generated by ChatGPT—I merely edited it to fit my needs.

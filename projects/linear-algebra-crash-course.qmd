@@ -1,0 +1,18 @@
+---
+title: "Crash Course on Linear Algebra"
+description: "A week-long, proof-based introduction to linear algebra in IBL format."
+date: 2018-07-01
+weight: 1
+categories: ["course notes", "Mathcamp", "linear algebra"]
+image: ../images/projects/linear-algebra-vectors.png
+links:
+  - text: "Notes"
+    href: "https://github.com/apurvnakade/mc2019-linear-algebra/blob/master/output/index.pdf"
+---
+
+A week-long proof-based introduction to linear algebra from Mathcamp 2018.
+
+The class is designed in an IBL format --- you are expected to solve all the problems in each
+section before moving to the next, and learn the subject in the process.
+
+The prerequisites are basic proof techniques.

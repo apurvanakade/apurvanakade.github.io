@@ -1,0 +1,16 @@
+---
+title: "More Mathcamp Classes"
+description: "Notes from several other week-long Mathcamp classes. Less polished, still useful."
+date: 2017-07-01
+weight: 0
+categories: ["course notes", "Mathcamp"]
+image: ../images/projects/mathcamp-assorted.svg
+---
+
+A few other classes I taught at Canada/USA Mathcamp. These notes are not very polished.
+
+- [How Riemann finally understood logarithms](https://github.com/apurvnakade/PDFs/blob/main/course%20notes/2020MathCamp/How%20Riemann%20finally%20understood%20the%20logarithms.pdf)
+- [How to glue donuts](https://github.com/apurvnakade/PDFs/blob/main/course%20notes/2020MathCamp/How%20to%20Glue%20donuts.pdf)
+- [All things manifoldy](https://github.com/apurvnakade/mc2017/tree/main/01%20All%20things%20manifoldy)
+- [Euler characteristic](https://github.com/apurvnakade/mc2017/tree/main/02%20Euler%20Characteristic)
+- [Symmetries of spaces](https://github.com/apurvnakade/mc2017/tree/main/03%20Symmetries%20of%20Spaces)

@@ -1,5 +1,11 @@
 ---
-title: CV
+title: "Apurva Nakade"
+cv-subtitle: "Assistant Teaching Professor, Department of Applied Mathematics & Statistics, Johns Hopkins University"
+cv-contact:
+  - "[apurva.nakade@jhu.edu](mailto:apurva.nakade@jhu.edu)"
+  - "[apurvanakade.github.io](https://apurvanakade.github.io/)"
+toc: true
+toc-title: "Sections"
 format:
   html:
     toc: true
@@ -8,39 +14,37 @@ format:
     number-sections: false
     documentclass: article
     classoption: [11pt]
-    geometry: margin=0.85in
+    geometry: margin=0.8in
     colorlinks: true
     linkcolor: black
     urlcolor: black
     citecolor: black
     include-in-header: cv/preamble.tex
     output-file: CV
+filters:
+  - _filters/cv.lua
 ---
 
 ::: {.content-visible when-format="html"}
-[PDF version](CV.pdf)
+[Download PDF](CV.pdf)
 :::
-
-**Apurva Nakade**
-
-Senior Lecturer, Department of Applied Mathematics & Statistics, Johns Hopkins University.
-
-email: [apurva.nakade@jhu.edu](mailto:apurva.nakade@jhu.edu)
-
-website: [apurvanakade.github.io](https://apurvanakade.github.io/)
 
 {{< include cv/experience.qmd >}}
 
+{{< include cv/education.qmd >}}
+
 {{< include cv/teaching.qmd >}}
 
-{{< include cv/professional-development.qmd >}}
+{{< include cv/papers.qmd >}}
 
 {{< include cv/projects.qmd >}}
-
-{{< include cv/papers.qmd >}}
 
 {{< include cv/grants-awards.qmd >}}
 
 {{< include cv/service.qmd >}}
+
+{{< include cv/professional-development.qmd >}}
+
+{{< include cv/talks.qmd >}}
 
 {{< include cv/conferences.qmd >}}

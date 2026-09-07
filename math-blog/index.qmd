@@ -1,0 +1,24 @@
+---
+title: (Math) Blog
+date: 2025-05-03
+author: Apurva Nakade
+categories: 
+page-layout: full
+listing: 
+  contents: "posts/**/*.qmd"
+  sort: "date desc"
+  type: grid
+  grid-columns: 3
+  fields: [image, date, title, description, categories]
+  categories: true
+  sort-ui: false
+  filter-ui: false
+  image-height: 250px
+title-block-banner: true
+---
+
+<!-- I'm lucky to have a profession where I get paid for doing something I like and at the same time have a positive impact in the world. When people ask me when I plan to retire I like to say never.  -->
+
+This is a place for me to write about [mathematics](maths/index.qmd) and [education](scribbles/index.qmd). 
+
+<!-- I like to think of my writings here as an aspect of my identity as a math educator. Writing is something I like to do for its own sake. Because I think words are powerful and magical. They are my oldest, wisest, and most cherished friends and here I am  -->

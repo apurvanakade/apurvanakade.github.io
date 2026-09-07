@@ -3,42 +3,68 @@ project:
   output-dir: docs
   render:
     - "*.qmd"
+    - "projects/*.qmd"
+    - "math-blog/**/*.qmd"
     - "!cv/"
+  pre-render:
+    - _scripts/build_home_cards.py
+  post-render:
+    - _scripts/write_redirects.py
 
 website:
   title: "Apurva Nakade"
+  description: "Assistant Teaching Professor of Applied Mathematics & Statistics at Johns Hopkins University."
   navbar:
     left:
       - text: Home
         href: index.qmd
-      - notes.qmd
-      # - text: (Math) Blog
-      #   href: https://apurvanakade.github.io/math-blog/
-      - CV.qmd
-      - text: AMS Courses
-        href: https://apurvanakade.github.io/AMS-courses/
-      - text: VisualMath
-        href: https://apurvanakade.github.io/VisualMath/
+      - text: Projects
+        href: projects/index.qmd
+      - text: Blog
+        href: math-blog/index.qmd
+      - text: Teaching
+        menu:
+          - text: Teaching statement
+            href: teaching-statement.qmd
+          - text: Recommendation letters
+            href: rec-letters.qmd
+          - text: References & reading
+            href: references.qmd
+      - text: CV
+        href: CV.qmd
     right:
       - icon: github
         href: https://github.com/apurvanakade/
         aria-label: GitHub
-  # sidebar: 
-  #   style: floating
-  #   search: true
-  #   contents: auto
+  page-footer:
+    left: "&copy; 2026 Apurva Nakade"
+    right:
+      - icon: envelope
+        href: mailto:apurva.nakade@jhu.edu
+        aria-label: Email
+      - icon: github
+        href: https://github.com/apurvanakade/
+        aria-label: GitHub
+  # No sidebar for the blog subtree. The blog index and the two section pages
+  # each carry a grid listing plus a categories rail, and every post has a
+  # back-link, so a sidebar would be a third column of duplicate navigation.
+  # The standalone blog used an explicit sidebar file list and it had already
+  # gone stale (it still pointed at a post deleted months earlier); listings
+  # cannot rot that way.
   open-graph: true
   site-url: https://apurvanakade.github.io/
   repo-url: https://github.com/apurvanakade/apurvanakade.github.io/
   search:
     type: overlay
     location: navbar
-  
+
 format:
   html:
     theme:
-      light: cosmo
-      dark: cyborg
-    css: styles.css
-
-output-dir: docs
+      light: [cosmo, _theme/base.scss, _theme/light.scss]
+      dark: [cyborg, _theme/base.scss, _theme/dark.scss]
+    include-in-header: _includes/fonts.html
+    css: styles.css   # yours to edit; _theme/*.scss is AI-owned
+    anchor-sections: true
+    link-external-newwindow: true
+    link-external-filter: '^(?:http:|https:)\/\/(?:www\.)?apurvanakade\.github\.io'

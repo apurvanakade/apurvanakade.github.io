@@ -1,0 +1,19 @@
+---
+title: "Formalizing Mathematics in Lean"
+description: "Contributions to mathlib, the Lean theorem prover's mathematics library."
+date: 2019-01-01
+weight: 3
+categories: ["formalization", "lean"]
+image: ../images/projects/lean-formalization.svg
+links:
+  - text: "mathlib"
+    href: "https://leanprover-community.github.io/"
+---
+
+An ongoing interest in machine-checked mathematics. I have contributed to
+[mathlib](https://leanprover-community.github.io/), the Lean theorem prover's mathematics library:
+
+- Lean's surreal numbers library
+- Lean's convex optimization library
+
+I have also taught Lean as a [week-long class at Mathcamp](lean-mc2020.qmd).

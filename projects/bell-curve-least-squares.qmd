@@ -1,0 +1,16 @@
+---
+title: "How to Discover the Bell Curve"
+description: "A week-long class deriving the normal distribution from least squares, following Gauss' calculation of the orbit of Ceres."
+date: 2026-07-01
+weight: 3
+categories: ["course notes", "Mathcamp", "probability"]
+image: https://apurvanakade.github.io/2026-Summer-Mathcamp-LeastSquares/index_files/figure-html/cell-2-output-1.png
+links:
+  - text: "Notes"
+    href: "https://apurvanakade.github.io/2026-Summer-Mathcamp-LeastSquares/"
+---
+
+My attempt at teaching a week-long class at Mathcamp 2026 on the least squares method and
+its connection to the normal distribution, inspired by Gauss' calculation of the orbit of Ceres.
+
+The prerequisites are basic calculus with a little linear algebra and probability theory.

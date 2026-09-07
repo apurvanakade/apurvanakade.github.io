@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="Closed convex cones expression">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#eef8f3"/>
+      <stop offset="100%" stop-color="#e8effa"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <text x="600" y="340" text-anchor="middle" font-family="Times New Roman, serif" font-size="72" fill="#17324a">
+    { A x : x &gt;= 0 }
+  </text>
+</svg>

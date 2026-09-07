@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="Formalizing Math in Lean">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#3b3663"/><stop offset="100%" stop-color="#231f3f"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#g)"/>
+  <g fill="none" stroke="#ffffff" stroke-opacity="0.16" stroke-width="1.5"><circle cx="90" cy="60" r="3"/><circle cx="90" cy="130" r="3"/><circle cx="90" cy="200" r="3"/><circle cx="90" cy="270" r="3"/><circle cx="90" cy="340" r="3"/><circle cx="160" cy="60" r="3"/><circle cx="160" cy="130" r="3"/><circle cx="160" cy="200" r="3"/><circle cx="160" cy="270" r="3"/><circle cx="160" cy="340" r="3"/><circle cx="230" cy="60" r="3"/><circle cx="230" cy="130" r="3"/><circle cx="230" cy="200" r="3"/><circle cx="230" cy="270" r="3"/><circle cx="230" cy="340" r="3"/><circle cx="300" cy="60" r="3"/><circle cx="300" cy="130" r="3"/><circle cx="300" cy="200" r="3"/><circle cx="300" cy="270" r="3"/><circle cx="300" cy="340" r="3"/><circle cx="370" cy="60" r="3"/><circle cx="370" cy="130" r="3"/><circle cx="370" cy="200" r="3"/><circle cx="370" cy="270" r="3"/><circle cx="370" cy="340" r="3"/><circle cx="440" cy="60" r="3"/><circle cx="440" cy="130" r="3"/><circle cx="440" cy="200" r="3"/><circle cx="440" cy="270" r="3"/><circle cx="440" cy="340" r="3"/><circle cx="510" cy="60" r="3"/><circle cx="510" cy="130" r="3"/><circle cx="510" cy="200" r="3"/><circle cx="510" cy="270" r="3"/><circle cx="510" cy="340" r="3"/><circle cx="580" cy="60" r="3"/><circle cx="580" cy="130" r="3"/><circle cx="580" cy="200" r="3"/><circle cx="580" cy="270" r="3"/><circle cx="580" cy="340" r="3"/><circle cx="650" cy="60" r="3"/><circle cx="650" cy="130" r="3"/><circle cx="650" cy="200" r="3"/><circle cx="650" cy="270" r="3"/><circle cx="650" cy="340" r="3"/><circle cx="720" cy="60" r="3"/><circle cx="720" cy="130" r="3"/><circle cx="720" cy="200" r="3"/><circle cx="720" cy="270" r="3"/><circle cx="720" cy="340" r="3"/><circle cx="790" cy="60" r="3"/><circle cx="790" cy="130" r="3"/><circle cx="790" cy="200" r="3"/><circle cx="790" cy="270" r="3"/><circle cx="790" cy="340" r="3"/></g>
+  <text x="400" y="138" text-anchor="middle" font-family="Inter, Helvetica, Arial, sans-serif"
+        font-size="20" font-weight="500" fill="#ffffff" fill-opacity="0.72"
+        letter-spacing="2.5">PROOF ASSISTANT</text>
+  <text x="400" y="206" text-anchor="middle" font-family="Inter, Helvetica, Arial, sans-serif"
+        font-size="54" font-weight="600" fill="#ffffff" letter-spacing="-1"><tspan x="400" dy="0">Formalizing</tspan><tspan x="400" dy="62.099999999999994">Math in Lean</tspan></text>
+</svg>

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="Hypergeometric equation">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#f7f4ec"/>
+      <stop offset="100%" stop-color="#e9f1ff"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <text x="600" y="285" text-anchor="middle" font-family="Times New Roman, serif" font-size="54" fill="#1f2a44">
+    C(n, k) C(N - n, m - k)
+  </text>
+  <text x="600" y="352" text-anchor="middle" font-family="Times New Roman, serif" font-size="44" fill="#1f2a44">
+    -----------------------
+  </text>
+  <text x="600" y="418" text-anchor="middle" font-family="Times New Roman, serif" font-size="54" fill="#1f2a44">
+    C(N, m)
+  </text>
+</svg>

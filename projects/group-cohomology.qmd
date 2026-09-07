@@ -1,0 +1,22 @@
+---
+title: "From High School Arithmetic to Group Cohomology"
+description: "Group extensions and exact sequences, arrived at by taking carrying in multi-digit addition seriously."
+date: 2019-07-02
+weight: 1
+categories: ["course notes", "Mathcamp", "algebra"]
+image: ../images/projects/group-cohomology.svg
+links:
+  - text: "Notes"
+    href: "https://github.com/apurvnakade/mc2019-group-cohomology/blob/main/output/index.pdf"
+---
+
+$$
+0 \longrightarrow \mathbb{Z}/10 \longrightarrow \mathbb{Z}/100 \longrightarrow \mathbb{Z}/10 \longrightarrow 0
+$$
+
+A week-long class from Mathcamp 2019 based on a fun paper by Dan Isaksen titled
+[A cohomological viewpoint on elementary school arithmetic](https://www.jstor.org/stable/3072368?seq=1).
+It introduces group extensions and exact sequences as a way to interpret the addition of
+multi-digit numbers.
+
+It is designed in an IBL format. The prerequisites are group theory.

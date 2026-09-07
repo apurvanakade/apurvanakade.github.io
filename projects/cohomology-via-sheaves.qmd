@@ -1,0 +1,16 @@
+---
+title: "Cohomology via Sheaves"
+description: "Čech cohomology on graphs, and cohomology computations for simple spaces."
+date: 2018-07-02
+weight: 1
+categories: ["course notes", "Mathcamp", "topology"]
+image: https://upload.wikimedia.org/wikipedia/commons/c/c1/Penrose-dreieck.svg
+links:
+  - text: "Notes"
+    href: "https://github.com/apurvnakade/mc2018-cohomology-via-sheaves/blob/main/output/index.pdf"
+---
+
+A week-long class from Mathcamp 2018 about Čech cohomology on graphs and cohomology
+computations for simple spaces.
+
+The class is designed in an IBL format. The prerequisites are linear algebra over finite fields.

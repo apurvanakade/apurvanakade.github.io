@@ -1,0 +1,17 @@
+---
+title: "AMS Course Explorer"
+description: "An app for navigating the prerequisite graph of Applied Math & Statistics courses at JHU."
+date: 2025-08-01
+weight: 5
+categories: ["app", "JHU", "teaching"]
+image: ../images/projects/ams-course-explorer.svg
+links:
+  - text: "Open the explorer"
+    href: "https://apurvanakade.github.io/AMS-courses/"
+---
+
+Course catalogues are lists; curricula are graphs. This app lets students see the
+Applied Mathematics & Statistics offerings at Johns Hopkins as the dependency structure they
+actually are --- which courses unlock which, and what a path through the major looks like.
+
+Built quickly, mostly to answer advising questions I kept getting asked in person.

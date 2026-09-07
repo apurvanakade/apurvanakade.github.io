@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="Logarithms and primes equation">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#fff5ea"/>
+      <stop offset="100%" stop-color="#f2ebff"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <text x="600" y="280" text-anchor="middle" font-family="Times New Roman, serif" font-size="54" fill="#332046">
+    sum chi'(n) / n = ln(pi / 4)
+  </text>
+  <text x="600" y="355" text-anchor="middle" font-family="Times New Roman, serif" font-size="28" fill="#59436b">
+    over n in N
+  </text>
+</svg>

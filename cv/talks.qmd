@@ -1,0 +1,20 @@
+## Talks
+
+Discrete Chern–Simons via 2-group bundles on elliptic curves, CMS Session on Homotopy Theory, 2020
+
+[What is a Spectrum?](https://drive.google.com/file/d/16zRKLkBl4skQ0UNKRXfM7d51qWnBLwGF/view), University of Western Ontario, Basic Notions Seminar, 2020
+
+Manifold calculus and the $h$-principle, 2017-2019
+
+- University of Regina, Geometry & Topology Seminar, 2019
+- University of Western Ontario, Geometry & Topology Seminar, 2019
+- University of Rochester, Topology Seminar, 2019
+- Workshop on Functor Calculus, Ohio State University, 2019
+- Spaces of Embeddings, BIRS, Banff, 2019
+- AMS Special Session in Homotopy Theory, UC Riverside, 2017
+
+[Weiss fibration sequence](http://math.mit.edu/conferences/talbot/index.php?year=2019&sub=talks), MIT Talbot Workshop, 2019
+
+Constructing a Homotopy Type for Triply-Graded Link Homology, AMS Sectional Meeting, University of Hawaii, 2019
+
+Homotopy colimits and limits, European Autumn School in Topology, 2017

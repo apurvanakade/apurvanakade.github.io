@@ -1,0 +1,31 @@
+---
+title: Vibe Coding
+description: "I learned to program in C from two textbooks and no Internet. Something is lost when the AI writes all the code."
+date: 2025-12-04
+weight: 1
+author: Apurva Nakade
+categories: ["learning", "AI"]
+image: "../../scribbles/images/programming.png"
+---
+
+I don't code much these days - AI does all the programming for me. I almost exclusively write programs in Python, and I do not like Python.
+
+The first programming language I learned was C. This was before I had access to the Internet. I had two textbooks titled "Let us C/C++" and "Graphics under C" by Yashvant Kanetkar, a local programmer who ran a tutoring center. I read the books, did the exercises on my yellow-blue Turbo C compiler. I wrote Winamp visualizations and terminal-based games. It was a lot of fun. Later, when I discovered the web browser and learned HTML and its siblings, I was able to express my creative self through coding.
+
+I did all of this for fun without caring about what the final product was, what it's use was, or who it was for. Looking back, programming helped me become a better thinker. It taught me to break down a complex problem into smaller parts and work on the parts systematically. Now, from my vantage point as a teacher, I can say that programming was cross-training for math. In my mind the two are so enmeshed that I do not think of them as separate topics - I program mathematical proofs and I solve programming problems. 
+
+This is what we're losing as we transition to the world of vibe coding. 
+
+---
+
+### Update on 2026-05-04 
+
+I used Github copilot CLI agent (mostly ChatGPT 4.0), poor man's Claude Code, to write a [task manager for Obsidian](https://github.com/apurvanakade/obsidian-task-manager). I would never have been able to do this by myself. In the past, I had experimented with every task management system possible but never found anything satisfactory and now I have one tailor made for me. This is a software developed for example one user - me. 
+
+This is the true power of AI. This is a true democratization of software. 
+
+I am still a bit sad that I do not understand much of the code. But then I do not understand the code of much of the software I use. 
+
+What AI has exposed is the tension between struggling to get something done by yourself and using tools to outsource the hard work and speed up the process. The first is a messy inward facing task that leads to, and is necessary for, personal growth and learning. The second is an outward facing task that we need to do to be contributing members of society. Producers vs consumers. 
+
+We have always had this dilemma. In a way nothing has changed. Just that now we have a more powerful tool that has made this choice more immediate and inescapable. I hope we learn to choose wisely.

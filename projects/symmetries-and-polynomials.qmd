@@ -1,0 +1,21 @@
+---
+title: "Symmetries & Polynomials"
+description: "A two-week intersession course taking non-math majors from group theory to the unsolvability of the quintic."
+date: 2018-01-01
+weight: 2
+categories: ["course notes", "JHU", "algebra"]
+image: ../images/projects/symmetries-and-polynomials.svg
+links:
+  - text: "Notes"
+    href: "https://github.com/apurvnakade/jhu2018-symmetries-and-polynomials/blob/main/output/index.pdf"
+---
+
+$$
+\sqrt[3]{-\frac{q}{2}+\sqrt{\frac{q^{2}}{4}+\frac{p^{3}}{27}}}
++\sqrt[3]{-\frac{q}{2}-\sqrt{\frac{q^{2}}{4}+\frac{p^{3}}{27}}}
+$$
+
+A two-week class from Intersession 2018 at JHU introducing non-math majors to group theory and its
+connection to the roots of polynomials --- in particular, the unsolvability of the quintic.
+
+The class is designed in an IBL format. The prerequisites are basic proof techniques.

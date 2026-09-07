@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="Visual Math Lab">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f5f6a"/><stop offset="100%" stop-color="#123c52"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#g)"/>
+  <g fill="none" stroke="#ffffff" stroke-opacity="0.16" stroke-width="1.5"><path d="M0 90 Q200 30 400 90 T800 90"/><path d="M0 145 Q200 85 400 145 T800 145"/><path d="M0 200 Q200 140 400 200 T800 200"/><path d="M0 255 Q200 195 400 255 T800 255"/><path d="M0 310 Q200 250 400 310 T800 310"/><path d="M0 365 Q200 305 400 365 T800 365"/><path d="M0 420 Q200 360 400 420 T800 420"/><path d="M0 475 Q200 415 400 475 T800 475"/></g>
+  <text x="400" y="169" text-anchor="middle" font-family="Inter, Helvetica, Arial, sans-serif"
+        font-size="20" font-weight="500" fill="#ffffff" fill-opacity="0.72"
+        letter-spacing="2.5">INTERACTIVE VISUALIZATION</text>
+  <text x="400" y="237" text-anchor="middle" font-family="Inter, Helvetica, Arial, sans-serif"
+        font-size="54" font-weight="600" fill="#ffffff" letter-spacing="-1"><tspan x="400" dy="0">Visual Math Lab</tspan></text>
+</svg>

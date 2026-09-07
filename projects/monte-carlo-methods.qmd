@@ -1,0 +1,17 @@
+---
+title: "Monte Carlo Methods"
+description: "Course notes for a semester-long JHU AMS course on simulation and Monte Carlo estimation."
+date: 2025-09-01
+weight: 3
+categories: ["course notes", "JHU", "probability"]
+image: ../images/projects/monte-carlo.svg
+links:
+  - text: "Course notes"
+    href: "https://apurvanakade.github.io/Monte-Carlo-Methods/"
+---
+
+Notes for the semester-long Monte Carlo Methods course I teach at JHU AMS. The course
+covers random number generation, variance reduction, Markov chain Monte Carlo, and applications
+to integration and optimization.
+
+The prerequisites are probability and some programming experience.

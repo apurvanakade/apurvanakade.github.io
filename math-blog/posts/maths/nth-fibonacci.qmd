@@ -1,0 +1,260 @@
+---
+title: Self-Fibonacci Numbers
+description: "For which n does n divide the nth Fibonacci number? A simple-sounding question with no clean answer."
+date: 2025-08-11
+weight: 1
+author: Apurva Nakade
+categories: ['number theory', 'research', 'open', 'fibonacci', 'exploration']
+
+execute: 
+  cache: true
+---
+
+Here's a seemingly simple question that lacks a clean solution:
+
+> For what positive integers $n$ does $n$ divide $F_n$, where $F_n$ denotes the $n^{\text{th}}$ Fibonacci number?
+
+According to the On-Line Encyclopedia of Integer Sequences (OEIS), such numbers are called "Self-Fibonacci numbers": [https://oeis.org/A023172](https://oeis.org/A023172). The sequence begins:
+ 
+> 1, 5, 12, 24, 25, 36, 48, 60, 72, 96, 108, 120, 125, 144, 168, 180, 192, 216, 240, 288, 300, 324, 336, 360, 384, 432, 480, 504, 540, 552, 576, 600, 612, 625, 648, 660, 672, 684, 720, 768, 840, 864, 900, 960, 972, 1008, 1080, 1104, 1152, 1176, 1200, 1224, 1296, 1320
+
+One approach to this question is as follows:
+
+Let $\alpha(n)$ be the smallest positive integer $k$ such that $n \mid F_k$. Note that if $n \mid F_k$, then $n \mid F_{mk}$ for all positive integers $m$. Therefore, the self-Fibonacci numbers are exactly those for which $\alpha(n) \mid n$.
+
+This sequence is fascinating, with apparently no simple formula! I explored the following related question:
+
+> For what positive integers $n$ does $\alpha(n) = n$?
+
+Here's the list of such numbers up to 10,000.
+
+
+
+```{python}
+import matplotlib.pyplot as plt
+import numpy as np
+
+def fibonacci_cycle(n):
+    """
+    Find the smallest k such that F_k ≡ 0 (mod n), where F_k is the k-th Fibonacci number.
+    This is called the entry point or rank of apparition of n in the Fibonacci sequence.
+    
+    Args:
+        n: The modulus
+    
+    Returns:
+        The smallest k such that n divides F_k
+    """
+    if n == 1:
+        return 1  # F_1 = 1 ≡ 0 (mod 1)
+    
+    if n == 2:
+        return 3  # F_3 = 2 ≡ 0 (mod 2)
+    
+    # Start with F_0 = 0, F_1 = 1
+    prev, curr = 0, 1
+    
+    # Check F_0 first (but we typically skip k=0)
+    # Generate Fibonacci numbers until we find one divisible by n
+    for k in range(1, 6 * n + 1):  # Upper bound
+        if curr % n == 0:
+            return k
+        prev, curr = curr, (prev + curr) % n
+    
+    return -1  # Should never reach here for valid input
+
+def calculate_fibonacci_cycles(max_n=100):
+    """
+    Calculate the Fibonacci cycles for all integers from 1 to max_n.
+    
+    Args:
+        max_n: Maximum value of n to compute
+        
+    Returns:
+        tuple: (n_values, cycles)
+    """
+    n_values = list(range(1, max_n + 1))
+    cycles = [fibonacci_cycle(n) for n in n_values]
+    return cycles
+
+
+def find_equal_cycles(n_values, cycles):
+    """
+    Find all values of n where cycle(n) == n
+    
+    Args:
+        m: Maximum value of n to compute
+        cycles: List of α(n)
+        
+    Returns:
+        List of n values where α(n) = n
+    """
+    equal_points = [n for n, ep in zip(n_values, cycles) if ep == n]
+    return equal_points
+
+n = 10000
+m = 1000
+
+cycles = calculate_fibonacci_cycles(n)
+```
+
+```{python}
+equal_points = find_equal_cycles(range(1, n + 1), cycles)
+# Find and print all n where α(n) = n
+print(f"Values of n where α(n) = n (up to {n}):")
+print(equal_points)
+```
+
+This is a much simpler question, and the sequence appears to consist of all numbers that are powers of 5 or 12 times a power of 5. The OEIS entry for this sequence is [https://oeis.org/A289586](https://oeis.org/A289586).
+
+::: {.callout-important}
+
+## Conjecture
+
+The only integers $n$ such that $\alpha(n) = n$ are of the form $5^k$ or $12 \cdot 5^k$ for some non-negative integer $k$.
+
+:::
+
+I'm not certain this is true, but it holds for all integers up to 10,000. I'm also interested in understanding the distribution of $n / \alpha(n)$. When plotting $n / \alpha(n)$, most values fall above 1, though some are less than or equal to 1.
+
+Below is a table of $n / \alpha(n)$ for all integers $n$ up to 10,000. Surprisingly, the most common value is not 1 but $4/3$.
+
+I wonder what patterns exist in the ratios $n / \alpha(n)$...
+
+
+::: {.callout-note}
+
+## Questions
+
+- What is the distribution of the ratios $n / \alpha(n)$?
+- For every integer $k$, is there some integer $n$ such that $n / \alpha(n) = k$?
+- Can we exploit the fact that 
+
+  $$
+  F_k = \dfrac{1}{\sqrt{5}} \left( \phi^k - \psi^k \right)
+  $$
+
+    where $\phi = \frac{1 + \sqrt{5}}{2}$ and $\psi = \frac{1 - \sqrt{5}}{2}$, to find a closed form for $\alpha(n)$? 
+    We know that $\mathbb{Z}[\phi]$ is a Euclidean domain so we can have access to number theoretic tools such as divisibility and the Euclidean algorithm.
+
+:::
+
+```{python}
+def plot_fibonacci_cycles(m, cycles, equal_points):
+    """
+    Plot the Fibonacci cycles
+    
+    Args:
+        n_values: List of n values
+        cycles: List of α(n) values
+    """
+    plt.figure(figsize=(8, 8))
+    plt.scatter(range(1, m+1), cycles[:m], c='orange', s=10, alpha=0.25)
+
+    plt.xlabel('n', fontsize=12)
+    plt.ylabel('First k such that n | F_k', fontsize=12)
+    plt.title('Smallest k where F_k ≡ 0 (mod n)', fontsize=14)
+    plt.ylim(-50, 1200)
+    plt.grid(True, alpha=0.3)
+
+    # truncate equal_points to m
+    equal_points = [n for n in equal_points if n <= m]
+
+    # Add vertical lines for equal points
+    for ep in equal_points:
+        plt.plot(ep, ep, 'ro', markersize=5, label=f'α({ep}) = {ep}')
+
+    # Add horizontal line at y = x
+    plt.plot(range(1, m + 1), range(1, m + 1), 'b--', linewidth=0.5)
+    plt.legend()
+
+    plt.tight_layout()
+    plt.show()
+
+# Plot the cycles
+plot_fibonacci_cycles(m, cycles, equal_points)
+```
+
+```{python}
+
+def find_ratios(cycles):
+    """
+    Find the ratio n / α(n) for each n.
+    
+    Args:
+        cycles: List of α(n) values
+
+    Returns:
+        List of ratios n / α(n)
+    """
+    ratios = [n / ep if ep != 0 else 0 for n, ep in zip(range(1, len(cycles) + 1), cycles)]
+    return ratios
+
+ratios = find_ratios(cycles)
+```
+
+
+```{python}
+
+def find_integers_with_ratio(ratios, k):
+    """
+    Find all integers n such that n / α(n) = k.
+    
+    Args:
+        ratios: List of ratios n / α(n)
+        k: The ratio to check
+        
+    Returns:
+        List of integers n such that n / α(n) = k
+    """
+    return [n for n, ratio in zip(range(1, len(ratios) + 1), ratios) if ratio == k] 
+
+k_values = set(ratios)
+integer_ratios = {k: find_integers_with_ratio(ratios, k) for k in k_values}
+
+import pandas as pd
+
+# Prepare data for the table
+table_data = []
+for k, integers in integer_ratios.items():
+  # if len(integers) > 1:
+  table_data.append({
+    'n / α(n)': k, 
+    'count': len(integers),
+    'n values': ', '.join(map(str, integers))
+    })
+
+# Create and display the table
+df = pd.DataFrame(table_data)
+```
+
+
+```{python}
+
+df_most_common = df[df['count'] > 7].sort_values(by='n / α(n)', ascending=True)
+
+# bar chart of most common ratios
+plt.figure(figsize=(8, 6))
+plt.bar(df_most_common['n / α(n)'].apply(lambda x: f"{x:.2f}"), df_most_common['count'], color='skyblue')
+# add a red bar at ratio 1
+plt.bar('1.00', df_most_common[df_most_common['n / α(n)'] == 1]['count'].values[0], color='red', label='Ratio 1')
+# add a green bar at ratio 4/3
+plt.bar('1.33', df_most_common[df_most_common['n / α(n)'] == 4/3]['count'].values[0], color='green', label='Ratio 4/3')
+plt.xlabel('n / α(n)', fontsize=12)
+plt.ylabel('')
+plt.title('Count of the Most Common Ratios n / α(n)', fontsize=14)
+plt.xticks(rotation=90)
+plt.grid(axis='y', alpha=0.3)
+plt.tight_layout()
+plt.show()
+
+```
+
+
+```{python}
+# sort df by count
+df = df.sort_values(by='count', ascending=False)
+
+# print(df.to_markdown(index=False))
+print(df.head(30).to_markdown(index=False))
+```

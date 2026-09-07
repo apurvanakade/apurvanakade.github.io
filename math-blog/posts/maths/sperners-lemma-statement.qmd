@@ -1,0 +1,262 @@
+---
+title: Sperner's Lemma - Statement
+description: "What Sperner's lemma says, with an interactive colored triangulation to play with."
+author: Apurva Nakade
+date: 2025-05-14
+weight: 1
+categories: [combinatorics, triangles, coloring, visualization, interactive]
+image: "../../maths/images/sperner-statement.png"
+---
+
+```{ojs}
+import {slider} from "@jashkenas/inputs"
+
+// Add a slider for M = number of points to plot
+viewof N = slider({
+  min: 2,
+  max: 20,
+  step: 1,
+  value: 15,
+  width: 500,
+  title: "Number of subdivisions"
+});
+```
+
+```{ojs}
+equilateral_triangle_vertices = [
+  {x: 1, y: 0},
+  {x: 0.5, y: Math.sqrt(3) / 2},
+  {x: 0, y: 0},
+]
+```
+
+```{ojs}
+barycentric_coords = {
+  let result = [];
+  for (let i = 0; i <= N; i++) {
+    for (let j = 0; j <= N - i; j++) {
+      result.push([i, j, N - i - j]);
+    }
+  }
+  return result;
+}
+```
+
+
+```{ojs}
+class ColoredPoint {
+  constructor(triple, equilateralTriangleVertices, N) {
+    this.barycentricTriple = triple;
+    const [A, B, C] = equilateralTriangleVertices;
+
+    this.x = (triple[0] * A.x + triple[1] * B.x + triple[2] * C.x) / N;
+    this.y = (triple[0] * A.y + triple[1] * B.y + triple[2] * C.y) / N;
+
+    this.color = this._assignColor(triple);
+  }
+
+  _assignColor(triple) {
+    const [a, b, c] = triple;
+
+    if (a === 0 && b === 0) return 'red';
+    if (b === 0 && c === 0) return 'green';
+    if (c === 0 && a === 0) return 'blue';
+
+    // pick randomly between red and blue
+    if (a === 0) return Math.random() < 0.5 ? 'red' : 'blue';
+    if (b === 0) return Math.random() < 0.5 ? 'red' : 'green';
+    if (c === 0) return Math.random() < 0.5 ? 'blue' : 'green';
+
+    // pick randomly between red, green, and blue
+    return Math.random() < 0.33 ? 'red' : (Math.random() < 0.5 ? 'green' : 'blue');
+  }
+
+  getCoords() {
+    return { x: this.x, y: this.y };
+  }
+
+  getColor() {
+    return this.color;
+  }
+}
+```
+
+```{ojs}
+// A cell to generate all ColoredPoint instances
+// and also create a map for efficient lookup.
+// This cell effectively replaces your `generateColoredPoints` function and the map creation.
+coloredPointsMap = {
+  const coloredPoints = barycentric_coords.map(triple => {
+    return new ColoredPoint(triple, equilateral_triangle_vertices, N);
+  });
+
+  // Create a Map for quick lookup of colored_points by their barycentric triple
+  let coloredPointsMap = new Map();
+  for (const p of coloredPoints) {
+    coloredPointsMap.set(`${p.barycentricTriple[0]},${p.barycentricTriple[1]},${p.barycentricTriple[2]}`, p);
+  }
+
+  // Return both the array and the map
+  return { coloredPoints, coloredPointsMap };
+}
+```
+
+
+```{ojs}
+subTriangles = {
+  let triangles = [];
+  // upward facing triangles
+  for (let i = 0; i < N; i++) {
+    for (let j = 0; j < N - i; j++) {
+      const coordinates = [
+        [i, j, N - i - j],
+        [i + 1, j, N - i - j - 1],
+        [i, j + 1, N - i - j - 1]
+      ];
+      const vertex_colors = new Set([
+        coloredPointsMap.coloredPointsMap.get(`${coordinates[0][0]},${coordinates[0][1]},${coordinates[0][2]}`).getColor(),
+        coloredPointsMap.coloredPointsMap.get(`${coordinates[1][0]},${coordinates[1][1]},${coordinates[1][2]}`).getColor(),
+        coloredPointsMap.coloredPointsMap.get(`${coordinates[2][0]},${coordinates[2][1]},${coordinates[2][2]}`).getColor()
+      ]);
+      triangles.push({ coordinates, vertex_colors }); // Added vertex_colors
+    }
+  }
+  // downward facing triangles
+  for (let i = 0; i < N - 1; i++) {
+    for (let j = 0; j < N - i - 1; j++) {
+      const coordinates = [
+        [i + 1, j, N - i - j - 1],
+        [i + 1, j + 1, N - i - j - 2],
+        [i, j + 1, N - i - j - 1]
+      ];
+      const vertex_colors = new Set([
+        coloredPointsMap.coloredPointsMap.get(`${coordinates[0][0]},${coordinates[0][1]},${coordinates[0][2]}`).getColor(),
+        coloredPointsMap.coloredPointsMap.get(`${coordinates[1][0]},${coordinates[1][1]},${coordinates[1][2]}`).getColor(),
+        coloredPointsMap.coloredPointsMap.get(`${coordinates[2][0]},${coordinates[2][1]},${coordinates[2][2]}`).getColor()
+      ]);
+      triangles.push({ coordinates, vertex_colors }); // Added vertex_colors
+    }
+  }
+  return triangles;
+}
+```
+
+
+```{ojs}
+getFillColorALL = (vertexColors) => {
+  const numColors = vertexColors.size;
+
+  if (numColors === 3) {
+    return 'white';
+  } else if (numColors === 2) {
+    return 'rgba(255, 215, 0, 0.75)'; 
+  } else if (numColors === 1) {
+    const color = [...vertexColors][0];
+    if (color === 'red') return 'rgba(255, 0, 0, 0.3)';
+    if (color === 'green') return 'rgba(0, 255, 0, 0.3)';
+    if (color === 'blue') return 'rgba(0, 0, 255, 0.3)';
+  }
+};
+```
+
+```{ojs}
+viewof plotALL = Plot.plot({
+  width: 800,
+  height: 800,
+  x: {
+    label: "x",
+    domain: [0, 1]
+  },
+  y: {
+    label: "y",
+    domain: [0, Math.sqrt(3) / 2]
+  },
+  marks: [
+    Plot.line([...equilateral_triangle_vertices, equilateral_triangle_vertices[0]], {
+      x: "x",
+      y: "y",
+      stroke: "black",
+      strokeWidth: 1
+    }),
+    Plot.dot(coloredPointsMap.coloredPoints, {
+      x: "x",
+      y: "y",
+      fill: d => d.color,
+      r: 3
+    }),
+    Plot.geo(
+      {
+        type: "FeatureCollection",
+        features: subTriangles.map(triangle => {
+          let coords = triangle.coordinates.map(coord => coloredPointsMap.coloredPointsMap.get(`${coord[0]},${coord[1]},${coord[2]}`).getCoords());
+          return {
+            type: "Feature",
+            geometry: {
+              type: "Polygon",
+              coordinates: [
+                [coords[0], coords[1], coords[2], coords[0]].map(c => [c.x, c.y])
+              ]
+            },
+            properties: { // Store the vertex colors for use in the fill
+              fillColor: getFillColorALL(triangle.vertex_colors),
+              coords: coords, // Store the coordinates
+              vertexColors: Array.from(triangle.vertex_colors) // Store vertex colors as array
+            }
+          };
+        })
+      },
+      {
+        fill: d => d.properties.fillColor, // Use the determined color.
+        stroke: "black",
+        strokeWidth: 1
+      }
+    ),
+    // Add the dots to show all colored points with their assigned color
+    Plot.dot(
+      coloredPointsMap.coloredPoints,
+      {
+        x: "x",
+        y: "y",
+        fill: d => d.color,
+        r: 4 // Decrease r as N increases
+      }
+    )
+  ]
+});
+```
+
+```{ojs}
+// print the number of RGB triangles as a html element
+numRGBTriangles = subTriangles.filter(triangle => triangle.vertex_colors.size === 3).length;
+html`<b>Number of RGB triangles: ${numRGBTriangles}</b>`
+```
+
+&nbsp;
+
+**Sperner's lemma** is one of the first "non-trivial" theorems I remember hearing about at a high school summer camp.  
+It goes like this: consider a triangulation of a triangle. (Above, we show a regular triangulation of an equilateral triangle, but the theorem applies to *any* triangulation of a triangle.) We color the vertices of the triangle with three colors—say, <span style="color:white; background-color:red">red</span>, <span style="color:white; background-color:green">green</span>, and <span style="color:white; background-color:blue">blue</span>—with the following conditions:
+
+1. The vertices of the triangle are colored with the three colors: <span style="color:white; background-color:red">red</span>, <span style="color:white; background-color:green">green</span>, and <span style="color:white; background-color:blue">blue</span>.
+2. The vertices that lie on the edges of the triangle are colored with one of the colors of the endpoints of that edge—*this is crucial*.
+3. The vertices that lie in the interior of the triangle may be colored with any of the three colors.
+
+Conditions 1 and 2 are often referred to as the **Sperner condition**.
+
+::: {#thm-sperner}
+
+Any triangulation of a triangle satisfying Sperner's condition has at least one "rainbow" triangle whose vertices are colored with all three colors: <span style="color:white; background-color:red">red</span>, <span style="color:white; background-color:green">green</span>, and <span style="color:white; background-color:blue">blue</span>.
+
+:::
+
+In fact, you always have an odd number of such triangles.
+
+## Questions
+
+What patterns can you see? Why are there so many RGB triangles? **What is the expected number of such triangles?** What about the other colored triangles?
+
+
+
+Here's a curious thing I discovered while drawing these colorful plots. How do you loop over all the sub-triangles in the triangulation?  
+
+<!-- You have to run two loops—one for the "upward-facing" triangles and one for the "downward-facing" ones.  
+I don't think there's any way to create a single loop for all these triangles. -->

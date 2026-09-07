@@ -1,0 +1,102 @@
+---
+title: With or Without Order
+description: "A student asked whether choosing with order or without order changes a probability. My first instinct was wrong."
+date: 2025-11-27
+weight: 1
+author: Apurva Nakade
+categories: ['probability', 'puzzle']
+image: "../../maths/images/with-without-order-equation.svg"
+execute: 
+  cache: true
+---
+
+<!-- 
+TODO: Add a visualization below. 
+-->
+
+Here's a question about basic probability theory that a student once asked me in class: When computing probabilities, does "choosing with order" vs "choosing without order" always give the same answer?
+
+My first instinct was "Why would it?" But then I was surprised by some simple examples. 
+
+## A Simple Example
+
+:::{.callout}
+
+You have $N$ balls, $n$ of which are red and the rest are blue. You choose $m$ balls. What is the probability that **all** of the $m$ chosen balls are red?
+
+:::
+
+What makes this question ambiguous is that you are not told whether the balls are chosen with or without order. It turns out this doesn't matter!
+
+The probability of choosing *without order* equals
+
+$$\frac{\binom{n}{m}}{\binom{N}{m}}.$$
+
+The probability of choosing *with order* equals
+
+$$\frac{P(n, m)}{P(N, m)}.$$
+
+Since 
+
+$$\binom{n}{m} = \frac{P(n, m)}{m!}\text{ and } \binom{N}{m} = \frac{P(N, m)}{m!},$$
+
+these two probabilities are exactly the same.
+
+## Hypergeometric Distribution
+
+This coincidence persists for a much more complicated example: the hypergeometric distribution.
+
+:::{.callout}
+ 
+You have $N$ balls, $n$ of which are red and the rest are blue. You choose $m$ balls. What is the probability that **exactly $k$** of the $m$ chosen balls are red?
+
+:::
+
+The probability of choosing *without order* equals
+
+$$\frac{\binom{n}{k}\binom{N - n}{m - k}}{\binom{N}{m}}.$$
+
+In my experience, students often forget the $\binom{N - n}{m - k}$ term. 
+
+:::{.callout-caution}
+
+### Question
+
+Why do we need the $\binom{N - n}{m - k}$ term at all? If we are choosing exactly $k$ red balls, wouldn't the remaining $m - k$ balls automatically be blue?
+
+:::
+
+What about choosing with order? We need to count:
+
+- The number of ways to choose $k$ red balls in order: $P(n, k)$
+- The number of ways to choose $m - k$ blue balls in order: $P(N - n, m - k)$
+- The number of ways to decide which of the $m$ positions are occupied by red balls: $\binom{m}{k}$
+
+So the final answer is 
+
+$$ \binom{m}{k} \cdot \frac{P(n, k) P(N - n, m - k)}{P(N, m)}.$$
+
+This expression simplifies to the previous expression!
+
+
+### Generalized Hypergeometric Distribution
+
+Suppose now you have $N$ balls of which $n_1$ are of color 1, $n_2$ are of color 2, ..., $n_r$ are of color $r$ (so that $n_1 + n_2 + \dots + n_r = N$). You choose $m$ balls. What is the probability that **exactly** $k_1$ of the chosen balls are of color 1, $k_2$ of color 2, ..., and $k_r$ of color $r$ (so that $k_1 + k_2 + \dots + k_r = m$)?
+
+Now if we choose without order, the probability equals
+
+$$\frac{\binom{n_1}{k_1} \binom{n_2}{k_2} \cdots \binom{n_r}{k_r}}{\binom{N}{m}}$$
+
+and the if we choose with order, the probability equals
+
+$$ \frac{m!}{k_1! k_2! \cdots k_r!} \cdot \frac{P(n_1, k_1) P(n_2, k_2) \cdots P(n_r, k_r)}{P(N, m)}$$
+
+and again these two expressions are the same!
+
+:::{.callout-caution}
+
+### Question
+
+Why do you think this happens? Why is "with order" vs "without order" irrelevant to the problem statement? What's a more direct way to see this?
+
+:::

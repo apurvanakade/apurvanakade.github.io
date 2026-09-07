@@ -1,0 +1,130 @@
+---
+title: Architects and Gardeners
+description: "George R.R. Martin split writers into architects and gardeners. The same split applies to course planning, and I am firmly a gardener."
+date: 2025-07-17
+weight: 1
+author: Apurva Nakade
+categories: ['philosophy', 'teaching']
+image: "../../scribbles/images/architects-gardeners.png"
+---
+
+> “I think there are two types of writers, the architects and the gardeners. The architects plan everything ahead of time, like an architect building a house. They know how many rooms are going to be in the house, what kind of roof they're going to have, where the wires are going to run, what kind of plumbing there's going to be. They have the whole thing designed and blueprinted out before they even nail the first board up. The gardeners dig a hole, drop in a seed and water it. They kind of know what seed it is, they know if planted a fantasy seed or mystery seed or whatever. But as the plant comes up and they water it, they don't know how many branches it's going to have, they find out as it grows. And I'm much more a gardener than an architect.” -- *George R.R. Martin*
+
+
+I think about this George R.R. Martin quote every time I do course planning. He might have been talking about writing, but I think this is an excellent paradigm for almost everything in life.
+
+One problem I see with university math courses taught by "experts" (i.e. old people) is that they're too rigid—the instructors are too much of an "architect." I'm the opposite: too much of a "gardener."
+
+I love to improvise. I teach best when I can adapt the course to my current students instead of having a preset notion of what I'm supposed to be doing in class. I rarely prepare lecture notes and teach from memory, taking the class wherever it wants to go. This is why I find it hard to teach coordinated courses.
+Writers often say that they discover the stories of their characters as they write them. 
+I find the same to be true for my classes.
+
+Teaching as a "gardener" is risky, though. It requires attention, mindfulness, vulnerability, playfulness, and a good sense of humor. You're vulnerable to making mistakes, and most professors find it difficult to show this side of their thinking to students. For reasons I think have to do with ego, professors don't like to appear fallible. I, on the other hand, love this challenge. Every mistake I make in class reveals gaps in my understanding and helps me deepen it (while creating "learning moments" for students). You also need constant vigilance and attention to students' needs and the classroom environment. You want to create "constructive chaos" without devolving into utter chaos.
+
+```{ojs}
+import {svg} from "@observablehq/stdlib"
+
+width = 600;
+height = 300;
+padding = 40;
+
+viewof ruler = {
+  const centerY = height / 2;
+  const rulerStart = padding;
+  const rulerEnd = width - padding;
+  
+  // Positions on the ruler (0 = left, 1 = right)
+  const startingPointPos = 0.8;
+  const currentLocationPos = 0.5;
+  const goalPos = 0.3;
+  const bracketStartPos = 0.25;
+  const bracketEndPos = 0.35;
+  
+  // Styling dimensions
+  const tickHeight = 10;
+  const labelOffsetBelow = 60;
+  const labelOffsetAbove = 50;
+  const arrowGapFromLabel = 15;
+  const arrowGapFromRuler = 20;
+  const bracketHeight = 15;
+  const bracketWidth = 8;
+  const endpointCircleOffset = 8;
+  const endpointCircleRadius = 6;
+  const endLabelOffset = 35;
+  const endLabelVerticalOffset = 15;
+  
+  // Stroke widths
+  const rulerStrokeWidth = 2;
+  const tickStrokeWidth = 2;
+  const arrowStrokeWidth = 1.5;
+  const bracketStrokeWidth = 2;
+  
+  // Font sizes
+  const labelFontSize = 14;
+  const endLabelFontSize = 16;
+  
+  const positionToX = (pos) => padding + pos * (width - 2 * padding);
+  
+  return svg`<svg width="${width}" height="${height}" style="display:block; margin:auto; border:none;">
+    <defs>
+      <marker id="arrowhead-down" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto">
+        <path d="M0,0 L6,3 L0,6 Z" fill="#333" />
+      </marker>
+      <marker id="arrowhead-up" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto">
+        <path d="M0,6 L6,3 L0,0 Z" fill="#333" />
+      </marker>
+    </defs>
+    
+    <!-- Main ruler line -->
+    <line x1="${rulerStart}" x2="${rulerEnd}" y1="${centerY}" y2="${centerY}" 
+          stroke="#333" stroke-width="${rulerStrokeWidth}" />
+    
+    <!-- Endpoint circles -->
+    <circle cx="${rulerStart - endpointCircleOffset}" cy="${centerY}" r="${endpointCircleRadius}" fill="#333" />
+    <circle cx="${rulerEnd + endpointCircleOffset}" cy="${centerY}" r="${endpointCircleRadius}" fill="#333" />
+    
+    <!-- End labels -->
+    <text x="${rulerStart - endLabelOffset}" y="${centerY - endLabelVerticalOffset}" text-anchor="start" 
+          font-size="${endLabelFontSize}" fill="#333">Architect</text>
+    <text x="${rulerEnd + endLabelOffset}" y="${centerY - endLabelVerticalOffset}" text-anchor="end" 
+          font-size="${endLabelFontSize}" fill="#333">Gardener</text>
+    
+    <!-- Starting point tick and label -->
+    <line x1="${positionToX(startingPointPos)}" x2="${positionToX(startingPointPos)}" 
+          y1="${centerY - tickHeight}" y2="${centerY + tickHeight}" 
+          stroke="#000" stroke-width="${tickStrokeWidth}" />
+    <text x="${positionToX(startingPointPos)}" y="${centerY + labelOffsetBelow}" text-anchor="middle" 
+          font-size="${labelFontSize}" fill="#333">Starting point</text>
+    <line x1="${positionToX(startingPointPos)}" x2="${positionToX(startingPointPos)}" 
+          y1="${centerY + labelOffsetBelow - arrowGapFromLabel}" y2="${centerY + arrowGapFromRuler}" 
+          stroke="#333" stroke-width="${arrowStrokeWidth}" marker-end="url(#arrowhead-up)" />
+    
+    <!-- Current location tick and label -->
+    <line x1="${positionToX(currentLocationPos)}" x2="${positionToX(currentLocationPos)}" 
+          y1="${centerY - tickHeight}" y2="${centerY + tickHeight}" 
+          stroke="#000" stroke-width="${tickStrokeWidth}" />
+    <text x="${positionToX(currentLocationPos)}" y="${centerY + labelOffsetBelow}" text-anchor="middle" 
+          font-size="${labelFontSize}" fill="#333">Current location</text>
+    <line x1="${positionToX(currentLocationPos)}" x2="${positionToX(currentLocationPos)}" 
+          y1="${centerY + labelOffsetBelow - arrowGapFromLabel}" y2="${centerY + arrowGapFromRuler}" 
+          stroke="#333" stroke-width="${arrowStrokeWidth}" marker-end="url(#arrowhead-up)" />
+    
+    <!-- Goal label (no tick) -->
+    <text x="${positionToX(goalPos)}" y="${centerY - labelOffsetAbove}" text-anchor="middle" 
+          font-size="${labelFontSize}" fill="#333">Goal</text>
+    <line x1="${positionToX(goalPos)}" x2="${positionToX(goalPos)}" 
+          y1="${centerY - labelOffsetAbove + arrowGapFromLabel}" y2="${centerY - arrowGapFromRuler}" 
+          stroke="#333" stroke-width="${arrowStrokeWidth}" marker-end="url(#arrowhead-down)" />
+    
+    <!-- Brackets around region -->
+    <path d="M${positionToX(bracketStartPos)},${centerY - bracketHeight} v${bracketHeight * 2} m0,-${bracketHeight * 2} h${bracketWidth} m0,${bracketHeight * 2} h-${bracketWidth}" 
+          stroke="#333" stroke-width="${bracketStrokeWidth}" fill="none" />
+    <path d="M${positionToX(bracketEndPos)},${centerY - bracketHeight} v${bracketHeight * 2} m0,-${bracketHeight * 2} h-${bracketWidth} m0,${bracketHeight * 2} h${bracketWidth}" 
+          stroke="#333" stroke-width="${bracketStrokeWidth}" fill="none" />
+  </svg>`;
+}
+```
+
+This has worked well for me so far, but as I get more responsibilities, I'm noticing this approach isn't sustainable. I'm realizing I need balance—a middle path, as the Buddha would say. The less you plan, the more freedom you have, but that's not necessarily good. Anxiety is the dizziness of freedom. Can art exist without constraints?
+
+I've been drifting toward the "architect" side. I now use assistive technology and active learning strategies that naturally require prepared materials. I hope to find a sweet spot where I can hover without becoming too rigid. The goal is to have enough structure that my courses mostly run themselves, freeing me to focus on building personal relationships.

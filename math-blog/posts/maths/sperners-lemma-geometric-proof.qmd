@@ -1,0 +1,370 @@
+---
+title: Sperner's Lemma - Geometric Proof
+description: "My new favorite proof of Sperner's lemma: morph the vertices toward the cardinal colors and let the determinant do the work."
+author: Apurva Nakade
+date: 2025-05-25
+weight: 1
+categories: [triangles, coloring, visualization, interactive, determinant]
+image: "../../maths/images/sperner-geo.png"
+---
+
+This is my new favorite proof of [Sperner's lemma](sperners-lemma-statement.qmd). 
+In the following app the vertices are slowly morphed to the "cardinal" `R`, `G`, `B` vertices with time while preserving the adjacency relations. The <span style="background-color:rgba(255, 99, 71, 0.5)">red</span> triangles are oriented counter-clockwise and the <span style="background-color:rgba(72, 209, 204, 0.5)">blue</span> triangles are oriented clockwise. Can you come up with the proof yourself without peeking below? You can try reducing the number of subdivisions to get a sense of what's going on.
+
+```{ojs}
+import {slider} from "@jashkenas/inputs"
+```
+
+```{ojs}
+equilateralTriangleVertices = [
+  {x: 1, y: 0},
+  {x: 0.5, y: Math.sqrt(3) / 2},
+  {x: 0, y: 0},
+];
+
+generateBarycentricCoords = N => {
+  const coords = []
+  for (let i = 0; i <= N; i++) {
+    for (let j = 0; j <= N - i; j++) {
+      coords.push([i, j, N - i - j])
+    }
+  }
+  return coords
+};
+
+pickRandomColor = (...options) => options[Math.floor(Math.random() * options.length)];
+
+smoothstepEase = t => 6 * t ** 5 - 15 * t ** 4 + 10 * t ** 3;
+```
+
+
+```{ojs}
+defaultAssignColor = (a, b, c) => {
+  if (a === 0 && b === 0) return 'red'
+  if (b === 0 && c === 0) return 'green'
+  if (c === 0 && a === 0) return 'blue'
+  if (a === 0) return pickRandomColor('red', 'blue')
+  if (b === 0) return pickRandomColor('red', 'green')
+  if (c === 0) return pickRandomColor('blue', 'green')
+  return pickRandomColor('red', 'green', 'blue')
+}
+
+simplerAssignColor = (a, b, c) => {
+  if (a === 0 && b === 0) return 'red'
+  if (b === 0 && c === 0) return 'green'
+  if (c === 0 && a === 0) return 'blue'
+  return pickRandomColor('red', 'green', 'blue')
+}
+```
+
+```{ojs}
+function createTriangleMorpher(N, vertices, assignColor, easing = smoothstepEase) {
+  const baryCoords = generateBarycentricCoords(N)
+
+  const buildColorMap = () => {
+    const map = new Map()
+    for (const [a, b, c] of baryCoords) {
+      map.set(`${a},${b},${c}`, assignColor(a, b, c))
+    }
+    return map
+  }
+
+  const interpolatePoints = (t, colorMap) => {
+    const [A, B, C] = vertices
+    const vertexMap = { red: C, green: A, blue: B }
+    const s = easing(t)
+
+    const morphedPoints = baryCoords.map(([a, b, c]) => {
+      const sum = a + b + c
+      const x0 = (a * A.x + b * B.x + c * C.x) / sum
+      const y0 = (a * A.y + b * B.y + c * C.y) / sum
+
+      const color = colorMap.get(`${a},${b},${c}`)
+      const target = vertexMap[color]
+
+      return {
+        x: (1 - s) * x0 + s * target.x,
+        y: (1 - s) * y0 + s * target.y,
+        color,
+        barycentricTriple: [a, b, c]
+      }
+    })
+
+    const morphedMap = new Map(morphedPoints.map(p => [p.barycentricTriple.join(','), p]))
+    return { morphedPoints, morphedMap }
+  }
+
+  const generateSubTriangles = morphedMap => {
+    const triangles = []
+    for (let i = 0; i < N; i++) {
+      for (let j = 0; j < N - i; j++) {
+        const a = [i, j, N - i - j]
+        const b = [i + 1, j, N - i - j - 1]
+        const c = [i, j + 1, N - i - j - 1]
+        triangles.push({ coordinates: [a, b, c] })
+
+        if (i + j < N - 1) {
+          const d = [i + 1, j + 1, N - i - j - 2]
+          triangles.push({ coordinates: [b, d, c] })
+        }
+      }
+    }
+
+    return triangles.map(tri => {
+      const vertex_colors = tri.coordinates.map(c => morphedMap.get(c.join(',')).color)
+      return { ...tri, vertex_colors }
+    })
+  }
+
+  return {
+    baryCoords,
+    buildColorMap,
+    interpolatePoints,
+    generateSubTriangles
+  }
+}
+```
+
+
+```{ojs}
+fillColorGroups = {
+  const group1 = new Set(['RGB', 'GBR', 'BRG'])
+  const group2 = new Set(['RBG', 'BGR', 'GRB'])
+  return { group1, group2 }
+}
+
+getFillColor = vertexColors => {
+  const map = { red: 'R', green: 'G', blue: 'B' }
+  const key = vertexColors.map(c => map[c.toLowerCase()] || '').join('')
+
+  if (fillColorGroups.group1.has(key)) {
+    return 'rgba(255, 255, 0, 0.5)' // Yellow
+  }
+
+  if (fillColorGroups.group2.has(key)) {
+    return 'rgba(255, 99, 71, 0.5)' // Tomato red
+  }
+
+  // Neutral group (fallback): soft gray
+  return 'rgba(255, 255, 255, 1)'
+}
+```
+
+```{ojs}
+function plotTriangles(triangles, morphedPoints, vertices) {
+  return Plot.plot({
+    width: 800,
+    height: 800,
+    margin: 40,  // Add padding around the chart
+    x: {domain: [0, 1], axis: null},
+    y: {domain: [0, Math.sqrt(3) / 2], axis: null},
+    marks: [
+      // Plot.line([...vertices, vertices[0]], {x: "x", y: "y", stroke: "black", strokeWidth: 1}),
+      Plot.geo({
+        type: "FeatureCollection",
+        features: triangles.map(tri => ({
+          type: "Feature",
+          geometry: {
+            type: "Polygon",
+            coordinates: [[
+              ...tri.coordinates.map(c => {
+                const p = morphedPoints.morphedMap.get(c.join(','))
+                return [p.x, p.y]
+              }),
+              (() => {
+                const p = morphedPoints.morphedMap.get(tri.coordinates[0].join(','))
+                return [p.x, p.y]
+              })()
+            ]]
+          },
+          properties: {
+            fillColor: getFillColor(tri.vertex_colors)
+          }
+        }))
+      }, {
+        fill: d => d.properties.fillColor,
+        stroke: "black",
+        strokeWidth: 1
+      }),
+      Plot.dot(morphedPoints.morphedPoints, {
+        x: "x", y: "y", fill: "color", r: 4
+      })
+    ]
+  })
+}
+```
+
+```{ojs}
+viewof M = slider({
+  min: 2, max: 15, step: 1, value: 10, width: 500, title: "Number of subdivisions"
+})
+
+viewof s = slider({
+  min: 0, max: 1, step: 0.01, value: 0.15, width: 500, title: "Time"
+})
+
+morpher3 = createTriangleMorpher(M, equilateralTriangleVertices, defaultAssignColor)
+
+
+colorMap3 = morpher3.buildColorMap()
+morphedMap3 = morpher3.interpolatePoints(s, colorMap3)
+triangles3 = morpher3.generateSubTriangles(morphedMap3.morphedMap)
+
+plot3 = plotTriangles(triangles3, morphedMap3, equilateralTriangleVertices)
+```
+
+Let $v^R$, $v^G$, and $v^B$ be the vertices of the original triangle, colored 
+<span style="background-color:red">red</span>, 
+<span style="background-color:green">green</span>, and 
+<span style="background-color:blue">blue</span>, respectively.
+
+Consider a triangulation $\Delta$ of the triangle $(v^R, v^G, v^B)$.   We’ll use the variable $\delta$ to refer to the smaller triangles within this triangulation $\Delta$. Assume each $\delta$ is oriented counterclockwise, consistent with the orientation of $(v^R, v^G, v^B)$. This orientation will be important when we define [signed areas](#signed-areas).
+
+## Time
+
+We'll now describe how this triangulation evolves over time.
+
+Let $t$ be a real number in $[0, 1]$. Let $v$ be a vertex in the subdivision, and let $c(v)$ denote the color of $v$. Define:
+\begin{align*}
+v_t = (1 - t) \cdot v + t \cdot v^{c(v)}
+\end{align*}
+so that $v_0 = v$ and $v_1 = v^{c(v)}$. For each triangle $\delta = (v^1, v^2, v^3) \in \Delta$, define:
+\begin{align*}
+\delta_t = (v^1_t, v^2_t, v^3_t)
+\end{align*}
+and let:
+\begin{align*}
+\Delta_t = \{ \delta_t : \delta \in \Delta \}.
+\end{align*}
+Note that $\Delta_0 = \Delta$. However, $\Delta_t$ is simply a collection of triangles — it is not necessarily a triangulation of any shape. In fact, the triangles may overlap, and the union of $\Delta_t$ may not form a proper region.
+
+Our goal is to understand how $\Delta_t$ behaves as $t$ changes.
+
+## (Signed) Areas
+
+A key observation: if a triangle $\delta$ is **not** an `RGB` triangle, then $\delta_1$ becomes degenerate — it has zero area. Assume, for simplicity, that the area of the original triangle $(v^R, v^G, v^B)$ is **1**. This allows us to use area as a tool to identify `RGB` triangles.
+
+::: {#thm-area}
+A triangle $\delta$ is `RGB` if and only if $\text{area}(\delta_1) = 1$.
+:::
+
+We can rephrase Sperner's Lemma in terms of area:
+
+::: {#cnj-sperner-area}
+\begin{align*}
+\text{area}(\Delta_1) > 0,
+\end{align*}
+where
+\begin{align*}
+\text{area}(\Delta_t) = \sum_{\delta \in \Delta} \text{area}(\delta_t).
+\end{align*}
+:::
+
+In fact, we will prove the following stronger statement:
+
+::: {#cnj-signed-area}
+\begin{align*}
+|\Delta_1| = 1,
+\end{align*}
+where
+\begin{align*}
+|\Delta_t| = \sum_{\delta \in \Delta} |\delta_t|,
+\end{align*}
+and $|\delta_t|$ denotes the **signed** area of the triangle $\delta_t$.
+:::
+
+One way to define the signed area of a counterclockwise-oriented triangle $\delta = (v^1, v^2, v^3)$ is as:
+\begin{align*}
+|\delta| = \det \begin{bmatrix} v^2 - v^1 & v^3 - v^1 \end{bmatrix}
+\end{align*}
+This is the determinant of a $2 \times 2$ matrix, and therefore the signed area of $\delta_t$ is a **quadratic** function of $t$.
+
+::: {#thm-quadratic}
+The signed area $|\Delta_t|$ is a quadratic function of $t$.
+:::
+
+## Sperner's Condition
+
+At time $t = 0$, $\Delta_0$ is a triangulation of $(v^R, v^G, v^B)$, so:
+\begin{align*}
+|\Delta_0| = 1.
+\end{align*}
+
+If the triangulation satisfies **Sperner’s condition**, then for small values of $t > 0$, $\Delta_t$ continues to form a triangulation of the original triangle. This is the only step in the proof where we use Sperner’s condition!
+
+::: {#thm-sperner-local}
+If the coloring satisfies Sperner's condition, then there exists $\varepsilon > 0$ such that
+\begin{align*}
+|\Delta_t| = 1 \quad \text{for all } t \in [0, \varepsilon].
+\end{align*}
+:::
+
+But since $|\Delta_t|$ is a quadratic function and is constant on an interval, it must be constant everywhere.  
+This gives us the full strength of Sperner’s Lemma:
+
+::: {#thm-sperner-constant}
+If the coloring satisfies Sperner’s condition, then $|\Delta_t|$ is constant in $t$.  
+In particular,
+\begin{align*}
+|\Delta_1| = |\Delta_0| = 1.
+\end{align*}
+:::
+
+With one final argument, we can strengthen this conclusion:
+
+::: {#cor-sperner}
+If the coloring satisfies Sperner’s condition, then
+\begin{align*}
+|\{ \text{counterclockwise oriented RGB triangles} \}| 
+= 
+|\{ \text{clockwise oriented RGB triangles} \}| + 1.
+\end{align*}
+:::
+
+Sperner’s condition is crucial in asserting that $|\Delta_t|$ is constant. If the condition is violated, $\Delta_t$ is no longer a triangulation of the original triangle — even for small $t > 0$ — and thus we cannot conclude that $|\Delta_t|$ remains constant. You can see this in the app below.
+
+```{ojs}
+viewof N = slider({
+  min: 2, max: 15, step: 1, value: 10, width: 500, title: "Number of subdivisions"
+})
+
+viewof t = slider({
+  min: 0, max: 1, step: 0.01, value: 0.15, width: 500, title: "Time"
+})
+
+morpher1 = createTriangleMorpher(N, equilateralTriangleVertices, defaultAssignColor)
+
+
+colorMap1 = morpher1.buildColorMap()
+morphedMap1 = morpher1.interpolatePoints(t, colorMap1)
+triangles1 = morpher1.generateSubTriangles(morphedMap1.morphedMap)
+```
+
+```{ojs}
+morpher2 = createTriangleMorpher(N, equilateralTriangleVertices, simplerAssignColor)
+
+colorMap2 = morpher2.buildColorMap()
+morphedMap2 = morpher2.interpolatePoints(t, colorMap2)
+triangles2 = morpher2.generateSubTriangles(morphedMap2.morphedMap)
+
+plot1 = plotTriangles(triangles1, morphedMap1, equilateralTriangleVertices)
+
+plot2 = plotTriangles(triangles2, morphedMap2, equilateralTriangleVertices)
+
+html`<div style="display: flex; gap: 1rem;">
+  <div>${plot1}</div>
+  <div>${plot2}</div>
+</div>`
+```
+
+## Questions 
+
+The combinatorial proof of Sperner's lemma does not require the full Sperner's condition. All it needs is that **the number of boundary `RG` edges is odd**. This condition is guaranteed by Sperner's condition but is weaker than it. Is there a way to extend the above proofs for this alternate hypothesis?
+
+## References 
+
+McLennan, Andrew, and Rabee Tourky. “Using Volume to Prove Sperner’s Lemma.” Economic Theory 35, no. 3 (2008): 593–97. [http://www.jstor.org/stable/40282878](http://www.jstor.org/stable/40282878).
+
+[https://mathpages.blogspot.com/2010/05/sperners-lemma.html](https://mathpages.blogspot.com/2010/05/sperners-lemma.html)
+
+Kannai, Y. Using oriented volume to prove Sperner’s lemma. Econ Theory Bull 1, 11–19 (2013). [https://doi.org/10.1007/s40505-013-0013-5](https://doi.org/10.1007/s40505-013-0013-5)

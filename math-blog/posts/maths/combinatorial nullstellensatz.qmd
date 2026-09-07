@@ -1,0 +1,64 @@
+---
+title: Combinatorial Nullstellensatz
+description: "A fun theorem I came across in a talk on tree colorings, and the polynomial trick behind it."
+date: 2023-11-26 12:27:01
+weight: 1
+categories:
+  - combinatorics
+  - problems
+  - todo
+image: "../../maths/images/combinatorial-nullstellensatz-equation.svg"
+author: Apurva Nakade
+---
+
+
+I came across this fun theorem in a talk about tree colorings:
+
+**Combinatorial Nullstellensatz.** Let $f \in F[x_1, x_2, \ldots, x_n]$ be
+a polynomial of degree $t_1 + \cdots + t_n$. If $S_1, S_2, \ldots, S_n$ are nonempty subsets
+of $F$ such that $\left| S_i \right| \geq t_i + 1$ for all $i$, then there exists $s_1 \in S_1$, $s_2 \in S_2$, $\ldots$,
+$s_n \in S_n$ for which
+$$
+f(s_1, s_2, \ldots, s_n) \neq 0
+$$
+as long as the coefficient of $x_1^{t_1} x_2^{t_2} \cdots x_n^{t_n}$ is nonzero.
+
+I would love to spend more time understanding it. I've copied the problems from [this pdf](https://web.evanchen.cc/handouts/BMC_Combo_Null/BMC_Combo_Null.pdf) and will try and solve them when I can.
+
+## Problems
+
+In what follows, $p$ will denote an odd prime.
+
+1. **Russia MO 2007/5:** Two distinct numbers are written on each vertex of a convex 100-gon. Prove one can remove a number from each vertex so that the remaining numbers on any two adjacent vertices differ.
+
+2. **IMO 2007/6:** Let $n$ be a positive integer. Consider
+   $$
+   S = \{(x, y, z) \mid x, y, z \in \{0, 1, \ldots, n\}, (x, y, z) \neq (0, 0, 0)\}
+   $$
+   as a set of $(n + 1)^3 - 1$ points in the three-dimensional space. Determine the smallest possible number of planes, the union of which contains $S$ but does not include $(0, 0, 0)$.
+
+3. **Cauchy-Davenport:** If $A$ and $B$ are subsets of $\mathbb{Z}_p$, then
+   $$
+   |A + B| \geq \min(p, |A| + |B| - 1).
+   $$
+
+4. **Erdős-Heilbronn Conjecture:** Let $A$ be a subset of $\mathbb{Z}_p$. Then
+   $$
+   |\{x + y \mid x, y \in A, x \neq y\}| \geq \min(p, 2|A| - 3).
+   $$
+
+5. **Chevalley-Warning:** Let $f_1, f_2, \ldots, f_k$ be polynomials in $\mathbb{Z}_p[x_1, x_2, \ldots, x_n]$ with
+   $$
+   \sum_{i=1}^k \deg f_i < n.
+   $$
+   Show that if the polynomials $f_i$ have a common zero $(c_1, c_2, \ldots, c_n)$, then they have another common zero.
+
+6. **Alon:** Show that any loopless graph with average degree at least $2p - 2$ and maximum degree at most $2p - 1$ contains a $p$-regular subgraph.
+
+7. **Shirazi-Verstraëte:** Let $G = (V, E)$ be a graph. For each vertex $v \in V$ we are given a bad set $B(v)$ of positive integers.
+   - Prove that if $\sum_{v \in V} |B(v)| < |E|$, then there exists a nontrivial subgraph $H$ for which $\deg_H v \notin B(v)$ for any $v$.
+   -  Now suppose we allow $0 \in B(v)$ as well. Prove that if $|B(v)| \leq \frac{1}{2} \deg v$ for any $v$, then we can still find such an $H$ (not necessarily nontrivial).
+
+8.  **Alon, Knuth:** Let $n \geq 2$ be even and let $v_1, v_2, \ldots, v_k \in \{\pm 1\}^n$ be vectors of length $n$ such that any $v \in \{\pm 1\}^n$ is orthogonal to at least one of the $v_i$. Prove that $k \geq n$ and that this estimate is sharp.
+
+

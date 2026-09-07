@@ -1,0 +1,23 @@
+---
+title: "Expository Notes"
+description: "Personal notes on spectra, h-principles, gauge theory, and assorted other topics."
+date: 2019-06-01
+weight: 0
+categories: ["expository", "topology"]
+image: ../images/projects/expository-notes.svg
+---
+
+Some of my personal mathematical notes. They have not been proofread and may contain errors.
+
+- [What is a spectrum?](https://github.com/apurvnakade/PDFs/blob/main/assorted%20notes/Bits%20and%20Pieces/What%20is%20a%20Spectrum_.pdf)
+- [h-principles, MSRI Summer School](https://github.com/apurvnakade/PDFs/blob/main/assorted%20notes/Conference%20Notes/MSRI-h-principles.pdf)
+- [Connections on principal bundles and classical electromagnetism](https://github.com/apurvnakade/PDFs/blob/main/assorted%20notes/Bits%20and%20Pieces/Connections%20on%20Principal%20Bundles%20and%20Classical%20Electromagnetism.pdf)
+- [Vector fields on spheres](https://github.com/apurvnakade/PDFs/blob/main/assorted%20notes/CMI/vector%20fields%20on%20spheres/vector_fields_on_spheres.pdf)
+- [Stiefel-Whitney numbers](https://github.com/apurvnakade/PDFs/blob/main/assorted%20notes/Bits%20and%20Pieces/SW%20numbers.pdf)
+- [Homotopy of MO](https://github.com/apurvnakade/PDFs/blob/main/assorted%20notes/Bits%20and%20Pieces/Homotopy%20of%20MO/Homotopy%20of%20MO.pdf)
+- [Representation theory of the symmetric group](https://github.com/apurvnakade/PDFs/blob/main/assorted%20notes/CMI/Representation%20Theory%20of%20Symmetric%20Group.pdf)
+- [Geometry of Dirac operators](https://github.com/apurvnakade/PDFs/blob/main/assorted%20notes/Bits%20and%20Pieces/Geometry%20of%20Dirac%20Operators/Student_talk.pdf)
+- [FIOs and Lagrangian submanifolds](https://github.com/apurvnakade/PDFs/blob/main/assorted%20notes/Bits%20and%20Pieces/FIOs%20and%20Lagrangian%20Submanifolds.pdf)
+- [Symplectic geometry course notes](https://github.com/apurvnakade/PDFs/blob/main/assorted%20notes/Bits%20and%20Pieces/Symplectic%20Geometry.pdf)
+- [Finite gauge group TQFTs](https://github.com/apurvnakade/PDFs/blob/main/assorted%20notes/Bits%20and%20Pieces/Finite%20Gauge%20Group%20Theory/Finite%20Group%20Gauge%20Theory.pdf)
+- [Classical Lie groups](https://github.com/apurvnakade/PDFs/blob/main/assorted%20notes/Bits%20and%20Pieces/Classical%20Lie%20Groups.pdf)

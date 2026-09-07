@@ -1,0 +1,24 @@
+---
+title: Mir Publications
+description: "An archive of Mir Publications textbooks, and why I prefer their hundred-page directness to American doorstops."
+date: 2024-09-10 12:51:09
+weight: 1
+categories:
+  - textbooks
+  - russian
+author: Apurva Nakade
+image: "../../scribbles/images/mir.svg"
+---
+
+I loathe American textbooks from the bottom of my heart. I learned math from these tiny 100 page books that made the point directly and succinctly and trusted the reader's intelligence to figure out the rest. Textbooks here seem to be written for people who are incapable of thinking for themselves. 
+
+To be great surprise I discovered this website containing MIR publication books:
+
+[https://archive.org/details/mir-titles](https://archive.org/details/mir-titles)
+
+
+The first book listed (at least for me) is *Irodov's Physics*, every engineering student's nightmare and yet one of the best books to learn physics from. I hope younger students find these and I myself am looking forward to reading some of the old gems and finding some new ones.
+
+(Side note: Please [donate to the Internet Archive](https://archive.org/donate).)
+
+<iframe width="100%" height="100%" src="https://archive.org/details/mir-titles" title="MIR publication"></iframe>

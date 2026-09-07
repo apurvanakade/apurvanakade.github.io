@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Doing Hard Things</title>
+  <desc id="desc">Line drawing of Sisyphus pushing a boulder uphill under the title Doing Hard Things.</desc>
+
+  <rect width="1200" height="630" fill="#f6f1e5" />
+
+  <g fill="none" stroke="#1f2a37" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M0,585 C190,565 360,520 510,460 C700,385 890,305 1200,205" stroke-width="8" />
+    <path d="M0,610 C200,592 395,554 555,488 C742,412 913,335 1200,247" stroke-width="2.5" opacity="0.45" />
+
+    <circle cx="760" cy="310" r="64" stroke-width="8" />
+
+    <circle cx="684" cy="384" r="14" stroke-width="6" />
+    <path d="M675,399 L655,436" stroke-width="6" />
+    <path d="M687,399 L704,430" stroke-width="6" />
+    <path d="M655,436 L628,474" stroke-width="6" />
+    <path d="M704,430 L681,478" stroke-width="6" />
+    <path d="M674,409 L730,355" stroke-width="6" />
+    <path d="M691,412 L738,346" stroke-width="6" />
+
+    <path d="M620,552 C710,520 792,465 862,396" stroke-width="3" stroke-dasharray="7 9" opacity="0.55" />
+  </g>
+
+</svg>

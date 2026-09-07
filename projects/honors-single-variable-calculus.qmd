@@ -1,0 +1,20 @@
+---
+title: "Honors Single Variable Calculus"
+description: "Two semesters of calculus in one, taught IBL-style in a flipped classroom."
+date: 2017-09-01
+weight: 2
+categories: ["course notes", "JHU", "analysis"]
+image: https://upload.wikimedia.org/wikipedia/commons/6/60/WeierstrassFunction.svg
+links:
+  - text: "Notes, 2017"
+    href: "https://github.com/apurvnakade/jhu2017-18-honors-single-variable-calculus/blob/main/2017/output/Final.pdf"
+  - text: "Notes, 2018"
+    href: "https://github.com/apurvnakade/jhu2017-18-honors-single-variable-calculus/blob/main/2018/output/ClassNotes.pdf"
+---
+
+For two semesters, Fall 2017 and Fall 2018, I taught an accelerated honors single variable
+calculus course at JHU. The course covers two semesters worth of calculus --- differentiation and
+integration --- in one, structured as a flipped classroom.
+
+The course is designed in an IBL format. The prerequisites are pre-calculus and basic theorem
+proving.

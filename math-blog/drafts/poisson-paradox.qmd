@@ -1,0 +1,53 @@
+---
+title: The Poisson Paradox
+date: 2025-08-11 00:29:51
+author: Apurva Nakade
+categories: []
+
+execute: 
+  cache: true
+
+draft: true
+---
+
+I've started to appreciate more and more the fact that mathematics, and in particular probability, is only a model for reality. As such, when we try to describe a real world scenario using math we need to make several choices. Of course, we all know this but do we understand it on an intuitive level? 
+
+## Bus waiting
+
+:::{.callout}
+
+### Problem
+
+You need to catch a bus at a particular bus stop every day. Buses arrive *on average* every 20 mins. Suppose arrival of busses in independent of each other. 
+
+If you arrive at the bus stop at random, is the expected time you need to wait?
+
+:::
+
+
+The assumption that the arrival of busses in independent of each other is a bit dubious. I would not believe it, for example, it this was the first stop of the bus. But if the bus route is long and you're looking at say the 10th stop in the middle of the day, then perhaps this assumption is acceptable. 
+
+
+With that out of the way, really think about the answer before peeking below.
+
+[insert simulation of buses here]
+
+[insert simulation of your arrival here]
+
+On average you need to wait 20 mins!! What's going on?
+
+## Modeling Reality
+
+The above problem is called the "Poisson Paradox" and like all mathematical paradoxes it only a paradox when you don't understand what's going on.
+
+In the problem statement, we have two assumptions:
+
+1. Buses arrive *on average* every 20 mins. 
+2. Arrival of busses in independent of each other. 
+
+How do we model these mathematically? Let's label the buses that arrive at the stop $B_1, B_2, B_3, \dots $ and suppose their arrival times are $T_1, T_2, \dots $. Then the two assumptions translate to 
+
+1. $\mathbb{E}(T_{i+1} - T_i) = 20$,
+2. $T_1, T_2, T_3, \dots$ are independent of each other.
+
+We are interested in answering the question: if we arrive at the bus stop at time $t$ and $B_i$ is the next bus to arrive, then what is $\mathbb{E}(t - T_i)$?

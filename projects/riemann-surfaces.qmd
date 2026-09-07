@@ -1,0 +1,16 @@
+---
+title: "Riemann Surfaces"
+description: "Constructing Riemann surfaces as graphs of holomorphic functions, ending with Fermat's last theorem for function fields."
+date: 2019-07-03
+weight: 1
+categories: ["problem sets", "Mathcamp", "analysis"]
+image: https://upload.wikimedia.org/wikipedia/commons/9/9c/Riemann_sqrt.svg
+links:
+  - text: "Problem sets"
+    href: "https://github.com/apurvnakade/mc2019-Riemann-surfaces/tree/main/output"
+---
+
+A week-long class I taught at Mathcamp 2019. We construct Riemann surfaces as "graphs" of
+holomorphic functions, and towards the end prove Fermat's last theorem for function fields.
+
+The prerequisites are complex analysis.

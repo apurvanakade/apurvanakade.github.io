@@ -1,0 +1,63 @@
+# AI-owned. Builds the site with Quarto and deploys it to GitHub Pages.
+#
+# This uses GitHub's native Pages deployment (upload-pages-artifact +
+# deploy-pages), which matches the repo setting Settings -> Pages -> Source:
+# "GitHub Actions". Nothing is pushed to a gh-pages branch: the built site is
+# uploaded as an artifact and served straight from it. See CLAUDE.md §2.
+name: Publish site
+
+on:
+  push:
+    branches: [2026-quarto]
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Let a running deploy finish rather than cancelling it half-published.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out source
+        uses: actions/checkout@v4
+
+      - name: Set up Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
+        with:
+          version: "1.10.18"   # keep in sync with the version used locally
+
+      - name: Install TinyTeX
+        run: quarto install tinytex --update-path
+        # Renders CV.qmd's PDF format (cv/preamble.tex needs titling, enumitem,
+        # needspace). TinyTeX auto-installs any package still missing on first
+        # use, so an explicit tlmgr step has not been needed.
+
+      - name: Render site
+        run: quarto render
+        # No R, no Jupyter kernel: math-blog's one executed post is covered by
+        # its committed _freeze/ cache (see CLAUDE.md §2, "Execution
+        # dependencies"). Every other code cell is Observable JS, which runs in
+        # the reader's browser, not at render time.
+
+      - name: Upload site artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

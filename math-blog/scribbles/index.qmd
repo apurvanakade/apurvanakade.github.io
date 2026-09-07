@@ -1,0 +1,19 @@
+---
+include-before-body: ../_includes/back-to-home.html
+title: "Scribbles"
+subtitle: "Posts on teaching, learning, and classroom practice"
+listing:
+  contents: "../posts/scribbles/*.qmd"
+  sort: "date desc"
+  type: default
+  grid-columns: 3
+  fields: [image, date, title, description, categories]
+  categories: true
+  sort-ui: false
+  filter-ui: false
+  image-height: 250px
+page-layout: full
+title-block-banner: true
+---
+
+[Back to blog home](../index.html)
