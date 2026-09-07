@@ -4,7 +4,7 @@ description: "Two semesters of calculus in one, taught IBL-style in a flipped cl
 date: 2017-09-01
 weight: 2
 categories: ["course notes", "JHU", "analysis"]
-image: https://upload.wikimedia.org/wikipedia/commons/6/60/WeierstrassFunction.svg
+image: ../images/projects/weierstrass.svg
 links:
   - text: "Notes, 2017"
     href: "https://github.com/apurvnakade/jhu2017-18-honors-single-variable-calculus/blob/main/2017/output/Final.pdf"

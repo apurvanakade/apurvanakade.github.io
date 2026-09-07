@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="The Penrose impossible tribar">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2f4a3f"/><stop offset="100%" stop-color="#16261f"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#g)"/>
+  <path d="M365.4 272.0 L330.7 292.0 L330.7 132.0 L365.4 112.0 Z" fill="#ffffff" fill-opacity="0.92" stroke="#0d2a3a" stroke-width="2" stroke-linejoin="round"/><path d="M296.1 272.0 L330.7 292.0 L330.7 132.0 L296.1 112.0 Z" fill="#cfe3ea" fill-opacity="0.92" stroke="#0d2a3a" stroke-width="2" stroke-linejoin="round"/><path d="M330.7 92.0 L365.4 112.0 L330.7 132.0 L296.1 112.0 Z" fill="#8fb3c4" fill-opacity="0.92" stroke="#0d2a3a" stroke-width="2" stroke-linejoin="round"/><path d="M469.3 252.0 L330.7 332.0 L330.7 292.0 L469.3 212.0 Z" fill="#ffffff" fill-opacity="0.92" stroke="#0d2a3a" stroke-width="2" stroke-linejoin="round"/><path d="M296.1 312.0 L330.7 332.0 L330.7 292.0 L296.1 272.0 Z" fill="#cfe3ea" fill-opacity="0.92" stroke="#0d2a3a" stroke-width="2" stroke-linejoin="round"/><path d="M434.6 192.0 L469.3 212.0 L330.7 292.0 L296.1 272.0 Z" fill="#8fb3c4" fill-opacity="0.92" stroke="#0d2a3a" stroke-width="2" stroke-linejoin="round"/><path d="M503.9 232.0 L469.3 252.0 L469.3 212.0 L503.9 192.0 Z" fill="#ffffff" fill-opacity="0.92" stroke="#0d2a3a" stroke-width="2" stroke-linejoin="round"/><path d="M296.1 152.0 L469.3 252.0 L469.3 212.0 L296.1 112.0 Z" fill="#cfe3ea" fill-opacity="0.92" stroke="#0d2a3a" stroke-width="2" stroke-linejoin="round"/><path d="M330.7 92.0 L503.9 192.0 L469.3 212.0 L296.1 112.0 Z" fill="#8fb3c4" fill-opacity="0.92" stroke="#0d2a3a" stroke-width="2" stroke-linejoin="round"/>
+  <text x="400" y="372" text-anchor="middle" font-family="Inter, Helvetica, Arial, sans-serif"
+        font-size="20" font-weight="500" fill="#ffffff" fill-opacity="0.70"
+        letter-spacing="2.5">SHEAF COHOMOLOGY</text>
+  <text x="400" y="406" text-anchor="middle" font-family="Inter, Helvetica, Arial, sans-serif" font-size="21" fill="#ffffff" fill-opacity="0.62">locally consistent, globally impossible</text>
+</svg>

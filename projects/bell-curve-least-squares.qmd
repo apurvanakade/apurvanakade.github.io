@@ -4,7 +4,7 @@ description: "A week-long class deriving the normal distribution from least squa
 date: 2026-07-01
 weight: 3
 categories: ["course notes", "Mathcamp", "probability"]
-image: https://apurvanakade.github.io/2026-Summer-Mathcamp-LeastSquares/index_files/figure-html/cell-2-output-1.png
+image: ../images/projects/bell-curve.svg
 links:
   - text: "Notes"
     href: "https://apurvanakade.github.io/2026-Summer-Mathcamp-LeastSquares/"

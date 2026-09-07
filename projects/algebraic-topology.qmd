@@ -4,7 +4,7 @@ description: "Problem sets from a graduate course on the fundamental group, cove
 date: 2021-01-01
 weight: 1
 categories: ["problem sets", "UWO", "topology"]
-image: https://upload.wikimedia.org/wikipedia/commons/8/8f/Winding_Number_Around_Point.svg
+image: ../images/projects/winding-number.svg
 links:
   - text: "Problem sets"
     href: "https://github.com/apurvnakade/uwo2021-algebraic-topology/tree/main/output"

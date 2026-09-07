@@ -4,7 +4,7 @@ description: "Constructing Riemann surfaces as graphs of holomorphic functions, 
 date: 2019-07-03
 weight: 1
 categories: ["problem sets", "Mathcamp", "analysis"]
-image: https://upload.wikimedia.org/wikipedia/commons/9/9c/Riemann_sqrt.svg
+image: ../images/projects/riemann-sqrt.svg
 links:
   - text: "Problem sets"
     href: "https://github.com/apurvnakade/mc2019-Riemann-surfaces/tree/main/output"

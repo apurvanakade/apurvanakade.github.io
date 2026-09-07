@@ -4,7 +4,7 @@ description: "Matrix groups, and how they arise as the symmetries of spaces."
 date: 2018-07-04
 weight: 1
 categories: ["course notes", "Mathcamp", "algebra"]
-image: https://upload.wikimedia.org/wikipedia/commons/b/b7/Icosahedron.svg
+image: ../images/projects/icosahedron.svg
 links:
   - text: "Notes"
     href: "https://github.com/apurvnakade/mc2018-would-i-ever-Lie-group-to-you/blob/main/output/index.pdf"

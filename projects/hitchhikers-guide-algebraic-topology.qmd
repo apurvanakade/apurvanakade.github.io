@@ -4,7 +4,7 @@ description: "A two-week intersession course introducing non-math majors to alge
 date: 2017-01-01
 weight: 2
 categories: ["course notes", "JHU", "topology"]
-image: https://upload.wikimedia.org/wikipedia/commons/9/98/Thistlethwaite_unknot.svg
+image: ../images/projects/trefoil.svg
 links:
   - text: "Course website"
     href: "https://apurvanakade.github.io/courses/2017_h2g2_alg_top/index.html"

@@ -4,7 +4,7 @@ description: "Principal, Gaussian, and mean curvature — developed for potatoes
 date: 2018-07-03
 weight: 1
 categories: ["course notes", "Mathcamp", "geometry"]
-image: https://upload.wikimedia.org/wikipedia/commons/4/47/Russet_potato_cultivar_with_sprouts.jpg
+image: ../images/projects/potato-curvature.svg
 links:
   - text: "Notes"
     href: "https://github.com/apurvnakade/mc2018-how-curved-is-a-potato/blob/main/output/index.pdf"

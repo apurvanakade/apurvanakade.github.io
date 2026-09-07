@@ -4,7 +4,7 @@ description: "A fully interactive week-long class on the Lean theorem prover —
 date: 2020-07-01
 weight: 3
 categories: ["course notes", "Mathcamp", "lean"]
-image: https://upload.wikimedia.org/wikipedia/commons/d/dc/Lean_logo2.svg
+image: ../images/projects/theorem-proving-lean.svg
 links:
   - text: "Notes"
     href: "https://apurvnakade.github.io/mc2020-Lean/"
