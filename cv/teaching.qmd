@@ -1,0 +1,90 @@
+## Teaching
+
+[Teaching Evaluations](https://github.com/apurvanakade/PDFs/tree/main/teaching%20evaluations)
+
+### Instructor, JHU AMS
+
+#### Spring 2026
+
+- Intro to Computational Math, Spring 2026
+- Discrete Math, Spring 2026
+- Monte Carlo Methods, Spring 2026
+
+#### Fall 2025
+
+- Monte Carlo Methods, Fall 2025
+- Discrete Math, Fall 2025
+
+#### Summer 2025
+
+- Mathematical Foundations of AI, Summer 2025
+- Intermediate Probability and Statistics, Summer 2025
+- Honors Algebra II, Summer 2025
+
+#### Spring 2025
+
+- Discrete Math, Spring 2025
+- Monte Carlo Methods, Spring 2025
+- Honors Algebra II, Spring 2025
+- Intermediate Probability and Statistics, Spring 2025
+
+#### Fall 2024
+
+- Discrete Math, Fall 2024
+- Monte Carlo Methods, Fall 2024
+- Honors Algebra II, Fall 2024
+
+#### Summer 2024
+
+- Exploring Engineering Innovation, Summer 2024
+
+#### Spring 2024
+
+- Graph theory, Spring 2024
+- Linear Algebra and Differential Equations, Spring 2024
+- Honors Algebra II, Spring 2024
+
+#### Fall 2023
+
+- Discrete Math, Fall 2023
+
+### Instructor, Northwestern
+
+- Elementary Differential Equations, Spring 2023
+- MENU Linear Algebra and Multivariable Calculus, (Coordinator) 2022-23
+- Introduction to Optimization, Winter, Spring 2022
+- Single Variable Calculus, Fall 2021
+- MENU Linear Algebra and Multivariable Calculus, 2021-22
+- Foundations of Mathematics, Winter 2023
+- Elementary Differential Equations, Spring 2023
+
+### Instructor, UWO
+
+- Algebraic Topology (graduate level), Winter 2021
+- Topology Bootcamp, Fall 2020
+- Discrete Structures for Engineering, Fall 2020
+- Calculus II for Mathematical and Physical Sciences, Winter 2020
+- Calculus I for Mathematical and Physical Sciences, Fall 2019
+- Topics in Category Theory, Fall 2019
+
+### Instructor, JHU
+
+- Honors Single Variable Calculus, Fall 2018, 2017
+- Symmetries & Polynomials, Intersession 2018
+- Hitchhikers Guide to Algebraic Topology, Intersession 2017
+- Differential Equations with Applications, Summer 2017, 2015
+- Online Linear Algebra, Summer 2014
+
+### Academic Co-coordinator, Canada/USA Mathcamp
+
+- Planned the five week academic schedule
+- Part of the mentor hiring committee
+- Invited visiting speakers
+
+### Mentor/Staff, Canada/USA Mathcamp
+
+- Designed and taught a variety of undergraduate-level courses
+- Was residential and academic advisor at camp
+- Part of the mentor hiring committee - Taught a course at Mathcamp 2020
+- Contributed to Lean's surreal numbers math library
+- Contributed to Lean's convex optimization math library

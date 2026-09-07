@@ -1,0 +1,41 @@
+## Projects
+
+Course Design: Discrete Mathematics, JHU
+
+- Modernized the course using evidence-driven pedagogical techniques
+- Adapted an online textbook to better match current student mindsets
+- Introduced homework resubmissions to reinforce student learning
+- Introduced online assessments to improve feedback
+- Restructured exams to better gauge student learning
+
+Open Educational Resources Textbook for Linear Algebra, NU
+
+- Added WeBWorK problems to a Linear Algebra PreTeXt OER textbook
+
+Course Design: Introduction to Optimization, UWO
+
+- Restructured the course to include applications and modeling
+- Created course notes in RMarkdown
+- Created Excel worksheet assignments for modeling scenarios
+
+Course Design: Discrete Structures for Engineering, UWO
+
+- Adapted the course for online asynchronous delivery
+- Helped code (in a team) hundreds of problems on WeBWork
+- Made short weekly video lectures to support the course text
+- Maintained an active discussion forum on Piazza
+- Gave a talk about the course design at a conference on E-Assessment in Mathematical Sciences
+
+Course Design: Honors Single Variable Course (IBL), JHU
+
+- Designed and taught a semester long course structured in a flipped classroom format for two semesters
+
+Course Design: Intersession courses, JHU
+
+- Designed and taught a 2-week course titled Symmetries & Polynomials introducing Galois theory to non-math majors
+- Designed and taught a 2-week course Hitchhiker's Guide to Algebraic Topology introducing algebraic topology to non-math majors
+
+Course Design: Canada/USA Mathcamp courses
+
+- Designed and taught several week-long math courses to advanced highschool students
+- Course topics: Theorem proving in Lean, Visualizing 3-manifolds, Riemann surfaces, Crash Course on Linear Algebra, Covering Spaces, Cohomology etc.

@@ -1,0 +1,8 @@
+## Papers
+
+String structures, 2-group bundles, and a categorification of the Freed-Quinn line bundle, Daniel Berwick-Evans, Emily Cliff, Laura Murray, Apurva Nakade, Emma Phillips, Quantum Symmetries, Contemporary Mathematics, vol. 813, Amer. Math. Soc.,
+Providence, RI, 2025, pp. 257-301.
+
+Manifold Calculus and the h-principle, The Journal of Homotopy and Related Structures, 2019
+
+Effect of increasing the energy gap between the two lowest energy states on the mixing time of the Metropolis algorithm (with Somenath Biswas), Information Processing Letters, IPL4801 (2012.08.012), 2012

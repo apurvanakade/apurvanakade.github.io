@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://apurvanakade.github.io/references.html</loc>
-    <lastmod>2026-07-04T23:42:13.781Z</lastmod>
-  </url>
-  <url>
     <loc>https://apurvanakade.github.io/teaching statement.html</loc>
     <lastmod>2026-01-07T18:42:17.698Z</lastmod>
   </url>
@@ -13,15 +9,19 @@
     <lastmod>2023-10-18T20:17:01.027Z</lastmod>
   </url>
   <url>
-    <loc>https://apurvanakade.github.io/notes.html</loc>
-    <lastmod>2026-07-17T18:58:26.764Z</lastmod>
-  </url>
-  <url>
     <loc>https://apurvanakade.github.io/index.html</loc>
     <lastmod>2026-08-04T15:11:59.949Z</lastmod>
   </url>
   <url>
     <loc>https://apurvanakade.github.io/CV.html</loc>
-    <lastmod>2026-09-07T14:39:33.111Z</lastmod>
+    <lastmod>2026-09-07T14:59:16.075Z</lastmod>
+  </url>
+  <url>
+    <loc>https://apurvanakade.github.io/notes.html</loc>
+    <lastmod>2026-07-10T13:49:57.962Z</lastmod>
+  </url>
+  <url>
+    <loc>https://apurvanakade.github.io/references.html</loc>
+    <lastmod>2026-07-04T23:42:13.781Z</lastmod>
   </url>
 </urlset>

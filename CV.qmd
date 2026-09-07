@@ -1,384 +1,46 @@
 ---
 title: CV
-toc: true
+format:
+  html:
+    toc: true
+  pdf:
+    toc: false
+    number-sections: false
+    documentclass: article
+    classoption: [11pt]
+    geometry: margin=0.85in
+    colorlinks: true
+    linkcolor: black
+    urlcolor: black
+    citecolor: black
+    include-in-header: cv/preamble.tex
+    output-file: CV
 ---
 
-[PDF version](https://github.com/apurvanakade/PDFs/blob/main/CV.pdf)
+::: {.content-visible when-format="html"}
+[PDF version](CV.pdf)
+:::
 
-Senior Lecturer, Department of Applied Mathematics & Statistics, Johns Hopkins University. 
+**Apurva Nakade**
+
+Senior Lecturer, Department of Applied Mathematics & Statistics, Johns Hopkins University.
 
 email: [apurva.nakade@jhu.edu](mailto:apurva.nakade@jhu.edu)
 
 website: [apurvanakade.github.io](https://apurvanakade.github.io/)
 
+{{< include cv/experience.qmd >}}
 
-## Experience 
+{{< include cv/teaching.qmd >}}
 
-| Position | Institution | Year |
-|----------|-------------|------|
-| Assistant Teaching Professor | Johns Hopkins University | 2026-Present |
-| Senior Lecturer | Johns Hopkins University | 2023-2026 |
-| Postdoctoral Lecturer | Northwestern University | 2021-2023 |
-| Postdoctoral Fellow | University of Western Ontario | 2019-2021 |
-| Ph.D. in Mathematics | Johns Hopkins University | 2019 |
-| Academic Coordinator | Canada/USA Mathcamp | 2018 |
-| Mentor | Canada/USA Mathcamp | 2017-2020 |
-| M.Sc. in Mathematics | Chennai Mathematical Institute | 2013 |
-| Exotic Derivatives Trader | Nomura Capital India Pvt Ltd | 2010 |
-| B.Tech. in Computer Science & Engineering | IIT Kanpur | 2010 |
+{{< include cv/professional-development.qmd >}}
 
-## Teaching
+{{< include cv/projects.qmd >}}
 
-[Teaching Evaluations](https://github.com/apurvanakade/PDFs/tree/main/teaching%20evaluations)
+{{< include cv/papers.qmd >}}
 
-### Instructor, JHU AMS
+{{< include cv/grants-awards.qmd >}}
 
-#### Spring 2026
+{{< include cv/service.qmd >}}
 
-- Intro to Computational Math, Spring 2026
-- Discrete Math, Spring 2026
-- Monte Carlo Methods, Spring 2026
-
-#### Fall 2025
-
-- Monte Carlo Methods, Fall 2025
-- Discrete Math, Fall 2025
-
-#### Summer 2025
-
-- Mathematical Foundations of AI, Summer 2025
-- Intermediate Probability and Statistics, Summer 2025
-- Honors Algebra II, Summer 2025
-
-#### Spring 2025
-
-- Discrete Math, Spring 2025
-- Monte Carlo Methods, Spring 2025
-- Honors Algebra II, Spring 2025
-- Intermediate Probability and Statistics, Spring 2025
-
-#### Fall 2024
-
-- Discrete Math, Fall 2024
-- Monte Carlo Methods, Fall 2024
-- Honors Algebra II, Fall 2024
-
-#### Summer 2024
-
-- Exploring Engineering Innovation, Summer 2024
-
-#### Spring 2024
-
-- Graph theory, Spring 2024
-- Linear Algebra and Differential Equations, Spring 2024
-- Honors Algebra II, Spring 2024
-
-#### Fall 2023
-
-- Discrete Math, Fall 2023
-
-### Instructor, Northwestern
-
-- Elementary Differential Equations, Spring 2023
-- MENU Linear Algebra and Multivariable Calculus, (Coordinator) 2022-23
-- Introduction to Optimization, Winter, Spring 2022
-- Single Variable Calculus, Fall 2021
-- MENU Linear Algebra and Multivariable Calculus, 2021-22
-- Foundations of Mathematics, Winter 2023
-- Elementary Differential Equations, Spring 2023
-
-### Instructor, UWO
-
-- Algebraic Topology (graduate level), Winter 2021
-- Topology Bootcamp, Fall 2020
-- Discrete Structures for Engineering, Fall 2020
-- Calculus II for Mathematical and Physical Sciences, Winter 2020
-- Calculus I for Mathematical and Physical Sciences, Fall 2019
-- Topics in Category Theory, Fall 2019
-
-### Instructor, JHU
-
-- Honors Single Variable Calculus, Fall 2018, 2017
-- Symmetries & Polynomials, Intersession 2018
-- Hitchhikers Guide to Algebraic Topology, Intersession 2017
-- Differential Equations with Applications, Summer 2017, 2015
-- Online Linear Algebra, Summer 2014
-
-### Academic Co-coordinator, Canada/USA Mathcamp
-
-- Planned the five week academic schedule
-- Part of the mentor hiring committee
-- Invited visiting speakers
-
-### Mentor/Staff, Canada/USA Mathcamp
-
-- Designed and taught a variety of undergraduate-level courses
-- Was residential and academic advisor at camp
-- Part of the mentor hiring committee - Taught a course at Mathcamp 2020
-- Contributed to Lean's surreal numbers math library
-- Contributed to Lean's convex optimization math library
-
-
-## Professional Development
-
-Faculty Forward Fellowship, JHU, 2025
-
-Introduction to Education Research Workshop, JHU, 2023
-
-MAA Section NExT Fellow, 2023 cohort, 2023-25
-
-Mathematical Association of America Fellow, 2020-Present
-
-MAA Project NExT Fellow, Brown'20 cohort, 2020
- <!-- program for new or recent Ph.D.s in the mathematical sciences. -->
-
-Teaching Academy Certification, JHU, 2019
-
-<!-- Program to help prepare for academic careers and to provide assistance in acquiring a foundation for the teaching responsibilities -->
-
-Participated in several workshops by the Center of Teaching & Learning at UWO, 2019-2020
-
-Participated in the MSRI Critical Issues in Mathematics Education Workshop, 2022
-
-Participated in the MAA Modeling Inspiration for Differential Equations Workshop, 2022
-
-Participated in online Mastery Grading Workshop, 2019
-
-Attended the Science of Learning Symposium, JHU, 2014-2018
-
-
-
-## Projects
-
-Course Design: Discrete Mathematics, JHU
-
-- Modernized the course using evidence-driven pedagogical techniques
-- Adapted an online textbook to better match current student mindsets
-- Introduced homework resubmissions to reinforce student learning
-- Introduced online assessments to improve feedback
-- Restructured exams to better gauge student learning
-
-Open Educational Resources Textbook for Linear Algebra, NU
-
-- Added WeBWorK problems to a Linear Algebra PreTeXt OER textbook
-
-Course Design: Introduction to Optimization, UWO
-
-- Restructured the course to include applications and modeling
-- Created course notes in RMarkdown
-- Created Excel worksheet assignments for modeling scenarios
-
-Course Design: Discrete Structures for Engineering, UWO
-
-- Adapted the course for online asynchronous delivery
-- Helped code (in a team) hundreds of problems on WeBWork
-- Made short weekly video lectures to support the course text
-- Maintained an active discussion forum on Piazza
-- Gave a talk about the course design at a conference on E-Assessment in Mathematical Sciences
-
-Course Design: Honors Single Variable Course (IBL), JHU
-
-- Designed and taught a semester long course structured in a flipped classroom format for two semesters
-
-Course Design: Intersession courses, JHU
-
-- Designed and taught a 2-week course titled Symmetries & Polynomials introducing Galois theory to non-math majors
-- Designed and taught a 2-week course Hitchhiker's Guide to Algebraic Topology introducing algebraic topology to non-math majors
-
-Course Design: Canada/USA Mathcamp courses
-
-- Designed and taught several week-long math courses to advanced highschool students
-- Course topics: Theorem proving in Lean, Visualizing 3-manifolds, Riemann surfaces, Crash Course on Linear Algebra, Covering Spaces, Cohomology etc.
-
-## Papers
-
-String structures, 2-group bundles, and a categorification of the Freed-Quinn line bundle, Daniel Berwick-Evans, Emily Cliff, Laura Murray, Apurva Nakade, Emma Phillips, Quantum Symmetries, Contemporary Mathematics, vol. 813, Amer. Math. Soc.,
-Providence, RI, 2025, pp. 257-301.
-
-Manifold Calculus and the h-principle, The Journal of Homotopy and Related Structures, 2019
-
-Effect of increasing the energy gap between the two lowest energy states on the mixing time of the Metropolis algorithm (with Somenath Biswas), Information Processing Letters, IPL4801 (2012.08.012), 2012
-
-## Grants & Awards
-
-Open Educational Resources Faculty Grant (joint with Dhruv Azad), JHU, 2026
-
-- $5000 to develop interactive visualization apps for computational math courses
-
-Open Educational Resources Faculty Grant (joint with Aaron Greicius), NU, 2022
-
-William Kelso Morrill Award for Excellence in Mathematics, JHU, 2019
-<!-- Awarded each year to the math graduate student who best displays love of teaching, love of mathematics, and concern for students -->
-
-Finalist for the KSAS Excellence in Teaching Awards, JHU, 2019
-
-<!-- The award honors the best graduate TAs in the School of Arts and Sciences for the care and concern they take with their subject and their students. -->
-
-Prof. Joel Dean Award for Excellence in Teaching in Mathematics, JHU, 2016
-
-<!-- Annual award to recognize math graduate students who have exhibited extraordinary performance in teaching undergraduates -->
-
-AMS Graduate Student Travel Grant, 2019
-
-<!-- $250 travel grant for giving a talk at AMS Sectional Meetings -->
-
-##  Service
-
-Member of DS Masters admissions committee in JHU AMS department, 2025-2026
-
-Helped connect undergraduate students with research mentors in JHU AMS department, 2024-2025
-
-Judge for poster presentations at JHU Matrix Conference, 2025
-
-Judge for poster presentations at MAA MD-DC-VA Section Meeting, Fall 2024
-
-Supplementary Instructor for the Causeway Postbaccalaureate Program, NU, 2022
-<!-- 
-5025
-
-Yearlong experience in mathematics that seeks to increase the number of graduate students in the mathematical sciences from historically underrepresented groups -->
-
-Directed Reading Program, UWO, JHU, 2017-2021
-
-- Started DRP at UWO in Fall 2019
-- Organizer and mentor for DRP at JHU and UWO Professional Development
-
-<!-- 
-## Talks
-
- & *Discrete Chern--Simmons via 2-group bundles on elliptic
-curves* & 2020\
-& CMS Session on Homotopy Theory\
-\
-& [*What is a
-Spectrum?*](https://drive.google.com/file/d/16zRKLkBl4skQ0UNKRXfM7d51qWnBLwGF/view)
-& 2020\
-& University of Western Ontario, Basic Notions Seminar\
-\
-&*Manifold calculus and the $h$-principle*
-
--   University of Regina, Geometry & Topology Seminar, 2019
-
--   University of Western Ontario, Geometry & Topology Seminar, 2019
-
--   University of Rochester, Topology Seminar, 2019
-
--   Workshop on Functor Calculus, Ohio State University, 2019
-
--   Spaces of Embeddings, BIRS, Banff, 2019
-
--   AMS Special Session in Homotopy Theory, UC Riverside, 2017
-
-& 2017-19\
-&[*Weiss fibration
-sequence*](http://math.mit.edu/conferences/talbot/index.php?year=2019&sub=talks)
-& 2019\
-& MIT Talbot Workshop\
-\
-&*Constructing a Homotopy Type For Triply-Graded Link Homology* & 2019\
-& AMS Sectional Meeting, University of Hawaii\
-\
-& *Homotopy colimits and limits* & 2017\
-& European Autumn School in Topology\
-\ -->
-
-## Conference Attended 
-
-[MAA MD-DC-VA Section Meeting](http://sections.maa.org/mddcva/Spring2024Meeting.php), Spring 2024
-
-[MAA MD-DC-VA Section Meeting](http://sections.maa.org/mddcva/Fall2023Meeting.php), Fall 2023
-
-[United States Conference on Teaching Statistics](https://www.causeweb.org/cause/uscots/uscots23), 2023
-
-[MSRI CIME Workshop](https://www.msri.org/workshops/1028), 2022 
-
-[Project NExT](https://www.maa.org/programs-and-communities/professional-development/project-next) at MAA Mathfest, Online, 2021
-
-[Lean for the curious mathematician](https://leanprover-community.github.io/lftcm2020/), 2020
-
-Spaces of Embeddings, BIRS, Banff, 2019 
-
-MSRI Summer School, Cortona, Italy, 2019 
-
-MRC Workshop, Providence RI, 2019 
-
-MIT Talbot Workshop, Austin TX, 2019 
-
-Workshop on Functor Calculus, Ohio State University, 2019 
-
-AMS Sectional Meeting, University of Hawaii, 2019 
-
-Arizona Winter School, Arizona State University, 2019 
-
-Joint Mathematical Meetings, Baltimore, 2019 
-
-Symplectic Geometry and Homotopy Theory, UCLA, 2018
-
-MSRI Summer School, Fields Institute, Toronto, 2018
-
-Graduate Student Conference, Temple University, 2018
-
-AMS Sectional Meeting, UC Riverside, 2017
-
-European Autumn School in Topology, Netherlands, 2017
-
-Topology Festival, Cornell University, 2017
-
-Georgia International Topology Conference, University of Georgia, 2017
-
-Alpine Algebraic \& Applied Topology Conference, Switzerland, 2016 
-
-WCATSS, University of Oregon, Eugene, 2016 
-
-GSTSC, Indiana University, Bloomington, 2016 
-
-Mid-Atlantic Topology Conference, Johns Hopkins University, 2016 
-
-Midwest Topology Seminar, Northwestern University, 2016 
-
-Geometry and Topology Conference, Lehigh University, 2015
-
-Mid-Atlantic Topology Conference, University of Virginia, 2015  
-
-Midwest Topology Seminar, University of Illinois Chicago, 2015 
-
-Midwest Topology Seminar, Northwestern University, 2015
-
-Modular invariants in Topology and Analysis, Regensburg, 2015 
-
-WCATSS on Field theories, UBC, 2015 
-
-Introductory Workshop on Algebraic Topology, MSRI, 2015
-
-Joint Mathematical Meetings, Baltimore, 2015
-
-Classification of Manifolds, NEHU, 2013
-
-H-principle, Chennai Mathematical Institute, 2012
-
-Groups and geometries, ISI, Bangalore, 2012
-
-String Topology, Vivekananda University, 2012
-
-Kervaire Invariant One, ISI, Kolkata, 2012
-
-Number Theory workshop, Tezpur University, 2011
-
-Lie algebras and their representations, CMI, 2011
-
-Nurture camp, Institute of Mathematical Sciences, 2007
-  
-[IMO](https://www.imo-official.org/participant_r.aspx?id=8956), Slovenia, 2006 
-<!-- (bronze medal) highest scorer from India,  -->
-
-IMOTC, HBCSC, 2003-2006
-
-<!-- 273 rank at Indian Institutes of Technology (IITs), 2006 -->
-
-<!-- Elegant solution award at IMO training camp -->
-
-<!-- Cleared national astronomy and regional physics and chemistry olympiads -->
-
-<!-- National Talent Search Examination, (NTSE) scholarship  -->
-
-Kishore Vaigyanik Protsahan Yojana (KVPY), 2005
+{{< include cv/conferences.qmd >}}
