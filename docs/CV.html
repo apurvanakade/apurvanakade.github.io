@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.37">
+<meta name="generator" content="quarto-1.10.18">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -12,10 +12,13 @@
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
 */
-code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -39,14 +42,14 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-d0ae9245876894da5ac7e18953ecc5cc.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-b85bc7c33db8c58e0ec93c3465666fed.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-158031087360bce0ff56dc785ce39e06.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-05ad5c04182ae40a1da91fd291b82df0.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="site_libs/bootstrap/bootstrap-158031087360bce0ff56dc785ce39e06.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-445b8638c3d06994fee0907d791121c4.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-b015860c8b364e46083be0abd0510b64.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-445b8638c3d06994fee0907d791121c4.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -269,12 +272,16 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Class Notes</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="https://apurvanakade.github.io/math-blog/"> 
-<span class="menu-text">(Math) Blog</span></a>
-  </li>  
-  <li class="nav-item">
     <a class="nav-link active" href="./CV.html" aria-current="page"> 
 <span class="menu-text">CV</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://apurvanakade.github.io/AMS-courses/"> 
+<span class="menu-text">AMS Courses</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://apurvanakade.github.io/VisualMath/"> 
+<span class="menu-text">VisualMath</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
@@ -349,6 +356,11 @@ ul.task-list li input[type="checkbox"] {
 <section id="experience" class="level2">
 <h2 class="anchored" data-anchor-id="experience">Experience</h2>
 <table class="caption-top table">
+<colgroup>
+<col style="width: 34%">
+<col style="width: 44%">
+<col style="width: 20%">
+</colgroup>
 <thead>
 <tr class="header">
 <th>Position</th>
@@ -358,46 +370,51 @@ ul.task-list li input[type="checkbox"] {
 </thead>
 <tbody>
 <tr class="odd">
-<td>Senior Lecturer</td>
+<td>Assistant Teaching Professor</td>
 <td>Johns Hopkins University</td>
-<td>2023-Present</td>
+<td>2026-Present</td>
 </tr>
 <tr class="even">
+<td>Senior Lecturer</td>
+<td>Johns Hopkins University</td>
+<td>2023-2026</td>
+</tr>
+<tr class="odd">
 <td>Postdoctoral Lecturer</td>
 <td>Northwestern University</td>
 <td>2021-2023</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>Postdoctoral Fellow</td>
 <td>University of Western Ontario</td>
 <td>2019-2021</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>Ph.D.&nbsp;in Mathematics</td>
 <td>Johns Hopkins University</td>
 <td>2019</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>Academic Coordinator</td>
 <td>Canada/USA Mathcamp</td>
-<td>2019</td>
+<td>2018</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>Mentor</td>
 <td>Canada/USA Mathcamp</td>
 <td>2017-2020</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>M.Sc. in Mathematics</td>
 <td>Chennai Mathematical Institute</td>
 <td>2013</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>Exotic Derivatives Trader</td>
 <td>Nomura Capital India Pvt Ltd</td>
 <td>2010</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>B.Tech. in Computer Science &amp; Engineering</td>
 <td>IIT Kanpur</td>
 <td>2010</td>
@@ -410,6 +427,14 @@ ul.task-list li input[type="checkbox"] {
 <p><a href="https://github.com/apurvanakade/PDFs/tree/main/teaching%20evaluations">Teaching Evaluations</a></p>
 <section id="instructor-jhu-ams" class="level3">
 <h3 class="anchored" data-anchor-id="instructor-jhu-ams">Instructor, JHU AMS</h3>
+<section id="spring-2026" class="level4">
+<h4 class="anchored" data-anchor-id="spring-2026">Spring 2026</h4>
+<ul>
+<li>Intro to Computational Math, Spring 2026</li>
+<li>Discrete Math, Spring 2026</li>
+<li>Monte Carlo Methods, Spring 2026</li>
+</ul>
+</section>
 <section id="fall-2025" class="level4">
 <h4 class="anchored" data-anchor-id="fall-2025">Fall 2025</h4>
 <ul>
@@ -520,6 +545,7 @@ ul.task-list li input[type="checkbox"] {
 <p>Faculty Forward Fellowship, JHU, 2025</p>
 <p>Introduction to Education Research Workshop, JHU, 2023</p>
 <p>MAA Section NExT Fellow, 2023 cohort, 2023-25</p>
+<p>Mathematical Association of America Fellow, 2020-Present</p>
 <p>MAA Project NExT Fellow, Brown’20 cohort, 2020 <!-- program for new or recent Ph.D.s in the mathematical sciences. --></p>
 <p>Teaching Academy Certification, JHU, 2019</p>
 <!-- Program to help prepare for academic careers and to provide assistance in acquiring a foundation for the teaching responsibilities -->
@@ -531,6 +557,14 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="projects" class="level2">
 <h2 class="anchored" data-anchor-id="projects">Projects</h2>
+<p>Course Design: Discrete Mathematics, JHU</p>
+<ul>
+<li>Modernized the course using evidence-driven pedagogical techniques</li>
+<li>Adapted an online textbook to better match current student mindsets</li>
+<li>Introduced homework resubmissions to reinforce student learning</li>
+<li>Introduced online assessments to improve feedback</li>
+<li>Restructured exams to better gauge student learning</li>
+</ul>
 <p>Open Educational Resources Textbook for Linear Algebra, NU</p>
 <ul>
 <li>Added WeBWorK problems to a Linear Algebra PreTeXt OER textbook</li>
@@ -572,6 +606,10 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="grants-awards" class="level2">
 <h2 class="anchored" data-anchor-id="grants-awards">Grants &amp; Awards</h2>
+<p>Open Educational Resources Faculty Grant (joint with Dhruv Azad), JHU, 2026</p>
+<ul>
+<li>$5000 to develop interactive visualization apps for computational math courses</li>
+</ul>
 <p>Open Educational Resources Faculty Grant (joint with Aaron Greicius), NU, 2022</p>
 <p>William Kelso Morrill Award for Excellence in Mathematics, JHU, 2019 <!-- Awarded each year to the math graduate student who best displays love of teaching, love of mathematics, and concern for students --></p>
 <p>Finalist for the KSAS Excellence in Teaching Awards, JHU, 2019</p>
@@ -585,6 +623,7 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="service">Service</h2>
 <p>Member of DS Masters admissions committee in JHU AMS department, 2025-2026</p>
 <p>Helped connect undergraduate students with research mentors in JHU AMS department, 2024-2025</p>
+<p>Judge for poster presentations at JHU Matrix Conference, 2025</p>
 <p>Judge for poster presentations at MAA MD-DC-VA Section Meeting, Fall 2024</p>
 <p>Supplementary Instructor for the Causeway Postbaccalaureate Program, NU, 2022 <!-- 
 5025
