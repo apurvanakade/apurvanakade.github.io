@@ -68,11 +68,8 @@ WAVE = "".join(
 COVERS = [
     ("lean-formalization",   "Formalizing Math in Lean",  "PROOF ASSISTANT",           "#3b3663", "#231f3f", DOTS),
     ("oer-linear-algebra",   "Open Textbook, Linear Algebra", "OER",                   "#6b4226", "#3f2716", GRID),
-    ("expository-notes",     "Expository Notes",          "ASSORTED WRITING",          "#2f4a3f", "#1c2e28", DOTS),
     ("mathcamp-assorted",    "More Mathcamp Classes",     "CANADA/USA MATHCAMP",       "#7a3b52", "#43202e", WAVE),
-    ("intro-to-optimization", "Introduction to Optimization", "LINEAR PROGRAMMING",     "#14535e", "#0e3038", GRID),
     ("discrete-math-online", "Discrete Math, Asynchronous", "COURSE DESIGN",            "#4a3a70", "#26203c", DOTS),
-    ("group-cohomology",     "Arithmetic to Group Cohomology", "EXACT SEQUENCES",       "#5c3f2a", "#33221a", GRID),
     ("symmetries-and-polynomials", "Symmetries & Polynomials", "GALOIS THEORY",         "#2d4a63", "#1a2c3c", WAVE),
     ("theorem-proving-lean", "Theorem Proving in Lean",   "MATHCAMP",                  "#334066", "#1d2440", DOTS),
 ]
@@ -275,32 +272,6 @@ def penrose():
                  "locally consistent, globally impossible")
 
 
-def trefoil():
-    """A trefoil knot from its 3D parametrisation. z = -sin(3t) vanishes at the
-    six points t = k*pi/3, so those cut the curve into arcs that are each wholly
-    above or wholly below the crossings. Casing whole arcs (rather than
-    individual segments, whose casings overwrite their neighbours) resolves the
-    over- and under-strands correctly."""
-    def at(t):
-        return (math.sin(t) + 2 * math.sin(2 * t),
-                math.cos(t) - 2 * math.cos(2 * t),
-                -math.sin(3 * t))
-
-    arcs, M, pad = [], 150, 0.05
-    for k in range(6):
-        t0, t1 = k * math.pi / 3 - pad, (k + 1) * math.pi / 3 + pad
-        arcs.append([at(t0 + (t1 - t0) * i / M) for i in range(M + 1)])
-
-    f = fit([(q[0], q[1]) for a in arcs for q in a], 138, 118)
-    out = []
-    for arc in sorted(arcs, key=lambda a: sum(q[2] for q in a) / len(a)):
-        pts = [f((q[0], q[1])) for q in arc]
-        out.append(polyline(pts, "#12202b", 17, 1.0))   # casing cuts the strand behind
-        out.append(polyline(pts, ACCENT, 7, 1.0))
-    return frame("".join(out), "A trefoil knot diagram",
-                 "#1b3140", "#12202b", "KNOTS AND SPACES", "the trefoil")
-
-
 def icosahedron():
     """A rotated icosahedron: 12 vertices, 30 edges, and the symmetry group
     that makes it a standing example in a course on groups."""
@@ -435,7 +406,6 @@ FIGURES = {
     "winding-number": winding_number,
     "weierstrass": weierstrass,
     "penrose-tribar": penrose,
-    "trefoil": trefoil,
     "icosahedron": icosahedron,
     "riemann-sqrt": riemann_sqrt,
     "potato-curvature": potato,

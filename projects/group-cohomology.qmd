@@ -4,7 +4,7 @@ description: "Group extensions and exact sequences, arrived at by taking carryin
 date: 2019-07-02
 weight: 1
 categories: ["course notes", "Mathcamp", "algebra"]
-image: ../images/projects/group-cohomology.svg
+image: ../images/projects/group-cohomology.png
 links:
   - text: "Notes"
     href: "https://github.com/apurvnakade/mc2019-group-cohomology/blob/main/output/index.pdf"

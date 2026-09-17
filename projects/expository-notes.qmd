@@ -4,7 +4,7 @@ description: "Personal notes on spectra, h-principles, gauge theory, and assorte
 date: 2019-06-01
 weight: 0
 categories: ["expository", "topology"]
-image: ../images/projects/expository-notes.svg
+image: ../images/projects/expository-notes.png
 ---
 
 Some of my personal mathematical notes. They have not been proofread and may contain errors.

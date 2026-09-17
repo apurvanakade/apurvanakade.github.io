@@ -4,7 +4,7 @@ description: "A two-week intersession course introducing non-math majors to alge
 date: 2017-01-01
 weight: 2
 categories: ["course notes", "JHU", "topology"]
-image: ../images/projects/trefoil.svg
+image: ../images/projects/hitchhikers-guide-algebraic-topology.png
 links:
   - text: "Course website"
     href: "https://apurvanakade.github.io/courses/2017_h2g2_alg_top/index.html"

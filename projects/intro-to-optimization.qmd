@@ -4,7 +4,7 @@ description: "A quarter-long course on linear programming and duality, rebuilt a
 date: 2022-01-01
 weight: 3
 categories: ["course notes", "Northwestern", "optimization"]
-image: ../images/projects/intro-to-optimization.svg
+image: ../images/projects/intro-to-optimization.png
 links:
   - text: "Course notes"
     href: "https://apurvanakade.github.io/Introduction-to-Optimization/"
