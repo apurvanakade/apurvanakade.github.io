@@ -30,7 +30,6 @@ $table-border-color: $rule !default;
   --site-surface:  #{$surface};
   --site-shadow:   rgba(0, 0, 0, 0.45);
   --site-thumb-bg: #24272b;
-  --site-sans:     #{$font-family-sans-serif};
 }
 
 .navbar { background-color: rgba(22, 24, 27, 0.92) !important; backdrop-filter: saturate(150%) blur(8px); }

@@ -1,19 +1,24 @@
 #!/usr/bin/env python3
 """AI-owned pre-render step. Generates _includes/home-cards.html.
 
-Emits two cards for the home page, each showing one item drawn at random with
-probability proportional to its `weight:`
+Emits two sections for the home page:
 
-  1. "Featured project"  -- from projects/*.qmd
-  2. "From the blog"     -- from math-blog/posts/**/*.qmd
+  1. "Featured" -- two *fixed* project cards, named in PINNED below. These never
+     change and involve no JavaScript.
+  2. "A random pick" -- two cards drawn at random on each page load, one from
+     projects/*.qmd and one from math-blog/posts/**/*.qmd, with probability
+     proportional to each file's `weight:`.
+
+The pinned projects are excluded from the random project pool, so the same
+project is never shown twice on one page.
 
 Weighting
 ---------
-Any of those files may carry a `weight:` in its frontmatter:
+Any project or post may carry a `weight:` in its frontmatter:
 
-    weight: 5   -- five times as likely to be featured as weight 1
+    weight: 5   -- five times as likely to be drawn as weight 1
     weight: 1   -- the default when the field is absent
-    weight: 0   -- never featured (still listed on its own section page)
+    weight: 0   -- never drawn (still listed on its own section page)
 
 A non-numeric weight logs a warning and falls back to 1; a negative one is
 clamped to 0.
@@ -26,10 +31,6 @@ each kind is baked into the HTML as the no-JavaScript fallback.
 Post filenames contain spaces, so hrefs and image paths are percent-encoded
 here. Post `image:` paths are frontmatter-relative and are rewritten relative to
 the site root.
-
-(Before the blog was merged into this repo, the second card fetched
-/math-blog/weights.json and scraped the blog's rendered listing cross-origin.
-That is all gone -- the data is local now.)
 
 Never edit _includes/home-cards.html by hand -- it is overwritten on every
 render. See CLAUDE.md.
@@ -48,6 +49,11 @@ BLOG_POSTS = ROOT / "math-blog" / "posts"
 OUT = ROOT / "_includes" / "home-cards.html"
 
 BLOG_INDEX = "math-blog/"
+
+# Slugs of projects/<slug>.qmd shown, in this order, in the fixed "Featured"
+# section. They are dropped from the random pool so a page never shows the same
+# project twice.
+PINNED = ["ams-course-explorer", "visual-math-lab"]
 
 
 def parse_frontmatter(path):
@@ -100,6 +106,21 @@ def read_weight(fm, path):
     return w
 
 
+def project_item(path, fm, weight=1.0):
+    image = fm.get("image", "")
+    # project frontmatter is written relative to projects/; the home page sits
+    # one level up, so ../images/... becomes images/...
+    if image.startswith("../"):
+        image = image[3:]
+    return {
+        "title": fm["title"],
+        "desc": fm.get("description", ""),
+        "href": url(f"projects/{path.stem}.html"),
+        "image": url(image),
+        "weight": weight,
+    }
+
+
 def collect_posts():
     """Blog posts, newest-looking metadata first. Images in post frontmatter are
     written relative to the post file; rewrite them relative to the site root."""
@@ -133,34 +154,34 @@ def collect_posts():
 
 
 def collect():
-    items, skipped = [], []
+    """(pinned, random pool, slugs excluded for weight 0)."""
+    pinned, items, skipped = {}, [], []
     for path in sorted(PROJECTS.glob("*.qmd")):
         if path.name == "index.qmd":
             continue
         fm = parse_frontmatter(path)
         if not fm or "title" not in fm:
             continue
+        if path.stem in PINNED:
+            pinned[path.stem] = project_item(path, fm)
+            continue
         weight = read_weight(fm, path)
         if weight == 0:
             skipped.append(path.stem)
             continue
-        image = fm.get("image", "")
-        # project frontmatter is written relative to projects/; the home page
-        # sits one level up, so ../images/... becomes images/...
-        if image.startswith("../"):
-            image = image[3:]
-        items.append({
-            "title": fm["title"],
-            "desc": fm.get("description", ""),
-            "href": url(f"projects/{path.stem}.html"),
-            "image": url(image),
-            "weight": weight,
-        })
+        items.append(project_item(path, fm, weight))
     items.sort(key=lambda i: (-i["weight"], i["title"]))
-    return items, skipped
+
+    ordered = []
+    for slug in PINNED:
+        if slug in pinned:
+            ordered.append(pinned[slug])
+        else:
+            print(f"build_home_cards: pinned project {slug!r} not found; skipping")
+    return ordered, items, skipped
 
 
-def card_html(item):
+def card_inner(item):
     img = (
         f'<img class="home-card__thumb" src="{html.escape(item["image"])}" alt="" loading="lazy">'
         if item["image"]
@@ -176,22 +197,43 @@ def card_html(item):
     )
 
 
+def pinned_card(item):
+    return (
+        '  <div class="home-card home-card--pinned">\n'
+        f'    {card_inner(item)}\n'
+        "  </div>"
+    )
+
+
 TEMPLATE = """<!-- GENERATED by _scripts/build_home_cards.py -- do not edit. See CLAUDE.md. -->
-<div class="home-cards">
+<section class="home-section">
+  <h2 class="home-section__title">Featured</h2>
+  <div class="home-cards">
 
-  <div class="home-card" id="featured-project">
-    <div class="home-card__eyebrow">Featured project</div>
-    <div class="home-card__slot">{project_seed}</div>
-    <div class="home-card__footer"><a href="projects/">See all projects &#8594;</a></div>
+{pinned_cards}
+
   </div>
+</section>
 
-  <div class="home-card" id="featured-post">
-    <div class="home-card__eyebrow">From the blog</div>
-    <div class="home-card__slot">{post_seed}</div>
-    <div class="home-card__footer"><a href="{blog}">Read the blog &#8594;</a></div>
+<section class="home-section">
+  <h2 class="home-section__title">A random pick</h2>
+  <p class="home-section__note">Something else of mine, drawn fresh on every visit.</p>
+  <div class="home-cards">
+
+    <div class="home-card" id="featured-project">
+      <div class="home-card__eyebrow">Project</div>
+      <div class="home-card__slot">{project_seed}</div>
+      <div class="home-card__footer"><a href="projects/">See all projects &#8594;</a></div>
+    </div>
+
+    <div class="home-card" id="featured-post">
+      <div class="home-card__eyebrow">From the blog</div>
+      <div class="home-card__slot">{post_seed}</div>
+      <div class="home-card__footer"><a href="{blog}">Read the blog &#8594;</a></div>
+    </div>
+
   </div>
-
-</div>
+</section>
 
 <script>
 (function () {{
@@ -235,7 +277,7 @@ TEMPLATE = """<!-- GENERATED by _scripts/build_home_cards.py -- do not edit. See
 
 
 def main():
-    projects, p_skipped = collect()
+    pinned, projects, p_skipped = collect()
     posts, b_skipped = collect_posts()
     if not projects:
         raise SystemExit("build_home_cards: no eligible projects (all weight 0?)")
@@ -243,8 +285,9 @@ def main():
     OUT.parent.mkdir(parents=True, exist_ok=True)
     OUT.write_text(
         TEMPLATE.format(
-            project_seed=card_html(projects[0]),
-            post_seed=card_html(posts[0]) if posts else "",
+            pinned_cards="\n\n".join(pinned_card(i) for i in pinned),
+            project_seed=card_inner(projects[0]),
+            post_seed=card_inner(posts[0]) if posts else "",
             projects_json=json.dumps(projects, ensure_ascii=False),
             posts_json=json.dumps(posts, ensure_ascii=False),
             blog=BLOG_INDEX,
@@ -257,7 +300,8 @@ def main():
 
     print(
         f"build_home_cards: wrote {OUT.relative_to(ROOT)} -- "
-        f"{len(projects)} featurable projects{note(p_skipped)}; "
+        f"{len(pinned)} pinned projects; "
+        f"{len(projects)} in the random project pool{note(p_skipped)}; "
         f"{len(posts)} featurable posts{note(b_skipped)}"
     )
 

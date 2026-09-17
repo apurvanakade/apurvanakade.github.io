@@ -3,17 +3,25 @@
 
 /*-- scss:defaults --*/
 
-$font-family-serif:      "Source Serif 4", "Iowan Old Style", Charter, Georgia, serif !default;
-$font-family-sans-serif: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif !default;
+// One family throughout, as on visualmathlab.com: Inter (with its optical-size
+// axis) for prose, headings and UI alike, JetBrains Mono for code. The earlier
+// serif-body / sans-heading pairing read as corporate; the single-family setting
+// is what makes the two sites feel like siblings.
+$font-family-sans-serif: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif !default;
 $font-family-monospace:  "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace !default;
 
-$font-family-base:       $font-family-serif !default;
+$font-family-base:       $font-family-sans-serif !default;
 $headings-font-family:   $font-family-sans-serif !default;
 
-$font-size-root:         18px !default;
-$line-height-base:       1.62 !default;
+$font-size-root:         17px !default;
+$line-height-base:       1.65 !default;
 $headings-font-weight:   600 !default;
-$headings-line-height:   1.25 !default;
+$headings-line-height:   1.2 !default;
+
+$h1-font-size:           2.25rem !default;
+$h2-font-size:           1.5rem !default;
+$h3-font-size:           1.2rem !default;
+$h4-font-size:           1.05rem !default;
 
 $border-radius:          6px !default;
 $border-radius-lg:       10px !default;
@@ -22,21 +30,18 @@ $border-radius-lg:       10px !default;
 
 // ---------------------------------------------------------------- typography
 body {
-  font-feature-settings: "kern" 1, "liga" 1, "onum" 1;
+  font-feature-settings: "kern" 1, "liga" 1;
   text-rendering: optimizeLegibility;
 }
 
-h1, h2, h3, h4, h5, h6, .navbar, .sidebar, .quarto-title-block .quarto-title-meta,
-.listing-title, .card-title, table thead th, .btn, figcaption, .callout-title {
-  font-family: var(--site-sans);
-  font-variant-numeric: tabular-nums;
-}
+// Page titles are set light (300) with a touch of negative tracking; section
+// headings are semibold with normal tracking. Bold, tightly tracked headings
+// everywhere were the main thing that made the site read as corporate.
+h1, .title { font-weight: 300; letter-spacing: -0.02em; }
+h2 { letter-spacing: normal; margin-top: 2.25rem; margin-bottom: 0.75rem; }
+h3 { margin-top: 1.75rem; }
 
-h1, .title { letter-spacing: -0.02em; }
-h2 { letter-spacing: -0.01em; margin-top: 2.4rem; }
-h3 { margin-top: 1.8rem; }
-
-main.content { max-width: 46rem; }
+main.content { max-width: 50rem; }
 .page-layout-full main.content, main.content.page-columns { max-width: none; }
 
 // tighten Quarto's very airy title block
@@ -53,26 +58,41 @@ blockquote {
 
 // ------------------------------------------------------------------- navbar
 .navbar {
-  font-family: var(--site-sans);
-  font-size: 0.86rem;
-  letter-spacing: 0.01em;
+  font-size: 1rem;
   border-bottom: 1px solid var(--site-rule);
 }
-.navbar-brand { font-weight: 650; letter-spacing: -0.01em; }
+.navbar-brand { font-size: 1.25rem; font-weight: 400; }
 
 // -------------------------------------------------------------- home hero
 .hero-lede {
-  font-size: 1.12rem;
+  font-size: 1.25rem;
+  font-weight: 300;
   line-height: 1.55;
   color: var(--site-muted);
 }
 
 // ------------------------------------------------------------- home cards
+.home-section { margin: 3rem 0 1rem; }
+
+.home-section__title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0 0 0.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--site-rule);
+}
+
+.home-section__note {
+  font-size: 0.95rem;
+  color: var(--site-muted);
+  margin: 0 0 0.25rem;
+}
+
 .home-cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
   gap: 1.5rem;
-  margin: 3rem 0 1rem;
+  margin: 1.25rem 0 0;
 }
 
 .home-card {
@@ -87,23 +107,22 @@ blockquote {
 .home-card:hover { transform: translateY(-3px); box-shadow: 0 8px 24px var(--site-shadow); }
 
 .home-card__eyebrow {
-  font-family: var(--site-sans);
-  font-size: 0.68rem;
-  font-weight: 650;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
+  font-size: 0.82rem;
+  font-weight: 500;
   color: var(--site-accent);
   padding: 1rem 1.15rem 0;
 }
 .home-card__thumb { display: block; width: 100%; height: 9.5rem; object-fit: cover; margin-top: 0.9rem; }
+// a pinned card has no eyebrow, so its thumbnail sits flush with the card top
+.home-card__thumb:first-child { margin-top: 0; }
 .home-card__body { padding: 0.85rem 1.15rem 1.15rem; flex: 1 1 auto; }
-.home-card__title { font-family: var(--site-sans); font-size: 1.05rem; font-weight: 600; margin: 0 0 0.35rem; line-height: 1.3; }
+.home-card__title { font-size: 1.05rem; font-weight: 600; margin: 0 0 0.35rem; line-height: 1.3; }
 .home-card__title a { color: inherit; text-decoration: none; }
 .home-card__title a:hover { color: var(--site-accent); }
 .home-card__desc { font-size: 0.92rem; color: var(--site-muted); margin: 0; }
-.home-card__meta { font-family: var(--site-sans); font-size: 0.74rem; color: var(--site-muted); margin-top: 0.7rem; }
+.home-card__meta { font-size: 0.8rem; color: var(--site-muted); margin-top: 0.7rem; }
 .home-card__footer {
-  font-family: var(--site-sans); font-size: 0.78rem;
+  font-size: 0.85rem;
   padding: 0 1.15rem 1.1rem;
 }
 
@@ -135,25 +154,29 @@ blockquote {
 .quarto-grid-item .card-title { font-size: 1rem; line-height: 1.3; }
 .quarto-grid-item .listing-description { font-size: 0.88rem; color: var(--site-muted); }
 
-.quarto-listing-category .category {
-  font-family: var(--site-sans);
+.quarto-listing-category .category { font-size: 0.9rem; }
+// Quarto's default category chip is tracked uppercase inside a border. Make it
+// a quiet lowercase chip on a soft surface instead. The three selectors match
+// Quarto's own (title block, grid card, default listing) at equal specificity,
+// because a plain `.quarto-category` rule loses to them.
+.quarto-title .quarto-categories .quarto-category,
+.quarto-grid-item .listing-categories .listing-category,
+div.quarto-post .listing-categories .listing-category {
   font-size: 0.78rem;
-}
-.quarto-category, .listing-category {
-  font-family: var(--site-sans);
-  font-size: 0.68rem !important;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  border: 1px solid var(--site-rule);
-  border-radius: 999px;
-  padding: 0.1rem 0.55rem !important;
-  background: transparent;
+  font-weight: 500;
+  letter-spacing: normal;
+  text-transform: none;
+  border: 0;
+  border-radius: $border-radius;
+  padding: 0.15rem 0.55rem;
+  background: var(--site-thumb-bg);
+  color: var(--site-muted);
+  opacity: 1;
 }
 
 // -------------------------------------------------------------------- CV
 .cv-contact {
-  font-family: var(--site-sans);
-  font-size: 0.86rem;
+  font-size: 0.9rem;
   color: var(--site-muted);
   display: flex;
   flex-wrap: wrap;
@@ -170,14 +193,12 @@ blockquote {
   align-items: start;
 }
 .cv-section > .cv-label {
-  font-family: var(--site-sans);
   font-size: 0.95rem;
-  font-weight: 650;
+  font-weight: 600;
   line-height: 1.3;
   margin: 0.15rem 0 0;
   padding: 0;
   border: 0;
-  letter-spacing: -0.005em;
   color: var(--site-ink);
 }
 .cv-section > .cv-body { min-width: 0; }
@@ -199,15 +220,13 @@ blockquote {
 
 .cv-body h3 {
   font-size: 0.95rem;
-  font-weight: 650;
+  font-weight: 600;
   margin: 1.35rem 0 0.45rem;
 }
 .cv-body h3:first-child { margin-top: 0; }
 .cv-body h4 {
-  font-size: 0.84rem;
+  font-size: 0.88rem;
   font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
   color: var(--site-muted);
   margin: 0.9rem 0 0.3rem;
 }
@@ -219,8 +238,7 @@ blockquote {
 @media (max-width: 700px) {
   .cv-section { grid-template-columns: 1fr; gap: 0.35rem 0; }
   .cv-section > .cv-label {
-    font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.09em;
-    color: var(--site-accent); margin-bottom: 0.3rem;
+    font-size: 0.85rem; color: var(--site-accent); margin-bottom: 0.3rem;
   }
   .cv-entry { grid-template-columns: 1fr; }
   .cv-entry > .cv-entry-year { text-align: left; font-size: 0.82rem; }
@@ -245,8 +263,7 @@ h2.cv-anchor {
   margin: 0 0 2rem;
 }
 .project-link {
-  font-family: var(--site-sans);
-  font-size: 0.85rem;
+  font-size: 0.9rem;
   font-weight: 500;
   text-decoration: none;
   padding: 0.4rem 0.9rem;
@@ -260,8 +277,7 @@ h2.cv-anchor {
 
 // ------------------------------------------------------- blog post back-link
 .post-backlink {
-  font-family: var(--site-sans);
-  font-size: 0.85rem;
+  font-size: 0.9rem;
   margin-bottom: 1.75rem;
 }
 .post-backlink a { color: var(--site-muted); text-decoration: none; }
