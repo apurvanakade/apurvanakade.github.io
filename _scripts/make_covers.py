@@ -66,8 +66,6 @@ WAVE = "".join(
 )
 
 COVERS = [
-    ("visual-math-lab",      "Visual Math Lab",           "INTERACTIVE VISUALIZATION", "#0f5f6a", "#123c52", WAVE),
-    ("ams-course-explorer",  "AMS Course Explorer",       "COURSE MAP",                "#1c4f7c", "#16324f", GRID),
     ("lean-formalization",   "Formalizing Math in Lean",  "PROOF ASSISTANT",           "#3b3663", "#231f3f", DOTS),
     ("oer-linear-algebra",   "Open Textbook, Linear Algebra", "OER",                   "#6b4226", "#3f2716", GRID),
     ("expository-notes",     "Expository Notes",          "ASSORTED WRITING",          "#2f4a3f", "#1c2e28", DOTS),

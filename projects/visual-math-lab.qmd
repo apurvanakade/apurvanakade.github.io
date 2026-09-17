@@ -4,7 +4,7 @@ description: "A growing collection of interactive visualizations for teaching an
 date: 2025-06-01
 weight: 5
 categories: ["app", "visualization", "teaching"]
-image: ../images/projects/visual-math-lab.svg
+image: ../images/projects/visual-math-lab.png
 links:
   - text: "Visit VisualMathLab.com"
     href: "https://www.VisualMathLab.com/"
