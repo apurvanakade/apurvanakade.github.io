@@ -58,6 +58,10 @@ The single most important convention in this repo is a hard split between files
 | | `math-blog/posts/*/_metadata.yml` |
 | | `CLAUDE.md` |
 
+`_extensions/apurvanakade/mathviz/` belongs to neither column: it is an
+installed upstream release, overwritten by `_scripts/update-mathviz.sh` on the
+next render. Nobody edits it (see §6, "mathviz").
+
 **Consequences for Claude:**
 
 - Content files stay *prose plus minimal YAML*. No raw HTML, no `::: {.div}`
@@ -76,6 +80,7 @@ The single most important convention in this repo is a hard split between files
 make build     # quarto render --output-dir docs/   (local only, gitignored)
 make clean     # rm -rf docs/
 make covers    # regenerate the SVG project covers (rarely needed)
+make update-mathviz  # force a check for a newer mathviz release
 quarto preview # local live preview (not in the makefile)
 ```
 
@@ -85,27 +90,27 @@ colour schemes before claiming a style change works. Quarto's dark mode is a
 manual toggle — click `.quarto-color-scheme-toggle`, don't rely on
 `prefers-color-scheme`.
 
-`quarto render` runs two hooks defined in `_quarto.yml`:
+`quarto render` runs three hooks defined in `_quarto.yml`:
 
+- **pre-render** `_scripts/update-mathviz.sh` → installs the latest mathviz
+  release into `_extensions/` (§6, "mathviz")
 - **pre-render** `_scripts/build_home_cards.py` → writes `_includes/home-cards.html`
 - **post-render** `_scripts/write_redirects.py` → writes meta-refresh stubs into `docs/`
 
-Neither needs anything beyond the Python standard library.
+The Python hooks need only the standard library; the shell hook needs `git`
+and network access, and falls back to the installed copy when offline.
 
 ### Execution dependencies
 
+**Nothing executes at render time.** Every code cell on the site is Observable
+JS, which runs in the reader's browser. There is no Jupyter kernel, no
+`freeze`, and no `_freeze/` directory.
+
 There is **no R dependency** — the two R plots that used to live in `notes.qmd`
-were rendered once and committed as `images/projects/*.png`. Keep it that way.
-
-There is exactly **one** Jupyter dependency: `math-blog/posts/maths/nth-fibonacci.qmd`
-has Python cells and needs the `myenv` kernel. Every other code cell in the blog
-(50 of them) is Observable JS, which runs in the reader's browser and needs
-nothing at render time.
-
-`math-blog/_metadata.yml` sets `freeze: auto` for that subtree, so `_freeze/` is
-committed and the kernel is only needed when that one post itself changes.
-**`_freeze/` must stay committed** — without it a machine lacking the `myenv`
-kernel cannot build the site.
+were rendered once and committed as `images/projects/*.png` — and **no Python
+cell**. Keep it that way: Python would need a kernel in CI and a committed
+`_freeze/` cache to avoid one. A computation a post needs runs in the browser; a
+fixed figure is rendered once and committed as an image.
 
 ### Deployment
 
@@ -113,7 +118,7 @@ Publishing is CI, not `make`. `.github/workflows/publish.yml` triggers on a push
 to **`2026-quarto`** or a manual `workflow_dispatch`, and:
 
 1. installs Quarto and TinyTeX,
-2. runs `quarto render` (no R, no Jupyter kernel — see above),
+2. runs `quarto render` (no R, no Python — see above),
 3. uploads `docs/` with `actions/upload-pages-artifact` and publishes it with
    `actions/deploy-pages`.
 
@@ -366,8 +371,35 @@ was kept so relative image paths did not have to change. Post images live under
 posts as `../../maths/images/foo.png`.
 
 `math-blog/posts/*/_metadata.yml` attaches the back-link include for each
-subtree. `math-blog/_metadata.yml` carries the kernel, freeze and execute
-settings for the whole subtree (see §2).
+subtree. `math-blog/_metadata.yml` sets `echo: false` for the whole subtree.
+
+### mathviz
+
+[mathviz](https://github.com/apurvanakade/mathviz) is the chart and panel
+library behind Visual Math Lab and the Monte Carlo notes: Plotly charts that
+follow the light/dark toggle, `ojs-*` control panels, and numerical helpers
+under `window.VM`. This site consumes it the same way Monte-Carlo-Methods does.
+
+- **Install.** `_scripts/update-mathviz.sh` (a copy of Monte-Carlo-Methods'
+  hook) installs the newest tagged release into
+  `_extensions/apurvanakade/mathviz/` before every render — a full render
+  always checks, `quarto preview` at most hourly. A new mathviz release reaches
+  this site on the next render. Never edit the installed copy; fix mathviz
+  upstream.
+- **Opt in per post, not site-wide.** A post that uses `VM` puts
+  `filters: [mathviz]` in its frontmatter. The filter loads Plotly (~3.5 MB)
+  and math.js from a CDN into the page's `<head>`, so enabling it in
+  `_quarto.yml` or `math-blog/_metadata.yml` would make every page download
+  them. Currently only `nth-fibonacci.qmd` opts in.
+- **Not mathviz's theme.** Monte-Carlo-Methods uses mathviz's SCSS theme; this
+  site keeps its own. Instead, `_theme/base.scss` points mathviz's `--vm-*`
+  tokens at the `--site-*` palette. They are declared on `body`, not `:root`,
+  because mathviz's dark defaults sit on `body.quarto-dark` and a value
+  inherited from `:root` would lose to them.
+- **Writing a chart.** Follow Monte-Carlo-Methods' CLAUDE.md ("Figures"): a
+  `vmTheme` / `chartColors` pair per page, a `VM.plotting.persistentPlot()`
+  per chart made in a setup cell, trace colours from `chartColors.*` never
+  literals, and `VM.plotting.plotWithLegend` for any chart with a legend.
 
 ### Post frontmatter
 
@@ -485,8 +517,10 @@ from the files themselves. Each one is described in full in the section named.
 
 - **GitHub Pages must stay off on the old `math-blog` repo** (§6). Turning it
   on would shadow every post on this site with the archive copy.
-- **`_freeze/` must stay committed** (§2). Without it, a machine without the
-  `myenv` Jupyter kernel cannot build the site.
+- **mathviz is fetched at render time** (§6). The pre-render hook needs
+  network access to update it; offline it builds with the installed copy, and
+  on a fresh clone with no copy it fails. `_extensions/` is committed so that
+  case does not arise.
 - **`docs/` is gitignored, local build output** (§2). It is not committed and
   has no effect on the published site — only a push to `2026-quarto` (or a
   manual workflow run) does. Never hand-edit it.

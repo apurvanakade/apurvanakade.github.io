@@ -7,6 +7,8 @@ project:
     - "math-blog/**/*.qmd"
     - "!cv/"
   pre-render:
+    # Pulls the latest mathviz release into _extensions/ (see CLAUDE.md §6).
+    - _scripts/update-mathviz.sh
     - _scripts/build_home_cards.py
   post-render:
     - _scripts/write_redirects.py

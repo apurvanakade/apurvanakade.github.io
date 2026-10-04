@@ -5,9 +5,7 @@ date: 2025-08-11
 weight: 1
 author: Apurva Nakade
 categories: ['number theory', 'research', 'open', 'fibonacci', 'exploration']
-
-execute: 
-  cache: true
+filters: [mathviz]
 ---
 
 Here's a seemingly simple question that lacks a clean solution:
@@ -30,79 +28,52 @@ Here's the list of such numbers up to 10,000.
 
 
 
-```{python}
-import matplotlib.pyplot as plt
-import numpy as np
-
-def fibonacci_cycle(n):
-    """
-    Find the smallest k such that F_k ≡ 0 (mod n), where F_k is the k-th Fibonacci number.
-    This is called the entry point or rank of apparition of n in the Fibonacci sequence.
-    
-    Args:
-        n: The modulus
-    
-    Returns:
-        The smallest k such that n divides F_k
-    """
-    if n == 1:
-        return 1  # F_1 = 1 ≡ 0 (mod 1)
-    
-    if n == 2:
-        return 3  # F_3 = 2 ≡ 0 (mod 2)
-    
-    # Start with F_0 = 0, F_1 = 1
-    prev, curr = 0, 1
-    
-    # Check F_0 first (but we typically skip k=0)
-    # Generate Fibonacci numbers until we find one divisible by n
-    for k in range(1, 6 * n + 1):  # Upper bound
-        if curr % n == 0:
-            return k
-        prev, curr = curr, (prev + curr) % n
-    
-    return -1  # Should never reach here for valid input
-
-def calculate_fibonacci_cycles(max_n=100):
-    """
-    Calculate the Fibonacci cycles for all integers from 1 to max_n.
-    
-    Args:
-        max_n: Maximum value of n to compute
-        
-    Returns:
-        tuple: (n_values, cycles)
-    """
-    n_values = list(range(1, max_n + 1))
-    cycles = [fibonacci_cycle(n) for n in n_values]
-    return cycles
-
-
-def find_equal_cycles(n_values, cycles):
-    """
-    Find all values of n where cycle(n) == n
-    
-    Args:
-        m: Maximum value of n to compute
-        cycles: List of α(n)
-        
-    Returns:
-        List of n values where α(n) = n
-    """
-    equal_points = [n for n, ep in zip(n_values, cycles) if ep == n]
-    return equal_points
-
-n = 10000
-m = 1000
-
-cycles = calculate_fibonacci_cycles(n)
+```{ojs}
+//| output: false
+vmTheme = Generators.observe(notify => VM.plotting.onThemeChange(notify))
+chartColors = VM.plotting.colors(vmTheme)
+fibCyclePlot = VM.plotting.persistentPlot({height: "560px"})
+fibRatioPlot = VM.plotting.persistentPlot({height: "420px"})
 ```
 
-```{python}
-equal_points = find_equal_cycles(range(1, n + 1), cycles)
-# Find and print all n where α(n) = n
-print(f"Values of n where α(n) = n (up to {n}):")
-print(equal_points)
+```{ojs}
+//| output: false
+// α(n): the smallest k with n | F_k (the rank of apparition of n).
+// Walks F_k mod n until it hits 0; α(n) <= 2n, so 6n is a safe bound.
+function fibonacciCycle(n) {
+  if (n === 1) return 1
+  let prev = 0
+  let curr = 1
+  for (let k = 1; k <= 6 * n; k++) {
+    if (curr % n === 0) return k
+    const next = (prev + curr) % n
+    prev = curr
+    curr = next
+  }
+  return -1
+}
+
+fibN = 10000
+fibM = 1000
+
+// fibCycles[n - 1] is α(n), for n = 1, ..., fibN.
+fibCycles = {
+  const cycles = []
+  for (let n = 1; n <= fibN; n++) cycles.push(fibonacciCycle(n))
+  return cycles
+}
+
+fibEqualPoints = {
+  const points = []
+  for (let n = 1; n <= fibN; n++) {
+    if (fibCycles[n - 1] === n) points.push(n)
+  }
+  return points
+}
+```
+
+```{ojs}
+html`<p><strong>Values of n where α(n) = n (up to ${fibN.toLocaleString()}):</strong><br>${fibEqualPoints.join(", ")}</p>`
 ```
 
 This is a much simpler question, and the sequence appears to consist of all numbers that are powers of 5 or 12 times a power of 5. The OEIS entry for this sequence is [https://oeis.org/A289586](https://oeis.org/A289586).
@@ -139,122 +110,104 @@ I wonder what patterns exist in the ratios $n / \alpha(n)$...
 
 :::
 
-```{python}
-def plot_fibonacci_cycles(m, cycles, equal_points):
-    """
-    Plot the Fibonacci cycles
-    
-    Args:
-        n_values: List of n values
-        cycles: List of α(n) values
-    """
-    plt.figure(figsize=(8, 8))
-    plt.scatter(range(1, m+1), cycles[:m], c='orange', s=10, alpha=0.25)
-
-    plt.xlabel('n', fontsize=12)
-    plt.ylabel('First k such that n | F_k', fontsize=12)
-    plt.title('Smallest k where F_k ≡ 0 (mod n)', fontsize=14)
-    plt.ylim(-50, 1200)
-    plt.grid(True, alpha=0.3)
-
-    # truncate equal_points to m
-    equal_points = [n for n in equal_points if n <= m]
-
-    # Add vertical lines for equal points
-    for ep in equal_points:
-        plt.plot(ep, ep, 'ro', markersize=5, label=f'α({ep}) = {ep}')
-
-    # Add horizontal line at y = x
-    plt.plot(range(1, m + 1), range(1, m + 1), 'b--', linewidth=0.5)
-    plt.legend()
-
-    plt.tight_layout()
-    plt.show()
-
-# Plot the cycles
-plot_fibonacci_cycles(m, cycles, equal_points)
+```{ojs}
+{
+  const xs = []
+  const ys = []
+  for (let n = 1; n <= fibM; n++) {
+    xs.push(n)
+    ys.push(fibCycles[n - 1])
+  }
+  const equal = []
+  for (const n of fibEqualPoints) {
+    if (n <= fibM) equal.push(n)
+  }
+  const traces = [
+    {x: xs, y: ys, type: "scatter", mode: "markers", name: "α(n)",
+      marker: {color: VM.plotting.alpha("fn", 0.35), size: 5}},
+    {x: [1, fibM], y: [1, fibM], type: "scatter", mode: "lines", name: "α(n) = n line",
+      line: {color: chartColors.muted, width: 1, dash: "dash"}},
+    {x: equal, y: equal, type: "scatter", mode: "markers", name: "α(n) = n",
+      marker: {color: chartColors.alt, size: 8, line: {color: chartColors.halo, width: 1}}}
+  ]
+  return VM.plotting.plotWithLegend(fibCyclePlot, traces, {
+    title: {text: "Smallest k where F_k ≡ 0 (mod n)"}, margin: {t: 40},
+    xaxis: {title: "n"}, yaxis: {title: "First k such that n | F_k", range: [-50, 1200]}
+  })
+}
 ```
 
-```{python}
+```{ojs}
+//| output: false
+function gcd(a, b) {
+  while (b !== 0) {
+    const t = a % b
+    a = b
+    b = t
+  }
+  return a
+}
 
-def find_ratios(cycles):
-    """
-    Find the ratio n / α(n) for each n.
-    
-    Args:
-        cycles: List of α(n) values
-
-    Returns:
-        List of ratios n / α(n)
-    """
-    ratios = [n / ep if ep != 0 else 0 for n, ep in zip(range(1, len(cycles) + 1), cycles)]
-    return ratios
-
-ratios = find_ratios(cycles)
+// Groups n = 1, ..., fibN by the ratio n / α(n), kept as an exact fraction
+// so that 4/3 and 1.3333... can't drift apart.
+fibRatios = {
+  const groups = new Map()
+  for (let n = 1; n <= fibN; n++) {
+    const a = fibCycles[n - 1]
+    const g = gcd(n, a)
+    const num = n / g
+    const den = a / g
+    const key = `${num}/${den}`
+    if (!groups.has(key)) {
+      let label = key
+      if (den === 1) label = String(num)
+      groups.set(key, {label, num, den, value: num / den, ns: []})
+    }
+    groups.get(key).ns.push(n)
+  }
+  return Array.from(groups.values())
+}
 ```
 
-
-```{python}
-
-def find_integers_with_ratio(ratios, k):
-    """
-    Find all integers n such that n / α(n) = k.
-    
-    Args:
-        ratios: List of ratios n / α(n)
-        k: The ratio to check
-        
-    Returns:
-        List of integers n such that n / α(n) = k
-    """
-    return [n for n, ratio in zip(range(1, len(ratios) + 1), ratios) if ratio == k] 
-
-k_values = set(ratios)
-integer_ratios = {k: find_integers_with_ratio(ratios, k) for k in k_values}
-
-import pandas as pd
-
-# Prepare data for the table
-table_data = []
-for k, integers in integer_ratios.items():
-  # if len(integers) > 1:
-  table_data.append({
-    'n / α(n)': k, 
-    'count': len(integers),
-    'n values': ', '.join(map(str, integers))
-    })
-
-# Create and display the table
-df = pd.DataFrame(table_data)
+```{ojs}
+{
+  // The ratios shared by more than seven n, in increasing order.
+  const common = []
+  for (const r of fibRatios) {
+    if (r.ns.length > 7) common.push(r)
+  }
+  common.sort((a, b) => a.value - b.value)
+  const labels = []
+  const counts = []
+  const colors = []
+  for (const r of common) {
+    labels.push(r.label)
+    counts.push(r.ns.length)
+    let color = chartColors.muted
+    if (r.label === "1") color = chartColors.alt
+    if (r.label === "4/3") color = chartColors.ok
+    colors.push(color)
+  }
+  return fibRatioPlot([{x: labels, y: counts, type: "bar", marker: {color: colors}}], {
+    title: {text: "Count of the most common ratios n / α(n)"}, margin: {t: 40},
+    showlegend: false,
+    xaxis: {title: "n / α(n)", type: "category", tickangle: -90}, yaxis: {title: "count"}
+  })
+}
 ```
 
-
-```{python}
-
-df_most_common = df[df['count'] > 7].sort_values(by='n / α(n)', ascending=True)
-
-# bar chart of most common ratios
-plt.figure(figsize=(8, 6))
-plt.bar(df_most_common['n / α(n)'].apply(lambda x: f"{x:.2f}"), df_most_common['count'], color='skyblue')
-# add a red bar at ratio 1
-plt.bar('1.00', df_most_common[df_most_common['n / α(n)'] == 1]['count'].values[0], color='red', label='Ratio 1')
-# add a green bar at ratio 4/3
-plt.bar('1.33', df_most_common[df_most_common['n / α(n)'] == 4/3]['count'].values[0], color='green', label='Ratio 4/3')
-plt.xlabel('n / α(n)', fontsize=12)
-plt.ylabel('')
-plt.title('Count of the Most Common Ratios n / α(n)', fontsize=14)
-plt.xticks(rotation=90)
-plt.grid(axis='y', alpha=0.3)
-plt.tight_layout()
-plt.show()
-
-```
-
-
-```{python}
-# sort df by count
-df = df.sort_values(by='count', ascending=False)
-
-# print(df.to_markdown(index=False))
-print(df.head(30).to_markdown(index=False))
+```{ojs}
+{
+  // The 30 most common ratios, by count.
+  const sorted = fibRatios.slice()
+  sorted.sort((a, b) => b.ns.length - a.ns.length || a.value - b.value)
+  const rows = []
+  for (const r of sorted.slice(0, 30)) {
+    rows.push(html`<tr><td class="text-nowrap">${r.label}</td><td class="text-end">${r.ns.length}</td><td>${r.ns.join(", ")}</td></tr>`)
+  }
+  return html`<table class="table table-sm small">
+    <thead><tr><th>n / α(n)</th><th class="text-end">count</th><th>n values</th></tr></thead>
+    <tbody>${rows}</tbody>
+  </table>`
+}
 ```

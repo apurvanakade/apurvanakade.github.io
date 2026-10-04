@@ -1,10 +1,5 @@
 # AI-owned: settings for the whole math-blog/ subtree. See CLAUDE.md.
-# Only posts/maths/nth-fibonacci.qmd actually executes Python; every other code
-# cell is Observable JS, which runs in the reader's browser. freeze: auto keeps
-# the executed output committed under _freeze/ so the kernel is needed only when
-# that post itself changes.
-jupyter: myenv
-freeze: auto
+# Every code cell in the blog is Observable JS, which runs in the reader's
+# browser; nothing executes at render time, so there is no kernel and no freeze.
 execute:
-  cache: true
   echo: false

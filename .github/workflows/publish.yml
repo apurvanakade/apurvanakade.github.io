@@ -41,10 +41,9 @@ jobs:
 
       - name: Render site
         run: quarto render
-        # No R, no Jupyter kernel: math-blog's one executed post is covered by
-        # its committed _freeze/ cache (see CLAUDE.md §2, "Execution
-        # dependencies"). Every other code cell is Observable JS, which runs in
-        # the reader's browser, not at render time.
+        # No R, no Python: every code cell is Observable JS, which runs in the
+        # reader's browser, not at render time (see CLAUDE.md §2). The
+        # pre-render hook fetches the latest mathviz release over the network.
 
       - name: Upload site artifact
         uses: actions/upload-pages-artifact@v3

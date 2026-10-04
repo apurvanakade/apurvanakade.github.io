@@ -282,3 +282,22 @@ h2.cv-anchor {
 }
 .post-backlink a { color: var(--site-muted); text-decoration: none; }
 .post-backlink a:hover { color: var(--site-accent); }
+
+// ------------------------------------------------------------------- mathviz
+// Posts that use mathviz (see CLAUDE.md §6) draw their charts and panels from
+// --vm-* tokens. Point them at this site's palette so a chart matches the page
+// in both schemes. Declared on body, not :root: mathviz's dark defaults sit on
+// body.quarto-dark, and a value set on body beats one inherited from :root.
+// The chart palette's other roles (alt, ok, warn, ...) keep mathviz's colours.
+body {
+  --vm-bg: var(--bs-body-bg);
+  --vm-surface: var(--site-surface);
+  --vm-text: var(--site-ink);
+  --vm-text-soft: var(--site-muted);
+  --vm-border: var(--site-rule);
+  --vm-accent: var(--site-accent);
+  --vm-on-accent: var(--bs-body-bg);
+  --vm-color-fn: var(--site-accent);
+  --vm-color-ink: var(--site-ink);
+  --vm-font-sans: "Inter", system-ui, sans-serif;
+}

@@ -13,8 +13,13 @@ clean:
 preview:
 	quarto preview
 
+# Force a check for a newer mathviz release (the pre-render hook otherwise
+# checks on every full render, and at most hourly under preview).
+update-mathviz:
+	QUARTO_PROJECT_RENDER_ALL=1 _scripts/update-mathviz.sh
+
 # Regenerate the typographic SVG project covers (rarely needed).
 covers:
 	python3 _scripts/make_covers.py
 
-.PHONY: build clean preview covers
+.PHONY: build clean preview covers update-mathviz
