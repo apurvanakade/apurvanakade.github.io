@@ -342,11 +342,10 @@ renaming it silently breaks every link ever shared to a post.
 
 ### The GitHub Pages precedence trap
 
-A project site at `apurvanakade.github.io/math-blog/` (served from the old
-`math-blog` repo) **takes precedence over a `math-blog/` folder in this user
-site**. So the merged copy stays invisible until GitHub Pages is disabled on the
-old repo. If a change to a post appears to have no effect on the live site, this
-is almost certainly why — check that first.
+GitHub Pages is **off** on the old `math-blog` repo, and must stay off. A
+project site at `apurvanakade.github.io/math-blog/` served from that repo would
+take precedence over the `math-blog/` folder in this user site and silently
+shadow every post with the stale archive copy.
 
 ### The archive repo
 
@@ -484,9 +483,8 @@ The script refuses to overwrite a page Quarto actually rendered. Add to the
 Standing facts about this repo that are easy to trip over and are not obvious
 from the files themselves. Each one is described in full in the section named.
 
-- **The merged blog is shadowed until GitHub Pages is disabled on the old
-  `math-blog` repo** (§6). This is the first thing to check if an edit to a post
-  has no visible effect on the live site.
+- **GitHub Pages must stay off on the old `math-blog` repo** (§6). Turning it
+  on would shadow every post on this site with the archive copy.
 - **`_freeze/` must stay committed** (§2). Without it, a machine without the
   `myenv` Jupyter kernel cannot build the site.
 - **`docs/` is gitignored, local build output** (§2). It is not committed and
