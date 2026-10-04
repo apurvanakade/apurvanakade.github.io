@@ -1,0 +1,26 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git worktree *)",
+      "Bash(git push origin *)",
+      "Bash(git push -u origin *)",
+      "Bash(gh pr create *)",
+      "Bash(gh pr view *)",
+      "Bash(gh pr checks *)",
+      "Bash(gh pr merge * --merge*)",
+      "Bash(gh run view *)",
+      "Bash(gh run rerun *)",
+      "Bash(gh run watch *)",
+      "Bash(make build)",
+      "Bash(make cv)",
+      "Bash(make release)"
+    ],
+    "deny": [
+      "Bash(git push * --force*)",
+      "Bash(git push * -f *)",
+      "Bash(git push origin +*)",
+      "Bash(gh pr merge * --admin*)",
+      "Bash(gh pr merge * --squash*)"
+    ]
+  }
+}

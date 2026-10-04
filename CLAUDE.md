@@ -56,7 +56,7 @@ The single most important convention in this repo is a hard split between files
 | `styles.css` (personal CSS overrides) | `math-blog/_metadata.yml` |
 | | `math-blog/_includes/*.html` |
 | | `math-blog/posts/*/_metadata.yml` |
-| | `CLAUDE.md` |
+| | `CLAUDE.md`, `.claude/**` |
 
 `_extensions/apurvanakade/mathviz/` belongs to neither column: it is an
 installed upstream release, overwritten by `_scripts/update-mathviz.sh` on the
@@ -140,6 +140,12 @@ work lands; `main` is a pointer to the last published state**, and pushing
   `develop`, so the merge base stops advancing and every later release
   conflicts. If the fast-forward is refused, reconcile once with
   `git merge -s ours origin/main` on `develop`, push, and retry.
+- **The `ship-pr` skill** (`.claude/skills/ship-pr/SKILL.md`) carries a change
+  through all of the above end to end: `make cv` if the CV changed, worktree,
+  PR, check, merge, release, cleanup. When a rule here changes, update it there
+  too. `.claude/settings.json` pre-approves the commands it runs (PR create,
+  check and `--merge`, pushes to `origin`, `make release`) and denies
+  force-pushes and `--admin`/`--squash` merges.
 - Pushing `develop` publishes nothing. Neither does any other branch.
 - The `2020-bookdown`, `2021-mdbook`, `2022-bookdown`, `blog` and
   `teaching-portfolio` branches are frozen snapshots of earlier versions of
