@@ -1,0 +1,28 @@
+# AI-owned. Renders the site into docs/, the same way `make build` does
+# locally. Shared by publish.yml and pr-check.yml so the two renders can't
+# drift apart. See CLAUDE.md §2.
+
+name: Render the site
+description: Install Quarto and TinyTeX, then quarto render
+
+runs:
+  using: composite
+  steps:
+    - name: Set up Quarto
+      uses: quarto-dev/quarto-actions/setup@v2
+      with:
+        version: "1.10.18"   # keep in sync with the version used locally
+
+    - name: Install TinyTeX
+      shell: bash
+      run: quarto install tinytex --update-path
+      # Renders CV.qmd's PDF format (cv/preamble.tex needs titling, enumitem,
+      # needspace). TinyTeX auto-installs any package still missing on first
+      # use, so an explicit tlmgr step has not been needed.
+
+    - name: Render site
+      shell: bash
+      run: quarto render
+      # No R, no Python: every code cell is Observable JS, which runs in the
+      # reader's browser, not at render time (see CLAUDE.md §2). The
+      # pre-render hook fetches the latest mathviz release over the network.

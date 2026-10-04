@@ -81,6 +81,7 @@ make build     # quarto render --output-dir docs/   (local only, gitignored)
 make clean     # rm -rf docs/
 make covers    # regenerate the SVG project covers (rarely needed)
 make update-mathviz  # force a check for a newer mathviz release
+make release   # fast-forward main to origin/develop and push: publishes the site
 quarto preview # local live preview (not in the makefile)
 ```
 
@@ -112,31 +113,64 @@ cell**. Keep it that way: Python would need a kernel in CI and a committed
 `_freeze/` cache to avoid one. A computation a post needs runs in the browser; a
 fixed figure is rendered once and committed as an image.
 
+### Branches
+
+The same model as Monte-Carlo-Methods and VisualMathLab: **`develop` is where
+work lands; `main` is a pointer to the last published state**, and pushing
+`main` deploys. `main` is the GitHub default branch.
+
+- **This folder is the long-lived `develop` checkout** and stays on `develop`.
+  A feature branch gets a sibling worktree,
+  `git worktree add -b <prefix>/<slug> ../apurvanakade.github.io-<slug> develop`,
+  with its own `quarto preview --port 4201` (count up). Checking out another
+  branch in place rewrites `_quarto.yml`/`_includes/`/`_extensions/`, and a
+  running preview then re-renders the whole site.
+- **Major changes go through a PR into `develop`**, merged with `--merge` once
+  `pr-check.yml` (a full render of the site) is green. It cannot see an OJS
+  cell that throws in the browser, so touched pages are checked in a preview
+  first. **Small changes may be pushed straight to `develop`**: a wording fix
+  in prose, a comment, or repo-only files (`CLAUDE.md`, `makefile`). Anything
+  touching `_quarto.yml`, `_theme/`, `_filters/`, `_includes/`, `_scripts/`,
+  `_extensions/`, an OJS cell or a workflow is not small, however few lines.
+- **Releasing is a fast-forward of `main` to `develop`**: `make release`
+  (`git push origin origin/develop:main`, which the remote refuses unless it is
+  a fast-forward, so no checkout is needed). Never squash- or merge-commit into
+  `main`, and never force-push it: a squash records no parent link back to
+  `develop`, so the merge base stops advancing and every later release
+  conflicts. If the fast-forward is refused, reconcile once with
+  `git merge -s ours origin/main` on `develop`, push, and retry.
+- Pushing `develop` publishes nothing. Neither does any other branch.
+- The `2020-bookdown`, `2021-mdbook`, `2022-bookdown`, `blog` and
+  `teaching-portfolio` branches are frozen snapshots of earlier versions of
+  the site, read by nothing.
+
 ### Deployment
 
-Publishing is CI, not `make`. `.github/workflows/publish.yml` triggers on a push
-to **`2026-quarto`** or a manual `workflow_dispatch`, and:
+Publishing is CI, not `make build`. `.github/workflows/publish.yml` triggers on
+a push to **`main`** or a manual `workflow_dispatch`, and:
 
-1. installs Quarto and TinyTeX,
-2. runs `quarto render` (no R, no Python — see above),
-3. uploads `docs/` with `actions/upload-pages-artifact` and publishes it with
+1. renders the site through the composite action `.github/actions/render`
+   (installs Quarto and TinyTeX, runs `quarto render`; no R, no Python, see
+   above),
+2. uploads `docs/` with `actions/upload-pages-artifact` and publishes it with
    `actions/deploy-pages`.
+
+`.github/workflows/pr-check.yml` runs the same composite on every PR into
+`develop` and attaches the rendered site as a downloadable `site` artifact.
+The render lives in one composite so the two workflows cannot drift; bump its
+Quarto `version:` pin when bumping Quarto locally.
 
 This is GitHub's **native Pages deployment**, matching Settings → Pages →
 Source: "GitHub Actions". The site is served from the uploaded artifact.
 **Nothing is pushed to a `gh-pages` branch** — that branch is a leftover from a
 2023 deployment method, is not read by anything, and can be deleted. Changing
 the Pages source back to "Deploy from a branch" would silently stop deploys,
-because this workflow never writes a branch.
+because this workflow never writes a branch. (Monte-Carlo-Methods and
+VisualMathLab do publish to `gh-pages`; this site deliberately does not.)
 
 `docs/` is therefore **local build output only** — gitignored, never committed
 from a source branch, and never hand-edited. A local `make build` is for
 preview; it has no effect on the published site.
-
-**`2026-quarto` is the deploy branch, not `2023-quarto`.** `2023-quarto` is the
-repo's GitHub default branch but is kept only for stashing older work; pushing
-to it publishes nothing. If the default branch is ever switched to
-`2026-quarto`, the `branches:` list in the workflow stays correct as written.
 
 ---
 
@@ -522,10 +556,10 @@ from the files themselves. Each one is described in full in the section named.
   on a fresh clone with no copy it fails. `_extensions/` is committed so that
   case does not arise.
 - **`docs/` is gitignored, local build output** (§2). It is not committed and
-  has no effect on the published site — only a push to `2026-quarto` (or a
+  has no effect on the published site — only a push to `main` (or a
   manual workflow run) does. Never hand-edit it.
-- **Deploys come from `2026-quarto`, not the default branch** (§2).
-  `2023-quarto` is GitHub's default branch for this repo but publishes nothing.
+- **Deploys come from `main`; work lands on `develop`** (§2). Release with
+  `make release`, a fast-forward only. Never squash into or force-push `main`.
 - **Pages is set to "GitHub Actions", not "Deploy from a branch"** (§2). The
   workflow uploads an artifact; it never writes `gh-pages`. Flipping that
   setting back to a branch source stops publishing silently.

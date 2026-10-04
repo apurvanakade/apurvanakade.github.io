@@ -1,0 +1,35 @@
+# AI-owned. Renders the whole site on every pull request into develop, so a
+# red check means some page no longer builds. It can't see an OJS cell that
+# throws in the browser; that is checked in a local preview before the PR.
+# The rendered site is attached to the run as the `site` artifact.
+name: Verify pull request
+
+on:
+  pull_request:
+    branches: [develop]
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+
+concurrency:
+  group: pr-check-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Check out source
+        uses: actions/checkout@v4
+
+      - name: Render the site
+        uses: ./.github/actions/render
+
+      - name: Attach the rendered site
+        uses: actions/upload-artifact@v4
+        with:
+          name: site
+          path: docs/
+          retention-days: 7

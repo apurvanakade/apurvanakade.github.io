@@ -1,4 +1,6 @@
-# AI-owned. Builds the site with Quarto and deploys it to GitHub Pages.
+# AI-owned. Builds the site with Quarto and deploys it to GitHub Pages on
+# every push to main (a release: `make release` fast-forwards main to
+# develop).
 #
 # This uses GitHub's native Pages deployment (upload-pages-artifact +
 # deploy-pages), which matches the repo setting Settings -> Pages -> Source:
@@ -8,7 +10,7 @@ name: Publish site
 
 on:
   push:
-    branches: [2026-quarto]
+    branches: [main]
   workflow_dispatch: {}
 
 permissions:
@@ -28,22 +30,8 @@ jobs:
       - name: Check out source
         uses: actions/checkout@v4
 
-      - name: Set up Quarto
-        uses: quarto-dev/quarto-actions/setup@v2
-        with:
-          version: "1.10.18"   # keep in sync with the version used locally
-
-      - name: Install TinyTeX
-        run: quarto install tinytex --update-path
-        # Renders CV.qmd's PDF format (cv/preamble.tex needs titling, enumitem,
-        # needspace). TinyTeX auto-installs any package still missing on first
-        # use, so an explicit tlmgr step has not been needed.
-
-      - name: Render site
-        run: quarto render
-        # No R, no Python: every code cell is Observable JS, which runs in the
-        # reader's browser, not at render time (see CLAUDE.md §2). The
-        # pre-render hook fetches the latest mathviz release over the network.
+      - name: Render the site
+        uses: ./.github/actions/render
 
       - name: Upload site artifact
         uses: actions/upload-pages-artifact@v3
