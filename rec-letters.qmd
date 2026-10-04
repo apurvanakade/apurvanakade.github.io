@@ -1,37 +1,46 @@
 ---
 title: Recommendation Letters
-date: 2023-09-24 15:17:32
+date: 2026-10-04
 toc: false
 ---
 
-source: [https://www.hmc.edu/mathematics/wp-content/uploads/sites/49/2020/03/recommendation-letters.pdf](https://www.hmc.edu/mathematics/wp-content/uploads/sites/49/2020/03/recommendation-letters.pdf)
+I consider writing recommendation letters a very important part of my job. I believe that if you participated in my courses and did well, then I owe you a recommendation letter. By writing you a letter I am not doing you a favor; I'm simply fulfilling my duties and rewarding you appropriately for your efforts.
 
+Having said that, I will only write you a letter if I believe that your performance and participation in my class(es) were worth commending. I will not write a letter for you if I do not think I can write you a strong one.
 
+If I've emailed you this page, then I'm interested in (**but haven't yet fully agreed to**) writing a letter for you. Please read this short page carefully. Writing recommendation letters takes time and effort, and I expect you to do your part: if you do not send me the information requested below, I will not reply to your emails.
 
-If I have recently agreed to write any recommendation letters for you, then at
-least two weeks before the first letter is due, please email me
-• a copy of your personal statement (if applicable),
-• an unofficial copy of your transcript, and
-• a copy of your resume.
-In the same email, please send me your answers to the following questions:
-1. What is your name, graduation year, and major?
-2. For what are you applying (e.g., graduate school)? List the programs to
-which you are applying, together with due dates.
-3. How long have I known you (in years and months), and what is my relationship to you (e.g., instructor, research advisor, etc.)?
-4. For what classes have I had you, what final grades did I assign you, and
-how did you distinguish yourself in my classes?
-5. How would you describe yourself? What are your strengths? What are
-your weaknesses? Your response to this question is important to me, so
-the more details the better.
-6. What are some of your academic and nonacademic accomplishments?
-7. What makes me particularly qualified to write a letter for you?
-8. What makes you particularly qualified for this position/honor/award?
-9. What are your long term goals and will this position/honor/award help?
-If so, how?
-10. Additional comments (summer research, interesting jobs, hobbies, etc.)?
-Finally, please send me email reminders as deadlines approach, and feel free
-to chat with me about other ways you can make the application process go
-smoothly. Good luck!
-Michael Orrison
-Professor of Mathematics
-Harvey Mudd College
+## Criteria
+
+Here are the rough criteria I use when deciding whether to write a letter, by type of program:
+
+| Program | Grade in my course | What else I look for | Will I write one? |
+|:------|:------|:----------|:------|
+| JHU AMS Combined Masters | Good | That you have kept taking interesting math classes | Yes; a brief letter, internal to the department |
+| Summer internships, REUs, etc. | Matters less | Work ethic, office hours, problem solving, persistence | Yes, if you were engaged in my course |
+| PhD programs and jobs | Good, but not enough | Genuine interest, and doing more than what is typically expected | Only if you were **exceptional**[^exceptional] |
+| Non-JHU Masters | n/a | n/a | Usually not, but I'm happy to be a reference[^reference] |
+
+[^exceptional]: Exceptional does not mean being at the top of the class. It means demonstrating genuine interest and doing more than what is typically expected.
+
+[^reference]: I do not think there is anything useful I can add to a letter that is not already in your transcript, but I'm happy to answer an email or a phone call from the program.
+
+## Documents to Send
+
+At least a **month before the first deadline**, send me every document tied to your application, all in one email with the subject line "Recommendation letter: *your name*". This includes:
+
+- A photo (please do not assume that I'll remember your name after two years)
+- Which of my courses you took, and in which term
+- Your final grade in each of my courses
+- CV
+- Unofficial transcript
+- (Draft) statement of purpose
+- Other work related to the program you're applying to, or to my courses
+
+If you're applying to PhD programs, also include a list of the programs, with each one's deadline and how it collects letters.
+
+Please also tell me what you'd like me to highlight in your letter. Do not be modest or shy. Be clear, upfront and **advocate for yourself**; err on the side of claiming too much. I will use this as starting material for my letter. If I do not agree with anything you say, I'll simply leave it out, so you should not feel uncomfortable about blowing your own trumpet. But if you do not remind me of something important, I might fail to add it to the letter.
+
+## What Happens Next
+
+Once I have everything, I'll confirm whether I can write your letter. Please send me a reminder email about a week before each deadline.
