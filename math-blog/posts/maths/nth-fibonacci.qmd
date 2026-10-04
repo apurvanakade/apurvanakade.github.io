@@ -5,6 +5,7 @@ date: 2025-08-11
 weight: 1
 author: Apurva Nakade
 categories: ['number theory', 'research', 'open', 'fibonacci', 'exploration']
+image: "../../maths/images/self-fibonacci-plot.png"
 filters: [mathviz]
 ---
 
