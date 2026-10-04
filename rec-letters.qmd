@@ -8,7 +8,9 @@ I consider writing recommendation letters a very important part of my job. I bel
 
 Having said that, I will only write you a letter if I believe that your performance and participation in my class(es) were worth commending. I will not write a letter for you if I do not think I can write you a strong one.
 
-If I've emailed you this page, then I'm interested in (**but haven't yet fully agreed to**) writing a letter for you. Please read this short page carefully. Writing recommendation letters takes time and effort, and I expect you to do your part: if you do not send me the information requested below, I will not reply to your emails.
+If you found this page on my website, please send me a brief email first to ask whether I can write you a letter. If I've emailed you this page, then I'm interested in (**but haven't yet fully agreed to**) writing one.
+
+Writing a strong recommendation letter takes significant time and effort. To help me write the best possible letter for you, I need you to do your part. Please follow the instructions below carefully; I cannot begin working on your letter until I receive all the requested information.
 
 ## Criteria
 
@@ -37,10 +39,10 @@ At least a **month before the first deadline**, send me every document tied to y
 - (Draft) statement of purpose
 - Other work related to the program you're applying to, or to my courses
 
-If you're applying to PhD programs, also include a list of the programs, with each one's deadline and how it collects letters.
+If you're applying to PhD programs, also share a Google Sheet or Excel spreadsheet listing every program, its deadline, how it collects letters (e.g. MathPrograms.org, a portal link, direct email), and a column for me to check off when I've submitted.
 
 Please also tell me what you'd like me to highlight in your letter. Do not be modest or shy. Be clear, upfront and **advocate for yourself**; err on the side of claiming too much. I will use this as starting material for my letter. If I do not agree with anything you say, I'll simply leave it out, so you should not feel uncomfortable about blowing your own trumpet. But if you do not remind me of something important, I might fail to add it to the letter.
 
 ## What Happens Next
 
-Once I have everything, I'll confirm whether I can write your letter. Please send me a reminder email about a week before each deadline.
+Once I have everything, I'll confirm whether I can write your letter. Please send me a reminder email about a week before each deadline, with the subject line "Recommendation letter reminder: *your name*, due *date*".
