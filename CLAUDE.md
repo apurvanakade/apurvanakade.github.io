@@ -142,7 +142,8 @@ work lands; `main` is a pointer to the last published state**, and pushing
   `git merge -s ours origin/main` on `develop`, push, and retry.
 - **The `ship-pr` skill** (`.claude/skills/ship-pr/SKILL.md`) carries a change
   through all of the above end to end: `make cv` if the CV changed, worktree,
-  PR, check, merge, release, cleanup. When a rule here changes, update it there
+  PR, check, merge, cleanup, and always a final `make release`, even for a
+  repo-only change, so `main` never lags `develop`. When a rule here changes, update it there
   too. `.claude/settings.json` pre-approves the commands it runs (PR create,
   check and `--merge`, pushes to `origin`, `make release`) and denies
   force-pushes and `--admin`/`--squash` merges.

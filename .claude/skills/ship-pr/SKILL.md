@@ -21,7 +21,8 @@ Run `git status` and `git diff` (staged and unstaged), and
 A **small** change may be committed straight onto `develop`: a wording fix in
 prose, a comment, or repo-only files (`CLAUDE.md`, `makefile`, `.claude/**`).
 Do step 1 (CV), commit, `git push origin develop`, then skip to step 6
-(release) unless the change is repo-only, in which case stop.
+(release). Every run ends with a release, repo-only changes included, so
+`main` never lags `develop` and the site is always re-rendered.
 
 Anything touching `_quarto.yml`, `_theme/`, `_filters/`, `_includes/`,
 `_scripts/`, `_extensions/`, `.github/` or an OJS cell is **not** small,
@@ -91,9 +92,9 @@ git -C ~/Github/apurvanakade.github.io pull --ff-only
 
 `--merge`, not `--squash`: it keeps the branch's history on `develop`.
 
-## 6. Release: fast-forward main
+## 6. Release: fast-forward main (always)
 
-From the `develop` folder:
+Every run ends here, whatever the change. From the `develop` folder:
 
 ```sh
 make release    # git fetch origin && git push origin origin/develop:main
@@ -118,5 +119,5 @@ git push origin --delete <branch>
 
 ## Report
 
-Say what shipped: the PR link, whether `CV.pdf` was rebuilt, any review
+Say what shipped: the PR link (or the direct push), whether `CV.pdf` was rebuilt, any review
 comments and what was done with them, and whether the deploy succeeded.
