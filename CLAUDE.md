@@ -77,7 +77,8 @@ next render. Nobody edits it (see §6, "mathviz").
 ## 2. Build & deploy
 
 ```bash
-make build     # quarto render --output-dir docs/   (local only, gitignored)
+make build     # quarto render --to html --output-dir docs/   (local only, gitignored)
+make cv        # rebuild CV.pdf with the local LaTeX; commit the result
 make clean     # rm -rf docs/
 make covers    # regenerate the SVG project covers (rarely needed)
 make update-mathviz  # force a check for a newer mathviz release
@@ -150,8 +151,8 @@ Publishing is CI, not `make build`. `.github/workflows/publish.yml` triggers on
 a push to **`main`** or a manual `workflow_dispatch`, and:
 
 1. renders the site through the composite action `.github/actions/render`
-   (installs Quarto and TinyTeX, runs `quarto render`; no R, no Python, see
-   above),
+   (installs Quarto, runs `quarto render --to html`; no LaTeX, no R, no
+   Python),
 2. uploads `docs/` with `actions/upload-pages-artifact` and publishes it with
    `actions/deploy-pages`.
 
@@ -187,6 +188,7 @@ math-blog/posts/maths/*.qmd     the posts themselves
 math-blog/posts/scribbles/*.qmd
 math-blog/drafts/*.qmd          rendered and published, but not listed anywhere
 CV.qmd                          assembles cv/*.qmd; renders to HTML *and* PDF
+CV.pdf                          committed; built locally by `make cv`
 cv/<section>.qmd                one CV section per file
 teaching-statement.qmd
 rec-letters.qmd
@@ -223,7 +225,16 @@ version mirrors it.
   `2023-`, `Fall 2024`, `Winter, Spring 2022`.
 - The name / affiliation / contact header is built from `cv-subtitle` and
   `cv-contact` in `CV.qmd`'s frontmatter.
-- The PDF gets an automatic `Updated on: <date>` line.
+- The PDF gets an automatic `Updated on: <date>` line, the date `make cv` ran.
+
+**The PDF is built locally, not in CI.** CI renders HTML only, so it needs no
+LaTeX install (TinyTeX's install step queried GitHub's API and failed deploys
+on its anonymous rate limit). `make cv` renders `CV.qmd` to PDF with the local
+LaTeX and copies it to `CV.pdf` at the repo root, which is committed;
+`resources: [CV.pdf]` in `_quarto.yml` copies it into `docs/`, where the HTML
+CV's "Download PDF" link points. So after editing `CV.qmd` or `cv/*.qmd`, run
+`make cv` and commit `CV.pdf` with the change, or the PDF goes stale. Do not
+remove `pdf` from `CV.qmd`'s formats; `make cv` depends on it.
 
 **So the content convention is: one entry per paragraph, year last, after a comma.**
 Write `Faculty Forward Fellowship, JHU, 2025` and the layout takes care of itself.
