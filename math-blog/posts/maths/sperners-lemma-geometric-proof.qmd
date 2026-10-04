@@ -236,13 +236,13 @@ and let:
 \begin{align*}
 \Delta_t = \{ \delta_t : \delta \in \Delta \}.
 \end{align*}
-Note that $\Delta_0 = \Delta$. However, $\Delta_t$ is simply a collection of triangles — it is not necessarily a triangulation of any shape. In fact, the triangles may overlap, and the union of $\Delta_t$ may not form a proper region.
+Note that $\Delta_0 = \Delta$. However, $\Delta_t$ is simply a collection of triangles; it is not necessarily a triangulation of any shape. In fact, the triangles may overlap, and the union of $\Delta_t$ may not form a proper region.
 
 Our goal is to understand how $\Delta_t$ behaves as $t$ changes.
 
 ## (Signed) Areas
 
-A key observation: if a triangle $\delta$ is **not** an `RGB` triangle, then $\delta_1$ becomes degenerate — it has zero area. Assume, for simplicity, that the area of the original triangle $(v^R, v^G, v^B)$ is **1**. This allows us to use area as a tool to identify `RGB` triangles.
+A key observation: if a triangle $\delta$ is **not** an `RGB` triangle, then $\delta_1$ becomes degenerate: it has zero area. Assume, for simplicity, that the area of the original triangle $(v^R, v^G, v^B)$ is **1**. This allows us to use area as a tool to identify `RGB` triangles.
 
 ::: {#thm-area}
 A triangle $\delta$ is `RGB` if and only if $\text{area}(\delta_1) = 1$.
@@ -321,7 +321,7 @@ If the coloring satisfies Sperner’s condition, then
 \end{align*}
 :::
 
-Sperner’s condition is crucial in asserting that $|\Delta_t|$ is constant. If the condition is violated, $\Delta_t$ is no longer a triangulation of the original triangle — even for small $t > 0$ — and thus we cannot conclude that $|\Delta_t|$ remains constant. You can see this in the app below.
+Sperner’s condition is crucial in asserting that $|\Delta_t|$ is constant. If the condition is violated, $\Delta_t$ is no longer a triangulation of the original triangle, even for small $t > 0$, and thus we cannot conclude that $|\Delta_t|$ remains constant. You can see this in the app below.
 
 ```{ojs}
 viewof N = slider({

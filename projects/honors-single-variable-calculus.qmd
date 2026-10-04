@@ -13,8 +13,8 @@ links:
 ---
 
 For two semesters, Fall 2017 and Fall 2018, I taught an accelerated honors single variable
-calculus course at JHU. The course covers two semesters worth of calculus --- differentiation and
-integration --- in one, structured as a flipped classroom.
+calculus course at JHU. The course covers two semesters worth of calculus (differentiation and
+integration) in one, structured as a flipped classroom.
 
 The course is designed in an IBL format. The prerequisites are pre-calculus and basic theorem
 proving.

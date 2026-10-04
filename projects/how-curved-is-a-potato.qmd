@@ -1,6 +1,6 @@
 ---
 title: "How Curved Is a Potato?"
-description: "Principal, Gaussian, and mean curvature — developed for potatoes embedded in three-space."
+description: "Principal, Gaussian, and mean curvature, developed for potatoes embedded in three-space."
 date: 2018-07-03
 weight: 1
 categories: ["course notes", "Mathcamp", "geometry"]
@@ -13,5 +13,5 @@ links:
 A week-long class from Mathcamp 2018 about the principal, Gaussian, and mean curvature of
 potatoes embedded in $\mathbb{R}^3$.
 
-The prerequisites are linear algebra --- in particular eigenvalues and eigenvectors --- and
+The prerequisites are linear algebra (in particular eigenvalues and eigenvectors) and
 multivariable calculus.

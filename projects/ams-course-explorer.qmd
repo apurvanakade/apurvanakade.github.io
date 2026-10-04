@@ -12,6 +12,6 @@ links:
 
 Course catalogues are lists; curricula are graphs. This app lets students see the
 Applied Mathematics & Statistics offerings at Johns Hopkins as the dependency structure they
-actually are --- which courses unlock which, and what a path through the major looks like.
+actually are: which courses unlock which, and what a path through the major looks like.
 
 Built quickly, mostly to answer advising questions I kept getting asked in person.

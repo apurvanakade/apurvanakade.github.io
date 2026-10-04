@@ -13,7 +13,7 @@ image: "../../scribbles/images/architects-gardeners.png"
 
 I think about this George R.R. Martin quote every time I do course planning. He might have been talking about writing, but I think this is an excellent paradigm for almost everything in life.
 
-One problem I see with university math courses taught by "experts" (i.e. old people) is that they're too rigid—the instructors are too much of an "architect." I'm the opposite: too much of a "gardener."
+One problem I see with university math courses taught by "experts" (i.e. old people) is that they're too rigid; the instructors are too much of an "architect." I'm the opposite: too much of a "gardener."
 
 I love to improvise. I teach best when I can adapt the course to my current students instead of having a preset notion of what I'm supposed to be doing in class. I rarely prepare lecture notes and teach from memory, taking the class wherever it wants to go. This is why I find it hard to teach coordinated courses.
 Writers often say that they discover the stories of their characters as they write them. 
@@ -125,6 +125,6 @@ viewof ruler = {
 }
 ```
 
-This has worked well for me so far, but as I get more responsibilities, I'm noticing this approach isn't sustainable. I'm realizing I need balance—a middle path, as the Buddha would say. The less you plan, the more freedom you have, but that's not necessarily good. Anxiety is the dizziness of freedom. Can art exist without constraints?
+This has worked well for me so far, but as I get more responsibilities, I'm noticing this approach isn't sustainable. I'm realizing I need balance: a middle path, as the Buddha would say. The less you plan, the more freedom you have, but that's not necessarily good. Anxiety is the dizziness of freedom. Can art exist without constraints?
 
 I've been drifting toward the "architect" side. I now use assistive technology and active learning strategies that naturally require prepared materials. I hope to find a sweet spot where I can hover without becoming too rigid. The goal is to have enough structure that my courses mostly run themselves, freeing me to focus on building personal relationships.

@@ -11,7 +11,7 @@ My teaching experience ranges from creating advanced electives and short bootcam
 
 ## Discrete Math
 
-I have been teaching Discrete Math at JHU since Fall 2023. I have taught similar courses in the past at Northwestern University and the University of Western Ontario (UWO). At these institutions, I learned to use technological tools to my advantage. Because of Covid, I experimented extensively with the use of technology—I made online video lectures, created Webwork problems from scratch, and even administered an exam using Webwork. These experiences guided me toward revamping the Discrete Math course at Hopkins.
+I have been teaching Discrete Math at JHU since Fall 2023. I have taught similar courses in the past at Northwestern University and the University of Western Ontario (UWO). At these institutions, I learned to use technological tools to my advantage. Because of Covid, I experimented extensively with the use of technology: I made online video lectures, created Webwork problems from scratch, and even administered an exam using Webwork. These experiences guided me toward revamping the Discrete Math course at Hopkins.
 
 I incorporated three big changes into the course:
 
@@ -26,7 +26,7 @@ This required me to overhaul the entire course and recreate it from scratch. I'm
 I have been teaching Monte Carlo Methods for three semesters now. The course as designed by the previous instructor was excellent, but I found that it needed to be updated to align with the ways students learn today.
 
 - I rewrote my own notes with an online-first approach. There is a course website instead of a textbook: https://apurvanakade.github.io/Monte-Carlo-Methods/. Having an online textbook also allows me to incorporate code directly in the book. I intend to apply for a CTEI grant to update this textbook and further incorporate interactive components.
-- I changed each week's homework to be part programming and part theory. The two components complement each other—the theory explaining the rationale behind the algorithms and the programming assignment immediately showing students how to apply the theory in real applications.
+- I changed each week's homework to be part programming and part theory. The two components complement each other: the theory explaining the rationale behind the algorithms and the programming assignment immediately showing students how to apply the theory in real applications.
 - This course has a variety of fragmented topics with no central theory. As such, I felt that a big exam is not appropriate for this course, as there is nothing that we expect students to memorize. Instead, I switched to having weekly quizzes, which allow students to keep up with the fast-paced material and also reduce exam anxiety.
 - The biggest change I made to this course was adding a final project. Most of the students in this course are seniors and master's students. These students really appreciate having some agency in how they learn and being able to showcase their skills. I have had non-math major students create polished papers and software worthy of being presented at conferences.
 

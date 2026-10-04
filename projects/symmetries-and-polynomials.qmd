@@ -16,6 +16,6 @@ $$
 $$
 
 A two-week class from Intersession 2018 at JHU introducing non-math majors to group theory and its
-connection to the roots of polynomials --- in particular, the unsolvability of the quintic.
+connection to the roots of polynomials, in particular the unsolvability of the quintic.
 
 The class is designed in an IBL format. The prerequisites are basic proof techniques.

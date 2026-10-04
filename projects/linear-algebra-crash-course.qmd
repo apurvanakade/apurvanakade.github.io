@@ -12,7 +12,7 @@ links:
 
 A week-long proof-based introduction to linear algebra from Mathcamp 2018.
 
-The class is designed in an IBL format --- you are expected to solve all the problems in each
+The class is designed in an IBL format: you are expected to solve all the problems in each
 section before moving to the next, and learn the subject in the process.
 
 The prerequisites are basic proof techniques.

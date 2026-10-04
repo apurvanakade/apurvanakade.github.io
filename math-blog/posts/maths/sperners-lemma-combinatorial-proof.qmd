@@ -427,10 +427,10 @@ In other words, we can identify <span style="background-color:rgba(0, 0, 0, 0.25
 
 ## Following the Doors
 
-Picture all the possible paths that can be formed by stepping through these `RG` doors — the black lines in the diagram represent all of these paths.
+Picture all the possible paths that can be formed by stepping through these `RG` doors; the black lines in the diagram represent all of these paths.
 
-- The <span style="background-color:rgba(255, 215, 0, 1)">yellow</span> triangles have paths that **enter through one door and exit through another** — like hallways.  
-- The <span style="background-color:rgba(0, 0, 0, 0.25)">**RGB**</span> triangles have **only one door**, so they are endpoints — there's no way to pass through.
+- The <span style="background-color:rgba(255, 215, 0, 1)">yellow</span> triangles have paths that **enter through one door and exit through another**, like hallways.  
+- The <span style="background-color:rgba(0, 0, 0, 0.25)">**RGB**</span> triangles have **only one door**, so they are endpoints; there's no way to pass through.
 
 Using simple logic, we can deduce the following:
 
@@ -532,7 +532,7 @@ viewof plot = {
 
 ## Questions
 
-The app at the top of this page demonstrates the proof by dividing a triangle uniformly into smaller triangles. However, Sperner's Lemma is much more general: it applies to **any triangulation** of a triangle, as long as the vertices are colored according to Sperner's condition. The proof itself never relies on the triangulation being uniform — so it holds for *any* triangulation. That said, the app is harder to generalize for arbitrary triangulations. 
+The app at the top of this page demonstrates the proof by dividing a triangle uniformly into smaller triangles. However, Sperner's Lemma is much more general: it applies to **any triangulation** of a triangle, as long as the vertices are colored according to Sperner's condition. The proof itself never relies on the triangulation being uniform, so it holds for *any* triangulation. That said, the app is harder to generalize for arbitrary triangulations. 
 
 - **How does one generate random triangulations?**
 

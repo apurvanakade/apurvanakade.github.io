@@ -234,10 +234,10 @@ html`<b>Number of RGB triangles: ${numRGBTriangles}</b>`
 &nbsp;
 
 **Sperner's lemma** is one of the first "non-trivial" theorems I remember hearing about at a high school summer camp.  
-It goes like this: consider a triangulation of a triangle. (Above, we show a regular triangulation of an equilateral triangle, but the theorem applies to *any* triangulation of a triangle.) We color the vertices of the triangle with three colors—say, <span style="color:white; background-color:red">red</span>, <span style="color:white; background-color:green">green</span>, and <span style="color:white; background-color:blue">blue</span>—with the following conditions:
+It goes like this: consider a triangulation of a triangle. (Above, we show a regular triangulation of an equilateral triangle, but the theorem applies to *any* triangulation of a triangle.) We color the vertices of the triangle with three colors (say, <span style="color:white; background-color:red">red</span>, <span style="color:white; background-color:green">green</span>, and <span style="color:white; background-color:blue">blue</span>) with the following conditions:
 
 1. The vertices of the triangle are colored with the three colors: <span style="color:white; background-color:red">red</span>, <span style="color:white; background-color:green">green</span>, and <span style="color:white; background-color:blue">blue</span>.
-2. The vertices that lie on the edges of the triangle are colored with one of the colors of the endpoints of that edge—*this is crucial*.
+2. The vertices that lie on the edges of the triangle are colored with one of the colors of the endpoints of that edge; *this is crucial*.
 3. The vertices that lie in the interior of the triangle may be colored with any of the three colors.
 
 Conditions 1 and 2 are often referred to as the **Sperner condition**.
@@ -258,5 +258,5 @@ What patterns can you see? Why are there so many RGB triangles? **What is the ex
 
 Here's a curious thing I discovered while drawing these colorful plots. How do you loop over all the sub-triangles in the triangulation?  
 
-<!-- You have to run two loops—one for the "upward-facing" triangles and one for the "downward-facing" ones.  
+<!-- You have to run two loops: one for the "upward-facing" triangles and one for the "downward-facing" ones.  
 I don't think there's any way to create a single loop for all these triangles. -->

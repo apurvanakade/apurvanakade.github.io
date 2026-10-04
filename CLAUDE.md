@@ -470,7 +470,10 @@ The script refuses to overwrite a page Quarto actually rendered. Add to the
 - **Math**: `$…$` inline, `$$…$$` display. Avoid `\begin{equation}` — it does not
   round-trip cleanly through the CV filter.
 - **Images** in prose always get a width: `![](path){width="40%"}`.
-- **Em dashes** are written `---` in source.
+- **No em dashes** in content, in any form (`---`, `—`, `&mdash;`). Apurva's
+  preference: use a colon, semicolon, comma, parentheses or a new sentence.
+  This includes frontmatter `description:` text, which also feeds the
+  generated home-page cards.
 - Section headers are `##` / `###`. Do not use `{-}` to hide sections from the
   TOC any more; the listing and CV layouts handle their own navigation.
 

@@ -12,7 +12,7 @@ links:
 
 An ongoing project to build visualizations for mathematical concepts as a tool for
 teaching and learning. The goal is to make mathematics more accessible and engaging for
-students at all levels --- from a first calculus course through to graduate topics.
+students at all levels, from a first calculus course through to graduate topics.
 
 Each visualization is designed to be self-contained: drop it into a lecture, a problem set,
 or a student's own exploration without any setup.

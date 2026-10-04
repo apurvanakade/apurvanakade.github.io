@@ -1,6 +1,6 @@
 ---
 title: "Theorem Proving in Lean"
-description: "A fully interactive week-long class on the Lean theorem prover — you learn by solving exercises in the browser."
+description: "A fully interactive week-long class on the Lean theorem prover; you learn by solving exercises in the browser."
 date: 2020-07-01
 weight: 3
 categories: ["course notes", "Mathcamp", "lean"]
@@ -12,7 +12,7 @@ links:
     href: "https://github.com/apurvnakade/mc2020-Lean"
 ---
 
-A completely interactive class on the Lean theorem prover from Mathcamp 2020 --- you learn
+A completely interactive class on the Lean theorem prover from Mathcamp 2020. You learn
 by solving exercises online, in the browser, with no local setup.
 
 The prerequisites are basic proof techniques.
