@@ -7,6 +7,6 @@
 .DS_Store
 **/*.quarto_ipynb
 
-# Built site output -- published to gh-pages by .github/workflows/publish.yml,
-# not committed to source branches. See CLAUDE.md.
+# Built site output -- rendered and deployed by .github/workflows/publish.yml,
+# never committed. See CLAUDE.md §2.
 /docs/

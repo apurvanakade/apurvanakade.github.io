@@ -6,6 +6,10 @@ project:
     - "projects/*.qmd"
     - "math-blog/**/*.qmd"
     - "!cv/"
+  # The CV's PDF is built locally (`make cv`) and committed; CI renders HTML
+  # only, so it needs no LaTeX. This copies the committed file into docs/.
+  resources:
+    - CV.pdf
   pre-render:
     # Pulls the latest mathviz release into _extensions/ (see CLAUDE.md §6).
     - _scripts/update-mathviz.sh
