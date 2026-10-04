@@ -1,6 +1,6 @@
 ---
 title: Self-Fibonacci Numbers
-description: "For which n does n divide the nth Fibonacci number? A simple-sounding question with no clean answer."
+description: "For which n does n divide the nth Fibonacci number?"
 date: 2025-08-11
 weight: 1
 author: Apurva Nakade
