@@ -39,7 +39,7 @@ website:
         href: https://github.com/apurvanakade/
         aria-label: GitHub
   page-footer:
-    left: "&copy; 2026 Apurva Nakade"
+    center: "&copy; 2026 Apurva Nakade"
     right:
       - icon: envelope
         href: mailto:apurva.nakade@jhu.edu
