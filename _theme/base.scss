@@ -96,6 +96,7 @@ blockquote {
 }
 
 .home-card {
+  position: relative;
   display: flex;
   flex-direction: column;
   border: 1px solid var(--site-rule);
@@ -118,10 +119,15 @@ blockquote {
 .home-card__body { padding: 0.85rem 1.15rem 1.15rem; flex: 1 1 auto; }
 .home-card__title { font-size: 1.05rem; font-weight: 600; margin: 0 0 0.35rem; line-height: 1.3; }
 .home-card__title a { color: inherit; text-decoration: none; }
-.home-card__title a:hover { color: var(--site-accent); }
+.home-card:hover .home-card__title a { color: var(--site-accent); }
+// The title link is stretched over the whole card, so a click anywhere opens
+// it. The footer link sits above the overlay so it still goes to its own page.
+.home-card__title a::after { content: ""; position: absolute; inset: 0; }
 .home-card__desc { font-size: 0.92rem; color: var(--site-muted); margin: 0; }
 .home-card__meta { font-size: 0.8rem; color: var(--site-muted); margin-top: 0.7rem; }
 .home-card__footer {
+  position: relative;
+  z-index: 1;
   font-size: 0.85rem;
   padding: 0 1.15rem 1.1rem;
 }
