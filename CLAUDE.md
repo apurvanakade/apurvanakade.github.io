@@ -372,7 +372,12 @@ under `quarto preview`. Keep it that way; the data they need is all local.
 Section chrome is styled by `.home-section` / `.home-section__title` /
 `.home-section__note` in `_theme/base.scss`. A pinned card has no eyebrow, so
 `.home-card__thumb:first-child` drops the eyebrow's top margin and the thumbnail
-sits flush with the card top.
+sits flush with the card top. The whole card is clickable because the title's
+`<a>` gets an `::after` overlay stretched over the card (`position: relative`
+on `.home-card`). The random-pick cards' "See all projects" and "Read the blog"
+footer links sit above that overlay with `z-index: 1`. Without it, they would
+open the card's own page instead. Any other link added inside a card needs the
+same treatment.
 
 ### Adding a project
 
