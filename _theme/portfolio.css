@@ -129,17 +129,9 @@ h3.course .course-code {
   color: var(--site-muted);
   font-variant-numeric: tabular-nums;
 }
-/* In the table of contents the badge shrinks to a coloured dot and the code
-   is dropped, so the TOC reads as a list of course names. */
-#TOC .inst-badge {
-  display: inline-block;
-  font-size: 0;
-  width: 0.5rem; height: 0.5rem;
-  border-radius: 50%;
-  margin-left: 0.3rem;
-  vertical-align: 0.1em;
-}
-#TOC .inst-badge { background: var(--chip-bg); }
+/* The table of contents shows course names only. Pandoc copies a heading's
+   inlines into the TOC, so the badge and code are hidden there. */
+#TOC .inst-badge,
 #TOC .course-code { display: none; }
 
 /* ---------------------------------------------------------- course tables */

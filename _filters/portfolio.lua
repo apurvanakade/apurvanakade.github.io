@@ -144,7 +144,7 @@ local function decorate_heading(h, c)
       content:insert(pandoc.RawInline("latex", "\\texorpdfstring{\\instbadge{" ..
         c.inst.key .. "}{" .. latex_escape(c.inst.badge) .. "}}{}"))
     else
-      content:insert(pandoc.Span(pandoc.Str(c.inst.badge), pandoc.Attr("", { "inst-badge", "inst-" .. c.inst.key })))
+      content:insert(pandoc.Span(pandoc.Str(c.inst.badge), pandoc.Attr("", { "inst-badge" })))
     end
   end
   if c.code then
