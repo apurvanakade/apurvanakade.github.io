@@ -30,10 +30,10 @@ body.quarto-dark {
 /* These classes sit on course headings, and Pandoc's section-divs copies
    them onto the wrapping <section>. They therefore set custom properties
    only, never a visible style, so the whole course section inherits them. */
-.inst-jhu   { --inst: var(--inst-jhu);   --chip-bg: var(--chip-jhu-bg); --chip-fg: var(--chip-jhu-fg); }
-.inst-nw    { --inst: var(--inst-nw);    --chip-bg: var(--chip-nw-bg);  --chip-fg: var(--chip-nw-fg); }
-.inst-uwo   { --inst: var(--inst-uwo);   --chip-bg: var(--chip-uwo-bg); --chip-fg: var(--chip-uwo-fg); }
-.inst-other { --inst: var(--inst-other); --chip-bg: var(--site-muted);  --chip-fg: var(--site-surface); }
+.portfolio-inst-jhu   { --inst: var(--inst-jhu);   --chip-bg: var(--chip-jhu-bg); --chip-fg: var(--chip-jhu-fg); }
+.portfolio-inst-nw    { --inst: var(--inst-nw);    --chip-bg: var(--chip-nw-bg);  --chip-fg: var(--chip-nw-fg); }
+.portfolio-inst-uwo   { --inst: var(--inst-uwo);   --chip-bg: var(--chip-uwo-bg); --chip-fg: var(--chip-uwo-fg); }
+.portfolio-inst-other { --inst: var(--inst-other); --chip-bg: var(--site-muted);  --chip-fg: var(--site-surface); }
 
 /* ------------------------------------------------------------ summary band */
 .portfolio-stats {
@@ -92,12 +92,12 @@ body.quarto-dark {
 /* ----------------------------------------------------------- rating chart */
 .portfolio-chart { margin: 0.75rem 0 2.25rem; }
 .portfolio-chart figcaption { font-size: 0.82rem; color: var(--site-muted); margin-top: 0.35rem; }
-.rating-chart { width: 100%; height: auto; display: block; overflow: visible; }
-.rating-chart .band { fill: var(--inst); opacity: 0.08; }
-.rating-chart .band-label { font-size: 12px; fill: var(--site-muted); }
-.rating-chart .grid { stroke: var(--site-rule); stroke-width: 1; }
-.rating-chart .tick { font-size: 11px; fill: var(--site-muted); font-variant-numeric: tabular-nums; }
-.rating-chart .mark {
+.portfolio-chart__plot { width: 100%; height: auto; display: block; overflow: visible; }
+.portfolio-chart__plot .portfolio-chart__band { fill: var(--inst); opacity: 0.08; }
+.portfolio-chart__plot .portfolio-chart__band-label { font-size: 12px; fill: var(--site-muted); }
+.portfolio-chart__plot .portfolio-chart__grid { stroke: var(--site-rule); stroke-width: 1; }
+.portfolio-chart__plot .portfolio-chart__tick { font-size: 11px; fill: var(--site-muted); font-variant-numeric: tabular-nums; }
+.portfolio-chart__plot .portfolio-chart__mark {
   fill: var(--inst);
   stroke: var(--bs-body-bg);
   stroke-width: 1.5;
@@ -105,13 +105,13 @@ body.quarto-dark {
   transform-box: fill-box;
   transform-origin: center;
 }
-.rating-chart .hit { fill: transparent; }
-.rating-chart .pt { cursor: default; }
-.rating-chart .pt:hover .mark { transform: scale(1.5); }
+.portfolio-chart__plot .portfolio-chart__hit { fill: transparent; }
+.portfolio-chart__plot .portfolio-chart__point { cursor: default; }
+.portfolio-chart__plot .portfolio-chart__point:hover .portfolio-chart__mark { transform: scale(1.5); }
 
 /* ------------------------------------------------------- course headings */
-h3.course { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.2rem 0.55rem; }
-h3.course .inst-badge {
+h3.portfolio-course { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.2rem 0.55rem; }
+h3.portfolio-course .portfolio-course__badge {
   font-size: 0.7rem;
   font-weight: 600;
   letter-spacing: 0.01em;
@@ -123,7 +123,7 @@ h3.course .inst-badge {
   position: relative;
   top: -0.12em;
 }
-h3.course .course-code {
+h3.portfolio-course .portfolio-course__code {
   font-size: 0.8rem;
   font-weight: 400;
   color: var(--site-muted);
@@ -131,13 +131,13 @@ h3.course .course-code {
 }
 /* The table of contents shows course names only. Pandoc copies a heading's
    inlines into the TOC, so the badge and code are hidden there. */
-#TOC .inst-badge,
-#TOC .course-code { display: none; }
+#TOC .portfolio-course__badge,
+#TOC .portfolio-course__code { display: none; }
 
 /* ---------------------------------------------------------- course tables */
-.course-table { overflow-x: auto; margin-bottom: 1rem; }
-.course-table table { font-size: 0.9rem; margin-bottom: 0; }
-.course-table thead th {
+.portfolio-course__table { overflow-x: auto; margin-bottom: 1rem; }
+.portfolio-course__table table { font-size: 0.9rem; margin-bottom: 0; }
+.portfolio-course__table thead th {
   background: var(--site-thumb-bg);
   font-weight: 600;
   font-size: 0.8rem;
@@ -145,11 +145,11 @@ h3.course .course-code {
   border-bottom: 0;
   vertical-align: bottom;
 }
-.course-table thead th:first-child { border-top-left-radius: 6px; }
-.course-table thead th:last-child  { border-top-right-radius: 6px; }
-.course-table td { font-variant-numeric: tabular-nums; }
+.portfolio-course__table thead th:first-child { border-top-left-radius: 6px; }
+.portfolio-course__table thead th:last-child  { border-top-right-radius: 6px; }
+.portfolio-course__table td { font-variant-numeric: tabular-nums; }
 /* A thin bar under each rating, filled to the rating's share of its scale. */
-.course-table .rating {
+.portfolio-course__table .portfolio-course__rating {
   display: inline-block;
   min-width: 4.6em;
   padding-bottom: 4px;
@@ -159,7 +159,7 @@ h3.course .course-code {
 }
 
 /* ---------------------------------------------------- project link cards */
-.course-project {
+.portfolio-project {
   display: flex;
   gap: 0.9rem;
   align-items: center;
@@ -173,19 +173,19 @@ h3.course .course-code {
   text-decoration: none;
   transition: box-shadow 0.15s ease, transform 0.15s ease;
 }
-.course-project:hover { transform: translateY(-2px); box-shadow: 0 6px 18px var(--site-shadow); }
-.course-project img {
+.portfolio-project:hover { transform: translateY(-2px); box-shadow: 0 6px 18px var(--site-shadow); }
+.portfolio-project img {
   flex: 0 0 6.5rem;
   width: 6.5rem; height: 4.3rem;
   object-fit: cover;
   border-radius: 5px;
   background: var(--site-thumb-bg);
 }
-.course-project__body { display: flex; flex-direction: column; min-width: 0; }
-.course-project__eyebrow { font-size: 0.72rem; color: var(--site-muted); }
-.course-project__title { font-weight: 600; font-size: 0.95rem; line-height: 1.3; }
-.course-project:hover .course-project__title { color: var(--site-accent); }
-.course-project__desc { font-size: 0.82rem; line-height: 1.4; color: var(--site-muted); }
+.portfolio-project__body { display: flex; flex-direction: column; min-width: 0; }
+.portfolio-project__eyebrow { font-size: 0.72rem; color: var(--site-muted); }
+.portfolio-project__title { font-weight: 600; font-size: 0.95rem; line-height: 1.3; }
+.portfolio-project:hover .portfolio-project__title { color: var(--site-accent); }
+.portfolio-project__desc { font-size: 0.82rem; line-height: 1.4; color: var(--site-muted); }
 
 /* -------------------------------------------------------- sample materials */
 .portfolio-materials { display: flex; flex-direction: column; gap: 0.7rem; margin: 0.4rem 0 1.25rem; }
@@ -228,7 +228,7 @@ h3.course .course-code {
 
 /* Chart tooltip, positioned by the script the filter emits with the chart. */
 .portfolio-chart { position: relative; }
-.chart-tip {
+.portfolio-chart__tip {
   position: absolute;
   z-index: 2;
   pointer-events: none;
@@ -244,5 +244,5 @@ h3.course .course-code {
   border-radius: 6px;
   box-shadow: 0 4px 14px var(--site-shadow);
 }
-.chart-tip[hidden] { display: none; }
-.chart-tip span { color: var(--site-muted); font-variant-numeric: tabular-nums; }
+.portfolio-chart__tip[hidden] { display: none; }
+.portfolio-chart__tip span { color: var(--site-muted); font-variant-numeric: tabular-nums; }

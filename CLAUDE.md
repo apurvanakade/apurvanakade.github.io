@@ -339,12 +339,16 @@ heading as `### Name (Institution, code)` with the institution spelled as in
 Its HTML styles are `_theme/portfolio.css`, which the filter attaches to this
 page alone as an HTML dependency, so they never reach another page; the LaTeX
 side (colours, `\instbadge`, the `portfolioquote` and `portfoliostats`
-boxes) is in `_includes/portfolio-preamble.tex`. Course tables are wrapped
-in `div.course-table` rather than given a class, because Quarto drops the
-classes of a table whose header holds a footnote; the wrapper also lets a
-table scroll sideways on a phone. The `inst-*` classes land on each course's
-`<section>` too (Pandoc's `section-divs`), so they set only custom properties
-and never a visible style.
+boxes) is in `_includes/portfolio-preamble.tex`. Every HTML class the
+filter emits starts with `portfolio-` (BEM-style parts, as in
+`portfolio-chart__tip`), so no rule from Bootstrap, Quarto or mathviz (whose
+classes start with `vm-` or `ojs-`) can reach these elements, and none of
+these rules can reach theirs. Keep that prefix on any class added here. Course
+tables are wrapped in `div.portfolio-course__table` rather than given a class,
+because Quarto drops the classes of a table whose header holds a footnote; the
+wrapper also lets a table scroll sideways on a phone. The `portfolio-inst-*`
+classes land on each course's `<section>` too (Pandoc's `section-divs`), so
+they set only custom properties and never a visible style.
 
 Institution colours are the official ones. Badges use each university's
 primary colour (JHU Heritage Blue, Northwestern Purple, Western Purple), but

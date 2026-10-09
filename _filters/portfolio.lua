@@ -144,7 +144,7 @@ local function decorate_heading(h, c)
       content:insert(pandoc.RawInline("latex", "\\texorpdfstring{\\instbadge{" ..
         c.inst.key .. "}{" .. latex_escape(c.inst.badge) .. "}}{}"))
     else
-      content:insert(pandoc.Span(pandoc.Str(c.inst.badge), pandoc.Attr("", { "inst-badge" })))
+      content:insert(pandoc.Span(pandoc.Str(c.inst.badge), pandoc.Attr("", { "portfolio-course__badge" })))
     end
   end
   if c.code then
@@ -153,15 +153,15 @@ local function decorate_heading(h, c)
       content:insert(pandoc.RawInline("latex", "\\texorpdfstring{\\coursecode{" ..
         latex_escape(c.code) .. "}}{}"))
     else
-      content:insert(pandoc.Span(words(c.code), pandoc.Attr("", { "course-code" })))
+      content:insert(pandoc.Span(words(c.code), pandoc.Attr("", { "portfolio-course__code" })))
     end
   end
   h.content = content
   -- Pandoc's section-divs copies these onto the wrapping <section>; the
-  -- inst-* rules in portfolio.css set custom properties only, so that is safe
+  -- portfolio-inst-* rules in portfolio.css set custom properties only, so that is safe
   -- and lets the section's table and quotes inherit the institution colour.
-  h.classes:insert("course")
-  h.classes:insert("inst-" .. c.inst.key)
+  h.classes:insert("portfolio-course")
+  h.classes:insert("portfolio-inst-" .. c.inst.key)
   return h
 end
 
@@ -188,7 +188,7 @@ local function rating_cell(cell)
   local pct = 100 * v / m
   cell.contents = pandoc.Blocks({ pandoc.Plain({
     pandoc.Span(pandoc.Str(stringify(cell.contents)),
-      pandoc.Attr("", { "rating" }, { style = "--pct: " .. fmt(pct, 1) .. "%" }))
+      pandoc.Attr("", { "portfolio-course__rating" }, { style = "--pct: " .. fmt(pct, 1) .. "%" }))
   }) })
 end
 
@@ -215,7 +215,7 @@ local function read_table(tbl, course)
   if is_html then
     -- A wrapper, not a class on the table: Quarto drops classes from a table
     -- whose header holds a footnote. The wrapper also scrolls on phones.
-    return pandoc.Div({ tbl }, pandoc.Attr("", { "course-table" }))
+    return pandoc.Div({ tbl }, pandoc.Attr("", { "portfolio-course__table" }))
   end
   return tbl
 end
@@ -227,11 +227,11 @@ local function project_card(course)
   if not p or not p.title then return nil end
   local img = p.image and ('<img src="' .. html_escape(p.image) .. '" alt="" loading="lazy">') or ""
   return pandoc.RawBlock("html",
-    '<a class="course-project" href="projects/' .. slug .. '.html">' .. img ..
-    '<span class="course-project__body">' ..
-    '<span class="course-project__eyebrow">Project page</span>' ..
-    '<span class="course-project__title">' .. html_escape(p.title) .. '</span>' ..
-    (p.description and ('<span class="course-project__desc">' .. html_escape(p.description) .. '</span>') or "") ..
+    '<a class="portfolio-project" href="projects/' .. slug .. '.html">' .. img ..
+    '<span class="portfolio-project__body">' ..
+    '<span class="portfolio-project__eyebrow">Project page</span>' ..
+    '<span class="portfolio-project__title">' .. html_escape(p.title) .. '</span>' ..
+    (p.description and ('<span class="portfolio-project__desc">' .. html_escape(p.description) .. '</span>') or "") ..
     '</span></a>')
 end
 
@@ -464,31 +464,31 @@ local function chart_svg(pts, bands)
   end
 
   local o = {}
-  o[#o + 1] = string.format('<svg class="rating-chart" viewBox="0 0 %d %d" role="img" ' ..
+  o[#o + 1] = string.format('<svg class="portfolio-chart__plot" viewBox="0 0 %d %d" role="img" ' ..
     'aria-label="Instructor rating each semester, as a percentage of the scale maximum">', W, H)
   for _, b in ipairs(bands) do
     local bx0, bx1 = sx(b.lo - 0.2), sx(b.hi + 0.2)
-    o[#o + 1] = string.format('<rect class="band inst-%s" x="%.1f" y="%d" width="%.1f" height="%d" rx="4"/>',
+    o[#o + 1] = string.format('<rect class="portfolio-chart__band portfolio-inst-%s" x="%.1f" y="%d" width="%.1f" height="%d" rx="4"/>',
       b.inst.key, bx0, T - 22, bx1 - bx0, H - B - T + 22)
     local cx = (bx0 + bx1) / 2
-    o[#o + 1] = '<g class="inst-' .. b.inst.key .. '">' ..
-      shape(b.inst.key, cx - 4 - #b.inst.short * 3.1, T - 12, "mark") ..
-      string.format('<text class="band-label" x="%.1f" y="%d" text-anchor="middle">%s</text></g>',
+    o[#o + 1] = '<g class="portfolio-inst-' .. b.inst.key .. '">' ..
+      shape(b.inst.key, cx - 4 - #b.inst.short * 3.1, T - 12, "portfolio-chart__mark") ..
+      string.format('<text class="portfolio-chart__band-label" x="%.1f" y="%d" text-anchor="middle">%s</text></g>',
         cx + 6, T - 8, html_escape(b.inst.short))
   end
   for y = Y_MIN, Y_MAX, 10 do
-    o[#o + 1] = string.format('<line class="grid" x1="%d" x2="%d" y1="%.1f" y2="%.1f"/>', L, W - R, sy(y), sy(y))
-    o[#o + 1] = string.format('<text class="tick" x="%d" y="%.1f" text-anchor="end">%d%%</text>', L - 6, sy(y) + 4, y)
+    o[#o + 1] = string.format('<line class="portfolio-chart__grid" x1="%d" x2="%d" y1="%.1f" y2="%.1f"/>', L, W - R, sy(y), sy(y))
+    o[#o + 1] = string.format('<text class="portfolio-chart__tick" x="%d" y="%.1f" text-anchor="end">%d%%</text>', L - 6, sy(y) + 4, y)
   end
   for yr = x0, x1, 2 do
-    o[#o + 1] = string.format('<text class="tick" x="%.1f" y="%d" text-anchor="middle">%d</text>', sx(yr), H - 6, yr)
+    o[#o + 1] = string.format('<text class="portfolio-chart__tick" x="%.1f" y="%d" text-anchor="middle">%d</text>', sx(yr), H - 6, yr)
   end
   for _, p in ipairs(pts) do
     local x, y = sx(p.x), sy(p.pct)
-    o[#o + 1] = '<g class="pt inst-' .. p.inst.key .. '" data-course="' .. html_escape(p.course) ..
+    o[#o + 1] = '<g class="portfolio-chart__point portfolio-inst-' .. p.inst.key .. '" data-course="' .. html_escape(p.course) ..
       '" data-term="' .. html_escape(p.term) .. '" data-rating="' .. html_escape(p.rating) .. '">' ..
-      string.format('<circle class="hit" cx="%.1f" cy="%.1f" r="11"/>', x, y) ..
-      shape(p.inst.key, x, y, "mark") .. '</g>'
+      string.format('<circle class="portfolio-chart__hit" cx="%.1f" cy="%.1f" r="11"/>', x, y) ..
+      shape(p.inst.key, x, y, "portfolio-chart__mark") .. '</g>'
   end
   o[#o + 1] = "</svg>"
   return table.concat(o)
@@ -538,13 +538,13 @@ end
 
 -- The hover tooltip. An SVG <title> only shows after the pointer rests for
 -- about a second, and never on touch, so the chart draws its own: the point
--- under the pointer (or tapped) fills .chart-tip from its data-* attributes.
+-- under the pointer (or tapped) fills .portfolio-chart__tip from its data-* attributes.
 local CHART_TIP_SCRIPT = [[
 <script>
 (() => {
   const fig = document.currentScript.closest(".portfolio-chart");
   const svg = fig.querySelector("svg");
-  const tip = fig.querySelector(".chart-tip");
+  const tip = fig.querySelector(".portfolio-chart__tip");
   const hide = () => { tip.hidden = true; };
   const show = (g) => {
     tip.replaceChildren();
@@ -555,14 +555,14 @@ local CHART_TIP_SCRIPT = [[
     tip.append(name, detail);
     tip.hidden = false;
     const f = fig.getBoundingClientRect();
-    const m = g.querySelector(".mark").getBoundingClientRect();
+    const m = g.querySelector(".portfolio-chart__mark").getBoundingClientRect();
     const w = tip.offsetWidth, h = tip.offsetHeight;
     const x = m.left + m.width / 2 - f.left;
     tip.style.left = Math.max(0, Math.min(f.width - w, x - w / 2)) + "px";
     tip.style.top = (m.top - f.top - h - 8) + "px";
   };
   svg.addEventListener("pointerover", (e) => {
-    const g = e.target.closest(".pt");
+    const g = e.target.closest(".portfolio-chart__point");
     g ? show(g) : hide();
   });
   svg.addEventListener("pointerleave", hide);
@@ -575,7 +575,7 @@ local function chart_block(courses)
   if is_latex then return pandoc.RawBlock("latex", chart_tikz(pts, bands)) end
   return pandoc.RawBlock("html",
     '<figure class="portfolio-chart">' .. chart_svg(pts, bands) ..
-    '<div class="chart-tip" role="status" hidden></div>' ..
+    '<div class="portfolio-chart__tip" role="status" hidden></div>' ..
     '<figcaption>' .. html_escape(CHART_CAPTION) .. ' Hover over or tap a point for the course.</figcaption>' ..
     CHART_TIP_SCRIPT .. '</figure>')
 end
