@@ -255,9 +255,11 @@ Set `cv-layout: false` in frontmatter to switch the filter off.
 
 `teaching-portfolio.qmd` is built the same way as the CV (HTML in CI, PDF by
 `make portfolio`, committed, copied in by `resources:`), but does **not** use
-`_filters/cv.lua`: it is one `##` section per course, each holding a pipe table
+`_filters/cv.lua`. Its `##` sections are Teaching philosophy, Courses,
+Mentoring, Professional development and so on; under Courses each course is a
+`###` holding a pipe table
 (Semester · Student level · Students · TAs · Course rating · Instructor rating)
-followed by `###` notes and a `### Selected student comments` list, and the
+followed by `####` notes and a `#### Selected student comments` list, and the
 CV's `cvsection` list environment cannot hold a table (see below). The ratings
 and quotes are copied by hand from the evaluation PDFs in the
 `apurvanakade/PDFs` repo; a semester with several sections shows the
@@ -267,7 +269,9 @@ scales differ. The questions and scales are explained once, in a footnote on
 the first table's "Course rating" header, which HTML renders at the end of the
 page and LaTeX at the foot of that page. Its PDF
 layout lives in `_includes/portfolio-preamble.tex`: `\needspace` before each
-heading so a course title is never stranded above a page break, and
+heading so a course title is never stranded above a page break, `titlesec`
+turning `####` (LaTeX's `\paragraph`, a run-in heading by default) into a
+display heading so a list can start below it, and
 `\LTleft=0pt` so tables sit flush with the prose rather than centred at
 differing widths. After editing the `.qmd`, run `make portfolio` and commit
 `teaching-portfolio.pdf` with it.

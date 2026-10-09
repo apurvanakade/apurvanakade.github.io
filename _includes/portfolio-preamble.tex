@@ -2,11 +2,20 @@
 
 \usepackage{needspace}
 \usepackage{etoolbox}
+\usepackage{titlesec}
 
-% Keep a course heading on the same page as its table: each `##` is a
-% \subsection, and a table never breaks before its first rows anyway.
+% Headings map as `##` \subsection (Courses, Mentoring, ...), `###`
+% \subsubsection (one course), `####` \paragraph (a course's notes).
+% \paragraph is a run-in heading by default; make it a display heading so a
+% bullet list starts on the line below it.
+\titleformat{\paragraph}{\normalfont\normalsize\itshape}{}{0pt}{}
+\titlespacing*{\paragraph}{0pt}{1.2ex plus .5ex}{0.4ex}
+
+% Keep a course heading on the same page as its table (a table never breaks
+% before its first rows anyway), and a notes heading with its first lines.
 \pretocmd{\subsection}{\needspace{9\baselineskip}}{}{}
-\pretocmd{\subsubsection}{\needspace{4\baselineskip}}{}{}
+\pretocmd{\subsubsection}{\needspace{9\baselineskip}}{}{}
+\pretocmd{\paragraph}{\needspace{4\baselineskip}}{}{}
 
 % Tables flush left with the prose instead of centred at varying widths.
 \setlength{\LTleft}{0pt}
