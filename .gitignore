@@ -14,3 +14,5 @@
 # Local secret: Canvas API token. Never commit.
 /canvas API token
 /canvas-import-checklist.md
+
+/.luarc.json
