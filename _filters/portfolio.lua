@@ -417,7 +417,7 @@ local function chart_points(courses)
       if r.rating and r.t then
         pts[#pts + 1] = {
           t = r.t, pct = 100 * r.rating / r.scale, inst = c.inst,
-          label = c.name .. ", " .. r.term .. ": " .. fmt(r.rating) .. " / " .. r.scale,
+          course = c.name, term = r.term, rating = fmt(r.rating) .. " / " .. r.scale,
         }
       end
     end
@@ -485,7 +485,8 @@ local function chart_svg(pts, bands)
   end
   for _, p in ipairs(pts) do
     local x, y = sx(p.x), sy(p.pct)
-    o[#o + 1] = '<g class="pt inst-' .. p.inst.key .. '"><title>' .. html_escape(p.label) .. '</title>' ..
+    o[#o + 1] = '<g class="pt inst-' .. p.inst.key .. '" data-course="' .. html_escape(p.course) ..
+      '" data-term="' .. html_escape(p.term) .. '" data-rating="' .. html_escape(p.rating) .. '">' ..
       string.format('<circle class="hit" cx="%.1f" cy="%.1f" r="11"/>', x, y) ..
       shape(p.inst.key, x, y, "mark") .. '</g>'
   end
@@ -535,13 +536,48 @@ local function chart_tikz(pts, bands)
   return table.concat(o, "\n")
 end
 
+-- The hover tooltip. An SVG <title> only shows after the pointer rests for
+-- about a second, and never on touch, so the chart draws its own: the point
+-- under the pointer (or tapped) fills .chart-tip from its data-* attributes.
+local CHART_TIP_SCRIPT = [[
+<script>
+(() => {
+  const fig = document.currentScript.closest(".portfolio-chart");
+  const svg = fig.querySelector("svg");
+  const tip = fig.querySelector(".chart-tip");
+  const hide = () => { tip.hidden = true; };
+  const show = (g) => {
+    tip.replaceChildren();
+    const name = document.createElement("strong");
+    name.textContent = g.dataset.course;
+    const detail = document.createElement("span");
+    detail.textContent = g.dataset.term + ": " + g.dataset.rating;
+    tip.append(name, detail);
+    tip.hidden = false;
+    const f = fig.getBoundingClientRect();
+    const m = g.querySelector(".mark").getBoundingClientRect();
+    const w = tip.offsetWidth, h = tip.offsetHeight;
+    const x = m.left + m.width / 2 - f.left;
+    tip.style.left = Math.max(0, Math.min(f.width - w, x - w / 2)) + "px";
+    tip.style.top = (m.top - f.top - h - 8) + "px";
+  };
+  svg.addEventListener("pointerover", (e) => {
+    const g = e.target.closest(".pt");
+    g ? show(g) : hide();
+  });
+  svg.addEventListener("pointerleave", hide);
+})();
+</script>]]
+
 local function chart_block(courses)
   local pts, bands = chart_points(courses)
   if #pts == 0 then return nil end
   if is_latex then return pandoc.RawBlock("latex", chart_tikz(pts, bands)) end
   return pandoc.RawBlock("html",
     '<figure class="portfolio-chart">' .. chart_svg(pts, bands) ..
-    '<figcaption>' .. html_escape(CHART_CAPTION) .. ' Hover over a point for the course.</figcaption></figure>')
+    '<div class="chart-tip" role="status" hidden></div>' ..
+    '<figcaption>' .. html_escape(CHART_CAPTION) .. ' Hover over or tap a point for the course.</figcaption>' ..
+    CHART_TIP_SCRIPT .. '</figure>')
 end
 
 ------------------------------------------------------------------- the walk

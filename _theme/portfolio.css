@@ -233,3 +233,24 @@ h3.course .course-code {
   .portfolio-stats { grid-template-columns: 1fr 1fr; }
   .portfolio-stat:last-child:nth-child(odd) { grid-column: 1 / -1; }
 }
+
+/* Chart tooltip, positioned by the script the filter emits with the chart. */
+.portfolio-chart { position: relative; }
+.chart-tip {
+  position: absolute;
+  z-index: 2;
+  pointer-events: none;
+  display: flex;
+  flex-direction: column;
+  max-width: 18rem;
+  padding: 0.4rem 0.6rem;
+  font-size: 0.8rem;
+  line-height: 1.35;
+  color: var(--site-ink);
+  background: var(--site-surface);
+  border: 1px solid var(--site-rule);
+  border-radius: 6px;
+  box-shadow: 0 4px 14px var(--site-shadow);
+}
+.chart-tip[hidden] { display: none; }
+.chart-tip span { color: var(--site-muted); font-variant-numeric: tabular-nums; }

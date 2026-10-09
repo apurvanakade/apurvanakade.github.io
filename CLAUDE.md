@@ -322,7 +322,8 @@ It reads the course tables and builds, for HTML and LaTeX alike: a summary
 band above the first `##` (courses, students, universities, first year, median
 JHU instructor rating since `CURRENT_ROLE_START`), a dot chart of every
 semester's instructor rating as a percentage of its scale at the top of
-`## Courses`, an institution badge and muted code in each course `###`
+`## Courses` (in HTML its hover tooltip is a small inline script, because an
+SVG `<title>` shows only after a second's rest and never on touch), an institution badge and muted code in each course `###`
 (parsed from its trailing "(Institution, code)"), and quote cards from the
 list under `#### Selected student comments`. HTML alone also gets rating bars
 in the tables, pill links from `#### Sample materials`, a link card to the
