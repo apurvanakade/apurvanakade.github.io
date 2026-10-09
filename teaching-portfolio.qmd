@@ -1,0 +1,364 @@
+---
+title: "Teaching Portfolio"
+subtitle: "Apurva Nakade, Assistant Teaching Professor, Department of Applied Mathematics & Statistics, Johns Hopkins University"
+toc: true
+toc-title: "Contents"
+toc-depth: 2
+format:
+  html:
+    toc: true
+  pdf:
+    toc: true
+    number-sections: false
+    documentclass: article
+    classoption: [11pt]
+    geometry: margin=1in
+    colorlinks: true
+    linkcolor: black
+    urlcolor: black
+    citecolor: black
+    include-in-header: _includes/portfolio-preamble.tex
+    output-file: teaching-portfolio
+---
+
+::: {.content-visible when-format="html"}
+[Download PDF](teaching-portfolio.pdf)
+:::
+
+## Teaching philosophy
+
+*Placeholder: a one-paragraph summary of the [teaching statement](teaching-statement.qmd).*
+
+## Discrete Mathematics (JHU, EN.553.171)
+
+| Semester    | Student level | Students | TAs | Course rating[^ratings] | Instructor rating |
+|-------------|---------------|---------:|----:|-----------------------:|------------------:|
+| Fall 2023   | Undergraduate |       56 |     |      4.11 / 5 |          4.26 / 5 |
+| Fall 2024   | Undergraduate |       41 |     |      4.05 / 5 |          4.37 / 5 |
+| Spring 2025 | Undergraduate |       25 |   4 |      4.32 / 5 |          4.54 / 5 |
+| Fall 2025   | Undergraduate |       45 |   4 |      4.33 / 5 |          4.48 / 5 |
+| Spring 2026 | Undergraduate |       30 |     |      4.31 / 5 |          4.45 / 5 |
+
+### 2025
+
+- Modernized the course using evidence-driven pedagogical techniques
+- Adapted an online textbook to better match current student mindsets
+- Introduced homework resubmissions to reinforce student learning
+- Introduced online assessments to improve feedback
+- Restructured exams to better gauge student learning
+
+### Selected student comments
+
+- "The professor cares about the students and invests heavily in them. He is always very focused on the student's learning evidenced by checking in with them during lecture to make sure they understand." (Spring 2026)
+- "The material is a range of topics that are fascinating and a solid overview of the AMS major. It was challenging but made me excited for future classes in AMS!" (Fall 2025)
+- "Each lecture was interesting and presented in a very approachable way. The professor for this course was one of my favorites here at Hopkins thus far." (Fall 2025)
+- "One of the best aspects of this course is our professor's exceptional teaching. The textbook can be limited and sometimes hard to understand, but our professor always explains difficult concepts in a way that is clear, logical, and easy to grasp. He chooses his words carefully and teaches with precision and structure." (Spring 2025)
+- "The grading system is very fair and gives you leniency on things like a missed homework. Dr Nakade actually cares about students' understanding which sometimes feels rare at Hopkins." (Spring 2025)
+- "Dr. Nakade is an excellent teacher and really explained not only the material but how it was useful in different ways. He also seems to care greatly about the course and the students as well." (Fall 2024)
+- "Really interesting topics, fair and passionate instructor. This instructor did make me love math for the first time." (Fall 2023)
+
+## Monte Carlo Methods (JHU, EN.553.433/633)
+
+| Semester    | Student level              | Students | TAs | Course rating | Instructor rating |
+|-------------|----------------------------|---------:|----:|--------------:|------------------:|
+| Fall 2024   |                            |          |     |               |                   |
+| Spring 2025 | Undergraduate and master's |       26 |   2 |      4.63 / 5 |          4.46 / 5 |
+| Fall 2025   | Undergraduate              |       15 |   2 |      4.53 / 5 |          4.67 / 5 |
+| Spring 2026 | Undergraduate and master's |       29 |     |      4.66 / 5 |          4.76 / 5 |
+
+### 2025
+
+- Rewrote course notes with an online-first approach, creating a [course website](https://apurvanakade.github.io/Monte-Carlo-Methods/) instead of a traditional textbook
+- Incorporated code directly into the online textbook for seamless integration of theory and practice
+- Restructured weekly homework to include both programming and theory components, with the two complementing each other
+- Replaced traditional exams with weekly quizzes to help students keep up with fast-paced material and reduce exam anxiety
+- Added a final project component, allowing seniors and master's students to showcase their skills and have agency in their learning
+- Adapted the course for a post-AI world by deemphasizing tasks that can be done better by AI and encouraging students to use AI tools to strengthen their learning
+
+### Selected student comments
+
+- "The course is taught very well and the course design is very good where you are learning something and then immediately being quizzed on it which really makes sure that you understand the content you are learning." (Spring 2026)
+- "Wonderful course, all the content was very practical. In fact I used one of the topics in my paper right after being taught it (Bootstrapping)." (Fall 2025)
+- "Fantastic course, great teaching, super interesting content, great course structure. Love the quizzes, homework and presentation concept." (Fall 2025)
+- "I really liked how the course was structured: weekly quizzes, interactive Jupyter notebooks, and a variety of various topics. The instructor did a really great job designing the weekly homeworks and quizzes, and it was very enjoyable to do the final project." (Spring 2025)
+- "Fun topics, I liked that the course was centered more around learning rather than exams. I learnt a lot in a very unstressful environment." (Spring 2025)
+
+## Introduction to Computational Mathematics (JHU, EN.553.385)
+
+| Semester    | Student level | Students | TAs | Course rating | Instructor rating |
+|-------------|---------------|---------:|----:|--------------:|------------------:|
+| Spring 2026 | Undergraduate |       49 |     |      4.48 / 5 |          4.66 / 5 |
+
+### Selected student comments
+
+- "Prof. Apurva is always open to reviewing even the most basic concepts and simplifies complicated concepts so it's clear that he truly understands them. He does a great job engaging the class and encouraging participation. Even when I don't know the answer, I feel safe enough to guess because I know he'll find a way to validate the guess, so I don't feel stupid in front of the class." (Spring 2026)
+- "I really appreciated that there were no midterms and that homework was graded for completion. I felt like these policies reduced my stress a lot and made it much easier to learn a large amount of material." (Spring 2026)
+- "You get to learn the part of math that they don't really teach you: convergence and stability." (Spring 2026)
+
+## Intermediate Probability and Statistics (JHU, EN.553.311)
+
+| Semester    | Student level | Students | TAs | Course rating | Instructor rating |
+|-------------|---------------|---------:|----:|--------------:|------------------:|
+| Spring 2025 | Undergraduate |       19 |   0 |               |                   |
+| Summer 2025 | Undergraduate |       13 |   2 |      4.08 / 5 |          4.33 / 5 |
+
+### Selected student comments
+
+- "Professor Nakade is great, he cares about his students and it is much easier to learn from him." (Summer 2025)
+- "The professor's in-class problems and homework problems are extremely relevant to understanding the course, and are very helpful when studying for the exams." (Summer 2025)
+
+## Mathematical Foundations of AI (JHU, AS.110.110)
+
+| Semester    | Student level | Students | TAs | Course rating | Instructor rating |
+|-------------|---------------|---------:|----:|--------------:|------------------:|
+| Summer 2025 | High school   |       36 |   1 |      4.44 / 5 |          4.56 / 5 |
+
+### Summer 2025
+
+- Revamped the entire course to fit the audience of smart, motivated high school students with limited mathematical and programming background
+- Made sessions interactive and flipped most classes
+- Designed collaborative learning activities where students work with each other
+- Incorporated discussions on AI ethics to engage students and spark interest in the subject
+- Developed a streamlined Python curriculum to teach programming from scratch and quickly transition to applications
+
+### Selected student comments
+
+- "I had never done coding before, and this course, although challenging at times, did teach me a lot and provided me with an excellent base." (Summer 2025)
+- "How class time is split into two, with one part being lecture overall and the other being everyone coding individually. Also the professor. He goes around the classroom in the second half and helped everybody a lot with their codings and projects." (Summer 2025)
+- "This course is very intellectually challenging, and I really enjoy the group discussions of the material, as they are very engaging and lead to more learning overall." (Summer 2025)
+- "This course is definitely more fast pace and will often go past a lot of material very quickly. Despite that it was extremely enjoyable and satisfying and unlike any other course I've ever taken." (Summer 2025)
+
+## Honors Algebra II, online (JHU, 412)
+
+| Semester    | Student level | Students | TAs | Course rating | Instructor rating |
+|-------------|---------------|---------:|----:|--------------:|------------------:|
+| Spring 2024 | Undergraduate |          |     |               |                   |
+| Fall 2024   | Undergraduate |          |     |               |                   |
+| Spring 2025 | Undergraduate |        1 |   0 |               |                   |
+| Summer 2025 | Undergraduate |          |     |               |                   |
+
+## Graph Theory (JHU, EN.553.672)
+
+| Semester    | Student level | Students | TAs | Course rating | Instructor rating |
+|-------------|---------------|---------:|----:|--------------:|------------------:|
+| Spring 2024 | Graduate      |       25 |     |      4.32 / 5 |          4.33 / 5 |
+
+### Selected student comments
+
+- "The instructor explains all the topics perfectly, and his passion for the same is clearly evident. The structure of the course is in such a way that you feel like you are solving puzzles all the time." (Spring 2024)
+- "Instructor is enthusiastic and lectures are organized, material is explained very clearly. Nice breadth and depth of topics covered for a first course in graph theory. ... Final project in lieu of final exam was a great added learning experience." (Spring 2024)
+- "Despite being a proof-based math class, there is not much assumed background to take this class. So, if you enjoy discrete math and brain teasers this is a perfect matching (no pun intended.)" (Spring 2024)
+
+## Linear Algebra and Differential Equations (JHU, EN.553.291)
+
+| Semester    | Student level | Students | TAs | Course rating | Instructor rating |
+|-------------|---------------|---------:|----:|--------------:|------------------:|
+| Spring 2024 | Undergraduate |       56 |     |      4.17 / 5 |          4.53 / 5 |
+
+### Selected student comments
+
+- "Professor Nakade explains topics very clearly and class is very easy to follow, despite the content being very difficult. The lecture notes that students are given are also extremely helpful. Overall, the course is very well organized and engaging. It's my favorite course this semester." (Spring 2024)
+- "This course is extremely difficult, but the lectures are taught very well, in a clear manner. At no point do I feel lost in what is being explained." (Spring 2024)
+- "There aren't so many students in my session, so I can have very direct communications with the professor, and he remembers each of our names." (Spring 2024)
+
+## Exploring Engineering Innovation (JHU)
+
+| Semester    | Student level | Students | TAs | Course rating | Instructor rating |
+|-------------|---------------|---------:|----:|--------------:|------------------:|
+| Summer 2024 | High school   |          |     |               |                   |
+
+## MENU Linear Algebra and Multivariable Calculus (Northwestern, MATH 290)
+
+| Semester            | Student level | Students | TAs | Course rating | Instructor rating |
+|---------------------|---------------|---------:|----:|--------------:|------------------:|
+| Fall 2021 (290-1)   | Undergraduate |       19 |     |      4.88 / 6 |          5.29 / 6 |
+| Winter 2022 (290-2) | Undergraduate |       18 |     |      5.21 / 6 |          5.43 / 6 |
+| Spring 2022 (290-3) | Undergraduate |       16 |     |      5.21 / 6 |          5.71 / 6 |
+| Fall 2022 (290-1)   | Undergraduate |       46 |     |      5.17 / 6 |          5.44 / 6 |
+| Winter 2023 (290-2) | Undergraduate |       24 |     |      5.44 / 6 |          5.89 / 6 |
+| Spring 2023 (290-3) | Undergraduate |       17 |     |      5.14 / 6 |          5.50 / 6 |
+
+### 2022-23
+
+- Course coordinator
+
+### Selected student comments
+
+- "Apurva is probably the best teacher I've ever had. His class was my first at Northwestern, and ever since then I've enjoyed building a connection to him and just simply talking with him during office hours or outside of class. He is extremely intelligent and supportive, and I've grown a lot as a student from simply solving problems with him." (Spring 2023)
+- "Apurva is doing great to constantly ask us for feedback and do what he can to improve the class however that may be. Just a great instructor! The best I've had yet!" (Winter 2023)
+- "Apurva is great at explaining concepts and he is very knowledgeable about every subject in the class as well. Additionally, he's great at teaching and explaining mistakes to you while not making you feel bad about it." (Fall 2022)
+- "I bombed the first midterm for not studying, and Apurva talked me through the possibilities and ultimately made me stay in the course." (Fall 2022)
+- "Apurva is awesome!! Really funny and easily approachable/very available guy. He always stayed after class to answer questions for anyone who needed it." (Winter 2022)
+- "Apurva is very encouraging when you are struggling with a problem and you can really tell that he was excited about math and teaching!" (Fall 2021)
+
+## Single-Variable Differential Calculus (Northwestern, MATH 220-1)
+
+| Semester  | Student level | Students | TAs | Course rating | Instructor rating |
+|-----------|---------------|---------:|----:|--------------:|------------------:|
+| Fall 2021 | Undergraduate |       38 |     |      4.22 / 6 |          5.04 / 6 |
+
+### Selected student comments
+
+- "Apurva was a great professor. He explained everything very clearly and gave great lecture notes. In class we did lots of practice problems which was super helpful." (Fall 2021)
+- "He was very patient in answering questions and was very good at helping you work through the problem to find exactly where you were getting stuck and then working through the rest. This way he was able to teach us what to do without doing it for us." (Fall 2021)
+
+## Introduction to Optimization (Northwestern, MATH 368)
+
+| Semester    | Student level              | Students | TAs | Course rating | Instructor rating |
+|-------------|----------------------------|---------:|----:|--------------:|------------------:|
+| Winter 2022 |                            |          |     |               |                   |
+| Spring 2022 | Undergraduate and graduate |       15 |     |      5.33 / 6 |          5.88 / 6 |
+
+### Selected student comments
+
+- "Apurva is phenomenal! He broke down key concepts with ease, and homework questions went over a variety of different examples. Optimization is interesting as a whole due to it wide applicability in other fields, but I felt this was an enjoyable course because of Apurva." (Spring 2022)
+- "He explains difficult concepts in a digestible way, and makes sure everyone has the time and space to ask questions and apply the material they are learning." (Spring 2022)
+
+## Foundations of Higher Mathematics (Northwestern, MATH 300)
+
+| Semester    | Student level | Students | TAs | Course rating | Instructor rating |
+|-------------|---------------|---------:|----:|--------------:|------------------:|
+| Winter 2023 | Undergraduate |       24 |     |      5.28 / 6 |          5.61 / 6 |
+
+### Selected student comments
+
+- "Apurva is a great professor, and he really helped make the class enjoyable. He learned all of our names, and he was super approachable. His weekly office hours were super helpful for working through the homework and discussion worksheets. His lectures were really engaging, as he asked a lot of questions for the students to answer and work through." (Winter 2023)
+
+## Elementary Differential Equations (Northwestern, MATH 250)
+
+| Semester    | Student level | Students | TAs | Course rating | Instructor rating |
+|-------------|---------------|---------:|----:|--------------:|------------------:|
+| Spring 2023 | Undergraduate |       17 |     |      5.42 / 6 |          5.75 / 6 |
+
+### Selected student comments
+
+- "Apurva was always willing to help, and also explained things very clearly. High quality prepared notes that were available to review later. Great energy for an early morning class. Obviously cared about the subject and student success." (Spring 2023)
+
+## Discrete Structures for Engineering (Western Ontario, MATH 2151A)
+
+| Semester  | Student level | Students | TAs | Course rating | Instructor rating |
+|-----------|---------------|---------:|----:|--------------:|------------------:|
+| Fall 2020 | Undergraduate |      197 |     |      6.59 / 7 |          6.76 / 7 |
+
+### Selected student comments
+
+- "You are enthusiastic and while the course material was not my favourite, your teaching made it my favourite class!" (Fall 2020)
+- "This course presented some difficult concepts, but Apurva explained everything really well and was very organized in his teaching. He's also super understanding and it's evident that he cares a lot about his students, a characteristic that, sadly, is not present in many professors." (Fall 2020)
+- "There really is no improvement I can find. The organization is perfect, the length of the lectures is perfect, the content inside the lectures themselves are clear and simple, the follow-up questions are perfect, and even the first midterm was extremely fair and was exactly what the prof said it would be like." (Fall 2020, midterm survey)
+
+## Calculus I (Western Ontario, Calculus 1000A)
+
+| Semester  | Student level | Students | TAs | Course rating | Instructor rating |
+|-----------|---------------|---------:|----:|--------------:|------------------:|
+| Fall 2019 | Undergraduate |      177 |     |      5.58 / 7 |          5.63 / 7 |
+
+### Selected student comments
+
+- "Apurva Nakade has so far been the best professor I have had. I believe that his methods for teaching and leading a class is highly effective in terms of presenting ideas and concepts in a way that can be learned efficiently." (Fall 2019)
+
+## Calculus II (Western Ontario)
+
+| Semester    | Student level | Students | TAs | Course rating | Instructor rating |
+|-------------|---------------|---------:|----:|--------------:|------------------:|
+| Winter 2020 | Undergraduate |          |     |               |                   |
+
+## Algebraic Topology (Western Ontario)
+
+| Semester    | Student level | Students | TAs | Course rating | Instructor rating |
+|-------------|---------------|---------:|----:|--------------:|------------------:|
+| Winter 2021 | Graduate      |          |     |               |                   |
+
+## Topology Bootcamp (Western Ontario)
+
+| Semester  | Student level | Students | TAs | Course rating | Instructor rating |
+|-----------|---------------|---------:|----:|--------------:|------------------:|
+| Fall 2020 |               |          |     |               |                   |
+
+## Topics in Category Theory (Western Ontario)
+
+| Semester  | Student level | Students | TAs | Course rating | Instructor rating |
+|-----------|---------------|---------:|----:|--------------:|------------------:|
+| Fall 2019 |               |          |     |               |                   |
+
+## Honors Single Variable Calculus (JHU, AS.110.113)
+
+| Semester  | Student level | Students | TAs | Course rating | Instructor rating |
+|-----------|---------------|---------:|----:|--------------:|------------------:|
+| Fall 2017 | Undergraduate |          |     |               |                   |
+| Fall 2018 | Undergraduate |        9 |     |      4.00 / 5 |          3.78 / 5 |
+
+### Selected student comments
+
+- "Apurva is great. He answers any questions you have and always gives you feedback. If there is something you're not understanding, he takes the time to walk you though it. He is very understanding that life still happens outside of class and is just a great teacher in general." (Fall 2018)
+- "The course was heavily tailored to the students and was a good introduction to proofs. ... I understand how to write mathematical proofs much better and I feel more confident in my understanding of calculus." (Fall 2018)
+
+## Differential Equations with Applications (JHU, AS.110.302)
+
+| Semester    | Student level | Students | TAs | Course rating | Instructor rating |
+|-------------|---------------|---------:|----:|--------------:|------------------:|
+| Summer 2015 | Undergraduate |        9 |     |      4.25 / 5 |          4.25 / 5 |
+| Summer 2017 | Undergraduate |       11 |     |      4.33 / 5 |          4.56 / 5 |
+
+### Selected student comments
+
+- "Apurva is a great teacher, he knows how to present content in a succint and easily absorbable way." (Summer 2017)
+- "He inspired us to ask the important questions about math, to explore the foundations of mathematics, and to pursue further academic engagements in math, physics and engineering. He is an enlightened and devoted teacher and friend." (Summer 2015)
+
+## Symmetries and Polynomials (JHU, AS.110.361)
+
+| Semester            | Student level | Students | TAs | Course rating | Instructor rating |
+|---------------------|---------------|---------:|----:|--------------:|------------------:|
+| Intersession 2018   | Undergraduate |       10 |     |      4.44 / 5 |          4.56 / 5 |
+
+### Selected student comments
+
+- "The no homework and freeform style of working through worksheets that break up the proofs was really cool." (Intersession 2018)
+
+## Hitchhiker's Guide to Algebraic Topology (JHU, AS.110.360)
+
+| Semester            | Student level | Students | TAs | Course rating | Instructor rating |
+|---------------------|---------------|---------:|----:|--------------:|------------------:|
+| Intersession 2017   | Undergraduate |       11 |     |      4.89 / 5 |          5.00 / 5 |
+
+### Selected student comments
+
+- "Apurv is an engaging and funny instructor who is passionate about the subject. He doesn't hesitate to stop and ask if anyone has a question before proceeding on through relatively dense mathematical material." (Intersession 2017)
+- "It's great! Take it, especially if you're not a math major but are interested in mathematical concepts." (Intersession 2017)
+
+## Online Linear Algebra (JHU, AS.110.201)
+
+| Semester    | Student level | Students | TAs | Course rating | Instructor rating |
+|-------------|---------------|---------:|----:|--------------:|------------------:|
+| Summer 2014 | Undergraduate |       34 |     |      3.41 / 5 |          3.33 / 5 |
+
+### Selected student comments
+
+- "I wasn't expecting an online course to be run so well. In many ways, it is comparable to an actual class. The lectures for interactive and helpful. Homework submission was easy and painless. The grading was fair." (Summer 2014)
+
+## Mentoring
+
+*Placeholder.*
+
+## Professional development
+
+- Faculty Forward Fellowship, JHU, 2025
+- MAA Section NExT Fellow, MD-DC-VA Section, 2023-25
+- Introduction to Education Research Workshop, JHU, 2023
+- MSRI Critical Issues in Mathematics Education Workshop, 2022
+- MAA Modeling Inspiration for Differential Equations Workshop, 2022
+- MAA Project NExT Fellow, Brown'20 cohort, 2020
+- Mathematical Association of America Fellow, 2020-Present
+- Workshops by the Center for Teaching and Learning, UWO, 2019-2020
+- Online Mastery Grading Workshop, 2019
+- Teaching Academy Certification, JHU, 2019
+- Science of Learning Symposium, JHU, 2014-2018
+
+## Syllabi and sample materials
+
+*Placeholder: links to course websites, syllabi, and a sample homework, quiz and project rubric.*
+
+## Reflection and goals
+
+*Placeholder: what is changing next in each course, and longer-term plans.*
+
+[^ratings]: Each rating is the mean response to one of the two headline questions of the end-of-term student evaluations. At Johns Hopkins these are "The overall quality of this course is" and "The instructor's teaching effectiveness is", on a scale of 1 to 5; at Northwestern, "Provide an overall rating of the course" and "Provide an overall rating of the instruction", on a scale of 1 to 6; at Western Ontario, "Course as a learning experience" and "Effective as a university teacher", on a scale of 1 to 7. For a semester with several sections, the rating is the average over all respondents in all sections. The full reports are [on GitHub](https://github.com/apurvanakade/PDFs/tree/main/teaching%20evaluations).

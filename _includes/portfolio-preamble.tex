@@ -1,0 +1,13 @@
+% AI-owned: LaTeX tweaks for the PDF build of teaching-portfolio.qmd.
+
+\usepackage{needspace}
+\usepackage{etoolbox}
+
+% Keep a course heading on the same page as its table: each `##` is a
+% \subsection, and a table never breaks before its first rows anyway.
+\pretocmd{\subsection}{\needspace{9\baselineskip}}{}{}
+\pretocmd{\subsubsection}{\needspace{4\baselineskip}}{}{}
+
+% Tables flush left with the prose instead of centred at varying widths.
+\setlength{\LTleft}{0pt}
+\setlength{\LTright}{\fill}

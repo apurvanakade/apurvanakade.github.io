@@ -4,7 +4,8 @@ DOCS_DIR = docs/
 # .github/workflows/publish.yml, which renders and deploys docs/ to GitHub
 # Pages. docs/ is gitignored and is never committed from here. See CLAUDE.md.
 
-# HTML only, the same render CI does. The CV's PDF is `make cv`.
+# HTML only, the same render CI does. The PDFs are `make cv` and
+# `make portfolio`.
 build:
 	quarto render --to html --output-dir $(DOCS_DIR)
 
@@ -14,6 +15,12 @@ build:
 cv:
 	quarto render CV.qmd --to pdf --output-dir $(DOCS_DIR)
 	cp $(DOCS_DIR)CV.pdf CV.pdf
+
+# The same for the teaching portfolio: run it after editing
+# teaching-portfolio.qmd, then commit teaching-portfolio.pdf.
+portfolio:
+	quarto render teaching-portfolio.qmd --to pdf --output-dir $(DOCS_DIR)
+	cp $(DOCS_DIR)teaching-portfolio.pdf teaching-portfolio.pdf
 
 clean:
 	rm -rf $(DOCS_DIR) .quarto
@@ -37,4 +44,4 @@ release:
 covers:
 	python3 _scripts/make_covers.py
 
-.PHONY: build cv clean preview covers update-mathviz release
+.PHONY: build cv portfolio clean preview covers update-mathviz release

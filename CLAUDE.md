@@ -47,6 +47,7 @@ The single most important convention in this repo is a hard split between files
 | Apurva edits — Claude does not restructure | Claude maintains — Apurva never needs to open |
 |---|---|
 | `index.qmd`, `references.qmd`, `rec-letters.qmd`, `teaching-statement.qmd` | `_quarto.yml` |
+| `teaching-portfolio.qmd` | `_includes/portfolio-preamble.tex` |
 | `projects/*.qmd` (frontmatter + prose) | `_theme/*.scss` |
 | `projects/index.qmd` | `_filters/*.lua` |
 | `CV.qmd`, `cv/*.qmd` | `_includes/*.html` |
@@ -79,6 +80,7 @@ next render. Nobody edits it (see §6, "mathviz").
 ```bash
 make build     # quarto render --to html --output-dir docs/   (local only, gitignored)
 make cv        # rebuild CV.pdf with the local LaTeX; commit the result
+make portfolio # the same for teaching-portfolio.pdf
 make clean     # rm -rf docs/
 make covers    # regenerate the SVG project covers (rarely needed)
 make update-mathviz  # force a check for a newer mathviz release
@@ -198,13 +200,15 @@ CV.qmd                          assembles cv/*.qmd; renders to HTML *and* PDF
 CV.pdf                          committed; built locally by `make cv`
 cv/<section>.qmd                one CV section per file
 teaching-statement.qmd
+teaching-portfolio.qmd          renders to HTML *and* PDF, like the CV
+teaching-portfolio.pdf          committed; built locally by `make portfolio`
 rec-letters.qmd
 references.qmd
 ```
 
 Navbar: **Home · Projects · Blog · Teaching ▾ · CV**. `Teaching` is a dropdown
-holding the teaching statement, recommendation-letter instructions, and
-references.
+holding the teaching statement, teaching portfolio, recommendation-letter
+instructions, and references.
 
 **There is no sidebar for the blog subtree, deliberately.** The blog index and
 both section pages already carry a grid listing plus a categories rail, and every
@@ -246,6 +250,27 @@ remove `pdf` from `CV.qmd`'s formats; `make cv` depends on it.
 **So the content convention is: one entry per paragraph, year last, after a comma.**
 Write `Faculty Forward Fellowship, JHU, 2025` and the layout takes care of itself.
 Set `cv-layout: false` in frontmatter to switch the filter off.
+
+### The teaching portfolio
+
+`teaching-portfolio.qmd` is built the same way as the CV (HTML in CI, PDF by
+`make portfolio`, committed, copied in by `resources:`), but does **not** use
+`_filters/cv.lua`: it is one `##` section per course, each holding a pipe table
+(Semester · Student level · Students · TAs · Course rating · Instructor rating)
+followed by `###` notes and a `### Selected student comments` list, and the
+CV's `cvsection` list environment cannot hold a table (see below). The ratings
+and quotes are copied by hand from the evaluation PDFs in the
+`apurvanakade/PDFs` repo; a semester with several sections shows the
+response-weighted mean, and each rating carries its own scale (`/ 5` at JHU,
+`/ 6` at Northwestern, `/ 7` at Western Ontario) because the institutions'
+scales differ. The questions and scales are explained once, in a footnote on
+the first table's "Course rating" header, which HTML renders at the end of the
+page and LaTeX at the foot of that page. Its PDF
+layout lives in `_includes/portfolio-preamble.tex`: `\needspace` before each
+heading so a course title is never stranded above a page break, and
+`\LTleft=0pt` so tables sit flush with the prose rather than centred at
+differing widths. After editing the `.qmd`, run `make portfolio` and commit
+`teaching-portfolio.pdf` with it.
 
 ### Constraints — do not regress
 

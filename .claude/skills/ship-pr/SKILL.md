@@ -33,8 +33,10 @@ If a PR number was given, skip to step 4.
 ## 1. CV PDF
 
 If `CV.qmd` or anything under `cv/` changed, run `make cv` and include the
-regenerated `CV.pdf` in the same commit. CI renders HTML only, so a CV edit
-without this ships a stale PDF (CLAUDE.md §4).
+regenerated `CV.pdf` in the same commit. Likewise, if `teaching-portfolio.qmd`
+or `_includes/portfolio-preamble.tex` changed, run `make portfolio` and include
+`teaching-portfolio.pdf`. CI renders HTML only, so an edit without this ships a
+stale PDF (CLAUDE.md §4).
 
 ## 2. Branch and worktree
 
