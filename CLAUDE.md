@@ -49,7 +49,7 @@ The single most important convention in this repo is a hard split between files
 | `index.qmd`, `references.qmd`, `rec-letters.qmd` | `_quarto.yml` |
 | `teaching-portfolio.qmd` | `_includes/portfolio-preamble.tex` |
 | `courses/**/*.qmd` | `courses/_metadata.yml` |
-| `projects/*.qmd` (frontmatter + prose) | `_theme/*.scss` |
+| `projects/*.qmd` (frontmatter + prose) | `_theme/*.scss`, `_theme/portfolio.css` |
 | `projects/index.qmd` | `_filters/*.lua` |
 | `CV.qmd`, `cv/*.qmd` | `_includes/*.html` |
 | `math-blog/index.qmd`, `math-blog/*/index.qmd` | `_scripts/*.py` |
@@ -316,6 +316,42 @@ display heading so a list can start below it, and
 differing widths. After editing the `.qmd`, run `make portfolio` and commit
 `teaching-portfolio.pdf` with it.
 
+**The portfolio's visuals all come from `_filters/portfolio.lua`**, named in
+the page's `filters:`, so the `.qmd` stays headings, pipe tables and lists.
+It reads the course tables and builds, for HTML and LaTeX alike: a summary
+band above the first `##` (courses, students, universities, first year, mean
+JHU instructor rating since `CURRENT_ROLE_START`), a dot chart of every
+semester's instructor rating as a percentage of its scale at the top of
+`## Courses`, an institution badge and muted code in each course `###`
+(parsed from its trailing "(Institution, code)"), and quote cards from the
+list under `#### Selected student comments`. HTML alone also gets rating bars
+in the tables, pill links from `#### Sample materials`, a link card to the
+matching `projects/` page (`COURSE_PROJECTS` in the filter; title, image and
+description are read from that page's frontmatter), and icon tiles from the
+first list in `## Teaching philosophy` whose items all open with a **bold
+label** (icons chosen by `TILE_ICONS`). A heading or list that does not match
+these shapes is left as it is. So the content conventions are: write a course
+heading as `### Name (Institution, code)` with the institution spelled as in
+`INSTITUTIONS`, keep the table's column names, and end each comment with
+`(Term)` after the closing quotation mark.
+
+Its HTML styles are `_theme/portfolio.css`, which the filter attaches to this
+page alone as an HTML dependency, so they never reach another page; the LaTeX
+side (colours, `\instbadge`, the `portfolioquote` and `portfoliostats`
+boxes) is in `_includes/portfolio-preamble.tex`. Course tables are wrapped
+in `div.course-table` rather than given a class, because Quarto drops the
+classes of a table whose header holds a footnote; the wrapper also lets a
+table scroll sideways on a phone. The `inst-*` classes land on each course's
+`<section>` too (Pandoc's `section-divs`), so they set only custom properties
+and never a visible style.
+
+Institution colours are the official ones. Badges use each university's
+primary colour (JHU Heritage Blue, Northwestern Purple, Western Purple), but
+Northwestern Purple `#4E2A84` and Western Purple `#4F2683` are
+indistinguishable, so chart marks use JHU Spirit Blue, Northwestern Purple
+(Purple 30 in dark mode) and Western's Orchid, and each institution also has
+its own marker shape and a labelled band.
+
 ### Constraints — do not regress
 
 - **Pandoc's `section-divs` copies a header's classes onto the wrapping
@@ -560,6 +596,7 @@ reachable by anyone with the URL — treat them as public.
 _theme/base.scss    typography, layout, components (shared)
 _theme/light.scss   light palette
 _theme/dark.scss    dark palette
+_theme/portfolio.css  teaching portfolio only (§4); not part of the theme
 ```
 
 Layered over Bootstrap bases in `_quarto.yml`:

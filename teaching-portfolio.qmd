@@ -4,6 +4,8 @@ subtitle: "Apurva Nakade, Assistant Teaching Professor, Department of Applied Ma
 toc: true
 toc-title: "Contents"
 toc-depth: 3
+filters:
+  - _filters/portfolio.lua
 format:
   html:
     toc: true
@@ -32,6 +34,12 @@ I have been teaching for more than a decade now. After all these years, I have c
 My teaching experience ranges from creating advanced electives and short bootcamp courses for small groups of students to managing and teaching in-person courses with several hundred students, coordinating multi-section classes, and adapting large service courses for asynchronous education. I have contributed to open source texts using technologies such as Webwork, Quarto, Pretext, and RMarkdown, and I'm involved in the long-term project of math formalization using the Lean theorem prover. I have taught topics spanning calculus, linear algebra, differential equations, discrete math, linear programming, math formalization, manifolds, algebraic topology, Monte Carlo methods, and computational math.
 
 A central theme in my teaching has been adapting courses to student needs without watering down the content. I have redesigned most of the courses I teach, and a few ideas recur. I let students resubmit work to recover lost points, so they learn that mathematics is an iterative process rather than a rush to a final answer. I prefer frequent, smaller assessments to a few high-stakes exams. I write online-first course materials with code built in, and give older students final projects that offer them agency and a chance to showcase their skills. I also adapt courses to a post-AI world, deemphasizing what AI does better and encouraging students to use it to strengthen their learning. The course-by-course details are under [Courses](#courses) below.
+
+- **Resubmissions**: students revise their work to recover lost points
+- **Frequent, small assessments** instead of a few high-stakes exams
+- **Online-first materials** with code built in
+- **Final projects** that give students agency and a chance to showcase their skills
+- **AI-aware design**: less of what AI does better, and AI used to strengthen learning
 
 ## Courses
 

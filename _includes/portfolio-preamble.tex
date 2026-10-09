@@ -20,3 +20,51 @@
 % Tables flush left with the prose instead of centred at varying widths.
 \setlength{\LTleft}{0pt}
 \setlength{\LTright}{\fill}
+
+% ------------------------------------------------------------------ colour
+% Everything below is drawn by _filters/portfolio.lua. Institution colours
+% are the universities' official ones; see _theme/portfolio.css for why the
+% badges and the chart use different pairs.
+\usepackage{xcolor}
+\usepackage{tikz}
+\usepackage{tabularx}
+\usepackage[most]{tcolorbox}
+
+\definecolor{portfolioaccent}{HTML}{10606B}  % site accent, light palette
+\definecolor{portfoliorule}{HTML}{E2E0DA}
+\definecolor{portfoliosurface}{HTML}{F7F6F2}
+
+\definecolor{instchip-jhu}{HTML}{002D72}   % JHU Heritage Blue
+\definecolor{instchip-nw}{HTML}{4E2A84}    % Northwestern Purple
+\definecolor{instchip-uwo}{HTML}{4F2683}   % Western Purple
+\definecolor{instchip-other}{HTML}{5C6570}
+\definecolor{instchart-jhu}{HTML}{68ACE5}  % JHU Spirit Blue
+\definecolor{instchart-nw}{HTML}{4E2A84}   % Northwestern Purple
+\definecolor{instchart-uwo}{HTML}{8F55E0}  % Western Orchid
+\definecolor{instchart-other}{HTML}{5C6570}
+
+% `##` headings in the accent colour; `###` (a course) stays in ink.
+\titleformat{\subsection}{\normalfont\large\bfseries\color{portfolioaccent}}{}{0pt}{}
+
+% Institution badge and course code in a course heading.
+\DeclareRobustCommand{\instbadge}[2]{%
+  {\setlength{\fboxsep}{1.6pt}\colorbox{instchip-#1}{%
+    \color{white}\normalfont\scriptsize\bfseries\strut\,#2\,}}}
+\DeclareRobustCommand{\coursecode}[1]{{\normalfont\small\color{black!55}#1}}
+
+% Summary band above the first section.
+\newtcolorbox{portfoliostats}{enhanced, colback=portfoliosurface,
+  colframe=portfoliorule, boxrule=0.4pt, toprule=1.6pt,
+  colbacktitle=portfolioaccent, arc=2pt, left=2pt, right=2pt,
+  top=5pt, bottom=4pt, before skip=6pt, after skip=14pt,
+  borderline north={1.6pt}{0pt}{portfolioaccent}}
+\newcommand{\portfoliostatvalue}[1]{{\LARGE\color{black!85}#1}}
+\newcommand{\portfoliostatlabel}[1]{{\scriptsize\color{black!60}#1}}
+
+% A student comment: a light panel with a rule in the institution's colour.
+\newtcolorbox{portfolioquote}[1]{enhanced, breakable,
+  colback=portfoliosurface, colframe=portfoliosurface, boxrule=0pt,
+  borderline west={2pt}{0pt}{instchip-#1}, arc=0pt, outer arc=0pt,
+  left=8pt, right=6pt, top=3pt, bottom=3pt,
+  before skip=4pt, after skip=4pt, fontupper=\small}
+\newcommand{\portfolioterm}[1]{\hfill{\footnotesize\color{black!55}\ (#1)}}
