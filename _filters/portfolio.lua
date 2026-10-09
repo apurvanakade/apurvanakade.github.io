@@ -368,14 +368,18 @@ local function summarise(courses)
     { value = years and tostring(years) or "", label = "teaching since" },
   }
   if #recent > 0 then
-    local sum, last = 0, 0
+    local values, last = {}, 0
     for _, r in ipairs(recent) do
-      sum = sum + r.rating
+      values[#values + 1] = r.rating
       if r.year > last then last = r.year end
     end
+    table.sort(values)
+    local n = #values
+    local median = n % 2 == 1 and values[(n + 1) / 2]
+      or (values[n / 2] + values[n / 2 + 1]) / 2
     stats[#stats + 1] = {
-      value = fmt(sum / #recent) .. " / " .. recent[1].scale,
-      label = "mean JHU instructor rating, " .. CURRENT_ROLE_START .. "-" .. tostring(last):sub(3),
+      value = fmt(median) .. " / " .. recent[1].scale,
+      label = "median JHU instructor rating, " .. CURRENT_ROLE_START .. "-" .. tostring(last):sub(3),
     }
   end
   return stats

@@ -319,7 +319,7 @@ differing widths. After editing the `.qmd`, run `make portfolio` and commit
 **The portfolio's visuals all come from `_filters/portfolio.lua`**, named in
 the page's `filters:`, so the `.qmd` stays headings, pipe tables and lists.
 It reads the course tables and builds, for HTML and LaTeX alike: a summary
-band above the first `##` (courses, students, universities, first year, mean
+band above the first `##` (courses, students, universities, first year, median
 JHU instructor rating since `CURRENT_ROLE_START`), a dot chart of every
 semester's instructor rating as a percentage of its scale at the top of
 `## Courses`, an institution badge and muted code in each course `###`
