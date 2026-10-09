@@ -1,0 +1,16 @@
+---
+title: "Course Pages"
+description: "Public copies of the course websites for courses I have taught at Johns Hopkins."
+toc: false
+listing:
+  contents: "*/index.qmd"
+  type: table
+  sort: "date desc"
+  fields: [title, subtitle, description]
+  field-display-names:
+    subtitle: "Term"
+  sort-ui: false
+  filter-ui: false
+---
+
+These pages are copies of the Canvas sites for courses I have taught at Johns Hopkins, with homework, quizzes and exams left out.

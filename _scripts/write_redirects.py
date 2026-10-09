@@ -14,7 +14,8 @@ DOCS = ROOT / "docs"
 REDIRECTS = {
     "notes.html": "projects/index.html",
     "rec letters.html": "rec-letters.html",
-    "teaching statement.html": "teaching-statement.html",
+    "teaching statement.html": "teaching-portfolio.html",
+    "teaching-statement.html": "teaching-portfolio.html",
 }
 
 STUB = """<!doctype html>

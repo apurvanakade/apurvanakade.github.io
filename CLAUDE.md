@@ -46,8 +46,9 @@ The single most important convention in this repo is a hard split between files
 
 | Apurva edits — Claude does not restructure | Claude maintains — Apurva never needs to open |
 |---|---|
-| `index.qmd`, `references.qmd`, `rec-letters.qmd`, `teaching-statement.qmd` | `_quarto.yml` |
+| `index.qmd`, `references.qmd`, `rec-letters.qmd` | `_quarto.yml` |
 | `teaching-portfolio.qmd` | `_includes/portfolio-preamble.tex` |
+| `courses/**/*.qmd` | `courses/_metadata.yml` |
 | `projects/*.qmd` (frontmatter + prose) | `_theme/*.scss` |
 | `projects/index.qmd` | `_filters/*.lua` |
 | `CV.qmd`, `cv/*.qmd` | `_includes/*.html` |
@@ -199,16 +200,19 @@ math-blog/drafts/*.qmd          rendered and published, but not listed anywhere
 CV.qmd                          assembles cv/*.qmd; renders to HTML *and* PDF
 CV.pdf                          committed; built locally by `make cv`
 cv/<section>.qmd                one CV section per file
-teaching-statement.qmd
-teaching-portfolio.qmd          renders to HTML *and* PDF, like the CV
+teaching-portfolio.qmd          teaching philosophy, courses, goals; HTML *and* PDF
 teaching-portfolio.pdf          committed; built locally by `make portfolio`
 rec-letters.qmd
 references.qmd
+courses/index.qmd               table listing of the course pages
+courses/<course>/index.qmd      one course: overview, outline, links
+courses/<course>/*.qmd          further pages (exams, project)
+courses/<course>/*.pdf          syllabus and project slides, as-is
 ```
 
 Navbar: **Home · Projects · Blog · Teaching ▾ · CV**. `Teaching` is a dropdown
-holding the teaching statement, teaching portfolio, recommendation-letter
-instructions, and references.
+holding the teaching portfolio, course pages,
+recommendation-letter instructions, and references.
 
 **There is no sidebar for the blog subtree, deliberately.** The blog index and
 both section pages already carry a grid listing plus a categories rail, and every
@@ -217,6 +221,40 @@ navigation. The standalone blog used an explicit sidebar file list in its
 `_quarto.yml` and it had gone stale — it still pointed at a post deleted months
 earlier. Listings cannot rot that way. If a sidebar is ever wanted again, note
 that Quarto rejects `auto:` globs combined with a `href:` on the same section.
+
+### Course pages
+
+`courses/` holds public copies of Canvas course sites (Discrete Mathematics,
+Monte Carlo Methods, Introduction to Computational Mathematics, Foundational
+Mathematics of AI, Graph Theory), linked from each course's "Sample
+materials" heading in `teaching-portfolio.qmd`. Those links are absolute
+`https://apurvanakade.github.io/courses/...` URLs so they also work in the
+PDF. They are copies, not
+mirrors: content was pulled once from the JHU Canvas API and rewritten as
+plain `.qmd`, and nothing syncs them. The Canvas page style is not reproduced.
+
+**What may be copied over, and what may not.** These pages are public, and the
+Canvas sites they come from were not:
+
+- **Never**: homework, quiz, exam, practice-exam or solution files (or links
+  to them); TA or student names, emails, photos or bios; project group rosters;
+  Zoom links, room numbers, office-hour tables; links into Canvas, Gradescope,
+  zyBooks, Microsoft Forms or SharePoint folders (they need a JHU login).
+- **Yes**: Apurva's OneNote class-note share links (`1drv.ms`; Apurva accepts
+  that they may stop working), course descriptions, outlines and schedules,
+  exam topic lists and policies, project guidelines, project ideas, and
+  project *titles* without the students' names. Syllabi and project slides are kept as the
+  original PDFs, after checking their text for names other than Apurva's.
+
+Each course's `index.qmd` carries `subtitle:` (the term) and `date:` (the
+term's start) for the listing's columns and sort. That date is not a
+publication date, so `courses/_metadata.yml` adds the body class
+`course-page` and `_theme/base.scss` hides the title block's "Published" line
+for it.
+
+The Canvas API token lives in the gitignored file `canvas API token` at the
+repo root (host `jhu.instructure.com`; `canvas.jhu.edu` refuses API calls).
+Never commit it or copy it into another file.
 
 ---
 
@@ -256,7 +294,9 @@ Set `cv-layout: false` in frontmatter to switch the filter off.
 `teaching-portfolio.qmd` is built the same way as the CV (HTML in CI, PDF by
 `make portfolio`, committed, copied in by `resources:`), but does **not** use
 `_filters/cv.lua`. Its `##` sections are Teaching philosophy, Courses,
-Mentoring, Professional development and so on; under Courses each course is a
+Mentoring, Professional development and so on. There is no separate teaching
+statement page: its prose lives in Teaching philosophy, Professional development
+and Reflection and goals, and its old URLs redirect here (§8). Under Courses each course is a
 `###` holding a pipe table
 (Semester · Student level · Students · TAs · Course rating · Instructor rating)
 followed by `####` notes and a `#### Selected student comments` list, and the
@@ -567,14 +607,15 @@ Layered over Bootstrap bases in `_quarto.yml`:
 
 ## 8. Redirects
 
-The 2026 reorganisation changed some URLs. `_scripts/write_redirects.py` writes
-meta-refresh stubs after each render:
+Some URLs have changed. `_scripts/write_redirects.py` writes meta-refresh stubs
+after each render:
 
 | Old | New |
 |---|---|
 | `notes.html` | `projects/index.html` |
 | `rec letters.html` | `rec-letters.html` |
-| `teaching statement.html` | `teaching-statement.html` |
+| `teaching statement.html` | `teaching-portfolio.html` |
+| `teaching-statement.html` | `teaching-portfolio.html` |
 
 The script refuses to overwrite a page Quarto actually rendered. Add to the
 `REDIRECTS` dict whenever a page moves.

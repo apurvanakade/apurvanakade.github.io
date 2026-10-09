@@ -5,6 +5,7 @@ project:
     - "*.qmd"
     - "projects/*.qmd"
     - "math-blog/**/*.qmd"
+    - "courses/**/*.qmd"
     - "!cv/"
   # The CV's and teaching portfolio's PDFs are built locally (`make cv`,
   # `make portfolio`) and committed; CI renders HTML only, so it needs no
@@ -32,10 +33,10 @@ website:
         href: math-blog/index.qmd
       - text: Teaching
         menu:
-          - text: Teaching statement
-            href: teaching-statement.qmd
           - text: Teaching portfolio
             href: teaching-portfolio.qmd
+          - text: Course pages
+            href: courses/index.qmd
           - text: Recommendation letters
             href: rec-letters.qmd
           - text: References & reading

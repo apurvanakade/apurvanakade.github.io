@@ -27,7 +27,11 @@ format:
 
 ## Teaching philosophy
 
-*Placeholder: a one-paragraph summary of the [teaching statement](teaching-statement.qmd).*
+I have been teaching for more than a decade now. After all these years, I have come to understand that my role in the classroom and beyond is to support, motivate, and inspire students. I believe that the best way to learn mathematics is through making mistakes, getting confused, and struggling toward a solution. I consider myself a coach and a facilitator and teach with the core philosophy that my primary goal is to provide students with a welcoming and inclusive environment where experimentation is encouraged and honest mistakes aren't penalized. It is important to me that students who complete my courses leave with a sense of pride and accomplishment, and with increased interest in mathematics, curiosity, and self-confidence.
+
+My teaching experience ranges from creating advanced electives and short bootcamp courses for small groups of students to managing and teaching in-person courses with several hundred students, coordinating multi-section classes, and adapting large service courses for asynchronous education. I have contributed to open source texts using technologies such as Webwork, Quarto, Pretext, and RMarkdown, and I'm involved in the long-term project of math formalization using the Lean theorem prover. I have taught topics spanning calculus, linear algebra, differential equations, discrete math, linear programming, math formalization, manifolds, algebraic topology, Monte Carlo methods, and computational math.
+
+A central theme in my teaching has been adapting courses to student needs without watering down the content. I have redesigned most of the courses I teach, and a few ideas recur. I let students resubmit work to recover lost points, so they learn that mathematics is an iterative process rather than a rush to a final answer. I prefer frequent, smaller assessments to a few high-stakes exams. I write online-first course materials with code built in, and give older students final projects that offer them agency and a chance to showcase their skills. I also adapt courses to a post-AI world, deemphasizing what AI does better and encouraging students to use it to strengthen their learning. The course-by-course details are under [Courses](#courses) below.
 
 ## Courses
 
@@ -41,13 +45,18 @@ format:
 | Fall 2025   | Undergraduate |       45 |   4 |      4.33 / 5 |          4.48 / 5 |
 | Spring 2026 | Undergraduate |       30 |     |      4.31 / 5 |          4.45 / 5 |
 
+#### Sample materials
+
+- [Course page, Fall 2026](https://apurvanakade.github.io/courses/discrete-math/): syllabus, weekly schedule, lecture notes, and [exam guides](https://apurvanakade.github.io/courses/discrete-math/exams.html) with topics, study advice and grading criteria
+
 #### 2025
 
-- Modernized the course using evidence-driven pedagogical techniques
-- Adapted an online textbook to better match current student mindsets
-- Introduced homework resubmissions to reinforce student learning
+- Rebuilt the course from scratch, drawing on teaching similar courses at Northwestern and Western Ontario during Covid: online video lectures, Webwork problems written from scratch, and an exam administered in Webwork
+- Introduced homework resubmissions, so students can recover lost points and stop rushing to a final answer; mathematics is a creative, iterative process
+- Replaced two long midterms with three in-class midterms, so students focus on a few topics at a time and a single bad score does not sink their grade
+- Switched to an online textbook with built-in exercises; students now work regularly instead of only near deadlines and exams, and the grades of weaker students improved drastically
 - Introduced online assessments to improve feedback
-- Restructured exams to better gauge student learning
+- Several of the course's TAs have gone on to TA other courses
 
 #### Selected student comments
 
@@ -68,14 +77,21 @@ format:
 | Fall 2025   | Undergraduate              |       15 |   2 |      4.53 / 5 |          4.67 / 5 |
 | Spring 2026 | Undergraduate and master's |       29 |     |      4.66 / 5 |          4.76 / 5 |
 
+#### Sample materials
+
+- [Course page, Spring 2026](https://apurvanakade.github.io/courses/monte-carlo/): syllabus, course notes and course outline
+- [Final project](https://apurvanakade.github.io/courses/monte-carlo/project.html): guidelines, rubrics, project ideas and past student project titles. Spring 2025 projects ranged from Hamiltonian Monte Carlo and adaptive rejection sampling to approximating PageRank and testing the randomness of LLM-generated numbers.
+
 #### 2025
 
+- Updated the previous instructor's course to align with the ways students learn today
 - Rewrote course notes with an online-first approach, creating a [course website](https://apurvanakade.github.io/Monte-Carlo-Methods/) instead of a traditional textbook
 - Incorporated code directly into the online textbook for seamless integration of theory and practice
-- Restructured weekly homework to include both programming and theory components, with the two complementing each other
-- Replaced traditional exams with weekly quizzes to help students keep up with fast-paced material and reduce exam anxiety
-- Added a final project component, allowing seniors and master's students to showcase their skills and have agency in their learning
-- Adapted the course for a post-AI world by deemphasizing tasks that can be done better by AI and encouraging students to use AI tools to strengthen their learning
+- Restructured weekly homework to include both programming and theory components: the theory explains the rationale behind the algorithms, and the programming immediately shows how to apply it
+- Replaced traditional exams with weekly quizzes; the course covers fragmented topics with no central theory and nothing to memorize, and quizzes help students keep up with fast-paced material and reduce exam anxiety
+- Added a final project, giving seniors and master's students agency in their learning and a way to showcase their skills; non-math majors have produced papers and software worthy of being presented at conferences
+- Adapted the course for a post-AI world: students are encouraged to use AI assistants for programming assignments and final projects, but only their theoretical understanding is evaluated, and the final project requires a detailed report with the mathematical analysis
+- Planning a CTEI grant application to update the online textbook and add interactive components
 
 #### Selected student comments
 
@@ -90,6 +106,11 @@ format:
 | Semester    | Student level | Students | TAs | Course rating | Instructor rating |
 |-------------|---------------|---------:|----:|--------------:|------------------:|
 | Spring 2026 | Undergraduate |       49 |     |      4.48 / 5 |          4.66 / 5 |
+
+#### Sample materials
+
+- [Course page, Spring 2026](https://apurvanakade.github.io/courses/computational-math/): syllabus, class notes and course outline
+- [Final project](https://apurvanakade.github.io/courses/computational-math/project.html): guidelines, rubrics, project ideas and student project titles
 
 #### Selected student comments
 
@@ -115,12 +136,17 @@ format:
 |-------------|---------------|---------:|----:|--------------:|------------------:|
 | Summer 2025 | High school   |       36 |   1 |      4.44 / 5 |          4.56 / 5 |
 
+#### Sample materials
+
+- [Course page, Summer 2026](https://apurvanakade.github.io/courses/foundational-math-ai/): daily outline, class notes and interactive tools used in class
+- [Course project](https://apurvanakade.github.io/courses/foundational-math-ai/project.html): the three-part data analysis project. Summer 2025 groups predicted heart disease, bank customers' decisions, exam performance and mushroom toxicity from public datasets; from Summer 2026, groups find their own real-world data.
+
 #### Summer 2025
 
 - Revamped the entire course to fit the audience of smart, motivated high school students with limited mathematical and programming background
 - Made sessions interactive and flipped most classes
 - Designed collaborative learning activities where students work with each other
-- Incorporated discussions on AI ethics to engage students and spark interest in the subject
+- Incorporated discussions on topics like AI ethics, which got students hooked on the subject
 - Developed a streamlined Python curriculum to teach programming from scratch and quickly transition to applications
 
 #### Selected student comments
@@ -144,6 +170,11 @@ format:
 | Semester    | Student level | Students | TAs | Course rating | Instructor rating |
 |-------------|---------------|---------:|----:|--------------:|------------------:|
 | Spring 2024 | Graduate      |       25 |     |      4.32 / 5 |          4.33 / 5 |
+
+#### Sample materials
+
+- [Course page, Spring 2024](https://apurvanakade.github.io/courses/graph-theory/): weekly schedule with lecture notes and Jupyter notebooks
+- [Final projects](https://apurvanakade.github.io/courses/graph-theory/project.html): guidelines, topic suggestions and the projects presented. Topics ranged from Wagner's theorem and perfect graphs to graph neural networks, phylogenetics and brain diffusion networks.
 
 #### Selected student comments
 
@@ -343,6 +374,8 @@ format:
 
 ## Professional development
 
+I have completed a Faculty Forward Fellowship and a certification course at the Teaching Academy at JHU, where I learned about several important pedagogical concepts such as inquiry-based learning, backward course design, and learning objectives, which I regularly incorporate into my own teaching. I regularly attend workshops at the Center for Teaching Excellence and Innovation at JHU, and I am a member of the MAA's Project NExT'20 cohort. Besides new skills, these workshops let me take on the role of a student and stay grounded.
+
 - Faculty Forward Fellowship, JHU, 2025
 - MAA Section NExT Fellow, MD-DC-VA Section, 2023-25
 - Introduction to Education Research Workshop, JHU, 2023
@@ -361,6 +394,8 @@ format:
 
 ## Reflection and goals
 
-*Placeholder: what is changing next in each course, and longer-term plans.*
+I want to keep updating existing courses and create new ones that are first and foremost useful to my students, with interactive and engaging materials. I'm planning on applying for a CTEI grant for help with this.
+
+I also want to broaden my work from teaching to mentoring and outreach. Finally, I want to engage more with the broader teaching community. I'm looking forward to the reduced course load, which will allow me to do this.
 
 [^ratings]: Each rating is the mean response to one of the two headline questions of the end-of-term student evaluations. At Johns Hopkins these are "The overall quality of this course is" and "The instructor's teaching effectiveness is", on a scale of 1 to 5; at Northwestern, "Provide an overall rating of the course" and "Provide an overall rating of the instruction", on a scale of 1 to 6; at Western Ontario, "Course as a learning experience" and "Effective as a university teacher", on a scale of 1 to 7. For a semester with several sections, the rating is the average over all respondents in all sections. The full reports are [on GitHub](https://github.com/apurvanakade/PDFs/tree/main/teaching%20evaluations).

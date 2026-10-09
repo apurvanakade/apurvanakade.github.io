@@ -1,0 +1,116 @@
+---
+title: "Final Project"
+subtitle: "Introduction to Computational Mathematics, Spring 2026"
+---
+
+[Back to the course page](index.qmd)
+
+In place of a final exam, students complete a final project in groups of two or three. Every project balances three elements: **learning** a method or application beyond the syllabus, **analysis** that tests its boundaries, and **research**, a creative modification of the model or algorithm that is then evaluated.
+
+- [Final project guidelines](final-project-guidelines.pdf) (PDF slides): philosophy, required elements, example projects, the proposal, presentations, AI policy and peer evaluations.
+- [Final project deliverables](final-project-deliverables.pdf) (PDF slides): what is submitted and how each part is assessed.
+
+## Timeline
+
+| Milestone                    | When                     |
+|------------------------------|--------------------------|
+| In-class group work sessions | April 21 and 23          |
+| Project proposal             | End of class on April 23 |
+| Presentations                | May 5 or May 8           |
+| Final submission             | May 8                    |
+
+During the two in-class work sessions I give an overview of the deliverables, answer questions about the requirements, and hand out templates and rubrics for the proposal. Each group develops its proposal, splits up roles and responsibilities, and fills in a check-in sheet summarizing its discussion. The proposal is a concrete project plan with each member's responsibilities and tasks. All materials are due May 8 regardless of the presentation date, so every group has at least two weeks to complete its project.
+
+## Presentation
+
+Slides are assessed on four criteria:
+
+- **Narrative clarity:** does the presentation tell a clear, logical story that assumes only the knowledge covered in the course?
+- **The "delta":** is the group's specific modification or research contribution clearly identified and explained?
+- **Visual communication:** are the slides clean and professional, using effective visualizations rather than walls of text?
+- **Technical command:** does the group show a solid understanding of its methods, stay within the time limit and answer questions well?
+
+The final presentation is a chance to share findings with the community built over the semester. The criteria keep everyone accountable, but the goal is a low-stress setting: if you have done the work and can explain it clearly, you will do well.
+
+## Project archive
+
+The final submission is a zip file containing a Jupyter notebook and everything it needs to run. The notebook is the heart of the project: it is where the technical rigor and the creative "delta" live. It must run from top to bottom in a clean environment (with numpy, scipy, matplotlib and seaborn installed, plus any packages listed in a `requirements.txt` or `environment.yml`), use relative paths, and include all of its data files. It is assessed on:
+
+- **Reproducibility:** the notebook executes from top to bottom in a clean environment without manual troubleshooting.
+- **Literate programming:** Markdown cells give a clear narrative explaining the mathematical intuition behind the code.
+- **Algorithmic correctness:** the methods and modifications are technically sound and mathematically accurate.
+- **The "delta":** the creative modification is clearly coded, tested, and compared against a baseline or standard method.
+- **Data visualization:** plots and tables demonstrate convergence, error analysis or comparative results.
+- **Code quality:** intuitive variable names, and complex logic broken into readable, well-commented functions.
+- **Rigorous analysis:** the method's boundaries are tested, for example its stability, parameter sensitivity or convergence rate.
+
+## Project ideas
+
+These are only starting points: the best projects usually come from your own research interests or curiosity, so modify them, combine them or propose something entirely new. Section numbers refer to Driscoll and Braun, [*Fundamentals of Numerical Computation*](https://fncbook.com/).
+
+| Project | Description | Connection to the course (textbook sections) |
+|----------------------|--------------------------------------------------|----------------------------|
+| Terrain Modeling and Elevation Analysis | Interpolate scattered elevation data using splines to create terrain models. Compute derived quantities (slope, aspect, curvature) using finite differences on the interpolated surface, and study accuracy versus data density. | 5.3 Cubic splines, 5.4–5.5 Finite differences |
+| Newton's Fractals and Basins of Attraction | Apply Newton's method to polynomials and transcendental functions in the complex plane to generate fractal basin boundaries. Study how basin structure changes with polynomial degree, explore modified Newton methods with relaxation parameters, and analyze fractal dimension of boundaries. | 4.3 Newton's method, 4.5 Newton for systems |
+| Chemical Equilibrium Concentrations | Solve systems of nonlinear equations for equilibrium concentrations in chemical reactions. Use Newton's method, study convergence dependence on initial guesses, and extend to parameter studies varying temperature or pressure. | 4.5 Newton for nonlinear systems |
+| Mechanical Oscillators: Pendulums and Springs | Model single and coupled oscillators (pendulum, spring-mass systems) as ODE systems. Extend to nonlinear oscillators (large-angle pendulum), compare numerical solutions with linearized approximations, and study energy conservation. | 6.3 Systems of ODEs, 6.4 Runge-Kutta methods |
+| Mandelbrot and Julia Sets Visualization | Generate high-resolution visualizations of Mandelbrot and Julia sets using iterative complex mappings. Implement zoom functionality with arbitrary precision, create color schemes based on escape time and orbit behavior, and explore the connection between Mandelbrot set parameters and Julia set shapes. | 4.1 Fixed-point iteration, 4.3 Convergence analysis |
+| Heat Distribution in a Rod | Discretize the steady-state heat equation on a 1D rod to obtain a linear system. Solve for temperature distribution with various boundary conditions, study how mesh refinement affects accuracy and matrix conditioning. | 2.3–2.4 Linear systems and LU factorization, 2.8 Conditioning |
+| Adaptive Integration for Challenging Functions | Implement adaptive quadrature with automatic error estimation and subdivision. Extend to handling integrands with singularities, sharp peaks, or oscillations. Compare adaptive strategy efficiency with fixed high-order methods on a diverse test suite. | 5.7 Adaptive integration |
+| Orbit Determination from Observations | Estimate orbital parameters from position observations using nonlinear least squares. Study how observation timing and quantity affect parameter accuracy, compare Gauss-Newton with Levenberg-Marquardt, and analyze residual patterns. | 4.7 Nonlinear least squares |
+| Curve Fitting for Kinetics and Growth Models | Fit kinetic models (Michaelis-Menten, enzyme kinetics) and growth models (logistic, Gompertz) to experimental data using Gauss-Newton and Levenberg-Marquardt. Analyze parameter confidence intervals and compare convergence behavior across methods. | 4.7 Nonlinear least squares |
+| Audio Signal Fitting and Compression | Fit audio signals with sums of sinusoids using least squares. Study how the number of frequencies affects fit quality and conditioning, compare time-domain versus frequency-domain approaches, and analyze compression tradeoffs. | 3.1–3.4 Least squares methods |
+| Balancing Chemical Equations | Formulate chemical equation balancing as a linear system and solve for stoichiometric coefficients. Extend to complex reaction networks, study underdetermined systems with free parameters, and analyze solution uniqueness. | 2.3–2.4 Linear systems and LU factorization |
+| Iterative Method Convergence Visualization | Visualize convergence behavior of iterative methods (Jacobi, Gauss-Seidel, SOR, conjugate gradient) for linear systems. Create animated visualizations showing error evolution in 2D/3D, generate convergence rate heatmaps as parameters vary, and study spectral radius effects on iteration paths. | 2.5 Iterative methods, 2.7–2.8 Norms and conditioning |
+| Electrical Network Analysis | Model resistor networks as linear systems using Kirchhoff's laws. Solve for node voltages and branch currents, study how network topology affects matrix structure and conditioning, and analyze sensitivity to component tolerances. | 2.3–2.4 Linear systems and LU factorization, 2.7–2.8 Norms and conditioning |
+| Mass-Spring System Dynamics | Model coupled mass-spring systems as linear systems for equilibrium positions. Solve for displacements under applied forces, study how spring constants and topology affect conditioning, and extend to analyzing vibrational modes. | 2.3–2.4 Linear systems and LU factorization, 2.7–2.8 Norms and conditioning |
+| Boundary Value Problems via Shooting Methods | Solve two-point BVPs (e.g., steady-state heat conduction, beam deflection) using single and multiple shooting. Combine ODE integration with Newton's method for rootfinding, and study sensitivity of shooting to initial guesses and problem stiffness. | 6.3–6.4 ODE methods, 4.3–4.5 Newton's method |
+| Intersection of Curves and Surfaces | Find intersection points of implicit curves and surfaces using Newton's method for nonlinear systems. Study convergence behavior, handle multiple intersections, and extend to ray-surface intersection for simple rendering applications. | 4.5 Newton for nonlinear systems |
+| Polynomial Interpolation for Data Reconstruction | Implement Newton's divided differences and barycentric Lagrange interpolation to reconstruct missing data points (e.g., sensor readings, historical records). Compare stability, demonstrate Runge phenomenon, and study convergence with Chebyshev nodes. | 2.1 Polynomial interpolation, 2.8 Conditioning, 5.1 Interpolation |
+| Phase Portrait and Vector Field Visualization | Create phase portraits for 2D dynamical systems showing trajectories, nullclines, and equilibria. Implement interactive vector field plotting with color-coded magnitudes, visualize limit cycles and separatrices, and study bifurcations as parameters change. | 6.3 Systems of ODEs, 6.4 Runge-Kutta methods |
+| Image Deblurring via Linear Systems | Model image blur as a linear system and solve for the original image using direct methods. Study how blur kernel size affects conditioning, compare solution methods, and analyze regularization approaches for noisy images. | 2.3–2.4 Linear systems and LU factorization, 2.8 Conditioning |
+| Camera Calibration from Images | Estimate camera parameters (focal length, position, orientation) from known calibration points using linear least squares, then refine with nonlinear least squares. Study how point configuration affects conditioning and parameter accuracy. | 3.1–3.3 Least squares methods, 4.7 Nonlinear least squares |
+| Predator-Prey and Ecological Models | Model ecological dynamics (Lotka-Volterra, competing species, SIR epidemics) as ODE systems. Solve with RK methods, compare accuracy, and study qualitative behavior (oscillations, equilibria, bifurcations) as parameters vary. | 6.3 Systems of ODEs, 6.4 Runge-Kutta methods |
+| Numerical Integration: Algorithms and Applications | Implement composite quadrature rules (trapezoid, Simpson, Gauss-Legendre) and compare on standard test integrals. Extend to computing quantities of interest (arc length, surface area, centers of mass) and analyzing efficiency versus accuracy tradeoffs. | 5.6 Numerical integration |
+| Chaotic Dynamics: Lorenz System and Double Pendulum | Simulate chaotic systems using RK methods. Extend to quantifying sensitivity to initial conditions, studying how numerical error affects long-time behavior, and comparing adaptive versus fixed-step methods for chaotic trajectories. | 6.3 Systems of ODEs, 6.4–6.5 Runge-Kutta methods |
+| GPS Positioning via Least Squares | Estimate position from satellite range measurements using linearized least squares and iterate via Gauss-Newton. Study how satellite geometry affects accuracy (geometric dilution of precision) and analyze sensitivity to measurement noise. | 3.1–3.3 Least squares methods, 4.7 Nonlinear least squares |
+| Cubic Splines for Curve and Surface Modeling | Use cubic splines to interpolate parametric curves (2D paths, fonts, animations). Extend to tensor-product spline surfaces for terrain or shape modeling. Study how parameterization and knot placement affect curve/surface quality. | 5.3 Cubic splines |
+| Projectile Motion and Trajectory Optimization | Model projectile motion with realistic drag models as ODE systems. Extend to solving targeting problems using shooting methods (combining ODE integration with rootfinding) to determine launch parameters for desired endpoints. | 6.3 Systems of ODEs, 6.4 Runge-Kutta methods, 4.3 Newton's method |
+| Heat Equation Animation and PDE Visualization | Solve time-dependent heat equation using method of lines (spatial discretization + ODE solver). Create animated visualizations of temperature evolution with various boundary conditions and initial states. Study stability, accuracy, and visual phenomena like diffusion smoothing. | 6.3–6.4 ODE systems and methods, 5.4 Finite differences |
+| Data Linearization and Nonlinear Model Fitting | Fit nonlinear models (exponential, power law, logistic) to data using linearization techniques and compare with direct nonlinear least squares (Gauss-Newton). Analyze when linearization introduces bias and compare parameter accuracy. | 3.1–3.3 Least squares methods, 4.7 Nonlinear least squares |
+| Multivariate Regression and Feature Analysis | Fit multivariate linear models to datasets with multiple predictors. Study conditioning of design matrices with correlated features, compare normal equations versus QR, and analyze feature importance through coefficient stability. | 3.1–3.4 Least squares methods |
+| Interest Rates and Financial Equations | Solve nonlinear equations arising in finance: internal rate of return, bond yield to maturity, and option implied volatility. Compare rootfinding methods and study conditioning of these problems near economically meaningful solutions. | 4.1–4.4 Rootfinding methods |
+| Adaptive ODE Solvers: Error Control and Efficiency | Implement adaptive RK methods using embedded pairs (e.g., RK4(5)) with step size control. Extend to comparing PI/PID controllers for step selection and testing on problems with shocks, rapid transients, or near-discontinuities. | 6.5 Adaptive Runge-Kutta |
+| Font Design and Glyph Interpolation | Design letter shapes using cubic splines with control over endpoint derivatives. Study how boundary conditions affect letterform aesthetics, implement smooth connections between strokes, and create interpolations between font weights. | 5.3 Cubic splines |
+| Bézier Curves and Animation Paths | Implement Bézier curves using de Casteljau's algorithm for computer graphics and animation. Create interactive curve editors with control point manipulation, generate smooth animation paths with velocity control, and compare with spline interpolation for path planning. | 5.1–5.2 Interpolation and approximation, 5.3 Cubic splines |
+| Motion Capture and Trajectory Smoothing | Fit smooth curves to noisy motion capture data using least squares with polynomial or spline basis functions. Compare fitting approaches, study regularization to enforce smoothness, and analyze residual patterns. | 3.1–3.4 Least squares methods, 5.3 Cubic splines |
+| Numerical Integration for Probability and Statistics | Apply numerical integration to compute probabilities, expected values, and moments for distributions without closed-form CDFs. Extend to comparing quadrature efficiency for different distribution shapes and tail behaviors. | 5.6–5.7 Numerical integration |
+| Work and Energy Calculations | Compute work done by variable forces along paths using numerical integration. Extend to computing potential energy functions, comparing quadrature methods for smooth versus discontinuous force profiles, and analyzing error propagation to energy estimates. | 5.6–5.7 Numerical integration |
+| Orbital Mechanics and Satellite Motion | Simulate two-body orbital motion using RK methods. Extend to studying energy and angular momentum conservation, comparing long-time accuracy of different methods, and modeling orbital maneuvers or perturbations. | 6.3 Systems of ODEs, 6.4–6.5 Runge-Kutta methods |
+| Fourier Series and Signal Reconstruction Visualization | Visualize how Fourier series approximate periodic functions by animating partial sums with increasing terms. Create interactive visualizations showing frequency spectrum, demonstrate Gibbs phenomenon at discontinuities, and apply to audio waveform analysis and image compression. | 3.1–3.4 Least squares (Fourier coefficients as projections), 5.1 Approximation theory |
+| Chemical Reaction Kinetics | Model chemical reaction networks as ODE systems using mass-action kinetics. Extend to systems with disparate time scales (fast/slow reactions), comparing explicit and implicit methods, and studying steady-state approximations. | 6.3 Systems of ODEs, 6.4 Runge-Kutta methods |
+
+## Student projects
+
+### Spring 2026
+
+*Placeholder titles, to be replaced with the real project titles.*
+
+- Newton fractals and basins of attraction
+- Spline-based terrain reconstruction
+- Adaptive quadrature for oscillatory integrals
+- Orbit determination with Gauss-Newton
+- Image deblurring as a linear system
+- Chaotic dynamics of the double pendulum
+- GPS positioning via nonlinear least squares
+- Shooting methods for beam deflection
+- Font design with cubic splines
+- Iterative solvers for the heat equation
+- Audio compression with least squares
+- Predator-prey models with Runge-Kutta
+- Camera calibration from images
+- Root finding for bond yields
+- Bezier curves for animation paths
+- Conditioning of electrical networks
+- Fourier series and the Gibbs phenomenon
+- Adaptive step size control for stiff ODEs

@@ -10,3 +10,7 @@
 # Built site output -- rendered and deployed by .github/workflows/publish.yml,
 # never committed. See CLAUDE.md §2.
 /docs/
+
+# Local secret: Canvas API token. Never commit.
+/canvas API token
+/canvas-import-checklist.md

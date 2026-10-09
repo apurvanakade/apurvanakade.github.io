@@ -281,6 +281,14 @@ h2.cv-anchor {
 .project-link:hover { background: var(--site-accent); color: var(--site-surface); }
 .project-link::after { content: " \2192"; }
 
+// ------------------------------------------------------------- course pages
+// courses/*/index.qmd carry a `date:` only so the courses listing can sort by
+// term; it is the term's start, not a publication date, so the title block's
+// "Published" line is hidden. `course-page` comes from courses/_metadata.yml.
+// The selector outranks Quarto's `#title-block-header.quarto-title-block.default`
+// `.quarto-title-meta` rule (same ID and class count, plus an element).
+body.course-page #title-block-header.quarto-title-block .quarto-title-meta { display: none; }
+
 // ------------------------------------------------------- blog post back-link
 .post-backlink {
   font-size: 0.9rem;

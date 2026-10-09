@@ -1,0 +1,63 @@
+---
+title: "Final Projects"
+subtitle: "Graph Theory, Spring 2024"
+---
+
+[Back to the course page](index.qmd)
+
+## Overview
+
+In place of a traditional final exam, students complete a final project. Given the vast scope of graph theory, the course only scratches the surface of its foundational topics. The project is an opportunity to explore an area of graph theory that interests you, through either a reading project or a programming project. Projects may be completed individually or in pairs.
+
+## Presentation
+
+Each presentation lasts 15 minutes: 12 minutes for the presentation and 3 minutes for questions. Presentations take place during the final week of the semester and the scheduled final exam slot.
+
+The main requirement is that the presentation is accessible to your fellow students. It is graded not just on the mathematical content but also on presentation skills.
+
+## Final report
+
+Final reports are prepared in LaTeX (using the [report template](project-report-template.pdf)) or as a comprehensive Jupyter or R Markdown notebook. Reports are shared with the whole class. Because of time limits, you won't be able to present everything you'd like in class; the report is the place to show that work.
+
+## Topic selection
+
+Choose a topic that genuinely interests you. Feel free to pick a hard topic: you won't be graded on whether you've understood something completely. It's acceptable to write in your report what you've understood and what you haven't. Graduate students choose a topic from outside the textbook, preferably one relevant to their research.
+
+Topic suggestions:
+
+- Functional graph theory
+- The traveling salesman problem: implementing and comparing algorithms, reading recent research papers
+- Sperner's lemma: alternative proofs, connections to topology, Brouwer's fixed point theorem, applications
+- Cayley's theorem: alternative proofs
+- Tree data structures
+- Linear programming proofs of König's theorem
+- Integer programming examples and algorithms
+- Alternatives to Gale-Shapley for stable matchings
+- Kuratowski's theorem for planar graphs
+- Graph neural networks
+- Spectral clustering
+- Random graphs, expanders
+
+## Timeline
+
+Around spring break, students send in their groups and topics. The second half of the semester has smaller and fewer homework sets, and that time goes into the projects.
+
+## Projects presented
+
+- Graph theory for criminology and forensics
+- A deep dive into the traveling salesman problem
+- Wagner's theorem
+- Expander graphs
+- Generating knowledge graphs from unstructured text
+- The lottery ticket hypothesis
+- Graph neural networks in recommendations
+- Gallai's path decomposition conjecture in special cases
+- Graph boxicity and ecological competition
+- GNNs meet Weisfeiler-Lehman: the expressive power of graph neural networks and the isomorphism problem
+- X-trees: a graph theoretic introduction to phylogenetics
+- Decoding AlphaGo: a deep dive into Monte Carlo tree search
+- cryptoGRAPHy: post-quantum elliptic curve encryption
+- Probabilistic methods
+- Perfect graphs
+- Cayley graphs
+- Graph theory for brain diffusion networks
