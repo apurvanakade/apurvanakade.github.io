@@ -402,6 +402,107 @@ def bell_curve():
                  "#7a3b52", "#3a1c28", "LEAST SQUARES", "e^(-x&#178;/2)")
 
 
+# ---------------------------------------------------------------------------
+# Course covers, for the course-page cards on courses/index (one per
+# courses/<slug>/; the listing template finds images/courses/<slug>.svg).
+# ---------------------------------------------------------------------------
+
+def pascal_mod2():
+    """Discrete Mathematics: Pascal's triangle mod 2, which counting turns
+    into the Sierpinski triangle."""
+    rows, out = 16, []
+    pts = [(c - r / 2, r * 0.87) for r in range(rows) for c in range(r + 1)]
+    f = fit(pts, 150, 122)
+    row = [1]
+    for r in range(rows):
+        for c, v in enumerate(row):
+            x, y = f((c - r / 2, r * 0.87))
+            if v:
+                out.append(f'<circle cx="{x:.1f}" cy="{y:.1f}" r="5.2" fill="{ACCENT}"/>')
+            else:
+                out.append(f'<circle cx="{x:.1f}" cy="{y:.1f}" r="4.2" fill="none" '
+                           f'stroke="#ffffff" stroke-opacity="0.35" stroke-width="1.4"/>')
+        row = [1] + [(row[i] + row[i + 1]) % 2 for i in range(len(row) - 1)] + [1]
+    return frame("".join(out), "Pascal's triangle mod 2",
+                 "#2d4a63", "#17283a", "COUNTING", "Pascal's triangle mod 2")
+
+
+def petersen():
+    """Graph Theory: the Petersen graph, the course's favourite counterexample."""
+    outer = [(math.cos(math.pi / 2 + 2 * math.pi * k / 5), -math.sin(math.pi / 2 + 2 * math.pi * k / 5))
+             for k in range(5)]
+    inner = [(0.45 * x, 0.45 * y) for x, y in outer]
+    f = fit(outer, 128, 122)
+    O, I = [f(p) for p in outer], [f(p) for p in inner]
+    out = []
+    for k in range(5):
+        out.append(polyline([O[k], O[(k + 1) % 5]], "#ffffff", 2.4, 0.85))
+        out.append(polyline([O[k], I[k]], "#ffffff", 2.4, 0.85))
+        out.append(polyline([I[k], I[(k + 2) % 5]], "#ffffff", 2.4, 0.85))
+    for x, y in O + I:
+        out.append(f'<circle cx="{x:.1f}" cy="{y:.1f}" r="8" fill="{ACCENT}" '
+                   f'stroke="#1d3b33" stroke-width="3"/>')
+    return frame("".join(out), "The Petersen graph",
+                 "#2f4a3f", "#16261f", "GRAPHS", "the Petersen graph")
+
+
+def newton():
+    """Introduction to Computational Mathematics: Newton's method, tangent
+    lines walking down to a root. Heights are negated (SVG's y points down)
+    and squashed by K so the curve fills the wide panel."""
+    K = 0.45
+    def g(x): return x * x / 4 - 1
+    def dg(x): return x / 2
+    def P(x, y): return (x, -K * y)
+    LO, HI = 0.2, 4.3
+    curve = [P(LO + (HI - LO) * i / 300, g(LO + (HI - LO) * i / 300)) for i in range(301)]
+    f = fit(curve + [P(LO, 0.0), P(HI, 0.0)], 160, 110)
+    body = [polyline([f(P(LO, 0.0)), f(P(HI, 0.0))], "#ffffff", 1.2, 0.35),
+            polyline([f(p) for p in curve], "#ffffff", 2.6, 0.9)]
+    x = 4.1
+    for _ in range(3):
+        x1 = x - g(x) / dg(x)
+        body.append(polyline([f(P(x, g(x))), f(P(x1, 0.0))], ACCENT, 2.2, 0.95))
+        body.append(polyline([f(P(x1, 0.0)), f(P(x1, g(x1)))], "#ffffff", 1.2, 0.45))
+        px, py = f(P(x, g(x)))
+        body.append(f'<circle cx="{px:.1f}" cy="{py:.1f}" r="5" fill="{ACCENT}"/>')
+        x = x1
+    return frame("".join(body), "Newton's method converging to a root",
+                 "#4a3a70", "#241d3a", "NUMERICAL METHODS", "Newton's method")
+
+
+def neural_net():
+    """Foundational Mathematics of AI: a small fully connected network."""
+    layers = [3, 5, 5, 2]
+    pts = []
+    for i, n in enumerate(layers):
+        pts.append([(i * 1.6, (j - (n - 1) / 2) * 0.9) for j in range(n)])
+    f = fit([p for layer in pts for p in layer], 150, 118)
+    P = [[f(p) for p in layer] for layer in pts]
+    out = []
+    for i in range(len(P) - 1):
+        for a in P[i]:
+            for b in P[i + 1]:
+                out.append(polyline([a, b], "#ffffff", 1.2, 0.30))
+    for i, layer in enumerate(P):
+        for x, y in layer:
+            fill = ACCENT if i in (0, len(P) - 1) else "#ffffff"
+            out.append(f'<circle cx="{x:.1f}" cy="{y:.1f}" r="10" fill="{fill}" '
+                       f'fill-opacity="0.95"/>')
+    return frame("".join(out), "A small neural network",
+                 "#6b4226", "#38210f", "MACHINE LEARNING", "a neural network")
+
+
+COURSE_FIGURES = {
+    "discrete-math": pascal_mod2,
+    "graph-theory": petersen,
+    "computational-math": newton,
+    "foundational-math-ai": neural_net,
+    "monte-carlo": monte_carlo,
+}
+COURSES_OUT = OUT.parent / "courses"
+
+
 FIGURES = {
     "winding-number": winding_number,
     "weierstrass": weierstrass,
@@ -430,5 +531,13 @@ def main():
         (OUT / f"{slug}.svg").write_text(svg)
         print("wrote", slug + ".svg")
 
+def courses():
+    COURSES_OUT.mkdir(parents=True, exist_ok=True)
+    for slug, fn in COURSE_FIGURES.items():
+        (COURSES_OUT / f"{slug}.svg").write_text(fn())
+        print("wrote courses/" + slug + ".svg")
+
+
 if __name__ == "__main__":
+    courses()
     main()

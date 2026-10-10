@@ -4,3 +4,6 @@
 title-block-banner: false
 toc: true
 body-classes: course-page
+# Link pills, exam date tiles and highlighted schedule rows (CLAUDE.md §3).
+filters:
+  - ../_filters/course-page.lua

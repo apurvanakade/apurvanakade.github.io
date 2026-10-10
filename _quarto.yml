@@ -13,12 +13,14 @@ project:
   resources:
     - CV.pdf
     - teaching-portfolio.pdf
+    - rec-letters-checklist.pdf   # `make checklist`
+    # Course-card covers, referenced only from the course index's listing
+    # template (_includes/course-cards.ejs), so Quarto cannot discover them.
+    - images/courses/*.svg
   pre-render:
     # Pulls the latest mathviz release into _extensions/ (see CLAUDE.md §6).
     - _scripts/update-mathviz.sh
     - _scripts/build_home_cards.py
-  post-render:
-    - _scripts/write_redirects.py
 
 website:
   title: "Apurva Nakade"

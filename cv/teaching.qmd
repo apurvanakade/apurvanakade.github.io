@@ -78,16 +78,14 @@
 - Differential Equations with Applications, Summer 2017, 2015
 - Online Linear Algebra, Summer 2014
 
-### Academic Co-coordinator, Canada/USA Mathcamp
+### Instructor, Canada/USA Mathcamp
 
-- Planned the five week academic schedule
-- Part of the mentor hiring committee
-- Invited visiting speakers
-
-### Mentor/Staff, Canada/USA Mathcamp
-
-- Designed and taught a variety of undergraduate-level courses
-- Was residential and academic advisor at camp
-- Part of the mentor hiring committee - Taught a course at Mathcamp 2020
-- Contributed to Lean's surreal numbers math library
-- Contributed to Lean's convex optimization math library
+- How to Discover the Bell Curve, Summer 2026
+- Theorem Proving in Lean, Summer 2020
+- Galois Correspondence of Covering Spaces, Summer 2019
+- From High School Arithmetic to Group Cohomology, Summer 2019
+- Riemann Surfaces, Summer 2019
+- Crash Course on Linear Algebra, Summer 2018
+- How Curved Is a Potato?, Summer 2018
+- Would I Ever Lie Group to You?, Summer 2018
+- Cohomology via Sheaves, Summer 2018

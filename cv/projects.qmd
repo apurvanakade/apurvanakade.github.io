@@ -1,41 +1,54 @@
-## Projects
+## Course Design & Materials
 
-Course Design: Discrete Mathematics, JHU
+[Introduction to Computational Mathematics](https://apurvanakade.github.io/courses/computational-math/), JHU, 2026
 
-- Modernized the course using evidence-driven pedagogical techniques
-- Adapted an online textbook to better match current student mindsets
-- Introduced homework resubmissions to reinforce student learning
-- Introduced online assessments to improve feedback
-- Restructured exams to better gauge student learning
+- A proof-based numerical analysis course on a free online textbook, with Jupyter notebook assignments and a group final project in place of a final exam
 
-Open Educational Resources Textbook for Linear Algebra, NU
+[Visual Math Lab](https://www.visualmathlab.com/), 2025-Present
 
-- Added WeBWorK problems to a Linear Algebra PreTeXt OER textbook
+- A growing collection of interactive visualizations for teaching and learning mathematics
 
-Course Design: Introduction to Optimization, NU
+[AMS Course Explorer](https://apurvanakade.github.io/AMS-courses/), JHU, 2025
 
-- Restructured the course to include applications and modeling
-- Created course notes in RMarkdown
-- Created Excel worksheet assignments for modeling scenarios
+- An app for navigating the prerequisite graph of Applied Math & Statistics courses
 
-Course Design: Discrete Structures for Engineering, UWO
+[Monte Carlo Methods](https://apurvanakade.github.io/Monte-Carlo-Methods/), JHU, 2025
 
-- Adapted the course for online asynchronous delivery
-- Helped code (in a team) hundreds of problems on WeBWork
-- Made short weekly video lectures to support the course text
-- Maintained an active discussion forum on Piazza
-- Gave a talk about the course design at a conference on E-Assessment in Mathematical Sciences
+- An online textbook for a semester-long course on simulation, sampling and MCMC
 
-Course Design: Honors Single Variable Course (IBL), JHU
+Discrete Mathematics redesign, JHU, 2023-Present
 
-- Designed and taught a semester long course structured in a flipped classroom format for two semesters
+- Homework resubmissions, frequent online assessments and restructured exams, built around an adapted open textbook
 
-Course Design: Intersession courses, JHU
+[Introduction to Optimization](https://apurvanakade.github.io/Introduction-to-Optimization/), Northwestern, 2022
 
-- Designed and taught a 2-week course titled Symmetries & Polynomials introducing Galois theory to non-math majors
-- Designed and taught a 2-week course Hitchhiker's Guide to Algebraic Topology introducing algebraic topology to non-math majors
+- Course notes in R Markdown and Excel modeling assignments for a course on linear programming and duality, rebuilt around applications
 
-Course Design: Canada/USA Mathcamp courses
+Open Textbook for Linear Algebra, Northwestern, 2022
 
-- Designed and taught several week-long math courses to advanced highschool students
-- Course topics: Theorem proving in Lean, Visualizing 3-manifolds, Riemann surfaces, Crash Course on Linear Algebra, Covering Spaces, Cohomology etc.
+- WeBWorK problem sets for a PreTeXt open educational resources textbook
+
+[Algebraic Topology](https://github.com/apurvnakade/uwo2021-algebraic-topology/tree/main/output), UWO, 2021
+
+- Problem sets for a graduate course on the fundamental group, covering spaces and singular homology
+
+Formalizing mathematics in Lean, 2020
+
+- Contributions to mathlib's surreal numbers and convex optimization libraries
+
+[Discrete Structures for Engineering](https://www.youtube.com/playlist?list=PLXAOfwfSuiKm3cL-JftD9ndrjYi7fPcqN), UWO, 2020
+
+- Rebuilt for fully asynchronous delivery: weekly video lectures, hundreds of WeBWorK problems written as a team, and a Piazza forum; presented at a conference on e-assessment in the mathematical sciences
+
+[Honors Single Variable Calculus](https://github.com/apurvnakade/jhu2017-18-honors-single-variable-calculus), JHU, 2017-2018
+
+- Two semesters of calculus in one, taught inquiry-based in a flipped classroom
+
+Intersession courses for non-math majors, JHU, 2017-2018
+
+- [Symmetries & Polynomials](https://github.com/apurvnakade/jhu2018-symmetries-and-polynomials/blob/main/output/index.pdf): from group theory to the unsolvability of the quintic
+- [Hitchhiker's Guide to Algebraic Topology](https://apurvanakade.github.io/courses/2017_h2g2_alg_top/index.html): algebraic topology and its applications
+
+Canada/USA Mathcamp courses, 2017-2026
+
+- Week-long courses for advanced high school students, including Theorem Proving in Lean, How to Discover the Bell Curve, Riemann Surfaces, Covering Spaces and Cohomology via Sheaves

@@ -49,9 +49,9 @@ The single most important convention in this repo is a hard split between files
 | `index.qmd`, `references.qmd`, `rec-letters.qmd` | `_quarto.yml` |
 | `teaching-portfolio.qmd` | `_includes/portfolio-preamble.tex` |
 | `courses/**/*.qmd` | `courses/_metadata.yml` |
-| `projects/*.qmd` (frontmatter + prose) | `_theme/*.scss`, `_theme/portfolio.css` |
+| `projects/*.qmd` (frontmatter + prose) | `_theme/*.scss`, `_theme/*.css` |
 | `projects/index.qmd` | `_filters/*.lua` |
-| `CV.qmd`, `cv/*.qmd` | `_includes/*.html` |
+| `CV.qmd`, `cv/*.qmd` | `_includes/*.html`, `_includes/*.ejs` |
 | `math-blog/index.qmd`, `math-blog/*/index.qmd` | `_scripts/*.py` |
 | `math-blog/posts/**/*.qmd` | `cv/preamble.tex` |
 | `math-blog/drafts/*.qmd` | `projects/_metadata.yml` |
@@ -82,8 +82,9 @@ next render. Nobody edits it (see §6, "mathviz").
 make build     # quarto render --to html --output-dir docs/   (local only, gitignored)
 make cv        # rebuild CV.pdf with the local LaTeX; commit the result
 make portfolio # the same for teaching-portfolio.pdf
+make checklist # rebuild rec-letters-checklist.pdf from rec-letters.qmd; commit the result
 make clean     # rm -rf docs/
-make covers    # regenerate the SVG project covers (rarely needed)
+make covers    # regenerate the SVG project, course and blog formula covers (rarely needed)
 make update-mathviz  # force a check for a newer mathviz release
 make release   # fast-forward main to origin/develop and push: publishes the site
 quarto preview # local live preview (not in the makefile)
@@ -95,12 +96,11 @@ colour schemes before claiming a style change works. Quarto's dark mode is a
 manual toggle — click `.quarto-color-scheme-toggle`, don't rely on
 `prefers-color-scheme`.
 
-`quarto render` runs three hooks defined in `_quarto.yml`:
+`quarto render` runs two pre-render hooks defined in `_quarto.yml`:
 
 - **pre-render** `_scripts/update-mathviz.sh` → installs the latest mathviz
   release into `_extensions/` (§6, "mathviz")
 - **pre-render** `_scripts/build_home_cards.py` → writes `_includes/home-cards.html`
-- **post-render** `_scripts/write_redirects.py` → writes meta-refresh stubs into `docs/`
 
 The Python hooks need only the standard library; the shell hook needs `git`
 and network access, and falls back to the installed copy when offline.
@@ -202,7 +202,8 @@ CV.pdf                          committed; built locally by `make cv`
 cv/<section>.qmd                one CV section per file
 teaching-portfolio.qmd          teaching philosophy, courses, development; HTML *and* PDF
 teaching-portfolio.pdf          committed; built locally by `make portfolio`
-rec-letters.qmd
+rec-letters.qmd                 recommendation-letter instructions and checklist
+rec-letters-checklist.pdf       committed; built locally by `make checklist`
 references.qmd
 courses/index.qmd               table listing of the course pages
 courses/<course>/index.qmd      one course: overview, outline, links
@@ -246,8 +247,31 @@ Canvas sites they come from were not:
   project *titles* without the students' names. Syllabi and project slides are kept as the
   original PDFs, after checking their text for names other than Apurva's.
 
+`courses/index.qmd` lists them as cards through a custom listing template,
+`_includes/course-cards.ejs`, which reuses the home page's `.home-card`
+styles. Each card's cover is `images/courses/<folder>.svg`, a real figure
+drawn by `_scripts/make_covers.py` (`COURSE_FIGURES`), so a new course needs a
+new entry there. Those covers are referenced only from the template, where
+Quarto cannot discover them, so `_quarto.yml` names `images/courses/*.svg` in
+`resources:`. The template's output is read as Markdown, so its lines are not
+indented (an indented line becomes a code block). The term badge is the
+page's `subtitle:`, and the course code is read off the start of its
+`description:` ("EN.553.171 at Johns Hopkins: ..."), so keep descriptions in
+that shape.
+
+`_filters/course-page.lua` (applied by `courses/_metadata.yml`) turns three
+shapes into page furniture: the bullet list before the first `##` becomes
+pill buttons (an item that opens with a link becomes a pill, the rest of the
+item its note); a table whose first column is "Exam" with a "Date" column
+becomes date tiles ("Monday, October 5" is split into weekday, month and day);
+and in a table whose first column is "Week", rows mentioning an exam are
+highlighted and rows with an empty week (a break) are greyed. Those rows are
+marked by an empty span in the first cell and styled with `tr:has(...)`,
+because Quarto rebuilds some tables after the filter runs (the Graph Theory
+schedule, with math and links in its cells) and drops classes on the `<tr>`.
+
 Each course's `index.qmd` carries `subtitle:` (the term) and `date:` (the
-term's start) for the listing's columns and sort. That date is not a
+term's start) for the cards and their sort. That date is not a
 publication date, so `courses/_metadata.yml` adds the body class
 `course-page` and `_theme/base.scss` hides the title block's "Published" line
 for it.
@@ -285,6 +309,23 @@ CV's "Download PDF" link points. So after editing `CV.qmd` or `cv/*.qmd`, run
 `make cv` and commit `CV.pdf` with the change, or the PDF goes stale. Do not
 remove `pdf` from `CV.qmd`'s formats; `make cv` depends on it.
 
+**The HTML CV adds three things the PDF does not** (all configured at the top
+of `cv.lua`): Experience and Education are drawn as a timeline, one dot per
+entry in the colour of the institution the entry names (`INSTITUTIONS`; an
+entry naming none, or several, gets a hollow dot); Teaching's course lists
+become one row per term with a chip per course, read from `#### Term`
+headings or from "Course, Term" items, plus a link to the teaching portfolio;
+and Conferences Attended shows its first five entries with the rest behind a
+`<details>` toggle. The LaTeX branch returns before any of this, so `make cv`
+output is unaffected. Each `###` in a CV section is wrapped in a `<section>`
+by Pandoc, so every `h3` is its section's first child; the space between
+sub-groups is therefore set on `section.level3`, not on the `h3`.
+
+Entries in `BOLD_SECTIONS` (Course Design & Materials) are set in bold in
+both formats, because each one is a title with a line of detail beneath it;
+the HTML needs `.cv-entry-text strong a { font-weight: inherit }`, since
+Bootstrap resets links to weight 400.
+
 **So the content convention is: one entry per paragraph, year last, after a comma.**
 Write `Faculty Forward Fellowship, JHU, 2025` and the layout takes care of itself.
 Set `cv-layout: false` in frontmatter to switch the filter off.
@@ -297,7 +338,7 @@ Set `cv-layout: false` in frontmatter to switch the filter off.
 Awards and grants, Professional development, and Syllabi and sample
 materials. There is no
 separate teaching statement page: its prose lives in Teaching philosophy and
-Professional development, and its old URLs redirect here (§8). Under Courses each course is a
+Professional development; its old URLs are not redirected (§8). Under Courses each course is a
 `###` holding a pipe table
 (Semester · Student level · Students · TAs · Course rating · Instructor rating)
 followed by `####` notes and a `#### Selected student comments` list, and the
@@ -351,12 +392,20 @@ wrapper also lets a table scroll sideways on a phone. The `portfolio-inst-*`
 classes land on each course's `<section>` too (Pandoc's `section-divs`), so
 they set only custom properties and never a visible style.
 
-Institution colours are the official ones. Badges use each university's
-primary colour (JHU Heritage Blue, Northwestern Purple, Western Purple), but
-Northwestern Purple `#4E2A84` and Western Purple `#4F2683` are
-indistinguishable, so chart marks use JHU Spirit Blue, Northwestern Purple
-(Purple 30 in dark mode) and Western's Orchid, and each institution also has
-its own marker shape and a labelled band.
+Institution colours are the site-wide tokens described in §7; in the chart
+each institution also has its own marker shape and a labelled band.
+
+### The recommendation-letter checklist
+
+`rec-letters.qmd` keeps its checklist as plain Markdown task-list items
+(`- [ ]`), which `base.scss` lines up with a hanging indent. The page links
+to `rec-letters-checklist.pdf`, which `_scripts/build_rec_checklist.py`
+(`make checklist`) cuts from the page itself, from `## Documents to Send` to
+the end, and typesets with the local LaTeX; a line linking to the PDF is
+dropped from it. Like the CV it is committed and copied in by `resources:`.
+It is not a format of the page, so a full render does not delete it. After
+editing those sections, run `make checklist` and commit the PDF, or the
+download goes stale.
 
 ### Constraints — do not regress
 
@@ -375,6 +424,9 @@ its own marker shape and a labelled band.
   used to be.
 - **Section labels are placed via `\item[…]` and a redefined `\makelabel`,** not
   `\llap` — `\llap` pushed them off the left edge of the page.
+  The label is `\smash`ed: a label that wraps (Grants & Awards, Course
+  Design & Materials) otherwise gives the first line its depth and pushes the
+  section's first entry down below the label.
 
 ---
 
@@ -401,7 +453,11 @@ Prose.
 - `links:` is rendered as a row of pill buttons by `_filters/project-links.lua`.
   Content files carry no markup for it.
 - `projects/_metadata.yml` applies that filter and shared page settings to the
-  whole directory.
+  whole directory, and includes `_includes/projects.html`, a small script
+  that adds `inst-chip` classes to the JHU, Northwestern and UWO category
+  chips (a chip carries only its text, so CSS cannot select it) and splits
+  the listing's category rail into Kind, Venue and Topic groups. A category
+  in neither its `KIND` nor its `VENUE` list is a topic.
 - **Categories** are a flat vocabulary mixing kind (`app`, `course notes`,
   `problem sets`, `course design`, `formalization`, `OER`, `expository`), venue
   (`JHU`, `Northwestern`, `UWO`, `Mathcamp`) and one topic. Reuse existing terms;
@@ -509,9 +565,9 @@ Because it keeps every published URL byte-identical.
 `math-blog/posts/maths/bayes-theorem.qmd` renders to
 `docs/math-blog/posts/maths/bayes-theorem.html`, served at
 `apurvanakade.github.io/math-blog/posts/maths/bayes-theorem.html` — exactly where
-it was before. **No redirects were needed and none exist.** Do not "tidy" this
-directory to `blog/` or `writing/` without generating a full redirect map first;
-renaming it silently breaks every link ever shared to a post.
+it was before. Do not "tidy" this directory to `blog/` or `writing/`: the
+site has no redirects (§8), so renaming it silently breaks every link ever
+shared to a post.
 
 ### The GitHub Pages precedence trap
 
@@ -583,6 +639,13 @@ image: "../../maths/images/bayes.png"
 ---
 ```
 
+A post with no natural figure uses its formula as its cover:
+`_scripts/make_equation_covers.py` typesets each formula in `COVERS` with the
+local LaTeX (`latex` + `dvisvgm --no-fonts`, so glyphs become paths) onto a
+soft gradient panel, writing `math-blog/maths/images/<slug>-equation.svg`.
+Output is committed. Never write a formula cover as SVG `<text>`: that is
+how `f(s1, ..., sn) != 0` ended up on the cards.
+
 Listing pages depend on `title`, `date`, `description`, `categories` and `image`;
 missing metadata degrades the cards. **Quarto does not excerpt the post body** —
 a post with no `description:` renders a card with no text at all, so every post
@@ -632,6 +695,20 @@ Layered over Bootstrap bases in `_quarto.yml`:
 - Bootstrap's own `.card` background does not follow our palette; card components
   need an explicit `background: var(--site-surface)` or they render mid-grey in
   dark mode.
+- **Institution colours are site-wide tokens** in `base.scss`, on `body` with
+  dark overrides on `body.quarto-dark`, used by the portfolio, the CV
+  timeline and the Projects category chips. They are the official colours:
+  `--chip-*` (badges, chips) use each university's primary colour (JHU
+  Heritage Blue, Northwestern Purple, Western Purple). Northwestern Purple
+  `#4E2A84` and Western Purple `#4F2683` are indistinguishable, so `--inst-*`
+  (marks that must be told apart) use JHU Spirit Blue, Northwestern Purple
+  (Purple 30 in dark mode) and Western's Orchid. Every use also names the
+  institution in text or shape.
+- **Every content table has a tinted header row** (`main .table > thead`),
+  so course schedules, the portfolio's tables and any new table match.
+- **Grid cards show the date above the title.** Quarto puts it in a footer
+  with `flex-grow: 10`; `base.scss` moves it up with `order: -1` and
+  `flex: none`.
 
 ### Constraints — do not regress
 
@@ -645,23 +722,19 @@ Layered over Bootstrap bases in `_quarto.yml`:
   blog), which Quarto writes as an inline style on the `<img>`. A competing
   height on the wrapper makes card titles overlap the image. Style
   `object-fit`, `width` and `background` only, and let the listing own the height.
+  The wrapper does need `flex: none`: the card is a flex column, and without
+  it the wrapper shrank to about 160px and cropped the bottom of every
+  thumbnail.
 
 ---
 
 ## 8. Redirects
 
-Some URLs have changed. `_scripts/write_redirects.py` writes meta-refresh stubs
-after each render:
-
-| Old | New |
-|---|---|
-| `notes.html` | `projects/index.html` |
-| `rec letters.html` | `rec-letters.html` |
-| `teaching statement.html` | `teaching-portfolio.html` |
-| `teaching-statement.html` | `teaching-portfolio.html` |
-
-The script refuses to overwrite a page Quarto actually rendered. Add to the
-`REDIRECTS` dict whenever a page moves.
+There are none, by Apurva's choice. Pages that moved in the 2026
+reorganisation (`notes.html`, `rec letters.html`, `teaching statement.html`,
+`teaching-statement.html`) now 404 at their old addresses. Do not add a
+redirect mechanism back unless asked. A page moved from here on breaks its
+old links, so prefer keeping URLs stable.
 
 ---
 
@@ -701,6 +774,11 @@ from the files themselves. Each one is described in full in the section named.
   setting back to a branch source stops publishing silently.
 - **The `math-blog/` directory name is load-bearing** (§6). It is what keeps
   every published post URL unchanged; renaming it breaks every shared link.
+- **A full `quarto render` or `quarto preview` deletes the committed
+  `CV.pdf` and `teaching-portfolio.pdf`** at the repo root (both pages also
+  have a PDF format, and Quarto clears their old output). Run
+  `git restore CV.pdf teaching-portfolio.pdf` before committing, or the
+  commit deletes them.
 - **All cover art is local** (§5). Nothing hot-links a remote image any
   more; `_scripts/make_covers.py` is the only source of
   `images/projects/*.svg`; the `*.png` covers are committed screenshots.

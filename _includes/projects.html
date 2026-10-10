@@ -1,0 +1,53 @@
+<!-- AI-owned: included after the body of every page in projects/ by
+     projects/_metadata.yml. See CLAUDE.md §5.
+
+     1. Institution categories (JHU, Northwestern, UWO) get the inst-chip
+        classes, so _theme/base.scss can colour them. A category chip carries
+        nothing but its text, so this cannot be done in CSS alone.
+     2. On the listing, the flat categories rail is split into Kind, Venue and
+        Topic groups. The vocabulary is CLAUDE.md §5's; a category in neither
+        KIND nor VENUE is a topic. Only the order changes: each entry keeps
+        its element, so Quarto's filtering still works. -->
+<script>
+(function () {
+  var INST = { "JHU": "jhu", "Northwestern": "nw", "UWO": "uwo" };
+  var KIND = ["app", "course notes", "problem sets", "course design",
+              "formalization", "OER", "expository"];
+  var VENUE = ["JHU", "Northwestern", "UWO", "Mathcamp"];
+
+  function label(el) {
+    // A rail entry is "name <span>(n)</span>"; a chip is just "name".
+    var t = "";
+    el.childNodes.forEach(function (n) { if (n.nodeType === 3) t += n.textContent; });
+    return t.trim();
+  }
+
+  document.querySelectorAll(".listing-category, .quarto-category").forEach(function (el) {
+    var key = INST[label(el)];
+    if (key) el.classList.add("inst-chip", "inst-chip--" + key);
+  });
+
+  var rail = document.querySelector(".quarto-listing-category");
+  if (!rail) return;
+  var groups = { kind: [], venue: [], topic: [] };
+  var all = null;
+  rail.querySelectorAll(":scope > .category").forEach(function (el) {
+    var name = label(el);
+    if (el.dataset.category === "") all = el;
+    else if (KIND.indexOf(name) >= 0) groups.kind.push(el);
+    else if (VENUE.indexOf(name) >= 0) groups.venue.push(el);
+    else groups.topic.push(el);
+  });
+  function title(text) {
+    var h = document.createElement("div");
+    h.className = "projects-category-group";
+    h.textContent = text;
+    return h;
+  }
+  var parts = [all];
+  [["Kind", groups.kind], ["Venue", groups.venue], ["Topic", groups.topic]].forEach(function (g) {
+    if (g[1].length) parts.push(title(g[0]), ...g[1]);
+  });
+  parts.forEach(function (el) { if (el) rail.appendChild(el); });
+})();
+</script>

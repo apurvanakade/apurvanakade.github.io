@@ -4,11 +4,8 @@ description: "Public copies of the course websites for courses I have taught at 
 toc: false
 listing:
   contents: "*/index.qmd"
-  type: table
+  template: ../_includes/course-cards.ejs
   sort: "date desc"
-  fields: [title, subtitle, description]
-  field-display-names:
-    subtitle: "Term"
   sort-ui: false
   filter-ui: false
 ---

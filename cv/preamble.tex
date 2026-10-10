@@ -47,8 +47,11 @@
     \setlength{\listparindent}{0pt}%
     \setlength{\topsep}{0pt}\setlength{\partopsep}{0pt}%
     \setlength{\parsep}{0pt}\setlength{\itemsep}{0pt}%
+    % \smash: a label that wraps (Grants & Awards, Professional Development)
+    % would otherwise give the first line its depth and push the first entry
+    % down below the label's last line.
     \renewcommand{\makelabel}[1]{%
-      \parbox[t]{\cvlabelwidth}{\raggedright\bfseries ##1}\hfil}%
+      \smash{\parbox[t]{\cvlabelwidth}{\raggedright\bfseries ##1}}\hfil}%
   }%
   \item[#1]\leavevmode\vspace{-\baselineskip}%
   \ignorespaces
