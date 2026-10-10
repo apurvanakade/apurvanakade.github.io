@@ -22,6 +22,11 @@ portfolio:
 	quarto render teaching-portfolio.qmd --to pdf --output-dir $(DOCS_DIR)
 	cp $(DOCS_DIR)teaching-portfolio.pdf teaching-portfolio.pdf
 
+# The recommendation-letters checklist PDF, cut from rec-letters.qmd: run it
+# after editing that page's checklist sections, then commit the PDF.
+checklist:
+	python3 _scripts/build_rec_checklist.py
+
 clean:
 	rm -rf $(DOCS_DIR) .quarto
 
@@ -40,8 +45,10 @@ release:
 	git fetch origin
 	git push origin origin/develop:main
 
-# Regenerate the typographic SVG project covers (rarely needed).
+# Regenerate the SVG covers (rarely needed): project and course covers, and
+# the blog's formula covers, which need the local LaTeX.
 covers:
 	python3 _scripts/make_covers.py
+	python3 _scripts/make_equation_covers.py
 
-.PHONY: build cv portfolio clean preview covers update-mathviz release
+.PHONY: build cv portfolio checklist clean preview covers update-mathviz release

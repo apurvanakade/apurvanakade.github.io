@@ -1,0 +1,38 @@
+<%
+// AI-owned listing template for courses/index.qmd (`template:` in its
+// listing). See CLAUDE.md §3, "Course pages".
+//
+// One card per course, built from the course page's own frontmatter:
+//   cover  images/courses/<folder>.svg, drawn by _scripts/make_covers.py
+//   term   `subtitle:`
+//   code   the course code that opens `description:` ("EN.553.171 at Johns
+//          Hopkins: logic, ..."); the rest of the description, after
+//          "at Johns Hopkins:" or a comma, is the card's text.
+// Lines are not indented: Quarto reads the output as Markdown, and an
+// indented line would become a code block.
+// The cards reuse the home page's .home-card styles in _theme/base.scss.
+const CODE = /^([A-Z]{2}\.\d{3}\.\d{3}(?:\/\d{3})?)\s*/;
+%>
+<div class="list home-cards course-cards">
+<% for (const item of items) {
+const parts = item.path.split('/');
+const folder = parts[parts.length - 2];   // "../courses/<folder>/index.html"
+const desc = item.description || '';
+const m = desc.match(CODE);
+const code = m ? m[1] : '';
+let text = m ? desc.slice(m[0].length).replace(/^(at Johns Hopkins:|,)\s*/, '') : desc;
+text = text.charAt(0).toUpperCase() + text.slice(1);
+%>
+<article class="home-card course-card" <%= metadataAttrs(item) %>>
+<img class="home-card__thumb" src="../images/courses/<%= folder %>.svg" alt="" loading="lazy">
+<div class="home-card__body">
+<div class="course-card__meta">
+<% if (item.subtitle) { %><span class="course-card__term"><%= item.subtitle %></span><% } %>
+<% if (code) { %><span class="course-card__code"><%= code %></span><% } %>
+</div>
+<h3 class="home-card__title no-anchor"><a href="<%- item.path %>"><%= item.title %></a></h3>
+<p class="home-card__desc"><%= text %></p>
+</div>
+</article>
+<% } %>
+</div>

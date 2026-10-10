@@ -1,8 +1,5 @@
 ---
 title: (Math) Blog
-date: 2025-05-03
-author: Apurva Nakade
-categories: 
 page-layout: full
 listing: 
   contents: "posts/**/*.qmd"

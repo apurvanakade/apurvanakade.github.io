@@ -132,6 +132,59 @@ blockquote {
   padding: 0 1.15rem 1.1rem;
 }
 
+// ------------------------------------------------------- institution colours
+// Shared by the teaching portfolio, the CV timeline and the institution
+// category chips (see CLAUDE.md §7). JHU and Northwestern use their official
+// colours. Western's own purple (#4F2683) is indistinguishable from
+// Northwestern Purple (#4E2A84), so Western is orange instead (not teal: that is the site accent). Colour never
+// carries identity alone: every use also names the institution in text or
+// with a shape.
+body {
+  --inst-jhu: #68ACE5;  // JHU Spirit Blue
+  --inst-nw:  #4E2A84;  // Northwestern Purple
+  --inst-uwo: #D9661F;  // orange (Western's purple clashes with Northwestern's)
+  --inst-other: var(--site-muted);
+
+  --chip-jhu-bg: #002D72;  --chip-jhu-fg: #ffffff;  // JHU Heritage Blue
+  --chip-nw-bg:  #4E2A84;  --chip-nw-fg:  #ffffff;  // Northwestern Purple
+  --chip-uwo-bg: #B04A0F;  --chip-uwo-fg: #ffffff;  // burnt orange
+}
+body.quarto-dark {
+  --inst-nw: #B6ACD1;      // Northwestern Purple 30
+  --inst-uwo: #F0A35E;     // light orange
+  --chip-jhu-bg: #68ACE5;  --chip-jhu-fg: #0b1a2e;  // JHU Spirit Blue
+  --chip-nw-bg:  #B6ACD1;  --chip-nw-fg:  #24133f;  // Northwestern Purple 30
+  --chip-uwo-bg: #F0A35E;  --chip-uwo-fg: #2a1503;  // light orange
+}
+
+// ------------------------------------------------------------------ tables
+// A soft tinted header row on every content table. Scoped to main so listing
+// chrome and the TOC are untouched.
+main .table > thead > tr > th {
+  background: var(--site-thumb-bg);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--site-muted);
+  border-bottom: 0;
+  vertical-align: bottom;
+}
+main .table > thead > tr > th:first-child { border-top-left-radius: 6px; }
+main .table > thead > tr > th:last-child  { border-top-right-radius: 6px; }
+main .table > tbody td { font-variant-numeric: tabular-nums; }
+// On a phone, four columns of prose (the rec-letters criteria) did not fit at
+// full size and pushed the page sideways.
+@media (max-width: 575px) {
+  main .table { font-size: 0.85rem; }
+  main .table > :not(caption) > * > * { padding: 0.4rem 0.3rem; }
+  main .table td { hyphens: auto; }
+}
+
+// Markdown task lists (`- [ ] item`): wrapped lines align with the text, not
+// under the checkbox.
+main ul.task-list { list-style: none; padding-left: 0; }
+main ul.task-list > li { position: relative; padding-left: 1.7rem; margin-bottom: 0.3rem; }
+main ul.task-list > li input[type="checkbox"] { position: absolute; left: 0.1rem; top: 0.45em; margin: 0; }
+
 // --------------------------------------------------------- listing / cards
 .quarto-grid-item.card {
   border: 1px solid var(--site-rule);
@@ -150,7 +203,10 @@ blockquote {
 // Do NOT set a height here. Each listing declares its own `image-height`, which
 // Quarto writes as an inline style on the <img>; a competing height on the
 // wrapper makes the card title overlap the image.
-.quarto-grid-item .card-img-top { margin: 0; overflow: hidden; }
+.quarto-grid-item .card-img-top { margin: 0; overflow: hidden; flex: none; }
+// flex: none, not a height: the card is a flex column, and without it the
+// wrapper shrank to about 160px and cropped the bottom of every thumbnail,
+// whatever the listing's image-height.
 .quarto-grid-item .card-img-top img {
   object-fit: cover;
   width: 100%;
@@ -161,6 +217,28 @@ blockquote {
 .quarto-grid-item .listing-description { font-size: 0.88rem; color: var(--site-muted); }
 
 .quarto-listing-category .category { font-size: 0.9rem; }
+// Group headings that _includes/projects.html adds to the Projects rail.
+.quarto-listing-category .projects-category-group {
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--site-muted);
+  margin: 0.9rem 0 0.2rem;
+}
+
+// Grid cards: the date sits above the title rather than pinned to the card's
+// foot, so a short description no longer leaves a gap above it. Quarto's
+// attribution block is moved with `order`, since the markup is its own.
+.quarto-grid-item .card-body { display: flex; flex-direction: column; }
+.quarto-grid-item .card-attribution {
+  order: -1;
+  flex: none;            // Quarto gives it flex-grow 10 to pin it to the foot
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 0 0 0.3rem;
+  padding: 0;
+}
+.quarto-grid-item .card-attribution .listing-date { font-size: 0.78rem; }
+.quarto-grid-item .listing-categories { margin-bottom: 0.35rem; }
 // Quarto's default category chip is tracked uppercase inside a border. Make it
 // a quiet lowercase chip on a soft surface instead. The three selectors match
 // Quarto's own (title block, grid card, default listing) at equal specificity,
@@ -179,6 +257,17 @@ div.quarto-post .listing-categories .listing-category {
   color: var(--site-muted);
   opacity: 1;
 }
+// Institution categories (JHU, Northwestern, UWO) wear their university's
+// colour. _includes/projects.html adds the classes, since a category chip
+// carries nothing but its text.
+.quarto-title .quarto-categories .quarto-category.inst-chip,
+.quarto-grid-item .listing-categories .listing-category.inst-chip {
+  background: var(--chip-bg);
+  color: var(--chip-fg);
+}
+.inst-chip--jhu { --chip-bg: var(--chip-jhu-bg); --chip-fg: var(--chip-jhu-fg); }
+.inst-chip--nw  { --chip-bg: var(--chip-nw-bg);  --chip-fg: var(--chip-nw-fg); }
+.inst-chip--uwo { --chip-bg: var(--chip-uwo-bg); --chip-fg: var(--chip-uwo-fg); }
 
 // -------------------------------------------------------------------- CV
 .cv-contact {
@@ -229,17 +318,91 @@ div.quarto-post .listing-categories .listing-category {
   font-weight: 600;
   margin: 1.35rem 0 0.45rem;
 }
+// Pandoc wraps each ### in a <section>, so every h3 is its section's first
+// child; the space between sub-groups therefore goes on the section.
 .cv-body h3:first-child { margin-top: 0; }
+.cv-body section.level3 + section.level3,
+.cv-body * + section.level3 { margin-top: 1.35rem; }
 .cv-body h4 {
   font-size: 0.88rem;
   font-weight: 600;
   color: var(--site-muted);
   margin: 0.9rem 0 0.3rem;
 }
+// Bold entry titles (BOLD_SECTIONS in cv.lua) stay bold when they are links;
+// Bootstrap's `a` rule otherwise resets them to weight 400.
+.cv-entry-text strong a { font-weight: inherit; }
 .cv-body ul { margin: 0.15rem 0 0.7rem; padding-left: 1.15rem; }
 .cv-body li { margin-bottom: 0.1rem; }
 .cv-body > p { margin-bottom: 0.28rem; }
 .cv-body table { font-size: 0.95rem; }
+
+// Experience and Education (TIMELINE_SECTIONS in _filters/cv.lua): a thin rail
+// with one dot per entry, in the colour of the institution the entry names.
+// The dots are absolutely positioned, so they take no cell in the entry grid.
+.cv-section--timeline > .cv-body { position: relative; padding-left: 1.5rem; }
+.cv-section--timeline > .cv-body::before {
+  content: "";
+  position: absolute;
+  left: 0.3rem; top: 0.6rem; bottom: 0.6rem;
+  width: 2px;
+  background: var(--site-rule);
+  border-radius: 1px;
+}
+.cv-section--timeline .cv-entry { position: relative; }
+.cv-section--timeline .cv-entry::before {
+  content: "";
+  position: absolute;
+  left: -1.5rem; top: 0.42em;
+  width: 0.75rem; height: 0.75rem;
+  margin-left: 0.07rem;
+  border-radius: 50%;
+  background: var(--inst, var(--site-surface));
+  border: 2px solid var(--inst, var(--site-muted));
+  box-shadow: 0 0 0 3px var(--bs-body-bg);
+}
+.cv-entry--jhu { --inst: var(--inst-jhu); }
+.cv-entry--nw  { --inst: var(--inst-nw); }
+.cv-entry--uwo { --inst: var(--inst-uwo); }
+
+// Teaching: one row per term, a chip per course (compact_teaching in cv.lua).
+.cv-portfolio-link { margin: 0 0 1rem; }
+.cv-portfolio-link .project-link { display: inline-block; font-size: 0.85rem; }
+.cv-term {
+  display: grid;
+  grid-template-columns: 7.5rem minmax(0, 1fr);
+  gap: 0 0.75rem;
+  align-items: baseline;
+  padding: 0.3rem 0;
+  border-bottom: 1px solid var(--site-rule);
+}
+.cv-term:last-child { border-bottom: 0; }
+.cv-term__label {
+  font-size: 0.82rem;
+  color: var(--site-muted);
+  font-variant-numeric: tabular-nums;
+}
+.cv-term__courses { display: flex; flex-wrap: wrap; gap: 0.3rem; }
+.cv-term__courses > p { margin: 0; display: contents; }
+.cv-course {
+  display: inline-block;
+  font-size: 0.85rem;
+  line-height: 1.35;
+  padding: 0.15rem 0.55rem;
+  border-radius: $border-radius;
+  background: var(--site-thumb-bg);
+  color: var(--site-ink);
+}
+.cv-body h3 + .cv-term { margin-top: -0.2rem; }
+
+// Conferences Attended (FOLDED_SECTIONS in cv.lua): the rest behind a toggle.
+.cv-more > summary {
+  font-size: 0.88rem;
+  color: var(--site-accent);
+  cursor: pointer;
+  margin: 0.35rem 0 0.5rem;
+}
+.cv-more[open] > summary { margin-bottom: 0.6rem; }
 
 @media (max-width: 700px) {
   .cv-section { grid-template-columns: 1fr; gap: 0.35rem 0; }
@@ -248,6 +411,7 @@ div.quarto-post .listing-categories .listing-category {
   }
   .cv-entry { grid-template-columns: 1fr; }
   .cv-entry > .cv-entry-year { text-align: left; font-size: 0.82rem; }
+  .cv-term { grid-template-columns: 1fr; gap: 0.2rem; }
 }
 
 // h2 that carries the CV's TOC entry / anchor; the visible label is a sibling div.
@@ -288,6 +452,82 @@ h2.cv-anchor {
 // The selector outranks Quarto's `#title-block-header.quarto-title-block.default`
 // `.quarto-title-meta` rule (same ID and class count, plus an element).
 body.course-page #title-block-header.quarto-title-block .quarto-title-meta { display: none; }
+
+// The course index's cards (_includes/course-cards.ejs) reuse .home-card;
+// these add the term badge and the course code above the title.
+.course-cards { grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr)); }
+// Taller than the home card's 9.5rem: the covers are drawn for crops no wider
+// than about 2.2:1 (see _scripts/make_covers.py), and a two-column card at
+// 9.5rem is about 2.4:1, which cut off the top of the figure.
+.course-card .home-card__thumb { height: 11.5rem; }
+.course-card__meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.3rem 0.6rem;
+  margin-bottom: 0.45rem;
+}
+.course-card__term {
+  font-size: 0.75rem;
+  font-weight: 600;
+  line-height: 1;
+  padding: 0.3em 0.65em;
+  border-radius: 999px;
+  background: var(--chip-jhu-bg);
+  color: var(--chip-jhu-fg);
+}
+.course-card__meta > p { display: contents; }
+.course-card__code { font-size: 0.8rem; color: var(--site-muted); font-variant-numeric: tabular-nums; }
+
+// _filters/course-page.lua: the links under a course's title, as pill
+// buttons with a muted note beside each.
+.course-links { display: flex; flex-direction: column; gap: 0.6rem; margin: 0.25rem 0 2rem; }
+.course-links__item { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.3rem 0.8rem; }
+.course-links__item > p { margin: 0; }
+.course-links__item .project-link { display: inline-block; white-space: nowrap; }
+.course-links__desc { flex: 1 1 16rem; font-size: 0.9rem; color: var(--site-muted); }
+.course-links__desc p { margin: 0; }
+
+// Exam schedule tables become one date tile per exam.
+.course-exams {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(9rem, 1fr));
+  gap: 0.75rem;
+  margin: 0.75rem 0 1rem;
+}
+.course-exam {
+  background: var(--site-surface);
+  border: 1px solid var(--site-rule);
+  border-top: 3px solid var(--site-accent);
+  border-radius: 8px;
+  padding: 0.7rem 0.85rem;
+}
+.course-exam__name { font-size: 0.8rem; font-weight: 600; color: var(--site-muted); }
+.course-exam__date { line-height: 1.15; margin: 0.15rem 0; }
+.course-exam__month { font-size: 1rem; color: var(--site-ink); }
+.course-exam__day {
+  font-size: 1.7rem;
+  font-weight: 300;
+  letter-spacing: -0.02em;
+  color: var(--site-ink);
+  font-variant-numeric: tabular-nums;
+}
+.course-exam__meta { font-size: 0.8rem; color: var(--site-muted); }
+
+// Weekly schedules: exam weeks highlighted, break weeks greyed.
+// The filter marks a row with an empty span in its first cell (Quarto drops
+// classes on the <tr> of some tables), so rows are matched with :has().
+main .table > tbody > tr:has(.course-row--exam) > td {
+  background: color-mix(in srgb, var(--site-accent) 9%, transparent);
+}
+main .table > tbody > tr:has(.course-row--exam) > td:first-child {
+  box-shadow: inset 3px 0 0 var(--site-accent);
+}
+main .table > tbody > tr:has(.course-row--break) > td {
+  color: var(--site-muted);
+  font-style: italic;
+  background: var(--site-thumb-bg);
+}
 
 // ------------------------------------------------------- blog post back-link
 .post-backlink {

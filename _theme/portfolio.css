@@ -1,31 +1,7 @@
 /* AI-owned: styles for teaching-portfolio.html only. See CLAUDE.md §4.
    Attached to that one page by _filters/portfolio.lua (an HTML dependency),
    so none of these rules reach any other page. Colours come from the --site-*
-   palette in _theme/light.scss / dark.scss, plus the institution colours below. */
-
-/* ----------------------------------------------------- institution colours
-   Official brand colours. Badges use each university's primary colour.
-   Northwestern Purple (#4E2A84) and Western Purple (#4F2683) are nearly
-   identical, so chart marks use colours that can be told apart: JHU Spirit
-   Blue, Northwestern Purple (Purple 30 in dark mode) and Western's Orchid.
-   Every chart mark also has its own shape and a labelled band, so identity
-   never rests on colour alone. */
-body {
-  --inst-jhu: #68ACE5;  /* JHU Spirit Blue */
-  --inst-nw:  #4E2A84;  /* Northwestern Purple */
-  --inst-uwo: #8F55E0;  /* Western Orchid */
-  --inst-other: var(--site-muted);
-
-  --chip-jhu-bg: #002D72;  --chip-jhu-fg: #ffffff;  /* JHU Heritage Blue */
-  --chip-nw-bg:  #4E2A84;  --chip-nw-fg:  #ffffff;  /* Northwestern Purple */
-  --chip-uwo-bg: #4F2683;  --chip-uwo-fg: #ffffff;  /* Western Purple */
-}
-body.quarto-dark {
-  --inst-nw: #B6ACD1;      /* Northwestern Purple 30 */
-  --chip-jhu-bg: #68ACE5;  --chip-jhu-fg: #0b1a2e;  /* JHU Spirit Blue */
-  --chip-nw-bg:  #B6ACD1;  --chip-nw-fg:  #24133f;  /* Northwestern Purple 30 */
-  --chip-uwo-bg: #8F55E0;  --chip-uwo-fg: #ffffff;  /* Western Orchid */
-}
+   palette in _theme/light.scss / dark.scss, plus the institution colours in _theme/base.scss. */
 
 /* These classes sit on course headings, and Pandoc's section-divs copies
    them onto the wrapping <section>. They therefore set custom properties
@@ -136,18 +112,9 @@ h3.portfolio-course .portfolio-course__code {
 
 /* ---------------------------------------------------------- course tables */
 .portfolio-course__table { overflow-x: auto; margin-bottom: 1rem; }
+/* The tinted header row is the site-wide table style in _theme/base.scss. */
 .portfolio-course__table table { font-size: 0.9rem; margin-bottom: 0; }
-.portfolio-course__table thead th {
-  background: var(--site-thumb-bg);
-  font-weight: 600;
-  font-size: 0.8rem;
-  color: var(--site-muted);
-  border-bottom: 0;
-  vertical-align: bottom;
-}
-.portfolio-course__table thead th:first-child { border-top-left-radius: 6px; }
-.portfolio-course__table thead th:last-child  { border-top-right-radius: 6px; }
-.portfolio-course__table td { font-variant-numeric: tabular-nums; }
+.portfolio-course__table thead th { font-size: 0.8rem; }
 /* A thin bar under each rating, filled to the rating's share of its scale. */
 .portfolio-course__table .portfolio-course__rating {
   display: inline-block;

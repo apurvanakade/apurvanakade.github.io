@@ -4,3 +4,6 @@ toc: false
 title-block-banner: false
 filters:
   - ../_filters/project-links.lua
+# Colours the institution category chips and groups the listing's category
+# rail into kind, venue and topic (see CLAUDE.md §5).
+include-after-body: ../_includes/projects.html
