@@ -200,7 +200,7 @@ math-blog/drafts/*.qmd          rendered and published, but not listed anywhere
 CV.qmd                          assembles cv/*.qmd; renders to HTML *and* PDF
 CV.pdf                          committed; built locally by `make cv`
 cv/<section>.qmd                one CV section per file
-teaching-portfolio.qmd          teaching philosophy, courses, goals; HTML *and* PDF
+teaching-portfolio.qmd          teaching philosophy, courses, development; HTML *and* PDF
 teaching-portfolio.pdf          committed; built locally by `make portfolio`
 rec-letters.qmd
 references.qmd
@@ -294,9 +294,10 @@ Set `cv-layout: false` in frontmatter to switch the filter off.
 `teaching-portfolio.qmd` is built the same way as the CV (HTML in CI, PDF by
 `make portfolio`, committed, copied in by `resources:`), but does **not** use
 `_filters/cv.lua`. Its `##` sections are Teaching philosophy, Courses,
-Mentoring, Professional development and so on. There is no separate teaching
-statement page: its prose lives in Teaching philosophy, Professional development
-and Reflection and goals, and its old URLs redirect here (§8). Under Courses each course is a
+Awards and grants, Professional development, and Syllabi and sample
+materials. There is no
+separate teaching statement page: its prose lives in Teaching philosophy and
+Professional development, and its old URLs redirect here (§8). Under Courses each course is a
 `###` holding a pipe table
 (Semester · Student level · Students · TAs · Course rating · Instructor rating)
 followed by `####` notes and a `#### Selected student comments` list, and the

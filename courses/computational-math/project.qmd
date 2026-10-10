@@ -89,28 +89,3 @@ These are only starting points: the best projects usually come from your own res
 | Orbital Mechanics and Satellite Motion | Simulate two-body orbital motion using RK methods. Extend to studying energy and angular momentum conservation, comparing long-time accuracy of different methods, and modeling orbital maneuvers or perturbations. | 6.3 Systems of ODEs, 6.4–6.5 Runge-Kutta methods |
 | Fourier Series and Signal Reconstruction Visualization | Visualize how Fourier series approximate periodic functions by animating partial sums with increasing terms. Create interactive visualizations showing frequency spectrum, demonstrate Gibbs phenomenon at discontinuities, and apply to audio waveform analysis and image compression. | 3.1–3.4 Least squares (Fourier coefficients as projections), 5.1 Approximation theory |
 | Chemical Reaction Kinetics | Model chemical reaction networks as ODE systems using mass-action kinetics. Extend to systems with disparate time scales (fast/slow reactions), comparing explicit and implicit methods, and studying steady-state approximations. | 6.3 Systems of ODEs, 6.4 Runge-Kutta methods |
-
-## Student projects
-
-### Spring 2026
-
-*Placeholder titles, to be replaced with the real project titles.*
-
-- Newton fractals and basins of attraction
-- Spline-based terrain reconstruction
-- Adaptive quadrature for oscillatory integrals
-- Orbit determination with Gauss-Newton
-- Image deblurring as a linear system
-- Chaotic dynamics of the double pendulum
-- GPS positioning via nonlinear least squares
-- Shooting methods for beam deflection
-- Font design with cubic splines
-- Iterative solvers for the heat equation
-- Audio compression with least squares
-- Predator-prey models with Runge-Kutta
-- Camera calibration from images
-- Root finding for bond yields
-- Bezier curves for animation paths
-- Conditioning of electrical networks
-- Fourier series and the Gibbs phenomenon
-- Adaptive step size control for stiff ODEs

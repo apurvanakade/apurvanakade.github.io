@@ -72,22 +72,6 @@ Many of these were completed by students in previous years. They are starting po
 
 ## Student projects
 
-### Spring 2026
-
-*Placeholder titles, to be replaced with the real project titles.*
-
-- Monte Carlo tree search for Connect Four
-- Variance reduction for Asian option pricing
-- Particle filters for tracking a moving target
-- Hamiltonian Monte Carlo for Bayesian logistic regression
-- Simulated annealing for graph coloring
-- Mixing times of random walks on expander graphs
-- Gibbs sampling for topic models
-- Multilevel Monte Carlo for stochastic differential equations
-- Perfect sampling of the Ising model
-- Adaptive Metropolis for high-dimensional targets
-- Monte Carlo EM for Gaussian mixtures
-
 ### Spring 2025
 
 - Expander graphs and fast-mixing random walks

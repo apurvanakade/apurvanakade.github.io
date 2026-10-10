@@ -62,17 +62,6 @@ This is the moment you finally reveal all your cards! Aim for about 6 or 7 slide
 
 ## Student projects
 
-### Summer 2026
-
-*Placeholder titles, to be replaced with the real project titles.*
-
-- Predicting air quality from weather data
-- What drives Airbnb prices?
-- Forecasting bike-share demand
-- Classifying songs by genre from audio features
-- Wildfire risk from climate data
-- Predicting NBA player performance
-
 ### Summer 2025
 
 In Summer 2025, groups chose from a menu of public datasets, each with a prediction goal, and had to use regression, classification and clustering in their analysis. Starting in Summer 2026, groups find their own real-world dataset instead (Part 1 above).
