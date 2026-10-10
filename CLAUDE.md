@@ -697,12 +697,13 @@ Layered over Bootstrap bases in `_quarto.yml`:
   dark mode.
 - **Institution colours are site-wide tokens** in `base.scss`, on `body` with
   dark overrides on `body.quarto-dark`, used by the portfolio, the CV
-  timeline and the Projects category chips. They are the official colours:
-  `--chip-*` (badges, chips) use each university's primary colour (JHU
-  Heritage Blue, Northwestern Purple, Western Purple). Northwestern Purple
-  `#4E2A84` and Western Purple `#4F2683` are indistinguishable, so `--inst-*`
-  (marks that must be told apart) use JHU Spirit Blue, Northwestern Purple
-  (Purple 30 in dark mode) and Western's Orchid. Every use also names the
+  timeline and the Projects category chips; the portfolio PDF repeats them in
+  `_includes/portfolio-preamble.tex`. JHU and Northwestern use official
+  colours: `--chip-*` (badges, chips) JHU Heritage Blue and Northwestern
+  Purple, `--inst-*` (marks) JHU Spirit Blue and Northwestern Purple (Purple
+  30 in dark mode). Western is **orange**, not its own purple: Western Purple
+  `#4F2683` is indistinguishable from Northwestern Purple `#4E2A84`, and teal
+  is ruled out because it is the site accent. Every use also names the
   institution in text or shape.
 - **Every content table has a tinted header row** (`main .table > thead`),
   so course schedules, the portfolio's tables and any new table match.

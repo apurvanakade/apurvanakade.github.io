@@ -133,28 +133,28 @@ blockquote {
 }
 
 // ------------------------------------------------------- institution colours
-// Official brand colours, shared by the teaching portfolio, the CV timeline and
-// the institution category chips (see CLAUDE.md §7). Badges and chips use each
-// university's primary colour. Northwestern Purple (#4E2A84) and Western Purple
-// (#4F2683) are nearly identical, so marks that must be told apart (--inst-*)
-// use JHU Spirit Blue, Northwestern Purple (Purple 30 in dark mode) and
-// Western's Orchid instead. Colour never carries identity alone: every use
-// also names the institution in text or with a shape.
+// Shared by the teaching portfolio, the CV timeline and the institution
+// category chips (see CLAUDE.md §7). JHU and Northwestern use their official
+// colours. Western's own purple (#4F2683) is indistinguishable from
+// Northwestern Purple (#4E2A84), so Western is orange instead (not teal: that is the site accent). Colour never
+// carries identity alone: every use also names the institution in text or
+// with a shape.
 body {
   --inst-jhu: #68ACE5;  // JHU Spirit Blue
   --inst-nw:  #4E2A84;  // Northwestern Purple
-  --inst-uwo: #8F55E0;  // Western Orchid
+  --inst-uwo: #D9661F;  // orange (Western's purple clashes with Northwestern's)
   --inst-other: var(--site-muted);
 
   --chip-jhu-bg: #002D72;  --chip-jhu-fg: #ffffff;  // JHU Heritage Blue
   --chip-nw-bg:  #4E2A84;  --chip-nw-fg:  #ffffff;  // Northwestern Purple
-  --chip-uwo-bg: #4F2683;  --chip-uwo-fg: #ffffff;  // Western Purple
+  --chip-uwo-bg: #B04A0F;  --chip-uwo-fg: #ffffff;  // burnt orange
 }
 body.quarto-dark {
   --inst-nw: #B6ACD1;      // Northwestern Purple 30
+  --inst-uwo: #F0A35E;     // light orange
   --chip-jhu-bg: #68ACE5;  --chip-jhu-fg: #0b1a2e;  // JHU Spirit Blue
   --chip-nw-bg:  #B6ACD1;  --chip-nw-fg:  #24133f;  // Northwestern Purple 30
-  --chip-uwo-bg: #8F55E0;  --chip-uwo-fg: #ffffff;  // Western Orchid
+  --chip-uwo-bg: #F0A35E;  --chip-uwo-fg: #2a1503;  // light orange
 }
 
 // ------------------------------------------------------------------ tables
