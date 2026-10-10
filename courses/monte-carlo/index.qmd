@@ -1,0 +1,35 @@
+---
+title: "Monte Carlo Methods"
+subtitle: "Spring 2026"
+description: "EN.553.433/633 at Johns Hopkins: Monte Carlo estimation, sampling, MCMC and their applications."
+date: 2026-01-20
+---
+
+- [Syllabus](syllabus.pdf) (PDF)
+- [Course notes](https://apurvanakade.github.io/Monte-Carlo-Methods/): the online textbook for the course
+- [Class notes](https://1drv.ms/o/c/f0f4bc0cf8b335c4/IgC_CiigMkndSpAcMmgvzzCyAaGcXLEYIzHBtoyEfM6qgVk?e=gnUKVV) (OneNote, written in class)
+- [Final project](project.qmd): guidelines, project ideas and past projects
+
+## About the course
+
+Computer simulation and related Monte Carlo methods are widely used in engineering and scientific work. Simulation provides a powerful tool for the analysis of real-world systems when they are not amenable to traditional analytical approaches. This course introduces upper-level undergraduates and graduate students to fundamental tools for designing, conducting and interpreting Monte Carlo studies.
+
+This is a rigorous mathematics course. The focus is on the mathematical analysis of algorithms: their theoretical foundations, convergence properties and error analysis. Programming assignments, submitted as Jupyter notebooks, are an essential component, but this is not a programming course.
+
+**Prerequisites:** linear algebra, and probability and some statistics at the advanced undergraduate level; some programming experience in Python.
+
+**Recommended textbooks**
+
+- R. Y. Rubinstein and D. P. Kroese, *Simulation and the Monte Carlo Method*, 3rd edition, Wiley, 2017.
+- R. P. Dobrow, *Introduction to Stochastic Processes With R*, Wiley.
+
+## Course outline
+
+The course has four units. Each week has a homework assignment and a short quiz.
+
+1. **Monte Carlo estimation**
+2. **Sampling techniques**
+3. **Markov chain Monte Carlo**
+4. **Applications**
+
+The semester ends with a group [final project](project.qmd) in place of a final exam.

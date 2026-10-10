@@ -5,11 +5,14 @@ project:
     - "*.qmd"
     - "projects/*.qmd"
     - "math-blog/**/*.qmd"
+    - "courses/**/*.qmd"
     - "!cv/"
-  # The CV's PDF is built locally (`make cv`) and committed; CI renders HTML
-  # only, so it needs no LaTeX. This copies the committed file into docs/.
+  # The CV's and teaching portfolio's PDFs are built locally (`make cv`,
+  # `make portfolio`) and committed; CI renders HTML only, so it needs no
+  # LaTeX. This copies the committed files into docs/.
   resources:
     - CV.pdf
+    - teaching-portfolio.pdf
   pre-render:
     # Pulls the latest mathviz release into _extensions/ (see CLAUDE.md §6).
     - _scripts/update-mathviz.sh
@@ -30,8 +33,10 @@ website:
         href: math-blog/index.qmd
       - text: Teaching
         menu:
-          - text: Teaching statement
-            href: teaching-statement.qmd
+          - text: Teaching portfolio
+            href: teaching-portfolio.qmd
+          - text: Course pages
+            href: courses/index.qmd
           - text: Recommendation letters
             href: rec-letters.qmd
           - text: References & reading

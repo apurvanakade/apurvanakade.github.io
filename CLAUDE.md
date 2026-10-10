@@ -46,8 +46,10 @@ The single most important convention in this repo is a hard split between files
 
 | Apurva edits — Claude does not restructure | Claude maintains — Apurva never needs to open |
 |---|---|
-| `index.qmd`, `references.qmd`, `rec-letters.qmd`, `teaching-statement.qmd` | `_quarto.yml` |
-| `projects/*.qmd` (frontmatter + prose) | `_theme/*.scss` |
+| `index.qmd`, `references.qmd`, `rec-letters.qmd` | `_quarto.yml` |
+| `teaching-portfolio.qmd` | `_includes/portfolio-preamble.tex` |
+| `courses/**/*.qmd` | `courses/_metadata.yml` |
+| `projects/*.qmd` (frontmatter + prose) | `_theme/*.scss`, `_theme/portfolio.css` |
 | `projects/index.qmd` | `_filters/*.lua` |
 | `CV.qmd`, `cv/*.qmd` | `_includes/*.html` |
 | `math-blog/index.qmd`, `math-blog/*/index.qmd` | `_scripts/*.py` |
@@ -79,6 +81,7 @@ next render. Nobody edits it (see §6, "mathviz").
 ```bash
 make build     # quarto render --to html --output-dir docs/   (local only, gitignored)
 make cv        # rebuild CV.pdf with the local LaTeX; commit the result
+make portfolio # the same for teaching-portfolio.pdf
 make clean     # rm -rf docs/
 make covers    # regenerate the SVG project covers (rarely needed)
 make update-mathviz  # force a check for a newer mathviz release
@@ -197,14 +200,19 @@ math-blog/drafts/*.qmd          rendered and published, but not listed anywhere
 CV.qmd                          assembles cv/*.qmd; renders to HTML *and* PDF
 CV.pdf                          committed; built locally by `make cv`
 cv/<section>.qmd                one CV section per file
-teaching-statement.qmd
+teaching-portfolio.qmd          teaching philosophy, courses, development; HTML *and* PDF
+teaching-portfolio.pdf          committed; built locally by `make portfolio`
 rec-letters.qmd
 references.qmd
+courses/index.qmd               table listing of the course pages
+courses/<course>/index.qmd      one course: overview, outline, links
+courses/<course>/*.qmd          further pages (exams, project)
+courses/<course>/*.pdf          syllabus and project slides, as-is
 ```
 
 Navbar: **Home · Projects · Blog · Teaching ▾ · CV**. `Teaching` is a dropdown
-holding the teaching statement, recommendation-letter instructions, and
-references.
+holding the teaching portfolio, course pages,
+recommendation-letter instructions, and references.
 
 **There is no sidebar for the blog subtree, deliberately.** The blog index and
 both section pages already carry a grid listing plus a categories rail, and every
@@ -213,6 +221,40 @@ navigation. The standalone blog used an explicit sidebar file list in its
 `_quarto.yml` and it had gone stale — it still pointed at a post deleted months
 earlier. Listings cannot rot that way. If a sidebar is ever wanted again, note
 that Quarto rejects `auto:` globs combined with a `href:` on the same section.
+
+### Course pages
+
+`courses/` holds public copies of Canvas course sites (Discrete Mathematics,
+Monte Carlo Methods, Introduction to Computational Mathematics, Foundational
+Mathematics of AI, Graph Theory), linked from each course's "Sample
+materials" heading in `teaching-portfolio.qmd`. Those links are absolute
+`https://apurvanakade.github.io/courses/...` URLs so they also work in the
+PDF. They are copies, not
+mirrors: content was pulled once from the JHU Canvas API and rewritten as
+plain `.qmd`, and nothing syncs them. The Canvas page style is not reproduced.
+
+**What may be copied over, and what may not.** These pages are public, and the
+Canvas sites they come from were not:
+
+- **Never**: homework, quiz, exam, practice-exam or solution files (or links
+  to them); TA or student names, emails, photos or bios; project group rosters;
+  Zoom links, room numbers, office-hour tables; links into Canvas, Gradescope,
+  zyBooks, Microsoft Forms or SharePoint folders (they need a JHU login).
+- **Yes**: Apurva's OneNote class-note share links (`1drv.ms`; Apurva accepts
+  that they may stop working), course descriptions, outlines and schedules,
+  exam topic lists and policies, project guidelines, project ideas, and
+  project *titles* without the students' names. Syllabi and project slides are kept as the
+  original PDFs, after checking their text for names other than Apurva's.
+
+Each course's `index.qmd` carries `subtitle:` (the term) and `date:` (the
+term's start) for the listing's columns and sort. That date is not a
+publication date, so `courses/_metadata.yml` adds the body class
+`course-page` and `_theme/base.scss` hides the title block's "Published" line
+for it.
+
+The Canvas API token lives in the gitignored file `canvas API token` at the
+repo root (host `jhu.instructure.com`; `canvas.jhu.edu` refuses API calls).
+Never commit it or copy it into another file.
 
 ---
 
@@ -246,6 +288,75 @@ remove `pdf` from `CV.qmd`'s formats; `make cv` depends on it.
 **So the content convention is: one entry per paragraph, year last, after a comma.**
 Write `Faculty Forward Fellowship, JHU, 2025` and the layout takes care of itself.
 Set `cv-layout: false` in frontmatter to switch the filter off.
+
+### The teaching portfolio
+
+`teaching-portfolio.qmd` is built the same way as the CV (HTML in CI, PDF by
+`make portfolio`, committed, copied in by `resources:`), but does **not** use
+`_filters/cv.lua`. Its `##` sections are Teaching philosophy, Courses,
+Awards and grants, Professional development, and Syllabi and sample
+materials. There is no
+separate teaching statement page: its prose lives in Teaching philosophy and
+Professional development, and its old URLs redirect here (§8). Under Courses each course is a
+`###` holding a pipe table
+(Semester · Student level · Students · TAs · Course rating · Instructor rating)
+followed by `####` notes and a `#### Selected student comments` list, and the
+CV's `cvsection` list environment cannot hold a table (see below). The ratings
+and quotes are copied by hand from the evaluation PDFs in the
+`apurvanakade/PDFs` repo; a semester with several sections shows the
+response-weighted mean, and each rating carries its own scale (`/ 5` at JHU,
+`/ 6` at Northwestern, `/ 7` at Western Ontario) because the institutions'
+scales differ. The questions and scales are explained once, in a footnote on
+the first table's "Course rating" header, which HTML renders at the end of the
+page and LaTeX at the foot of that page. Its PDF
+layout lives in `_includes/portfolio-preamble.tex`: `\needspace` before each
+heading so a course title is never stranded above a page break, `titlesec`
+turning `####` (LaTeX's `\paragraph`, a run-in heading by default) into a
+display heading so a list can start below it, and
+`\LTleft=0pt` so tables sit flush with the prose rather than centred at
+differing widths. After editing the `.qmd`, run `make portfolio` and commit
+`teaching-portfolio.pdf` with it.
+
+**The portfolio's visuals all come from `_filters/portfolio.lua`**, named in
+the page's `filters:`, so the `.qmd` stays headings, pipe tables and lists.
+It reads the course tables and builds, for HTML and LaTeX alike: a summary
+band above the first `##` (courses, students, universities, first year, median
+JHU instructor rating since `CURRENT_ROLE_START`), a dot chart of every
+semester's instructor rating as a percentage of its scale at the top of
+`## Courses` (in HTML its hover tooltip is a small inline script, because an
+SVG `<title>` shows only after a second's rest and never on touch), an institution badge and muted code in each course `###`
+(parsed from its trailing "(Institution, code)"), and quote cards from the
+list under `#### Selected student comments`. HTML alone also gets rating bars
+in the tables, pill links from `#### Sample materials`, a link card to the
+matching `projects/` page (`COURSE_PROJECTS` in the filter; title, image and
+description are read from that page's frontmatter), and icon tiles from the
+first list in `## Teaching philosophy` whose items all open with a **bold
+label** (icons chosen by `TILE_ICONS`). A heading or list that does not match
+these shapes is left as it is. So the content conventions are: write a course
+heading as `### Name (Institution, code)` with the institution spelled as in
+`INSTITUTIONS`, keep the table's column names, and end each comment with
+`(Term)` after the closing quotation mark.
+
+Its HTML styles are `_theme/portfolio.css`, which the filter attaches to this
+page alone as an HTML dependency, so they never reach another page; the LaTeX
+side (colours, `\instbadge`, the `portfolioquote` and `portfoliostats`
+boxes) is in `_includes/portfolio-preamble.tex`. Every HTML class the
+filter emits starts with `portfolio-` (BEM-style parts, as in
+`portfolio-chart__tip`), so no rule from Bootstrap, Quarto or mathviz (whose
+classes start with `vm-` or `ojs-`) can reach these elements, and none of
+these rules can reach theirs. Keep that prefix on any class added here. Course
+tables are wrapped in `div.portfolio-course__table` rather than given a class,
+because Quarto drops the classes of a table whose header holds a footnote; the
+wrapper also lets a table scroll sideways on a phone. The `portfolio-inst-*`
+classes land on each course's `<section>` too (Pandoc's `section-divs`), so
+they set only custom properties and never a visible style.
+
+Institution colours are the official ones. Badges use each university's
+primary colour (JHU Heritage Blue, Northwestern Purple, Western Purple), but
+Northwestern Purple `#4E2A84` and Western Purple `#4F2683` are
+indistinguishable, so chart marks use JHU Spirit Blue, Northwestern Purple
+(Purple 30 in dark mode) and Western's Orchid, and each institution also has
+its own marker shape and a labelled band.
 
 ### Constraints — do not regress
 
@@ -491,6 +602,7 @@ reachable by anyone with the URL — treat them as public.
 _theme/base.scss    typography, layout, components (shared)
 _theme/light.scss   light palette
 _theme/dark.scss    dark palette
+_theme/portfolio.css  teaching portfolio only (§4); not part of the theme
 ```
 
 Layered over Bootstrap bases in `_quarto.yml`:
@@ -538,14 +650,15 @@ Layered over Bootstrap bases in `_quarto.yml`:
 
 ## 8. Redirects
 
-The 2026 reorganisation changed some URLs. `_scripts/write_redirects.py` writes
-meta-refresh stubs after each render:
+Some URLs have changed. `_scripts/write_redirects.py` writes meta-refresh stubs
+after each render:
 
 | Old | New |
 |---|---|
 | `notes.html` | `projects/index.html` |
 | `rec letters.html` | `rec-letters.html` |
-| `teaching statement.html` | `teaching-statement.html` |
+| `teaching statement.html` | `teaching-portfolio.html` |
+| `teaching-statement.html` | `teaching-portfolio.html` |
 
 The script refuses to overwrite a page Quarto actually rendered. Add to the
 `REDIRECTS` dict whenever a page moves.

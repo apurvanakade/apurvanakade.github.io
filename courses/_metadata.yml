@@ -1,0 +1,6 @@
+# AI-owned: shared settings for every page in courses/.
+# Public copies of Canvas course pages. See CLAUDE.md §3, "Course pages", for what
+# may and may not be copied over (no assessments, no TA or student information).
+title-block-banner: false
+toc: true
+body-classes: course-page

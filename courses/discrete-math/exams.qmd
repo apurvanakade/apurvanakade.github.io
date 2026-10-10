@@ -1,0 +1,101 @@
+---
+title: "Exam Information"
+subtitle: "Discrete Mathematics, Fall 2026"
+---
+
+[Back to the course page](index.qmd)
+
+All exams are closed-book: no calculators, phones, textbooks, cheat sheets or notes. Bring a dark writing instrument (pencil works best); light pencil marks are hard to scan, which delays getting grades back.
+
+## Midterm 1
+
+Monday, October 5, 2026, during the regular class time.
+
+- **Topics covered**
+  - Logic: truth values of implications, rewriting statements using quantifiers and logical operators, logical equivalence
+  - Direct proofs: proofs about divisibility, inequalities
+  - Proof by cases: odd/even, positive/negative, inequalities, absolute value
+  - Set theory: Venn diagrams, proving set inclusions
+  - Relations: proofs and properties related to partial orders
+- **Homework covered:** HW 1 to 4
+- **What to expect:** 2 or 3 short answer questions (with parts) and 2 or 3 longer proofs.
+
+## Midterm 2
+
+Wednesday, November 4, 2026, during the regular class time.
+
+- **Topics covered**
+  - Number theory: solving divisibility problems using modular arithmetic
+  - Modular arithmetic: solving modular equations
+  - GCD: computing the GCD using Euclid's algorithm
+  - Multiplicative inverses: definition and computations by trial and error (the extended Euclidean algorithm is not required)
+  - Cryptography: Diffie-Hellman key exchange, RSA
+  - Proof by contradiction
+  - Counting
+- **Homework covered:** HW 5 to 7
+- **What to expect:** 2 or 3 short answer questions (with parts) and 2 or 3 longer proofs.
+
+## Midterm 3
+
+Friday, December 11, 2026, during the regular class time. This is the last week of classes: HW 11 is due the same week.
+
+- **Topics covered**
+  - Advanced counting: counting multisets, stars and bars
+  - Combinatorial proofs
+  - Induction proofs, including strong induction
+  - Graph theory: trees, graph induction, planar graphs, coloring, Euler paths, Hamiltonian paths
+- **Homework covered:** HW 8 to 11
+- **What to expect:** 2 or 3 short answer questions (with parts) and 2 or 3 longer proofs.
+
+## Final exam
+
+Monday, December 21, 2026, 6:00 to 9:00 PM. The date and time are set by the registrar. Please plan end-of-semester travel around the exam; travel plans are not grounds for taking the final early or late.
+
+- **Topics covered:** the exam is cumulative and covers everything from the semester:
+  - Logic, direct proofs, proof by cases, inequalities
+  - Set theory, relations
+  - Number theory, modular arithmetic, multiplicative inverses, cryptography
+  - Proof by contradiction, counting
+  - Stars and bars, combinatorial proofs, mathematical induction
+  - Graph theory (planarity, Euler characteristic, the Six Color Theorem)
+- **Homework covered:** HW 1 to 11
+- **What to expect:** about twice as long as a midterm, around 12 questions.
+
+There are no new topics on the final. What's being tested is your ability to figure out which technique to use: to search through everything learned this semester, recognize that a new problem resembles one you've solved before, and translate that idea into a rigorous proof.
+
+## How to study
+
+The questions on a midterm are much shorter than the ones on the homework (you have a week for the homework and only 50 minutes for the exam), but they use the same ideas.
+
+| Resource         | How to use it |
+|------------------|---------------|
+| Practice exams   | Attempt each one by yourself, in the length of the real exam, under exam conditions: no notes, no calculator. This gets you used to the timing and pressure of the real exam before test day. |
+| Worksheets       | Attempt all the questions. Exam questions are at the same difficulty level as worksheet questions. |
+| Your notes       | Go through your homework and class notes and write a summary of the patterns, common mistakes and tricks you used. This is your review material for the day before the exam. |
+| Textbook problems | Attempt them without looking at the solutions. Reading a solution is not the same skill as writing one. |
+
+Two practice exams are released before each exam, with solutions a few days later. They might not cover every topic on the exam, and your score on them says nothing about your score on the actual exam: the questions will be completely different.
+
+## How we grade
+
+We are a bit more forgiving on exams than on homework. Here's what we look for in your proofs:
+
+- **Make sure everything's there:** prove all your claims, state your assumptions clearly, define your variables, and wrap up with a clear conclusion.
+- **Keep it organized:** follow a logical flow and explain things clearly using proper mathematical language (but don't go overboard with fancy terminology).
+- **Show your reasoning:** each step should make sense and follow from what came before.
+- **Check your work:** if you're using a theorem or formula, make sure it actually applies to your situation.
+- **Don't ramble:** be thorough, but don't write a novel.
+
+We don't give points just for trying. Your grade depends on how many of your arguments are actually correct and relevant to solving the problem.
+
+## Conflicts and accommodations
+
+- **Exam conflicts:** if an exam time conflicts with your schedule, let us know as soon as possible, and no later than three weeks before the exam. No makeup, early or late exams are allowed for any other reason.
+- **Accommodations:** students with exam accommodations through Student Disability Services schedule and take their exam with SDS. Arrange this with SDS well in advance, and let us know once it is scheduled so we can send them your exam.
+- **Medical and personal emergencies:** notify us promptly and provide appropriate documentation (a doctor's note, dean's excuse or official university documentation).
+
+## How exams count
+
+Of the three midterms, your best two count 17% each and your lowest counts 11%, for 45% of your course grade in total. The cumulative final exam is worth 25%.
+
+If you miss one midterm for a valid, documented reason, your remaining two midterms each count for 20% and the final exam counts for 30%. If you miss two midterms, you cannot obtain a passing grade in the course.

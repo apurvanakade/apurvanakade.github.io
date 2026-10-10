@@ -1,0 +1,32 @@
+---
+title: "Introduction to Computational Mathematics"
+subtitle: "Spring 2026"
+description: "EN.553.385 at Johns Hopkins: floating point, linear systems, least squares, root finding, interpolation and ODEs."
+date: 2026-01-20
+---
+
+- [Syllabus](syllabus.pdf) (PDF)
+- [Textbook](https://fncbook.com/): T. A. Driscoll and R. J. Braun, *Fundamentals of Numerical Computation*, freely available online. The course follows Chapters 1 to 6.
+- [Class notes](https://1drv.ms/o/c/f0f4bc0cf8b335c4/IgD8tYjZvkbxS42dB1AFqypYAT9Y07EgO19xf2qk7pEUTSg?e=MYxXLl) (OneNote, written in class)
+- [Final project](project.qmd): guidelines and project ideas
+
+## About the course
+
+This course offers a broad introduction to numerical computation in the mathematical sciences. Topics include floating point numbers, linear systems, LU factorization, vector and matrix norms, conditioning of linear systems, QR factorizations, the root finding problem, fixed point iterations, Newton's method in one variable and for nonlinear systems, interpolation, cubic splines, finite differences, numerical integration, initial-value problems for ODEs, Euler's method, systems of differential equations and Runge-Kutta methods; time permitting, shooting methods for boundary-value problems and topics in numerical optimization.
+
+This is a rigorous mathematics course. The focus is on the mathematical analysis of algorithms: their theoretical foundations, convergence properties, stability and error bounds. Programming assignments, submitted as Jupyter notebooks, are an essential component, but this is not a programming course.
+
+**Prerequisites:** linear algebra and multivariable calculus at an advanced undergraduate level; some programming experience in Python.
+
+## Course outline
+
+The course has six units, each with homework assignments and weekly discussion sections.
+
+1. **Introduction:** floating point arithmetic, conditioning and stability
+2. **Linear algebra:** linear systems, LU factorization, norms and conditioning
+3. **Ordinary least squares:** normal equations, QR factorization
+4. **Root finding:** fixed point iteration, Newton's method, nonlinear systems
+5. **Piecewise approximations:** interpolation, cubic splines, finite differences, numerical integration
+6. **Ordinary differential equations:** initial-value problems, Euler's method, Runge-Kutta methods
+
+The semester ends with a group [final project](project.qmd) in place of a final exam.

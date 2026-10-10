@@ -1,0 +1,93 @@
+---
+title: "Final Project"
+subtitle: "Monte Carlo Methods, Spring 2026"
+---
+
+[Back to the course page](index.qmd)
+
+In place of a final exam, students complete a final project in groups of two or three. Every project balances three elements: **learning** a method or application beyond the syllabus, **analysis** that tests its boundaries, and **research**, a creative modification of the model or algorithm that is then evaluated.
+
+- [Final project guidelines](final-project-guidelines.pdf) (PDF slides): philosophy, required elements, example projects, the proposal, presentations, AI policy and peer evaluations.
+- [Final project deliverables](final-project-deliverables.pdf) (PDF slides): what is submitted and how each part is assessed.
+
+## Timeline
+
+| Milestone                    | When                     |
+|------------------------------|--------------------------|
+| In-class group work sessions | April 21 and 23          |
+| Project proposal             | End of class on April 23 |
+| Presentations                | May 11                   |
+| Final submission             | May 11                   |
+
+During the two in-class work sessions I give an overview of the deliverables, answer questions about the requirements, and hand out templates and rubrics for the proposal. Each group develops its proposal, splits up roles and responsibilities, and fills in a check-in sheet summarizing its discussion. The proposal is a concrete project plan with each member's responsibilities and tasks.
+
+## Presentation
+
+Slides are assessed on four criteria:
+
+- **Narrative clarity:** does the presentation tell a clear, logical story that assumes only the knowledge covered in the course?
+- **The "delta":** is the group's specific modification or research contribution clearly identified and explained?
+- **Visual communication:** are the slides clean and professional, using effective visualizations rather than walls of text?
+- **Technical command:** does the group show a solid understanding of its methods, stay within the 15-minute limit and answer questions well?
+
+The final presentation is a chance to share findings with the community built over the semester. The criteria keep everyone accountable, but the goal is a low-stress setting: if you have done the work and can explain it clearly, you will do well.
+
+## Project archive
+
+The final submission is a zip file containing a Jupyter notebook and everything it needs to run. The notebook is the heart of the project: it is where the technical rigor and the creative "delta" live. It must run from top to bottom in a clean environment (with numpy, scipy, matplotlib and seaborn installed, plus any packages listed in a `requirements.txt` or `environment.yml`), use relative paths, and include all of its data files. It is assessed on:
+
+- **Reproducibility:** the notebook executes from top to bottom in a clean environment without manual troubleshooting.
+- **Literate programming:** Markdown cells give a clear narrative explaining the mathematical intuition behind the code.
+- **Algorithmic correctness:** the methods and modifications are technically sound and mathematically accurate.
+- **The "delta":** the creative modification is clearly coded, tested, and compared against a baseline or standard method.
+- **Data visualization:** plots and tables demonstrate convergence, error analysis or comparative results.
+- **Code quality:** intuitive variable names, and complex logic broken into readable, well-commented functions.
+- **Rigorous analysis:** the method's boundaries are tested, for example its stability, parameter sensitivity or convergence rate.
+
+## Project ideas
+
+Many of these were completed by students in previous years. They are starting points: the best projects usually come from your own research interests or curiosity, so modify them, combine them or propose something entirely new.
+
+| Project | Description | Connection to the course |
+|----------------------|--------------------------------------------------|----------------------------|
+| Monte Carlo tree search for game AI | Implement Monte Carlo tree search to train an agent for a game (Tic-Tac-Toe, Connect Four or Go). The algorithm builds a search tree by simulating random playouts and uses the results to guide exploration of promising moves. | Metropolis-Hastings, importance sampling |
+| Monte Carlo methods for option pricing | Price financial derivatives (European, Asian or exotic options) by simulating asset price paths under models such as geometric Brownian motion or stochastic volatility. | Monte Carlo integration, variance reduction, stochastic processes |
+| Kalman filtering for object tracking | Track moving objects in video, or simulate tracking of vehicles with noisy sensor measurements (GPS and velocity data). Predict future positions and update estimates as new observations arrive. | Sequential Monte Carlo, Bayesian filtering |
+| Spectral analysis of random graphs | Generate random graphs (Erdős-Rényi or preferential attachment) and analyze spectral properties of their adjacency or Laplacian matrices, such as eigenvalue distributions. | Markov chains, mixing times |
+| Expander graphs and mixing times | Study expander graphs and their rapid mixing by simulating random walks and estimating mixing times. Compare convergence rates across graph structures. | Markov chains, mixing times |
+| Metropolis-Hastings for image denoising | Denoise images by sampling from a posterior distribution that combines a prior on image smoothness with the observed noisy pixels. | Metropolis-Hastings, Bayesian inference |
+| Approximating Max-Cut and NP-hard graph problems | Use simulated annealing or MCMC to find approximate solutions to NP-hard graph problems like Max-Cut or graph coloring. Compare solution quality and computational cost. | Simulated annealing, MCMC optimization |
+| Extended Kalman filters for nonlinear systems | Extend the Kalman filter to nonlinear dynamics with an extended Kalman filter, applied to tracking with nonlinear measurement models or estimating pendulum dynamics. | Sequential Monte Carlo, particle filters |
+| Collapsed Gibbs sampling for latent variable models | Implement collapsed Gibbs sampling for a latent variable model such as latent Dirichlet allocation or a Gaussian mixture model, marginalizing some variables analytically to improve mixing. | Gibbs sampling, variance reduction |
+| Markov switching models for time series | Analyze time series with regime changes, such as financial returns or economic indicators. Estimate hidden states and transition probabilities using Monte Carlo methods. | Hidden Markov models, sequential Monte Carlo, Gibbs sampling |
+| Hamiltonian Monte Carlo for Bayesian inference | Sample from a complex posterior with Hamiltonian Monte Carlo and compare its convergence and efficiency with Metropolis-Hastings or Gibbs sampling. | Metropolis-Hastings, mixing time, convergence diagnostics |
+| Adaptive MCMC methods | Implement adaptive MCMC algorithms (such as adaptive Metropolis) that tune their proposal distributions during sampling, and compare them with fixed proposals. | Metropolis-Hastings, proposal distributions, convergence diagnostics |
+| Metropolis-adjusted Langevin algorithm (MALA) | Sample from complex posteriors using gradient information with a Metropolis-Hastings correction step, and compare with standard Metropolis-Hastings. | Metropolis-Hastings, gradient-based sampling, proposal distributions |
+| Simultaneous localization and mapping | Implement particle-filter SLAM, where a robot estimates its position while building a map of an unknown environment from noisy sensor data. | Particle filters, sequential importance sampling, resampling |
+| Monte Carlo EM algorithm | Use MCMC in the E-step of the EM algorithm to approximate intractable expectations in maximum likelihood estimation for latent variable models. | Importance sampling, Gibbs sampling, Monte Carlo estimation |
+| Feynman-Kac formula for solving PDEs | Solve PDEs such as the heat equation or the Black-Scholes PDE by averaging over Monte Carlo sample paths of related diffusion processes. | Monte Carlo integration, stochastic simulation, variance reduction |
+| Multilevel Monte Carlo methods | Reduce the cost of estimating expectations involving stochastic differential equations or nested simulations by combining samples from several discretization levels. | Monte Carlo integration, variance reduction |
+| Reversible jump MCMC for model selection | Perform Bayesian model selection across models with different numbers of parameters, such as the number of components in a mixture model or the degree of a regression polynomial. | Metropolis-Hastings, variance reduction |
+| Perfect sampling with the Propp-Wilson algorithm | Generate exact samples from a Markov chain's stationary distribution with coupling from the past, with no burn-in, for example for an Ising model or random colorings. | Markov chain sampling, stationary distributions |
+
+## Student projects
+
+### Spring 2025
+
+- Expander graphs and fast-mixing random walks
+- Using Monte Carlo methods to approximate PageRank
+- Monte Carlo tree search: an introduction and applications
+- A Monte Carlo algorithm for Min-Cut
+- Adaptive rejection sampling
+- Monte Carlo localization: particle filters for robust robot positioning
+- Gibbs sampling for Markov switching models
+- Gibbs sampling for basketball data
+- Evaluating the statistical randomness of LLM-generated numbers
+- Cryptographically secure random number generation
+- Gibbs sampling for Gaussian mixture models (two projects)
+- Monte Carlo tree search methods
+- Strategy optimization for Go with Monte Carlo tree search
+- Hamiltonian Monte Carlo
+- Estimation in linear Gaussian state space models
+
+Other topics suggested to past cohorts: Langevin dynamics, applications of stochastic differential equations in finance, the Ising model on general graphs, connections to spectral graph theory, the Propp-Wilson algorithm, cryptography using Monte Carlo methods, and the Metropolis-adjusted Langevin algorithm.

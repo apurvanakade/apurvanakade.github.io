@@ -1,0 +1,77 @@
+---
+title: "Course Project"
+subtitle: "Foundational Mathematics of Artificial Intelligence, Summer 2026"
+---
+
+[Back to the course page](index.qmd)
+
+The course project runs in three parts. Groups find a real dataset, present it, analyze it, and present their findings.
+
+## Part 1: Data visualization presentation
+
+Form a group and find a real dataset to work with for the final project. The dataset must be real, collected data, not a synthetic or toy dataset generated to teach a specific technique. If you're not sure whether a dataset counts, ask before you commit to it. Good places to look:
+
+- [data.gov](https://data.gov/) (US government data)
+- [Google Dataset Search](https://datasetsearch.research.google.com/)
+- [Our World in Data](https://ourworldindata.org/)
+- [UC Irvine Machine Learning Repository](https://archive.ics.uci.edu/) (check each dataset's description: a few are simulated, so stick to the real ones)
+- your city's or state's open data portal, a research field you're curious about, an API you like
+
+In a world drowning in data, only you can save the day by finding meaningful patterns and insights: prove your heroic abilities with a 5 to 10 minute presentation.
+
+0. **Choose a fun team name** and state it on your title slide, along with your group members.
+1. **Dataset description (3 to 5 minutes).** Explain what your data is, where it came from and how it was collected, how big it is, and why anyone should care about it. A screenshot of `df.head()` is not a presentation slide: create clear summaries (tables, plots) that actually help your audience understand the data. This is the most important part of the presentation.
+2. **What you hope to explore (1 to 2 minutes).** You don't need a finished analysis yet; that's what the final presentation is for. Tell us what's interesting about this data and what questions you want to dig into. Which columns might relate to which? Is there a trend over time or across groups you're curious about?
+3. **Data issues (2 to 3 minutes).** Identify the problems lurking in your dataset: missing values, biases, outdated information, small sample size, or other ghosts that could sabotage your analysis later. Real data is messy; showing you've looked closely at it is the point of this section.
+
+## Part 2: Analysis
+
+Now it's time to put your presentation plans into action: turn your research questions into actual analysis through visualization, relationship analysis and predictive modeling.
+
+1. **Exploratory data analysis (45% of effort).** Create visualizations that reveal patterns and relationships in your data.
+   - *Multiple visualization types:* use appropriate charts for different data types and relationships.
+   - *Meaningful insights:* each visualization should reveal something specific about your data.
+   - *Explore relationships:* show how variables interact, not just individual distributions.
+   - For inspiration, see the [seaborn](https://seaborn.pydata.org/examples/index.html) and [matplotlib](https://matplotlib.org/stable/gallery/index.html) galleries.
+2. **Correlation and model diagnostics (20% of effort).** Dig into the relationships between your variables, and how well your model captures them. Report all results honestly.
+   - *Correlation heatmap:* identify which predictors relate to your target, and to each other.
+   - *Model diagnostics:* for regression, plot residuals against predictions and a residual histogram, and report the RMSE; for classification, report a confusion matrix and per-class accuracy.
+   - *No cherry-picking:* report weak or unexpected correlations alongside the strong ones.
+3. **Predictive modeling (30% of effort).** Build and improve a predictive model through feature engineering and hyperparameter tuning.
+   - *Baseline model:* start with a simple model using default parameters.
+   - *Proper validation:* use train/test splits appropriately.
+   - *Feature engineering:* create, transform or select features to improve performance.
+   - *Hyperparameter tuning:* improve model performance systematically.
+   - *Document improvements:* show performance metrics before and after.
+4. **Conclusions (5% of effort).** Summarize your findings in clear, accessible language that connects back to your original research questions.
+   - *Plain language:* explain results without technical jargon.
+   - *Practical significance:* what do your findings mean in real-world terms?
+   - *Limitations:* acknowledge what your analysis cannot determine.
+
+Submit a zip file containing the dataset and one or more Jupyter notebooks.
+
+## Part 3: Final presentation
+
+This is the moment you finally reveal all your cards! Aim for about 6 or 7 slides per team member and 10 to 15 minutes of presentation.
+
+0. **Introduce your data (about 10% of your slides).** In spite of your gripping first presentation, others have forgotten what your data was about. Summarize it again, focusing on the features and classes you actually ended up using, and present the questions you explore.
+1. **Exploratory data analysis (about 50% of your slides).** This is the most fun part. Keep it non-technical, label your images clearly, and use lots of colors. Show one visualization per slide, fully explained; don't crowd several charts onto one slide.
+2. **Correlation and model diagnostics (about 15% of your slides).** Explain which variables you compared and how they relate (correlation heatmap), how well your model's predictions matched reality (residual plots and RMSE for regression, a confusion matrix for classification), and anything surprising or weak, not just your strongest result.
+3. **Predictive modeling (about 20% of your slides).** Report which models you tried and what worked and what didn't. Show the accuracies of the different models in a table and, if relevant, feature importances or residual histograms.
+4. **Conclusions (about 5% of your slides).** Summarize your findings in simple English. This is what people will remember from your presentation, so make it clear, concise and easy to follow.
+
+## Student projects
+
+### Summer 2025
+
+In Summer 2025, groups chose from a menu of public datasets, each with a prediction goal, and had to use regression, classification and clustering in their analysis. Starting in Summer 2026, groups find their own real-world dataset instead (Part 1 above).
+
+| Dataset | Prediction goal | Groups |
+|---------|-----------------|-------:|
+| [Heart disease](https://www.kaggle.com/datasets/johnsmith88/heart-disease-dataset) | Whether a patient has heart disease | 2 |
+| [Bank marketing](https://www.kaggle.com/datasets/janiobachmann/bank-marketing-dataset) | Whether a customer subscribes to a term deposit | 2 |
+| [Student performance](https://www.kaggle.com/datasets/spscientist/students-performance-in-exams) | Students' exam grades, or pass/fail | 1 |
+| [Mushrooms](https://www.kaggle.com/datasets/uciml/mushroom-classification/data) | Whether a mushroom is edible or poisonous | 1 |
+| [Iris](https://www.kaggle.com/datasets/uciml/iris/data) | The species of an iris from its flower measurements | 1 |
+
+The menu also offered the [Titanic](https://www.kaggle.com/competitions/titanic/data) and [zoo animal](https://www.kaggle.com/datasets/uciml/zoo-animal-classification) datasets.

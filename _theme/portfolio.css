@@ -1,0 +1,248 @@
+/* AI-owned: styles for teaching-portfolio.html only. See CLAUDE.md §4.
+   Attached to that one page by _filters/portfolio.lua (an HTML dependency),
+   so none of these rules reach any other page. Colours come from the --site-*
+   palette in _theme/light.scss / dark.scss, plus the institution colours below. */
+
+/* ----------------------------------------------------- institution colours
+   Official brand colours. Badges use each university's primary colour.
+   Northwestern Purple (#4E2A84) and Western Purple (#4F2683) are nearly
+   identical, so chart marks use colours that can be told apart: JHU Spirit
+   Blue, Northwestern Purple (Purple 30 in dark mode) and Western's Orchid.
+   Every chart mark also has its own shape and a labelled band, so identity
+   never rests on colour alone. */
+body {
+  --inst-jhu: #68ACE5;  /* JHU Spirit Blue */
+  --inst-nw:  #4E2A84;  /* Northwestern Purple */
+  --inst-uwo: #8F55E0;  /* Western Orchid */
+  --inst-other: var(--site-muted);
+
+  --chip-jhu-bg: #002D72;  --chip-jhu-fg: #ffffff;  /* JHU Heritage Blue */
+  --chip-nw-bg:  #4E2A84;  --chip-nw-fg:  #ffffff;  /* Northwestern Purple */
+  --chip-uwo-bg: #4F2683;  --chip-uwo-fg: #ffffff;  /* Western Purple */
+}
+body.quarto-dark {
+  --inst-nw: #B6ACD1;      /* Northwestern Purple 30 */
+  --chip-jhu-bg: #68ACE5;  --chip-jhu-fg: #0b1a2e;  /* JHU Spirit Blue */
+  --chip-nw-bg:  #B6ACD1;  --chip-nw-fg:  #24133f;  /* Northwestern Purple 30 */
+  --chip-uwo-bg: #8F55E0;  --chip-uwo-fg: #ffffff;  /* Western Orchid */
+}
+
+/* These classes sit on course headings, and Pandoc's section-divs copies
+   them onto the wrapping <section>. They therefore set custom properties
+   only, never a visible style, so the whole course section inherits them. */
+.portfolio-inst-jhu   { --inst: var(--inst-jhu);   --chip-bg: var(--chip-jhu-bg); --chip-fg: var(--chip-jhu-fg); }
+.portfolio-inst-nw    { --inst: var(--inst-nw);    --chip-bg: var(--chip-nw-bg);  --chip-fg: var(--chip-nw-fg); }
+.portfolio-inst-uwo   { --inst: var(--inst-uwo);   --chip-bg: var(--chip-uwo-bg); --chip-fg: var(--chip-uwo-fg); }
+.portfolio-inst-other { --inst: var(--inst-other); --chip-bg: var(--site-muted);  --chip-fg: var(--site-surface); }
+
+/* ------------------------------------------------------------ summary band */
+.portfolio-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(8.5rem, 1fr));
+  gap: 0.75rem;
+  margin: 0.5rem 0 2.5rem;
+}
+.portfolio-stat {
+  background: var(--site-surface);
+  border: 1px solid var(--site-rule);
+  border-top: 3px solid var(--site-accent);
+  border-radius: 8px;
+  padding: 0.8rem 0.9rem 0.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+.portfolio-stat__value {
+  font-size: 1.7rem;
+  font-weight: 300;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+  color: var(--site-ink);
+  font-variant-numeric: tabular-nums;
+}
+.portfolio-stat__label { font-size: 0.8rem; line-height: 1.3; color: var(--site-muted); }
+
+/* ----------------------------------------------------- philosophy tiles */
+.portfolio-tiles {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+  gap: 0.75rem;
+  margin: 1.25rem 0 1.5rem;
+}
+.portfolio-tile {
+  background: var(--site-surface);
+  border: 1px solid var(--site-rule);
+  border-radius: 8px;
+  padding: 0.85rem 0.9rem;
+}
+.portfolio-tile .bi {
+  display: inline-grid;
+  place-items: center;
+  width: 2.1rem; height: 2.1rem;
+  border-radius: 50%;
+  font-size: 1.05rem;
+  color: var(--site-accent);
+  background: color-mix(in srgb, var(--site-accent) 12%, transparent);
+  margin-bottom: 0.55rem;
+}
+.portfolio-tile__label { font-weight: 600; font-size: 0.92rem; line-height: 1.3; margin-bottom: 0.25rem; }
+.portfolio-tile__desc { font-size: 0.84rem; line-height: 1.45; color: var(--site-muted); }
+.portfolio-tile p { margin: 0; }
+
+/* ----------------------------------------------------------- rating chart */
+.portfolio-chart { margin: 0.75rem 0 2.25rem; }
+.portfolio-chart figcaption { font-size: 0.82rem; color: var(--site-muted); margin-top: 0.35rem; }
+.portfolio-chart__plot { width: 100%; height: auto; display: block; overflow: visible; }
+.portfolio-chart__plot .portfolio-chart__band { fill: var(--inst); opacity: 0.08; }
+.portfolio-chart__plot .portfolio-chart__band-label { font-size: 12px; fill: var(--site-muted); }
+.portfolio-chart__plot .portfolio-chart__grid { stroke: var(--site-rule); stroke-width: 1; }
+.portfolio-chart__plot .portfolio-chart__tick { font-size: 11px; fill: var(--site-muted); font-variant-numeric: tabular-nums; }
+.portfolio-chart__plot .portfolio-chart__mark {
+  fill: var(--inst);
+  stroke: var(--bs-body-bg);
+  stroke-width: 1.5;
+  transition: transform 0.12s ease;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+.portfolio-chart__plot .portfolio-chart__hit { fill: transparent; }
+.portfolio-chart__plot .portfolio-chart__point { cursor: default; }
+.portfolio-chart__plot .portfolio-chart__point:hover .portfolio-chart__mark { transform: scale(1.5); }
+
+/* ------------------------------------------------------- course headings */
+h3.portfolio-course { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.2rem 0.55rem; }
+h3.portfolio-course .portfolio-course__badge {
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  line-height: 1;
+  padding: 0.3em 0.6em;
+  border-radius: 999px;
+  background: var(--chip-bg);
+  color: var(--chip-fg);
+  position: relative;
+  top: -0.12em;
+}
+h3.portfolio-course .portfolio-course__code {
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: var(--site-muted);
+  font-variant-numeric: tabular-nums;
+}
+/* The table of contents shows course names only. Pandoc copies a heading's
+   inlines into the TOC, so the badge and code are hidden there. */
+#TOC .portfolio-course__badge,
+#TOC .portfolio-course__code { display: none; }
+
+/* ---------------------------------------------------------- course tables */
+.portfolio-course__table { overflow-x: auto; margin-bottom: 1rem; }
+.portfolio-course__table table { font-size: 0.9rem; margin-bottom: 0; }
+.portfolio-course__table thead th {
+  background: var(--site-thumb-bg);
+  font-weight: 600;
+  font-size: 0.8rem;
+  color: var(--site-muted);
+  border-bottom: 0;
+  vertical-align: bottom;
+}
+.portfolio-course__table thead th:first-child { border-top-left-radius: 6px; }
+.portfolio-course__table thead th:last-child  { border-top-right-radius: 6px; }
+.portfolio-course__table td { font-variant-numeric: tabular-nums; }
+/* A thin bar under each rating, filled to the rating's share of its scale. */
+.portfolio-course__table .portfolio-course__rating {
+  display: inline-block;
+  min-width: 4.6em;
+  padding-bottom: 4px;
+  background:
+    linear-gradient(var(--inst), var(--inst)) left bottom / var(--pct) 3px no-repeat,
+    linear-gradient(var(--site-rule), var(--site-rule)) left bottom / 100% 3px no-repeat;
+}
+
+/* ---------------------------------------------------- project link cards */
+.portfolio-project {
+  display: flex;
+  gap: 0.9rem;
+  align-items: center;
+  margin: 0.25rem 0 1.25rem;
+  padding: 0.55rem;
+  max-width: 32rem;
+  background: var(--site-surface);
+  border: 1px solid var(--site-rule);
+  border-radius: 8px;
+  color: inherit;
+  text-decoration: none;
+  transition: box-shadow 0.15s ease, transform 0.15s ease;
+}
+.portfolio-project:hover { transform: translateY(-2px); box-shadow: 0 6px 18px var(--site-shadow); }
+.portfolio-project img {
+  flex: 0 0 6.5rem;
+  width: 6.5rem; height: 4.3rem;
+  object-fit: cover;
+  border-radius: 5px;
+  background: var(--site-thumb-bg);
+}
+.portfolio-project__body { display: flex; flex-direction: column; min-width: 0; }
+.portfolio-project__eyebrow { font-size: 0.72rem; color: var(--site-muted); }
+.portfolio-project__title { font-weight: 600; font-size: 0.95rem; line-height: 1.3; }
+.portfolio-project:hover .portfolio-project__title { color: var(--site-accent); }
+.portfolio-project__desc { font-size: 0.82rem; line-height: 1.4; color: var(--site-muted); }
+
+/* -------------------------------------------------------- sample materials */
+.portfolio-materials { display: flex; flex-direction: column; gap: 0.7rem; margin: 0.4rem 0 1.25rem; }
+.portfolio-material { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.3rem 0.8rem; }
+.portfolio-material p { margin: 0; }
+.portfolio-material .project-link { display: inline-block; white-space: nowrap; }
+.portfolio-material__desc { flex: 1 1 16rem; font-size: 0.88rem; color: var(--site-muted); }
+
+/* ----------------------------------------------------------- quote cards */
+.portfolio-quotes { columns: 2 18rem; column-gap: 0.9rem; margin: 0.4rem 0 1.5rem; }
+.portfolio-quote {
+  break-inside: avoid;
+  position: relative;
+  margin: 0 0 0.9rem;
+  padding: 0.85rem 1rem 0.75rem 2.4rem;
+  background: var(--site-surface);
+  border: 1px solid var(--site-rule);
+  border-left: 3px solid var(--inst, var(--site-accent));
+  border-radius: 6px;
+  font-size: 0.92rem;
+  line-height: 1.55;
+}
+.portfolio-quote::before {
+  content: "\201C";
+  position: absolute;
+  left: 0.6rem; top: 0.2rem;
+  font-size: 2.4rem;
+  line-height: 1;
+  font-weight: 600;
+  color: var(--inst, var(--site-accent));
+  opacity: 0.55;
+}
+.portfolio-quote p { margin: 0; }
+.portfolio-quote__term { margin-top: 0.4rem; font-size: 0.76rem; color: var(--site-muted); }
+
+@media (max-width: 575px) {
+  .portfolio-stats { grid-template-columns: 1fr 1fr; }
+  .portfolio-stat:last-child:nth-child(odd) { grid-column: 1 / -1; }
+}
+
+/* Chart tooltip, positioned by the script the filter emits with the chart. */
+.portfolio-chart { position: relative; }
+.portfolio-chart__tip {
+  position: absolute;
+  z-index: 2;
+  pointer-events: none;
+  display: flex;
+  flex-direction: column;
+  max-width: 18rem;
+  padding: 0.4rem 0.6rem;
+  font-size: 0.8rem;
+  line-height: 1.35;
+  color: var(--site-ink);
+  background: var(--site-surface);
+  border: 1px solid var(--site-rule);
+  border-radius: 6px;
+  box-shadow: 0 4px 14px var(--site-shadow);
+}
+.portfolio-chart__tip[hidden] { display: none; }
+.portfolio-chart__tip span { color: var(--site-muted); font-variant-numeric: tabular-nums; }

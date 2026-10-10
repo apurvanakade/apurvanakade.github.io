@@ -1,0 +1,53 @@
+---
+title: "Foundational Mathematics of Artificial Intelligence"
+subtitle: "Summer 2026"
+description: "AS.110.110, a JHU pre-college summer course: data, regression, classification and neural networks in Python."
+date: 2026-07-01
+---
+
+A course for high school students on the mathematics behind machine learning. Each day combines a lecture, a guided Python walkthrough in a Jupyter notebook, a hands-on activity and short reflection questions. The course ends with a group [project](project.qmd) on a real dataset.
+
+- [Class notes](https://1drv.ms/o/c/f0f4bc0cf8b335c4/IgANTUh7iqV0TZ3ReQjYH6ZRAewfB634Daynp0Da3f1Qvi8?e=PMVm8q) (OneNote, written in class)
+
+## Daily outline
+
+### Day 1: Introduction
+
+- [Neural Network Playground](https://playground.tensorflow.org/)
+- Introduction to Python
+
+### Day 2: Modeling and descriptive statistics
+
+- Cleaning real datasets (penguins, car fuel economy)
+- [Overfitting example](https://apurvanakade.github.io/VisualMath/model-fitting/polynomial-fit/)
+
+### Day 3: Regression
+
+- Predicting penguin body mass and fuel economy
+- Activity: plot and minimize the $L^1$ error of a line through data
+
+### Day 4: Supervised learning and classification
+
+- Classifying penguin species and car origin
+- [Google's Teachable Machine](https://teachablemachine.withgoogle.com/train/)
+- [ML Playground](https://www.ccom.ucsd.edu/~cdeotte/programs/classify.html)
+- Activity: an animal guessing game
+
+### Day 5: Multiple linear regression and dimension reduction
+
+- [How to use t-SNE effectively](https://distill.pub/2016/misread-tsne/)
+- [Visualizing MNIST](https://colah.github.io/posts/2014-10-Visualizing-MNIST/)
+
+### Day 6: Neural networks
+
+- [Neural Network Playground](https://playground.tensorflow.org/)
+- Activity: a mystery network worksheet
+
+### Day 7: Convolutional neural networks
+
+- [CNN visualization](https://adamharley.com/nn_vis/)
+- Activity: mystery filters and a worked example of a convolution
+
+### Day 8: Using pre-trained models
+
+- Using a pre-trained model from Hugging Face

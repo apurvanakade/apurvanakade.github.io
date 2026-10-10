@@ -12,7 +12,7 @@ Open Educational Resources Textbook for Linear Algebra, NU
 
 - Added WeBWorK problems to a Linear Algebra PreTeXt OER textbook
 
-Course Design: Introduction to Optimization, UWO
+Course Design: Introduction to Optimization, NU
 
 - Restructured the course to include applications and modeling
 - Created course notes in RMarkdown

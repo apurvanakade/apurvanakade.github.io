@@ -1,0 +1,63 @@
+---
+title: "Discrete Mathematics"
+subtitle: "Fall 2026"
+description: "EN.553.171 at Johns Hopkins: logic, proofs, number theory, counting and graph theory."
+date: 2026-08-31
+---
+
+- [Syllabus](syllabus.pdf) (PDF)
+- [Lecture notes](https://1drv.ms/o/c/f0f4bc0cf8b335c4/IgC5mggVgV-nTLymY2e6I9OyAXpZyaT0NoYQRCVLJbY-Be8?e=rfrIL3) (OneNote, written in class)
+- [Exam information](exams.qmd): what each exam covers, how to study and how exams are graded.
+- [Reference books](#reference-books)
+
+## Office hours
+
+You never need a reason to come to office hours. You don't have to be stuck, and you don't need a question prepared: come to work, to ask something small, or just to say hello. We'd love to see you there.
+
+The instructor holds office hours three afternoons a week, and the TA team holds evening office hours three nights a week, in person and on Zoom.
+
+### Making the most of office hours
+
+- Come as a group and bring your homework. The best use of this time is working through problems together and getting your questions sorted out before you submit.
+- The TA office hours room is meant to be a shared space where you can settle in, work and collaborate.
+- Students attending in person are helped first. Zoom is there as a backup for anyone who genuinely can't make it to campus.
+
+## Exam schedule
+
+| Exam      | Date                  | Time            |
+|-----------|-----------------------|-----------------|
+| Midterm 1 | Monday, October 5     | In class        |
+| Midterm 2 | Wednesday, November 4 | In class        |
+| Midterm 3 | Friday, December 11   | In class        |
+| Final     | Monday, December 21   | 6:00 to 9:00 PM |
+
+Each exam has its own section on the [exam information](exams.qmd) page. Practice 1 for each exam is released 10 days before that exam; Practice 2 is released at noon on the Thursday before it, in time for that day's discussion section.
+
+## Weekly schedule
+
+| Week | Dates          | Topics                                       | Notes                                        |
+|------|----------------|----------------------------------------------|----------------------------------------------|
+| 1    | Aug 31 to Sep 4  | Introduction; Logic; Quantifiers           | HW 0 due Thu                                 |
+| 2    | Sep 7 to 11      | Direct Proofs; Inequalities; Proof by Cases | No class Mon; HW 1 due Thu                  |
+| 3    | Sep 14 to 18     | Set Theory                                 | HW 2 due Thu                                 |
+| 4    | Sep 21 to 25     | Relations                                  | HW 3 due Thu                                 |
+| 5    | Sep 28 to Oct 2  | Number Theory; Modular Arithmetic          | HW 4 due Thu                                 |
+| 6    | Oct 5 to 9       | Multiplicative Inverses                    | Exam 1 (Mon)                                 |
+| 7    | Oct 12 to 16     | Diffie-Hellman Key Exchange; RSA           | HW 5 due Thu                                 |
+| 8    | Oct 19 to 23     | Proof by Contradiction                     | Fall Break Thu and Fri (no class); HW 6 due Wed |
+| 9    | Oct 26 to 30     | Counting                                   | HW 7 due Thu                                 |
+| 10   | Nov 2 to 6       | Stars and Bars                             | Exam 2 (Wed)                                 |
+| 11   | Nov 9 to 13      | Combinatorial Proofs; Mathematical Induction | HW 8 due Thu                               |
+| 12   | Nov 16 to 20     | Introduction to Graphs; Graph Induction    | HW 9 due Thu                                 |
+|      | Nov 23 to 27     | Fall Recess                                | No class                                     |
+| 13   | Nov 30 to Dec 4  | Planarity; Six Color Theorem               | HW 10 due Thu                                |
+| 14   | Dec 7 to 11      | Euler Characteristic                       | Exam 3 (Fri); HW 11 due Wed                  |
+
+The schedule above is tentative and subject to change.
+
+## Reference books
+
+- Edward R. Scheinerman, *Mathematics: A Discrete Introduction*.
+- Oscar Levin, [*Discrete Mathematics: An Open Introduction*](https://discrete.openmathbooks.org/dmoi4/frontmatter.html), 4th edition.
+- Clive Newstead, [*An Infinite Descent into Pure Mathematics*](https://infinitedescent.xyz/).
+- Mikhail Lavrov, [*Start Doing Graph Theory*](https://vertex.degree/).

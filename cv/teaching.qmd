@@ -4,6 +4,11 @@
 
 ### Instructor, JHU AMS
 
+#### Summer 2026
+
+- Foundational Mathematics of Artificial Intelligence, Summer 2026
+- Intermediate Probability and Statistics, Summer 2026
+
 #### Spring 2026
 
 - Intro to Computational Math, Spring 2026
@@ -17,9 +22,8 @@
 
 #### Summer 2025
 
-- Mathematical Foundations of AI, Summer 2025
+- Foundational Mathematics of Artificial Intelligence, Summer 2025
 - Intermediate Probability and Statistics, Summer 2025
-- Honors Algebra II, Summer 2025
 
 #### Spring 2025
 
@@ -36,11 +40,11 @@
 
 #### Summer 2024
 
-- Exploring Engineering Innovation, Summer 2024
+- Engineering Innovation, Summer 2024
 
 #### Spring 2024
 
-- Graph theory, Spring 2024
+- Graph Theory, Spring 2024
 - Linear Algebra and Differential Equations, Spring 2024
 - Honors Algebra II, Spring 2024
 
@@ -51,12 +55,11 @@
 ### Instructor, Northwestern
 
 - Elementary Differential Equations, Spring 2023
-- MENU Linear Algebra and Multivariable Calculus, (Coordinator) 2022-23
+- Foundations of Higher Mathematics, Winter 2023
+- MENU Linear Algebra and Multivariable Calculus (Coordinator), 2022-23
 - Introduction to Optimization, Winter, Spring 2022
-- Single Variable Calculus, Fall 2021
 - MENU Linear Algebra and Multivariable Calculus, 2021-22
-- Foundations of Mathematics, Winter 2023
-- Elementary Differential Equations, Spring 2023
+- Single-Variable Differential Calculus, Fall 2021
 
 ### Instructor, UWO
 
