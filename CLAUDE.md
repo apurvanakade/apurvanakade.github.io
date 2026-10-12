@@ -80,8 +80,8 @@ next render. Nobody edits it (see §6, "mathviz").
 
 ```bash
 make build     # quarto render --to html --output-dir docs/   (local only, gitignored)
-make pdfs      # CV, teaching portfolio and rec-letters checklist PDFs into _pdf/ (local only)
-make cv        # just the CV's PDF; `make portfolio`, `make checklist` likewise
+make pdfs      # CV and teaching portfolio PDFs into _pdf/ (local only)
+make cv        # just the CV's PDF; `make portfolio` likewise
 make clean     # rm -rf docs/
 make covers    # regenerate the SVG project, course and blog formula covers (rarely needed)
 make update-mathviz  # force a check for a newer mathviz release
@@ -301,7 +301,7 @@ version mirrors it.
 CI renders HTML only, so it needs no LaTeX install (TinyTeX's install step
 queried GitHub's API and failed deploys on its anonymous rate limit), and the
 site offers no PDF download, so there is no committed PDF to keep in step with
-every edit. `make cv` (or `make pdfs`, for all three PDFs) renders `CV.qmd` to
+every edit. `make cv` (or `make pdfs`, for both PDFs) renders `CV.qmd` to
 PDF with the local LaTeX and copies it into the gitignored `_pdf/` folder,
 which Quarto skips because of its leading underscore, so a full render does
 not delete it. The HTML format sets `format-links: false`, or Quarto would add
@@ -396,11 +396,8 @@ each institution also has its own marker shape and a labelled band.
 ### The recommendation-letter checklist
 
 `rec-letters.qmd` keeps its checklist as plain Markdown task-list items
-(`- [ ]`), which `base.scss` lines up with a hanging indent. A local-only
-PDF of it, `_pdf/rec-letters-checklist.pdf`, is cut by
-`_scripts/build_rec_checklist.py` (`make checklist`) from the page itself,
-from `## Documents to Send` to the end, and typeset with the local LaTeX. Like
-the CV's, it is neither committed nor linked from the site.
+(`- [ ]`), which `base.scss` lines up with a hanging indent. It has no PDF
+version, by Apurva's choice: the page is the only copy.
 
 ### Constraints — do not regress
 

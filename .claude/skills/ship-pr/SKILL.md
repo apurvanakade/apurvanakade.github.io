@@ -32,7 +32,7 @@ If a PR number was given, skip to step 4.
 
 ## 1. PDFs
 
-Nothing to rebuild. The CV, portfolio and checklist PDFs are local-only
+Nothing to rebuild. The CV and portfolio PDFs are local-only
 (`make pdfs` into the gitignored `_pdf/`) and are never committed or
 published (CLAUDE.md §4).
 

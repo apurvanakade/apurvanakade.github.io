@@ -10,11 +10,11 @@ PDF_DIR = _pdf/
 build:
 	quarto render --to html --output-dir $(DOCS_DIR)
 
-# PDFs of the CV, teaching portfolio and rec-letters checklist, for local use
+# PDFs of the CV and teaching portfolio, for local use
 # only: built with the local LaTeX into the gitignored _pdf/ folder, never
 # committed or published. _pdf/ is outside Quarto's reach (a leading
 # underscore), so a full render does not delete them.
-pdfs: cv portfolio checklist
+pdfs: cv portfolio
 
 cv:
 	quarto render CV.qmd --to pdf --output-dir $(DOCS_DIR)
@@ -23,9 +23,6 @@ cv:
 portfolio:
 	quarto render teaching-portfolio.qmd --to pdf --output-dir $(DOCS_DIR)
 	mkdir -p $(PDF_DIR) && cp $(DOCS_DIR)teaching-portfolio.pdf $(PDF_DIR)teaching-portfolio.pdf
-
-checklist:
-	python3 _scripts/build_rec_checklist.py
 
 clean:
 	rm -rf $(DOCS_DIR) .quarto
@@ -51,4 +48,4 @@ covers:
 	python3 _scripts/make_covers.py
 	python3 _scripts/make_equation_covers.py
 
-.PHONY: build pdfs cv portfolio checklist clean preview covers update-mathviz release
+.PHONY: build pdfs cv portfolio clean preview covers update-mathviz release
