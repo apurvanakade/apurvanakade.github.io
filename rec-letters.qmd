@@ -3,9 +3,9 @@ title: Recommendation Letters
 toc: false
 ---
 
-Writing recommendation letters is an important part of my job: if you did well in my courses, I owe you one, and writing it is not a favor. I will only write a letter, though, if I can write you a strong one. If you found this page on your own, email me first to ask whether I can. Please follow the instructions below carefully: I cannot begin your letter until I have everything they ask for.
+Writing recommendation letters is an important part of my job: if you did well in my courses, I owe you one, and by writing it I'm not doing you a favor. I want every letter I write to be a strong one, so if you found this page on your own, email me first and we'll talk about whether I'm the right person to write for you. The more you send me, the better the letter I can write.
 
-## Criteria
+## What I Look For
 
 Rough criteria, by type of program:
 
@@ -13,11 +13,11 @@ Rough criteria, by type of program:
 |:------|:------|:----------|:------|
 | Masters programs | Good | That you have kept taking interesting math classes | Yes; a brief letter |
 | Summer internships, REUs, etc. | Matters less | Work ethic, office hours, problem solving, persistence | Yes, if you were engaged in my course |
-| PhD programs and jobs | Good, but not enough | Genuine interest, and doing more than what is typically expected | Only if you were **exceptional**[^exceptional] |
+| PhD programs and jobs | Good, but grades aren't the whole story | Projects, reading or questions beyond the course | Only if you were **exceptional**[^exceptional] |
 
-[^exceptional]: Exceptional does not mean being at the top of the class. It means demonstrating genuine interest and doing more than what is typically expected.
+[^exceptional]: Exceptional doesn't mean being at the top of the class. It means demonstrating genuine interest and doing more than what is typically expected.
 
-## Documents to Send
+## What to Send Me
 
 Send **one email**, at least **a month before your first deadline**, with the subject line "Recommendation letter: *your name*". Include:
 
@@ -28,8 +28,10 @@ Send **one email**, at least **a month before your first deadline**, with the su
 - [ ] **What you'd like me to highlight** (see below)
 - [ ] **PhD applicants only:** a Google Sheet or Excel file listing each program, its deadline, how it collects letters, and a column for me to check off.
 
-**What to highlight.** Do not be modest or shy. Be clear, upfront and **advocate for yourself**; err on the side of claiming too much. I will use this as starting material for my letter. If I do not agree with anything you say, I'll simply leave it out, so you should not feel uncomfortable about blowing your own trumpet. But if you do not remind me of something important, I might fail to add it to the letter.
+**What to highlight.** Don't be modest. **Advocate for yourself**; I'd rather you claim too much than too little. If I don't agree with something, I'll leave it out, but if you don't mention something important, it might not make it into the letter.
 
 ## Reminders
 
-If I haven't submitted your letter a week before a deadline, email me a reminder with the subject line "Recommendation letter reminder: *your name*, due *date*".
+If I haven't submitted your letter a week before a deadline, email me a reminder with the subject line "Recommendation letter reminder: *your name*, due *date*". Reminders are welcome, not a bother. They help me make sure nothing slips.
+
+Good luck with your applications!
