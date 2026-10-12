@@ -3,16 +3,13 @@
 
     make checklist        (or: python3 _scripts/build_rec_checklist.py)
 
-The recommendation-letters page links to a one-page PDF of its checklist.
-The PDF is cut from the page itself, from `## Documents to Send` to the end,
-so the checklist has one source and cannot drift. Any line that links to the
-PDF is dropped from it. Pandoc renders the `- [ ]` items as empty boxes.
+A one-page PDF of the recommendation-letters checklist, for local use only.
+It is cut from the page itself, from `## Documents to Send` to the end, so the
+checklist has one source and cannot drift. Pandoc renders the `- [ ]` items as
+empty boxes.
 
-Like CV.pdf, the output is built with the local LaTeX, committed at the repo
-root and copied into docs/ by `resources:` in _quarto.yml; CI never builds it.
-It is not a format of rec-letters.qmd, so a full render does not delete it
-(see CLAUDE.md §10). Run it after editing the page's checklist sections, then
-commit the PDF.
+Like the CV and teaching-portfolio PDFs, it is written to the gitignored
+_pdf/ folder with the local LaTeX; it is neither committed nor published.
 """
 import pathlib
 import subprocess
@@ -20,7 +17,7 @@ import tempfile
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 SRC = ROOT / "rec-letters.qmd"
-OUT = ROOT / "rec-letters-checklist.pdf"
+OUT = ROOT / "_pdf" / "rec-letters-checklist.pdf"
 START = "## Documents to Send"
 
 HEADER = r"""\usepackage{enumitem}
@@ -35,8 +32,8 @@ def main():
     if START not in text:
         raise SystemExit(f"{SRC.name}: no '{START}' heading")
     body = text[text.index(START):]
-    body = "\n".join(l for l in body.splitlines() if OUT.name not in l)
 
+    OUT.parent.mkdir(exist_ok=True)
     with tempfile.TemporaryDirectory() as d:
         md = pathlib.Path(d) / "checklist.md"
         hdr = pathlib.Path(d) / "header.tex"

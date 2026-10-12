@@ -4,26 +4,26 @@ DOCS_DIR = docs/
 # .github/workflows/publish.yml, which renders and deploys docs/ to GitHub
 # Pages. docs/ is gitignored and is never committed from here. See CLAUDE.md.
 
-# HTML only, the same render CI does. The PDFs are `make cv` and
-# `make portfolio`.
+PDF_DIR = _pdf/
+
+# HTML only, the same render CI does. The PDFs are `make pdfs`.
 build:
 	quarto render --to html --output-dir $(DOCS_DIR)
 
-# Rebuild the CV's PDF with the local LaTeX install and copy it to CV.pdf at
-# the repo root, which is committed and published as a resource. Run it after
-# editing CV.qmd or cv/*.qmd, then commit CV.pdf.
+# PDFs of the CV, teaching portfolio and rec-letters checklist, for local use
+# only: built with the local LaTeX into the gitignored _pdf/ folder, never
+# committed or published. _pdf/ is outside Quarto's reach (a leading
+# underscore), so a full render does not delete them.
+pdfs: cv portfolio checklist
+
 cv:
 	quarto render CV.qmd --to pdf --output-dir $(DOCS_DIR)
-	cp $(DOCS_DIR)CV.pdf CV.pdf
+	mkdir -p $(PDF_DIR) && cp $(DOCS_DIR)CV.pdf $(PDF_DIR)CV.pdf
 
-# The same for the teaching portfolio: run it after editing
-# teaching-portfolio.qmd, then commit teaching-portfolio.pdf.
 portfolio:
 	quarto render teaching-portfolio.qmd --to pdf --output-dir $(DOCS_DIR)
-	cp $(DOCS_DIR)teaching-portfolio.pdf teaching-portfolio.pdf
+	mkdir -p $(PDF_DIR) && cp $(DOCS_DIR)teaching-portfolio.pdf $(PDF_DIR)teaching-portfolio.pdf
 
-# The recommendation-letters checklist PDF, cut from rec-letters.qmd: run it
-# after editing that page's checklist sections, then commit the PDF.
 checklist:
 	python3 _scripts/build_rec_checklist.py
 
@@ -51,4 +51,4 @@ covers:
 	python3 _scripts/make_covers.py
 	python3 _scripts/make_equation_covers.py
 
-.PHONY: build cv portfolio checklist clean preview covers update-mathviz release
+.PHONY: build pdfs cv portfolio checklist clean preview covers update-mathviz release

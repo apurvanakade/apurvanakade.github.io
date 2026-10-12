@@ -9,6 +9,7 @@ filters:
 format:
   html:
     toc: true
+    format-links: false
   pdf:
     toc: true
     number-sections: false
@@ -22,10 +23,6 @@ format:
     include-in-header: _includes/portfolio-preamble.tex
     output-file: teaching-portfolio
 ---
-
-::: {.content-visible when-format="html"}
-[Download PDF](teaching-portfolio.pdf)
-:::
 
 ## Teaching philosophy
 
