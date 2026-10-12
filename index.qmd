@@ -1,9 +1,9 @@
 ---
 title: Apurva Nakade
 subtitle: <a href="https://ipa-reader.com/?text=%C9%99p%CA%8Arv%C9%99%20n%C9%91%CB%90k%C9%91d%C9%9B" target="_blank">əpʊrvə nɑːkɑːdɛ</a>
-image: images/cartoon0.jpg
+image: images/cartoon0.png
 about:
-  template: trestles
+  template: solana
   image-shape: rounded
   links:
     - icon: envelope
@@ -19,12 +19,9 @@ include-after-body: _includes/home-cards.html
 I'm an Assistant Teaching Professor in the Applied Mathematics & Statistics department at
 Johns Hopkins University.
 
-Most of my energy goes into looking for ways to make mathematics land better, inside my own
-courses and, where I can, more broadly. I build [interactive visualizations](projects/visual-math-lab.qmd)
+Most of my energy goes into looking for ways to improve mathematics education, inside my own
+courses and, where I can, more broadly. 
+
+I build [interactive visualizations](projects/visual-math-lab.qmd)
 for teaching, [redesign courses](projects/index.qmd) from the ground up, and occasionally
 [formalize mathematics](projects/lean-formalization.qmd) in the Lean theorem prover.
-
-Whether you're a student, a mathematician, or an educator, feel free to
-[get in touch](mailto:apurva.nakade@jhu.edu).
-
-**Note.** I'm currently in the progress of updating this website using Claude. Turns out Claude is much faster than me! As a consequence, I'm lagging behind by a lot in reviewing and updating the content. Much of the content is outdated and I apologize for that. 

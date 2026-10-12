@@ -72,6 +72,13 @@ blockquote {
 }
 
 // ------------------------------------------------------------- home cards
+// The solana about template sits the photo beside the title, top-aligned to the
+// h1's line box; the half-leading above the glyphs left the photo about 7px
+// higher than the cap line. Below lg the photo stacks above the text instead.
+@include media-breakpoint-up(lg) {
+  .quarto-about-solana .about-image { margin-top: 0.4rem; }
+}
+
 .home-section { margin: 3rem 0 1rem; }
 
 .home-section__title {
