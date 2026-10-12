@@ -3,7 +3,7 @@ title: Recommendation Letters
 toc: false
 ---
 
-Writing recommendation letters is an important part of my job: if you did well in my courses, I owe you one, and writing it is not a favor. I will only write a letter, though, if I can write you a strong one. If you found this page on your own, email me first to ask whether I can; if I sent you this page, I've **agreed to write you a letter**. Either way, please follow the instructions below carefully: I cannot begin your letter until I have everything they ask for.
+Writing recommendation letters is an important part of my job: if you did well in my courses, I owe you one, and writing it is not a favor. I will only write a letter, though, if I can write you a strong one. If you found this page on your own, email me first to ask whether I can. Please follow the instructions below carefully: I cannot begin your letter until I have everything they ask for.
 
 ## Criteria
 
@@ -11,22 +11,16 @@ Rough criteria, by type of program:
 
 | Program | Grade in my course | What else I look for | Will I write one? |
 |:------|:------|:----------|:------|
-| JHU AMS Combined Masters | Good | That you have kept taking interesting math classes | Yes; a brief letter, internal to the department |
+| Masters programs | Good | That you have kept taking interesting math classes | Yes; a brief letter |
 | Summer internships, REUs, etc. | Matters less | Work ethic, office hours, problem solving, persistence | Yes, if you were engaged in my course |
 | PhD programs and jobs | Good, but not enough | Genuine interest, and doing more than what is typically expected | Only if you were **exceptional**[^exceptional] |
-| Non-JHU Masters | n/a | n/a | Usually not, but I'm happy to be a reference[^reference] |
 
 [^exceptional]: Exceptional does not mean being at the top of the class. It means demonstrating genuine interest and doing more than what is typically expected.
-
-[^reference]: I do not think there is anything useful I can add to a letter that is not already in your transcript, but I'm happy to answer an email or a phone call from the program.
 
 ## Documents to Send
 
 Send **one email**, at least **a month before your first deadline**, with the subject line "Recommendation letter: *your name*". Include:
 
-- [ ] A photo (I may not remember your name in two years)
-- [ ] Which of my courses you took, and when
-- [ ] Your final grade in each
 - [ ] CV
 - [ ] Unofficial transcript
 - [ ] (Draft) statement of purpose
@@ -36,7 +30,6 @@ Send **one email**, at least **a month before your first deadline**, with the su
 
 **What to highlight.** Do not be modest or shy. Be clear, upfront and **advocate for yourself**; err on the side of claiming too much. I will use this as starting material for my letter. If I do not agree with anything you say, I'll simply leave it out, so you should not feel uncomfortable about blowing your own trumpet. But if you do not remind me of something important, I might fail to add it to the letter.
 
-## What Happens Next
+## Reminders
 
-1. Once I have everything, I'll let you know and start on your letter.
-2. About a week before each deadline, email me a reminder with the subject line "Recommendation letter reminder: *your name*, due *date*".
+If I haven't submitted your letter a week before a deadline, email me a reminder with the subject line "Recommendation letter reminder: *your name*, due *date*".
