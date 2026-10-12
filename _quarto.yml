@@ -7,13 +7,7 @@ project:
     - "math-blog/**/*.qmd"
     - "courses/**/*.qmd"
     - "!cv/"
-  # The CV's and teaching portfolio's PDFs are built locally (`make cv`,
-  # `make portfolio`) and committed; CI renders HTML only, so it needs no
-  # LaTeX. This copies the committed files into docs/.
   resources:
-    - CV.pdf
-    - teaching-portfolio.pdf
-    - rec-letters-checklist.pdf   # `make checklist`
     # Course-card covers, referenced only from the course index's listing
     # template (_includes/course-cards.ejs), so Quarto cannot discover them.
     - images/courses/*.svg

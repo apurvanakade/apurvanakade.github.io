@@ -1,6 +1,6 @@
 ---
 name: ship-pr
-description: Take a finished change to apurvanakade.github.io all the way to the live site -- rebuild the CV PDF if the CV changed, commit on a branch in its own worktree, verify, open a pull request into develop, wait for the check, merge, fast-forward main (which publishes), and clean up. Use when asked to commit, push, open a PR, ship, land, merge, publish or release a change in this repository.
+description: Take a finished change to apurvanakade.github.io all the way to the live site -- commit on a branch in its own worktree, verify, open a pull request into develop, wait for the check, merge, fast-forward main (which publishes), and clean up. Use when asked to commit, push, open a PR, ship, land, merge, publish or release a change in this repository.
 argument-hint: "[PR number]  (default: open a PR for the current changes)"
 ---
 
@@ -30,13 +30,11 @@ however few lines. Carry on.
 
 If a PR number was given, skip to step 4.
 
-## 1. CV PDF
+## 1. PDFs
 
-If `CV.qmd` or anything under `cv/` changed, run `make cv` and include the
-regenerated `CV.pdf` in the same commit. Likewise, if `teaching-portfolio.qmd`
-or `_includes/portfolio-preamble.tex` changed, run `make portfolio` and include
-`teaching-portfolio.pdf`. CI renders HTML only, so an edit without this ships a
-stale PDF (CLAUDE.md §4).
+Nothing to rebuild. The CV, portfolio and checklist PDFs are local-only
+(`make pdfs` into the gitignored `_pdf/`) and are never committed or
+published (CLAUDE.md §4).
 
 ## 2. Branch and worktree
 
@@ -121,5 +119,5 @@ git push origin --delete <branch>
 
 ## Report
 
-Say what shipped: the PR link (or the direct push), whether `CV.pdf` was rebuilt, any review
+Say what shipped: the PR link (or the direct push), any review
 comments and what was done with them, and whether the deploy succeeded.

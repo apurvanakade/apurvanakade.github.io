@@ -80,9 +80,8 @@ next render. Nobody edits it (see §6, "mathviz").
 
 ```bash
 make build     # quarto render --to html --output-dir docs/   (local only, gitignored)
-make cv        # rebuild CV.pdf with the local LaTeX; commit the result
-make portfolio # the same for teaching-portfolio.pdf
-make checklist # rebuild rec-letters-checklist.pdf from rec-letters.qmd; commit the result
+make pdfs      # CV, teaching portfolio and rec-letters checklist PDFs into _pdf/ (local only)
+make cv        # just the CV's PDF; `make portfolio`, `make checklist` likewise
 make clean     # rm -rf docs/
 make covers    # regenerate the SVG project, course and blog formula covers (rarely needed)
 make update-mathviz  # force a check for a newer mathviz release
@@ -144,7 +143,7 @@ work lands; `main` is a pointer to the last published state**, and pushing
   conflicts. If the fast-forward is refused, reconcile once with
   `git merge -s ours origin/main` on `develop`, push, and retry.
 - **The `ship-pr` skill** (`.claude/skills/ship-pr/SKILL.md`) carries a change
-  through all of the above end to end: `make cv` if the CV changed, worktree,
+  through all of the above end to end: worktree,
   PR, check, merge, cleanup, and always a final `make release`, even for a
   repo-only change, so `main` never lags `develop`. When a rule here changes, update it there
   too. `.claude/settings.json` pre-approves the commands it runs (PR create,
@@ -198,12 +197,10 @@ math-blog/posts/maths/*.qmd     the posts themselves
 math-blog/posts/scribbles/*.qmd
 math-blog/drafts/*.qmd          rendered and published, but not listed anywhere
 CV.qmd                          assembles cv/*.qmd; renders to HTML *and* PDF
-CV.pdf                          committed; built locally by `make cv`
 cv/<section>.qmd                one CV section per file
 teaching-portfolio.qmd          teaching philosophy, courses, development; HTML *and* PDF
-teaching-portfolio.pdf          committed; built locally by `make portfolio`
 rec-letters.qmd                 recommendation-letter instructions and checklist
-rec-letters-checklist.pdf       committed; built locally by `make checklist`
+_pdf/                           gitignored; local PDFs from `make pdfs` (§4)
 references.qmd
 courses/index.qmd               table listing of the course pages
 courses/<course>/index.qmd      one course: overview, outline, links
@@ -300,14 +297,16 @@ version mirrors it.
   `cv-contact` in `CV.qmd`'s frontmatter.
 - The PDF gets an automatic `Updated on: <date>` line, the date `make cv` ran.
 
-**The PDF is built locally, not in CI.** CI renders HTML only, so it needs no
-LaTeX install (TinyTeX's install step queried GitHub's API and failed deploys
-on its anonymous rate limit). `make cv` renders `CV.qmd` to PDF with the local
-LaTeX and copies it to `CV.pdf` at the repo root, which is committed;
-`resources: [CV.pdf]` in `_quarto.yml` copies it into `docs/`, where the HTML
-CV's "Download PDF" link points. So after editing `CV.qmd` or `cv/*.qmd`, run
-`make cv` and commit `CV.pdf` with the change, or the PDF goes stale. Do not
-remove `pdf` from `CV.qmd`'s formats; `make cv` depends on it.
+**The PDF is local only: never committed, never published, never linked.**
+CI renders HTML only, so it needs no LaTeX install (TinyTeX's install step
+queried GitHub's API and failed deploys on its anonymous rate limit), and the
+site offers no PDF download, so there is no committed PDF to keep in step with
+every edit. `make cv` (or `make pdfs`, for all three PDFs) renders `CV.qmd` to
+PDF with the local LaTeX and copies it into the gitignored `_pdf/` folder,
+which Quarto skips because of its leading underscore, so a full render does
+not delete it. The HTML format sets `format-links: false`, or Quarto would add
+an "Other Formats" link to a PDF that is not on the site. Do not remove `pdf`
+from `CV.qmd`'s formats; `make cv` depends on it.
 
 **The HTML CV adds three things the PDF does not** (all configured at the top
 of `cv.lua`): Experience and Education are drawn as a timeline, one dot per
@@ -332,8 +331,8 @@ Set `cv-layout: false` in frontmatter to switch the filter off.
 
 ### The teaching portfolio
 
-`teaching-portfolio.qmd` is built the same way as the CV (HTML in CI, PDF by
-`make portfolio`, committed, copied in by `resources:`), but does **not** use
+`teaching-portfolio.qmd` is built the same way as the CV (HTML in CI, a local-only PDF by
+`make portfolio`, no PDF link), but does **not** use
 `_filters/cv.lua`. Its `##` sections are Teaching philosophy, Courses,
 Awards and grants, Professional development, and Syllabi and sample
 materials. There is no
@@ -355,8 +354,7 @@ heading so a course title is never stranded above a page break, `titlesec`
 turning `####` (LaTeX's `\paragraph`, a run-in heading by default) into a
 display heading so a list can start below it, and
 `\LTleft=0pt` so tables sit flush with the prose rather than centred at
-differing widths. After editing the `.qmd`, run `make portfolio` and commit
-`teaching-portfolio.pdf` with it.
+differing widths.
 
 **The portfolio's visuals all come from `_filters/portfolio.lua`**, named in
 the page's `filters:`, so the `.qmd` stays headings, pipe tables and lists.
@@ -398,14 +396,11 @@ each institution also has its own marker shape and a labelled band.
 ### The recommendation-letter checklist
 
 `rec-letters.qmd` keeps its checklist as plain Markdown task-list items
-(`- [ ]`), which `base.scss` lines up with a hanging indent. The page links
-to `rec-letters-checklist.pdf`, which `_scripts/build_rec_checklist.py`
-(`make checklist`) cuts from the page itself, from `## Documents to Send` to
-the end, and typesets with the local LaTeX; a line linking to the PDF is
-dropped from it. Like the CV it is committed and copied in by `resources:`.
-It is not a format of the page, so a full render does not delete it. After
-editing those sections, run `make checklist` and commit the PDF, or the
-download goes stale.
+(`- [ ]`), which `base.scss` lines up with a hanging indent. A local-only
+PDF of it, `_pdf/rec-letters-checklist.pdf`, is cut by
+`_scripts/build_rec_checklist.py` (`make checklist`) from the page itself,
+from `## Documents to Send` to the end, and typeset with the local LaTeX. Like
+the CV's, it is neither committed nor linked from the site.
 
 ### Constraints — do not regress
 
@@ -775,11 +770,10 @@ from the files themselves. Each one is described in full in the section named.
   setting back to a branch source stops publishing silently.
 - **The `math-blog/` directory name is load-bearing** (§6). It is what keeps
   every published post URL unchanged; renaming it breaks every shared link.
-- **A full `quarto render` or `quarto preview` deletes the committed
-  `CV.pdf` and `teaching-portfolio.pdf`** at the repo root (both pages also
-  have a PDF format, and Quarto clears their old output). Run
-  `git restore CV.pdf teaching-portfolio.pdf` before committing, or the
-  commit deletes them.
+- **No PDF is committed or published** (§4). `make pdfs` writes them to
+  the gitignored `_pdf/` rather than the repo root, because a full
+  `quarto render` deletes a `CV.pdf` or `teaching-portfolio.pdf` left at the
+  root (both pages have a PDF format, and Quarto clears their old output).
 - **All cover art is local** (§5). Nothing hot-links a remote image any
   more; `_scripts/make_covers.py` is the only source of
   `images/projects/*.svg`; the `*.png` covers are committed screenshots.

@@ -9,6 +9,7 @@ toc-title: "Sections"
 format:
   html:
     toc: true
+    format-links: false
   pdf:
     toc: false
     number-sections: false
@@ -24,10 +25,6 @@ format:
 filters:
   - _filters/cv.lua
 ---
-
-::: {.content-visible when-format="html"}
-[Download PDF](CV.pdf)
-:::
 
 {{< include cv/experience.qmd >}}
 
