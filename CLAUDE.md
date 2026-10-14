@@ -192,12 +192,12 @@ preview; it has no effect on the published site.
 index.qmd                       home; pulls in _includes/home-cards.html
 projects/index.qmd              grid listing, filter + category UI
 projects/<slug>.qmd             one project per file
-blog/index.qmd             all posts, grid listing
-blog/maths/index.qmd       maths section listing
+blog/index.qmd                  all posts, grid listing
+blog/maths/index.qmd            maths section listing
 blog/scribbles/index.qmd   scribbles section listing
-blog/posts/maths/*.qmd     the posts themselves
+blog/posts/maths/*.qmd          the posts themselves
 blog/posts/scribbles/*.qmd
-blog/drafts/*.qmd          rendered and published, but not listed anywhere
+blog/drafts/*.qmd               rendered and published, but not listed anywhere
 CV.qmd                          assembles cv/*.qmd; renders to HTML *and* PDF
 cv/<section>.qmd                one CV section per file
 teaching-portfolio.qmd          teaching philosophy, courses, development; HTML *and* PDF
@@ -557,7 +557,7 @@ which still exists as a read-only archive (see below).
 
 Posts are served under `/blog/`: `blog/posts/maths/bayes-theorem.qmd` renders
 to `apurvanakade.github.io/blog/posts/maths/bayes-theorem.html`. The directory
-used to be `blog/`, a name kept from the standalone blog; it was renamed
+used to be `math-blog/`, a name kept from the standalone blog; it was renamed
 without redirects (§8), so the old `/math-blog/...` URLs 404. Renaming it again
 would break every link shared since, so leave the name alone.
 
