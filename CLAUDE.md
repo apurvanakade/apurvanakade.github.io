@@ -624,13 +624,13 @@ under `window.VM`. This site consumes it the same way Monte-Carlo-Methods does.
 
 ```yaml
 ---
-title: Bayes Theorem
+title: "Random points in a triangle"
 description: "One sentence. Shown on the listing cards."
-date: 2025-06-02
+date: 2025-05-12
 weight: 1                 # 0 = never drawn for the home page's random pick
 author: Apurva Nakade
-categories: [probability, visualization]
-image: "../../images/bayes.png"
+categories: [randomness, triangles]
+image: "../../images/random-points-triangle.png"
 ---
 ```
 
@@ -728,9 +728,10 @@ Layered over Bootstrap bases in `_quarto.yml`:
 
 There are none, by Apurva's choice. Pages that moved in the 2026
 reorganisation (`notes.html`, `rec letters.html`, `teaching statement.html`,
-`teaching-statement.html`, and every post under `/math-blog/` or `/blog/posts/maths/`, now under
-`/blog/`) now 404 at their old addresses. Do not add a
-redirect mechanism back unless asked. A page moved from here on breaks its
+`teaching-statement.html`, every post under `/math-blog/`, now under
+`/blog/`, and everything under `/blog/maths/` and `/blog/posts/maths/`, now
+under `.../math/`) now 404 at their old addresses. Do not add a redirect
+mechanism back unless asked. A page moved from here on breaks its
 old links, so prefer keeping URLs stable.
 
 ---
