@@ -700,6 +700,12 @@ Layered over Bootstrap bases in `_quarto.yml`:
   `#4F2683` is indistinguishable from Northwestern Purple `#4E2A84`, and teal
   is ruled out because it is the site accent. Every use also names the
   institution in text or shape.
+- **YouTube embeds are pasted as-is.** A post may carry the `<iframe>` YouTube's
+  Share → Embed hands out; `main iframe[src*="youtube.com/embed"]` in
+  `base.scss` scales it to the column at 16:9 (at most 560px), because the
+  embed code hard-codes `width="560" height="315"` and overflows a phone.
+  The embed is Apurva's own markup, an accepted exception to §1's no-raw-HTML
+  rule, so the theme adapts to it rather than a filter rewriting the post.
 - **Every content table has a tinted header row** (`main .table > thead`),
   so course schedules, the portfolio's tables and any new table match.
 - **Grid cards show the date above the title.** Quarto puts it in a footer

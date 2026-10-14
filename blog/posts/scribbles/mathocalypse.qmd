@@ -1,0 +1,23 @@
+---
+title: Mathocalypse
+description: "Grieving for math."
+date: 2026-10-14
+weight: 1
+categories:
+  - AI
+author: Apurva Nakade
+image: "../../images/mathocalypse.jpg"
+---
+
+![*The Sea of Ice*, Caspar David Friedrich ([public domain](https://commons.wikimedia.org/wiki/File:Caspar_David_Friedrich_-_Das_Eismeer_-_Hamburger_Kunsthalle.jpg))](../../images/mathocalypse.jpg){width="100%" fig-alt="Slabs of broken ice piled up in a frozen sea, with the wreck of a ship crushed beneath them."}
+
+The title of this post comes from [Scott Aaronson's blog](https://scottaaronson.blog/?p=10169), and it describes the situation in math today quite accurately. OpenAI's recent posts have, once and for all, dethroned humans as the most intelligent entities, at least in the arena of mathematics.
+
+Kevin Buzzard rightly [points out](https://xenaproject.wordpress.com/2026/10/01/to-grieve-or-not-to-grieve/) that this is a time to grieve the end of math as we know it. But that is not necessarily a bad thing. Change is the only constant in life (impermanence), and it has finally come for the math community as well. The old makes way for the new.
+
+It is going to take us mathematicians some time to process this change. Only time will tell how we will come out of it, if at all.
+
+I'm a big fan of Quanta Magazine's [The Joy of Why](https://www.quantamagazine.org/tag/the-joy-of-why/) podcast, hosted by Steven Strogatz. In an interview with The New York Times, he beautifully describes what many of us are going through right now. And no, it's not about jobs, but about something much more spiritual.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/LfGenpmOjDQ?si=kQ430vmSB-IKXJw-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
