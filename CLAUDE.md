@@ -660,6 +660,25 @@ carries one. Any listing meant to show them must also name `description` in its
 `fields:`. `weight` drives the home page draw (§5.1) —
 the same mechanism as projects, now reading straight off disk.
 
+### Comments
+
+Posts carry a [giscus](https://giscus.app) comment box, set by the
+`comments:` key in `blog/posts/math/_metadata.yml` and
+`blog/posts/scribbles/_metadata.yml`. It is there and nowhere else, by
+Apurva's choice: not on listing pages, drafts, projects, courses or the
+personal pages (CV, portfolio, references, rec letters). Threads are GitHub
+Discussions on this repo, in the **Announcements** category, whose
+announcement format lets only maintainers and the giscus app open a thread, so
+readers can reply but cannot start stray threads. The repo and category ids
+are written out rather than left for Quarto to look up, because that lookup
+calls GitHub's API at render time and CI is rate-limited (the same failure
+that ruled out TinyTeX, §4). Commenting needs a GitHub account; reading does
+not. `mapping: pathname` keys each thread to the post's URL, so renaming a
+post orphans its comments: one more reason to keep URLs stable (§8). The
+`light`/`dark_dimmed` giscus themes follow the colour toggle through Quarto's
+own script. Every page carries that script's inert stub, so a `grep giscus`
+of `docs/` matches pages without comments.
+
 ### Drafts
 
 `blog/drafts/*.qmd` render and publish but appear in no listing. That was
