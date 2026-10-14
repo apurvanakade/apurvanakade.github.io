@@ -143,11 +143,13 @@ work lands; `main` is a pointer to the last published state**, and pushing
   conflicts. If the fast-forward is refused, reconcile once with
   `git merge -s ours origin/main` on `develop`, push, and retry.
 - **The `ship-pr` skill** (`.claude/skills/ship-pr/SKILL.md`) carries a change
-  through all of the above end to end: worktree,
-  PR, check, merge, cleanup, and always a final `make release`, even for a
+  through all of the above end to end: worktree, PR, a review by a fresh
+  agent that has not seen the session (its prompt is
+  `.claude/skills/ship-pr/maintainer-review.md`; Copilot does not review
+  here), check, merge, cleanup, and always a final `make release`, even for a
   repo-only change, so `main` never lags `develop`. When a rule here changes, update it there
   too. `.claude/settings.json` pre-approves the commands it runs (PR create,
-  check and `--merge`, pushes to `origin`, `make release`) and denies
+  diff, comment, review API calls, check and `--merge`, pushes to `origin`, `make release`) and denies
   force-pushes and `--admin`/`--squash` merges.
 - Pushing `develop` publishes nothing. Neither does any other branch.
 - The `2020-bookdown`, `2021-mdbook`, `2022-bookdown`, `blog` and
