@@ -551,18 +551,24 @@ main .table > tbody > tr:has(.course-row--break) > td {
 .post-backlink a:hover { color: var(--site-accent); }
 
 // ----------------------------------------------------------- embedded frames
-// One rule for every <iframe> a post pastes in (CLAUDE.md §1): it fills the
-// column, so none overflows a phone, and takes its height from its own
-// height= attribute, in pixels. The rule lets a page-like embed's edge show
-// against the page.
+// One rule for every <iframe> a post pastes in (CLAUDE.md §1): it is 85% of
+// the column and centred, lined up with a post's inset opening figure, so none
+// overflows a phone, and takes its height from its own height= attribute, in
+// pixels. The rule lets a page-like embed's edge show against the page.
 main iframe {
   display: block;
-  width: 100%;
-  max-width: 100%;
-  margin: 1.5rem 0;
+  width: 85%;
+  max-width: 85%;
+  margin: 1.5rem auto;
   border: 1px solid var(--site-rule);
   border-radius: 8px;
 }
+
+// ------------------------------------------------------------------- figures
+// A figure set with fig-align="center" (a post's opening image, inset to 85%
+// of the column) gets its caption centred under it too; Quarto centres only
+// the image.
+.quarto-figure-center > figure > figcaption { text-align: center; }
 
 // ------------------------------------------------------------------- mathviz
 // Posts that use mathviz (see CLAUDE.md §6) draw their charts and panels from

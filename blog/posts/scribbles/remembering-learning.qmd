@@ -5,10 +5,12 @@ date: 2025-06-29
 weight: 1
 author: Apurva Nakade
 categories: ['philosophy']
-image: "../../images/learning.png"
+image: "../../images/school-of-athens.jpg"
 ---
 
 In Greek philosophy there is a theory of "anamnesis," mostly due to Plato and Socrates, which roughly means "learning is remembering," that wisdom is already inside you and you are trying to discover it. Your job as a learner is to bring it forth, to clean the window so you can see more clearly.
+
+![*The School of Athens*, Raphael ([public domain](https://commons.wikimedia.org/wiki/File:%22The_School_of_Athens%22_by_Raffaello_Sanzio_da_Urbino.jpg))](../../images/school-of-athens.jpg){width="85%" fig-align="center" fig-alt="Raphael's fresco of Greek philosophers gathered in a vaulted hall, with Plato and Aristotle walking at the centre."}
 
 It is remarkable how the same concepts reappear in different forms in different cultures around the world. The word for mindfulness in Pali is Sati. Sati (or Smrti in Sanskrit) means remembering the present moment, noticing the wisdom that is already present inside you.
 

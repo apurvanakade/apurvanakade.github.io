@@ -7,10 +7,12 @@ categories:
   - textbooks
   - russian
 author: Apurva Nakade
-image: "../../images/mir.svg"
+image: "../../images/mir-emblem.svg"
 ---
 
 I loathe American textbooks from the bottom of my heart. I learned math from these tiny 100 page books that made the point directly and succinctly and trusted the reader's intelligence to figure out the rest. Textbooks here seem to be written for people who are incapable of thinking for themselves. 
+
+![The Mir Publishers emblem ([public domain](https://commons.wikimedia.org/wiki/File:Mir_Publishers_Isologotype_CR.svg))](../../images/mir-emblem.svg){width="85%" fig-align="center" fig-alt="The Mir Publishers emblem: a four-pointed star over a globe inside a red oval, ringed by the Russian words for Mir Publishing House."}
 
 To be great surprise I discovered this website containing MIR publication books:
 

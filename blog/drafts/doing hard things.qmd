@@ -3,10 +3,12 @@ title: Doing Hard Things
 date: 2026-03-05 16:24:37
 author: Apurva Nakade
 categories: ['teaching', 'philosophy']
-image: "../images/doing-hard-things-title.svg"
+image: "../images/titian-sisyphus.jpg"
 ---
 
 Casey Neistat has a couple of videos that I just love. In part, because I love running myself and I find it to be a very spiritual experience, but also because I love the message. I keep thinking about these videos because I think they contain a message that I wish I could convey to my students.
+
+![*Sisyphus*, Titian, 1548 to 1549 ([public domain](https://commons.wikimedia.org/wiki/File:Tiziano_-_S%C3%ADsifo.jpg))](../images/titian-sisyphus.jpg){width="85%" fig-align="center" fig-alt="Titian's painting of Sisyphus, bent double, carrying a huge boulder on his shoulders up a dark slope."}
 
 My courses tend to be quite hard. I don't try to make them intentionally hard, and I don't believe in learning through suffering. But I do believe in learning through struggling. When you really try to learn something well, when you keep digging and keep digging, you will hit rock, but that doesn't mean you stop. If you want to get to the hidden treasure, you have to keep digging. And that's back-breaking work.
 
