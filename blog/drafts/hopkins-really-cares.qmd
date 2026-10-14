@@ -3,11 +3,13 @@ include-before-body: ../_includes/back-to-home.html
 title: "Hopkins Really Cares"
 author: Apurva Nakade
 date: 2025-05-12
-image: "../images/hopkins.png"
+image: "../images/gilman-hall.jpg"
 draft: true
 ---
 
 Not.
+
+![The clock tower of Gilman Hall, Johns Hopkins University ([public domain](https://commons.wikimedia.org/wiki/File:Gilman_Hall_JHU.jpg))](../images/gilman-hall.jpg){width="85%" fig-align="center" fig-alt="The white clock tower and green cupola of Gilman Hall against a blue sky."}
 
 It's a crisp sunny day in the middle of way. We are deep into the final exam season. Everyone is stressed, sleep-deprived, over-caffeinated, over-worked. We have an exam for our course at 2 pm. 
 

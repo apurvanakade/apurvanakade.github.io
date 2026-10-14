@@ -637,6 +637,15 @@ image: "../../images/random-points-triangle.png"
 ---
 ```
 
+A scribbles post's cover is a public-domain image (a painting, engraving or
+photo from Wikimedia Commons, saved to `blog/images/`), never AI-generated
+art. It is also shown in the post as a captioned figure, after the first
+paragraph rather than above it, at
+`{width="85%" fig-align="center" fig-alt="..."}`, with the caption naming
+the work and linking its Commons page. That follows Substack: the reader
+meets the text before the picture, and the inset marks the image as
+decorative. `base.scss` centres the caption of any centred figure.
+
 A post with no natural figure uses its formula as its cover:
 `_scripts/make_equation_covers.py` typesets each formula in `COVERS` with the
 local LaTeX (`latex` + `dvisvgm --no-fonts`, so glyphs become paths) onto a
@@ -704,9 +713,10 @@ Layered over Bootstrap bases in `_quarto.yml`:
   is ruled out because it is the site accent. Every use also names the
   institution in text or shape.
 - **One rule for every embed.** `main iframe` in `base.scss` makes any
-  `<iframe>` fill the column, so none overflows a phone, with a `--site-rule`
-  border. Its `width=` is ignored; its height is its own `height=`, in pixels
-  (450 suits a 16:9 video at full column width; a Visual Math Lab app's Share
+  `<iframe>` 85% of the column and centred, matching a post's inset opening
+  figure (§6), so none overflows a phone, with a `--site-rule` border. Its
+  `width=` is ignored; its height is its own `height=`, in pixels (383 suits
+  a 16:9 video at that width; a Visual Math Lab app's Share
   dialog measures its own). `height="100%"` does not work, because in a
   flowing column it has nothing to resolve against and collapses to 150px.
   There are no per-site rules; keep it that way.
