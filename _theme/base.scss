@@ -550,6 +550,19 @@ main .table > tbody > tr:has(.course-row--break) > td {
 .post-backlink a { color: var(--site-muted); text-decoration: none; }
 .post-backlink a:hover { color: var(--site-accent); }
 
+// ------------------------------------------------------------ embedded video
+// YouTube's embed code hard-codes width="560" height="315", which overflows a
+// phone. Scale it to the column instead; aspect-ratio keeps it 16:9 once the
+// height attribute is overridden.
+main iframe[src*="youtube.com/embed"] {
+  width: 100%;
+  max-width: 560px;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  display: block;
+  margin: 1.5rem auto;
+}
+
 // ------------------------------------------------------------------- mathviz
 // Posts that use mathviz (see CLAUDE.md §6) draw their charts and panels from
 // --vm-* tokens. Point them at this site's palette so a chart matches the page
