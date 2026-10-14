@@ -5,7 +5,7 @@ date: 2025-11-27
 weight: 1
 author: Apurva Nakade
 categories: ['probability', 'puzzle']
-image: "../../maths/images/with-without-order-equation.svg"
+image: "../../images/with-without-order-equation.svg"
 execute: 
   cache: true
 ---

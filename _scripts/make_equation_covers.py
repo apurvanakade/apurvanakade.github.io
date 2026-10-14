@@ -6,7 +6,7 @@
 Some posts have no natural figure, so their cover is the formula the post is
 about. Each formula is typeset by the local LaTeX (`latex` + `dvisvgm
 --no-fonts`, so glyphs become paths and the SVG needs no font), then centred on
-a soft gradient panel. Output goes to blog/maths/images/*-equation.svg and
+a soft gradient panel. Output goes to blog/images/*-equation.svg and
 is committed; it is not part of the Quarto build. Re-running is a no-op unless
 COVERS changes.
 
@@ -20,7 +20,7 @@ import subprocess
 import tempfile
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
-OUT = ROOT / "blog" / "maths" / "images"
+OUT = ROOT / "blog" / "images"
 
 W, H = 1200, 630
 BOX_W, BOX_H = 640, 300          # the formula is scaled to fit this box

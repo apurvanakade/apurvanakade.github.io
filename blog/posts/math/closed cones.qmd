@@ -7,7 +7,7 @@ categories:
   - analysis
   - linear programming
   - convex analysis
-image: "../../maths/images/closed-cones-equation.svg"
+image: "../../images/closed-cones-equation.svg"
 author: Apurva Nakade
 ---
 

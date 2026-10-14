@@ -193,11 +193,12 @@ index.qmd                       home; pulls in _includes/home-cards.html
 projects/index.qmd              grid listing, filter + category UI
 projects/<slug>.qmd             one project per file
 blog/index.qmd                  all posts, grid listing
-blog/maths/index.qmd            maths section listing
+blog/math/index.qmd             math section listing
 blog/scribbles/index.qmd        scribbles section listing
-blog/posts/maths/*.qmd          the posts themselves
+blog/posts/math/*.qmd           the posts themselves
 blog/posts/scribbles/*.qmd
 blog/drafts/*.qmd               rendered and published, but not listed anywhere
+blog/images/                    every post's and draft's images, one flat folder
 CV.qmd                          assembles cv/*.qmd; renders to HTML *and* PDF
 cv/<section>.qmd                one CV section per file
 teaching-portfolio.qmd          teaching philosophy, courses, development; HTML *and* PDF
@@ -555,11 +556,12 @@ which still exists as a read-only archive (see below).
 
 ### URLs and the GitHub Pages precedence trap
 
-Posts are served under `/blog/`: `blog/posts/maths/bayes-theorem.qmd` renders
-to `apurvanakade.github.io/blog/posts/maths/bayes-theorem.html`. The directory
-used to be `math-blog/`, a name kept from the standalone blog; it was renamed
-without redirects (§8), so the old `/math-blog/...` URLs 404. Renaming it again
-would break every link shared since, so leave the name alone.
+Posts are served under `/blog/`: `blog/posts/math/ln series.qmd` renders
+to `apurvanakade.github.io/blog/posts/math/ln%20series.html`. The directory
+used to be `math-blog/`, and the math section `maths/`; both were renamed
+without redirects (§8), so the old `/math-blog/...` and `/blog/posts/maths/...`
+URLs 404. Renaming either again would break every link shared since, so leave
+the names alone.
 
 GitHub serves a project site (a repo named `blog` with Pages on) at
 `apurvanakade.github.io/blog/`, and a project site takes precedence over a
@@ -580,11 +582,12 @@ Recover it from there if it is ever wanted.
 
 ### Structure
 
-Section landing pages (`blog/maths/index.qmd`) are separate from the posts
-(`blog/posts/maths/*.qmd`); that is inherited from the standalone blog and
-was kept so relative image paths did not have to change. Post images live under
-`blog/maths/images/` and `blog/scribbles/images/`, referenced from
-posts as `../../maths/images/foo.png`.
+Section landing pages (`blog/math/index.qmd`, `blog/scribbles/index.qmd`)
+are separate from the posts (`blog/posts/math/*.qmd`,
+`blog/posts/scribbles/*.qmd`), a layout inherited from the standalone blog.
+All images, for both sections and the drafts, live in one flat
+`blog/images/`, referenced from a post as `../../images/foo.png` and from a
+draft as `../images/foo.png`.
 
 `blog/posts/*/_metadata.yml` attaches the back-link include for each
 subtree. `blog/_metadata.yml` sets `echo: false` for the whole subtree.
@@ -621,20 +624,20 @@ under `window.VM`. This site consumes it the same way Monte-Carlo-Methods does.
 
 ```yaml
 ---
-title: Bayes Theorem
+title: "Random points in a triangle"
 description: "One sentence. Shown on the listing cards."
-date: 2025-06-02
+date: 2025-05-12
 weight: 1                 # 0 = never drawn for the home page's random pick
 author: Apurva Nakade
-categories: [probability, visualization]
-image: "../../maths/images/bayes.png"
+categories: [randomness, triangles]
+image: "../../images/random-points-triangle.png"
 ---
 ```
 
 A post with no natural figure uses its formula as its cover:
 `_scripts/make_equation_covers.py` typesets each formula in `COVERS` with the
 local LaTeX (`latex` + `dvisvgm --no-fonts`, so glyphs become paths) onto a
-soft gradient panel, writing `blog/maths/images/<slug>-equation.svg`.
+soft gradient panel, writing `blog/images/<slug>-equation.svg`.
 Output is committed. Never write a formula cover as SVG `<text>`: that is
 how `f(s1, ..., sn) != 0` ended up on the cards.
 
@@ -725,9 +728,10 @@ Layered over Bootstrap bases in `_quarto.yml`:
 
 There are none, by Apurva's choice. Pages that moved in the 2026
 reorganisation (`notes.html`, `rec letters.html`, `teaching statement.html`,
-`teaching-statement.html`, and every post under `/math-blog/`, now under
-`/blog/`) now 404 at their old addresses. Do not add a
-redirect mechanism back unless asked. A page moved from here on breaks its
+`teaching-statement.html`, every post under `/math-blog/`, now under
+`/blog/`, and everything under `/blog/maths/` and `/blog/posts/maths/`, now
+under `.../math/`) now 404 at their old addresses. Do not add a redirect
+mechanism back unless asked. A page moved from here on breaks its
 old links, so prefer keeping URLs stable.
 
 ---

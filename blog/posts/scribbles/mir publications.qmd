@@ -7,7 +7,7 @@ categories:
   - textbooks
   - russian
 author: Apurva Nakade
-image: "../../scribbles/images/mir.svg"
+image: "../../images/mir.svg"
 ---
 
 I loathe American textbooks from the bottom of my heart. I learned math from these tiny 100 page books that made the point directly and succinctly and trusted the reader's intelligence to figure out the rest. Textbooks here seem to be written for people who are incapable of thinking for themselves. 

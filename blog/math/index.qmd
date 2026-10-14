@@ -1,9 +1,9 @@
 ---
 include-before-body: ../_includes/back-to-home.html
-title: "Maths"
+title: "Math"
 subtitle: "Posts on probability, geometry, combinatorics, and visualization"
 listing:
-  contents: "../posts/maths/*.qmd"
+  contents: "../posts/math/*.qmd"
   sort: "date desc"
   type: default
   grid-columns: 3
