@@ -6,7 +6,7 @@ Emits two sections for the home page:
   1. "Featured" -- two *fixed* project cards, named in PINNED below. These never
      change and involve no JavaScript.
   2. "A random pick" -- two cards drawn at random on each page load, one from
-     projects/*.qmd and one from math-blog/posts/**/*.qmd, with probability
+     projects/*.qmd and one from blog/posts/**/*.qmd, with probability
      proportional to each file's `weight:`.
 
 The pinned projects are excluded from the random project pool, so the same
@@ -45,10 +45,10 @@ import urllib.parse
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 PROJECTS = ROOT / "projects"
-BLOG_POSTS = ROOT / "math-blog" / "posts"
+BLOG_POSTS = ROOT / "blog" / "posts"
 OUT = ROOT / "_includes" / "home-cards.html"
 
-BLOG_INDEX = "math-blog/"
+BLOG_INDEX = "blog/"
 
 # Slugs of projects/<slug>.qmd shown, in this order, in the fixed "Featured"
 # section. They are dropped from the random pool so a page never shows the same

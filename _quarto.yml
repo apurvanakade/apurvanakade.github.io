@@ -4,7 +4,7 @@ project:
   render:
     - "*.qmd"
     - "projects/*.qmd"
-    - "math-blog/**/*.qmd"
+    - "blog/**/*.qmd"
     - "courses/**/*.qmd"
     - "!cv/"
   resources:
@@ -26,7 +26,7 @@ website:
       - text: Projects
         href: projects/index.qmd
       - text: Blog
-        href: math-blog/index.qmd
+        href: blog/index.qmd
       - text: Teaching
         menu:
           - text: Teaching portfolio

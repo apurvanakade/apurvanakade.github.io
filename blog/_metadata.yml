@@ -1,4 +1,4 @@
-# AI-owned: settings for the whole math-blog/ subtree. See CLAUDE.md.
+# AI-owned: settings for the whole blog/ subtree. See CLAUDE.md.
 # Every code cell in the blog is Observable JS, which runs in the reader's
 # browser; nothing executes at render time, so there is no kernel and no freeze.
 execute:
