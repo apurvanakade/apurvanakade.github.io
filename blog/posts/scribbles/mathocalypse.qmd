@@ -9,7 +9,7 @@ author: Apurva Nakade
 image: "../../images/mathocalypse.jpg"
 ---
 
-![Caspar David Friedrich, *The Sea of Ice* (1823–24), Hamburger Kunsthalle. Public domain, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Caspar_David_Friedrich_-_Das_Eismeer_-_Hamburger_Kunsthalle.jpg).](../../images/mathocalypse.jpg){width="100%" fig-alt="Slabs of broken ice piled up in a frozen sea, with the wreck of a ship crushed beneath them."}
+![*The Sea of Ice*, Caspar David Friedrich ([public domain](https://commons.wikimedia.org/wiki/File:Caspar_David_Friedrich_-_Das_Eismeer_-_Hamburger_Kunsthalle.jpg))](../../images/mathocalypse.jpg){width="100%" fig-alt="Slabs of broken ice piled up in a frozen sea, with the wreck of a ship crushed beneath them."}
 
 The title of this post comes from [Scott Aaronson's blog](https://scottaaronson.blog/?p=10169), and it describes the situation in math today quite accurately. OpenAI's recent posts have, once and for all, dethroned humans as the most intelligent entities, at least in the arena of mathematics.
 
