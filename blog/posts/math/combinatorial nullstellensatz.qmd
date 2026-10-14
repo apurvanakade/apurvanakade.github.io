@@ -1,6 +1,6 @@
 ---
 title: Combinatorial Nullstellensatz
-description: "A fun theorem I came across in a talk on tree colorings, and the polynomial trick behind it."
+description: "Zeroes of polynomials over arbitrary fields."
 date: 2023-11-26 12:27:01
 weight: 1
 categories:

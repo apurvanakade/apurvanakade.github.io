@@ -1,6 +1,6 @@
 ---
 title: Pythagoras using Hilbert 90
-description: "Dummit and Foote classify Pythagorean triples using Hilbert's Theorem 90, a surprisingly slick route to a classical fact."
+description: "Generating Pythagorean triples using Hilbert's Theorem 90."
 date: 2024-06-08 12:33:01
 weight: 1
 categories:

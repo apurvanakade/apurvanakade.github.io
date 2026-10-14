@@ -1,6 +1,6 @@
 ---
 title: Closed Convex Cones in LP
-description: "A theorem I hit while formalizing linear programming in Lean, where the naive topological proof falls apart."
+description: "Linear images of polyhedral cones are closed."
 date: 2024-01-02 00:13:03
 weight: 1
 categories:

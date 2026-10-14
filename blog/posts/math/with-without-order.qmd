@@ -1,6 +1,6 @@
 ---
 title: With or Without Order
-description: "A student asked whether choosing with order or without order changes a probability. My first instinct was wrong."
+description: "Does choosing with order or without order change a probability?"
 date: 2025-11-27
 weight: 1
 author: Apurva Nakade

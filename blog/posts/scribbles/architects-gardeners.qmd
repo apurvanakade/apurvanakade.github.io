@@ -1,6 +1,6 @@
 ---
 title: Architects and Gardeners
-description: "George R.R. Martin split writers into architects and gardeners. The same split applies to course planning, and I am firmly a gardener."
+description: "Designing vs. Growing."
 date: 2025-07-17
 weight: 1
 author: Apurva Nakade

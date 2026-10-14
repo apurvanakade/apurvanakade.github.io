@@ -1,6 +1,6 @@
 ---
 title: "Random points in a triangle"
-description: "Randomness is hard to simulate. How to generate a uniformly random point inside a triangle, worked out so I could play with Sperner's lemma."
+description: "Generating random points inside a triangle."
 author: Apurva Nakade
 date: 2025-05-12
 weight: 1
