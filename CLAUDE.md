@@ -52,12 +52,12 @@ The single most important convention in this repo is a hard split between files
 | `projects/*.qmd` (frontmatter + prose) | `_theme/*.scss`, `_theme/*.css` |
 | `projects/index.qmd` | `_filters/*.lua` |
 | `CV.qmd`, `cv/*.qmd` | `_includes/*.html`, `_includes/*.ejs` |
-| `math-blog/index.qmd`, `math-blog/*/index.qmd` | `_scripts/*.py` |
-| `math-blog/posts/**/*.qmd` | `cv/preamble.tex` |
-| `math-blog/drafts/*.qmd` | `projects/_metadata.yml` |
-| `styles.css` (personal CSS overrides) | `math-blog/_metadata.yml` |
-| | `math-blog/_includes/*.html` |
-| | `math-blog/posts/*/_metadata.yml` |
+| `blog/index.qmd`, `blog/*/index.qmd` | `_scripts/*.py` |
+| `blog/posts/**/*.qmd` | `cv/preamble.tex` |
+| `blog/drafts/*.qmd` | `projects/_metadata.yml` |
+| `styles.css` (personal CSS overrides) | `blog/_metadata.yml` |
+| | `blog/_includes/*.html` |
+| | `blog/posts/*/_metadata.yml` |
 | | `CLAUDE.md`, `.claude/**` |
 
 `_extensions/apurvanakade/mathviz/` belongs to neither column: it is an
@@ -192,12 +192,12 @@ preview; it has no effect on the published site.
 index.qmd                       home; pulls in _includes/home-cards.html
 projects/index.qmd              grid listing, filter + category UI
 projects/<slug>.qmd             one project per file
-math-blog/index.qmd             all posts, grid listing
-math-blog/maths/index.qmd       maths section listing
-math-blog/scribbles/index.qmd   scribbles section listing
-math-blog/posts/maths/*.qmd     the posts themselves
-math-blog/posts/scribbles/*.qmd
-math-blog/drafts/*.qmd          rendered and published, but not listed anywhere
+blog/index.qmd             all posts, grid listing
+blog/maths/index.qmd       maths section listing
+blog/scribbles/index.qmd   scribbles section listing
+blog/posts/maths/*.qmd     the posts themselves
+blog/posts/scribbles/*.qmd
+blog/drafts/*.qmd          rendered and published, but not listed anywhere
 CV.qmd                          assembles cv/*.qmd; renders to HTML *and* PDF
 cv/<section>.qmd                one CV section per file
 teaching-portfolio.qmd          teaching philosophy, courses, development; HTML *and* PDF
@@ -517,7 +517,7 @@ which is now inert — they are pinned. These are a starting point — Apurva tu
 them.
 
 **Blog posts use the identical mechanism.** The script scans `projects/*.qmd`
-*and* `math-blog/posts/**/*.qmd`, drops everything at weight 0, and embeds both
+*and* `blog/posts/**/*.qmd`, drops everything at weight 0, and embeds both
 lists as JSON. The highest-weighted item of each kind is baked into the HTML as
 the no-JavaScript fallback. A non-numeric weight logs a warning and falls back to
 1; a negative one is clamped to 0.
@@ -549,26 +549,24 @@ page's random pick all pick it up on the next render.
 
 ## 6. The blog
 
-The blog ("Second Drafts") lives under `math-blog/` in this repo. It was
+The blog ("Second Drafts") lives under `blog/` in this repo. It was
 originally a separate repository, `git@github.com:apurvanakade/math-blog.git`,
 which still exists as a read-only archive (see below).
 
-### Why the directory is called `math-blog`
+### URLs and the GitHub Pages precedence trap
 
-Because it keeps every published URL byte-identical.
-`math-blog/posts/maths/bayes-theorem.qmd` renders to
-`docs/math-blog/posts/maths/bayes-theorem.html`, served at
-`apurvanakade.github.io/math-blog/posts/maths/bayes-theorem.html` — exactly where
-it was before. Do not "tidy" this directory to `blog/` or `writing/`: the
-site has no redirects (§8), so renaming it silently breaks every link ever
-shared to a post.
+Posts are served under `/blog/`: `blog/posts/maths/bayes-theorem.qmd` renders
+to `apurvanakade.github.io/blog/posts/maths/bayes-theorem.html`. The directory
+used to be `blog/`, a name kept from the standalone blog; it was renamed
+without redirects (§8), so the old `/math-blog/...` URLs 404. Renaming it again
+would break every link shared since, so leave the name alone.
 
-### The GitHub Pages precedence trap
-
-GitHub Pages is **off** on the old `math-blog` repo, and must stay off. A
-project site at `apurvanakade.github.io/math-blog/` served from that repo would
-take precedence over the `math-blog/` folder in this user site and silently
-shadow every post with the stale archive copy.
+GitHub serves a project site (a repo named `blog` with Pages on) at
+`apurvanakade.github.io/blog/`, and a project site takes precedence over a
+folder of the same name in this user site. **No repo named `blog` may have
+Pages enabled**, or it silently shadows every post. Pages is also off on the
+old `math-blog` archive repo; nothing here lives at `/math-blog/` any more, so
+that one is harmless either way.
 
 ### The archive repo
 
@@ -582,14 +580,14 @@ Recover it from there if it is ever wanted.
 
 ### Structure
 
-Section landing pages (`math-blog/maths/index.qmd`) are separate from the posts
-(`math-blog/posts/maths/*.qmd`); that is inherited from the standalone blog and
+Section landing pages (`blog/maths/index.qmd`) are separate from the posts
+(`blog/posts/maths/*.qmd`); that is inherited from the standalone blog and
 was kept so relative image paths did not have to change. Post images live under
-`math-blog/maths/images/` and `math-blog/scribbles/images/`, referenced from
+`blog/maths/images/` and `blog/scribbles/images/`, referenced from
 posts as `../../maths/images/foo.png`.
 
-`math-blog/posts/*/_metadata.yml` attaches the back-link include for each
-subtree. `math-blog/_metadata.yml` sets `echo: false` for the whole subtree.
+`blog/posts/*/_metadata.yml` attaches the back-link include for each
+subtree. `blog/_metadata.yml` sets `echo: false` for the whole subtree.
 
 ### mathviz
 
@@ -607,7 +605,7 @@ under `window.VM`. This site consumes it the same way Monte-Carlo-Methods does.
 - **Opt in per post, not site-wide.** A post that uses `VM` puts
   `filters: [mathviz]` in its frontmatter. The filter loads Plotly (~3.5 MB)
   and math.js from a CDN into the page's `<head>`, so enabling it in
-  `_quarto.yml` or `math-blog/_metadata.yml` would make every page download
+  `_quarto.yml` or `blog/_metadata.yml` would make every page download
   them. Currently only `nth-fibonacci.qmd` opts in.
 - **Not mathviz's theme.** Monte-Carlo-Methods uses mathviz's SCSS theme; this
   site keeps its own. Instead, `_theme/base.scss` points mathviz's `--vm-*`
@@ -636,7 +634,7 @@ image: "../../maths/images/bayes.png"
 A post with no natural figure uses its formula as its cover:
 `_scripts/make_equation_covers.py` typesets each formula in `COVERS` with the
 local LaTeX (`latex` + `dvisvgm --no-fonts`, so glyphs become paths) onto a
-soft gradient panel, writing `math-blog/maths/images/<slug>-equation.svg`.
+soft gradient panel, writing `blog/maths/images/<slug>-equation.svg`.
 Output is committed. Never write a formula cover as SVG `<text>`: that is
 how `f(s1, ..., sn) != 0` ended up on the cards.
 
@@ -649,7 +647,7 @@ the same mechanism as projects, now reading straight off disk.
 
 ### Drafts
 
-`math-blog/drafts/*.qmd` render and publish but appear in no listing. That was
+`blog/drafts/*.qmd` render and publish but appear in no listing. That was
 true of the standalone blog too and was preserved deliberately. They are
 reachable by anyone with the URL — treat them as public.
 
@@ -727,7 +725,8 @@ Layered over Bootstrap bases in `_quarto.yml`:
 
 There are none, by Apurva's choice. Pages that moved in the 2026
 reorganisation (`notes.html`, `rec letters.html`, `teaching statement.html`,
-`teaching-statement.html`) now 404 at their old addresses. Do not add a
+`teaching-statement.html`, and every post under `/math-blog/`, now under
+`/blog/`) now 404 at their old addresses. Do not add a
 redirect mechanism back unless asked. A page moved from here on breaks its
 old links, so prefer keeping URLs stable.
 
@@ -753,8 +752,8 @@ old links, so prefer keeping URLs stable.
 Standing facts about this repo that are easy to trip over and are not obvious
 from the files themselves. Each one is described in full in the section named.
 
-- **GitHub Pages must stay off on the old `math-blog` repo** (§6). Turning it
-  on would shadow every post on this site with the archive copy.
+- **No repo named `blog` may have GitHub Pages on** (§6). Its project site
+  would take precedence over this site's `/blog/` and shadow every post.
 - **mathviz is fetched at render time** (§6). The pre-render hook needs
   network access to update it; offline it builds with the installed copy, and
   on a fresh clone with no copy it fails. `_extensions/` is committed so that
@@ -767,8 +766,8 @@ from the files themselves. Each one is described in full in the section named.
 - **Pages is set to "GitHub Actions", not "Deploy from a branch"** (§2). The
   workflow uploads an artifact; it never writes `gh-pages`. Flipping that
   setting back to a branch source stops publishing silently.
-- **The `math-blog/` directory name is load-bearing** (§6). It is what keeps
-  every published post URL unchanged; renaming it breaks every shared link.
+- **The `blog/` directory name is load-bearing** (§6). It is the post URLs;
+  renaming it breaks every shared link.
 - **No PDF is committed or published** (§4). `make pdfs` writes them to
   the gitignored `_pdf/` rather than the repo root, because a full
   `quarto render` deletes a `CV.pdf` or `teaching-portfolio.pdf` left at the
