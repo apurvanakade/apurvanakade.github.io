@@ -75,8 +75,14 @@ blockquote {
 // The solana about template sits the photo beside the title, top-aligned to the
 // h1's line box; the half-leading above the glyphs left the photo about 7px
 // higher than the cap line. Below lg the photo stacks above the text instead.
+// Quarto's template means to centre it there, but its media query is followed
+// by an unscoped `align-items: start` on the same selector, which wins, so the
+// stacked photo sat flush left. Restate the centring after it.
 @include media-breakpoint-up(lg) {
   .quarto-about-solana .about-image { margin-top: 0.4rem; }
+}
+@include media-breakpoint-down(lg) {
+  div.quarto-about-solana .about-entity { align-items: center; }
 }
 
 .home-section { margin: 3rem 0 1rem; }
