@@ -637,10 +637,12 @@ image: "../../images/random-points-triangle.png"
 ---
 ```
 
-A scribbles post's cover is a public-domain image (a painting, engraving or
-photo from Wikimedia Commons, saved to `blog/images/`), never AI-generated
-art. It is also shown in the post as a captioned figure, after the first
-paragraph rather than above it, at
+No post's cover is AI-generated art. A scribbles post illustrated with a
+picture uses a public-domain image (a painting, engraving or photo from
+Wikimedia Commons, saved to `blog/images/`). The one exception is Mir
+Publications, whose cover is the publisher's own logo (`mir.svg`) and which
+shows no figure. A picture cover is also shown in the post as a captioned
+figure, after the first paragraph rather than above it, at
 `{width="85%" fig-align="center" fig-alt="..."}`, with the caption naming
 the work and linking its Commons page. That follows Substack: the reader
 meets the text before the picture, and the inset marks the image as
