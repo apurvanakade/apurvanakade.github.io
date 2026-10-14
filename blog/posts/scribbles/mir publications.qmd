@@ -21,4 +21,4 @@ The first book listed (at least for me) is *Irodov's Physics*, every engineering
 
 (Side note: Please [donate to the Internet Archive](https://archive.org/donate).)
 
-<iframe width="100%" height="100%" src="https://archive.org/details/mir-titles" title="MIR publication"></iframe>
+<iframe width="100%" height="600" src="https://archive.org/details/mir-titles" title="MIR publication"></iframe>
