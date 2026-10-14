@@ -68,7 +68,10 @@ next render. Nobody edits it (see §6, "mathviz").
 
 - Content files stay *prose plus minimal YAML*. No raw HTML, no `::: {.div}`
   wrappers, no shortcodes, no chrome. If a page needs structure, add it in a Lua
-  filter or an include — never inline in a content file.
+  filter or an include — never inline in a content file. **One exception:
+  `<iframe>` embeds in blog posts.** Apurva embeds YouTube videos, Visual Math
+  Lab apps and the like by pasting the embed code those sites hand out; the
+  theme makes it fit (§7). The one thing to set is `height=` in pixels.
 - `styles.css` is Apurva's scratch space. Never write to it. All generated CSS
   goes in `_theme/`.
 - Anything in `_includes/` that says `GENERATED` is overwritten on every render.
@@ -700,12 +703,13 @@ Layered over Bootstrap bases in `_quarto.yml`:
   `#4F2683` is indistinguishable from Northwestern Purple `#4E2A84`, and teal
   is ruled out because it is the site accent. Every use also names the
   institution in text or shape.
-- **YouTube embeds are pasted as-is.** A post may carry the `<iframe>` YouTube's
-  Share → Embed hands out; `main iframe[src*="youtube.com/embed"]` in
-  `base.scss` scales it to the column at 16:9 (at most 560px), because the
-  embed code hard-codes `width="560" height="315"` and overflows a phone.
-  The embed is Apurva's own markup, an accepted exception to §1's no-raw-HTML
-  rule, so the theme adapts to it rather than a filter rewriting the post.
+- **One rule for every embed.** `main iframe` in `base.scss` makes any
+  `<iframe>` fill the column, so none overflows a phone, with a `--site-rule`
+  border. Its `width=` is ignored; its height is its own `height=`, in pixels
+  (450 suits a 16:9 video at full column width; a Visual Math Lab app's Share
+  dialog measures its own). `height="100%"` does not work, because in a
+  flowing column it has nothing to resolve against and collapses to 150px.
+  There are no per-site rules; keep it that way.
 - **Every content table has a tinted header row** (`main .table > thead`),
   so course schedules, the portfolio's tables and any new table match.
 - **Grid cards show the date above the title.** Quarto puts it in a footer

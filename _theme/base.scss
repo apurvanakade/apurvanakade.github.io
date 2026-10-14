@@ -550,17 +550,18 @@ main .table > tbody > tr:has(.course-row--break) > td {
 .post-backlink a { color: var(--site-muted); text-decoration: none; }
 .post-backlink a:hover { color: var(--site-accent); }
 
-// ------------------------------------------------------------ embedded video
-// YouTube's embed code hard-codes width="560" height="315", which overflows a
-// phone. Scale it to the column instead; aspect-ratio keeps it 16:9 once the
-// height attribute is overridden.
-main iframe[src*="youtube.com/embed"] {
-  width: 100%;
-  max-width: 560px;
-  height: auto;
-  aspect-ratio: 16 / 9;
+// ----------------------------------------------------------- embedded frames
+// One rule for every <iframe> a post pastes in (CLAUDE.md §1): it fills the
+// column, so none overflows a phone, and takes its height from its own
+// height= attribute, in pixels. The rule lets a page-like embed's edge show
+// against the page.
+main iframe {
   display: block;
-  margin: 1.5rem auto;
+  width: 100%;
+  max-width: 100%;
+  margin: 1.5rem 0;
+  border: 1px solid var(--site-rule);
+  border-radius: 8px;
 }
 
 // ------------------------------------------------------------------- mathviz
