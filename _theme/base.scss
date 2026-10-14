@@ -550,17 +550,31 @@ main .table > tbody > tr:has(.course-row--break) > td {
 .post-backlink a { color: var(--site-muted); text-decoration: none; }
 .post-backlink a:hover { color: var(--site-accent); }
 
-// ------------------------------------------------------------ embedded video
-// YouTube's embed code hard-codes width="560" height="315", which overflows a
-// phone. Scale it to the column instead; aspect-ratio keeps it 16:9 once the
-// height attribute is overridden.
+// ----------------------------------------------------------- embedded frames
+// Posts paste iframe embed code as-is (CLAUDE.md §1): YouTube videos and
+// Visual Math Lab apps. Every frame is held to the column so none overflows
+// a phone.
+main iframe {
+  display: block;
+  max-width: 100%;
+  margin: 1.5rem auto;
+  border: 0;
+}
+// YouTube's embed code hard-codes width="560" height="315". Scale it to the
+// column instead; aspect-ratio keeps it 16:9 once the height is overridden.
 main iframe[src*="youtube.com/embed"] {
   width: 100%;
   max-width: 560px;
   height: auto;
   aspect-ratio: 16 / 9;
-  display: block;
-  margin: 1.5rem auto;
+}
+// A Visual Math Lab app is a page of controls and a chart, not a video: its
+// height is the one its Share dialog measured, so keep the height attribute
+// and only frame it, or its edge blends into the page.
+main iframe[src*="visualmathlab.com"] {
+  width: 100%;
+  border: 1px solid var(--site-rule);
+  border-radius: 8px;
 }
 
 // ------------------------------------------------------------------- mathviz
