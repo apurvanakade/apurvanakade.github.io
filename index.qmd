@@ -19,7 +19,7 @@ include-after-body: _includes/home-cards.html
 I'm an Assistant Teaching Professor in the Applied Mathematics & Statistics department at
 Johns Hopkins University.
 
-I care about making university mathematics better taught and more accessible. To that end, I have been busy building [interactive visualizations](projects/visual-math-lab.qmd)
+I care deeply about making university mathematics better taught and more accessible. To that end, I have been busy building [interactive visualizations](projects/visual-math-lab.qmd)
 for teaching, [redesigning courses](projects/index.qmd) from the ground up, and occasionally
 [formalizing mathematics](projects/lean-formalization.qmd) in the Lean theorem prover.
 

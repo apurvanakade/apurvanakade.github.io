@@ -5,7 +5,7 @@ date: 2025-12-04
 weight: 1
 author: Apurva Nakade
 categories: ["learning", "AI"]
-image: "../../scribbles/images/programming.png"
+image: "../../images/programming.png"
 ---
 
 I don't code much these days - AI does all the programming for me. I almost exclusively write programs in Python, and I do not like Python.
