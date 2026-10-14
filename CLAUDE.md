@@ -194,7 +194,7 @@ projects/index.qmd              grid listing, filter + category UI
 projects/<slug>.qmd             one project per file
 blog/index.qmd                  all posts, grid listing
 blog/maths/index.qmd            maths section listing
-blog/scribbles/index.qmd   scribbles section listing
+blog/scribbles/index.qmd        scribbles section listing
 blog/posts/maths/*.qmd          the posts themselves
 blog/posts/scribbles/*.qmd
 blog/drafts/*.qmd               rendered and published, but not listed anywhere
