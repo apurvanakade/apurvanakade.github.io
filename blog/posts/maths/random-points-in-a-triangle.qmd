@@ -15,11 +15,11 @@ Randomness is a surprisingly hard thing to simulate. Any program, by definition,
 
 Mathematicians are mostly interested in engineering Step 2. Step 1 is important but is usually delegated to computer engineers.
 
-So here's the question: **How to generate random points inside a triangle?** I need this in order to play around with Sperner's lemma examples.
+So here's the question: **How to generate random points inside a triangle?** I need this in order to play around with [Sperner's lemma](https://www.visualmathlab.com/apps/sperners-lemma-statement/) examples.
 
 The first step is to generate random points in the "standard triangle" with vertices $[0, 0], [1, 0], [0, 1]$. A very simple trick for this is to generate points in the unit square and "reflect the points" across the midpoint of the hypotenuse, $[0.5, 0.5]$. 
 
-Next, we use the [barycentric transformation](barycentric-coordinates.qmd) to transform the standard triangle into the desired triangle. In the example above, this is the equilateral triangle with vertices $[0, 0], [1, 0], [0.5, \sqrt{3}/2]$.
+Next, we use the [barycentric transformation](https://www.visualmathlab.com/apps/barycentric-coordinates/) to transform the standard triangle into the desired triangle. In the example above, this is the equilateral triangle with vertices $[0, 0], [1, 0], [0.5, \sqrt{3}/2]$.
 
 
 ```{ojs}
