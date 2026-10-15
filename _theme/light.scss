@@ -1,35 +1,8 @@
-/* AI-owned: light palette. See CLAUDE.md. */
-
-/*-- scss:defaults --*/
-
-$ink:        #1c1f23;
-$muted:      #5c6570;
-$accent:     #10606b;
-$accent-alt: #8a4b2a;
-$paper:      #fdfdfc;
-$surface:    #ffffff;
-$rule:       #e2e0da;
-
-$body-bg:        $paper !default;
-$body-color:     $ink !default;
-$link-color:     $accent !default;
-$primary:        $accent !default;
-$secondary:      $muted !default;
-$navbar-bg:      $paper !default;
-$navbar-fg:      $ink !default;
-$code-color:     $accent-alt !default;
-$table-border-color: $rule !default;
+/* AI-owned: light-scheme extras. The palette itself is mathviz's
+   (mathviz-light.scss, listed first in _quarto.yml). See CLAUDE.md §7. */
 
 /*-- scss:rules --*/
 
-:root {
-  --site-ink:      #{$ink};
-  --site-muted:    #{$muted};
-  --site-accent:   #{$accent};
-  --site-rule:     #{$rule};
-  --site-surface:  #{$surface};
-  --site-shadow:   rgba(28, 31, 35, 0.10);
-  --site-thumb-bg: #f2f1ec;
-}
-
-.navbar { background-color: rgba(253, 253, 252, 0.92) !important; backdrop-filter: saturate(150%) blur(8px); }
+// mathviz's --vm-shadow is a whole box-shadow; the card hover lift needs a
+// bare colour.
+:root { --site-shadow: rgba(20, 22, 26, 0.10); }

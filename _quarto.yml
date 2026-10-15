@@ -68,8 +68,8 @@ website:
 format:
   html:
     theme:
-      light: [cosmo, _theme/base.scss, _theme/light.scss]
-      dark: [cyborg, _theme/base.scss, _theme/dark.scss]
+      light: [_extensions/apurvanakade/mathviz/theme/mathviz-light.scss, _theme/base.scss, _theme/light.scss]
+      dark: [_extensions/apurvanakade/mathviz/theme/mathviz-dark.scss, _theme/base.scss, _theme/dark.scss]
     include-in-header: _includes/fonts.html
     css: styles.css   # yours to edit; _theme/*.scss is AI-owned
     anchor-sections: true

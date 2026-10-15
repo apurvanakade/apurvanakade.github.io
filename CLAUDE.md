@@ -614,11 +614,9 @@ under `window.VM`. This site consumes it the same way Monte-Carlo-Methods does.
   and math.js from a CDN into the page's `<head>`, so enabling it in
   `_quarto.yml` or `blog/_metadata.yml` would make every page download
   them. Currently only `nth-fibonacci.qmd` opts in.
-- **Not mathviz's theme.** Monte-Carlo-Methods uses mathviz's SCSS theme; this
-  site keeps its own. Instead, `_theme/base.scss` points mathviz's `--vm-*`
-  tokens at the `--site-*` palette. They are declared on `body`, not `:root`,
-  because mathviz's dark defaults sit on `body.quarto-dark` and a value
-  inherited from `:root` would lose to them.
+- **mathviz's theme is the site's palette** (§7), as on Monte-Carlo-Methods,
+  so a chart or panel matches the page with no bridging, and a post moved
+  between sites looks the same on each.
 - **Writing a chart.** Follow Monte-Carlo-Methods' CLAUDE.md ("Figures"): a
   `vmTheme` / `chartColors` pair per page, a `VM.plotting.persistentPlot()`
   per chart made in a setup cell, trace colours from `chartColors.*` never
@@ -694,13 +692,21 @@ reachable by anyone with the URL — treat them as public.
 
 ```
 _theme/base.scss    typography, layout, components (shared)
-_theme/light.scss   light palette
-_theme/dark.scss    dark palette
+_theme/light.scss   light-scheme extras (the hover-shadow colour)
+_theme/dark.scss    dark-scheme extras (shadow colour, light backing for figures)
 _theme/portfolio.css  teaching portfolio only (§4); not part of the theme
 ```
 
-Layered over Bootstrap bases in `_quarto.yml`:
-`light: [cosmo, base, light]`, `dark: [cyborg, base, dark]`.
+Layered over mathviz's Quarto theme in `_quarto.yml`:
+`light: [mathviz-light, base, light]`, `dark: [mathviz-dark, base, dark]`
+(the first is `_extensions/apurvanakade/mathviz/theme/mathviz-*.scss`).
+**The palette is mathviz's, not this site's**, because Apurva publishes posts
+on several mathviz sites (Monte-Carlo-Methods, Visual Math Lab) and keeping a
+second colour scheme in step was a maintenance burden. A new mathviz release
+re-colours this site on the next render. There is no Bootswatch base
+(cosmo/cyborg used to sit under the theme), so a Bootstrap component whose
+default fill is light in both schemes needs a `--vm-*` rule in `base.scss`,
+as `.input-group-text` (the listing's sort and filter boxes) has.
 
 - **One typeface throughout: Inter** (variable, with its optical-size axis) for
   prose, headings, navbar and UI alike; **JetBrains Mono** for code. Both load
@@ -716,15 +722,19 @@ Layered over Bootstrap bases in `_quarto.yml`:
   `.quarto-grid-item .listing-categories .listing-category`,
   `div.quarto-post .listing-categories .listing-category`) because a bare
   `.quarto-category` rule loses on specificity.
-- Palettes are exposed as CSS custom properties (`--site-ink`, `--site-muted`,
-  `--site-accent`, `--site-rule`, `--site-surface`, `--site-shadow`,
-  `--site-thumb-bg`). **Component rules in `base.scss` must use those
-  variables, never literal colours** — that is what keeps one rule working in
-  both schemes. There is no font variable: with a single family, Bootstrap's
+- Colours are mathviz's runtime tokens: `--vm-text`, `--vm-text-soft`,
+  `--vm-accent`, `--vm-on-accent`, `--vm-border`, `--vm-bg` (page and card
+  fill), `--vm-surface` (panels, chips, thumbnail backing). The one site token
+  left is `--site-shadow`, the card hover-lift colour, because `--vm-shadow`
+  is a whole `box-shadow`, not a colour. **Component rules in `base.scss` and
+  `portfolio.css` must use those variables, never literal colours** (that is
+  what keeps one rule working in both schemes), and never redefine a `--vm-*`
+  token, or the site drifts from mathviz again. To change a colour, change it
+  in mathviz upstream. There is no font variable: with a single family, Bootstrap's
   `$font-family-base` covers every element and components need no
   `font-family` of their own.
 - Bootstrap's own `.card` background does not follow our palette; card components
-  need an explicit `background: var(--site-surface)` or they render mid-grey in
+  need an explicit `background: var(--vm-bg)` or they render mid-grey in
   dark mode.
 - **Institution colours are site-wide tokens** in `base.scss`, on `body` with
   dark overrides on `body.quarto-dark`, used by the portfolio, the CV
@@ -733,12 +743,11 @@ Layered over Bootstrap bases in `_quarto.yml`:
   colours: `--chip-*` (badges, chips) JHU Heritage Blue and Northwestern
   Purple, `--inst-*` (marks) JHU Spirit Blue and Northwestern Purple (Purple
   30 in dark mode). Western is **orange**, not its own purple: Western Purple
-  `#4F2683` is indistinguishable from Northwestern Purple `#4E2A84`, and teal
-  is ruled out because it is the site accent. Every use also names the
+  `#4F2683` is indistinguishable from Northwestern Purple `#4E2A84`. Every use also names the
   institution in text or shape.
 - **One rule for every embed.** `main iframe` in `base.scss` makes any
   `<iframe>` 85% of the column and centred, matching a post's inset opening
-  figure (§6), so none overflows a phone, with a `--site-rule` border. Its
+  figure (§6), so none overflows a phone, with a `--vm-border` border. Its
   `width=` is ignored; its height is its own `height=`, in pixels (383 suits
   a 16:9 video at that width; a Visual Math Lab app's Share
   dialog measures its own). `height="100%"` does not work, because in a
