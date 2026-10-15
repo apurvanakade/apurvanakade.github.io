@@ -634,7 +634,7 @@ date: 2025-05-12
 weight: 1                 # 0 = never drawn for the home page's random pick
 author: Apurva Nakade
 categories: [randomness, triangles]
-image: "../images/random-points-triangle.png"
+image: "images/random-points-triangle.png"
 ---
 ```
 
