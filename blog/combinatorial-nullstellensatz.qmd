@@ -7,7 +7,7 @@ categories:
   - combinatorics
   - problems
   - todo
-image: "../images/combinatorial-nullstellensatz-equation.svg"
+image: "images/combinatorial-nullstellensatz-equation.svg"
 author: Apurva Nakade
 ---
 

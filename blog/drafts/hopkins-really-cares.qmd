@@ -1,5 +1,4 @@
 ---
-include-before-body: ../_includes/back-to-home.html
 title: "Hopkins Really Cares"
 author: Apurva Nakade
 date: 2025-05-12

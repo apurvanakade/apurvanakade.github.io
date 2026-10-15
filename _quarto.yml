@@ -52,9 +52,9 @@ website:
       - icon: github
         href: https://github.com/apurvanakade/
         aria-label: GitHub
-  # No sidebar for the blog subtree. The blog index and the two section pages
-  # each carry a grid listing plus a categories rail, and every post has a
-  # back-link, so a sidebar would be a third column of duplicate navigation.
+  # No sidebar for the blog subtree. The blog index carries a grid listing plus
+  # a categories rail, and every post has a back-link, so a sidebar would be a
+  # column of duplicate navigation.
   # The standalone blog used an explicit sidebar file list and it had already
   # gone stale (it still pointed at a post deleted months earlier); listings
   # cannot rot that way.

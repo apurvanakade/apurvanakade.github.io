@@ -52,12 +52,11 @@ The single most important convention in this repo is a hard split between files
 | `projects/*.qmd` (frontmatter + prose) | `_theme/*.scss`, `_theme/*.css` |
 | `projects/index.qmd` | `_filters/*.lua` |
 | `CV.qmd`, `cv/*.qmd` | `_includes/*.html`, `_includes/*.ejs` |
-| `blog/index.qmd`, `blog/*/index.qmd` | `_scripts/*.py` |
-| `blog/{math,scribbles}/*.qmd` | `cv/preamble.tex` |
-| `blog/drafts/*.qmd` | `projects/_metadata.yml` |
-| `styles.css` (personal CSS overrides) | `blog/_metadata.yml` |
+| `blog/index.qmd`, `blog/*.qmd` | `_scripts/*.py` |
+| `blog/drafts/*.qmd` | `cv/preamble.tex` |
+| `styles.css` (personal CSS overrides) | `projects/_metadata.yml` |
+| | `blog/_metadata.yml`, `blog/drafts/_metadata.yml` |
 | | `blog/_includes/*.html` |
-| | `blog/{math,scribbles}/_metadata.yml` |
 | | `CLAUDE.md`, `.claude/**` |
 
 `_extensions/apurvanakade/mathviz/` belongs to neither column: it is an
@@ -196,10 +195,7 @@ index.qmd                       home; pulls in _includes/home-cards.html
 projects/index.qmd              grid listing, filter + category UI
 projects/<slug>.qmd             one project per file
 blog/index.qmd                  all posts, grid listing
-blog/math/index.qmd             math section listing
-blog/math/<post>.qmd            the section's posts, beside its listing
-blog/scribbles/index.qmd        scribbles section listing
-blog/scribbles/<post>.qmd
+blog/<post>.qmd                 every post, beside the listing
 blog/drafts/*.qmd               rendered and published, but not listed anywhere
 blog/images/                    every post's and draft's images, one flat folder
 CV.qmd                          assembles cv/*.qmd; renders to HTML *and* PDF
@@ -218,10 +214,9 @@ Navbar: **Home · Projects · Blog · Teaching ▾ · CV**. `Teaching` is a drop
 holding the teaching portfolio, course pages,
 recommendation-letter instructions, and references.
 
-**There is no sidebar for the blog subtree, deliberately.** The blog index and
-both section pages already carry a grid listing plus a categories rail, and every
-post has a back-link, so a sidebar would be a third column of duplicate
-navigation. The standalone blog used an explicit sidebar file list in its
+**There is no sidebar for the blog subtree, deliberately.** The blog index
+already carries a grid listing plus a categories rail, and every post has a
+back-link, so a sidebar would be a column of duplicate navigation. The standalone blog used an explicit sidebar file list in its
 `_quarto.yml` and it had gone stale — it still pointed at a post deleted months
 earlier. Listings cannot rot that way. If a sidebar is ever wanted again, note
 that Quarto rejects `auto:` globs combined with a `href:` on the same section.
@@ -521,7 +516,7 @@ which is now inert — they are pinned. These are a starting point — Apurva tu
 them.
 
 **Blog posts use the identical mechanism.** The script scans `projects/*.qmd`
-*and* `blog/{math,scribbles}/*.qmd`, drops everything at weight 0, and embeds both
+*and* `blog/*.qmd`, drops everything at weight 0, and embeds both
 lists as JSON. The highest-weighted item of each kind is baked into the HTML as
 the no-JavaScript fallback. A non-numeric weight logs a warning and falls back to
 1; a negative one is clamped to 0.
@@ -552,15 +547,18 @@ page's random pick all pick it up on the next render.
 
 ## 6. The blog
 
-The blog ("Second Drafts") lives under `blog/` in this repo. It was
+The blog ("Sh*tty First Drafts") lives under `blog/` in this repo. It was
 originally a separate repository, `git@github.com:apurvanakade/math-blog.git`,
-which still exists as a read-only archive (see below).
+which still exists as a read-only archive (see below). There the name was
+that site's navbar brand; here the brand is "Apurva Nakade", so the name
+lives in `blog/index.qmd`'s `title:`, and the navbar item stays "Blog".
 
 ### URLs and the GitHub Pages precedence trap
 
-Posts are served under `/blog/`: `blog/math/ln-series.qmd` renders to
-`apurvanakade.github.io/blog/math/ln-series.html`. Earlier layouts
-(`/math-blog/...`, `/blog/posts/maths/...`, `/blog/posts/math/...`) were
+Posts are served directly under `/blog/`: `blog/ln-series.qmd` renders to
+`apurvanakade.github.io/blog/ln-series.html`. Earlier layouts
+(`/math-blog/...`, `/blog/posts/maths/...`, `/blog/posts/math/...`,
+`/blog/math/...`, `/blog/scribbles/...`) were
 renamed without redirects (§8), so those URLs 404. Renaming a directory or post
 again would break every link shared since, so leave the names alone.
 
@@ -577,23 +575,26 @@ that one is harmless either way.
 Post history lives only there — the content came across as a file copy, so
 `git log` on a post in this repo starts at the merge.
 
-It also holds one post with no counterpart here: `posts/scribbles/begin-again` (its old path there),
+It also holds one post with no counterpart here: `posts/scribbles/begin-again` (its path there),
 whose source was deleted but whose rendered HTML is still in that repo's `docs/`.
 Recover it from there if it is ever wanted.
 
 ### Structure
 
-Each section directory (`blog/math/`, `blog/scribbles/`) holds its listing
-page, `index.qmd`, and its posts side by side. All images, for both sections
-and the drafts, live in one flat `blog/images/`, referenced as
-`../images/foo.png` from a post or a draft.
+The blog is flat: every post is `blog/<post>.qmd`, beside the one listing,
+`blog/index.qmd`. There are no sections; a post's subject is carried by its
+`categories:`, which the listing's rail filters on. All images, for posts and
+drafts, live in one flat `blog/images/`, referenced as `images/foo.png` from a
+post and `../images/foo.png` from a draft.
 
-`blog/{math,scribbles}/_metadata.yml` attaches the back-link include and the
-giscus config to everything in the section, `index.qmd` included. The index
-therefore sets `comments: false`, and `body-classes: section-index`, which
-`base.scss` uses to hide the inherited `.post-backlink--post` (Quarto
-concatenates `include-before-body` lists, so the index cannot replace it; it
-keeps its own link to the blog home). The listings exclude `index.qmd`. `blog/_metadata.yml` sets `echo: false` for the whole subtree.
+`blog/_metadata.yml` sets `echo: false`, the back-link include
+(`blog/_includes/back-to-blog.html`) and the giscus config for the whole
+subtree, `index.qmd` and drafts included. The back-link's `href` is the
+root-relative `/blog/`, so the one include is right from a draft one folder
+down too; Quarto rewrites it to a relative path. The index therefore sets
+`comments: false`, and `body-classes: blog-index`, which `base.scss` uses to
+hide the inherited `.post-backlink` (Quarto concatenates `include-before-body`
+lists, so a page cannot replace an inherited include, only hide it).
 
 ### mathviz
 
@@ -633,11 +634,12 @@ date: 2025-05-12
 weight: 1                 # 0 = never drawn for the home page's random pick
 author: Apurva Nakade
 categories: [randomness, triangles]
-image: "../images/random-points-triangle.png"
+image: "images/random-points-triangle.png"
 ---
 ```
 
-A scribbles post's cover is a public-domain image (a painting, engraving,
+An essay's cover (a post about teaching, learning or the like, rather than a
+piece of mathematics) is a public-domain image (a painting, engraving,
 photo or logo from Wikimedia Commons, saved to `blog/images/`), never
 AI-generated art. It is also shown in the post as a captioned figure, after
 the first paragraph rather than above it, at
@@ -663,8 +665,8 @@ the same mechanism as projects, now reading straight off disk.
 ### Comments
 
 Posts carry a [giscus](https://giscus.app) comment box, set by the
-`comments:` key in `blog/math/_metadata.yml` and
-`blog/scribbles/_metadata.yml`. It is there and nowhere else, by
+`comments:` key in `blog/_metadata.yml`, and switched off again by
+`blog/index.qmd` and `blog/drafts/_metadata.yml`. It is on posts and nowhere else, by
 Apurva's choice: not on listing pages, drafts, projects, courses or the
 personal pages (CV, portfolio, references, rec letters). Threads are GitHub
 Discussions on this repo, in the **Announcements** category, whose
@@ -682,7 +684,10 @@ of `docs/` matches pages without comments.
 ### Drafts
 
 `blog/drafts/*.qmd` render and publish but appear in no listing. That was
-true of the standalone blog too and was preserved deliberately. They are
+true of the standalone blog too and was preserved deliberately. Quarto's
+listing glob `*.qmd` also matches files in subfolders, so `blog/index.qmd`
+excludes `drafts/**` explicitly. A draft with `draft: true` in its frontmatter
+is published as an empty page instead (Quarto's default draft mode). They are
 reachable by anyone with the URL — treat them as public.
 
 ## 7. Theme
@@ -769,8 +774,8 @@ There are none, by Apurva's choice. Pages that moved in the 2026
 reorganisation (`notes.html`, `rec letters.html`, `teaching statement.html`,
 `teaching-statement.html`, every post under `/math-blog/`, now under
 `/blog/`, everything under `/blog/maths/` and `/blog/posts/maths/`, and every
-post under `/blog/posts/`, now directly under `/blog/math/` or
-`/blog/scribbles/`) now 404 at their old addresses. Do not add a redirect
+post under `/blog/posts/`, `/blog/math/` or `/blog/scribbles/`, now directly
+under `/blog/`) now 404 at their old addresses. Do not add a redirect
 mechanism back unless asked. A page moved from here on breaks its
 old links, so prefer keeping URLs stable.
 

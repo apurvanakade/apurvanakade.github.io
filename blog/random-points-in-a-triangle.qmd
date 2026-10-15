@@ -5,7 +5,7 @@ author: Apurva Nakade
 date: 2025-05-12
 weight: 1
 categories: [randomness, triangles]
-image: "../images/random-points-triangle.png"
+image: "images/random-points-triangle.png"
 ---
 
 Randomness is a surprisingly hard thing to simulate. Any program, by definition, has a predictable output. The best you can hope for is to predictably generate points that *look* random (pseudo-random) and fool some statistical tests. All random generation relies on two things:
