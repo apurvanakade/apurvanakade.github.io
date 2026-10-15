@@ -1,12 +1,12 @@
 ---
-title: (Math) Blog
+title: 'Sh\*tty First Drafts'
 page-layout: full
-description: This is a place for me to write about [mathematics](math/index.qmd) and [education](scribbles/index.qmd). 
+description: This is a place for me to write about mathematics and education.
 listing: 
   contents:
-    - "math/*.qmd"
-    - "scribbles/*.qmd"
-    - "!**/index.qmd"
+    - "*.qmd"
+    - "!index.qmd"
+    - "!drafts/**"
   sort: "date desc"
   type: grid
   grid-columns: 3
@@ -16,4 +16,6 @@ listing:
   filter-ui: false
   image-height: 250px
 title-block-banner: true
+comments: false
+body-classes: blog-index
 ---
