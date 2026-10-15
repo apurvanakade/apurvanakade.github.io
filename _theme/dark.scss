@@ -1,38 +1,11 @@
-/* AI-owned: dark palette. See CLAUDE.md. */
-
-/*-- scss:defaults --*/
-
-$ink:        #e6e4de;
-$muted:      #9aa2ac;
-$accent:     #63c3cf;
-$accent-alt: #e0a06a;
-$paper:      #16181b;
-$surface:    #1e2125;
-$rule:       #32363b;
-
-$body-bg:        $paper !default;
-$body-color:     $ink !default;
-$link-color:     $accent !default;
-$primary:        $accent !default;
-$secondary:      $muted !default;
-$navbar-bg:      $paper !default;
-$navbar-fg:      $ink !default;
-$code-color:     $accent-alt !default;
-$table-border-color: $rule !default;
+/* AI-owned: dark-scheme extras. The palette itself is mathviz's
+   (mathviz-dark.scss, listed first in _quarto.yml). See CLAUDE.md §7. */
 
 /*-- scss:rules --*/
 
-:root {
-  --site-ink:      #{$ink};
-  --site-muted:    #{$muted};
-  --site-accent:   #{$accent};
-  --site-rule:     #{$rule};
-  --site-surface:  #{$surface};
-  --site-shadow:   rgba(0, 0, 0, 0.45);
-  --site-thumb-bg: #24272b;
-}
-
-.navbar { background-color: rgba(22, 24, 27, 0.92) !important; backdrop-filter: saturate(150%) blur(8px); }
+// mathviz's --vm-shadow is a whole box-shadow; the card hover lift needs a
+// bare colour.
+:root { --site-shadow: rgba(0, 0, 0, 0.45); }
 
 // keep white-background SVG/PNG math figures legible on a dark page
 main img[src$=".svg"], main img[src$=".png"], main img[src$=".gif"] {

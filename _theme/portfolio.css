@@ -1,7 +1,7 @@
 /* AI-owned: styles for teaching-portfolio.html only. See CLAUDE.md §4.
    Attached to that one page by _filters/portfolio.lua (an HTML dependency),
-   so none of these rules reach any other page. Colours come from the --site-*
-   palette in _theme/light.scss / dark.scss, plus the institution colours in _theme/base.scss. */
+   so none of these rules reach any other page. Colours come from mathviz's --vm-*
+   tokens, plus the institution colours in _theme/base.scss. */
 
 /* These classes sit on course headings, and Pandoc's section-divs copies
    them onto the wrapping <section>. They therefore set custom properties
@@ -9,7 +9,7 @@
 .portfolio-inst-jhu   { --inst: var(--inst-jhu);   --chip-bg: var(--chip-jhu-bg); --chip-fg: var(--chip-jhu-fg); }
 .portfolio-inst-nw    { --inst: var(--inst-nw);    --chip-bg: var(--chip-nw-bg);  --chip-fg: var(--chip-nw-fg); }
 .portfolio-inst-uwo   { --inst: var(--inst-uwo);   --chip-bg: var(--chip-uwo-bg); --chip-fg: var(--chip-uwo-fg); }
-.portfolio-inst-other { --inst: var(--inst-other); --chip-bg: var(--site-muted);  --chip-fg: var(--site-surface); }
+.portfolio-inst-other { --inst: var(--inst-other); --chip-bg: var(--vm-text-soft);  --chip-fg: var(--vm-bg); }
 
 /* ------------------------------------------------------------ summary band */
 .portfolio-stats {
@@ -19,9 +19,9 @@
   margin: 0.5rem 0 2.5rem;
 }
 .portfolio-stat {
-  background: var(--site-surface);
-  border: 1px solid var(--site-rule);
-  border-top: 3px solid var(--site-accent);
+  background: var(--vm-bg);
+  border: 1px solid var(--vm-border);
+  border-top: 3px solid var(--vm-accent);
   border-radius: 8px;
   padding: 0.8rem 0.9rem 0.75rem;
   display: flex;
@@ -33,10 +33,10 @@
   font-weight: 300;
   letter-spacing: -0.02em;
   line-height: 1.1;
-  color: var(--site-ink);
+  color: var(--vm-text);
   font-variant-numeric: tabular-nums;
 }
-.portfolio-stat__label { font-size: 0.8rem; line-height: 1.3; color: var(--site-muted); }
+.portfolio-stat__label { font-size: 0.8rem; line-height: 1.3; color: var(--vm-text-soft); }
 
 /* ----------------------------------------------------- philosophy tiles */
 .portfolio-tiles {
@@ -46,8 +46,8 @@
   margin: 1.25rem 0 1.5rem;
 }
 .portfolio-tile {
-  background: var(--site-surface);
-  border: 1px solid var(--site-rule);
+  background: var(--vm-bg);
+  border: 1px solid var(--vm-border);
   border-radius: 8px;
   padding: 0.85rem 0.9rem;
 }
@@ -57,22 +57,22 @@
   width: 2.1rem; height: 2.1rem;
   border-radius: 50%;
   font-size: 1.05rem;
-  color: var(--site-accent);
-  background: color-mix(in srgb, var(--site-accent) 12%, transparent);
+  color: var(--vm-accent);
+  background: color-mix(in srgb, var(--vm-accent) 12%, transparent);
   margin-bottom: 0.55rem;
 }
 .portfolio-tile__label { font-weight: 600; font-size: 0.92rem; line-height: 1.3; margin-bottom: 0.25rem; }
-.portfolio-tile__desc { font-size: 0.84rem; line-height: 1.45; color: var(--site-muted); }
+.portfolio-tile__desc { font-size: 0.84rem; line-height: 1.45; color: var(--vm-text-soft); }
 .portfolio-tile p { margin: 0; }
 
 /* ----------------------------------------------------------- rating chart */
 .portfolio-chart { margin: 0.75rem 0 2.25rem; }
-.portfolio-chart figcaption { font-size: 0.82rem; color: var(--site-muted); margin-top: 0.35rem; }
+.portfolio-chart figcaption { font-size: 0.82rem; color: var(--vm-text-soft); margin-top: 0.35rem; }
 .portfolio-chart__plot { width: 100%; height: auto; display: block; overflow: visible; }
 .portfolio-chart__plot .portfolio-chart__band { fill: var(--inst); opacity: 0.08; }
-.portfolio-chart__plot .portfolio-chart__band-label { font-size: 12px; fill: var(--site-muted); }
-.portfolio-chart__plot .portfolio-chart__grid { stroke: var(--site-rule); stroke-width: 1; }
-.portfolio-chart__plot .portfolio-chart__tick { font-size: 11px; fill: var(--site-muted); font-variant-numeric: tabular-nums; }
+.portfolio-chart__plot .portfolio-chart__band-label { font-size: 12px; fill: var(--vm-text-soft); }
+.portfolio-chart__plot .portfolio-chart__grid { stroke: var(--vm-border); stroke-width: 1; }
+.portfolio-chart__plot .portfolio-chart__tick { font-size: 11px; fill: var(--vm-text-soft); font-variant-numeric: tabular-nums; }
 .portfolio-chart__plot .portfolio-chart__mark {
   fill: var(--inst);
   stroke: var(--bs-body-bg);
@@ -102,7 +102,7 @@ h3.portfolio-course .portfolio-course__badge {
 h3.portfolio-course .portfolio-course__code {
   font-size: 0.8rem;
   font-weight: 400;
-  color: var(--site-muted);
+  color: var(--vm-text-soft);
   font-variant-numeric: tabular-nums;
 }
 /* The table of contents shows course names only. Pandoc copies a heading's
@@ -122,7 +122,7 @@ h3.portfolio-course .portfolio-course__code {
   padding-bottom: 4px;
   background:
     linear-gradient(var(--inst), var(--inst)) left bottom / var(--pct) 3px no-repeat,
-    linear-gradient(var(--site-rule), var(--site-rule)) left bottom / 100% 3px no-repeat;
+    linear-gradient(var(--vm-border), var(--vm-border)) left bottom / 100% 3px no-repeat;
 }
 
 /* ---------------------------------------------------- project link cards */
@@ -133,8 +133,8 @@ h3.portfolio-course .portfolio-course__code {
   margin: 0.25rem 0 1.25rem;
   padding: 0.55rem;
   max-width: 32rem;
-  background: var(--site-surface);
-  border: 1px solid var(--site-rule);
+  background: var(--vm-bg);
+  border: 1px solid var(--vm-border);
   border-radius: 8px;
   color: inherit;
   text-decoration: none;
@@ -146,20 +146,20 @@ h3.portfolio-course .portfolio-course__code {
   width: 6.5rem; height: 4.3rem;
   object-fit: cover;
   border-radius: 5px;
-  background: var(--site-thumb-bg);
+  background: var(--vm-surface);
 }
 .portfolio-project__body { display: flex; flex-direction: column; min-width: 0; }
-.portfolio-project__eyebrow { font-size: 0.72rem; color: var(--site-muted); }
+.portfolio-project__eyebrow { font-size: 0.72rem; color: var(--vm-text-soft); }
 .portfolio-project__title { font-weight: 600; font-size: 0.95rem; line-height: 1.3; }
-.portfolio-project:hover .portfolio-project__title { color: var(--site-accent); }
-.portfolio-project__desc { font-size: 0.82rem; line-height: 1.4; color: var(--site-muted); }
+.portfolio-project:hover .portfolio-project__title { color: var(--vm-accent); }
+.portfolio-project__desc { font-size: 0.82rem; line-height: 1.4; color: var(--vm-text-soft); }
 
 /* -------------------------------------------------------- sample materials */
 .portfolio-materials { display: flex; flex-direction: column; gap: 0.7rem; margin: 0.4rem 0 1.25rem; }
 .portfolio-material { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.3rem 0.8rem; }
 .portfolio-material p { margin: 0; }
 .portfolio-material .project-link { display: inline-block; white-space: nowrap; }
-.portfolio-material__desc { flex: 1 1 16rem; font-size: 0.88rem; color: var(--site-muted); }
+.portfolio-material__desc { flex: 1 1 16rem; font-size: 0.88rem; color: var(--vm-text-soft); }
 
 /* ----------------------------------------------------------- quote cards */
 .portfolio-quotes { columns: 2 18rem; column-gap: 0.9rem; margin: 0.4rem 0 1.5rem; }
@@ -168,9 +168,9 @@ h3.portfolio-course .portfolio-course__code {
   position: relative;
   margin: 0 0 0.9rem;
   padding: 0.85rem 1rem 0.75rem 2.4rem;
-  background: var(--site-surface);
-  border: 1px solid var(--site-rule);
-  border-left: 3px solid var(--inst, var(--site-accent));
+  background: var(--vm-bg);
+  border: 1px solid var(--vm-border);
+  border-left: 3px solid var(--inst, var(--vm-accent));
   border-radius: 6px;
   font-size: 0.92rem;
   line-height: 1.55;
@@ -182,11 +182,11 @@ h3.portfolio-course .portfolio-course__code {
   font-size: 2.4rem;
   line-height: 1;
   font-weight: 600;
-  color: var(--inst, var(--site-accent));
+  color: var(--inst, var(--vm-accent));
   opacity: 0.55;
 }
 .portfolio-quote p { margin: 0; }
-.portfolio-quote__term { margin-top: 0.4rem; font-size: 0.76rem; color: var(--site-muted); }
+.portfolio-quote__term { margin-top: 0.4rem; font-size: 0.76rem; color: var(--vm-text-soft); }
 
 @media (max-width: 575px) {
   .portfolio-stats { grid-template-columns: 1fr 1fr; }
@@ -205,11 +205,11 @@ h3.portfolio-course .portfolio-course__code {
   padding: 0.4rem 0.6rem;
   font-size: 0.8rem;
   line-height: 1.35;
-  color: var(--site-ink);
-  background: var(--site-surface);
-  border: 1px solid var(--site-rule);
+  color: var(--vm-text);
+  background: var(--vm-bg);
+  border: 1px solid var(--vm-border);
   border-radius: 6px;
   box-shadow: 0 4px 14px var(--site-shadow);
 }
 .portfolio-chart__tip[hidden] { display: none; }
-.portfolio-chart__tip span { color: var(--site-muted); font-variant-numeric: tabular-nums; }
+.portfolio-chart__tip span { color: var(--vm-text-soft); font-variant-numeric: tabular-nums; }
