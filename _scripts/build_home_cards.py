@@ -6,7 +6,7 @@ Emits two sections for the home page:
   1. "Featured" -- two *fixed* project cards, named in PINNED below. These never
      change and involve no JavaScript.
   2. "A random pick" -- two cards drawn at random on each page load, one from
-     projects/*.qmd and one from blog/posts/**/*.qmd, with probability
+     projects/*.qmd and one from blog/{math,scribbles}/*.qmd, with probability
      proportional to each file's `weight:`.
 
 The pinned projects are excluded from the random project pool, so the same
@@ -45,7 +45,7 @@ import urllib.parse
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 PROJECTS = ROOT / "projects"
-BLOG_POSTS = ROOT / "blog" / "posts"
+BLOG_SECTIONS = [ROOT / "blog" / "math", ROOT / "blog" / "scribbles"]
 OUT = ROOT / "_includes" / "home-cards.html"
 
 BLOG_INDEX = "blog/"
@@ -125,8 +125,8 @@ def collect_posts():
     """Blog posts, newest-looking metadata first. Images in post frontmatter are
     written relative to the post file; rewrite them relative to the site root."""
     items, skipped = [], []
-    for path in sorted(BLOG_POSTS.rglob("*.qmd")):
-        if path.name.startswith("_"):
+    for path in sorted(p for d in BLOG_SECTIONS for p in d.glob("*.qmd")):
+        if path.name.startswith("_") or path.name == "index.qmd":
             continue
         fm = parse_frontmatter(path)
         if not fm or "title" not in fm:

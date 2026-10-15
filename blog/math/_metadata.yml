@@ -1,4 +1,4 @@
-include-before-body: ../../_includes/back-to-scribbles.html
+include-before-body: ../_includes/back-to-math.html
 # Comment threads live in the repo's GitHub Discussions (category
 # Announcements, so only giscus opens threads), one per post URL. See CLAUDE.md §6.
 comments:

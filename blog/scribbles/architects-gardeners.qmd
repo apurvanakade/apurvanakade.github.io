@@ -5,12 +5,12 @@ date: 2025-07-17
 weight: 1
 author: Apurva Nakade
 categories: ['philosophy', 'teaching']
-image: "../../images/komyoji-rock-garden.jpg"
+image: "../images/komyoji-rock-garden.jpg"
 ---
 
 > “I think there are two types of writers, the architects and the gardeners. The architects plan everything ahead of time, like an architect building a house. They know how many rooms are going to be in the house, what kind of roof they're going to have, where the wires are going to run, what kind of plumbing there's going to be. They have the whole thing designed and blueprinted out before they even nail the first board up. The gardeners dig a hole, drop in a seed and water it. They kind of know what seed it is, they know if planted a fantasy seed or mystery seed or whatever. But as the plant comes up and they water it, they don't know how many branches it's going to have, they find out as it grows. And I'm much more a gardener than an architect.” -- *George R.R. Martin*
 
-![The rock garden at Kōmyō-ji, Kamakura ([public domain](https://commons.wikimedia.org/wiki/File:Komyoji_Rock_Garden.jpg))](../../images/komyoji-rock-garden.jpg){width="85%" fig-align="center" fig-alt="A Japanese dry garden: white gravel raked into waves flowing around standing rocks and clipped green hedges."}
+![The rock garden at Kōmyō-ji, Kamakura ([public domain](https://commons.wikimedia.org/wiki/File:Komyoji_Rock_Garden.jpg))](../images/komyoji-rock-garden.jpg){width="85%" fig-align="center" fig-alt="A Japanese dry garden: white gravel raked into waves flowing around standing rocks and clipped green hedges."}
 
 
 I think about this George R.R. Martin quote every time I do course planning. He might have been talking about writing, but I think this is an excellent paradigm for almost everything in life.

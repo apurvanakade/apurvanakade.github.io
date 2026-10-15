@@ -53,11 +53,11 @@ The single most important convention in this repo is a hard split between files
 | `projects/index.qmd` | `_filters/*.lua` |
 | `CV.qmd`, `cv/*.qmd` | `_includes/*.html`, `_includes/*.ejs` |
 | `blog/index.qmd`, `blog/*/index.qmd` | `_scripts/*.py` |
-| `blog/posts/**/*.qmd` | `cv/preamble.tex` |
+| `blog/{math,scribbles}/*.qmd` | `cv/preamble.tex` |
 | `blog/drafts/*.qmd` | `projects/_metadata.yml` |
 | `styles.css` (personal CSS overrides) | `blog/_metadata.yml` |
 | | `blog/_includes/*.html` |
-| | `blog/posts/*/_metadata.yml` |
+| | `blog/{math,scribbles}/_metadata.yml` |
 | | `CLAUDE.md`, `.claude/**` |
 
 `_extensions/apurvanakade/mathviz/` belongs to neither column: it is an
@@ -197,9 +197,9 @@ projects/index.qmd              grid listing, filter + category UI
 projects/<slug>.qmd             one project per file
 blog/index.qmd                  all posts, grid listing
 blog/math/index.qmd             math section listing
+blog/math/<post>.qmd            the section's posts, beside its listing
 blog/scribbles/index.qmd        scribbles section listing
-blog/posts/math/*.qmd           the posts themselves
-blog/posts/scribbles/*.qmd
+blog/scribbles/<post>.qmd
 blog/drafts/*.qmd               rendered and published, but not listed anywhere
 blog/images/                    every post's and draft's images, one flat folder
 CV.qmd                          assembles cv/*.qmd; renders to HTML *and* PDF
@@ -521,13 +521,12 @@ which is now inert — they are pinned. These are a starting point — Apurva tu
 them.
 
 **Blog posts use the identical mechanism.** The script scans `projects/*.qmd`
-*and* `blog/posts/**/*.qmd`, drops everything at weight 0, and embeds both
+*and* `blog/{math,scribbles}/*.qmd`, drops everything at weight 0, and embeds both
 lists as JSON. The highest-weighted item of each kind is baked into the HTML as
 the no-JavaScript fallback. A non-numeric weight logs a warning and falls back to
 1; a negative one is clamped to 0.
 
-Post filenames contain spaces, so hrefs and image paths are percent-encoded by
-the generator. Post `image:` paths are frontmatter-relative and get rewritten
+Hrefs and image paths are percent-encoded by the generator, in case a filename ever contains a space. Post `image:` paths are frontmatter-relative and get rewritten
 relative to the site root.
 
 The cards read from disk and make **no network request** — no fetch, no
@@ -559,12 +558,11 @@ which still exists as a read-only archive (see below).
 
 ### URLs and the GitHub Pages precedence trap
 
-Posts are served under `/blog/`: `blog/posts/math/ln series.qmd` renders
-to `apurvanakade.github.io/blog/posts/math/ln%20series.html`. The directory
-used to be `math-blog/`, and the math section `maths/`; both were renamed
-without redirects (§8), so the old `/math-blog/...` and `/blog/posts/maths/...`
-URLs 404. Renaming either again would break every link shared since, so leave
-the names alone.
+Posts are served under `/blog/`: `blog/math/ln-series.qmd` renders to
+`apurvanakade.github.io/blog/math/ln-series.html`. Earlier layouts
+(`/math-blog/...`, `/blog/posts/maths/...`, `/blog/posts/math/...`) were
+renamed without redirects (§8), so those URLs 404. Renaming a directory or post
+again would break every link shared since, so leave the names alone.
 
 GitHub serves a project site (a repo named `blog` with Pages on) at
 `apurvanakade.github.io/blog/`, and a project site takes precedence over a
@@ -579,21 +577,23 @@ that one is harmless either way.
 Post history lives only there — the content came across as a file copy, so
 `git log` on a post in this repo starts at the merge.
 
-It also holds one post with no counterpart here: `posts/scribbles/begin-again`,
+It also holds one post with no counterpart here: `posts/scribbles/begin-again` (its old path there),
 whose source was deleted but whose rendered HTML is still in that repo's `docs/`.
 Recover it from there if it is ever wanted.
 
 ### Structure
 
-Section landing pages (`blog/math/index.qmd`, `blog/scribbles/index.qmd`)
-are separate from the posts (`blog/posts/math/*.qmd`,
-`blog/posts/scribbles/*.qmd`), a layout inherited from the standalone blog.
-All images, for both sections and the drafts, live in one flat
-`blog/images/`, referenced from a post as `../../images/foo.png` and from a
-draft as `../images/foo.png`.
+Each section directory (`blog/math/`, `blog/scribbles/`) holds its listing
+page, `index.qmd`, and its posts side by side. All images, for both sections
+and the drafts, live in one flat `blog/images/`, referenced as
+`../images/foo.png` from a post or a draft.
 
-`blog/posts/*/_metadata.yml` attaches the back-link include for each
-subtree. `blog/_metadata.yml` sets `echo: false` for the whole subtree.
+`blog/{math,scribbles}/_metadata.yml` attaches the back-link include and the
+giscus config to everything in the section, `index.qmd` included. The index
+therefore sets `comments: false`, and `body-classes: section-index`, which
+`base.scss` uses to hide the inherited `.post-backlink--post` (Quarto
+concatenates `include-before-body` lists, so the index cannot replace it; it
+keeps its own link to the blog home). The listings exclude `index.qmd`. `blog/_metadata.yml` sets `echo: false` for the whole subtree.
 
 ### mathviz
 
@@ -633,7 +633,7 @@ date: 2025-05-12
 weight: 1                 # 0 = never drawn for the home page's random pick
 author: Apurva Nakade
 categories: [randomness, triangles]
-image: "../../images/random-points-triangle.png"
+image: "../images/random-points-triangle.png"
 ---
 ```
 
@@ -663,8 +663,8 @@ the same mechanism as projects, now reading straight off disk.
 ### Comments
 
 Posts carry a [giscus](https://giscus.app) comment box, set by the
-`comments:` key in `blog/posts/math/_metadata.yml` and
-`blog/posts/scribbles/_metadata.yml`. It is there and nowhere else, by
+`comments:` key in `blog/math/_metadata.yml` and
+`blog/scribbles/_metadata.yml`. It is there and nowhere else, by
 Apurva's choice: not on listing pages, drafts, projects, courses or the
 personal pages (CV, portfolio, references, rec letters). Threads are GitHub
 Discussions on this repo, in the **Announcements** category, whose
@@ -768,8 +768,9 @@ Layered over Bootstrap bases in `_quarto.yml`:
 There are none, by Apurva's choice. Pages that moved in the 2026
 reorganisation (`notes.html`, `rec letters.html`, `teaching statement.html`,
 `teaching-statement.html`, every post under `/math-blog/`, now under
-`/blog/`, and everything under `/blog/maths/` and `/blog/posts/maths/`, now
-under `.../math/`) now 404 at their old addresses. Do not add a redirect
+`/blog/`, everything under `/blog/maths/` and `/blog/posts/maths/`, and every
+post under `/blog/posts/`, now directly under `/blog/math/` or
+`/blog/scribbles/`) now 404 at their old addresses. Do not add a redirect
 mechanism back unless asked. A page moved from here on breaks its
 old links, so prefer keeping URLs stable.
 

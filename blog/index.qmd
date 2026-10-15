@@ -3,7 +3,10 @@ title: (Math) Blog
 page-layout: full
 description: This is a place for me to write about [mathematics](math/index.qmd) and [education](scribbles/index.qmd). 
 listing: 
-  contents: "posts/**/*.qmd"
+  contents:
+    - "math/*.qmd"
+    - "scribbles/*.qmd"
+    - "!**/index.qmd"
   sort: "date desc"
   type: grid
   grid-columns: 3
