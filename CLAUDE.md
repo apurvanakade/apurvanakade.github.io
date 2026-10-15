@@ -708,7 +708,10 @@ moved into mathviz's `src/css/tokens.css` so every mathviz site shares it. A
 new mathviz release re-colours this site on the next render. There is no Bootswatch base
 (cosmo/cyborg used to sit under the theme), so a Bootstrap component whose
 default fill is light in both schemes needs a `--vm-*` rule in `base.scss`,
-as `.input-group-text` (the listing's sort and filter boxes) has.
+as `.input-group-text` (the listing's sort and filter boxes) has. mathviz's
+theme also sets a few Bootstrap variables without `!default`
+(`$border-radius`, 8px; `$code-color`, the muted text colour), so a
+`!default` in `base.scss` cannot change them; change them upstream.
 
 - **One typeface throughout: Inter** (variable, with its optical-size axis) for
   prose, headings, navbar and UI alike; **JetBrains Mono** for code. Both load
