@@ -5,7 +5,7 @@ date: 2024-06-08 12:33:01
 weight: 1
 categories:
   - abstract algebra
-image: "../../images/pythagoras-hilbert90-equation.svg"
+image: "../images/pythagoras-hilbert90-equation.svg"
 author: Apurva Nakade
 ---
 

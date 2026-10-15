@@ -6,12 +6,12 @@ weight: 1
 categories:
   - AI
 author: Apurva Nakade
-image: "../../images/mathocalypse.jpg"
+image: "../images/mathocalypse.jpg"
 ---
 
 The title of this post comes from [Scott Aaronson's blog](https://scottaaronson.blog/?p=10169), and it describes the state of math today quite accurately. OpenAI's recent results have, once and for all, dethroned humans as the most intelligent entities, at least in the arena of mathematics.
 
-![*The Sea of Ice*, Caspar David Friedrich ([public domain](https://commons.wikimedia.org/wiki/File:Caspar_David_Friedrich_-_Das_Eismeer_-_Hamburger_Kunsthalle.jpg))](../../images/mathocalypse.jpg){width="85%" fig-align="center" fig-alt="Slabs of broken ice piled up in a frozen sea, with the wreck of a ship crushed beneath them."}
+![*The Sea of Ice*, Caspar David Friedrich ([public domain](https://commons.wikimedia.org/wiki/File:Caspar_David_Friedrich_-_Das_Eismeer_-_Hamburger_Kunsthalle.jpg))](../images/mathocalypse.jpg){width="85%" fig-align="center" fig-alt="Slabs of broken ice piled up in a frozen sea, with the wreck of a ship crushed beneath them."}
 
 Kevin Buzzard rightly [points out](https://xenaproject.wordpress.com/2026/10/01/to-grieve-or-not-to-grieve/) that this is a time to grieve the end of math as we know it. But that is not necessarily a bad thing. Change is the only constant in life - [impermanence](https://en.wikipedia.org/wiki/Impermanence_(Buddhism)) - and it has finally come for the math community too. The old makes way for the new.
 

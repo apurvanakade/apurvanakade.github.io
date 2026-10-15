@@ -8,7 +8,7 @@ categories:
   - infinite series
   - number theory
   - riemann zeta
-image: "../../images/ln-series-equation.svg"
+image: "../images/ln-series-equation.svg"
 author: Apurva Nakade
 ---
 

@@ -547,6 +547,9 @@ main .table > tbody > tr:has(.course-row--break) > td {
   font-size: 0.9rem;
   margin-bottom: 1.75rem;
 }
+// A section index inherits its posts' back-link from the directory metadata; it
+// carries body-classes: section-index and has its own link to the blog home.
+.section-index .post-backlink--post { display: none; }
 .post-backlink a { color: var(--site-muted); text-decoration: none; }
 .post-backlink a:hover { color: var(--site-accent); }
 
