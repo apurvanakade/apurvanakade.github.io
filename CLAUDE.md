@@ -702,8 +702,10 @@ Layered over mathviz's Quarto theme in `_quarto.yml`:
 (the first is `_extensions/apurvanakade/mathviz/theme/mathviz-*.scss`).
 **The palette is mathviz's, not this site's**, because Apurva publishes posts
 on several mathviz sites (Monte-Carlo-Methods, Visual Math Lab) and keeping a
-second colour scheme in step was a maintenance burden. A new mathviz release
-re-colours this site on the next render. There is no Bootswatch base
+second colour scheme in step was a maintenance burden. It is this site's
+original palette (warm neutrals, deep teal accent, charcoal dark theme),
+moved into mathviz's `src/css/tokens.css` so every mathviz site shares it. A
+new mathviz release re-colours this site on the next render. There is no Bootswatch base
 (cosmo/cyborg used to sit under the theme), so a Bootstrap component whose
 default fill is light in both schemes needs a `--vm-*` rule in `base.scss`,
 as `.input-group-text` (the listing's sort and filter boxes) has.
@@ -743,7 +745,8 @@ as `.input-group-text` (the listing's sort and filter boxes) has.
   colours: `--chip-*` (badges, chips) JHU Heritage Blue and Northwestern
   Purple, `--inst-*` (marks) JHU Spirit Blue and Northwestern Purple (Purple
   30 in dark mode). Western is **orange**, not its own purple: Western Purple
-  `#4F2683` is indistinguishable from Northwestern Purple `#4E2A84`. Every use also names the
+  `#4F2683` is indistinguishable from Northwestern Purple `#4E2A84`, and teal
+  is ruled out because it is the accent. Every use also names the
   institution in text or shape.
 - **One rule for every embed.** `main iframe` in `base.scss` makes any
   `<iframe>` 85% of the column and centred, matching a post's inset opening
