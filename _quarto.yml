@@ -5,7 +5,7 @@ project:
     - "*.qmd"
     - "projects/*.qmd"
     - "blog/**/*.qmd"
-    - "courses/**/*.qmd"
+    - "courses/*.qmd"
     - "!cv/"
   resources:
     # Course-card covers, referenced only from the course index's listing

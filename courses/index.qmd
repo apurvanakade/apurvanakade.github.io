@@ -3,7 +3,7 @@ title: "Course Pages"
 description: "Public copies of the course websites for courses I have taught at Johns Hopkins."
 toc: false
 listing:
-  contents: "*/index.qmd"
+  contents: "*.qmd"
   template: ../_includes/course-cards.ejs
   sort: "date desc"
   sort-ui: false

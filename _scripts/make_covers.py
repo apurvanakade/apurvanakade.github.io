@@ -404,7 +404,7 @@ def bell_curve():
 
 # ---------------------------------------------------------------------------
 # Course covers, for the course-page cards on courses/index (one per
-# courses/<slug>/; the listing template finds images/courses/<slug>.svg).
+# courses/<slug>.qmd; the listing template finds images/courses/<slug>.svg).
 # ---------------------------------------------------------------------------
 
 def pascal_mod2():

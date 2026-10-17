@@ -56,7 +56,7 @@ I teach in the Department of Applied Mathematics & Statistics at Johns Hopkins, 
 
 ##### Sample materials
 
-- [Course page, Fall 2026](https://apurvanakade.github.io/courses/discrete-math/): syllabus, weekly schedule, lecture notes, and [exam guides](https://apurvanakade.github.io/courses/discrete-math/exams.html) with topics, study advice and grading criteria
+- [Course page, Fall 2026](https://apurvanakade.github.io/courses/discrete-math.html): syllabus, weekly schedule, lecture notes, and [exam guides](https://apurvanakade.github.io/courses/discrete-math.html#what-each-exam-covers) with topics, study advice and grading criteria
 
 ##### 2025
 
@@ -88,8 +88,8 @@ I teach in the Department of Applied Mathematics & Statistics at Johns Hopkins, 
 
 ##### Sample materials
 
-- [Course page, Spring 2026](https://apurvanakade.github.io/courses/monte-carlo/): syllabus, course notes and course outline
-- [Final project](https://apurvanakade.github.io/courses/monte-carlo/project.html): guidelines, rubrics, project ideas and past student project titles. Spring 2025 projects ranged from Hamiltonian Monte Carlo and adaptive rejection sampling to approximating PageRank and testing the randomness of LLM-generated numbers.
+- [Course page, Spring 2026](https://apurvanakade.github.io/courses/monte-carlo.html): syllabus, course notes and course outline
+- [Final project](https://apurvanakade.github.io/courses/monte-carlo.html#final-project): guidelines, rubrics, project ideas and past student project titles. Spring 2025 projects ranged from Hamiltonian Monte Carlo and adaptive rejection sampling to approximating PageRank and testing the randomness of LLM-generated numbers.
 
 ##### 2025
 
@@ -118,8 +118,8 @@ I teach in the Department of Applied Mathematics & Statistics at Johns Hopkins, 
 
 ##### Sample materials
 
-- [Course page, Spring 2026](https://apurvanakade.github.io/courses/computational-math/): syllabus, class notes and course outline
-- [Final project](https://apurvanakade.github.io/courses/computational-math/project.html): guidelines, rubrics and project ideas
+- [Course page, Spring 2026](https://apurvanakade.github.io/courses/computational-math.html): syllabus, class notes and course outline
+- [Final project](https://apurvanakade.github.io/courses/computational-math.html#final-project): guidelines, rubrics and project ideas
 
 ##### Selected student comments
 
@@ -149,8 +149,8 @@ I teach in the Department of Applied Mathematics & Statistics at Johns Hopkins, 
 
 ##### Sample materials
 
-- [Course page, Summer 2026](https://apurvanakade.github.io/courses/foundational-math-ai/): daily outline, class notes and interactive tools used in class
-- [Course project](https://apurvanakade.github.io/courses/foundational-math-ai/project.html): the three-part data analysis project. Summer 2025 groups estimated obesity levels, predicted strokes and student dropout, and analyzed college basketball statistics.
+- [Course page, Summer 2026](https://apurvanakade.github.io/courses/foundational-math-ai.html): daily outline, class notes and interactive tools used in class
+- [Course project](https://apurvanakade.github.io/courses/foundational-math-ai.html#course-project): the three-part data analysis project. Summer 2025 groups estimated obesity levels, predicted strokes and student dropout, and analyzed college basketball statistics.
 
 ##### Summer 2025
 
@@ -183,8 +183,8 @@ I teach in the Department of Applied Mathematics & Statistics at Johns Hopkins, 
 
 ##### Sample materials
 
-- [Course page, Spring 2024](https://apurvanakade.github.io/courses/graph-theory/): weekly schedule with lecture notes and Jupyter notebooks
-- [Final projects](https://apurvanakade.github.io/courses/graph-theory/project.html): guidelines, topic suggestions and the projects presented. Topics ranged from Wagner's theorem and perfect graphs to graph neural networks, phylogenetics and brain diffusion networks.
+- [Course page, Spring 2024](https://apurvanakade.github.io/courses/graph-theory.html): weekly schedule with lecture notes and Jupyter notebooks
+- [Final projects](https://apurvanakade.github.io/courses/graph-theory.html#final-projects): guidelines, topic suggestions and the projects presented. Topics ranged from Wagner's theorem and perfect graphs to graph neural networks, phylogenetics and brain diffusion networks.
 
 ##### Selected student comments
 
@@ -478,10 +478,10 @@ I have completed a Faculty Forward Fellowship and a certification course at the 
 
 Public copies of my recent course sites are collected on the [course pages](https://apurvanakade.github.io/courses/). Each keeps the syllabus, schedule and notes as students saw them; homework, quizzes and exams are not posted publicly.
 
-- **Discrete Mathematics** (Fall 2026): [course page](https://apurvanakade.github.io/courses/discrete-math/), [syllabus](https://apurvanakade.github.io/courses/discrete-math/syllabus.pdf) (PDF), [exam guides](https://apurvanakade.github.io/courses/discrete-math/exams.html) with topics, policies and grading criteria
-- **Monte Carlo Methods** (Spring 2026): [course page](https://apurvanakade.github.io/courses/monte-carlo/), [syllabus](https://apurvanakade.github.io/courses/monte-carlo/syllabus.pdf) (PDF), [final project](https://apurvanakade.github.io/courses/monte-carlo/project.html) with [guidelines](https://apurvanakade.github.io/courses/monte-carlo/final-project-guidelines.pdf) and [deliverables and assessment](https://apurvanakade.github.io/courses/monte-carlo/final-project-deliverables.pdf) (PDF slides)
-- **Introduction to Computational Mathematics** (Spring 2026): [course page](https://apurvanakade.github.io/courses/computational-math/), [syllabus](https://apurvanakade.github.io/courses/computational-math/syllabus.pdf) (PDF), [final project](https://apurvanakade.github.io/courses/computational-math/project.html) with [guidelines](https://apurvanakade.github.io/courses/computational-math/final-project-guidelines.pdf) and [deliverables and assessment](https://apurvanakade.github.io/courses/computational-math/final-project-deliverables.pdf) (PDF slides)
-- **Foundational Mathematics of Artificial Intelligence** (Summer 2026): [course page](https://apurvanakade.github.io/courses/foundational-math-ai/) with the daily outline and class notes, [course project](https://apurvanakade.github.io/courses/foundational-math-ai/project.html)
-- **Graph Theory** (Spring 2024): [course page](https://apurvanakade.github.io/courses/graph-theory/), [syllabus](https://assessment.jhu.edu/index.cfm/page/AefisCourseSection.publicSyllabus?courseSectionId=140047) (JHU public syllabus), [final projects](https://apurvanakade.github.io/courses/graph-theory/project.html) with the [report template](https://apurvanakade.github.io/courses/graph-theory/project-report-template.pdf) (PDF)
+- **Discrete Mathematics** (Fall 2026): [course page](https://apurvanakade.github.io/courses/discrete-math.html), [syllabus](https://apurvanakade.github.io/courses/discrete-math-syllabus.pdf) (PDF), [exam guides](https://apurvanakade.github.io/courses/discrete-math.html#what-each-exam-covers) with topics, policies and grading criteria
+- **Monte Carlo Methods** (Spring 2026): [course page](https://apurvanakade.github.io/courses/monte-carlo.html), [syllabus](https://apurvanakade.github.io/courses/monte-carlo-syllabus.pdf) (PDF), [final project](https://apurvanakade.github.io/courses/monte-carlo.html#final-project) with [guidelines](https://apurvanakade.github.io/courses/monte-carlo-final-project-guidelines.pdf) and [deliverables and assessment](https://apurvanakade.github.io/courses/monte-carlo-final-project-deliverables.pdf) (PDF slides)
+- **Introduction to Computational Mathematics** (Spring 2026): [course page](https://apurvanakade.github.io/courses/computational-math.html), [syllabus](https://apurvanakade.github.io/courses/computational-math-syllabus.pdf) (PDF), [final project](https://apurvanakade.github.io/courses/computational-math.html#final-project) with [guidelines](https://apurvanakade.github.io/courses/computational-math-final-project-guidelines.pdf) and [deliverables and assessment](https://apurvanakade.github.io/courses/computational-math-final-project-deliverables.pdf) (PDF slides)
+- **Foundational Mathematics of Artificial Intelligence** (Summer 2026): [course page](https://apurvanakade.github.io/courses/foundational-math-ai.html) with the daily outline and class notes, [course project](https://apurvanakade.github.io/courses/foundational-math-ai.html#course-project)
+- **Graph Theory** (Spring 2024): [course page](https://apurvanakade.github.io/courses/graph-theory.html), [syllabus](https://assessment.jhu.edu/index.cfm/page/AefisCourseSection.publicSyllabus?courseSectionId=140047) (JHU public syllabus), [final projects](https://apurvanakade.github.io/courses/graph-theory.html#final-projects) with the [report template](https://apurvanakade.github.io/courses/graph-theory-project-report-template.pdf) (PDF)
 
 [^ratings]: Each rating is the mean response to one of the two headline questions of the end-of-term student evaluations. At Johns Hopkins these are "The overall quality of this course is" and "The instructor's teaching effectiveness is", on a scale of 1 to 5; at Northwestern, "Provide an overall rating of the course" and "Provide an overall rating of the instruction", on a scale of 1 to 6; at Western Ontario, "Course as a learning experience" and "Effective as a university teacher", on a scale of 1 to 7. For a semester with several sections, the rating is the average over all respondents in all sections. The full reports are [on GitHub](https://github.com/apurvanakade/PDFs/tree/main/teaching%20evaluations).
