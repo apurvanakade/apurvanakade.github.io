@@ -1,6 +1,6 @@
 ## Course Design & Materials
 
-[Introduction to Computational Mathematics](https://apurvanakade.github.io/courses/computational-math/), JHU, 2026
+[Introduction to Computational Mathematics](https://apurvanakade.github.io/courses/computational-math.html), JHU, 2026
 
 - A proof-based numerical analysis course on a free online textbook, with Jupyter notebook assignments and a group final project in place of a final exam
 

@@ -48,7 +48,7 @@ The single most important convention in this repo is a hard split between files
 |---|---|
 | `index.qmd`, `references.qmd`, `rec-letters.qmd` | `_quarto.yml` |
 | `teaching-portfolio.qmd` | `_includes/portfolio-preamble.tex` |
-| `courses/**/*.qmd` | `courses/_metadata.yml` |
+| `courses/*.qmd` | `courses/_metadata.yml` |
 | `projects/*.qmd` (frontmatter + prose) | `_theme/*.scss`, `_theme/*.css` |
 | `projects/index.qmd` | `_filters/*.lua` |
 | `CV.qmd`, `cv/*.qmd` | `_includes/*.html`, `_includes/*.ejs` |
@@ -204,10 +204,9 @@ teaching-portfolio.qmd          teaching philosophy, courses, development; HTML 
 rec-letters.qmd                 recommendation-letter instructions and checklist
 _pdf/                           gitignored; local PDFs from `make pdfs` (§4)
 references.qmd
-courses/index.qmd               table listing of the course pages
-courses/<course>/index.qmd      one course: overview, outline, links
-courses/<course>/*.qmd          further pages (exams, project)
-courses/<course>/*.pdf          syllabus and project slides, as-is
+courses/index.qmd               card listing of the course pages
+courses/<course>.qmd            one course, all on one page
+courses/<course>-*.pdf          its syllabus and project slides, as-is
 ```
 
 Navbar: **Home · Projects · Blog · Teaching ▾ · CV**. `Teaching` is a dropdown
@@ -232,6 +231,14 @@ PDF. They are copies, not
 mirrors: content was pulled once from the JHU Canvas API and rewritten as
 plain `.qmd`, and nothing syncs them. The Canvas page style is not reproduced.
 
+**Each course is one flat page**, `courses/<course>.qmd`, with no folder and
+no subpages. They are demos that accompany the portfolio, not working course
+sites, so what Canvas spread over several pages (exam information, the final
+project) is a `##` section of the course page, linked by its anchor
+(`#final-project`, `#what-each-exam-covers`), and headings stop at `###`. A
+course's PDFs sit beside it, prefixed with its slug
+(`monte-carlo-syllabus.pdf`), so the directory stays flat too.
+
 **What may be copied over, and what may not.** These pages are public, and the
 Canvas sites they come from were not:
 
@@ -247,7 +254,7 @@ Canvas sites they come from were not:
 
 `courses/index.qmd` lists them as cards through a custom listing template,
 `_includes/course-cards.ejs`, which reuses the home page's `.home-card`
-styles. Each card's cover is `images/courses/<folder>.svg`, a real figure
+styles. Each card's cover is `images/courses/<course>.svg`, a real figure
 drawn by `_scripts/make_covers.py` (`COURSE_FIGURES`), so a new course needs a
 new entry there. Those covers are referenced only from the template, where
 Quarto cannot discover them, so `_quarto.yml` names `images/courses/*.svg` in
@@ -268,7 +275,7 @@ marked by an empty span in the first cell and styled with `tr:has(...)`,
 because Quarto rebuilds some tables after the filter runs (the Graph Theory
 schedule, with math and links in its cells) and drops classes on the `<tr>`.
 
-Each course's `index.qmd` carries `subtitle:` (the term) and `date:` (the
+Each course page carries `subtitle:` (the term) and `date:` (the
 term's start) for the cards and their sort. That date is not a
 publication date, so `courses/_metadata.yml` adds the body class
 `course-page` and `_theme/base.scss` hides the title block's "Published" line
@@ -811,7 +818,9 @@ reorganisation (`notes.html`, `rec letters.html`, `teaching statement.html`,
 `teaching-statement.html`, every post under `/math-blog/`, now under
 `/blog/`, everything under `/blog/maths/` and `/blog/posts/maths/`, and every
 post under `/blog/posts/`, `/blog/math/` or `/blog/scribbles/`, now directly
-under `/blog/`) now 404 at their old addresses. Do not add a redirect
+under `/blog/`, and every page and PDF under `/courses/<course>/`, now
+`/courses/<course>.html` and `/courses/<course>-*.pdf`) now 404 at their old
+addresses. Do not add a redirect
 mechanism back unless asked. A page moved from here on breaks its
 old links, so prefer keeping URLs stable.
 

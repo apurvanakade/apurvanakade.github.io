@@ -1,13 +1,41 @@
 ---
-title: "Exam Information"
-subtitle: "Discrete Mathematics, Fall 2026"
+title: "Discrete Mathematics"
+subtitle: "Fall 2026"
+description: "EN.553.171 at Johns Hopkins: logic, proofs, number theory, counting and graph theory."
+date: 2026-08-31
 ---
 
-[Back to the course page](index.qmd)
+- [Syllabus](discrete-math-syllabus.pdf) (PDF)
+- [Lecture notes](https://1drv.ms/o/c/f0f4bc0cf8b335c4/IgC5mggVgV-nTLymY2e6I9OyAXpZyaT0NoYQRCVLJbY-Be8?e=rfrIL3) (OneNote, written in class)
+- [Exam information](#what-each-exam-covers): what each exam covers, how to study and how exams are graded.
+- [Reference books](#reference-books)
 
-All exams are closed-book: no calculators, phones, textbooks, cheat sheets or notes. Bring a dark writing instrument (pencil works best); light pencil marks are hard to scan, which delays getting grades back.
+## Office hours
 
-## Midterm 1
+You never need a reason to come to office hours. You don't have to be stuck, and you don't need a question prepared: come to work, to ask something small, or just to say hello. We'd love to see you there.
+
+The instructor holds office hours three afternoons a week, and the TA team holds evening office hours three nights a week, in person and on Zoom.
+
+### Making the most of office hours
+
+- Come as a group and bring your homework. The best use of this time is working through problems together and getting your questions sorted out before you submit.
+- The TA office hours room is meant to be a shared space where you can settle in, work and collaborate.
+- Students attending in person are helped first. Zoom is there as a backup for anyone who genuinely can't make it to campus.
+
+## Exam schedule
+
+| Exam      | Date                  | Time            |
+|-----------|-----------------------|-----------------|
+| Midterm 1 | Monday, October 5     | In class        |
+| Midterm 2 | Wednesday, November 4 | In class        |
+| Midterm 3 | Friday, December 11   | In class        |
+| Final     | Monday, December 21   | 6:00 to 9:00 PM |
+
+Each exam has its own section [below](#what-each-exam-covers). Practice 1 for each exam is released 10 days before that exam; Practice 2 is released at noon on the Thursday before it, in time for that day's discussion section.
+
+## What each exam covers
+
+### Midterm 1
 
 Monday, October 5, 2026, during the regular class time.
 
@@ -20,7 +48,7 @@ Monday, October 5, 2026, during the regular class time.
 - **Homework covered:** HW 1 to 4
 - **What to expect:** 2 or 3 short answer questions (with parts) and 2 or 3 longer proofs.
 
-## Midterm 2
+### Midterm 2
 
 Wednesday, November 4, 2026, during the regular class time.
 
@@ -35,7 +63,7 @@ Wednesday, November 4, 2026, during the regular class time.
 - **Homework covered:** HW 5 to 7
 - **What to expect:** 2 or 3 short answer questions (with parts) and 2 or 3 longer proofs.
 
-## Midterm 3
+### Midterm 3
 
 Friday, December 11, 2026, during the regular class time. This is the last week of classes: HW 11 is due the same week.
 
@@ -47,7 +75,7 @@ Friday, December 11, 2026, during the regular class time. This is the last week 
 - **Homework covered:** HW 8 to 11
 - **What to expect:** 2 or 3 short answer questions (with parts) and 2 or 3 longer proofs.
 
-## Final exam
+### Final exam
 
 Monday, December 21, 2026, 6:00 to 9:00 PM. The date and time are set by the registrar. Please plan end-of-semester travel around the exam; travel plans are not grounds for taking the final early or late.
 
@@ -76,7 +104,11 @@ The questions on a midterm are much shorter than the ones on the homework (you h
 
 Two practice exams are released before each exam, with solutions a few days later. They might not cover every topic on the exam, and your score on them says nothing about your score on the actual exam: the questions will be completely different.
 
-## How we grade
+## Exam policies
+
+All exams are closed-book: no calculators, phones, textbooks, cheat sheets or notes. Bring a dark writing instrument (pencil works best); light pencil marks are hard to scan, which delays getting grades back.
+
+### How we grade
 
 We are a bit more forgiving on exams than on homework. Here's what we look for in your proofs:
 
@@ -88,14 +120,43 @@ We are a bit more forgiving on exams than on homework. Here's what we look for i
 
 We don't give points just for trying. Your grade depends on how many of your arguments are actually correct and relevant to solving the problem.
 
-## Conflicts and accommodations
+### Conflicts and accommodations
 
 - **Exam conflicts:** if an exam time conflicts with your schedule, let us know as soon as possible, and no later than three weeks before the exam. No makeup, early or late exams are allowed for any other reason.
 - **Accommodations:** students with exam accommodations through Student Disability Services schedule and take their exam with SDS. Arrange this with SDS well in advance, and let us know once it is scheduled so we can send them your exam.
 - **Medical and personal emergencies:** notify us promptly and provide appropriate documentation (a doctor's note, dean's excuse or official university documentation).
 
-## How exams count
+### How exams count
 
 Of the three midterms, your best two count 17% each and your lowest counts 11%, for 45% of your course grade in total. The cumulative final exam is worth 25%.
 
 If you miss one midterm for a valid, documented reason, your remaining two midterms each count for 20% and the final exam counts for 30%. If you miss two midterms, you cannot obtain a passing grade in the course.
+
+## Weekly schedule
+
+| Week | Dates          | Topics                                       | Notes                                        |
+|------|----------------|----------------------------------------------|----------------------------------------------|
+| 1    | Aug 31 to Sep 4  | Introduction; Logic; Quantifiers           | HW 0 due Thu                                 |
+| 2    | Sep 7 to 11      | Direct Proofs; Inequalities; Proof by Cases | No class Mon; HW 1 due Thu                  |
+| 3    | Sep 14 to 18     | Set Theory                                 | HW 2 due Thu                                 |
+| 4    | Sep 21 to 25     | Relations                                  | HW 3 due Thu                                 |
+| 5    | Sep 28 to Oct 2  | Number Theory; Modular Arithmetic          | HW 4 due Thu                                 |
+| 6    | Oct 5 to 9       | Multiplicative Inverses                    | Exam 1 (Mon)                                 |
+| 7    | Oct 12 to 16     | Diffie-Hellman Key Exchange; RSA           | HW 5 due Thu                                 |
+| 8    | Oct 19 to 23     | Proof by Contradiction                     | Fall Break Thu and Fri (no class); HW 6 due Wed |
+| 9    | Oct 26 to 30     | Counting                                   | HW 7 due Thu                                 |
+| 10   | Nov 2 to 6       | Stars and Bars                             | Exam 2 (Wed)                                 |
+| 11   | Nov 9 to 13      | Combinatorial Proofs; Mathematical Induction | HW 8 due Thu                               |
+| 12   | Nov 16 to 20     | Introduction to Graphs; Graph Induction    | HW 9 due Thu                                 |
+|      | Nov 23 to 27     | Fall Recess                                | No class                                     |
+| 13   | Nov 30 to Dec 4  | Planarity; Six Color Theorem               | HW 10 due Thu                                |
+| 14   | Dec 7 to 11      | Euler Characteristic                       | Exam 3 (Fri); HW 11 due Wed                  |
+
+The schedule above is tentative and subject to change.
+
+## Reference books
+
+- Edward R. Scheinerman, *Mathematics: A Discrete Introduction*.
+- Oscar Levin, [*Discrete Mathematics: An Open Introduction*](https://discrete.openmathbooks.org/dmoi4/frontmatter.html), 4th edition.
+- Clive Newstead, [*An Infinite Descent into Pure Mathematics*](https://infinitedescent.xyz/).
+- Mikhail Lavrov, [*Start Doing Graph Theory*](https://vertex.degree/).

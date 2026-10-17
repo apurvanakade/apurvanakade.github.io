@@ -1,5 +1,5 @@
 --[[
-  AI-owned Pandoc filter for the course pages, courses/**/*.qmd (applied by
+  AI-owned Pandoc filter for the course pages, courses/*.qmd (applied by
   courses/_metadata.yml). See CLAUDE.md §3, "Course pages". HTML only; the
   pages have no PDF.
 

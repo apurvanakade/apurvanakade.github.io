@@ -1,16 +1,47 @@
 ---
-title: "Final Project"
-subtitle: "Monte Carlo Methods, Spring 2026"
+title: "Monte Carlo Methods"
+subtitle: "Spring 2026"
+description: "EN.553.433/633 at Johns Hopkins: Monte Carlo estimation, sampling, MCMC and their applications."
+date: 2026-01-20
 ---
 
-[Back to the course page](index.qmd)
+- [Syllabus](monte-carlo-syllabus.pdf) (PDF)
+- [Course notes](https://apurvanakade.github.io/Monte-Carlo-Methods/): the online textbook for the course
+- [Class notes](https://1drv.ms/o/c/f0f4bc0cf8b335c4/IgC_CiigMkndSpAcMmgvzzCyAaGcXLEYIzHBtoyEfM6qgVk?e=gnUKVV) (OneNote, written in class)
+- [Final project](#final-project): guidelines, project ideas and past projects
+
+## About the course
+
+Computer simulation and related Monte Carlo methods are widely used in engineering and scientific work. Simulation provides a powerful tool for the analysis of real-world systems when they are not amenable to traditional analytical approaches. This course introduces upper-level undergraduates and graduate students to fundamental tools for designing, conducting and interpreting Monte Carlo studies.
+
+This is a rigorous mathematics course. The focus is on the mathematical analysis of algorithms: their theoretical foundations, convergence properties and error analysis. Programming assignments, submitted as Jupyter notebooks, are an essential component, but this is not a programming course.
+
+**Prerequisites:** linear algebra, and probability and some statistics at the advanced undergraduate level; some programming experience in Python.
+
+**Recommended textbooks**
+
+- R. Y. Rubinstein and D. P. Kroese, *Simulation and the Monte Carlo Method*, 3rd edition, Wiley, 2017.
+- R. P. Dobrow, *Introduction to Stochastic Processes With R*, Wiley.
+
+## Course outline
+
+The course has four units. Each week has a homework assignment and a short quiz.
+
+1. **Monte Carlo estimation**
+2. **Sampling techniques**
+3. **Markov chain Monte Carlo**
+4. **Applications**
+
+The semester ends with a group [final project](#final-project) in place of a final exam.
+
+## Final project
 
 In place of a final exam, students complete a final project in groups of two or three. Every project balances three elements: **learning** a method or application beyond the syllabus, **analysis** that tests its boundaries, and **research**, a creative modification of the model or algorithm that is then evaluated.
 
-- [Final project guidelines](final-project-guidelines.pdf) (PDF slides): philosophy, required elements, example projects, the proposal, presentations, AI policy and peer evaluations.
-- [Final project deliverables](final-project-deliverables.pdf) (PDF slides): what is submitted and how each part is assessed.
+- [Final project guidelines](monte-carlo-final-project-guidelines.pdf) (PDF slides): philosophy, required elements, example projects, the proposal, presentations, AI policy and peer evaluations.
+- [Final project deliverables](monte-carlo-final-project-deliverables.pdf) (PDF slides): what is submitted and how each part is assessed.
 
-## Timeline
+### Timeline
 
 | Milestone                    | When                     |
 |------------------------------|--------------------------|
@@ -21,7 +52,7 @@ In place of a final exam, students complete a final project in groups of two or 
 
 During the two in-class work sessions I give an overview of the deliverables, answer questions about the requirements, and hand out templates and rubrics for the proposal. Each group develops its proposal, splits up roles and responsibilities, and fills in a check-in sheet summarizing its discussion. The proposal is a concrete project plan with each member's responsibilities and tasks.
 
-## Presentation
+### Presentation
 
 Slides are assessed on four criteria:
 
@@ -32,7 +63,7 @@ Slides are assessed on four criteria:
 
 The final presentation is a chance to share findings with the community built over the semester. The criteria keep everyone accountable, but the goal is a low-stress setting: if you have done the work and can explain it clearly, you will do well.
 
-## Project archive
+### Project archive
 
 The final submission is a zip file containing a Jupyter notebook and everything it needs to run. The notebook is the heart of the project: it is where the technical rigor and the creative "delta" live. It must run from top to bottom in a clean environment (with numpy, scipy, matplotlib and seaborn installed, plus any packages listed in a `requirements.txt` or `environment.yml`), use relative paths, and include all of its data files. It is assessed on:
 
