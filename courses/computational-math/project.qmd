@@ -89,3 +89,26 @@ These are only starting points: the best projects usually come from your own res
 | Orbital Mechanics and Satellite Motion | Simulate two-body orbital motion using RK methods. Extend to studying energy and angular momentum conservation, comparing long-time accuracy of different methods, and modeling orbital maneuvers or perturbations. | 6.3 Systems of ODEs, 6.4–6.5 Runge-Kutta methods |
 | Fourier Series and Signal Reconstruction Visualization | Visualize how Fourier series approximate periodic functions by animating partial sums with increasing terms. Create interactive visualizations showing frequency spectrum, demonstrate Gibbs phenomenon at discontinuities, and apply to audio waveform analysis and image compression. | 3.1–3.4 Least squares (Fourier coefficients as projections), 5.1 Approximation theory |
 | Chemical Reaction Kinetics | Model chemical reaction networks as ODE systems using mass-action kinetics. Extend to systems with disparate time scales (fast/slow reactions), comparing explicit and implicit methods, and studying steady-state approximations. | 6.3 Systems of ODEs, 6.4 Runge-Kutta methods |
+
+## Student projects
+
+### Spring 2026
+
+- Response transformations: when to linearize and when to optimize nonlinearly
+- Evaluating numerical ODE solvers in a one-compartment pharmacokinetic model
+- Modeling a tennis serve with air resistance using ODEs
+- Least-squares sinusoidal compression for audio denoising
+- A comparative study of root-finding methods for implied volatility under the Black-Scholes model
+- Lucy-Richardson image deblurring: convergence of the accelerated method and a modified variant
+- Simulating Formula 1 laps
+- Image reconstruction using interpolation methods
+- Camera calibration via reprojection error minimization
+- Adams-Bashforth methods for drag ODEs in parachuting
+- Chaos and computation: estimating Lyapunov exponents in the Lorenz system
+- An exponentially-fitted Simpson's rule for present value estimation
+- RSSI-based localization using the multivariate Newton's method
+- Support vector machines and the Pegasos algorithm
+- Numerical integration in several variables and on spheres
+- Game map generation using Perlin noise
+- Anchored local volatility for index options: a Crank-Nicolson PDE approach to out-of-sample forecasting
+- Balancing chemical equations
