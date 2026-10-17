@@ -1,7 +1,7 @@
 ## Papers
 
-String structures, 2-group bundles, and a categorification of the Freed-Quinn line bundle, Daniel Berwick-Evans, Emily Cliff, Laura Murray, Apurva Nakade, Emma Phillips, Quantum Symmetries, Contemporary Mathematics, vol. 813, Amer. Math. Soc., Providence, RI, pp. 257-301, 2025
+[Flat principal 2-group bundles and flat string structures](https://doi.org/10.1090/conm/813/16291), Daniel Berwick-Evans, Emily Cliff, Laura Murray, Apurva Nakade, Emma Phillips, Quantum Symmetries, Contemporary Mathematics, vol. 813, Amer. Math. Soc., Providence, RI, pp. 257-301 ([arXiv:2110.07571](https://arxiv.org/abs/2110.07571)), 2025
 
-Manifold Calculus and the h-principle, The Journal of Homotopy and Related Structures, 2019
+[An application of the h-principle to manifold calculus](https://doi.org/10.1007/s40062-020-00255-3), Journal of Homotopy and Related Structures, vol. 15, no. 2, pp. 309-322 ([arXiv:1711.07670](https://arxiv.org/abs/1711.07670)), 2020
 
-Effect of increasing the energy gap between the two lowest energy states on the mixing time of the Metropolis algorithm (with Somenath Biswas), Information Processing Letters, IPL4801 (2012.08.012), 2012
+[Effect of increasing the energy gap between the two lowest energy states on the mixing time of the Metropolis algorithm](https://doi.org/10.1016/j.ipl.2012.08.012) (with Somenath Biswas), Information Processing Letters, vol. 112, no. 23, pp. 922-927, 2012

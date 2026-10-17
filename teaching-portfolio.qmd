@@ -40,23 +40,25 @@ A central theme in my teaching has been adapting courses to student needs withou
 
 ## Courses
 
-I teach in the Department of Applied Mathematics & Statistics at Johns Hopkins, as an Assistant Teaching Professor since 2026 and a Senior Lecturer from 2023 to 2026. Before that I was a Postdoctoral Lecturer at Northwestern (2021-2023) and a Postdoctoral Fellow at Western Ontario (2019-2021). The last group of Johns Hopkins courses below dates from my Ph.D. in the Department of Mathematics (2014-2018).
+I teach in the Department of Applied Mathematics & Statistics at Johns Hopkins, as an Assistant Teaching Professor since 2026 and a Senior Lecturer from 2023 to 2026. Before that I was a Postdoctoral Lecturer at Northwestern (2021-2023) and a Postdoctoral Fellow at Western Ontario (2019-2021). The courses below are grouped by institution; the second Johns Hopkins group dates from my Ph.D. in the Department of Mathematics (2014-2018).
 
-### Discrete Mathematics (JHU, EN.553.171)
+### Johns Hopkins University, 2023-present
+
+#### Discrete Mathematics (JHU, EN.553.171)
 
 | Semester    | Student level | Students | TAs | Course rating[^ratings] | Instructor rating |
 |-------------|---------------|---------:|----:|-----------------------:|------------------:|
-| Spring 2026 | Undergraduate |       30 |   4 |      4.31 / 5 |          4.45 / 5 |
-| Fall 2025   | Undergraduate |       45 |   4 |      4.33 / 5 |          4.48 / 5 |
+| Spring 2026 | Undergraduate |       35 |   4 |      4.31 / 5 |          4.45 / 5 |
+| Fall 2025   | Undergraduate |       44 |   4 |      4.33 / 5 |          4.48 / 5 |
 | Spring 2025 | Undergraduate |       25 |   4 |      4.32 / 5 |          4.54 / 5 |
 | Fall 2024   | Undergraduate |       41 |   5 |      4.05 / 5 |          4.37 / 5 |
-| Fall 2023   | Undergraduate |       56 |   3 |      4.11 / 5 |          4.26 / 5 |
+| Fall 2023   | Undergraduate |       56 |   5 |      4.11 / 5 |          4.26 / 5 |
 
-#### Sample materials
+##### Sample materials
 
 - [Course page, Fall 2026](https://apurvanakade.github.io/courses/discrete-math/): syllabus, weekly schedule, lecture notes, and [exam guides](https://apurvanakade.github.io/courses/discrete-math/exams.html) with topics, study advice and grading criteria
 
-#### 2025
+##### 2025
 
 - Modernized the course using evidence-driven pedagogical techniques
 - Introduced homework resubmissions, so students can recover lost points and stop rushing to a final answer; mathematics is a creative, iterative process
@@ -65,7 +67,7 @@ I teach in the Department of Applied Mathematics & Statistics at Johns Hopkins, 
 - Introduced online assessments to improve feedback
 - Several of the course's TAs have gone on to TA other courses
 
-#### Selected student comments
+##### Selected student comments
 
 - "The professor cares about the students and invests heavily in them. He is always very focused on the student's learning evidenced by checking in with them during lecture to make sure they understand." (Spring 2026)
 - "The material is a range of topics that are fascinating and a solid overview of the AMS major. It was challenging but made me excited for future classes in AMS!" (Fall 2025)
@@ -75,21 +77,21 @@ I teach in the Department of Applied Mathematics & Statistics at Johns Hopkins, 
 - "Dr. Nakade is an excellent teacher and really explained not only the material but how it was useful in different ways. He also seems to care greatly about the course and the students as well." (Fall 2024)
 - "Really interesting topics, fair and passionate instructor. This instructor did make me love math for the first time." (Fall 2023)
 
-### Monte Carlo Methods (JHU, EN.553.433/633)
+#### Monte Carlo Methods (JHU, EN.553.433/633)
 
 | Semester    | Student level              | Students | TAs | Course rating | Instructor rating |
 |-------------|----------------------------|---------:|----:|--------------:|------------------:|
-| Spring 2026 | Undergraduate and master's |       29 |   2 |      4.66 / 5 |          4.76 / 5 |
+| Spring 2026 | Undergraduate and master's |       30 |   2 |      4.66 / 5 |          4.76 / 5 |
 | Fall 2025   | Undergraduate              |       15 |   2 |      4.53 / 5 |          4.67 / 5 |
 | Spring 2025 | Undergraduate and master's |       26 |   2 |      4.63 / 5 |          4.46 / 5 |
-| Fall 2024   | Undergraduate              |       14 |     |      4.23 / 5 |          3.79 / 5 |
+| Fall 2024   | Undergraduate              |       14 |   2 |      4.23 / 5 |          3.79 / 5 |
 
-#### Sample materials
+##### Sample materials
 
 - [Course page, Spring 2026](https://apurvanakade.github.io/courses/monte-carlo/): syllabus, course notes and course outline
 - [Final project](https://apurvanakade.github.io/courses/monte-carlo/project.html): guidelines, rubrics, project ideas and past student project titles. Spring 2025 projects ranged from Hamiltonian Monte Carlo and adaptive rejection sampling to approximating PageRank and testing the randomness of LLM-generated numbers.
 
-#### 2025
+##### 2025
 
 - Updated the previous instructor's course to align with the ways students learn today
 - Rewrote course notes with an online-first approach, creating a [course website](https://apurvanakade.github.io/Monte-Carlo-Methods/) instead of a traditional textbook
@@ -100,7 +102,7 @@ I teach in the Department of Applied Mathematics & Statistics at Johns Hopkins, 
 - Adapted the course for a post-AI world: students are encouraged to use AI assistants for programming assignments and final projects, but only their theoretical understanding is evaluated, and the final project requires a detailed report with the mathematical analysis
 - Awarded a JHU Open Educational Resources Faculty Grant (2026, joint with Dhruv Azad) to develop interactive visualization apps for this and other computational math courses
 
-#### Selected student comments
+##### Selected student comments
 
 - "The course is taught very well and the course design is very good where you are learning something and then immediately being quizzed on it which really makes sure that you understand the content you are learning." (Spring 2026)
 - "Wonderful course, all the content was very practical. In fact I used one of the topics in my paper right after being taught it (Bootstrapping)." (Fall 2025)
@@ -108,49 +110,49 @@ I teach in the Department of Applied Mathematics & Statistics at Johns Hopkins, 
 - "I really liked how the course was structured: weekly quizzes, interactive Jupyter notebooks, and a variety of various topics. The instructor did a really great job designing the weekly homeworks and quizzes, and it was very enjoyable to do the final project." (Spring 2025)
 - "Fun topics, I liked that the course was centered more around learning rather than exams. I learnt a lot in a very unstressful environment." (Spring 2025)
 
-### Introduction to Computational Mathematics (JHU, EN.553.385)
+#### Introduction to Computational Mathematics (JHU, EN.553.385)
 
 | Semester    | Student level | Students | TAs | Course rating | Instructor rating |
 |-------------|---------------|---------:|----:|--------------:|------------------:|
-| Spring 2026 | Undergraduate |       49 |   2 |      4.48 / 5 |          4.66 / 5 |
+| Spring 2026 | Undergraduate |       50 |   3 |      4.48 / 5 |          4.66 / 5 |
 
-#### Sample materials
+##### Sample materials
 
 - [Course page, Spring 2026](https://apurvanakade.github.io/courses/computational-math/): syllabus, class notes and course outline
 - [Final project](https://apurvanakade.github.io/courses/computational-math/project.html): guidelines, rubrics and project ideas
 
-#### Selected student comments
+##### Selected student comments
 
 - "Prof. Apurva is always open to reviewing even the most basic concepts and simplifies complicated concepts so it's clear that he truly understands them. He does a great job engaging the class and encouraging participation. Even when I don't know the answer, I feel safe enough to guess because I know he'll find a way to validate the guess, so I don't feel stupid in front of the class." (Spring 2026)
 - "I really appreciated that there were no midterms and that homework was graded for completion. I felt like these policies reduced my stress a lot and made it much easier to learn a large amount of material." (Spring 2026)
 - "You get to learn the part of math that they don't really teach you: convergence and stability." (Spring 2026)
 
-### Intermediate Probability and Statistics (JHU, EN.553.311)
+#### Intermediate Probability and Statistics (JHU, EN.553.311)
 
 | Semester    | Student level | Students | TAs | Course rating | Instructor rating |
 |-------------|---------------|---------:|----:|--------------:|------------------:|
 | Summer 2026 | Undergraduate |        2 |     |               |                   |
-| Summer 2025 | Undergraduate |       13 |   2 |      4.08 / 5 |          4.33 / 5 |
+| Summer 2025 | Undergraduate |       15 |   2 |      4.08 / 5 |          4.33 / 5 |
 | Spring 2025 | Undergraduate |       19 |   0 |      3.65 / 5 |          4.06 / 5 |
 
-#### Selected student comments
+##### Selected student comments
 
 - "Professor Nakade is great, he cares about his students and it is much easier to learn from him." (Summer 2025)
 - "The professor's in-class problems and homework problems are extremely relevant to understanding the course, and are very helpful when studying for the exams." (Summer 2025)
 
-### Foundational Mathematics of Artificial Intelligence (JHU, AS.110.110)
+#### Foundational Mathematics of Artificial Intelligence (JHU, AS.110.110)
 
 | Semester    | Student level | Students | TAs | Course rating | Instructor rating |
 |-------------|---------------|---------:|----:|--------------:|------------------:|
 | Summer 2026 | High school   |       13 |   1 |      4.50 / 5 |          5.00 / 5 |
-| Summer 2025 | High school   |       36 |   1 |      4.44 / 5 |          4.56 / 5 |
+| Summer 2025 | High school   |       37 |   1 |      4.44 / 5 |          4.56 / 5 |
 
-#### Sample materials
+##### Sample materials
 
 - [Course page, Summer 2026](https://apurvanakade.github.io/courses/foundational-math-ai/): daily outline, class notes and interactive tools used in class
 - [Course project](https://apurvanakade.github.io/courses/foundational-math-ai/project.html): the three-part data analysis project. Summer 2025 groups predicted heart disease, bank customers' decisions, exam performance and mushroom toxicity from public datasets; from Summer 2026, groups find their own real-world data.
 
-#### Summer 2025
+##### Summer 2025
 
 - Revamped the entire course to fit the audience of smart, motivated high school students with limited mathematical and programming background
 - Made sessions interactive and flipped most classes
@@ -158,14 +160,14 @@ I teach in the Department of Applied Mathematics & Statistics at Johns Hopkins, 
 - Incorporated discussions on topics like AI ethics, which got students hooked on the subject
 - Developed a streamlined Python curriculum to teach programming from scratch and quickly transition to applications
 
-#### Selected student comments
+##### Selected student comments
 
 - "I had never done coding before, and this course, although challenging at times, did teach me a lot and provided me with an excellent base." (Summer 2025)
 - "How class time is split into two, with one part being lecture overall and the other being everyone coding individually. Also the professor. He goes around the classroom in the second half and helped everybody a lot with their codings and projects." (Summer 2025)
 - "This course is very intellectually challenging, and I really enjoy the group discussions of the material, as they are very engaging and lead to more learning overall." (Summer 2025)
 - "This course is definitely more fast pace and will often go past a lot of material very quickly. Despite that it was extremely enjoyable and satisfying and unlike any other course I've ever taken." (Summer 2025)
 
-### Honors Algebra II, online (JHU, AS.110.412)
+#### Honors Algebra II, online (JHU, AS.110.412)
 
 | Semester    | Student level | Students | TAs | Course rating | Instructor rating |
 |-------------|---------------|---------:|----:|--------------:|------------------:|
@@ -173,42 +175,50 @@ I teach in the Department of Applied Mathematics & Statistics at Johns Hopkins, 
 | Fall 2024   | Undergraduate |        2 |   0 |               |                   |
 | Spring 2024 | Undergraduate |        2 |   0 |               |                   |
 
-### Graph Theory (JHU, EN.553.472/672)
+#### Graph Theory (JHU, EN.553.472/672)
 
 | Semester    | Student level              | Students | TAs | Course rating | Instructor rating |
 |-------------|----------------------------|---------:|----:|--------------:|------------------:|
-| Spring 2024 | Undergraduate and graduate |       25 |   2 |      4.32 / 5 |          4.33 / 5 |
+| Spring 2024 | Undergraduate and graduate |       14 |   2 |      4.32 / 5 |          4.33 / 5 |
 
-#### Sample materials
+##### Sample materials
 
 - [Course page, Spring 2024](https://apurvanakade.github.io/courses/graph-theory/): weekly schedule with lecture notes and Jupyter notebooks
 - [Final projects](https://apurvanakade.github.io/courses/graph-theory/project.html): guidelines, topic suggestions and the projects presented. Topics ranged from Wagner's theorem and perfect graphs to graph neural networks, phylogenetics and brain diffusion networks.
 
-#### Selected student comments
+##### Selected student comments
 
 - "The instructor explains all the topics perfectly, and his passion for the same is clearly evident. The structure of the course is in such a way that you feel like you are solving puzzles all the time." (Spring 2024)
 - "Instructor is enthusiastic and lectures are organized, material is explained very clearly. Nice breadth and depth of topics covered for a first course in graph theory. ... Final project in lieu of final exam was a great added learning experience." (Spring 2024)
 - "Despite being a proof-based math class, there is not much assumed background to take this class. So, if you enjoy discrete math and brain teasers this is a perfect matching (no pun intended.)" (Spring 2024)
 
-### Linear Algebra and Differential Equations (JHU, EN.553.291)
+#### Linear Algebra and Differential Equations (JHU, EN.553.291)
 
 | Semester    | Student level | Students | TAs | Course rating | Instructor rating |
 |-------------|---------------|---------:|----:|--------------:|------------------:|
-| Spring 2024 | Undergraduate |       56 |     |      4.17 / 5 |          4.53 / 5 |
+| Spring 2024 | Undergraduate |       58 |     |      4.17 / 5 |          4.53 / 5 |
 
-#### Selected student comments
+##### Selected student comments
 
 - "Professor Nakade explains topics very clearly and class is very easy to follow, despite the content being very difficult. The lecture notes that students are given are also extremely helpful. Overall, the course is very well organized and engaging. It's my favorite course this semester." (Spring 2024)
 - "This course is extremely difficult, but the lectures are taught very well, in a clear manner. At no point do I feel lost in what is being explained." (Spring 2024)
 - "There aren't so many students in my session, so I can have very direct communications with the professor, and he remembers each of our names." (Spring 2024)
 
-### Engineering Innovation (JHU, EN.800.110)
+#### Engineering Innovation (JHU, EN.800.110)
 
 | Semester    | Student level | Students | TAs | Course rating | Instructor rating |
 |-------------|---------------|---------:|----:|--------------:|------------------:|
 | Summer 2024 | High school   |       23 |   1 |               |                   |
 
-### MENU Linear Algebra and Multivariable Calculus (Northwestern, MATH 290)
+#### Freshman Experience (JHU)
+
+| Semester  | Student level | Students | TAs | Course rating | Instructor rating |
+|-----------|---------------|---------:|----:|--------------:|------------------:|
+| Fall 2023 | Undergraduate |        3 |   0 |               |                   |
+
+### Northwestern University, 2021-2023
+
+#### MENU Linear Algebra and Multivariable Calculus (Northwestern, MATH 290)
 
 | Semester            | Student level | Students | TAs | Course rating | Instructor rating |
 |---------------------|---------------|---------:|----:|--------------:|------------------:|
@@ -219,11 +229,11 @@ I teach in the Department of Applied Mathematics & Statistics at Johns Hopkins, 
 | Winter 2022 (290-2) | Undergraduate |       18 |     |      5.21 / 6 |          5.43 / 6 |
 | Fall 2021 (290-1)   | Undergraduate |       19 |     |      4.88 / 6 |          5.29 / 6 |
 
-#### 2022-23
+##### 2022-23
 
 - Course coordinator
 
-#### Selected student comments
+##### Selected student comments
 
 - "Apurva is probably the best teacher I've ever had. His class was my first at Northwestern, and ever since then I've enjoyed building a connection to him and just simply talking with him during office hours or outside of class. He is extremely intelligent and supportive, and I've grown a lot as a student from simply solving problems with him." (Spring 2023)
 - "Apurva is doing great to constantly ask us for feedback and do what he can to improve the class however that may be. Just a great instructor! The best I've had yet!" (Winter 2023)
@@ -232,173 +242,237 @@ I teach in the Department of Applied Mathematics & Statistics at Johns Hopkins, 
 - "Apurva is awesome!! Really funny and easily approachable/very available guy. He always stayed after class to answer questions for anyone who needed it." (Winter 2022)
 - "Apurva is very encouraging when you are struggling with a problem and you can really tell that he was excited about math and teaching!" (Fall 2021)
 
-### Single-Variable Differential Calculus (Northwestern, MATH 220-1)
+#### Single-Variable Differential Calculus (Northwestern, MATH 220-1)
 
 | Semester  | Student level | Students | TAs | Course rating | Instructor rating |
 |-----------|---------------|---------:|----:|--------------:|------------------:|
 | Fall 2021 | Undergraduate |       38 |     |      4.22 / 6 |          5.04 / 6 |
 
-#### Selected student comments
+##### Selected student comments
 
 - "Apurva was a great professor. He explained everything very clearly and gave great lecture notes. In class we did lots of practice problems which was super helpful." (Fall 2021)
 - "He was very patient in answering questions and was very good at helping you work through the problem to find exactly where you were getting stuck and then working through the rest. This way he was able to teach us what to do without doing it for us." (Fall 2021)
 
-### Introduction to Optimization (Northwestern, MATH 368)
+#### Introduction to Optimization (Northwestern, MATH 368)
 
 | Semester    | Student level              | Students | TAs | Course rating | Instructor rating |
 |-------------|----------------------------|---------:|----:|--------------:|------------------:|
 | Spring 2022 | Undergraduate and graduate |       15 |   1 |      5.33 / 6 |          5.88 / 6 |
 | Winter 2022 |                            |          |     |               |                   |
 
-#### Selected student comments
+##### Selected student comments
 
 - "Apurva is phenomenal! He broke down key concepts with ease, and homework questions went over a variety of different examples. Optimization is interesting as a whole due to it [sic] wide applicability in other fields, but I felt this was an enjoyable course because of Apurva." (Spring 2022)
 - "He explains difficult concepts in a digestible way, and makes sure everyone has the time and space to ask questions and apply the material they are learning." (Spring 2022)
 
-### Foundations of Higher Mathematics (Northwestern, MATH 300)
+#### Foundations of Higher Mathematics (Northwestern, MATH 300)
 
 | Semester    | Student level | Students | TAs | Course rating | Instructor rating |
 |-------------|---------------|---------:|----:|--------------:|------------------:|
 | Winter 2023 | Undergraduate |       24 |   1 |      5.28 / 6 |          5.61 / 6 |
 
-#### Selected student comments
+##### Selected student comments
 
 - "Apurva is a great professor, and he really helped make the class enjoyable. He learned all of our names, and he was super approachable. His weekly office hours were super helpful for working through the homework and discussion worksheets. His lectures were really engaging, as he asked a lot of questions for the students to answer and work through." (Winter 2023)
 
-### Elementary Differential Equations (Northwestern, MATH 250)
+#### Elementary Differential Equations (Northwestern, MATH 250)
 
 | Semester    | Student level | Students | TAs | Course rating | Instructor rating |
 |-------------|---------------|---------:|----:|--------------:|------------------:|
 | Spring 2023 | Undergraduate |       17 |     |      5.42 / 6 |          5.75 / 6 |
 
-#### Selected student comments
+##### Selected student comments
 
 - "Apurva was always willing to help, and also explained things very clearly. High quality prepared notes that were available to review later. Great energy for an early morning class. Obviously cared about the subject and student success." (Spring 2023)
 
-### Discrete Structures for Engineering (Western Ontario, MATH 2151A)
+### University of Western Ontario, 2019-2021
+
+#### Discrete Structures for Engineering (Western Ontario, MATH 2151A)
 
 | Semester  | Student level | Students | TAs | Course rating | Instructor rating |
 |-----------|---------------|---------:|----:|--------------:|------------------:|
 | Fall 2020 | Undergraduate |      197 |   2 |      6.59 / 7 |          6.76 / 7 |
 
-#### Selected student comments
+##### Sample materials
+
+- [Weekly video lectures](https://www.youtube.com/playlist?list=PLXAOfwfSuiKm3cL-JftD9ndrjYi7fPcqN): short videos supporting the course text
+- [Discussion forum](https://piazza.com/demo_login?nid=kd1rr8nxc6z4b5&auth=f76e59e): the course's Piazza forum, as a public demo
+- [Talk on the course design](https://www.youtube.com/watch?v=KV1Jv60pCrc): presented at a conference on e-assessment in the mathematical sciences
+
+##### Selected student comments
 
 - "You are enthusiastic and while the course material was not my favourite, your teaching made it my favourite class!" (Fall 2020)
 - "This course presented some difficult concepts, but Apurva explained everything really well and was very organized in his teaching. He's also super understanding and it's evident that he cares a lot about his students, a characteristic that, sadly, is not present in many professors." (Fall 2020)
 - "There really is no improvement I can find. The organization is perfect, the length of the lectures is perfect, the content inside the lectures themselves are clear and simple, the follow-up questions are perfect, and even the first midterm was extremely fair and was exactly what the prof said it would be like." (Fall 2020, midterm survey)
 
-### Calculus I (Western Ontario, Calculus 1000A)
+#### Calculus I (Western Ontario, Calculus 1000A)
 
 | Semester  | Student level | Students | TAs | Course rating | Instructor rating |
 |-----------|---------------|---------:|----:|--------------:|------------------:|
 | Fall 2019 | Undergraduate |      177 |   2 |      5.58 / 7 |          5.63 / 7 |
 
-#### Selected student comments
+##### Selected student comments
 
 - "Apurva Nakade has so far been the best professor I have had. I believe that his methods for teaching and leading a class is highly effective in terms of presenting ideas and concepts in a way that can be learned efficiently." (Fall 2019)
 
-### Calculus II (Western Ontario)
+#### Calculus II (Western Ontario)
 
 | Semester    | Student level | Students | TAs | Course rating | Instructor rating |
 |-------------|---------------|---------:|----:|--------------:|------------------:|
 | Winter 2020 | Undergraduate |          |     |               |                   |
 
-### Algebraic Topology (Western Ontario)
+#### Algebraic Topology (Western Ontario)
 
 | Semester    | Student level | Students | TAs | Course rating | Instructor rating |
 |-------------|---------------|---------:|----:|--------------:|------------------:|
 | Winter 2021 | Graduate      |          |     |               |                   |
 
-### Topology Bootcamp (Western Ontario)
+#### Topology Bootcamp (Western Ontario)
 
 | Semester  | Student level | Students | TAs | Course rating | Instructor rating |
 |-----------|---------------|---------:|----:|--------------:|------------------:|
 | Fall 2020 | Graduate      |          |     |               |                   |
 
-### Topics in Category Theory (Western Ontario)
+#### Topics in Category Theory (Western Ontario)
 
 | Semester  | Student level | Students | TAs | Course rating | Instructor rating |
 |-----------|---------------|---------:|----:|--------------:|------------------:|
 | Fall 2019 | Graduate      |          |     |               |                   |
 
-### Honors Single Variable Calculus (JHU, AS.110.113)
+### Johns Hopkins University, graduate school, 2014-2018
+
+#### Honors Single Variable Calculus (JHU, AS.110.113)
 
 | Semester  | Student level | Students | TAs | Course rating | Instructor rating |
 |-----------|---------------|---------:|----:|--------------:|------------------:|
 | Fall 2018 | Undergraduate |        9 |     |      4.00 / 5 |          3.78 / 5 |
 | Fall 2017 | Undergraduate |          |     |               |                   |
 
-#### Selected student comments
+##### Selected student comments
 
 - "Apurva is great. He answers any questions you have and always gives you feedback. If there is something you're not understanding, he takes the time to walk you though [sic] it. He is very understanding that life still happens outside of class and is just a great teacher in general." (Fall 2018)
 - "The course was heavily tailored to the students and was a good introduction to proofs. ... I understand how to write mathematical proofs much better and I feel more confident in my understanding of calculus." (Fall 2018)
 
-### Differential Equations with Applications (JHU, AS.110.302)
+#### Differential Equations with Applications (JHU, AS.110.302)
 
 | Semester    | Student level | Students | TAs | Course rating | Instructor rating |
 |-------------|---------------|---------:|----:|--------------:|------------------:|
 | Summer 2017 | Undergraduate |       11 |     |      4.33 / 5 |          4.56 / 5 |
 | Summer 2015 | Undergraduate |        9 |     |      4.25 / 5 |          4.25 / 5 |
 
-#### Selected student comments
+##### Selected student comments
 
 - "Apurva is a great teacher, he knows how to present content in a succint [sic] and easily absorbable way." (Summer 2017)
 - "He inspired us to ask the important questions about math, to explore the foundations of mathematics, and to pursue further academic engagements in math, physics and engineering. He is an enlightened and devoted teacher and friend." (Summer 2015)
 
-### Symmetries and Polynomials (JHU, AS.110.361)
+#### Symmetries and Polynomials (JHU, AS.110.361)
 
 | Semester            | Student level | Students | TAs | Course rating | Instructor rating |
 |---------------------|---------------|---------:|----:|--------------:|------------------:|
 | Intersession 2018   | Undergraduate |       10 |     |      4.44 / 5 |          4.56 / 5 |
 
-#### Selected student comments
+##### Selected student comments
 
 - "The no homework and freeform style of working through worksheets that break up the proofs was really cool." (Intersession 2018)
 
-### Hitchhiker's Guide to Algebraic Topology (JHU, AS.110.360)
+#### Hitchhiker's Guide to Algebraic Topology (JHU, AS.110.360)
 
 | Semester            | Student level | Students | TAs | Course rating | Instructor rating |
 |---------------------|---------------|---------:|----:|--------------:|------------------:|
 | Intersession 2017   | Undergraduate |       11 |     |      4.89 / 5 |          5.00 / 5 |
 
-#### Selected student comments
+##### Selected student comments
 
 - "Apurv [sic] is an engaging and funny instructor who is passionate about the subject. He doesn't hesitate to stop and ask if anyone has a question before proceeding on through relatively dense mathematical material." (Intersession 2017)
 - "It's great! Take it, especially if you're not a math major but are interested in mathematical concepts." (Intersession 2017)
 
-### Online Linear Algebra (JHU, AS.110.201)
+#### Online Linear Algebra (JHU, AS.110.201)
 
 | Semester    | Student level | Students | TAs | Course rating | Instructor rating |
 |-------------|---------------|---------:|----:|--------------:|------------------:|
 | Summer 2014 | Undergraduate |       34 |     |      3.41 / 5 |          3.33 / 5 |
 
-#### Selected student comments
+##### Selected student comments
 
 - "I wasn't expecting an online course to be run so well. In many ways, it is comparable to an actual class. The lectures for [sic] interactive and helpful. Homework submission was easy and painless. The grading was fair." (Summer 2014)
 
+### Canada/USA Mathcamp, 2017-2026
+
+Mathcamp is a five-week summer program for mathematically talented high school students. Classes run from a single day to a week; the schedule is on mathcamp.org for each year.
+
+#### Classes (Mathcamp)
+
+| Semester    | Class                                          | Student level |
+|-------------|------------------------------------------------|---------------|
+| Summer 2026 | Not So Ordinary Least Squares                  | High school   |
+| Summer 2026 | How to Discover the Bell Curve                 | High school   |
+| Summer 2023 | Teaching Math to Computers (Lean)              | High school   |
+| Summer 2021 | Curvature Lies Within                          | High school   |
+| Summer 2020 | Teaching Math to Computers (Lean)              | High school   |
+| Summer 2020 | How to Glue Donuts                             | High school   |
+| Summer 2020 | How Riemann Finally Understood the Logarithms  | High school   |
+| Summer 2019 | Crash Course on Linear Algebra                 | High school   |
+| Summer 2019 | Galois Correspondence of Covering Spaces       | High school   |
+| Summer 2019 | From High School Arithmetic to Group Cohomology | High school  |
+| Summer 2019 | Riemann Surfaces                               | High school   |
+| Summer 2019 | Perspectives on Cohomology                     | High school   |
+| Summer 2019 | All Things Manifoldy                           | High school   |
+| Summer 2018 | Symmetries and Polynomials (co-taught)         | High school   |
+| Summer 2018 | How Curved Is a Potato?                        | High school   |
+| Summer 2018 | Cohomology via Sheaves                         | High school   |
+| Summer 2018 | Would I Ever Lie Group to You?                 | High school   |
+| Summer 2018 | The Quantum Spring                             | High school   |
+| Summer 2017 | All Things Manifoldy                           | High school   |
+| Summer 2017 | How to Define the Square Root                  | High school   |
+| Summer 2017 | Symmetries of Spaces                           | High school   |
+| Summer 2017 | Euler Characteristic                           | High school   |
+
+##### Sample materials
+
+- [How to Discover the Bell Curve](https://apurvanakade.github.io/projects/bell-curve-least-squares.html): the normal distribution from least squares, following Gauss
+- [Teaching Math to Computers](https://apurvanakade.github.io/projects/lean-mc2020.html): theorem proving in Lean
+- [Crash Course on Linear Algebra](https://apurvanakade.github.io/projects/linear-algebra-crash-course.html)
+- [Galois Correspondence of Covering Spaces](https://apurvanakade.github.io/projects/covering-spaces.html)
+- [From High School Arithmetic to Group Cohomology](https://apurvanakade.github.io/projects/group-cohomology.html)
+- [Riemann Surfaces](https://apurvanakade.github.io/projects/riemann-surfaces.html)
+- [How Curved Is a Potato?](https://apurvanakade.github.io/projects/how-curved-is-a-potato.html)
+- [Cohomology via Sheaves](https://apurvanakade.github.io/projects/cohomology-via-sheaves.html)
+- [Would I Ever Lie Group to You?](https://apurvanakade.github.io/projects/lie-groups.html)
+- [More Mathcamp classes](https://apurvanakade.github.io/projects/mathcamp-assorted.html)
+
 ## Awards and grants
 
-- Open Educational Resources Faculty Grant (joint with Dhruv Azad), JHU, 2026: $5000 to develop interactive visualization apps for computational math courses
-- Open Educational Resources Faculty Grant (joint with Aaron Greicius), Northwestern, 2022: WeBWorK problems for an open-source PreTeXt linear algebra textbook
-- William Kelso Morrill Award for Excellence in Mathematics, JHU, 2019: awarded each year to the mathematics graduate student who best displays love of teaching, love of mathematics, and concern for students
-- Finalist, KSAS Excellence in Teaching Awards, JHU, 2019: honors the graduate teaching assistants in the School of Arts and Sciences for the care they take with their subject and their students
-- Prof. Joel Dean Award for Excellence in Teaching in Mathematics, JHU, 2016: recognizes mathematics graduate students for extraordinary teaching of undergraduates
+- [Open Educational Resources Faculty Grant](https://ctei.jhu.edu/programs-and-services/instructional-enhancement-grant-program/) (joint with Dhruv Azad), JHU, 2026: $5000 to develop interactive visualization apps for computational math courses
+- [Open Educational Resources Faculty Grant](https://air.northwestern.edu/get-started/open-educational-resources/grant-recipients.html) (joint with Aaron Greicius), Northwestern, 2022: $10000 to develop, use, and publish OER for a linear algebra course; I wrote WeBWorK problems for the [open-source PreTeXt linear algebra textbook](http://linear-algebra.northwestern.pub/frontmatter-1.html)
+- [William Kelso Morrill Award for Excellence in Mathematics](https://sites.krieger.jhu.edu/math-intranet/for-graduate-students/graduate-awards/), JHU, 2019: awarded each year to the mathematics graduate student who best displays love of teaching, love of mathematics, and concern for students
+- Finalist, [KSAS Excellence in Teaching Awards](https://krieger.jhu.edu/teachingaward/), JHU, 2019: honors the graduate teaching assistants in the School of Arts and Sciences for the care they take with their subject and their students
+- [Prof. Joel Dean Award for Excellence in Teaching in Mathematics](https://sites.krieger.jhu.edu/math-intranet/for-graduate-students/graduate-awards/), JHU, 2016: recognizes mathematics graduate students for extraordinary teaching of undergraduates
 
 ## Professional development
 
 I have completed a Faculty Forward Fellowship and a certification course at the Teaching Academy at JHU, where I learned about several important pedagogical concepts such as inquiry-based learning, backward course design, and learning objectives, which I regularly incorporate into my own teaching. I regularly attend workshops at the Center for Teaching Excellence and Innovation at JHU, and I am a member of the MAA's Project NExT'20 cohort. Besides new skills, these workshops let me take on the role of a student and stay grounded.
 
 - Faculty Forward Fellowship, JHU, 2025
-- MAA Section NExT Fellow, MD-DC-VA Section, 2023-25
+- [MAA Section NExT Fellow](http://sections.maa.org/mddcva/section_next.php), MD-DC-VA Section, 2023-25
 - Introduction to Education Research Workshop, JHU, 2023
-- MSRI Critical Issues in Mathematics Education Workshop, 2022
-- MAA Modeling Inspiration for Differential Equations Workshop, 2022
-- MAA Project NExT Fellow, Brown'20 cohort, 2020
+- [MSRI Critical Issues in Mathematics Education Workshop](https://www.msri.org/workshops/1028), 2022
+- MAA [Modeling Inspiration for Differential Equations Workshop](https://www.maa.org/programs-and-communities/professional-development/open-math/open-math-summer-workshops), 2022
+- [MAA Project NExT Fellow](https://www.maa.org/programs-and-communities/professional-development/project-next), Brown'20 cohort, 2020
 - Mathematical Association of America Member, 2020-Present
-- Workshops by the Center for Teaching and Learning, UWO, 2019-2020
-- Online Mastery Grading Workshop, 2019
-- Teaching Academy Certification, JHU, 2019
-- Science of Learning Symposium, JHU, 2014-2018
+- Workshops by the [Centre for Teaching and Learning](https://teaching.uwo.ca/), UWO, 2019-2020
+- Online [Mastery Grading Workshop](https://www.masterygrading.com/), 2019
+- [Teaching Academy Certification](https://cer.jhu.edu/teaching-academy/coc/overview), JHU, 2019
+- [Science of Learning Symposium](http://scienceoflearning.jhu.edu/about-us/), JHU, 2014-2018
+
+## Mentoring and academic service
+
+- Undergraduate Research Coordinator, JHU AMS, 2024-2025: helped connect undergraduate students with research mentors
+- Judge for poster presentations at the [JHU Matrx Conference](https://www.ams.jhu.edu/matrx2025/), 2025, and the MAA MD-DC-VA Section Meeting, Fall 2024
+- Supplementary Instructor, [Causeway Postbaccalaureate Program](https://sites.northwestern.edu/causeway/), Northwestern, 2022: a yearlong experience in mathematics that seeks to increase the number of graduate students in the mathematical sciences from historically underrepresented groups
+- Founder, organizer and mentor, Directed Reading Program, Western Ontario, 2019-2021: started the program in Fall 2019
+- Organizer and mentor, Directed Reading Program, JHU, 2017-2019
+- [Academic Coordinator, Canada/USA Mathcamp](https://www.mathcamp.org/2018/ourstaff.php), 2018: planned the five-week academic schedule, served on the mentor hiring committee, and invited visiting speakers
+- Mentor, Canada/USA Mathcamp, 2017-2020: designed and taught classes (listed under [Courses](#courses)), served as a residential and academic advisor, and sat on the mentor hiring committee
 
 ## Syllabi and sample materials
 

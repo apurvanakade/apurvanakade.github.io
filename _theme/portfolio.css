@@ -9,6 +9,7 @@
 .portfolio-inst-jhu   { --inst: var(--inst-jhu);   --chip-bg: var(--chip-jhu-bg); --chip-fg: var(--chip-jhu-fg); }
 .portfolio-inst-nw    { --inst: var(--inst-nw);    --chip-bg: var(--chip-nw-bg);  --chip-fg: var(--chip-nw-fg); }
 .portfolio-inst-uwo   { --inst: var(--inst-uwo);   --chip-bg: var(--chip-uwo-bg); --chip-fg: var(--chip-uwo-fg); }
+.portfolio-inst-mc    { --inst: var(--inst-mc);    --chip-bg: var(--chip-mc-bg);  --chip-fg: var(--chip-mc-fg); }
 .portfolio-inst-other { --inst: var(--inst-other); --chip-bg: var(--vm-text-soft);  --chip-fg: var(--vm-bg); }
 
 /* ------------------------------------------------------------ summary band */
@@ -86,8 +87,13 @@
 .portfolio-chart__plot .portfolio-chart__point:hover .portfolio-chart__mark { transform: scale(1.5); }
 
 /* ------------------------------------------------------- course headings */
-h3.portfolio-course { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.2rem 0.55rem; }
-h3.portfolio-course .portfolio-course__badge {
+/* Under Courses: h3 an institution, h4 a course, h5 a course's notes. The
+   theme sets h5 above h4, so the three are sized here to keep that order. */
+section#courses h3 { font-size: 1.35rem; }
+h4.portfolio-course { font-size: 1.2rem; }
+section.portfolio-course h5 { font-size: 1.05rem; }
+h4.portfolio-course { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.2rem 0.55rem; }
+h4.portfolio-course .portfolio-course__badge {
   font-size: 0.7rem;
   font-weight: 600;
   letter-spacing: 0.01em;
@@ -99,7 +105,7 @@ h3.portfolio-course .portfolio-course__badge {
   position: relative;
   top: -0.12em;
 }
-h3.portfolio-course .portfolio-course__code {
+h4.portfolio-course .portfolio-course__code {
   font-size: 0.8rem;
   font-weight: 400;
   color: var(--vm-text-soft);

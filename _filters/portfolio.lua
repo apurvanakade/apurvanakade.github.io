@@ -7,12 +7,12 @@
   - a summary band (courses, students, universities, teaching since, recent
     JHU rating) above the first `##`, computed from the course tables;
   - a chart of every semester's instructor rating at the top of `## Courses`;
-  - each course `###` "Name (Institution, code)" gets an institution badge
+  - each course `####` "Name (Institution, code)" gets an institution badge
     and a muted course code;
   - rating cells "4.37 / 5" get a thin bar (HTML);
   - a course with a page under projects/ gets a link card (HTML);
-  - the list under `#### Sample materials` becomes pill links (HTML);
-  - the list under `#### Selected student comments` becomes quote cards;
+  - the list under `##### Sample materials` becomes pill links (HTML);
+  - the list under `##### Selected student comments` becomes quote cards;
   - the first bullet list in `## Teaching philosophy` whose items all start
     with **bold label** becomes a row of icon tiles (HTML).
 
@@ -30,8 +30,15 @@ local INSTITUTIONS = {
   ["JHU"]             = { key = "jhu", badge = "JHU",             short = "JHU" },
   ["Northwestern"]    = { key = "nw",  badge = "Northwestern",    short = "Northwestern" },
   ["Western Ontario"] = { key = "uwo", badge = "Western Ontario", short = "Western" },
+  -- A summer program, not a university: not counted in the summary band.
+  ["Mathcamp"]        = { key = "mc",  badge = "Mathcamp",        short = "Mathcamp", program = true },
 }
 local OTHER = { key = "other", badge = nil, short = "Other" }
+
+-- Under `## Courses`, each `###` is an institution (which keeps the TOC to
+-- one line per institution), each `####` a course, and each `#####` a note
+-- under a course ("Sample materials", "Selected student comments", ...).
+local COURSE_LEVEL, NOTE_LEVEL = 4, 5
 
 -- Start of the current JHU appointment; the summary band's rating covers
 -- JHU semesters from this year on.
@@ -349,7 +356,7 @@ end
 local function summarise(courses)
   local students, years, insts, recent = 0, nil, {}, {}
   for _, c in ipairs(courses) do
-    if c.inst.key ~= "other" then insts[c.inst.key] = true end
+    if c.inst.key ~= "other" and not c.inst.program then insts[c.inst.key] = true end
     for _, r in ipairs(c.rows) do
       students = students + (r.students or 0)
       if r.year and (not years or r.year < years) then years = r.year end
@@ -360,8 +367,13 @@ local function summarise(courses)
   end
   local n_insts = 0
   for _ in pairs(insts) do n_insts = n_insts + 1 end
+  -- A program's one table stands for many short classes, not a course.
+  local n_courses = 0
+  for _, c in ipairs(courses) do
+    if not c.inst.program then n_courses = n_courses + 1 end
+  end
   local stats = {
-    { value = tostring(#courses), label = "courses taught" },
+    { value = tostring(n_courses), label = "courses taught" },
     -- Several tables have blank student counts, so the sum is a lower bound.
     { value = thousands(math.floor(students / 50) * 50) .. "+", label = "students taught" },
     { value = tostring(n_insts), label = "universities" },
@@ -605,13 +617,17 @@ function Pandoc(doc)
       out:insert(blk)
       first_h2_at = first_h2_at or #out
       if h2 == "Courses" then courses_at = #out end
-    elseif blk.t == "Header" and blk.level == 3 and h2 == "Courses" then
+    elseif blk.t == "Header" and blk.level < COURSE_LEVEL then
+      -- an institution heading: it ends the previous course
+      course, pending = nil, nil
+      out:insert(blk)
+    elseif blk.t == "Header" and blk.level == COURSE_LEVEL and h2 == "Courses" then
       course = parse_course_heading(blk)
       course.rows = {}
       courses[#courses + 1] = course
       pending = nil
       out:insert(decorate_heading(blk, course))
-    elseif blk.t == "Header" and blk.level == 4 then
+    elseif blk.t == "Header" and blk.level == NOTE_LEVEL then
       local t = stringify(blk.content)
       if t == "Selected student comments" then pending = "quotes"
       elseif t == "Sample materials" then pending = "materials"
