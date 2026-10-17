@@ -1,22 +1,24 @@
 ## Grants & Awards
 
-Open Educational Resources Faculty Grant (joint with Dhruv Azad), JHU, 2026
+[Open Educational Resources Faculty Grant](https://ctei.jhu.edu/programs-and-services/instructional-enhancement-grant-program/) (joint with Dhruv Azad), JHU, 2026
 
 - $5000 to develop interactive visualization apps for computational math courses
 
-Open Educational Resources Faculty Grant (joint with Aaron Greicius), NU, 2022
+[Open Educational Resources Faculty Grant](https://air.northwestern.edu/get-started/open-educational-resources/grant-recipients.html) (joint with Aaron Greicius), NU, 2022
 
-William Kelso Morrill Award for Excellence in Mathematics, JHU, 2019
+- $10000 to develop, use, and publish OER for a linear algebra course
+
+[William Kelso Morrill Award for Excellence in Mathematics](https://sites.krieger.jhu.edu/math-intranet/for-graduate-students/graduate-awards/), JHU, 2019
 <!-- Awarded each year to the math graduate student who best displays love of teaching, love of mathematics, and concern for students -->
 
-Finalist for the KSAS Excellence in Teaching Awards, JHU, 2019
+[Finalist for the KSAS Excellence in Teaching Awards](https://krieger.jhu.edu/teachingaward/), JHU, 2019
 
 <!-- The award honors the best graduate TAs in the School of Arts and Sciences for the care and concern they take with their subject and their students. -->
 
-Prof. Joel Dean Award for Excellence in Teaching in Mathematics, JHU, 2016
-
-<!-- Annual award to recognize math graduate students who have exhibited extraordinary performance in teaching undergraduates -->
-
 AMS Graduate Student Travel Grant, 2019
 
-<!-- $250 travel grant for giving a talk at AMS Sectional Meetings -->
+- $250 travel grant for giving a talk at AMS Sectional Meetings
+
+[Prof. Joel Dean Award for Excellence in Teaching in Mathematics](https://sites.krieger.jhu.edu/math-intranet/for-graduate-students/graduate-awards/), JHU, 2016
+
+<!-- Annual award to recognize math graduate students who have exhibited extraordinary performance in teaching undergraduates -->

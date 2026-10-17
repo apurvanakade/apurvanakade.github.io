@@ -1,7 +1,7 @@
 <!-- AI-owned: included after the body of every page in projects/ by
      projects/_metadata.yml. See CLAUDE.md §5.
 
-     1. Institution categories (JHU, Northwestern, UWO) get the inst-chip
+     1. Institution categories (JHU, Northwestern, UWO, Mathcamp) get the inst-chip
         classes, so _theme/base.scss can colour them. A category chip carries
         nothing but its text, so this cannot be done in CSS alone.
      2. On the listing, the flat categories rail is split into Kind, Venue and
@@ -10,7 +10,7 @@
         its element, so Quarto's filtering still works. -->
 <script>
 (function () {
-  var INST = { "JHU": "jhu", "Northwestern": "nw", "UWO": "uwo" };
+  var INST = { "JHU": "jhu", "Northwestern": "nw", "UWO": "uwo", "Mathcamp": "mc" };
   var KIND = ["app", "course notes", "problem sets", "course design",
               "formalization", "OER", "expository"];
   var VENUE = ["JHU", "Northwestern", "UWO", "Mathcamp"];

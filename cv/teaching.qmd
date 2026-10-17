@@ -29,14 +29,14 @@
 
 - Discrete Math, Spring 2025
 - Monte Carlo Methods, Spring 2025
-- Honors Algebra II, Spring 2025
+- Honors Algebra II (online), Spring 2025
 - Intermediate Probability and Statistics, Spring 2025
 
 #### Fall 2024
 
 - Discrete Math, Fall 2024
 - Monte Carlo Methods, Fall 2024
-- Honors Algebra II, Fall 2024
+- Honors Algebra II (online), Fall 2024
 
 #### Summer 2024
 
@@ -46,11 +46,12 @@
 
 - Graph Theory, Spring 2024
 - Linear Algebra and Differential Equations, Spring 2024
-- Honors Algebra II, Spring 2024
+- Honors Algebra II (online), Spring 2024
 
 #### Fall 2023
 
 - Discrete Math, Fall 2023
+- Freshman Experience, Fall 2023
 
 ### Instructor, Northwestern
 
@@ -80,12 +81,25 @@
 
 ### Instructor, Canada/USA Mathcamp
 
+- Not So Ordinary Least Squares, Summer 2026
 - How to Discover the Bell Curve, Summer 2026
-- Theorem Proving in Lean, Summer 2020
+- Teaching Math to Computers (Lean), Summer 2023
+- Curvature Lies Within, Summer 2021
+- Teaching Math to Computers (Lean), Summer 2020
+- How to Glue Donuts, Summer 2020
+- How Riemann Finally Understood the Logarithms, Summer 2020
+- Crash Course on Linear Algebra, Summer 2019
 - Galois Correspondence of Covering Spaces, Summer 2019
 - From High School Arithmetic to Group Cohomology, Summer 2019
 - Riemann Surfaces, Summer 2019
-- Crash Course on Linear Algebra, Summer 2018
+- Perspectives on Cohomology, Summer 2019
+- All Things Manifoldy, Summer 2019
+- Symmetries and Polynomials, Summer 2018
 - How Curved Is a Potato?, Summer 2018
-- Would I Ever Lie Group to You?, Summer 2018
 - Cohomology via Sheaves, Summer 2018
+- Would I Ever Lie Group to You?, Summer 2018
+- The Quantum Spring, Summer 2018
+- All Things Manifoldy, Summer 2017
+- How to Define the Square Root, Summer 2017
+- Symmetries of Spaces, Summer 2017
+- Euler Characteristic, Summer 2017

@@ -30,8 +30,15 @@ local INSTITUTIONS = {
   ["JHU"]             = { key = "jhu", badge = "JHU",             short = "JHU" },
   ["Northwestern"]    = { key = "nw",  badge = "Northwestern",    short = "Northwestern" },
   ["Western Ontario"] = { key = "uwo", badge = "Western Ontario", short = "Western" },
+  -- A summer program, not a university: not counted in the summary band.
+  ["Mathcamp"]        = { key = "mc",  badge = "Mathcamp",        short = "Mathcamp", program = true },
 }
 local OTHER = { key = "other", badge = nil, short = "Other" }
+
+-- Under `## Courses`, each `###` is an institution (which keeps the TOC to
+-- one line per institution), each `####` a course, and each `#####` a note
+-- under a course ("Sample materials", "Selected student comments", ...).
+local COURSE_LEVEL, NOTE_LEVEL = 4, 5
 
 -- Start of the current JHU appointment; the summary band's rating covers
 -- JHU semesters from this year on.
@@ -349,7 +356,7 @@ end
 local function summarise(courses)
   local students, years, insts, recent = 0, nil, {}, {}
   for _, c in ipairs(courses) do
-    if c.inst.key ~= "other" then insts[c.inst.key] = true end
+    if c.inst.key ~= "other" and not c.inst.program then insts[c.inst.key] = true end
     for _, r in ipairs(c.rows) do
       students = students + (r.students or 0)
       if r.year and (not years or r.year < years) then years = r.year end
@@ -605,13 +612,17 @@ function Pandoc(doc)
       out:insert(blk)
       first_h2_at = first_h2_at or #out
       if h2 == "Courses" then courses_at = #out end
-    elseif blk.t == "Header" and blk.level == 3 and h2 == "Courses" then
+    elseif blk.t == "Header" and blk.level < COURSE_LEVEL then
+      -- an institution heading: it ends the previous course
+      course, pending = nil, nil
+      out:insert(blk)
+    elseif blk.t == "Header" and blk.level == COURSE_LEVEL and h2 == "Courses" then
       course = parse_course_heading(blk)
       course.rows = {}
       courses[#courses + 1] = course
       pending = nil
       out:insert(decorate_heading(blk, course))
-    elseif blk.t == "Header" and blk.level == 4 then
+    elseif blk.t == "Header" and blk.level == NOTE_LEVEL then
       local t = stringify(blk.content)
       if t == "Selected student comments" then pending = "quotes"
       elseif t == "Sample materials" then pending = "materials"

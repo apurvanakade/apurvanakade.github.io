@@ -40,6 +40,7 @@ local INSTITUTIONS = {
   { key = "jhu", patterns = { "Johns Hopkins", "JHU" } },
   { key = "nw",  patterns = { "Northwestern" } },
   { key = "uwo", patterns = { "Western Ontario", "UWO" } },
+  { key = "mc",  patterns = { "Mathcamp" } },
 }
 
 --------------------------------------------------------------------- helpers

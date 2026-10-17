@@ -335,14 +335,20 @@ Set `cv-layout: false` in frontmatter to switch the filter off.
 `teaching-portfolio.qmd` is built the same way as the CV (HTML in CI, a local-only PDF by
 `make portfolio`, no PDF link), but does **not** use
 `_filters/cv.lua`. Its `##` sections are Teaching philosophy, Courses,
-Awards and grants, Professional development, and Syllabi and sample
-materials. There is no
+Awards and grants, Professional development, Mentoring and academic
+service, and Syllabi and sample materials. Courses, awards, professional
+development and service repeat what the CV says, so a change to one of
+those in `cv/*.qmd` is made in the portfolio too. There is no
 separate teaching statement page: its prose lives in Teaching philosophy and
-Professional development; its old URLs are not redirected (§8). Under Courses each course is a
-`###` holding a pipe table
+Professional development; its old URLs are not redirected (§8). Under Courses each
+`###` is an institution and period ("Northwestern University, 2021-2023"),
+and each course is a `####` under it, holding a pipe table
 (Semester · Student level · Students · TAs · Course rating · Instructor rating)
-followed by `####` notes and a `#### Selected student comments` list, and the
-CV's `cvsection` list environment cannot hold a table (see below). The ratings
+followed by `#####` notes and a `##### Selected student comments` list. The
+extra level is for the TOC: `toc-depth: 3` stops at the institutions, since
+one line per course made the sidebar run off the screen. The tables are why
+the portfolio does not use `cv.lua`: the CV's `cvsection` list environment
+cannot hold a table (see below). The ratings
 and quotes are copied by hand from the evaluation PDFs in the
 `apurvanakade/PDFs` repo; a semester with several sections shows the
 response-weighted mean, and each rating carries its own scale (`/ 5` at JHU,
@@ -352,8 +358,9 @@ the first table's "Course rating" header, which HTML renders at the end of the
 page and LaTeX at the foot of that page. Its PDF
 layout lives in `_includes/portfolio-preamble.tex`: `\needspace` before each
 heading so a course title is never stranded above a page break, `titlesec`
-turning `####` (LaTeX's `\paragraph`, a run-in heading by default) into a
-display heading so a list can start below it, and
+setting the institution (`\subsubsection`) a size up and turning `####` and
+`#####` (LaTeX's `\paragraph` and `\subparagraph`, run-in headings by
+default) into display headings so a table or list can start below them, and
 `\LTleft=0pt` so tables sit flush with the prose rather than centred at
 differing widths.
 
@@ -364,18 +371,22 @@ band above the first `##` (courses, students, universities, first year, median
 JHU instructor rating since `CURRENT_ROLE_START`), a dot chart of every
 semester's instructor rating as a percentage of its scale at the top of
 `## Courses` (in HTML its hover tooltip is a small inline script, because an
-SVG `<title>` shows only after a second's rest and never on touch), an institution badge and muted code in each course `###`
+SVG `<title>` shows only after a second's rest and never on touch), an institution badge and muted code in each course `####`
 (parsed from its trailing "(Institution, code)"), and quote cards from the
-list under `#### Selected student comments`. HTML alone also gets rating bars
-in the tables, pill links from `#### Sample materials`, a link card to the
+list under `##### Selected student comments`. HTML alone also gets rating bars
+in the tables, pill links from `##### Sample materials`, a link card to the
 matching `projects/` page (`COURSE_PROJECTS` in the filter; title, image and
 description are read from that page's frontmatter), and icon tiles from the
 first list in `## Teaching philosophy` whose items all open with a **bold
 label** (icons chosen by `TILE_ICONS`). A heading or list that does not match
 these shapes is left as it is. So the content conventions are: write a course
-heading as `### Name (Institution, code)` with the institution spelled as in
+heading as `#### Name (Institution, code)` under its institution's `###`
+(the filter's `COURSE_LEVEL` and `NOTE_LEVEL`), with the institution spelled as in
 `INSTITUTIONS`, keep the table's column names, and end each comment with
-`(Term)` after the closing quotation mark.
+`(Term)` after the closing quotation mark. Mathcamp is the exception: one
+`#### Classes (Mathcamp)` holds every Mathcamp class, one row each, in a table with a Class column and no student or rating columns
+(there is no evaluation data). Its `INSTITUTIONS` entry is marked
+`program = true` so the summary band's "universities" count leaves it out.
 
 Its HTML styles are `_theme/portfolio.css`, which the filter attaches to this
 page alone as an HTML dependency, so they never reach another page; the LaTeX
@@ -747,10 +758,17 @@ theme also sets a few Bootstrap variables without `!default`
   `_includes/portfolio-preamble.tex`. JHU and Northwestern use official
   colours: `--chip-*` (badges, chips) JHU Heritage Blue and Northwestern
   Purple, `--inst-*` (marks) JHU Spirit Blue and Northwestern Purple (Purple
-  30 in dark mode). Western is **orange**, not its own purple: Western Purple
-  `#4F2683` is indistinguishable from Northwestern Purple `#4E2A84`, and teal
-  is ruled out because it is the accent. Every use also names the
-  institution in text or shape.
+  30 in dark mode). Western is **gold**, not its own purple: Western Purple
+  `#4F2683` is indistinguishable from Northwestern Purple `#4E2A84`, teal is
+  ruled out because it is the accent, and orange (its earlier colour) sat too
+  close to Mathcamp's red. Gold is too pale for white text, so its chips take
+  dark text, and the light-mode mark is a darker gold (`#B8860B`) to stay
+  visible on the page. Canada/USA Mathcamp is a fourth
+  "institution", in its own red `#EB0A2D` (from mathcamp.org; `#F4707F` in
+  dark mode), and colours its CV timeline dots, its Projects chip and its
+  portfolio badge; anything new that colour-codes classes by where they were
+  taught uses `--inst-mc` / `--chip-mc-*` for Mathcamp ones. Every use also
+  names the institution in text or shape.
 - **One rule for every embed.** `main iframe` in `base.scss` makes any
   `<iframe>` 85% of the column and centred, matching a post's inset opening
   figure (§6), so none overflows a phone, with a `--vm-border` border. Its

@@ -149,25 +149,31 @@ blockquote {
 // Shared by the teaching portfolio, the CV timeline and the institution
 // category chips (see CLAUDE.md §7). JHU and Northwestern use their official
 // colours. Western's own purple (#4F2683) is indistinguishable from
-// Northwestern Purple (#4E2A84), so Western is orange instead (not teal: that is the site accent). Colour never
+// Northwestern Purple (#4E2A84), so Western is gold instead (not teal: that is the site accent;
+// not orange: too close to Mathcamp's red).
+// Canada/USA Mathcamp is its own red, #EB0A2D from mathcamp.org. Colour never
 // carries identity alone: every use also names the institution in text or
 // with a shape.
 body {
   --inst-jhu: #68ACE5;  // JHU Spirit Blue
   --inst-nw:  #4E2A84;  // Northwestern Purple
-  --inst-uwo: #D9661F;  // orange (Western's purple clashes with Northwestern's)
+  --inst-uwo: #B8860B;  // dark gold, 3:1 on the page (Western's purple clashes with Northwestern's)
+  --inst-mc:  #EB0A2D;  // Mathcamp red
   --inst-other: var(--vm-text-soft);
 
   --chip-jhu-bg: #002D72;  --chip-jhu-fg: #ffffff;  // JHU Heritage Blue
   --chip-nw-bg:  #4E2A84;  --chip-nw-fg:  #ffffff;  // Northwestern Purple
-  --chip-uwo-bg: #B04A0F;  --chip-uwo-fg: #ffffff;  // burnt orange
+  --chip-uwo-bg: #F2C230;  --chip-uwo-fg: #2a1d00;  // gold, dark text (white on gold is unreadable)
+  --chip-mc-bg:  #EB0A2D;  --chip-mc-fg:  #ffffff;  // Mathcamp red (4.5:1)
 }
 body.quarto-dark {
   --inst-nw: #B6ACD1;      // Northwestern Purple 30
-  --inst-uwo: #F0A35E;     // light orange
+  --inst-uwo: #F2C94C;     // light gold
+  --inst-mc:  #F4707F;     // light Mathcamp red
   --chip-jhu-bg: #68ACE5;  --chip-jhu-fg: #0b1a2e;  // JHU Spirit Blue
   --chip-nw-bg:  #B6ACD1;  --chip-nw-fg:  #24133f;  // Northwestern Purple 30
-  --chip-uwo-bg: #F0A35E;  --chip-uwo-fg: #2a1503;  // light orange
+  --chip-uwo-bg: #F2C94C;  --chip-uwo-fg: #2a1d00;  // light gold
+  --chip-mc-bg:  #F4707F;  --chip-mc-fg:  #2b0309;  // light Mathcamp red
 }
 
 // ------------------------------------------------------------------ tables
@@ -270,7 +276,7 @@ div.quarto-post .listing-categories .listing-category {
   color: var(--vm-text-soft);
   opacity: 1;
 }
-// Institution categories (JHU, Northwestern, UWO) wear their university's
+// Institution categories (JHU, Northwestern, UWO, Mathcamp) wear their university's
 // colour. _includes/projects.html adds the classes, since a category chip
 // carries nothing but its text.
 .quarto-title .quarto-categories .quarto-category.inst-chip,
@@ -281,6 +287,7 @@ div.quarto-post .listing-categories .listing-category {
 .inst-chip--jhu { --chip-bg: var(--chip-jhu-bg); --chip-fg: var(--chip-jhu-fg); }
 .inst-chip--nw  { --chip-bg: var(--chip-nw-bg);  --chip-fg: var(--chip-nw-fg); }
 .inst-chip--uwo { --chip-bg: var(--chip-uwo-bg); --chip-fg: var(--chip-uwo-fg); }
+.inst-chip--mc  { --chip-bg: var(--chip-mc-bg);  --chip-fg: var(--chip-mc-fg); }
 
 // -------------------------------------------------------------------- CV
 .cv-contact {
@@ -377,6 +384,7 @@ div.quarto-post .listing-categories .listing-category {
 .cv-entry--jhu { --inst: var(--inst-jhu); }
 .cv-entry--nw  { --inst: var(--inst-nw); }
 .cv-entry--uwo { --inst: var(--inst-uwo); }
+.cv-entry--mc  { --inst: var(--inst-mc); }
 
 // Teaching: one row per term, a chip per course (compact_teaching in cv.lua).
 .cv-portfolio-link { margin: 0 0 1rem; }
