@@ -150,7 +150,7 @@ I teach in the Department of Applied Mathematics & Statistics at Johns Hopkins, 
 ##### Sample materials
 
 - [Course page, Summer 2026](https://apurvanakade.github.io/courses/foundational-math-ai/): daily outline, class notes and interactive tools used in class
-- [Course project](https://apurvanakade.github.io/courses/foundational-math-ai/project.html): the three-part data analysis project. Summer 2025 groups predicted heart disease, bank customers' decisions, exam performance and mushroom toxicity from public datasets; from Summer 2026, groups find their own real-world data.
+- [Course project](https://apurvanakade.github.io/courses/foundational-math-ai/project.html): the three-part data analysis project. Summer 2025 groups estimated obesity levels, predicted strokes and student dropout, and analyzed college basketball statistics.
 
 ##### Summer 2025
 

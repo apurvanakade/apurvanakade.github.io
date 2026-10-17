@@ -64,14 +64,8 @@ This is the moment you finally reveal all your cards! Aim for about 6 or 7 slide
 
 ### Summer 2025
 
-In Summer 2025, groups chose from a menu of public datasets, each with a prediction goal, and had to use regression, classification and clustering in their analysis. Starting in Summer 2026, groups find their own real-world dataset instead (Part 1 above).
-
-| Dataset | Prediction goal | Groups |
-|---------|-----------------|-------:|
-| [Heart disease](https://www.kaggle.com/datasets/johnsmith88/heart-disease-dataset) | Whether a patient has heart disease | 2 |
-| [Bank marketing](https://www.kaggle.com/datasets/janiobachmann/bank-marketing-dataset) | Whether a customer subscribes to a term deposit | 2 |
-| [Student performance](https://www.kaggle.com/datasets/spscientist/students-performance-in-exams) | Students' exam grades, or pass/fail | 1 |
-| [Mushrooms](https://www.kaggle.com/datasets/uciml/mushroom-classification/data) | Whether a mushroom is edible or poisonous | 1 |
-| [Iris](https://www.kaggle.com/datasets/uciml/iris/data) | The species of an iris from its flower measurements | 1 |
-
-The menu also offered the [Titanic](https://www.kaggle.com/competitions/titanic/data) and [zoo animal](https://www.kaggle.com/datasets/uciml/zoo-animal-classification) datasets.
+- Obesity level estimation from eating habits and physical condition (three groups), using the [UCI obesity levels dataset](https://archive.ics.uci.edu/dataset/544/estimation+of+obesity+levels+based+on+eating+habits+and+physical+condition)
+- Stroke prediction, using the [stroke prediction dataset](https://www.kaggle.com/datasets/fedesoriano/stroke-prediction-dataset)
+- Predicting student dropout and academic success, using the [UCI student dropout dataset](https://archive.ics.uci.edu/dataset/697/predict+students+dropout+and+academic+success)
+- NCAA college basketball team statistics, using the [college basketball dataset](https://www.kaggle.com/datasets/andrewsundberg/college-basketball-dataset)
+- A Python chatbot, using the [Cornell Movie-Dialogs Corpus](https://www.cs.cornell.edu/~cristian/Cornell_Movie-Dialogs_Corpus.html)

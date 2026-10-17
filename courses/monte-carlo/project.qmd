@@ -72,6 +72,32 @@ Many of these were completed by students in previous years. They are starting po
 
 ## Student projects
 
+### Spring 2026
+
+- Monte Carlo tree search for multiple sequence alignment
+- Kalman filter estimation of IMU measurements: free fall and 2D pendulum dynamics
+- Building an Othello engine with Monte Carlo tree search
+- Extending MMIL with Monte Carlo EM for cell-state inference in single-cell RNA sequencing
+- Simultaneous localization and mapping via extended Kalman filters
+- Game AI for Connect Four with Monte Carlo tree search, and its statistical properties
+- Feynman-Kac and diffusion Monte Carlo for solving PDEs
+- Monte Carlo simulation of photon transport through multi-layered tissue
+- Adaptive sample allocation in multilevel Monte Carlo for option pricing
+- A comparison of variance reduction techniques for European and Asian options
+- Estimating extreme credit portfolio risk with importance sampling
+
+### Fall 2025
+
+- Kalman filtering for object tracking: alternative models for diver tracking
+- Monte Carlo tree search for Othello
+- Extended Kalman filters versus particle filters
+- Spectra fitting and parameter selection with adaptive Metropolis-Hastings
+- Hamiltonian Monte Carlo and its comparison with Metropolis-Hastings
+- The Propp-Wilson algorithm: methodology and benchmark comparisons
+- Diffusion models from first principles: a Monte Carlo and Markov chain approach to image generation
+- Simultaneous localization and mapping with particle filters
+- How graph structure and walk design affect the mixing of random walks
+
 ### Spring 2025
 
 - Expander graphs and fast-mixing random walks

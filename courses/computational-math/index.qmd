@@ -8,7 +8,7 @@ date: 2026-01-20
 - [Syllabus](syllabus.pdf) (PDF)
 - [Textbook](https://fncbook.com/): T. A. Driscoll and R. J. Braun, *Fundamentals of Numerical Computation*, freely available online. The course follows Chapters 1 to 6.
 - [Class notes](https://1drv.ms/o/c/f0f4bc0cf8b335c4/IgD8tYjZvkbxS42dB1AFqypYAT9Y07EgO19xf2qk7pEUTSg?e=MYxXLl) (OneNote, written in class)
-- [Final project](project.qmd): guidelines and project ideas
+- [Final project](project.qmd): guidelines, project ideas and past projects
 
 ## About the course
 
