@@ -818,7 +818,9 @@ reorganisation (`notes.html`, `rec letters.html`, `teaching statement.html`,
 `teaching-statement.html`, every post under `/math-blog/`, now under
 `/blog/`, everything under `/blog/maths/` and `/blog/posts/maths/`, and every
 post under `/blog/posts/`, `/blog/math/` or `/blog/scribbles/`, now directly
-under `/blog/`) now 404 at their old addresses. Do not add a redirect
+under `/blog/`, and every page and PDF under `/courses/<course>/`, now
+`/courses/<course>.html` and `/courses/<course>-*.pdf`) now 404 at their old
+addresses. Do not add a redirect
 mechanism back unless asked. A page moved from here on breaks its
 old links, so prefer keeping URLs stable.
 
