@@ -7,12 +7,12 @@
   - a summary band (courses, students, universities, teaching since, recent
     JHU rating) above the first `##`, computed from the course tables;
   - a chart of every semester's instructor rating at the top of `## Courses`;
-  - each course `###` "Name (Institution, code)" gets an institution badge
+  - each course `####` "Name (Institution, code)" gets an institution badge
     and a muted course code;
   - rating cells "4.37 / 5" get a thin bar (HTML);
   - a course with a page under projects/ gets a link card (HTML);
-  - the list under `#### Sample materials` becomes pill links (HTML);
-  - the list under `#### Selected student comments` becomes quote cards;
+  - the list under `##### Sample materials` becomes pill links (HTML);
+  - the list under `##### Selected student comments` becomes quote cards;
   - the first bullet list in `## Teaching philosophy` whose items all start
     with **bold label** becomes a row of icon tiles (HTML).
 
@@ -367,8 +367,13 @@ local function summarise(courses)
   end
   local n_insts = 0
   for _ in pairs(insts) do n_insts = n_insts + 1 end
+  -- A program's one table stands for many short classes, not a course.
+  local n_courses = 0
+  for _, c in ipairs(courses) do
+    if not c.inst.program then n_courses = n_courses + 1 end
+  end
   local stats = {
-    { value = tostring(#courses), label = "courses taught" },
+    { value = tostring(n_courses), label = "courses taught" },
     -- Several tables have blank student counts, so the sum is a lower bound.
     { value = thousands(math.floor(students / 50) * 50) .. "+", label = "students taught" },
     { value = tostring(n_insts), label = "universities" },

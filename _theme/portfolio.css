@@ -87,6 +87,11 @@
 .portfolio-chart__plot .portfolio-chart__point:hover .portfolio-chart__mark { transform: scale(1.5); }
 
 /* ------------------------------------------------------- course headings */
+/* Under Courses: h3 an institution, h4 a course, h5 a course's notes. The
+   theme sets h5 above h4, so the three are sized here to keep that order. */
+section#courses h3 { font-size: 1.35rem; }
+h4.portfolio-course { font-size: 1.2rem; }
+section.portfolio-course h5 { font-size: 1.05rem; }
 h4.portfolio-course { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.2rem 0.55rem; }
 h4.portfolio-course .portfolio-course__badge {
   font-size: 0.7rem;

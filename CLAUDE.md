@@ -386,7 +386,10 @@ heading as `#### Name (Institution, code)` under its institution's `###`
 `(Term)` after the closing quotation mark. Mathcamp is the exception: one
 `#### Classes (Mathcamp)` holds every Mathcamp class, one row each, in a table with a Class column and no student or rating columns
 (there is no evaluation data). Its `INSTITUTIONS` entry is marked
-`program = true` so the summary band's "universities" count leaves it out.
+`program = true` so the summary band's "courses" and "universities" counts
+leave it out. Under Courses, `portfolio.css` sizes the `h3` institution,
+`h4` course and `h5` notes itself, because the theme's `h5` is larger than
+its `h4`.
 
 Its HTML styles are `_theme/portfolio.css`, which the filter attaches to this
 page alone as an HTML dependency, so they never reach another page; the LaTeX
@@ -458,7 +461,7 @@ Prose.
   Content files carry no markup for it.
 - `projects/_metadata.yml` applies that filter and shared page settings to the
   whole directory, and includes `_includes/projects.html`, a small script
-  that adds `inst-chip` classes to the JHU, Northwestern and UWO category
+  that adds `inst-chip` classes to the JHU, Northwestern, UWO and Mathcamp category
   chips (a chip carries only its text, so CSS cannot select it) and splits
   the listing's category rail into Kind, Venue and Topic groups. A category
   in neither its `KIND` nor its `VENUE` list is a topic.
