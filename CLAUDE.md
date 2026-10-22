@@ -211,6 +211,7 @@ courses/<course>-*.pdf          its syllabus and project slides, as-is
 
 Navbar: **Home · Projects · Blog · Teaching ▾ · CV**. `Teaching` is a dropdown
 holding the teaching portfolio, course pages,
+a direct link to the AMS course explorer app (`AMS-courses` repo, not a project page),
 recommendation-letter instructions, and references.
 
 **There is no sidebar for the blog subtree, deliberately.** The blog index
@@ -480,10 +481,9 @@ Prose.
   effect on the Projects listing, which always shows everything, and none on the
   two pinned cards, which are named by slug in the generator.
 - **Images.** Every project cover is local. Some projects use a **screenshot**
-  of the thing itself, committed as `images/projects/<slug>.png`: the two apps
-  (`ams-course-explorer`, `visual-math-lab` — the latter a crop of the
-  controls and dot grid of the positive-predictive-value app, with the
-  analytics dialog dismissed), and a figure or formula from the notes for
+  of the thing itself, committed as `images/projects/<slug>.png`: the app
+  `visual-math-lab` (a crop of the controls and dot grid of the
+  positive-predictive-value app, with the analytics dialog dismissed), and a figure or formula from the notes for
   `intro-to-optimization`, `group-cohomology`, `expository-notes` and
   `hitchhikers-guide-algebraic-topology`. Screenshots are downscaled to at
   most 1600px wide, and any wider than 3:2 is padded to 3:2 on its own
@@ -509,8 +509,8 @@ Prose.
 page pulls in via `include-after-body`. It holds two sections:
 
 1. **Featured** — two *fixed* project cards, named by slug in the `PINNED` list
-   at the top of the script (currently `ams-course-explorer` and
-   `visual-math-lab`, shown in that order). They ignore `weight:` entirely and
+   at the top of the script (currently `visual-math-lab` and
+   `monte-carlo-methods`, shown in that order). They ignore `weight:` entirely and
    need no JavaScript. To change what is featured, edit `PINNED`. A slug that
    matches no file logs a warning and is skipped rather than failing the build.
 2. **A random pick** — one project card and one blog-post card, each drawn in the
@@ -532,8 +532,8 @@ Items are drawn with probability proportional to `weight:`:
 Weights are relative, not percentages, so they do not need to sum to anything.
 The current spread is 3 for flagship course notes, 2 for substantial course
 redesigns, 1 for individual Mathcamp classes, and 0 for the two grab-bag index
-pages (`mathcamp-assorted`, `expository-notes`). The two apps carry `weight: 5`,
-which is now inert — they are pinned. These are a starting point — Apurva tunes
+pages (`mathcamp-assorted`, `expository-notes`). Visual Math Lab carries `weight: 5`,
+which is inert because it is pinned. These are a starting point — Apurva tunes
 them.
 
 **Blog posts use the identical mechanism.** The script scans `projects/*.qmd`

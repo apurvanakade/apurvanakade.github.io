@@ -53,7 +53,7 @@ BLOG_INDEX = "blog/"
 # Slugs of projects/<slug>.qmd shown, in this order, in the fixed "Featured"
 # section. They are dropped from the random pool so a page never shows the same
 # project twice.
-PINNED = ["ams-course-explorer", "visual-math-lab"]
+PINNED = ["visual-math-lab", "monte-carlo-methods"]
 
 
 def parse_frontmatter(path):

@@ -33,6 +33,8 @@ website:
             href: teaching-portfolio.qmd
           - text: Course pages
             href: courses/index.qmd
+          - text: AMS course explorer
+            href: https://apurvanakade.github.io/AMS-courses/
           - text: Recommendation letters
             href: rec-letters.qmd
           - text: References & reading
