@@ -37,8 +37,6 @@ website:
             href: https://apurvanakade.github.io/AMS-courses/
           - text: Recommendation letters
             href: rec-letters.qmd
-          - text: References & reading
-            href: references.qmd
       - text: CV
         href: CV.qmd
     right:

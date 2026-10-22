@@ -46,7 +46,7 @@ The single most important convention in this repo is a hard split between files
 
 | Apurva edits — Claude does not restructure | Claude maintains — Apurva never needs to open |
 |---|---|
-| `index.qmd`, `references.qmd`, `rec-letters.qmd` | `_quarto.yml` |
+| `index.qmd`, `rec-letters.qmd` | `_quarto.yml` |
 | `teaching-portfolio.qmd` | `_includes/portfolio-preamble.tex` |
 | `courses/*.qmd` | `courses/_metadata.yml` |
 | `projects/*.qmd` (frontmatter + prose) | `_theme/*.scss`, `_theme/*.css` |
@@ -203,7 +203,6 @@ cv/<section>.qmd                one CV section per file
 teaching-portfolio.qmd          teaching philosophy, courses, development; HTML *and* PDF
 rec-letters.qmd                 recommendation-letter instructions and checklist
 _pdf/                           gitignored; local PDFs from `make pdfs` (§4)
-references.qmd
 courses/index.qmd               card listing of the course pages
 courses/<course>.qmd            one course, all on one page
 courses/<course>-*.pdf          its syllabus and project slides, as-is
@@ -212,7 +211,7 @@ courses/<course>-*.pdf          its syllabus and project slides, as-is
 Navbar: **Home · Projects · Blog · Teaching ▾ · CV**. `Teaching` is a dropdown
 holding the teaching portfolio, course pages,
 a direct link to the AMS course explorer app (`AMS-courses` repo, not a project page),
-recommendation-letter instructions, and references.
+and recommendation-letter instructions.
 
 **There is no sidebar for the blog subtree, deliberately.** The blog index
 already carries a grid listing plus a categories rail, and every post has a
@@ -687,7 +686,7 @@ Posts carry a [giscus](https://giscus.app) comment box, set by the
 `comments:` key in `blog/_metadata.yml`, and switched off again by
 `blog/index.qmd` and `blog/drafts/_metadata.yml`. It is on posts and nowhere else, by
 Apurva's choice: not on listing pages, drafts, projects, courses or the
-personal pages (CV, portfolio, references, rec letters). Threads are GitHub
+personal pages (CV, portfolio, rec letters). Threads are GitHub
 Discussions on this repo, in the **Announcements** category, whose
 announcement format lets only maintainers and the giscus app open a thread, so
 readers can reply but cannot start stray threads. The repo and category ids
