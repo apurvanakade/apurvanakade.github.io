@@ -17,9 +17,9 @@ And yet, most of the time, when I'm done, I feel nothing but anxious. It's like 
 ![*Dragon ascending Mount Fuji*, Katsushika Hokusai, 1835 ([public domain](https://commons.wikimedia.org/wiki/File:Dragon_ascending_Mount_Fuji,_Katsushika_Hokusai.jpg))](images/hokusai-dragon-ascending-fuji.jpg){width="85%" fig-align="center" fig-alt="Woodblock print of a dragon rising through swirling clouds on the left page, with snow-capped Mount Fuji on the right page."}
 
 I've started noticing that doing anything with AI takes much longer than I expect.
-I'll open up a website thinking I just need to _fix one thing_, and two hours later here I am, tweaking the CSS, adjusting margins, researching fonts...
+I'll open up a website thinking I just need to _fix one thing_, and two hours later, here I am, tweaking the CSS, adjusting margins, researching fonts...
 
-Don't get me wrong - I'm in awe of its power. I've built an app to track my finances in a day, something I could never have done before: not in a day, not ever. It feels like living in a science fiction novel.
+Don't get me wrong: I'm in awe of its power. In a day, I built an app to track my finances, something I could never have done before: not in a day, not ever. It feels like living in a science fiction novel.
 But this technology is too powerful for me. It's a dragon, and I need to learn to tame it.
 
 In a way, AI feels like social media 2.0. It took me years to figure out how to use social media without it using me. I still waste a decent amount of time online, but I've contained the damage to a few websites, and even there I've curated my feeds so I see the good stuff and none of the toxicity. I need to do the same for AI.
@@ -27,5 +27,9 @@ In a way, AI feels like social media 2.0. It took me years to figure out how to 
 Taming the dragon takes mindfulness, and a lot of patience and compassion toward myself. I keep trying, I keep failing. There have been lost days, and sore eyes from staring at the screen.
 
 But now I feel like I've found an equilibrium. A _harness_, as they say in the AI world. Fitting, for a dragon. Every time I sit down at my computer, I write a line in my journal about what I intend to do, and I try to do just that. This simple act of setting an intention and writing it down somehow keeps me mindful and works like blinders, keeping distractions out.
+
+I've also started mixing in some healthy habits while AI is working. I try to do a quick workout while I'm waiting instead of mindlessly reading AI-generated garbage. By the time AI is done, my adrenaline is high and I'm no longer a zombie watching text scroll by.
+
+And I've used AI to tame itself: I made an app that acts as an ever-accessible, quick-capture inbox for my [GTD](https://gettingthingsdone.com/) system. As soon as I have an idea, it goes to the inbox for me to decide later. This has helped me preserve my sanity and not get lost in my own mind chatter.
 
 The dragon is not tamed. But it's on a leash.
