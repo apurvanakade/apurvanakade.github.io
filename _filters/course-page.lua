@@ -204,22 +204,29 @@ end
 
 ----------------------------------------------------------- project ideas
 
--- Returns the idea Divs, or nil when the table is not an idea table.
+-- Returns the idea Divs, or nil when the table is not an idea table. Every
+-- column after the title and description becomes a muted line labelled with
+-- its header, so no cell and no header is lost.
 local function idea_items(tbl)
   local names = header_names(tbl)
   if names[1] ~= "Project" then return nil end
   local desc_col
   for i, n in ipairs(names) do if n == "Description" then desc_col = i end end
   if not desc_col then return nil end
-  local conn_col = desc_col < #names and #names or nil
   local items = {}
   for _, row in ipairs(body_rows(tbl)) do
     local parts = {
       pandoc.Div(row.cells[1].contents, cls({ "course-idea__title" })),
       pandoc.Div(row.cells[desc_col].contents, cls({ "course-idea__desc" })),
     }
-    if conn_col then
-      parts[#parts + 1] = pandoc.Div(row.cells[conn_col].contents, cls({ "course-idea__conn" }))
+    for i = 2, #names do
+      if i ~= desc_col then
+        local inls = pandoc.Inlines({ pandoc.Str(names[i] .. ":"), pandoc.Space() })
+        for _, b in ipairs(row.cells[i].contents) do
+          if b.content then inls:extend(b.content) end
+        end
+        parts[#parts + 1] = pandoc.Div(pandoc.Plain(inls), cls({ "course-idea__conn" }))
+      end
     end
     items[#items + 1] = pandoc.Div(parts, cls({ "course-idea" }))
   end

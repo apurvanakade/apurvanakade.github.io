@@ -280,7 +280,8 @@ headings are no longer headings); the bullet list before the first `##`, and
 any later list whose items are each a single link, becomes pill buttons, in
 a row when no item has a note, else one per line with the note beside it; a
 table whose first column is "Project" with a "Description" column (project
-ideas) becomes a stack of title, description and muted course connection; a
+ideas) becomes a stack of title, description and, for every other column, a muted
+line labelled with its header; a
 bullet list or idea stack of more than 8 items outside a toggle shows its
 first 6 and folds the rest into a `<details class="course-more">`, styled
 with the CV's `.cv-more`; a
