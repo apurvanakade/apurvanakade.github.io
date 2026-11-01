@@ -2,7 +2,6 @@
 title: "Crash Course on Linear Algebra"
 description: "A week-long, proof-based introduction to linear algebra in IBL format."
 date: 2019-07-01
-weight: 1
 categories: ["course notes", "Mathcamp", "linear algebra"]
 image: ../images/projects/linear-algebra-vectors.png
 links:

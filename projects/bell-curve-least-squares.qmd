@@ -2,7 +2,6 @@
 title: "How to Discover the Bell Curve"
 description: "A week-long class deriving the normal distribution from least squares, following Gauss' calculation of the orbit of Ceres."
 date: 2026-07-01
-weight: 3
 categories: ["course notes", "Mathcamp", "probability"]
 image: ../images/projects/bell-curve.svg
 links:

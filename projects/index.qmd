@@ -1,13 +1,12 @@
 ---
 title: "Projects"
-subtitle: "Apps, course notes, problem sets, and things I built while trying to teach something better."
 listing:
   contents: "*.qmd"
   sort: "date desc"
   type: grid
   grid-columns: 3
   fields: [image, title, description, categories]
-  categories: numbered
+  categories: cloud
   sort-ui: [date, title]
   filter-ui: true
   image-height: 190px

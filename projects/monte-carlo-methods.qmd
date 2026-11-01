@@ -2,7 +2,6 @@
 title: "Monte Carlo Methods"
 description: "Course notes for a semester-long JHU AMS course on simulation and Monte Carlo estimation."
 date: 2025-09-01
-weight: 3
 categories: ["course notes", "JHU", "probability"]
 image: ../images/projects/monte-carlo.svg
 links:

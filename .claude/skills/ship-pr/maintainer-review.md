@@ -39,7 +39,7 @@ the PR's branch checked out), not only the hunk, and look at whatever it calls
 or is called by. Ignore `docs/`, which is generated and gitignored. Changes
 inside `_extensions/apurvanakade/mathviz/` are an installed library release:
 review only whether it is one (the folder replaced wholesale by
-`_scripts/update-mathviz.sh`), not its code. `_includes/home-cards.html` is
+`_scripts/update-mathviz.sh`), not its code. `_includes/home-lists.html` is
 generated: review the generator in `_scripts/`, and check the output only for
 agreeing with it.
 

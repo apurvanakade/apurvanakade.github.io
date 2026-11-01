@@ -2,7 +2,6 @@
 title: "Symmetries & Polynomials"
 description: "A two-week intersession course taking non-math majors from group theory to the unsolvability of the quintic."
 date: 2018-01-01
-weight: 2
 categories: ["course notes", "JHU", "algebra"]
 image: ../images/projects/symmetries-and-polynomials.svg
 links:

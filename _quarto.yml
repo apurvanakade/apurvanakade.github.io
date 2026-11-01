@@ -14,7 +14,7 @@ project:
   pre-render:
     # Pulls the latest mathviz release into _extensions/ (see CLAUDE.md §6).
     - _scripts/update-mathviz.sh
-    - _scripts/build_home_cards.py
+    - _scripts/build_home_lists.py
 
 website:
   title: "Apurva Nakade"
@@ -45,15 +45,8 @@ website:
         aria-label: GitHub
   page-footer:
     center: "&copy; 2026 Apurva Nakade"
-    right:
-      - icon: envelope
-        href: mailto:apurva.nakade@jhu.edu
-        aria-label: Email
-      - icon: github
-        href: https://github.com/apurvanakade/
-        aria-label: GitHub
-  # No sidebar for the blog subtree. The blog index carries a grid listing plus
-  # a categories rail, and every post has a back-link, so a sidebar would be a
+  # No sidebar for the blog subtree. The blog index already lists every post,
+  # and every post has a back-link, so a sidebar would be a
   # column of duplicate navigation.
   # The standalone blog used an explicit sidebar file list and it had already
   # gone stale (it still pointed at a post deleted months earlier); listings

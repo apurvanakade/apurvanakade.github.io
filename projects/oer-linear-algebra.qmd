@@ -2,7 +2,6 @@
 title: "Open Textbook for Linear Algebra"
 description: "WeBWorK problem sets added to a PreTeXt open educational resources linear algebra textbook."
 date: 2022-06-01
-weight: 2
 categories: ["OER", "Northwestern", "linear algebra"]
 image: ../images/projects/oer-linear-algebra.svg
 ---

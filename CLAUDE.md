@@ -101,7 +101,7 @@ manual toggle — click `.quarto-color-scheme-toggle`, don't rely on
 
 - **pre-render** `_scripts/update-mathviz.sh` → installs the latest mathviz
   release into `_extensions/` (§6, "mathviz")
-- **pre-render** `_scripts/build_home_cards.py` → writes `_includes/home-cards.html`
+- **pre-render** `_scripts/build_home_lists.py` → writes `_includes/home-lists.html`
 
 The Python hooks need only the standard library; the shell hook needs `git`
 and network access, and falls back to the installed copy when offline.
@@ -191,10 +191,10 @@ preview; it has no effect on the published site.
 ## 3. Site structure
 
 ```
-index.qmd                       home; pulls in _includes/home-cards.html
+index.qmd                       home; pulls in _includes/home-lists.html
 projects/index.qmd              grid listing, filter + category UI
 projects/<slug>.qmd             one project per file
-blog/index.qmd                  all posts, grid listing
+blog/index.qmd                  all posts, a plain dated list
 blog/<post>.qmd                 every post, beside the listing
 blog/drafts/*.qmd               rendered and published, but not listed anywhere
 blog/images/                    every post's and draft's images, one flat folder
@@ -214,7 +214,7 @@ a direct link to the AMS course explorer app (`AMS-courses` repo, not a project 
 and recommendation-letter instructions.
 
 **There is no sidebar for the blog subtree, deliberately.** The blog index
-already carries a grid listing plus a categories rail, and every post has a
+already lists every post, and every post has a
 back-link, so a sidebar would be a column of duplicate navigation. The standalone blog used an explicit sidebar file list in its
 `_quarto.yml` and it had gone stale — it still pointed at a post deleted months
 earlier. Listings cannot rot that way. If a sidebar is ever wanted again, note
@@ -253,8 +253,8 @@ Canvas sites they come from were not:
   original PDFs, after checking their text for names other than Apurva's.
 
 `courses/index.qmd` lists them as cards through a custom listing template,
-`_includes/course-cards.ejs`, which reuses the home page's `.home-card`
-styles. Each card's cover is `images/courses/<course>.svg`, a real figure
+`_includes/course-cards.ejs`, styled by the `.home-card` rules in
+`base.scss` (the home page itself no longer has cards; the name stayed). Each card's cover is `images/courses/<course>.svg`, a real figure
 drawn by `_scripts/make_covers.py` (`COURSE_FIGURES`), so a new course needs a
 new entry there. Those covers are referenced only from the template, where
 Quarto cannot discover them, so `_quarto.yml` names `images/courses/*.svg` in
@@ -453,7 +453,6 @@ Each project is one file, `projects/<slug>.qmd`:
 title: "Monte Carlo Methods"
 description: "One sentence. Shown on the listing card."
 date: 2025-09-01          # term taught; drives sort order
-weight: 3                 # odds of being the home page's random pick
 categories: ["course notes", "JHU", "probability"]
 image: ../images/projects/foo.svg   # or a remote URL
 links:
@@ -469,16 +468,21 @@ Prose.
 - `projects/_metadata.yml` applies that filter and shared page settings to the
   whole directory, and includes `_includes/projects.html`, a small script
   that adds `inst-chip` classes to the JHU, Northwestern, UWO and Mathcamp category
-  chips (a chip carries only its text, so CSS cannot select it) and splits
-  the listing's category rail into Kind, Venue and Topic groups. A category
-  in neither its `KIND` nor its `VENUE` list is a topic.
+  chips (a chip carries only its text, so CSS cannot select it) and moves
+  the listing's category cloud above the grid.
+- **The category filter is a word cloud above the grid**, not a margin rail
+  (the rail cluttered the page). `projects/index.qmd` sets
+  `categories: cloud`; Quarto puts the cloud in the right margin, so the
+  script moves it before the listing, removes the empty margin, and switches
+  `<main>` from `column-page-left` to `column-page` so the grid is centred.
+  The cloud has no "All" entry of its own, so the script adds one (an empty
+  `data-category`, Quarto's reset), before `DOMContentLoaded`, when
+  `quarto-listing.js` attaches its click handlers. The page has no
+  `subtitle:`.
 - **Categories** are a flat vocabulary mixing kind (`app`, `course notes`,
   `problem sets`, `course design`, `formalization`, `OER`, `expository`), venue
   (`JHU`, `Northwestern`, `UWO`, `Mathcamp`) and one topic. Reuse existing terms;
   check `projects/index.html`'s category list before inventing a new one.
-- **`weight:`** controls the home page's random-pick draw (see §5.1). It has no
-  effect on the Projects listing, which always shows everything, and none on the
-  two pinned cards, which are named by slug in the generator.
 - **Images.** Every project cover is local. Some projects use a **screenshot**
   of the thing itself, committed as `images/projects/<slug>.png`: the app
   `visual-math-lab` (a crop of the controls and dot grid of the
@@ -502,66 +506,35 @@ Prose.
   render. If you ever do add one, check the size first
   (`curl -so /dev/null -w '%{size_download}'`) and its licence.
 
-### 5.1 The home page's two card sections
+### 5.1 The home page's lists
 
-`_scripts/build_home_cards.py` writes `_includes/home-cards.html`, which the home
-page pulls in via `include-after-body`. It holds two sections:
+`_scripts/build_home_lists.py` writes `_includes/home-lists.html`, which the home
+page pulls in via `include-after-body`: two plain text lists under the intro,
+in this order,
+with no images, cards or JavaScript, because the home page is meant to be
+quiet (an earlier version, with a "Featured" pair of image cards and a
+weighted random pick, was too busy).
 
-1. **Featured** — two *fixed* project cards, named by slug in the `PINNED` list
-   at the top of the script (currently `visual-math-lab` and
-   `monte-carlo-methods`, shown in that order). They ignore `weight:` entirely and
-   need no JavaScript. To change what is featured, edit `PINNED`. A slug that
-   matches no file logs a warning and is skipped rather than failing the build.
-2. **A random pick** — one project card and one blog-post card, each drawn in the
-   browser on every page load.
+1. **Selected projects**: the projects named by slug in `PINNED` (currently
+   `visual-math-lab` and `monte-carlo-methods`), title and `description:`. A
+   slug that matches no file logs a warning and is skipped.
+2. **Writing**: the `RECENT` (4) newest posts in `blog/*.qmd` by `date:`, title
+   and month. Drafts are never listed (`blog/drafts/` is not scanned, and
+   `draft: true` is skipped).
 
-Pinned projects are **excluded from the random project pool**, so one page never
-shows the same project twice.
+Each list ends in an "All projects" / "All posts" link. The lists read from
+disk and make **no network request**, so they work offline and under
+`quarto preview`; keep it that way. Styles are `.home-list*` in `base.scss`.
 
-#### Weighting the random pick
-
-Items are drawn with probability proportional to `weight:`:
-
-| `weight` | meaning |
-|---|---|
-| `0` | never drawn — still listed on the Projects page |
-| absent or `1` | the default |
-| `n` | `n` times as likely to be drawn as a `weight: 1` project |
-
-Weights are relative, not percentages, so they do not need to sum to anything.
-The current spread is 3 for flagship course notes, 2 for substantial course
-redesigns, 1 for individual Mathcamp classes, and 0 for the two grab-bag index
-pages (`mathcamp-assorted`, `expository-notes`). Visual Math Lab carries `weight: 5`,
-which is inert because it is pinned. These are a starting point — Apurva tunes
-them.
-
-**Blog posts use the identical mechanism.** The script scans `projects/*.qmd`
-*and* `blog/*.qmd`, drops everything at weight 0, and embeds both
-lists as JSON. The highest-weighted item of each kind is baked into the HTML as
-the no-JavaScript fallback. A non-numeric weight logs a warning and falls back to
-1; a negative one is clamped to 0.
-
-Hrefs and image paths are percent-encoded by the generator, in case a filename ever contains a space. Post `image:` paths are frontmatter-relative and get rewritten
-relative to the site root.
-
-The cards read from disk and make **no network request** — no fetch, no
-scraping of rendered listings, no `weights.json`. They therefore work offline and
-under `quarto preview`. Keep it that way; the data they need is all local.
-
-Section chrome is styled by `.home-section` / `.home-section__title` /
-`.home-section__note` in `_theme/base.scss`. A pinned card has no eyebrow, so
-`.home-card__thumb:first-child` drops the eyebrow's top margin and the thumbnail
-sits flush with the card top. The whole card is clickable because the title's
-`<a>` gets an `::after` overlay stretched over the card (`position: relative`
-on `.home-card`). The random-pick cards' "See all projects" and "Read the blog"
-footer links sit above that overlay with `z-index: 1`. Without it, they would
-open the card's own page instead. Any other link added inside a card needs the
-same treatment.
+The contact links and photo come from `index.qmd`'s `about:` (solana
+template). `base.scss` turns the template's outlined link buttons into plain
+grey text and shrinks the photo; its selectors start with `div.` because
+Quarto's do, and a plain `.quarto-about-solana` rule loses.
 
 ### Adding a project
 
-Create the `.qmd`. Nothing else. The listing, the category filter, and the home
-page's random pick all pick it up on the next render.
+Create the `.qmd`. Nothing else. The listing and the category filter pick it
+up on the next render; the home page lists only `PINNED` projects.
 
 ---
 
@@ -603,18 +576,35 @@ Recover it from there if it is ever wanted.
 
 The blog is flat: every post is `blog/<post>.qmd`, beside the one listing,
 `blog/index.qmd`. There are no sections; a post's subject is carried by its
-`categories:`, which the listing's rail filters on. All images, for posts and
+`categories:` (kept in frontmatter, but shown neither on the index nor on
+the post). All images, for posts and
 drafts, live in one flat `blog/images/`, referenced as `images/foo.png` from a
 post and `../images/foo.png` from a draft.
 
 `blog/_metadata.yml` sets `echo: false`, the back-link include
-(`blog/_includes/back-to-blog.html`) and the giscus config for the whole
-subtree, `index.qmd` and drafts included. The back-link's `href` is the
+(`blog/_includes/back-to-blog.html`, an `include-after-body`, so "All posts"
+sits after the post, above the comments), `body-classes: blog-post` and the
+giscus config for the whole subtree, `index.qmd` and drafts included. The back-link's `href` is the
 root-relative `/blog/`, so the one include is right from a draft one folder
 down too; Quarto rewrites it to a relative path. The index therefore sets
 `comments: false`, and `body-classes: blog-index`, which `base.scss` uses to
-hide the inherited `.post-backlink` (Quarto concatenates `include-before-body`
-lists, so a page cannot replace an inherited include, only hide it).
+hide the inherited `.post-backlink` (Quarto concatenates `include-after-body`
+lists, so a page cannot replace an inherited include, only hide it). The
+`blog-post` rules are written `body.blog-post:not(.blog-index)` in case the
+two class lists are ever concatenated too.
+
+**A post opens with its title and one grey line, the date.** `base.scss`
+hides the rest of Quarto's title block for `.blog-post`: the author (always
+Apurva), the `description:` (it is for the listing), the category chips and
+the AUTHOR / PUBLISHED labels. The author's block is found as the meta `<div>`
+without a `p.date`, because Quarto gives it no class of its own. The
+frontmatter stays as it is; only the display changes.
+
+**The index is a plain list**, from a custom listing template,
+`_includes/post-list.ejs`: per post, the date in a narrow left column and the
+title with its `description:` beside it. No images, no category rail. Like
+`course-cards.ejs`, its output is read as Markdown, so its lines are not
+indented.
 
 ### mathviz
 
@@ -649,7 +639,6 @@ under `window.VM`. This site consumes it the same way Monte-Carlo-Methods does.
 title: "Random points in a triangle"
 description: "One sentence. Shown on the listing cards."
 date: 2025-05-12
-weight: 1                 # 0 = never drawn for the home page's random pick
 author: Apurva Nakade
 categories: [randomness, triangles]
 image: "images/random-points-triangle.png"
@@ -673,12 +662,11 @@ soft gradient panel, writing `blog/images/<slug>-equation.svg`.
 Output is committed. Never write a formula cover as SVG `<text>`: that is
 how `f(s1, ..., sn) != 0` ended up on the cards.
 
-Listing pages depend on `title`, `date`, `description`, `categories` and `image`;
-missing metadata degrades the cards. **Quarto does not excerpt the post body** —
-a post with no `description:` renders a card with no text at all, so every post
-carries one. Any listing meant to show them must also name `description` in its
-`fields:`. `weight` drives the home page draw (§5.1) —
-the same mechanism as projects, now reading straight off disk.
+The blog index reads `title`, `date` and `description`; the home page's
+"Writing" list reads `title` and `date` (§5.1); `image` is the post's social
+card (`open-graph`). **Quarto does not excerpt the post body**: a post with no
+`description:` gets a row with no text, so every post carries one. Any
+listing meant to show them must also name `description` in its `fields:`.
 
 ### Comments
 
@@ -696,7 +684,9 @@ that ruled out TinyTeX, §4). Commenting needs a GitHub account; reading does
 not. `mapping: pathname` keys each thread to the post's URL, so renaming a
 post orphans its comments: one more reason to keep URLs stable (§8). The
 `light`/`dark_dimmed` giscus themes follow the colour toggle through Quarto's
-own script. Every page carries that script's inert stub, so a `grep giscus`
+own script. giscus is appended to `#quarto-content`, outside `<main>`, so
+`base.scss` caps `.giscus` at the post's 40rem or it would span the wider
+body column. Every page carries that script's inert stub, so a `grep giscus`
 of `docs/` matches pages without comments.
 
 ### Drafts
@@ -712,7 +702,7 @@ reachable by anyone with the URL — treat them as public.
 
 ```
 _theme/base.scss    typography, layout, components (shared)
-_theme/light.scss   light-scheme extras (the hover-shadow colour)
+_theme/light.scss   light-scheme extras (the shadow colour)
 _theme/dark.scss    dark-scheme extras (shadow colour, light backing for figures)
 _theme/portfolio.css  teaching portfolio only (§4); not part of the theme
 ```
@@ -738,10 +728,24 @@ theme also sets a few Bootstrap variables without `!default`
   from Google Fonts via `_includes/fonts.html`. The setting deliberately mirrors
   [visualmathlab.com](https://www.visualmathlab.com/) so the two sites feel like
   siblings: 17px body at line-height 1.65, page titles at weight 300 with
-  −0.02em tracking, section headings semibold with normal tracking, navbar brand
-  at weight 400. An earlier serif-body / sans-heading pairing with bold,
-  tightly-tracked headings and tracked-out uppercase labels read as a corporate
-  site; do not reintroduce any of those. Category chips are lowercase on a soft
+  −0.02em tracking, section headings at weight 500 and modest sizes (h2
+  1.35rem) with no rule beneath, navbar brand at weight 400. An earlier
+  serif-body / sans-heading pairing with bold, tightly-tracked headings and
+  tracked-out uppercase labels read as a corporate site; do not reintroduce
+  any of those. A serif for prose alone (Inter kept for UI) was considered
+  and deferred, not rejected.
+- **The look is minimal on purpose**: Apurva found the site busy and
+  corporate. Prose pages use a narrow ~40rem column; the CV, the teaching
+  portfolio and course pages keep 50rem (matched with `:has(.cv-section)`,
+  `:has(.portfolio-stats)` and `body.course-page`), because their label, year
+  and table columns overflow at 40rem. The navbar has no rule under it and
+  grey links; the footer is one small grey line with no icons. mathviz draws
+  both rules (on `#quarto-header .navbar` and `.footer`), so the overrides use
+  those selectors. Cards (the Projects grid, the course index) have no
+  border, shadow or hover lift: a rounded image with the text under it.
+  mathviz gives `.quarto-grid-item` a border with `!important`, which is the
+  one place `base.scss` needs `!important` back. Do not add borders, shadows
+  or boxes back to content. Category chips are lowercase on a soft
   surface with no border, and the override has to repeat Quarto's own three
   selectors (`.quarto-title .quarto-categories .quarto-category`,
   `.quarto-grid-item .listing-categories .listing-category`,
@@ -750,7 +754,7 @@ theme also sets a few Bootstrap variables without `!default`
 - Colours are mathviz's runtime tokens: `--vm-text`, `--vm-text-soft`,
   `--vm-accent`, `--vm-on-accent`, `--vm-border`, `--vm-bg` (page and card
   fill), `--vm-surface` (panels, chips, thumbnail backing). The one site token
-  left is `--site-shadow`, the card hover-lift colour, because `--vm-shadow`
+  left is `--site-shadow`, a shadow colour (used by the portfolio), because `--vm-shadow`
   is a whole `box-shadow`, not a colour. **Component rules in `base.scss` and
   `portfolio.css` must use those variables, never literal colours** (that is
   what keeps one rule working in both schemes), and never redefine a `--vm-*`
@@ -800,8 +804,7 @@ theme also sets a few Bootstrap variables without `!default`
   centre survives every case, so text in `_scripts/make_covers.py` is centred
   horizontally *and* vertically. Left- or bottom-anchored text gets sliced off.
 - **Never set a `height` on `.quarto-grid-item .card-img-top` or its `img`.**
-  Each listing declares its own `image-height` (190px for projects, 250px for the
-  blog), which Quarto writes as an inline style on the `<img>`. A competing
+  Each listing declares its own `image-height` (190px for projects), which Quarto writes as an inline style on the `<img>`. A competing
   height on the wrapper makes card titles overlap the image. Style
   `object-fit`, `width` and `background` only, and let the listing own the height.
   The wrapper does need `flex: none`: the card is a flex column, and without

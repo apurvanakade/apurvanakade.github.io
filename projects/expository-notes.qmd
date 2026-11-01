@@ -2,7 +2,6 @@
 title: "Expository Notes"
 description: "Personal notes on spectra, h-principles, gauge theory, and assorted other topics."
 date: 2019-06-01
-weight: 0
 categories: ["expository", "topology"]
 image: ../images/projects/expository-notes.png
 ---

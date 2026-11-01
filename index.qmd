@@ -13,7 +13,7 @@ about:
       text: GitHub
       href: https://github.com/apurvanakade/
 toc: false
-include-after-body: _includes/home-cards.html
+include-after-body: _includes/home-lists.html
 ---
 
 I'm an Assistant Teaching Professor in the Applied Mathematics & Statistics department at

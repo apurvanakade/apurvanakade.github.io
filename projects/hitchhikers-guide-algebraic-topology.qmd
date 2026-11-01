@@ -2,7 +2,6 @@
 title: "Hitchhiker's Guide to Algebraic Topology"
 description: "A two-week intersession course introducing non-math majors to algebraic topology and its applications."
 date: 2017-01-01
-weight: 2
 categories: ["course notes", "JHU", "topology"]
 image: ../images/projects/hitchhikers-guide-algebraic-topology.png
 links:

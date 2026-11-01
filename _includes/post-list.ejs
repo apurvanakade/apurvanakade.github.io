@@ -1,0 +1,20 @@
+<%
+// AI-owned listing template for blog/index.qmd (`template:` in its listing).
+// See CLAUDE.md §6.
+//
+// One quiet row per post: the date on the left, the title and its
+// `description:` on the right. No images, no categories.
+// Lines are not indented: Quarto reads the output as Markdown, and an
+// indented line would become a code block.
+%>
+<div class="list post-list">
+<% for (const item of items) { %>
+<article class="post-list__item" <%= metadataAttrs(item) %>>
+<div class="post-list__date"><%= item.date %></div>
+<div class="post-list__body">
+<h3 class="post-list__title no-anchor"><a href="<%- item.path %>"><%= item.title %></a></h3>
+<% if (item.description) { %><p class="post-list__desc"><%= item.description %></p><% } %>
+</div>
+</article>
+<% } %>
+</div>
