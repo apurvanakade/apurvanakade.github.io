@@ -3,6 +3,7 @@ title: "Graph Theory"
 subtitle: "Spring 2024"
 description: "EN.553.472/672 at Johns Hopkins: trees, matchings, network flows, spectral graph theory and the probabilistic method."
 date: 2024-01-22
+image: ../images/courses/graph-theory.svg
 ---
 
 - [Syllabus](https://assessment.jhu.edu/index.cfm/page/AefisCourseSection.publicSyllabus?courseSectionId=140047) (JHU public syllabus)

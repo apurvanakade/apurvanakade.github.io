@@ -105,36 +105,6 @@ div.quarto-about-solana .quarto-title .subtitle a { color: var(--vm-text-soft); 
 .home-list__more { font-size: 0.88rem; color: var(--vm-text-soft); text-decoration: none; }
 .home-list__more:hover { color: var(--vm-accent); }
 
-// Cards (the course index, _includes/course-cards.ejs): no border, shadow or
-// hover lift; the image is rounded and the text sits under it.
-.home-cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
-  gap: 2.5rem 2rem;
-  margin: 1.25rem 0 0;
-}
-.home-card {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  background: transparent;
-}
-.home-card__thumb {
-  display: block;
-  width: 100%;
-  height: 9.5rem;
-  object-fit: cover;
-  border-radius: $border-radius-lg;
-  background: var(--vm-surface);
-}
-.home-card__body { padding: 0.9rem 0 0; flex: 1 1 auto; }
-.home-card__title { font-size: 1.05rem; font-weight: 500; margin: 0 0 0.3rem; line-height: 1.3; }
-.home-card__title a { color: inherit; text-decoration: none; }
-.home-card:hover .home-card__title a { color: var(--vm-accent); }
-// The title link is stretched over the whole card, so a click anywhere opens it.
-.home-card__title a::after { content: ""; position: absolute; inset: 0; }
-.home-card__desc { font-size: 0.92rem; color: var(--vm-text-soft); margin: 0; }
-
 // ------------------------------------------------------- institution colours
 // Shared by the teaching portfolio, the CV timeline and the institution
 // category chips (see CLAUDE.md §7). JHU and Northwestern use their official
@@ -167,8 +137,8 @@ body.quarto-dark {
 }
 
 // --------------------------------------------------------- listing / cards
-// Grid cards (the Projects listing): no border, shadow or hover lift; a
-// rounded image with the text under it, as on the course index. mathviz
+// Grid cards (the Projects listing and the course index): no border, shadow
+// or hover lift; a rounded image with the text under it. mathviz
 // gives `.quarto-grid-item` a border with !important and a hover fill, so
 // only !important removes the border.
 .quarto-grid-item.card,
@@ -201,6 +171,8 @@ body.quarto-dark {
 }
 .quarto-grid-item .card-title { font-size: 1rem; font-weight: 500; line-height: 1.3; }
 .quarto-grid-item .listing-description { font-size: 0.88rem; color: var(--vm-text-soft); }
+// The course index's term (each course page's `subtitle:`).
+.quarto-grid-item .listing-subtitle { font-size: 0.82rem; color: var(--vm-text-soft); margin: 0.1rem 0 0.35rem; }
 
 // The Projects category cloud, moved above the grid by _includes/projects.html.
 // Quarto sizes each word by its count (.category-cloud-1 to -10, up to
@@ -433,32 +405,6 @@ h2.cv-anchor {
 // The selector outranks Quarto's `#title-block-header.quarto-title-block.default`
 // `.quarto-title-meta` rule (same ID and class count, plus an element).
 body.course-page #title-block-header.quarto-title-block .quarto-title-meta { display: none; }
-
-// The course index's cards (_includes/course-cards.ejs) reuse .home-card;
-// these add the term badge and the course code above the title.
-.course-cards { grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr)); }
-// Taller than the home card's 9.5rem: the covers are drawn for crops no wider
-// than about 2.2:1 (see _scripts/make_covers.py), and a two-column card at
-// 9.5rem is about 2.4:1, which cut off the top of the figure.
-.course-card .home-card__thumb { height: 11.5rem; }
-.course-card__meta {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 0.3rem 0.6rem;
-  margin-bottom: 0.45rem;
-}
-.course-card__term {
-  font-size: 0.75rem;
-  font-weight: 600;
-  line-height: 1;
-  padding: 0.3em 0.65em;
-  border-radius: 999px;
-  background: var(--chip-jhu-bg);
-  color: var(--chip-jhu-fg);
-}
-.course-card__meta > p { display: contents; }
-.course-card__code { font-size: 0.8rem; color: var(--vm-text-soft); font-variant-numeric: tabular-nums; }
 
 // _filters/course-page.lua: the links under a course's title (and any
 // all-links list) as pill buttons: one wrapping row when no item has a note,

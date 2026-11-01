@@ -4,7 +4,10 @@ description: "Public copies of the course websites for courses I have taught at 
 toc: false
 listing:
   contents: "*.qmd"
-  template: ../_includes/course-cards.ejs
+  type: grid
+  grid-columns: 2
+  fields: [image, title, subtitle, description]
+  image-height: 180px
   sort: "date desc"
   sort-ui: false
   filter-ui: false

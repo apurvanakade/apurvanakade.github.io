@@ -3,6 +3,7 @@ title: "Foundational Mathematics of Artificial Intelligence"
 subtitle: "Summer 2026"
 description: "AS.110.110, a JHU pre-college summer course: data, regression, classification and neural networks in Python."
 date: 2026-07-01
+image: ../images/courses/foundational-math-ai.svg
 ---
 
 A course for high school students on the mathematics behind machine learning. Each day combines a lecture, a guided Python walkthrough in a Jupyter notebook, a hands-on activity and short reflection questions. The course ends with a group [project](#course-project) on a real dataset.

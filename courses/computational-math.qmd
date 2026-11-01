@@ -3,6 +3,7 @@ title: "Introduction to Computational Mathematics"
 subtitle: "Spring 2026"
 description: "EN.553.385 at Johns Hopkins: floating point, linear systems, least squares, root finding, interpolation and ODEs."
 date: 2026-01-20
+image: ../images/courses/computational-math.svg
 ---
 
 - [Syllabus](computational-math-syllabus.pdf) (PDF)

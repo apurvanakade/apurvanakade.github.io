@@ -7,10 +7,6 @@ project:
     - "blog/**/*.qmd"
     - "courses/*.qmd"
     - "!cv/"
-  resources:
-    # Course-card covers, referenced only from the course index's listing
-    # template (_includes/course-cards.ejs), so Quarto cannot discover them.
-    - images/courses/*.svg
   pre-render:
     # Pulls the latest mathviz release into _extensions/ (see CLAUDE.md §6).
     - _scripts/update-mathviz.sh

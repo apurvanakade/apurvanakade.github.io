@@ -252,17 +252,17 @@ Canvas sites they come from were not:
   project *titles* without the students' names. Syllabi and project slides are kept as the
   original PDFs, after checking their text for names other than Apurva's.
 
-`courses/index.qmd` lists them as cards through a custom listing template,
-`_includes/course-cards.ejs`, styled by the `.home-card` rules in
-`base.scss` (the home page itself no longer has cards; the name stayed). Each card's cover is `images/courses/<course>.svg`, a real figure
-drawn by `_scripts/make_covers.py` (`COURSE_FIGURES`), so a new course needs a
-new entry there. Those covers are referenced only from the template, where
-Quarto cannot discover them, so `_quarto.yml` names `images/courses/*.svg` in
-`resources:`. The template's output is read as Markdown, so its lines are not
-indented (an indented line becomes a code block). The term badge is the
-page's `subtitle:`, and the course code is read off the start of its
-`description:` ("EN.553.171 at Johns Hopkins: ..."), so keep descriptions in
-that shape.
+`courses/index.qmd` lists them in Quarto's standard grid listing, styled
+by the same `.quarto-grid-item` rules as the Projects grid (§7), with
+`fields: [image, title, subtitle, description]`. A custom template would
+only buy a separately styled term badge and course code, and is not worth
+its own CSS. Each course page names its cover in `image:`,
+`../images/courses/<course>.svg`, a real figure drawn by
+`_scripts/make_covers.py` (`COURSE_FIGURES`), so a new course needs a new
+entry there; the cover is also the page's social card. The card's term line
+is the page's `subtitle:`, and its text is the whole `description:`, which
+opens with the course code ("EN.553.171 at Johns Hopkins: ..."), so keep
+descriptions in that shape.
 
 **Every line of the Canvas copy is kept; readability comes from
 organisation, not cuts.** Apurva found the pages walls of text but wants them
@@ -620,9 +620,9 @@ frontmatter stays as it is; only the display changes.
 
 **The index is a plain list**, from a custom listing template,
 `_includes/post-list.ejs`: per post, the date in a narrow left column and the
-title with its `description:` beside it. No images, no category rail. Like
-`course-cards.ejs`, its output is read as Markdown, so its lines are not
-indented.
+title with its `description:` beside it. No images, no category rail. Its
+output is read as Markdown, so its lines are not indented (an indented line
+becomes a code block).
 
 ### mathviz
 
@@ -833,7 +833,7 @@ Monte Carlo Methods' bordered, hover-tinted tiles are their design.
   centre survives every case, so text in `_scripts/make_covers.py` is centred
   horizontally *and* vertically. Left- or bottom-anchored text gets sliced off.
 - **Never set a `height` on `.quarto-grid-item .card-img-top` or its `img`.**
-  Each listing declares its own `image-height` (190px for projects), which Quarto writes as an inline style on the `<img>`. A competing
+  Each listing declares its own `image-height` (190px for projects, 180px for courses: the course covers are drawn for crops no wider than about 2.2:1), which Quarto writes as an inline style on the `<img>`. A competing
   height on the wrapper makes card titles overlap the image. Style
   `object-fit`, `width` and `background` only, and let the listing own the height.
   The wrapper does need `flex: none`: the card is a flex column, and without

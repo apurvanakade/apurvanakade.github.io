@@ -3,6 +3,7 @@ title: "Monte Carlo Methods"
 subtitle: "Spring 2026"
 description: "EN.553.433/633 at Johns Hopkins: Monte Carlo estimation, sampling, MCMC and their applications."
 date: 2026-01-20
+image: ../images/courses/monte-carlo.svg
 ---
 
 - [Syllabus](monte-carlo-syllabus.pdf) (PDF)
