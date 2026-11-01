@@ -13,6 +13,8 @@ listing:
   page-size: 60
 page-layout: full
 toc: false
+filters: [mathviz]
+mathviz: {category-cloud: true, plotly: false, mathjs: false}
 ---
 
 I like (re)designing courses, and most of what follows came out of that. Notes and problem sets
