@@ -701,15 +701,15 @@ reachable by anyone with the URL — treat them as public.
 ## 7. Theme
 
 ```
-_theme/base.scss    typography, layout, components (shared)
-_theme/light.scss   light-scheme extras (the shadow colour)
-_theme/dark.scss    dark-scheme extras (shadow colour, light backing for figures)
+_theme/base.scss    typography, layout, components (both schemes)
 _theme/portfolio.css  teaching portfolio only (§4); not part of the theme
 ```
 
 Layered over mathviz's Quarto theme in `_quarto.yml`:
-`light: [mathviz-light, base, light]`, `dark: [mathviz-dark, base, dark]`
+`light: [mathviz-light, base]`, `dark: [mathviz-dark, base]`
 (the first is `_extensions/apurvanakade/mathviz/theme/mathviz-*.scss`).
+There are no per-scheme site files: every rule is written once over
+`--vm-*` tokens.
 **The palette is mathviz's, not this site's**, because Apurva publishes posts
 on several mathviz sites (Monte-Carlo-Methods, Visual Math Lab) and keeping a
 second colour scheme in step was a maintenance burden. It is this site's
@@ -717,11 +717,25 @@ original palette (warm neutrals, deep teal accent, charcoal dark theme),
 moved into mathviz's `src/css/tokens.css` so every mathviz site shares it. A
 new mathviz release re-colours this site on the next render. There is no Bootswatch base
 (cosmo/cyborg used to sit under the theme), so a Bootstrap component whose
-default fill is light in both schemes needs a `--vm-*` rule in `base.scss`,
-as `.input-group-text` (the listing's sort and filter boxes) has. mathviz's
+default fill is light in both schemes needs a `--vm-*` rule, and that rule
+belongs in mathviz (which now covers `.input-group-text`). mathviz's
 theme also sets a few Bootstrap variables without `!default`
-(`$border-radius`, 8px; `$code-color`, the muted text colour), so a
-`!default` in `base.scss` cannot change them; change them upstream.
+(`$border-radius`, 8px; `$code-color`, the muted text colour;
+`$headings-font-weight`, `$h2-font-size`, `$h3-font-size`), so a
+`!default` in `base.scss` cannot change them. The heading ones are derived
+from `$vm-font-weight-heading`, `$vm-h2-font-size` and `$vm-h3-font-size`,
+which `base.scss` sets; for the others, change them upstream.
+
+**Upstream what any mathviz site would want.** mathviz's theme carries the
+generic prose and Bootstrap fixes this site used to keep: font features, the
+link underline, the blockquote, task-list hanging indents, centred captions
+under `fig-align="center"` figures, the tinted table header row (smaller on
+a phone), lowercase category chips, the listing's sort/filter boxes in dark
+mode, and the light backing behind SVG/PNG/GIF figures in dark mode. Do not
+restate them in `base.scss`; a fix of that kind goes to mathviz. What stays
+here is this site's taste (no navbar or footer rule, borderless cards, the
+40rem column, lighter headings), which mathviz deliberately does not adopt:
+Visual Math Lab's bordered, hover-tinted tiles are its own design.
 
 - **One typeface throughout: Inter** (variable, with its optical-size axis) for
   prose, headings, navbar and UI alike; **JetBrains Mono** for code. Both load
@@ -745,17 +759,13 @@ theme also sets a few Bootstrap variables without `!default`
   border, shadow or hover lift: a rounded image with the text under it.
   mathviz gives `.quarto-grid-item` a border with `!important`, which is the
   one place `base.scss` needs `!important` back. Do not add borders, shadows
-  or boxes back to content. Category chips are lowercase on a soft
-  surface with no border, and the override has to repeat Quarto's own three
-  selectors (`.quarto-title .quarto-categories .quarto-category`,
-  `.quarto-grid-item .listing-categories .listing-category`,
-  `div.quarto-post .listing-categories .listing-category`) because a bare
-  `.quarto-category` rule loses on specificity.
+  or boxes back to content. Category chips (lowercase, soft surface) come
+  from mathviz; the institution chips' colours (below) are this site's.
 - Colours are mathviz's runtime tokens: `--vm-text`, `--vm-text-soft`,
   `--vm-accent`, `--vm-on-accent`, `--vm-border`, `--vm-bg` (page and card
-  fill), `--vm-surface` (panels, chips, thumbnail backing). The one site token
-  left is `--site-shadow`, a shadow colour (used by the portfolio), because `--vm-shadow`
-  is a whole `box-shadow`, not a colour. **Component rules in `base.scss` and
+  fill), `--vm-surface` (panels, chips, thumbnail backing),
+  `--vm-shadow-color` (a bare shadow colour, for the portfolio's larger
+  shadows; `--vm-shadow` is a whole `box-shadow`). **Component rules in `base.scss` and
   `portfolio.css` must use those variables, never literal colours** (that is
   what keeps one rule working in both schemes), and never redefine a `--vm-*`
   token, or the site drifts from mathviz again. To change a colour, change it
@@ -790,8 +800,9 @@ theme also sets a few Bootstrap variables without `!default`
   dialog measures its own). `height="100%"` does not work, because in a
   flowing column it has nothing to resolve against and collapses to 150px.
   There are no per-site rules; keep it that way.
-- **Every content table has a tinted header row** (`main .table > thead`),
-  so course schedules, the portfolio's tables and any new table match.
+- **Every content table has a tinted header row** (`main .table > thead`,
+  from mathviz), so course schedules, the portfolio's tables and any new
+  table match.
 
 ### Constraints — do not regress
 

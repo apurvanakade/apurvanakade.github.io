@@ -15,13 +15,14 @@ $font-family-base:       $font-family-sans-serif !default;
 $headings-font-family:   $font-family-sans-serif !default;
 
 $font-size-root:         17px !default;
-$line-height-base:       1.65 !default;
-$headings-font-weight:   500 !default;
 $headings-line-height:   1.25 !default;
 
-$h1-font-size:           2.25rem !default;
-$h2-font-size:           1.35rem !default;
-$h3-font-size:           1.1rem !default;
+// Section headings, through mathviz's own variables: it derives Bootstrap's
+// $headings-font-weight and $h2/$h3-font-size from these without !default,
+// so setting the Bootstrap ones here would silently lose.
+$vm-font-weight-heading: 500 !default;
+$vm-h2-font-size:        1.35rem !default;
+$vm-h3-font-size:        1.1rem !default;
 $h4-font-size:           1rem !default;
 
 $border-radius-lg:       10px !default;
@@ -29,10 +30,9 @@ $border-radius-lg:       10px !default;
 /*-- scss:rules --*/
 
 // ---------------------------------------------------------------- typography
-body {
-  font-feature-settings: "kern" 1, "liga" 1;
-  text-rendering: optimizeLegibility;
-}
+// mathviz's theme sets the rest: font features, the link underline, the
+// blockquote, task lists, table header rows, category chips, centred figure
+// captions and the dark-mode figure backing.
 
 // Page titles are set light (300) with a touch of negative tracking; section
 // headings are medium (500), small, with room above. Bold, large headings
@@ -54,14 +54,6 @@ body.course-page main.content { max-width: 50rem; }
 
 // tighten Quarto's very airy title block
 #title-block-header .quarto-title-banner { padding-block: 2rem; }
-
-a { text-underline-offset: 0.18em; text-decoration-thickness: 0.06em; }
-
-blockquote {
-  border-left: 2px solid var(--vm-border);
-  padding-left: 1.1rem;
-  color: var(--vm-text-soft);
-}
 
 // ------------------------------------------------------------------- navbar
 // No rule under the bar and quieter links: the page starts in open space.
@@ -210,34 +202,6 @@ body.quarto-dark {
   --chip-mc-bg:  #F4707F;  --chip-mc-fg:  #2b0309;  // light Mathcamp red
 }
 
-// ------------------------------------------------------------------ tables
-// A soft tinted header row on every content table. Scoped to main so listing
-// chrome and the TOC are untouched.
-main .table > thead > tr > th {
-  background: var(--vm-surface);
-  font-size: 0.85rem;
-  font-weight: 600;
-  color: var(--vm-text-soft);
-  border-bottom: 0;
-  vertical-align: bottom;
-}
-main .table > thead > tr > th:first-child { border-top-left-radius: 6px; }
-main .table > thead > tr > th:last-child  { border-top-right-radius: 6px; }
-main .table > tbody td { font-variant-numeric: tabular-nums; }
-// On a phone, four columns of prose (the rec-letters criteria) did not fit at
-// full size and pushed the page sideways.
-@media (max-width: 575px) {
-  main .table { font-size: 0.85rem; }
-  main .table > :not(caption) > * > * { padding: 0.4rem 0.3rem; }
-  main .table td { hyphens: auto; }
-}
-
-// Markdown task lists (`- [ ] item`): wrapped lines align with the text, not
-// under the checkbox.
-main ul.task-list { list-style: none; padding-left: 0; }
-main ul.task-list > li { position: relative; padding-left: 1.7rem; margin-bottom: 0.3rem; }
-main ul.task-list > li input[type="checkbox"] { position: absolute; left: 0.1rem; top: 0.45em; margin: 0; }
-
 // --------------------------------------------------------- listing / cards
 // Grid cards (the Projects listing): no border, shadow or hover lift; a
 // rounded image with the text under it, as on the course index. mathviz
@@ -304,24 +268,6 @@ main ul.task-list > li input[type="checkbox"] { position: absolute; left: 0.1rem
 .quarto-listing-category.category-cloud .category--all { font-size: 0.85em; }
 
 .quarto-grid-item .listing-categories { margin-bottom: 0.35rem; }
-// Quarto's default category chip is tracked uppercase inside a border. Make it
-// a quiet lowercase chip on a soft surface instead. The three selectors match
-// Quarto's own (title block, grid card, default listing) at equal specificity,
-// because a plain `.quarto-category` rule loses to them.
-.quarto-title .quarto-categories .quarto-category,
-.quarto-grid-item .listing-categories .listing-category,
-div.quarto-post .listing-categories .listing-category {
-  font-size: 0.78rem;
-  font-weight: 500;
-  letter-spacing: normal;
-  text-transform: none;
-  border: 0;
-  border-radius: $border-radius;
-  padding: 0.15rem 0.55rem;
-  background: var(--vm-surface);
-  color: var(--vm-text-soft);
-  opacity: 1;
-}
 // Institution categories (JHU, Northwestern, UWO, Mathcamp) wear their university's
 // colour. _includes/projects.html adds the classes, since a category chip
 // carries nothing but its text.
@@ -661,20 +607,4 @@ main iframe {
   margin: 1.5rem auto;
   border: 1px solid var(--vm-border);
   border-radius: 8px;
-}
-
-// ------------------------------------------------------------------- figures
-// A figure set with fig-align="center" (a post's opening image, inset to 85%
-// of the column) gets its caption centred under it too; Quarto centres only
-// the image.
-.quarto-figure-center > figure > figcaption { text-align: center; }
-
-// ------------------------------------------------------------------ controls
-// The listing's sort and filter boxes carry Bootstrap's .input-group-text,
-// whose default fill is a light grey in both schemes (no Bootswatch dark
-// theme sits under mathviz's to darken it).
-.input-group-text {
-  background: var(--vm-surface);
-  color: var(--vm-text-soft);
-  border-color: var(--vm-border);
 }

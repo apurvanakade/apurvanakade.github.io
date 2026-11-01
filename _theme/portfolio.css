@@ -146,7 +146,7 @@ h4.portfolio-course .portfolio-course__code {
   text-decoration: none;
   transition: box-shadow 0.15s ease, transform 0.15s ease;
 }
-.portfolio-project:hover { transform: translateY(-2px); box-shadow: 0 6px 18px var(--site-shadow); }
+.portfolio-project:hover { transform: translateY(-2px); box-shadow: 0 6px 18px var(--vm-shadow-color); }
 .portfolio-project img {
   flex: 0 0 6.5rem;
   width: 6.5rem; height: 4.3rem;
@@ -215,7 +215,7 @@ h4.portfolio-course .portfolio-course__code {
   background: var(--vm-bg);
   border: 1px solid var(--vm-border);
   border-radius: 6px;
-  box-shadow: 0 4px 14px var(--site-shadow);
+  box-shadow: 0 4px 14px var(--vm-shadow-color);
 }
 .portfolio-chart__tip[hidden] { display: none; }
 .portfolio-chart__tip span { color: var(--vm-text-soft); font-variant-numeric: tabular-nums; }

@@ -1,8 +1,0 @@
-/* AI-owned: light-scheme extras. The palette itself is mathviz's
-   (mathviz-light.scss, listed first in _quarto.yml). See CLAUDE.md §7. */
-
-/*-- scss:rules --*/
-
-// mathviz's --vm-shadow is a whole box-shadow; the portfolio's shadows need a
-// bare colour.
-:root { --site-shadow: rgba(20, 22, 26, 0.10); }
