@@ -418,7 +418,7 @@ each institution also has its own marker shape and a labelled band.
 ### The recommendation-letter checklist
 
 `rec-letters.qmd` keeps its checklist as plain Markdown task-list items
-(`- [ ]`), which `base.scss` lines up with a hanging indent. It has no PDF
+(`- [ ]`), which mathviz's theme lines up with a hanging indent. It has no PDF
 version, by Apurva's choice: the page is the only copy.
 
 ### Constraints — do not regress
@@ -653,7 +653,7 @@ the first paragraph rather than above it, at
 `{width="85%" fig-align="center" fig-alt="..."}`, with the caption naming
 the work and linking its Commons page. That follows Substack: the reader
 meets the text before the picture, and the inset marks the image as
-decorative. `base.scss` centres the caption of any centred figure.
+decorative. mathviz's theme centres the caption of any centred figure.
 
 A post with no natural figure uses its formula as its cover:
 `_scripts/make_equation_covers.py` typesets each formula in `COVERS` with the
@@ -718,7 +718,7 @@ moved into mathviz's `src/css/tokens.css` so every mathviz site shares it. A
 new mathviz release re-colours this site on the next render. There is no Bootswatch base
 (cosmo/cyborg used to sit under the theme), so a Bootstrap component whose
 default fill is light in both schemes needs a `--vm-*` rule, and that rule
-belongs in mathviz (which now covers `.input-group-text`). mathviz's
+belongs in mathviz (as `.input-group-text`'s does). mathviz's
 theme also sets a few Bootstrap variables without `!default`
 (`$border-radius`, 8px; `$code-color`, the muted text colour;
 `$headings-font-weight`, `$h2-font-size`, `$h3-font-size`), so a
@@ -727,7 +727,7 @@ from `$vm-font-weight-heading`, `$vm-h2-font-size` and `$vm-h3-font-size`,
 which `base.scss` sets; for the others, change them upstream.
 
 **Upstream what any mathviz site would want.** mathviz's theme carries the
-generic prose and Bootstrap fixes this site used to keep: font features, the
+generic prose and Bootstrap fixes any mathviz site wants: font features, the
 link underline, the blockquote, task-list hanging indents, centred captions
 under `fig-align="center"` figures, the tinted table header row (smaller on
 a phone), lowercase category chips, the listing's sort/filter boxes in dark
