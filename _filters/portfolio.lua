@@ -71,8 +71,11 @@ local TERM_OFFSET = {
 
 -------------------------------------------------------------------- helpers
 
+-- Non-ASCII bytes (the curly apostrophe in "Hitchhiker’s") are separators
+-- first: %w on them follows the C library's locale, which counted some as
+-- letters on macOS, so the course matched its project page only on CI.
 local function normalise(s)
-  return (s:lower():gsub("[^%w]+", " "):gsub("^ +", ""):gsub(" +$", ""))
+  return (s:lower():gsub("[\128-\255]+", " "):gsub("[^%w]+", " "):gsub("^ +", ""):gsub(" +$", ""))
 end
 
 local function words(s)
