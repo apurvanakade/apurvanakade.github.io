@@ -3,6 +3,7 @@ title: "Discrete Mathematics"
 subtitle: "Fall 2026"
 description: "EN.553.171 at Johns Hopkins: logic, proofs, number theory, counting and graph theory."
 date: 2026-08-31
+image: ../images/courses/discrete-math.svg
 ---
 
 - [Syllabus](discrete-math-syllabus.pdf) (PDF)
