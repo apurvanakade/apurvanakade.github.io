@@ -2,7 +2,6 @@
 title: "More Mathcamp Classes"
 description: "Notes from several other week-long Mathcamp classes. Less polished, still useful."
 date: 2017-07-01
-weight: 0
 categories: ["course notes", "Mathcamp"]
 image: ../images/projects/mathcamp-assorted.svg
 ---

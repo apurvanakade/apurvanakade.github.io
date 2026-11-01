@@ -2,7 +2,6 @@
 title: "Formalizing Mathematics in Lean"
 description: "Contributions to mathlib, the Lean theorem prover's mathematics library."
 date: 2019-01-01
-weight: 3
 categories: ["formalization", "lean"]
 image: ../images/projects/lean-formalization.svg
 links:

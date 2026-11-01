@@ -2,7 +2,6 @@
 title: "Introduction to Optimization"
 description: "A quarter-long course on linear programming and duality, rebuilt around applications and modeling."
 date: 2022-01-01
-weight: 3
 categories: ["course notes", "Northwestern", "optimization"]
 image: ../images/projects/intro-to-optimization.png
 links:

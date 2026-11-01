@@ -2,7 +2,6 @@
 title: Mathocalypse
 description: "Grieving for math."
 date: 2026-10-14
-weight: 1
 categories:
   - AI
 author: Apurva Nakade
@@ -21,5 +20,5 @@ I am excited about what the future holds, and at the same time grieving for a ma
 
 I'm a big fan of Quanta Magazine's [The Joy of Why](https://www.quantamagazine.org/tag/the-joy-of-why/) podcast, hosted by Steven Strogatz. In an interview with The New York Times, he beautifully describes what many of us are going through right now. And no, it's not about jobs; it's about something much more spiritual.
 
-<iframe width="100%" height="383" src="https://www.youtube.com/embed/LfGenpmOjDQ?si=kQ430vmSB-IKXJw-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="100%" height="325" src="https://www.youtube.com/embed/LfGenpmOjDQ?si=kQ430vmSB-IKXJw-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 

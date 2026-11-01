@@ -2,7 +2,6 @@
 title: "Algebraic Topology"
 description: "Problem sets from a graduate course on the fundamental group, covering spaces, and singular homology."
 date: 2021-01-01
-weight: 1
 categories: ["problem sets", "UWO", "topology"]
 image: ../images/projects/winding-number.svg
 links:

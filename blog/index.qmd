@@ -1,6 +1,5 @@
 ---
 title: 'Sh\*tty First Drafts'
-page-layout: full
 description: This is a place for me to write about mathematics and education.
 listing: 
   contents:
@@ -8,14 +7,12 @@ listing:
     - "!index.qmd"
     - "!drafts/**"
   sort: "date desc"
-  type: grid
-  grid-columns: 3
-  fields: [image, date, title, description, categories]
-  categories: true
+  template: ../_includes/post-list.ejs
+  date-format: "MMM D, YYYY"
+  fields: [date, title, description]
+  categories: false
   sort-ui: false
   filter-ui: false
-  image-height: 250px
-title-block-banner: true
 comments: false
 body-classes: blog-index
 ---

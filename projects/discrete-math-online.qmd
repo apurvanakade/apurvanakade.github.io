@@ -2,7 +2,6 @@
 title: "Discrete Math, Fully Asynchronous"
 description: "Rebuilding a second-year discrete math course for fully asynchronous delivery, with video lectures and hundreds of WeBWorK problems."
 date: 2020-09-01
-weight: 2
 categories: ["course design", "UWO", "combinatorics"]
 image: ../images/projects/discrete-math-online.svg
 links:

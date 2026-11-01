@@ -16,13 +16,13 @@ $headings-font-family:   $font-family-sans-serif !default;
 
 $font-size-root:         17px !default;
 $line-height-base:       1.65 !default;
-$headings-font-weight:   600 !default;
-$headings-line-height:   1.2 !default;
+$headings-font-weight:   500 !default;
+$headings-line-height:   1.25 !default;
 
 $h1-font-size:           2.25rem !default;
-$h2-font-size:           1.5rem !default;
-$h3-font-size:           1.2rem !default;
-$h4-font-size:           1.05rem !default;
+$h2-font-size:           1.35rem !default;
+$h3-font-size:           1.1rem !default;
+$h4-font-size:           1rem !default;
 
 $border-radius-lg:       10px !default;
 
@@ -35,14 +35,22 @@ body {
 }
 
 // Page titles are set light (300) with a touch of negative tracking; section
-// headings are semibold with normal tracking. Bold, tightly tracked headings
-// everywhere were the main thing that made the site read as corporate.
+// headings are medium (500), small, with room above. Bold, large headings
+// were much of what made the site read as corporate.
 h1, .title { font-weight: 300; letter-spacing: -0.02em; }
-h2 { letter-spacing: normal; margin-top: 2.25rem; margin-bottom: 0.75rem; }
-h3 { margin-top: 1.75rem; }
+// No rule under h2 (Quarto's default): it made posts read like documentation.
+h2 { letter-spacing: normal; margin-top: 3rem; margin-bottom: 0.9rem; border-bottom: 0; padding-bottom: 0; }
+h3 { margin-top: 2rem; }
 
-main.content { max-width: 50rem; }
+// A narrow reading column (about 70 characters) and a generous top margin.
+main.content { max-width: 40rem; }
+// Pages built from wide parts keep the old 50rem: the CV's label, entry and
+// year columns, the portfolio's tables and chart, and course schedules.
+main.content:has(.cv-section),
+main.content:has(.portfolio-stats),
+body.course-page main.content { max-width: 50rem; }
 .page-layout-full main.content, main.content.page-columns { max-width: none; }
+#title-block-header { margin-top: 1.5rem; margin-bottom: 2.5rem; }
 
 // tighten Quarto's very airy title block
 #title-block-header .quarto-title-banner { padding-block: 2rem; }
@@ -50,28 +58,29 @@ main.content { max-width: 50rem; }
 a { text-underline-offset: 0.18em; text-decoration-thickness: 0.06em; }
 
 blockquote {
-  border-left: 3px solid var(--vm-accent);
-  padding-left: 1rem;
-  font-style: italic;
+  border-left: 2px solid var(--vm-border);
+  padding-left: 1.1rem;
   color: var(--vm-text-soft);
 }
 
 // ------------------------------------------------------------------- navbar
-.navbar {
-  font-size: 1rem;
-  border-bottom: 1px solid var(--vm-border);
+// No rule under the bar and quieter links: the page starts in open space.
+// mathviz draws the rule on `#quarto-header .navbar`, so that is overridden.
+#quarto-header .navbar {
+  font-size: 0.95rem;
+  border-bottom: 0;
+  padding-block: 0.9rem;
 }
-.navbar-brand { font-size: 1.25rem; font-weight: 400; }
+.navbar-brand { font-size: 1.15rem; font-weight: 400; }
+.navbar .nav-link:not(.active) { color: var(--vm-text-soft); }
+.navbar .nav-link:hover { color: var(--vm-text); }
 
-// -------------------------------------------------------------- home hero
-.hero-lede {
-  font-size: 1.25rem;
-  font-weight: 300;
-  line-height: 1.55;
-  color: var(--vm-text-soft);
-}
+// ------------------------------------------------------------------- footer
+// mathviz draws a rule on `.footer`; the footer is one small grey line.
+.footer { border-top: 0; }
+.nav-footer { font-size: 0.8rem; color: var(--vm-text-soft); padding-block: 2.5rem; }
 
-// ------------------------------------------------------------- home cards
+// --------------------------------------------------------------- home page
 // The solana about template sits the photo beside the title, top-aligned to the
 // h1's line box; the half-leading above the glyphs left the photo about 7px
 // higher than the cap line. Below lg the photo stacks above the text instead.
@@ -85,65 +94,90 @@ blockquote {
   div.quarto-about-solana .about-entity { align-items: center; }
 }
 
-.home-section { margin: 3rem 0 1rem; }
-
-.home-section__title {
-  font-size: 1.5rem;
-  font-weight: 600;
-  margin: 0 0 0.5rem;
-  padding-bottom: 0.5rem;
-  border-bottom: 1px solid var(--vm-border);
+// The intro is the page: the photo smaller, the contact links plain text
+// rather than outlined buttons, the pronunciation grey rather than accent.
+// Quarto's own rules start with `div.`, so these do too.
+div.quarto-about-solana .about-entity .about-image { width: 11rem !important; height: auto !important; }
+div.quarto-about-solana .about-entity .about-links {
+  flex-direction: row;
+  column-gap: 1.25rem;
+  padding-bottom: 0.75rem;
 }
-
-.home-section__note {
-  font-size: 0.95rem;
+// Below lg the template stacks the links in a column; keep them on one line.
+@include media-breakpoint-down(lg) {
+  div.quarto-about-solana .about-entity .about-links { justify-content: center; }
+}
+div.quarto-about-solana .about-entity .about-link {
+  border: 0;
+  padding: 0;
+  font-size: 0.9rem;
   color: var(--vm-text-soft);
-  margin: 0 0 0.25rem;
 }
+div.quarto-about-solana .about-entity .about-link:hover { color: var(--vm-accent); }
+div.quarto-about-solana .quarto-title .subtitle a { color: var(--vm-text-soft); text-decoration: none; }
 
+// Home lists (_includes/home-lists.html, from _scripts/build_home_lists.py):
+// plain rows of titles, no cards or images.
+.home-list { margin: 2rem 0 0; max-width: 40rem; }
+.home-list + .home-list { margin-top: 3rem; }
+.home-list__title {
+  border-bottom: 0;
+  padding-bottom: 0;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--vm-text-soft);
+  margin: 0 0 1rem;
+}
+.home-list__items { list-style: none; padding: 0; margin: 0 0 1rem; }
+.home-list__item {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 0.6rem;
+}
+.home-list__item > a { text-decoration: none; color: var(--vm-text); }
+.home-list__item > a:hover { color: var(--vm-accent); }
+.home-list__item--stacked { flex-direction: column; gap: 0.1rem; margin-bottom: 1rem; }
+.home-list__date {
+  flex: none;
+  font-size: 0.85rem;
+  color: var(--vm-text-soft);
+  font-variant-numeric: tabular-nums;
+}
+.home-list__desc { font-size: 0.92rem; color: var(--vm-text-soft); }
+.home-list__more { font-size: 0.88rem; color: var(--vm-text-soft); text-decoration: none; }
+.home-list__more:hover { color: var(--vm-accent); }
+
+// Cards (the course index, _includes/course-cards.ejs): no border, shadow or
+// hover lift; the image is rounded and the text sits under it.
 .home-cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
-  gap: 1.5rem;
+  gap: 2.5rem 2rem;
   margin: 1.25rem 0 0;
 }
-
 .home-card {
   position: relative;
   display: flex;
   flex-direction: column;
-  border: 1px solid var(--vm-border);
+  background: transparent;
+}
+.home-card__thumb {
+  display: block;
+  width: 100%;
+  height: 9.5rem;
+  object-fit: cover;
   border-radius: $border-radius-lg;
-  overflow: hidden;
-  background: var(--vm-bg);
-  transition: transform 0.18s ease, box-shadow 0.18s ease;
+  background: var(--vm-surface);
 }
-.home-card:hover { transform: translateY(-3px); box-shadow: 0 8px 24px var(--site-shadow); }
-
-.home-card__eyebrow {
-  font-size: 0.82rem;
-  font-weight: 500;
-  color: var(--vm-accent);
-  padding: 1rem 1.15rem 0;
-}
-.home-card__thumb { display: block; width: 100%; height: 9.5rem; object-fit: cover; margin-top: 0.9rem; }
-// a pinned card has no eyebrow, so its thumbnail sits flush with the card top
-.home-card__thumb:first-child { margin-top: 0; }
-.home-card__body { padding: 0.85rem 1.15rem 1.15rem; flex: 1 1 auto; }
-.home-card__title { font-size: 1.05rem; font-weight: 600; margin: 0 0 0.35rem; line-height: 1.3; }
+.home-card__body { padding: 0.9rem 0 0; flex: 1 1 auto; }
+.home-card__title { font-size: 1.05rem; font-weight: 500; margin: 0 0 0.3rem; line-height: 1.3; }
 .home-card__title a { color: inherit; text-decoration: none; }
 .home-card:hover .home-card__title a { color: var(--vm-accent); }
-// The title link is stretched over the whole card, so a click anywhere opens
-// it. The footer link sits above the overlay so it still goes to its own page.
+// The title link is stretched over the whole card, so a click anywhere opens it.
 .home-card__title a::after { content: ""; position: absolute; inset: 0; }
 .home-card__desc { font-size: 0.92rem; color: var(--vm-text-soft); margin: 0; }
-.home-card__meta { font-size: 0.8rem; color: var(--vm-text-soft); margin-top: 0.7rem; }
-.home-card__footer {
-  position: relative;
-  z-index: 1;
-  font-size: 0.85rem;
-  padding: 0 1.15rem 1.1rem;
-}
 
 // ------------------------------------------------------- institution colours
 // Shared by the teaching portfolio, the CV timeline and the institution
@@ -205,24 +239,29 @@ main ul.task-list > li { position: relative; padding-left: 1.7rem; margin-bottom
 main ul.task-list > li input[type="checkbox"] { position: absolute; left: 0.1rem; top: 0.45em; margin: 0; }
 
 // --------------------------------------------------------- listing / cards
-.quarto-grid-item.card {
-  border: 1px solid var(--vm-border);
-  border-radius: $border-radius-lg;
+// Grid cards (the Projects listing): no border, shadow or hover lift; a
+// rounded image with the text under it, as on the course index. mathviz
+// gives `.quarto-grid-item` a border with !important and a hover fill, so
+// only !important removes the border.
+.quarto-grid-item.card,
+.quarto-grid-item.card:hover {
+  border: 0 !important;
+  border-radius: 0;
   box-shadow: none;
-  background: var(--vm-bg);
+  background: transparent;
   color: var(--vm-text);
-  transition: transform 0.18s ease, box-shadow 0.18s ease;
 }
 .quarto-grid-item.card .card-body,
 .quarto-grid-item.card .card-title,
 .quarto-grid-item.card .listing-title { background: transparent; color: var(--vm-text); }
 .quarto-grid-item.card .listing-date,
 .quarto-grid-item.card .card-attribution { color: var(--vm-text-soft); }
-.quarto-grid-item.card:hover { transform: translateY(-3px); box-shadow: 0 8px 24px var(--site-shadow); }
+.quarto-grid-item.card:hover .card-title { color: var(--vm-accent); }
+.quarto-grid-item.card .card-body { padding: 0.9rem 0 0; }
 // Do NOT set a height here. Each listing declares its own `image-height`, which
 // Quarto writes as an inline style on the <img>; a competing height on the
 // wrapper makes the card title overlap the image.
-.quarto-grid-item .card-img-top { margin: 0; overflow: hidden; flex: none; }
+.quarto-grid-item .card-img-top { margin: 0; overflow: hidden; flex: none; border-radius: $border-radius-lg; }
 // flex: none, not a height: the card is a flex column, and without it the
 // wrapper shrank to about 160px and cropped the bottom of every thumbnail,
 // whatever the listing's image-height.
@@ -232,31 +271,38 @@ main ul.task-list > li input[type="checkbox"] { position: absolute; left: 0.1rem
   display: block;
   background: var(--vm-surface);
 }
-.quarto-grid-item .card-title { font-size: 1rem; line-height: 1.3; }
+.quarto-grid-item .card-title { font-size: 1rem; font-weight: 500; line-height: 1.3; }
 .quarto-grid-item .listing-description { font-size: 0.88rem; color: var(--vm-text-soft); }
 
-.quarto-listing-category .category { font-size: 0.9rem; }
-// Group headings that _includes/projects.html adds to the Projects rail.
-.quarto-listing-category .projects-category-group {
-  font-size: 0.72rem;
-  font-weight: 600;
+// The Projects category cloud, moved above the grid by _includes/projects.html.
+// Quarto sizes each word by its count (.category-cloud-1 to -10, up to
+// about 2.5em); that range is narrowed to 0.85-1.3em here, and every entry
+// gets the same line box, so a large word no longer makes its row taller
+// than the others. The words are grey; the hovered and the active one take
+// the accent.
+.quarto-listing-category.category-cloud {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.5rem 1.1rem;
+  margin: 0 0 2.5rem;
+}
+.quarto-listing-category.category-cloud .category {
+  cursor: pointer;
   color: var(--vm-text-soft);
-  margin: 0.9rem 0 0.2rem;
-}
-
-// Grid cards: the date sits above the title rather than pinned to the card's
-// foot, so a short description no longer leaves a gap above it. Quarto's
-// attribution block is moved with `order`, since the markup is its own.
-.quarto-grid-item .card-body { display: flex; flex-direction: column; }
-.quarto-grid-item .card-attribution {
-  order: -1;
-  flex: none;            // Quarto gives it flex-grow 10 to pin it to the foot
-  justify-content: flex-start;
-  align-items: flex-start;
-  margin: 0 0 0.3rem;
   padding: 0;
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.6rem;
 }
-.quarto-grid-item .card-attribution .listing-date { font-size: 0.78rem; }
+.quarto-listing-category.category-cloud .category > span { line-height: inherit; }
+@for $i from 1 through 10 {
+  .quarto-listing-category.category-cloud .category-cloud-#{$i} { font-size: #{0.85 + ($i - 1) * 0.05}em; }
+}
+.quarto-listing-category.category-cloud .category:hover { color: var(--vm-accent); }
+.quarto-listing-category.category-cloud .category.active { color: var(--vm-accent); font-weight: 500; background: none; }
+.quarto-listing-category.category-cloud .category--all { font-size: 0.85em; }
+
 .quarto-grid-item .listing-categories { margin-bottom: 0.35rem; }
 // Quarto's default category chip is tracked uppercase inside a border. Make it
 // a quiet lowercase chip on a soft surface instead. The three selectors match
@@ -455,15 +501,15 @@ h2.cv-anchor {
 }
 .project-link {
   font-size: 0.9rem;
-  font-weight: 500;
+  font-weight: 400;
   text-decoration: none;
-  padding: 0.4rem 0.9rem;
-  border: 1px solid var(--vm-accent);
+  padding: 0.35rem 0.85rem;
+  border: 1px solid var(--vm-border);
   border-radius: 999px;
-  color: var(--vm-accent);
-  transition: background 0.15s ease, color 0.15s ease;
+  color: var(--vm-text);
+  transition: border-color 0.15s ease, color 0.15s ease;
 }
-.project-link:hover { background: var(--vm-accent); color: var(--vm-bg); }
+.project-link:hover { border-color: var(--vm-accent); color: var(--vm-accent); }
 .project-link::after { content: " \2192"; }
 
 // ------------------------------------------------------------- course pages
@@ -550,16 +596,58 @@ main .table > tbody > tr:has(.course-row--break) > td {
   background: var(--vm-surface);
 }
 
-// ------------------------------------------------------- blog post back-link
+// --------------------------------------------------------------- blog posts
+// A post opens with its title and one grey line, the date. The author (always
+// Apurva), the description (it is for the listing), the category chips and the
+// AUTHOR / PUBLISHED labels are hidden, so the text starts almost at once.
+// `blog-post` comes from blog/_metadata.yml; the index sets `blog-index`.
+body.blog-post:not(.blog-index) #title-block-header {
+  .description,
+  .quarto-categories,
+  .quarto-title-meta-heading,
+  .quarto-title-meta > div:not(:has(p.date)) { display: none; }
+  .quarto-title-meta { display: block; margin-top: 0.5rem; }
+  .quarto-title-meta-contents,
+  .quarto-title-meta-contents p.date { margin: 0; font-size: 0.9rem; color: var(--vm-text-soft); }
+}
+
+// giscus is appended to #quarto-content, outside <main>, so it would span the
+// full 50rem body column; it is held to the post's width.
+body.blog-post #quarto-content > .giscus { max-width: 40rem; }
+
+// The back-link sits after the post (include-after-body in blog/_metadata.yml).
 .post-backlink {
   font-size: 0.9rem;
-  margin-bottom: 1.75rem;
+  margin-top: 3rem;
 }
 // The blog index inherits its posts' back-link from blog/_metadata.yml, where it
 // would point at itself; it carries body-classes: blog-index to hide it.
 .blog-index .post-backlink { display: none; }
 .post-backlink a { color: var(--vm-text-soft); text-decoration: none; }
 .post-backlink a:hover { color: var(--vm-accent); }
+
+// The blog index (_includes/post-list.ejs): one ruleless row per post, the
+// date in a narrow left column, which stacks above the title on a phone.
+.blog-index #title-block-header .description { color: var(--vm-text-soft); }
+.post-list__item {
+  display: grid;
+  grid-template-columns: 7.5rem minmax(0, 1fr);
+  gap: 0 1.5rem;
+  margin-bottom: 1.75rem;
+}
+.post-list__date {
+  font-size: 0.85rem;
+  line-height: 1.9;
+  color: var(--vm-text-soft);
+  font-variant-numeric: tabular-nums;
+}
+.post-list__title { font-size: 1.05rem; font-weight: 500; margin: 0 0 0.2rem; }
+.post-list__title a { color: var(--vm-text); text-decoration: none; }
+.post-list__title a:hover { color: var(--vm-accent); }
+.post-list__desc { font-size: 0.92rem; color: var(--vm-text-soft); margin: 0; }
+@media (max-width: 575px) {
+  .post-list__item { grid-template-columns: 1fr; }
+}
 
 // ----------------------------------------------------------- embedded frames
 // One rule for every <iframe> a post pastes in (CLAUDE.md §1): it is 85% of
