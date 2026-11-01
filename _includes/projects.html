@@ -13,7 +13,7 @@
   var INST = { "JHU": "jhu", "Northwestern": "nw", "UWO": "uwo", "Mathcamp": "mc" };
 
   function label(el) {
-    // A cloud entry is "name <span>(n)</span>"; a chip is just "name".
+    // A category chip is just "name", a single text node.
     var t = "";
     el.childNodes.forEach(function (n) { if (n.nodeType === 3) t += n.textContent; });
     return t.trim();

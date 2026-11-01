@@ -637,7 +637,7 @@ under `window.VM`. This site consumes it the same way Monte-Carlo-Methods does.
 ```yaml
 ---
 title: "Random points in a triangle"
-description: "One sentence. Shown on the listing cards."
+description: "One sentence. Shown on the blog index."
 date: 2025-05-12
 author: Apurva Nakade
 categories: [randomness, triangles]
@@ -785,22 +785,19 @@ theme also sets a few Bootstrap variables without `!default`
 - **One rule for every embed.** `main iframe` in `base.scss` makes any
   `<iframe>` 85% of the column and centred, matching a post's inset opening
   figure (§6), so none overflows a phone, with a `--vm-border` border. Its
-  `width=` is ignored; its height is its own `height=`, in pixels (383 suits
+  `width=` is ignored; its height is its own `height=`, in pixels (325 suits
   a 16:9 video at that width; a Visual Math Lab app's Share
   dialog measures its own). `height="100%"` does not work, because in a
   flowing column it has nothing to resolve against and collapses to 150px.
   There are no per-site rules; keep it that way.
 - **Every content table has a tinted header row** (`main .table > thead`),
   so course schedules, the portfolio's tables and any new table match.
-- **Grid cards show the date above the title.** Quarto puts it in a footer
-  with `flex-grow: 10`; `base.scss` moves it up with `order: -1` and
-  `flex: none`.
 
 ### Constraints — do not regress
 
 - **Card art must keep its content centred on both axes.** Thumbnails are drawn
   with `object-fit: cover`, and the crop aspect swings from taller-than-wide (a
-  three-column grid on a narrow screen) to about 2:1 (the home card). Only the
+  three-column grid on a narrow screen) to about 2:1 (a course-index card). Only the
   centre survives every case, so text in `_scripts/make_covers.py` is centred
   horizontally *and* vertically. Left- or bottom-anchored text gets sliced off.
 - **Never set a `height` on `.quarto-grid-item .card-img-top` or its `img`.**

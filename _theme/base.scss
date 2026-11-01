@@ -303,19 +303,6 @@ main ul.task-list > li input[type="checkbox"] { position: absolute; left: 0.1rem
 .quarto-listing-category.category-cloud .category.active { color: var(--vm-accent); font-weight: 500; background: none; }
 .quarto-listing-category.category-cloud .category--all { font-size: 0.85em; }
 
-// Grid cards: the date sits above the title rather than pinned to the card's
-// foot, so a short description no longer leaves a gap above it. Quarto's
-// attribution block is moved with `order`, since the markup is its own.
-.quarto-grid-item .card-body { display: flex; flex-direction: column; }
-.quarto-grid-item .card-attribution {
-  order: -1;
-  flex: none;            // Quarto gives it flex-grow 10 to pin it to the foot
-  justify-content: flex-start;
-  align-items: flex-start;
-  margin: 0 0 0.3rem;
-  padding: 0;
-}
-.quarto-grid-item .card-attribution .listing-date { font-size: 0.78rem; }
 .quarto-grid-item .listing-categories { margin-bottom: 0.35rem; }
 // Quarto's default category chip is tracked uppercase inside a border. Make it
 // a quiet lowercase chip on a soft surface instead. The three selectors match
