@@ -409,13 +409,17 @@ body.quarto-dark {
 .cv-body h3 + .cv-term { margin-top: -0.2rem; }
 
 // Conferences Attended (FOLDED_SECTIONS in cv.lua): the rest behind a toggle.
-.cv-more > summary {
+.cv-more > summary,
+.course-more > summary {
   font-size: 0.88rem;
   color: var(--vm-accent);
   cursor: pointer;
   margin: 0.35rem 0 0.5rem;
 }
-.cv-more[open] > summary { margin-bottom: 0.6rem; }
+.cv-more[open] > summary,
+.course-more[open] > summary { margin-bottom: 0.6rem; }
+// A folded list continues the one above it, so the gap between them closes.
+ul:has(+ .course-more) { margin-bottom: 0; }
 
 @media (max-width: 700px) {
   .cv-section { grid-template-columns: 1fr; gap: 0.35rem 0; }
@@ -492,14 +496,56 @@ body.course-page #title-block-header.quarto-title-block .quarto-title-meta { dis
 .course-card__meta > p { display: contents; }
 .course-card__code { font-size: 0.8rem; color: var(--vm-text-soft); font-variant-numeric: tabular-nums; }
 
-// _filters/course-page.lua: the links under a course's title, as pill
-// buttons with a muted note beside each.
-.course-links { display: flex; flex-direction: column; gap: 0.6rem; margin: 0.25rem 0 2rem; }
+// _filters/course-page.lua: the links under a course's title (and any
+// all-links list) as pill buttons: one wrapping row when no item has a note,
+// else one per line with the note beside it.
+.course-links { display: flex; gap: 0.5rem; margin: 0.25rem 0 1.75rem; }
+.course-links--row { flex-wrap: wrap; }
+.course-links--noted { flex-direction: column; gap: 0.6rem; }
 .course-links__item { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.3rem 0.8rem; }
 .course-links__item > p { margin: 0; }
 .course-links__item .project-link { display: inline-block; white-space: nowrap; }
 .course-links__desc { flex: 1 1 16rem; font-size: 0.9rem; color: var(--vm-text-soft); }
 .course-links__desc p { margin: 0; }
+
+// Each `###` is a closed toggle with the heading as its summary, so a long
+// page reads as its `##` outline until a reader opens what they want. Set as
+// rows divided by hairlines, like the tables, with no box.
+.course-fold { border-bottom: 1px solid var(--vm-border); }
+h2 + .course-fold, :not(.course-fold) + .course-fold { border-top: 1px solid var(--vm-border); }
+.course-fold > summary {
+  font-weight: 500;
+  color: var(--vm-text);
+  padding: 0.55rem 0;
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  align-items: baseline;
+  gap: 0.6rem;
+}
+.course-fold > summary::-webkit-details-marker { display: none; }
+.course-fold > summary::before {
+  content: "+";
+  flex: none;
+  width: 1ch;
+  color: var(--vm-accent);
+  font-weight: 400;
+}
+.course-fold[open] > summary::before { content: "\2212"; }
+.course-fold > summary:hover { color: var(--vm-accent); }
+.course-fold[open] { padding-bottom: 0.75rem; }
+// Contents line up with the summary's text, past the +/− marker.
+.course-fold > :not(summary) { margin-left: calc(1ch + 0.6rem); }
+.course-fold > :last-child { margin-bottom: 0; }
+
+// Project-idea tables become a stack: title, description, course connection.
+.course-ideas { display: flex; flex-direction: column; gap: 1rem; margin: 0.5rem 0 1rem; }
+.course-idea p { margin: 0; }
+.course-idea__title { font-weight: 500; }
+.course-idea__desc { font-size: 0.95rem; }
+.course-idea__conn { font-size: 0.85rem; color: var(--vm-text-soft); margin-top: 0.15rem; }
+.course-ideas:has(+ .course-more) { margin-bottom: 0; }
+.course-more > .course-ideas { margin-top: 1rem; }
 
 // Exam schedule tables become one date tile per exam.
 .course-exams {
@@ -509,9 +555,7 @@ body.course-page #title-block-header.quarto-title-block .quarto-title-meta { dis
   margin: 0.75rem 0 1rem;
 }
 .course-exam {
-  background: var(--vm-bg);
-  border: 1px solid var(--vm-border);
-  border-top: 3px solid var(--vm-accent);
+  background: var(--vm-surface);
   border-radius: 8px;
   padding: 0.7rem 0.85rem;
 }
