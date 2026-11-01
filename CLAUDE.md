@@ -739,21 +739,25 @@ default fill is light in both schemes needs a `--vm-*` rule, and that rule
 belongs in mathviz (as `.input-group-text`'s does). mathviz's
 theme also sets a few Bootstrap variables without `!default`
 (`$border-radius`, 8px; `$code-color`, the muted text colour;
-`$headings-font-weight`, `$h2-font-size`, `$h3-font-size`), so a
-`!default` in `base.scss` cannot change them. The heading ones are derived
-from `$vm-font-weight-heading`, `$vm-h2-font-size` and `$vm-h3-font-size`,
-which `base.scss` sets; for the others, change them upstream.
+`$font-size-root`, `$headings-font-weight`, `$h2-font-size`, `$h3-font-size`),
+so a `!default` in `base.scss` cannot change them. The type ones are derived
+from `$vm-font-size-root`, `$vm-font-weight-heading`, `$vm-h2-font-size` and
+`$vm-h3-font-size`, whose mathviz defaults are this site's; for the others,
+change them upstream.
 
 **Upstream what any mathviz site would want.** mathviz's theme carries the
 generic prose and Bootstrap fixes any mathviz site wants: font features, the
 link underline, the blockquote, task-list hanging indents, centred captions
 under `fig-align="center"` figures, the tinted table header row (smaller on
 a phone), lowercase category chips, the listing's sort/filter boxes in dark
-mode, and the light backing behind SVG/PNG/GIF figures in dark mode. Do not
-restate them in `base.scss`; a fix of that kind goes to mathviz. What stays
-here is this site's taste (no navbar or footer rule, borderless cards, the
-40rem column, lighter headings), which mathviz deliberately does not adopt:
-Visual Math Lab's bordered, hover-tinted tiles are its own design.
+mode, and the light backing behind SVG/PNG/GIF figures in dark mode. Since
+v0.9.0 it also carries this site's quiet look as its defaults: the 17px root,
+medium, modest headings with no h2 rule, the title block's spacing, and the
+taller navbar with no rule and grey links over a ruleless small grey footer.
+Do not restate any of it in `base.scss`; a fix of that kind goes to mathviz.
+What stays here is this site's own taste (borderless cards, the 40rem
+column), which mathviz deliberately does not adopt: Visual Math Lab's and
+Monte Carlo Methods' bordered, hover-tinted tiles are their design.
 
 - **One typeface throughout: Inter** (variable, with its optical-size axis) for
   prose, headings, navbar and UI alike; **JetBrains Mono** for code. Both load
@@ -771,9 +775,8 @@ Visual Math Lab's bordered, hover-tinted tiles are its own design.
   portfolio and course pages keep 50rem (matched with `:has(.cv-section)`,
   `:has(.portfolio-stats)` and `body.course-page`), because their label, year
   and table columns overflow at 40rem. The navbar has no rule under it and
-  grey links; the footer is one small grey line with no icons. mathviz draws
-  both rules (on `#quarto-header .navbar` and `.footer`), so the overrides use
-  those selectors. Cards (the Projects grid, the course index) have no
+  grey links; the footer is one small grey line with no icons (both from
+  mathviz). Cards (the Projects grid, the course index) have no
   border, shadow or hover lift: a rounded image with the text under it.
   mathviz gives `.quarto-grid-item` a border with `!important`, which is the
   one place `base.scss` needs `!important` back. Do not add borders, shadows

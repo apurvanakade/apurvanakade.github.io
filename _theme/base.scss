@@ -14,35 +14,20 @@ $font-family-monospace:  "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, 
 $font-family-base:       $font-family-sans-serif !default;
 $headings-font-family:   $font-family-sans-serif !default;
 
-$font-size-root:         17px !default;
-$headings-line-height:   1.25 !default;
-
-// Section headings, through mathviz's own variables: it derives Bootstrap's
-// $headings-font-weight and $h2/$h3-font-size from these without !default,
-// so setting the Bootstrap ones here would silently lose.
-$vm-font-weight-heading: 500 !default;
-$vm-h2-font-size:        1.35rem !default;
-$vm-h3-font-size:        1.1rem !default;
-$h4-font-size:           1rem !default;
+// mathviz sets the rest of the type: the 17px root, line heights, and the
+// light page titles and medium, modest section headings.
 
 $border-radius-lg:       10px !default;
 
 /*-- scss:rules --*/
 
-// ---------------------------------------------------------------- typography
-// mathviz's theme sets the rest: font features, the link underline, the
-// blockquote, task lists, table header rows, category chips, centred figure
-// captions and the dark-mode figure backing.
+// ------------------------------------------------------------------- layout
+// mathviz's theme sets the typography and the chrome: headings, the title
+// block's spacing, the navbar and footer, font features, the link underline,
+// the blockquote, task lists, table header rows, category chips, centred
+// figure captions and the dark-mode figure backing.
 
-// Page titles are set light (300) with a touch of negative tracking; section
-// headings are medium (500), small, with room above. Bold, large headings
-// were much of what made the site read as corporate.
-h1, .title { font-weight: 300; letter-spacing: -0.02em; }
-// No rule under h2 (Quarto's default): it made posts read like documentation.
-h2 { letter-spacing: normal; margin-top: 3rem; margin-bottom: 0.9rem; border-bottom: 0; padding-bottom: 0; }
-h3 { margin-top: 2rem; }
-
-// A narrow reading column (about 70 characters) and a generous top margin.
+// A narrow reading column (about 70 characters).
 main.content { max-width: 40rem; }
 // Pages built from wide parts keep the old 50rem: the CV's label, entry and
 // year columns, the portfolio's tables and chart, and course schedules.
@@ -50,27 +35,6 @@ main.content:has(.cv-section),
 main.content:has(.portfolio-stats),
 body.course-page main.content { max-width: 50rem; }
 .page-layout-full main.content, main.content.page-columns { max-width: none; }
-#title-block-header { margin-top: 1.5rem; margin-bottom: 2.5rem; }
-
-// tighten Quarto's very airy title block
-#title-block-header .quarto-title-banner { padding-block: 2rem; }
-
-// ------------------------------------------------------------------- navbar
-// No rule under the bar and quieter links: the page starts in open space.
-// mathviz draws the rule on `#quarto-header .navbar`, so that is overridden.
-#quarto-header .navbar {
-  font-size: 0.95rem;
-  border-bottom: 0;
-  padding-block: 0.9rem;
-}
-.navbar-brand { font-size: 1.15rem; font-weight: 400; }
-.navbar .nav-link:not(.active) { color: var(--vm-text-soft); }
-.navbar .nav-link:hover { color: var(--vm-text); }
-
-// ------------------------------------------------------------------- footer
-// mathviz draws a rule on `.footer`; the footer is one small grey line.
-.footer { border-top: 0; }
-.nav-footer { font-size: 0.8rem; color: var(--vm-text-soft); padding-block: 2.5rem; }
 
 // --------------------------------------------------------------- home page
 // The solana about template sits the photo beside the title, top-aligned to the
