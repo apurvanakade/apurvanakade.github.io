@@ -4,6 +4,5 @@ toc: false
 title-block-banner: false
 filters:
   - ../_filters/project-links.lua
-# Colours the institution category chips and moves the listing's category
-# cloud above the grid (see CLAUDE.md §5).
+# Colours the institution category chips (see CLAUDE.md §5).
 include-after-body: ../_includes/projects.html

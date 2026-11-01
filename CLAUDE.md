@@ -486,17 +486,22 @@ Prose.
 - `projects/_metadata.yml` applies that filter and shared page settings to the
   whole directory, and includes `_includes/projects.html`, a small script
   that adds `inst-chip` classes to the JHU, Northwestern, UWO and Mathcamp category
-  chips (a chip carries only its text, so CSS cannot select it) and moves
-  the listing's category cloud above the grid.
+  chips (a chip carries only its text, so CSS cannot select it).
 - **The category filter is a word cloud above the grid**, not a margin rail
   (the rail cluttered the page). `projects/index.qmd` sets
-  `categories: cloud`; Quarto puts the cloud in the right margin, so the
-  script moves it before the listing, removes the empty margin, and switches
-  `<main>` from `column-page-left` to `column-page` so the grid is centred.
-  The cloud has no "All" entry of its own, so the script adds one (an empty
-  `data-category`, Quarto's reset), before `DOMContentLoaded`, when
-  `quarto-listing.js` attaches its click handlers. The page has no
-  `subtitle:`.
+  `categories: cloud`, which Quarto puts in the right margin. mathviz's
+  opt-in `category-cloud` script (`filters: [mathviz]` and
+  `mathviz: {category-cloud: true, plotly: false, mathjs: false, css: false}` in that
+  page's frontmatter) moves it above the grid inside
+  `div.vm-category-cloud`, removes the empty margin, switches `<main>` from
+  `column-page-left` to `column-page`, and adds an "All" entry
+  (`.category--all`, `.active` while no category is picked). It ships no
+  stylesheet: the cloud's look is `base.scss`'s, which also holds that
+  `<main>` to three cards' width so the title, prose, cloud and filter box
+  line up with the grid's edges. Plotly, math.js and mathviz's component
+  stylesheet are off there because the page draws no charts or panels;
+  `dist/mathviz.js` (about 250 KB) still loads, since the filter always
+  adds it. The page has no `subtitle:`.
 - **Categories** are a flat vocabulary mixing kind (`app`, `course notes`,
   `problem sets`, `course design`, `formalization`, `OER`, `expository`), venue
   (`JHU`, `Northwestern`, `UWO`, `Mathcamp`) and one topic. Reuse existing terms;
@@ -641,7 +646,9 @@ under `window.VM`. This site consumes it the same way Monte-Carlo-Methods does.
   `filters: [mathviz]` in its frontmatter. The filter loads Plotly (~3.5 MB)
   and math.js from a CDN into the page's `<head>`, so enabling it in
   `_quarto.yml` or `blog/_metadata.yml` would make every page download
-  them. Currently only `nth-fibonacci.qmd` opts in.
+  them. Currently only `nth-fibonacci.qmd` opts in for charts;
+  `projects/index.qmd` opts in for the category cloud alone, with Plotly,
+  math.js and the component CSS switched off (§5).
 - **mathviz's theme is the site's palette** (§7), as on Monte-Carlo-Methods,
   so a chart or panel matches the page with no bridging, and a post moved
   between sites looks the same on each.
@@ -755,9 +762,9 @@ also carries this site's quiet look as its defaults: the 17px root,
 medium, modest headings with no h2 rule, the title block's spacing, and the
 taller navbar with no rule and grey links over a ruleless small grey footer.
 Do not restate any of it in `base.scss`; a fix of that kind goes to mathviz.
-What stays here is this site's own taste (borderless cards, the 40rem
-column), which mathviz deliberately does not adopt: Visual Math Lab's and
-Monte Carlo Methods' bordered, hover-tinted tiles are their design.
+What stays here is this site's own taste: the 40rem column, the category
+cloud's look and the institution colours. The grid cards are mathviz's
+(see below).
 
 - **One typeface throughout: Inter** (variable, with its optical-size axis) for
   prose, headings, navbar and UI alike; **JetBrains Mono** for code. Both load
@@ -776,12 +783,19 @@ Monte Carlo Methods' bordered, hover-tinted tiles are their design.
   `:has(.portfolio-stats)` and `body.course-page`), because their label, year
   and table columns overflow at 40rem. The navbar has no rule under it and
   grey links; the footer is one small grey line with no icons (both from
-  mathviz). Cards (the Projects grid, the course index) have no
-  border, shadow or hover lift: a rounded image with the text under it.
-  mathviz gives `.quarto-grid-item` a border with `!important`, which is the
-  one place `base.scss` needs `!important` back. Do not add borders, shadows
-  or boxes back to content. Category chips (lowercase, soft surface) come
-  from mathviz; the institution chips' colours (below) are this site's.
+  mathviz). Grid cards (the Projects grid, the course index) come wholly
+  from mathviz's theme: no border or shadow at rest, a rounded image with
+  the text under it; on hover the card rises 3px over a soft panel (a
+  `::before`, so the grid never moves). Each card is capped at
+  `--vm-card-width` (18rem) and the grid fits as many columns as the width
+  allows, so a listing's `grid-columns:` has no effect (the values left in
+  `projects/index.qmd` and `courses/index.qmd` are inert). `base.scss` keeps no
+  card rules of its own; change them in mathviz. Do not add borders,
+  shadows or boxes back to content at rest. Category chips (lowercase, soft
+  surface) come from mathviz; the institution chips' colours (below) are
+  this site's. In dark mode mathviz steps a hovered card's chips up to
+  `--vm-surface-hover`, with a selector that out-ranks a plain `.inst-chip`
+  rule, so the institution rule in `base.scss` repeats that selector.
 - Colours are mathviz's runtime tokens: `--vm-text`, `--vm-text-soft`,
   `--vm-accent`, `--vm-on-accent`, `--vm-border`, `--vm-bg` (page and card
   fill), `--vm-surface` (panels, chips, thumbnail backing),
@@ -834,11 +848,8 @@ Monte Carlo Methods' bordered, hover-tinted tiles are their design.
   horizontally *and* vertically. Left- or bottom-anchored text gets sliced off.
 - **Never set a `height` on `.quarto-grid-item .card-img-top` or its `img`.**
   Each listing declares its own `image-height` (190px for projects, 180px for courses: the course covers are drawn for crops no wider than about 2.2:1), which Quarto writes as an inline style on the `<img>`. A competing
-  height on the wrapper makes card titles overlap the image. Style
-  `object-fit`, `width` and `background` only, and let the listing own the height.
-  The wrapper does need `flex: none`: the card is a flex column, and without
-  it the wrapper shrank to about 160px and cropped the bottom of every
-  thumbnail.
+  height on the wrapper makes card titles overlap the image. mathviz's
+  card rules follow this; any override here must too.
 
 ---
 
