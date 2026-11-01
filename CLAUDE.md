@@ -750,8 +750,8 @@ generic prose and Bootstrap fixes any mathviz site wants: font features, the
 link underline, the blockquote, task-list hanging indents, centred captions
 under `fig-align="center"` figures, the tinted table header row (smaller on
 a phone), lowercase category chips, the listing's sort/filter boxes in dark
-mode, and the light backing behind SVG/PNG/GIF figures in dark mode. Since
-v0.9.0 it also carries this site's quiet look as its defaults: the 17px root,
+mode, and the light backing behind SVG/PNG/GIF figures in dark mode. It
+also carries this site's quiet look as its defaults: the 17px root,
 medium, modest headings with no h2 rule, the title block's spacing, and the
 taller navbar with no rule and grey links over a ruleless small grey footer.
 Do not restate any of it in `base.scss`; a fix of that kind goes to mathviz.
