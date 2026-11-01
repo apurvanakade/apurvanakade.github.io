@@ -178,7 +178,8 @@ main.column-page:has(.quarto-listing-container-grid) {
 }
 .quarto-listing-category.category-cloud .category:hover { color: var(--vm-accent); }
 .quarto-listing-category.category-cloud .category.active { color: var(--vm-accent); font-weight: 500; background: none; }
-.quarto-listing-category.category-cloud .category--all { font-size: 0.85em; }
+// mathviz writes "All"; lowercase matches the cloud's other words.
+.quarto-listing-category.category-cloud .category--all { font-size: 0.85em; text-transform: lowercase; }
 
 .quarto-grid-item .listing-categories { margin-bottom: 0.35rem; }
 // Institution categories (JHU, Northwestern, UWO, Mathcamp) wear their university's

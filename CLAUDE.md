@@ -491,15 +491,17 @@ Prose.
   (the rail cluttered the page). `projects/index.qmd` sets
   `categories: cloud`, which Quarto puts in the right margin. mathviz's
   opt-in `category-cloud` script (`filters: [mathviz]` and
-  `mathviz: {category-cloud: true, plotly: false, mathjs: false}` in that
+  `mathviz: {category-cloud: true, plotly: false, mathjs: false, css: false}` in that
   page's frontmatter) moves it above the grid inside
   `div.vm-category-cloud`, removes the empty margin, switches `<main>` from
   `column-page-left` to `column-page`, and adds an "All" entry
   (`.category--all`, `.active` while no category is picked). It ships no
   stylesheet: the cloud's look is `base.scss`'s, which also holds that
   `<main>` to three cards' width so the title, prose, cloud and filter box
-  line up with the grid's edges. Plotly and math.js are off there because
-  the page draws no charts. The page has no `subtitle:`.
+  line up with the grid's edges. Plotly, math.js and mathviz's component
+  stylesheet are off there because the page draws no charts or panels;
+  `dist/mathviz.js` (about 250 KB) still loads, since the filter always
+  adds it. The page has no `subtitle:`.
 - **Categories** are a flat vocabulary mixing kind (`app`, `course notes`,
   `problem sets`, `course design`, `formalization`, `OER`, `expository`), venue
   (`JHU`, `Northwestern`, `UWO`, `Mathcamp`) and one topic. Reuse existing terms;
@@ -645,8 +647,8 @@ under `window.VM`. This site consumes it the same way Monte-Carlo-Methods does.
   and math.js from a CDN into the page's `<head>`, so enabling it in
   `_quarto.yml` or `blog/_metadata.yml` would make every page download
   them. Currently only `nth-fibonacci.qmd` opts in for charts;
-  `projects/index.qmd` opts in for the category cloud alone, with Plotly
-  and math.js switched off (§5).
+  `projects/index.qmd` opts in for the category cloud alone, with Plotly,
+  math.js and the component CSS switched off (§5).
 - **mathviz's theme is the site's palette** (§7), as on Monte-Carlo-Methods,
   so a chart or panel matches the page with no bridging, and a post moved
   between sites looks the same on each.
@@ -786,7 +788,8 @@ cloud's look and the institution colours. The grid cards are mathviz's
   the text under it; on hover the card rises 3px over a soft panel (a
   `::before`, so the grid never moves). Each card is capped at
   `--vm-card-width` (18rem) and the grid fits as many columns as the width
-  allows, so a listing's `grid-columns:` has no effect. `base.scss` keeps no
+  allows, so a listing's `grid-columns:` has no effect (the values left in
+  `projects/index.qmd` and `courses/index.qmd` are inert). `base.scss` keeps no
   card rules of its own; change them in mathviz. Do not add borders,
   shadows or boxes back to content at rest. Category chips (lowercase, soft
   surface) come from mathviz; the institution chips' colours (below) are
