@@ -512,7 +512,7 @@ body.course-page #title-block-header.quarto-title-block .quarto-title-meta { dis
 // page reads as its `##` outline until a reader opens what they want. Set as
 // rows divided by hairlines, like the tables, with no box.
 .course-fold { border-bottom: 1px solid var(--vm-border); }
-h2 + .course-fold, :not(.course-fold) + .course-fold { border-top: 1px solid var(--vm-border); }
+:not(.course-fold) + .course-fold { border-top: 1px solid var(--vm-border); }
 .course-fold > summary {
   font-weight: 500;
   color: var(--vm-text);
