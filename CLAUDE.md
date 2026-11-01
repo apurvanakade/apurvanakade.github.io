@@ -264,10 +264,28 @@ page's `subtitle:`, and the course code is read off the start of its
 `description:` ("EN.553.171 at Johns Hopkins: ..."), so keep descriptions in
 that shape.
 
-`_filters/course-page.lua` (applied by `courses/_metadata.yml`) turns three
-shapes into page furniture: the bullet list before the first `##` becomes
-pill buttons (an item that opens with a link becomes a pill, the rest of the
-item its note); a table whose first column is "Exam" with a "Date" column
+**Every line of the Canvas copy is kept; readability comes from
+organisation, not cuts.** Apurva found the pages walls of text but wants them
+complete. So a page puts its at-a-glance sections first (dates, schedule,
+outline), and everything secondary (exam-by-exam topics, policies, project
+rubrics, student projects by term, a summer course's days) sits under `###`
+headings, which the filter turns into closed toggles. To make new material
+easy to read, give it a `###`, not fewer words.
+
+`_filters/course-page.lua` (applied by `courses/_metadata.yml`) turns these
+shapes into page furniture: each `###` and what follows it, up to the next
+`##` or `###`, becomes a closed `<details class="course-fold">` keeping the
+heading's id, so `courses/_metadata.yml` sets `toc-depth: 2` (the toggles'
+headings are no longer headings); the bullet list before the first `##`, and
+any later list whose items are each a single link, becomes pill buttons, in
+a row when no item has a note, else one per line with the note beside it; a
+table whose first column is "Project" with a "Description" column (project
+ideas) becomes a stack of title, description and, for every other column, a muted
+line labelled with its header; a
+bullet list or idea stack of more than 8 items outside a toggle shows its
+first 6 and folds the rest into a `<details class="course-more">`, styled
+with the CV's `.cv-more`; a
+table whose first column is "Exam" with a "Date" column
 becomes date tiles ("Monday, October 5" is split into weekday, month and day);
 and in a table whose first column is "Week", rows mentioning an exam are
 highlighted and rows with an empty week (a break) are greyed. Those rows are
