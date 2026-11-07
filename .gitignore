@@ -14,6 +14,10 @@
 # Local-only PDFs from `make pdfs`. See CLAUDE.md §4.
 /_pdf/
 
+# Original photos awaiting `make photos`; only the compressed copies in
+# blog/images/ are committed. See CLAUDE.md §6.
+/_photos/
+
 # Local secret: Canvas API token. Never commit.
 /canvas API token
 /canvas-import-checklist.md

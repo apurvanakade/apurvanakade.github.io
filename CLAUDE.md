@@ -81,11 +81,12 @@ next render. Nobody edits it (see §6, "mathviz").
 ## 2. Build & deploy
 
 ```bash
-make build     # quarto render --to html --output-dir docs/   (local only, gitignored)
+make build     # make photos, then quarto render --to html --output-dir docs/   (local only, gitignored)
 make pdfs      # CV and teaching portfolio PDFs into _pdf/ (local only)
 make cv        # just the CV's PDF; `make portfolio` likewise
 make clean     # rm -rf docs/
 make covers    # regenerate the SVG project, course and blog formula covers (rarely needed)
+make photos    # compress blog photos from _photos/ into blog/images/ (§6, "Photos")
 make update-mathviz  # force a check for a newer mathviz release
 make release   # fast-forward main to origin/develop and push: publishes the site
 quarto preview # local live preview (not in the makefile)
@@ -198,6 +199,7 @@ blog/index.qmd                  all posts, a plain dated list
 blog/<post>.qmd                 every post, beside the listing
 blog/drafts/*.qmd               rendered and published, but not listed anywhere
 blog/images/                    every post's and draft's images, one flat folder
+_photos/                        gitignored; original photos awaiting `make photos` (§6)
 CV.qmd                          assembles cv/*.qmd; renders to HTML *and* PDF
 cv/<section>.qmd                one CV section per file
 teaching-portfolio.qmd          teaching philosophy, courses, development; HTML *and* PDF
@@ -563,7 +565,7 @@ up on the next render; the home page lists only `PINNED` projects.
 
 ## 6. The blog
 
-The blog ("Sh*tty First Drafts") lives under `blog/` in this repo. It was
+The blog ("Scribbles") lives under `blog/` in this repo. It was
 originally a separate repository, `git@github.com:apurvanakade/math-blog.git`,
 which still exists as a read-only archive (see below). There the name was
 that site's navbar brand; here the brand is "Apurva Nakade", so the name
@@ -713,6 +715,43 @@ own script. giscus is appended to `#quarto-content`, outside `<main>`, so
 `base.scss` caps `.giscus` at the post's 40rem or it would span the wider
 body column. Every page carries that script's inert stub, so a `grep giscus`
 of `docs/` matches pages without comments.
+
+### Photos
+
+Photos are committed to git, in `blog/images/`, but only compressed copies.
+Git keeps every version of a file forever, so one 10 MB camera original
+costs the repo 10 MB permanently even after it is deleted, while a
+compressed copy is a few hundred KB, and GitHub's limits (about 1 GB per
+repo and per published site) then allow thousands. An external image host
+was considered and rejected for the reason §5 gives for remote art: it
+breaks, and the site stops being self-contained.
+
+The workflow: drop originals into `_photos/` (gitignored; Quarto skips it
+for its leading underscore) and run `make photos`; `make build` and
+`make preview` run it first too, so a new photo is converted before any
+local render.
+`_scripts/compress_photos.py` writes each one to
+`blog/images/<slug>.webp`, slug being its filename lowercased and hyphenated
+(`IMG 1234.HEIC` becomes `img-1234.webp`). For each one it applies the EXIF
+rotation, converts to sRGB (phones shoot Display P3), scales the long edge
+down to 1400px (twice the 40rem column, for 2x screens), saves WebP at
+quality 75, and **strips all metadata, including GPS location**, which is
+why photos never go into `blog/images/` by hand. Measured on the blog's
+photos, 1400px at quality 75 keeps a detailed photo under 400 KB, where
+1600px at 80 did not; the script flags any output above 400 KB.
+`--format jpg` writes JPEG instead, for a photo used as a social card on a
+platform that rejects WebP.
+
+Originals are never modified or deleted. A photo whose output already
+exists (as `.webp` or `.jpg`) is never converted again (`--force` redoes all), and the script is
+silent when there is nothing to do, since every build runs it; two originals
+that would share a slug stop the run. It needs Pillow, a local dependency
+imported only when a photo needs converting, so a build with nothing new
+works without it; CI never runs it (it is a make step, not a Quarto hook,
+and `_photos/` is not in the repo). Pillow cannot read
+HEIC/HEIF without a plugin, so the script decodes those with macOS's
+built-in `sips`. A photo in a post follows §9's rule for images: it gets a
+`width=`.
 
 ### Drafts
 
