@@ -16,6 +16,8 @@ For each photo it:
 
 Originals are never modified or deleted. A photo whose output already exists
 (as .webp or .jpg) is never converted again, so re-running is cheap; --force redoes them all.
+An original newer than its output (edited, or a different photo whose name
+clashes with an existing image) gets a warning instead of a silent skip.
 
 Needs Pillow (`pip install pillow`), imported only when there is a photo to
 convert, so a build with nothing new runs without it. HEIC/HEIF (iPhone) files are decoded with
@@ -140,6 +142,17 @@ def main() -> int:
     # converted with --format jpg is not converted again as WebP.
     def converted(name: str) -> bool:
         return any((OUTDIR / f"{name}.{fmt}").exists() for fmt in QUALITY)
+
+    # An original newer than its output is an edited photo or a different
+    # photo whose name clashes with an existing image. Never overwrite it,
+    # but say so, or a post silently shows the wrong picture.
+    if not args.force:
+        for name, src in seen.items():
+            for fmt in QUALITY:
+                out = OUTDIR / f"{name}.{fmt}"
+                if out.exists() and out.stat().st_mtime < src.stat().st_mtime:
+                    print(f"warn  {src.name} is newer than {out.relative_to(ROOT)}, which is kept;"
+                          " rename the original, or use --force to replace it")
 
     todo = {n: s for n, s in seen.items() if args.force or not converted(n)}
     if not todo:

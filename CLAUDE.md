@@ -89,7 +89,7 @@ make covers    # regenerate the SVG project, course and blog formula covers (rar
 make photos    # compress blog photos from _photos/ into blog/images/ (§6, "Photos")
 make update-mathviz  # force a check for a newer mathviz release
 make release   # fast-forward main to origin/develop and push: publishes the site
-quarto preview # local live preview (not in the makefile)
+make preview   # make photos, then quarto preview (local live preview)
 ```
 
 There is no test suite and no linter. **Verification is visual**: render, serve
@@ -567,9 +567,10 @@ up on the next render; the home page lists only `PINNED` projects.
 
 The blog ("Scribbles") lives under `blog/` in this repo. It was
 originally a separate repository, `git@github.com:apurvanakade/math-blog.git`,
-which still exists as a read-only archive (see below). There the name was
-that site's navbar brand; here the brand is "Apurva Nakade", so the name
-lives in `blog/index.qmd`'s `title:`, and the navbar item stays "Blog".
+which still exists as a read-only archive (see below), whose navbar brand
+was the blog's earlier name, "Sh*tty First Drafts". Here the brand is
+"Apurva Nakade", so the blog's name lives in `blog/index.qmd`'s `title:`,
+and the navbar item stays "Blog".
 
 ### URLs and the GitHub Pages precedence trap
 
@@ -744,7 +745,12 @@ platform that rejects WebP.
 
 Originals are never modified or deleted. A photo whose output already
 exists (as `.webp` or `.jpg`) is never converted again (`--force` redoes all), and the script is
-silent when there is nothing to do, since every build runs it; two originals
+silent when there is nothing to do, since every build runs it. The one
+exception to the silence: an original newer than its existing output gets a
+warning on every run, because that is either an edited photo or a new one
+whose name clashes with an existing image (an iPhone counter rolling over),
+and skipping it silently would leave a post showing the wrong picture. The
+output is still kept; rename the original or use `--force`. Two originals
 that would share a slug stop the run. It needs Pillow, a local dependency
 imported only when a photo needs converting, so a build with nothing new
 works without it; CI never runs it (it is a make step, not a Quarto hook,
