@@ -6,8 +6,9 @@ DOCS_DIR = docs/
 
 PDF_DIR = _pdf/
 
-# HTML only, the same render CI does. The PDFs are `make pdfs`.
-build:
+# HTML only, the same render CI does. The PDFs are `make pdfs`. Compresses
+# any new photos in _photos/ first (`make photos`).
+build: photos
 	quarto render --to html --output-dir $(DOCS_DIR)
 
 # PDFs of the CV and teaching portfolio, for local use
@@ -27,7 +28,7 @@ portfolio:
 clean:
 	rm -rf $(DOCS_DIR) .quarto
 
-preview:
+preview: photos
 	quarto preview
 
 # Force a check for a newer mathviz release (the pre-render hook otherwise
@@ -48,4 +49,11 @@ covers:
 	python3 _scripts/make_covers.py
 	python3 _scripts/make_equation_covers.py
 
-.PHONY: build pdfs cv portfolio clean preview covers update-mathviz release
+# Compress blog photos: originals dropped in the gitignored _photos/ inbox
+# become web-sized, metadata-free WebP files in blog/images/. Photos already
+# converted are skipped, so build and preview run it every time. Local only;
+# needs Pillow when there is something to convert. See CLAUDE.md §6, "Photos".
+photos:
+	python3 _scripts/compress_photos.py
+
+.PHONY: build pdfs cv portfolio clean preview covers update-mathviz release photos
