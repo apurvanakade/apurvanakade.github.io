@@ -56,7 +56,7 @@ agreeing with it.
   secret such as the Canvas API token.
 - A CLAUDE.md convention broken, quoting the rule: the ownership split in §1
   (markup in a content file, any write to `styles.css`, a hand edit to a
-  `GENERATED` file), literal colours in a component rule, an em dash in
+  `GENERATED` file), literal colours in a component rule, overused em dashes in
   content, an image without a width, and so on.
 - CLAUDE.md, a skill or a doc that the change makes untrue, or a change that
   should have updated CLAUDE.md (its §0 says when) and did not.

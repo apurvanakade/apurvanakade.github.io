@@ -58,7 +58,7 @@ In the worktree:
 - A style change is screenshotted in both colour schemes (CLAUDE.md §2,
   "Verification is visual"); a post with OJS cells is loaded in a preview with
   no console errors.
-- Content follows CLAUDE.md §9 (no em dashes, image widths, etc.).
+- Content follows CLAUDE.md §9 (em dashes sparingly, image widths, etc.).
 
 Commit with a message saying what changed and why, then:
 
