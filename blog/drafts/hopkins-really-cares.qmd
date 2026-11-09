@@ -1,5 +1,5 @@
 ---
-title: "Hopkins Really Cares"
+title: "Hopkins really cares"
 author: Apurva Nakade
 date: 2025-05-12
 image: "../images/gilman-hall.jpg"

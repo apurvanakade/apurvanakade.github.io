@@ -1,5 +1,5 @@
 ---
-title: With or Without Order
+title: "With or without order"
 description: "Does choosing with order or without order change a probability?"
 date: 2025-11-27
 author: Apurva Nakade

@@ -1,5 +1,5 @@
 ---
-title: Closed Convex Cones in LP
+title: "Closed convex cones in LP"
 description: "Linear images of polyhedral cones are closed."
 date: 2024-01-02 00:13:03
 categories:

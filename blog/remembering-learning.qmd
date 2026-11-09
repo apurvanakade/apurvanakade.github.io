@@ -1,5 +1,5 @@
 ---
-title: Learning is Remembering
+title: "Learning is remembering"
 description: "What if learning really is remembering?"
 date: 2025-06-29
 author: Apurva Nakade

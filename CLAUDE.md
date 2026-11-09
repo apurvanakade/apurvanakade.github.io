@@ -916,6 +916,12 @@ old links, so prefer keeping URLs stable.
 ## 9. Content conventions
 
 - **Filenames**: lowercase, hyphenated, no spaces.
+- **Blog post titles are in sentence case and double-quoted**:
+  `title: "Closed convex cones in LP"`. Only the first word, proper nouns
+  (Lean, the programming language; Hopkins; Mir Publications), named results (Hilbert 90, Combinatorial
+  Nullstellensatz) and acronyms are capitalised. That matches every other
+  heading on the site ("Teaching philosophy", "Selected projects"); a mix of
+  title and sentence case read as inconsistent on the blog index.
 - **Math**: `$…$` inline, `$$…$$` display. Avoid `\begin{equation}` — it does not
   round-trip cleanly through the CV filter.
 - **Images** in prose always get a width: `![](path){width="40%"}`.

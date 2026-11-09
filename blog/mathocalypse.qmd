@@ -1,5 +1,5 @@
 ---
-title: Mathocalypse
+title: "Mathocalypse"
 description: "Grieving for math."
 date: 2026-10-14
 categories:

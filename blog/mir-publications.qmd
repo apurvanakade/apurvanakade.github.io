@@ -1,5 +1,5 @@
 ---
-title: Mir Publications
+title: "Mir Publications"
 description: "An archive of Mir Publications textbooks."
 date: 2024-09-10 12:51:09
 categories:
