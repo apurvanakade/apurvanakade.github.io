@@ -6,12 +6,18 @@ categories: ["course notes", "Mathcamp", "lean"]
 image: ../images/projects/theorem-proving-lean.svg
 links:
   - text: "Notes"
-    href: "https://apurvnakade.github.io/mc2020-Lean/"
+    href: "https://apurvanakade.github.io/lean4-crash-course/"
   - text: "Source code"
-    href: "https://github.com/apurvnakade/mc2020-Lean"
+    href: "https://github.com/apurvanakade/lean4-crash-course"
+  # Lean 3 originals:
+  # - text: "Original Lean 3 notes"
+  #   href: "https://apurvanakade.github.io/mc2020-Lean/"
+  # - text: "Lean 3 source code"
+  #   href: "https://github.com/apurvanakade/mc2020-Lean"
 ---
 
 A completely interactive class on the Lean theorem prover from Mathcamp 2020. You learn
 by solving exercises online, in the browser, with no local setup.
+The notes are now in Lean 4, with every example checked against mathlib4.
 
 The prerequisites are basic proof techniques.
