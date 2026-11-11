@@ -541,7 +541,7 @@ quiet (an earlier version, with a "Featured" pair of image cards and a
 weighted random pick, was too busy).
 
 1. **Selected projects**: the projects named by slug in `PINNED` (currently
-   `visual-math-lab` and `monte-carlo-methods`), title and `description:`. A
+   `visual-math-lab`, `monte-carlo-methods` and `lean-mc2020`), title and `description:`. A
    slug that matches no file logs a warning and is skipped.
 2. **Writing**: the `RECENT` (4) newest posts in `blog/*.qmd` by `date:`, title
    and month. Drafts are never listed (`blog/drafts/` is not scanned, and

@@ -27,7 +27,7 @@ BLOG = ROOT / "blog"
 OUT = ROOT / "_includes" / "home-lists.html"
 
 # Slugs of projects/<slug>.qmd listed, in this order, under "Selected projects".
-PINNED = ["visual-math-lab", "monte-carlo-methods"]
+PINNED = ["visual-math-lab", "monte-carlo-methods", "lean-mc2020"]
 
 # How many posts "Writing" shows.
 RECENT = 4
