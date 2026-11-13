@@ -2,10 +2,7 @@
 title: "Combinatorial Nullstellensatz"
 description: "Zeroes of polynomials over arbitrary fields."
 date: 2023-11-26 12:27:01
-categories:
-  - combinatorics
-  - problems
-  - todo
+categories: [math]
 image: "images/combinatorial-nullstellensatz-equation.svg"
 author: Apurva Nakade
 ---

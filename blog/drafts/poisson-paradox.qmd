@@ -2,7 +2,7 @@
 title: "The Poisson paradox"
 date: 2025-08-11 00:29:51
 author: Apurva Nakade
-categories: []
+categories: [math]
 
 execute: 
   cache: true

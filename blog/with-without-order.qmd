@@ -3,7 +3,7 @@ title: "With or without order"
 description: "Does choosing with order or without order change a probability?"
 date: 2025-11-27
 author: Apurva Nakade
-categories: ['probability', 'puzzle']
+categories: [math]
 image: "images/with-without-order-equation.svg"
 execute: 
   cache: true

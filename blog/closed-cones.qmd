@@ -2,10 +2,7 @@
 title: "Closed convex cones in LP"
 description: "Linear images of polyhedral cones are closed."
 date: 2024-01-02 00:13:03
-categories:
-  - analysis
-  - linear programming
-  - convex analysis
+categories: [math]
 image: "images/closed-cones-equation.svg"
 author: Apurva Nakade
 ---

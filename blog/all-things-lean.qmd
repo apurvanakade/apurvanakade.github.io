@@ -3,7 +3,7 @@ title: "All things Lean"
 description: "References for Lean."
 date: 2026-11-06
 author: Apurva Nakade
-categories: [formalization, lean, references]
+categories: [math]
 ---
 
 I'm tentatively teaching a course on Lean and math formalization in Fall 2027. This is a page to dump various resources for future use. I used to do this a lot in the past but things have been changing so fast that it has been hard to keep up.

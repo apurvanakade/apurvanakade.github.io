@@ -2,19 +2,19 @@
 -- Released under Apache 2.0 license as described in the file LICENSE.
 -- Authors: Apurva Nakade
 
--- Quarto filter that puts the mathviz bundle (dist/mathviz.js + .css) and its
--- two vendor scripts (math.js, Plotly) into every HTML page's <head>. A
--- project enables it with
+-- Quarto filter that puts the mathviz bundle (dist/mathviz.min.js + .css)
+-- into every HTML page's <head>, and its two vendor scripts (math.js,
+-- Plotly) into every page that has OJS cells. A project enables it with
 --
 --   filters:
 --     - mathviz
 --
--- and tunes it, optionally, with a `mathviz:` block in _quarto.yml or a
--- page's front matter:
+-- and tunes it, optionally, with a `mathviz:` block in _quarto.yml:
 --
 --   mathviz:
---     plotly: false            # don't load Plotly (pages draw with D3/canvas)
---     mathjs: "https://..."    # a different math.js build/version
+--     plotly: false            # never load Plotly (pages draw with D3/canvas)
+--     plotly: true             # load it on every page, OJS or not
+--     mathjs: "https://..."    # a different math.js build/version (every page)
 --     css: false               # bring your own stylesheet
 --     referrer: same-origin    # emit <meta name="referrer"> ahead of the CDN tags
 --     fonts: true              # self-host Inter + JetBrains Mono (off by default)
@@ -22,9 +22,6 @@
 -- and, each off by default, the site chrome a Quarto website or book built
 -- on mathviz pages can take instead of writing its own:
 --
---     sidebar-rail: my-site-pin    # off-canvas sidebar behind a slim rail; a
---                                  # string names the pin's localStorage key
---                                  # (true: "vm-sidebar-pinned")
 --     sidebar-search: true         # a search box atop Quarto's sidebar that
 --                                  # narrows the menu to matching titles
 --     category-cloud: true         # a listing's category cloud above its
@@ -44,6 +41,22 @@
 --       repo: owner/name           #   filing a GitHub issue that links the
 --       branch: main               #   page's .qmd source (branch: main)
 --
+-- One page changes options with `mathviz-page:` in its front matter, never
+-- with `mathviz:` there. Quarto merges a page's front matter over the
+-- project's only for keys it knows; for any other key the page's value
+-- replaces the project's whole map, so a page that sets
+-- `mathviz: {category-cloud: true}` silently loses every option in
+-- _quarto.yml (its referrer meta, fonts, sidebar search...). `mathviz-page:`
+-- is a separate key, so both reach the filter, which lays the page's keys
+-- over the project's one by one (a page key replaces the project's value
+-- for that key, a map such as share: included):
+--
+--   ---
+--   mathviz-page:
+--     category-cloud: true     # this page also gets the cloud
+--     plotly: false            # and no Plotly
+--   ---
+--
 -- The optional Quarto theme is not an option here: a site opts in by listing
 -- theme/mathviz-light.scss / mathviz-dark.scss under format.html.theme (see
 -- the header comment in either file). fonts: true is its natural companion,
@@ -51,37 +64,48 @@
 --
 -- Keep VERSION in step with _extension.yml and package.json --
 -- scripts/build.mjs refuses to build when the three disagree.
-local VERSION    = "0.10.0"
+local VERSION    = "1.3.2"
 local PLOTLY_URL = "https://cdn.plot.ly/plotly-2.35.2.min.js"
 local MATHJS_URL = "https://cdn.jsdelivr.net/npm/mathjs@15.2.0/lib/browser/math.js"
 
--- Reads mathviz.<key> from the metadata: false stays false, a string is
+-- The options in force on this page: the project's `mathviz:` map with the
+-- page's `mathviz-page:` keys laid over it (see the header for why a page
+-- can't use `mathviz:` itself). Either may be absent -- which is why the
+-- loop walks the two key names, not a table of their values: ipairs stops at
+-- the first nil, so { meta.mathviz, meta["mathviz-page"] } dropped every
+-- page option on a site with no project `mathviz:`.
+local function mergedOptions(meta)
+  local opts = {}
+  for _, name in ipairs({ "mathviz", "mathviz-page" }) do
+    local source = meta[name]
+    if type(source) == "table" then
+      for key, value in pairs(source) do opts[key] = value end
+    end
+  end
+  return opts
+end
+
+-- Reads <key> from the options: false stays false, a string is
 -- stringified, anything absent yields `default`.
-local function option(meta, key, default)
-  local opts = meta.mathviz
-  if type(opts) ~= "table" then return default end
+local function option(opts, key, default)
   local value = opts[key]
   if value == nil then return default end
   if type(value) == "boolean" then return value end
   return pandoc.utils.stringify(value)
 end
 
--- Reads mathviz.<key>.<sub>, stringified, when mathviz.<key> is a map
+-- Reads <key>.<sub>, stringified, when <key> is a map
 -- (`share: {site-url: ...}`); nil otherwise.
-local function subOption(meta, key, sub)
-  local opts = meta.mathviz
-  if type(opts) ~= "table" then return nil end
+local function subOption(opts, key, sub)
   local value = opts[key]
   if value == nil or pandoc.utils.type(value) ~= "table" then return nil end
   if value[sub] == nil then return nil end
   return pandoc.utils.stringify(value[sub])
 end
 
--- Whether mathviz.<key> is set to anything but false: true, a string, or a
--- map of sub-options all switch a piece of chrome on.
-local function enabled(meta, key)
-  local opts = meta.mathviz
-  if type(opts) ~= "table" then return false end
+-- Whether <key> is set to anything but false: true, a string, or a map of
+-- sub-options all switch a piece of chrome on.
+local function enabled(opts, key)
   local value = opts[key]
   if value == nil or value == false then return false end
   return true
@@ -91,15 +115,47 @@ local function escapeAttr(text)
   return (text:gsub("&", "&amp;"):gsub('"', "&quot;"):gsub("<", "&lt;"))
 end
 
-local function scriptTag(value, defaultUrl)
+-- A vendor <script> tag, or nil. `value` is the option: false never loads
+-- it; true or a URL always does (the URL replacing the default); absent
+-- (or "auto") loads it only on a page with OJS cells -- the only code that
+-- uses these libraries -- so a prose page doesn't download ~4 MB of Plotly
+-- and math.js. `defer`, so neither blocks the page from rendering: deferred
+-- scripts run in document order before DOMContentLoaded, these two first,
+-- then the (also deferred) bundle, then Quarto's OJS runtime module, which
+-- sits below them in <head>.
+local function vendorTag(value, defaultUrl, pageHasOjs)
   if value == false then return nil end
   local url = defaultUrl
-  if type(value) == "string" and value ~= "" then url = value end
-  return '<script src="' .. url .. '"></script>'
+  if type(value) == "string" and value ~= "" and value ~= "auto" then url = value end
+  local auto = value == nil or value == "auto"
+  if auto and not pageHasOjs then return nil end
+  return '<script defer src="' .. escapeAttr(url) .. '"></script>'
 end
 
-function Meta(meta)
+-- Whether the page has OJS cells. By the time a project's filters run,
+-- Quarto has compiled every {ojs} cell into one
+-- <script type="ojs-module-contents"> raw block; a project that orders its
+-- filters ahead of Quarto's ("filters: [mathviz, quarto]") still has the
+-- {ojs} code blocks themselves.
+local function hasOjs(doc)
+  local found = false
+  doc:walk({
+    RawBlock = function(raw)
+      if raw.format == "html" and raw.text:find("ojs-module-contents", 1, true) then found = true end
+    end,
+    CodeBlock = function(block)
+      for _, class in ipairs(block.classes) do
+        if class == "ojs" or class == "{ojs}" then found = true end
+      end
+    end
+  })
+  return found
+end
+
+function Pandoc(doc)
   if not quarto.doc.is_format("html:js") then return nil end
+  local opts = mergedOptions(doc.meta)
+  local pageHasOjs = hasOjs(doc)
 
   -- The vendor tags go in dependencies of their OWN, added before the bundle.
   -- Two things about Quarto's dependency handling force this: within one
@@ -118,33 +174,30 @@ function Meta(meta)
   local function headTag(name, html)
     quarto.doc.add_html_dependency({ name = name, version = VERSION, head = html })
   end
-  local referrer = option(meta, "referrer", nil)
+  local referrer = option(opts, "referrer", nil)
   if referrer then
-    headTag("mathviz-referrer", '<meta name="referrer" content="' .. referrer .. '">')
+    headTag("mathviz-referrer", '<meta name="referrer" content="' .. escapeAttr(referrer) .. '">')
   end
-  local mathjs = scriptTag(option(meta, "mathjs", true), MATHJS_URL)
+  local mathjs = vendorTag(option(opts, "mathjs", nil), MATHJS_URL, pageHasOjs)
   if mathjs then headTag("mathviz-mathjs", mathjs) end
-  local plotly = scriptTag(option(meta, "plotly", true), PLOTLY_URL)
+  local plotly = vendorTag(option(opts, "plotly", nil), PLOTLY_URL, pageHasOjs)
   if plotly then headTag("mathviz-plotly", plotly) end
 
+  -- The minified bundle (the readable one in dist/ is for jsDelivr and for
+  -- reading), deferred so it runs right after the vendor scripts above and
+  -- before OJS starts: the Plotly patch has to be in place before the first
+  -- cell draws a chart. Its source map travels with it.
   local dep = {
     name = "mathviz",
     version = VERSION,
-    scripts = { "dist/mathviz.js" }
+    scripts = { { path = "dist/mathviz.min.js", attribs = { defer = "" } } },
+    resources = { "dist/mathviz.min.js.map" }
   }
-  if option(meta, "css", true) ~= false then
-    dep.stylesheets = { "dist/mathviz.css" }
+  if option(opts, "css", true) ~= false then
+    dep.stylesheets = { "dist/mathviz.min.css" }
   end
   quarto.doc.add_html_dependency(dep)
 
-  -- Opt-in, because a site with its own typography shouldn't carry ~400kB of
-  -- font files it never loads. Self-hosted rather than a Google Fonts link:
-  -- that request hands Google every visitor's IP address before any consent
-  -- is asked for (see the header comment in fonts/fonts.css). fonts.css
-  -- names each woff2 by bare file name, so the files have to land in the
-  -- same folder as the stylesheet: Quarto copies a dependency's stylesheets
-  -- and resources flat into site_libs/quarto-contrib/mathviz-fonts-<v>/,
-  -- dropping the fonts/ prefix from each, which puts them side by side.
   -- Opt-in site chrome (see the header). Each piece is a dependency of its
   -- own, so a site pays only for what it turns on, and passes its settings
   -- to its script as <meta name="mathviz:..."> tags -- one tag per
@@ -168,49 +221,47 @@ function Meta(meta)
       end
     end
   end
-  -- A string value is the option's one setting (a storage key); `true` is
-  -- a plain boolean and leaves the script's default.
-  local function stringValue(key)
-    local value = option(meta, key, false)
-    if type(value) == "string" then return value end
-    return nil
-  end
 
-  if enabled(meta, "sidebar-rail") then
-    chrome("sidebar-rail", { ["sidebar-pin-key"] = stringValue("sidebar-rail") })
-  end
-  if enabled(meta, "sidebar-search") then
+  if enabled(opts, "sidebar-search") then
     chrome("sidebar-search")
   end
-  if enabled(meta, "category-cloud") then
+  if enabled(opts, "category-cloud") then
     chrome("category-cloud", nil, true)
   end
   -- The Share dialog's snippet is an ?embed= URL, so share implies embed.
-  if enabled(meta, "embed") or enabled(meta, "share") then
+  if enabled(opts, "embed") or enabled(opts, "share") then
     chrome("embed")
   end
-  if enabled(meta, "share") or enabled(meta, "report-bug") then
+  if enabled(opts, "share") or enabled(opts, "report-bug") then
     quarto.doc.add_html_dependency({ name = "mathviz-chrome-site", version = VERSION, scripts = { "chrome/site.js" } })
   end
-  if enabled(meta, "share") then
+  if enabled(opts, "share") then
     chrome("share", {
-      ["share-site-url"] = subOption(meta, "share", "site-url"),
-      ["share-embed-docs"] = subOption(meta, "share", "embed-docs")
+      ["share-site-url"] = subOption(opts, "share", "site-url"),
+      ["share-embed-docs"] = subOption(opts, "share", "embed-docs")
     })
   end
-  if enabled(meta, "report-bug") then
-    local repo = subOption(meta, "report-bug", "repo")
+  if enabled(opts, "report-bug") then
+    local repo = subOption(opts, "report-bug", "repo")
     if repo == nil then
       quarto.log.warning("mathviz: report-bug needs report-bug.repo (owner/name); skipping it")
     else
       chrome("report-bug", {
         ["report-bug-repo"] = repo,
-        ["report-bug-branch"] = subOption(meta, "report-bug", "branch")
+        ["report-bug-branch"] = subOption(opts, "report-bug", "branch")
       })
     end
   end
 
-  if option(meta, "fonts", false) == true then
+  -- Opt-in, because a site with its own typography shouldn't carry ~400kB of
+  -- font files it never loads. Self-hosted rather than a Google Fonts link:
+  -- that request hands Google every visitor's IP address before any consent
+  -- is asked for (see the header comment in fonts/fonts.css). fonts.css
+  -- names each woff2 by bare file name, so the files have to land in the
+  -- same folder as the stylesheet: Quarto copies a dependency's stylesheets
+  -- and resources flat into site_libs/quarto-contrib/mathviz-fonts-<v>/,
+  -- dropping the fonts/ prefix from each, which puts them side by side.
+  if option(opts, "fonts", false) == true then
     local resources = {}
     for _, name in ipairs(pandoc.system.list_directory(quarto.utils.resolve_path("fonts"))) do
       if name:match("%.woff2$") or name:match("^LICENSE") then

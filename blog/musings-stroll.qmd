@@ -3,7 +3,7 @@ title: "Musings from a stroll"
 description: "An autumn walk, and why the things we love need room in our lives."
 date: 2026-11-09
 author: Apurva Nakade
-categories: [writing, mindfulness, travel]
+categories: [life]
 image: "images/levitan-sokolniki-autumn.jpg"
 ---
 

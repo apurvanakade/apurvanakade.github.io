@@ -3,7 +3,7 @@ title: "Random points in a triangle"
 description: "Generating random points inside a triangle."
 author: Apurva Nakade
 date: 2025-05-12
-categories: [randomness, triangles]
+categories: [math]
 image: "images/random-points-triangle.png"
 ---
 

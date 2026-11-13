@@ -2,11 +2,7 @@
 title: "Logarithms and primes"
 description: "Densities of primes."
 date: 2023-10-26 09:01:26
-categories:
-  - todo
-  - infinite series
-  - number theory
-  - riemann zeta
+categories: [math]
 image: "images/ln-series-equation.svg"
 author: Apurva Nakade
 ---

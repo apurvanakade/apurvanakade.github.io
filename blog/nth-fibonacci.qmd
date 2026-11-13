@@ -3,7 +3,7 @@ title: "Self-Fibonacci numbers"
 description: "For which n does n divide the nth Fibonacci number?"
 date: 2025-08-11
 author: Apurva Nakade
-categories: ['number theory', 'research', 'open', 'fibonacci', 'exploration']
+categories: [math]
 image: "images/self-fibonacci-plot.png"
 filters: [mathviz]
 ---

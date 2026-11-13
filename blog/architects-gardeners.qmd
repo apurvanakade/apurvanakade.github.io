@@ -3,7 +3,7 @@ title: "Architects and gardeners"
 description: "Designing vs. Growing."
 date: 2025-07-17
 author: Apurva Nakade
-categories: ['philosophy', 'teaching']
+categories: [teaching]
 image: "images/komyoji-rock-garden.jpg"
 ---
 

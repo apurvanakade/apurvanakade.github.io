@@ -3,7 +3,7 @@ title: "Taming the dragon"
 description: "AI lets me build things I never could before, and leaves me anxious afterwards. Notes on learning to use it without being used by it."
 date: 2026-10-21
 author: Apurva Nakade
-categories: ["AI", "mindfulness"]
+categories: [AI]
 image: "images/hokusai-dragon-ascending-fuji.jpg"
 ---
 
