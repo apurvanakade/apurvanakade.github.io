@@ -3,7 +3,7 @@ title: "Vibe coding"
 description: "Mad mad world."
 date: 2025-12-04
 author: Apurva Nakade
-categories: ["learning", "AI"]
+categories: [AI]
 image: "images/dead-channel.jpg"
 ---
 

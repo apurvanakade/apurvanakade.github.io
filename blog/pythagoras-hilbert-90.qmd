@@ -2,8 +2,7 @@
 title: "Pythagoras using Hilbert 90"
 description: "Generating Pythagorean triples using Hilbert's Theorem 90."
 date: 2024-06-08 12:33:01
-categories:
-  - abstract algebra
+categories: [math]
 image: "images/pythagoras-hilbert90-equation.svg"
 author: Apurva Nakade
 ---

@@ -10,9 +10,15 @@ listing:
   template: ../_includes/post-list.ejs
   date-format: "MMM D, YYYY"
   fields: [date, title, description]
-  categories: false
+  categories: cloud
   sort-ui: false
   filter-ui: false
 comments: false
 body-classes: blog-index
+filters: [mathviz]
+mathviz-page:
+  category-cloud: true
+  plotly: false
+  mathjs: false
+  css: false
 ---

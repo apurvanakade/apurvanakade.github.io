@@ -477,18 +477,46 @@ main .table > tbody > tr:has(.course-row--break) > td {
 }
 
 // --------------------------------------------------------------- blog posts
-// A post opens with its title and one grey line, the date. The author (always
-// Apurva), the description (it is for the listing), the category chips and the
-// AUTHOR / PUBLISHED labels are hidden, so the text starts almost at once.
-// `blog-post` comes from blog/_metadata.yml; the index sets `blog-index`.
+// A post opens with its title and one grey line: the date, then its category
+// ("Nov 9, 2026 · math"). The author (always Apurva), the description (it is
+// for the listing) and the AUTHOR / PUBLISHED labels are hidden, so the text
+// starts almost at once. `blog-post` comes from blog/_metadata.yml; the index
+// sets `blog-index`.
+//
+// The category sits in .quarto-title, above the date's .quarto-title-meta, in
+// Quarto's markup; .quarto-title is unwrapped (display: contents) so the
+// header becomes one wrapping flex row, the title takes a full line, and
+// `order` puts the date before the category. Quarto's own script turns the
+// category into a link to the index filtered by it (#category=...) once the
+// reader has come from the index; otherwise it stays plain text. The chip is
+// drawn as text here, overriding mathviz's surface-filled chip, which would
+// be a second shape on an otherwise bare line.
 body.blog-post:not(.blog-index) #title-block-header {
-  .description,
-  .quarto-categories,
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  column-gap: 0.45em;
+  margin-bottom: 1rem;
+  .quarto-title { display: contents; }
+  .quarto-title > h1 { flex-basis: 100%; }
+  > div:has(> .description),
   .quarto-title-meta-heading,
   .quarto-title-meta > div:not(:has(p.date)) { display: none; }
-  .quarto-title-meta { display: block; margin-top: 0.5rem; }
+  .quarto-title-meta { display: block; order: 1; margin-top: 0.5rem; }
   .quarto-title-meta-contents,
   .quarto-title-meta-contents p.date { margin: 0; font-size: 0.9rem; color: var(--vm-text-soft); }
+  .quarto-categories { display: flex; order: 2; gap: 0.45em; margin: 0; font-size: 0.9rem; color: var(--vm-text-soft); }
+  .quarto-categories::before { content: "\00B7"; }
+  .quarto-categories .quarto-category {
+    font-size: inherit;
+    font-weight: normal;
+    padding: 0;
+    margin: 0;
+    background: none;
+    color: inherit;
+  }
+  .quarto-category a { color: inherit; text-decoration: none; }
+  .quarto-category a:hover { color: var(--vm-accent); }
 }
 
 // giscus is appended to #quarto-content, outside <main>, so it would span the
@@ -509,6 +537,12 @@ body.blog-post #quarto-content > .giscus { max-width: 40rem; }
 // The blog index (_includes/post-list.ejs): one ruleless row per post, the
 // date in a narrow left column, which stacks above the title on a phone.
 .blog-index #title-block-header .description { color: var(--vm-text-soft); }
+// The category row above the list (the Projects cloud's rules, above, style
+// it): every word one size, since a count-sized "math" would only say the
+// blog has more maths posts, and a tighter gap before the first post.
+.blog-index .quarto-listing-category.category-cloud { margin-bottom: 2rem; }
+.blog-index .quarto-listing-category.category-cloud .category { font-size: 0.9rem; }
+.blog-index .quarto-listing-category.category-cloud .quarto-category-count { font-size: inherit; }
 .post-list__item {
   display: grid;
   grid-template-columns: 7.5rem minmax(0, 1fr);

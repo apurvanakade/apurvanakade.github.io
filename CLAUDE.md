@@ -195,7 +195,7 @@ preview; it has no effect on the published site.
 index.qmd                       home; pulls in _includes/home-lists.html
 projects/index.qmd              grid listing, filter + category UI
 projects/<slug>.qmd             one project per file
-blog/index.qmd                  all posts, a plain dated list
+blog/index.qmd                  all posts, a plain dated list under a category row
 blog/<post>.qmd                 every post, beside the listing
 blog/drafts/*.qmd               rendered and published, but not listed anywhere
 blog/images/                    every post's and draft's images, one flat folder
@@ -502,8 +502,9 @@ Prose.
   (the rail cluttered the page). `projects/index.qmd` sets
   `categories: cloud`, which Quarto puts in the right margin. mathviz's
   opt-in `category-cloud` script (`filters: [mathviz]` and
-  `mathviz: {category-cloud: true, plotly: false, mathjs: false, css: false}` in that
-  page's frontmatter) moves it above the grid inside
+  `mathviz-page: {category-cloud: true, plotly: false, mathjs: false, css: false}` in that
+  page's frontmatter -- `mathviz-page:`, never a page-level `mathviz:`, which
+  would replace any project `mathviz:` map wholesale) moves it above the grid inside
   `div.vm-category-cloud`, removes the empty margin, switches `<main>` from
   `column-page-left` to `column-page`, and adds an "All" entry
   (`.category--all`, `.active` while no category is picked). It ships no
@@ -610,9 +611,12 @@ Recover it from there if it is ever wanted.
 ### Structure
 
 The blog is flat: every post is `blog/<post>.qmd`, beside the one listing,
-`blog/index.qmd`. There are no sections; a post's subject is carried by its
-`categories:` (kept in frontmatter, but shown neither on the index nor on
-the post). All images, for posts and
+`blog/index.qmd`. A post's subject is its one category, from a closed set of
+four: `math`, `teaching`, `AI`, `life` (`categories: [math]`). Exactly one,
+and no finer tags: Quarto shows every value of `categories:` in the index's
+category row, and the row is kept to four words so it stays one quiet line.
+A new bucket is a decision for Apurva, not something to add for one post.
+All images, for posts and
 drafts, live in one flat `blog/images/`, referenced as `images/foo.png` from a
 post and `../images/foo.png` from a draft.
 
@@ -628,18 +632,35 @@ lists, so a page cannot replace an inherited include, only hide it). The
 `blog-post` rules are written `body.blog-post:not(.blog-index)` in case the
 two class lists are ever concatenated too.
 
-**A post opens with its title and one grey line, the date.** `base.scss`
-hides the rest of Quarto's title block for `.blog-post`: the author (always
-Apurva), the `description:` (it is for the listing), the category chips and
-the AUTHOR / PUBLISHED labels. The author's block is found as the meta `<div>`
-without a `p.date`, because Quarto gives it no class of its own. The
+**A post opens with its title and one grey line, the date and the
+category** ("November 9, 2026 · life"). `base.scss` hides the rest of
+Quarto's title block for `.blog-post`: the author (always Apurva), the
+`description:` (it is for the listing) and the AUTHOR / PUBLISHED labels. The
+author's block is found as the meta `<div>` without a `p.date`, because Quarto
+gives it no class of its own. The category chip lives in `.quarto-title`,
+above the date in Quarto's markup, so the header is a wrapping flex row with
+`.quarto-title` unwrapped and `order` putting the date first; the chip is
+restyled as plain grey text. Quarto's own script wraps it in a link to
+`/blog/#category=...` once the reader has visited the index (it learns the
+listing's URL there); arriving directly, it stays plain text. The
 frontmatter stays as it is; only the display changes.
 
 **The index is a plain list**, from a custom listing template,
 `_includes/post-list.ejs`: per post, the date in a narrow left column and the
-title with its `description:` beside it. No images, no category rail. Its
-output is read as Markdown, so its lines are not indented (an indented line
-becomes a code block).
+title with its `description:` beside it. No images, no per-row categories.
+Its output is read as Markdown, so its lines are not indented (an indented
+line becomes a code block). The template must keep `metadataAttrs(item)` on
+each row: that is where Quarto's category filter reads the post's category.
+
+**Above the list is one row of categories** (`all · AI · life · math ·
+teaching`), the same mathviz category cloud as on Projects (§5): the
+listing's `categories: cloud`, and `filters: [mathviz]` with
+`mathviz-page: {category-cloud: true, plotly: false, mathjs: false, css: false}`
+in `blog/index.qmd`. Clicking a word filters the list in place
+(`#category=math`, shareable). `base.scss` gives every word one size (Quarto
+sizes them by post count, which would only say there are more maths posts).
+The cloud script places itself above a custom-template listing only when
+the page has no grid, default or table listing, which is true here.
 
 ### mathviz
 
@@ -659,8 +680,9 @@ under `window.VM`. This site consumes it the same way Monte-Carlo-Methods does.
   and math.js from a CDN into the page's `<head>`, so enabling it in
   `_quarto.yml` or `blog/_metadata.yml` would make every page download
   them. Currently only `nth-fibonacci.qmd` opts in for charts;
-  `projects/index.qmd` opts in for the category cloud alone, with Plotly,
-  math.js and the component CSS switched off (§5).
+  `projects/index.qmd` and `blog/index.qmd` opt in for the category cloud
+  alone, with Plotly, math.js and the component CSS switched off (§5, and
+  the blog index above).
 - **mathviz's theme is the site's palette** (§7), as on Monte-Carlo-Methods,
   so a chart or panel matches the page with no bridging, and a post moved
   between sites looks the same on each.
@@ -677,7 +699,7 @@ title: "Random points in a triangle"
 description: "One sentence. Shown on the blog index."
 date: 2025-05-12
 author: Apurva Nakade
-categories: [randomness, triangles]
+categories: [math]   # exactly one of: math, teaching, AI, life
 image: "images/random-points-triangle.png"
 ---
 ```
