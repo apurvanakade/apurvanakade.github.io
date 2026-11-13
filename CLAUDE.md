@@ -391,6 +391,15 @@ default) into display headings so a table or list can start below them, and
 `\LTleft=0pt` so tables sit flush with the prose rather than centred at
 differing widths.
 
+**Teaching philosophy is written for students, in the blog's voice**, because
+students read the public page more than search committees do. It is first person,
+uses contractions, speaks to the reader as "you", and is built from ideas in
+Apurva's blog posts (anamnesis from `remembering-learning.qmd`, the gardener
+teacher from `architects-gardeners.qmd`). When a new post states a view on
+teaching or learning, it can feed a new paragraph here, so check new posts
+for that. The portfolio is self-contained: restate an idea in its own words
+and never link to the post it came from, or name the writer quoted in it.
+
 **The portfolio's visuals all come from `_filters/portfolio.lua`**, named in
 the page's `filters:`, so the `.qmd` stays headings, pipe tables and lists.
 It reads the course tables and builds, for HTML and LaTeX alike: a summary
