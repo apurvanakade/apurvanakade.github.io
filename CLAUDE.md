@@ -512,7 +512,7 @@ Prose.
   `<main>` to three cards' width so the title, prose, cloud and filter box
   line up with the grid's edges. Plotly, math.js and mathviz's component
   stylesheet are off there because the page draws no charts or panels;
-  `dist/mathviz.js` (about 250 KB) still loads, since the filter always
+  `dist/mathviz.min.js` (about 72 KB) still loads, since the filter always
   adds it. The page has no `subtitle:`.
 - **Categories** are a flat vocabulary mixing kind (`app`, `course notes`,
   `problem sets`, `course design`, `formalization`, `OER`, `expository`), venue

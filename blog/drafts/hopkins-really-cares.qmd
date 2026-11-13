@@ -2,6 +2,7 @@
 title: "Hopkins really cares"
 author: Apurva Nakade
 date: 2025-05-12
+categories: [teaching]
 image: "../images/gilman-hall.jpg"
 draft: true
 ---
