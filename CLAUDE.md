@@ -125,35 +125,14 @@ The same model as Monte-Carlo-Methods and VisualMathLab: **`develop` is where
 work lands; `main` is a pointer to the last published state**, and pushing
 `main` deploys. `main` is the GitHub default branch.
 
-- **This folder is the long-lived `develop` checkout** and stays on `develop`.
-  A feature branch gets a sibling worktree,
-  `git worktree add -b <prefix>/<slug> ../apurvanakade.github.io-<slug> develop`,
-  with its own `quarto preview --port 4201` (count up). Checking out another
-  branch in place rewrites `_quarto.yml`/`_includes/`/`_extensions/`, and a
-  running preview then re-renders the whole site.
-- **Major changes go through a PR into `develop`**, merged with `--merge` once
-  `pr-check.yml` (a full render of the site) is green. It cannot see an OJS
-  cell that throws in the browser, so touched pages are checked in a preview
-  first. **Small changes may be pushed straight to `develop`**: a wording fix
-  in prose, a comment, or repo-only files (`CLAUDE.md`, `makefile`). Anything
-  touching `_quarto.yml`, `_theme/`, `_filters/`, `_includes/`, `_scripts/`,
-  `_extensions/`, an OJS cell or a workflow is not small, however few lines.
 - **Releasing is a fast-forward of `main` to `develop`**: `make release`
   (`git push origin origin/develop:main`, which the remote refuses unless it is
-  a fast-forward, so no checkout is needed). Never squash- or merge-commit into
-  `main`, and never force-push it: a squash records no parent link back to
-  `develop`, so the merge base stops advancing and every later release
-  conflicts. If the fast-forward is refused, reconcile once with
-  `git merge -s ours origin/main` on `develop`, push, and retry.
-- **The `ship-pr` skill** (`.claude/skills/ship-pr/SKILL.md`) carries a change
-  through all of the above end to end: worktree, PR, a review by a fresh
-  agent that has not seen the session (its prompt is
-  `.claude/skills/ship-pr/maintainer-review.md`; Copilot does not review
-  here), check, merge, cleanup, and always a final `make release`, even for a
-  repo-only change, so `main` never lags `develop`. When a rule here changes, update it there
-  too. `.claude/settings.json` pre-approves the commands it runs (PR create,
-  diff, comment, review API calls, check and `--merge`, pushes to `origin`, `make release`) and denies
-  force-pushes and `--admin`/`--squash` merges.
+  a fast-forward). Never squash- or merge-commit into `main`, and never
+  force-push it: a squash records no parent link back to `develop`, so the
+  merge base stops advancing and every later release conflicts.
+- `pr-check.yml` renders the whole site on every PR into `develop`. It cannot
+  see an OJS cell that throws in the browser, so touched pages are checked in a
+  preview.
 - Pushing `develop` publishes nothing. Neither does any other branch.
 - The `2020-bookdown`, `2021-mdbook`, `2022-bookdown`, `blog` and
   `teaching-portfolio` branches are frozen snapshots of earlier versions of
@@ -600,7 +579,7 @@ that one is harmless either way.
 
 ### The archive repo
 
-`/Users/apurvanakade/Github/math-blog` is a read-only archive; do not edit it.
+The private `math-blog` repo is a read-only archive; do not edit it.
 Post history lives only there — the content came across as a file copy, so
 `git log` on a post in this repo starts at the merge.
 
