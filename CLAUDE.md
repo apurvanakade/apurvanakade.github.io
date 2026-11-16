@@ -57,7 +57,7 @@ The single most important convention in this repo is a hard split between files
 | `styles.css` (personal CSS overrides) | `projects/_metadata.yml` |
 | | `blog/_metadata.yml`, `blog/drafts/_metadata.yml` |
 | | `blog/_includes/*.html` |
-| | `CLAUDE.md`, `.claude/**` |
+| | `CLAUDE.md` |
 
 `_extensions/apurvanakade/mathviz/` belongs to neither column: it is an
 installed upstream release, overwritten by `_scripts/update-mathviz.sh` on the
