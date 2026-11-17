@@ -22,6 +22,11 @@
 -- and, each off by default, the site chrome a Quarto website or book built
 -- on mathviz pages can take instead of writing its own:
 --
+--     sidebar-rail: true           # Quarto's sidebar off-canvas at every
+--                                  # width, behind a slim rail at the left
+--                                  # edge; a string names the pin's
+--                                  # localStorage key (true:
+--                                  # "vm-sidebar-pinned")
 --     sidebar-search: true         # a search box atop Quarto's sidebar that
 --                                  # narrows the menu to matching titles
 --     category-cloud: true         # a listing's category cloud above its
@@ -37,9 +42,9 @@
 --                                  #   (A filter can't see website.site-url:
 --                                  #   Quarto keeps project config out of a
 --                                  #   page's metadata, so it is repeated.)
---     report-bug:                  # "Report bug" popup on text selection,
---       repo: owner/name           #   filing a GitHub issue that links the
---       branch: main               #   page's .qmd source (branch: main)
+--     quiet-apps: true             # every .vm-app without panel boxes,
+--                                  # readout tiles or a legend frame;
+--                                  # Share on hover
 --
 -- One page changes options with `mathviz-page:` in its front matter, never
 -- with `mathviz:` there. Quarto merges a page's front matter over the
@@ -64,7 +69,7 @@
 --
 -- Keep VERSION in step with _extension.yml and package.json --
 -- scripts/build.mjs refuses to build when the three disagree.
-local VERSION    = "1.3.2"
+local VERSION    = "1.10.0"
 local PLOTLY_URL = "https://cdn.plot.ly/plotly-2.35.2.min.js"
 local MATHJS_URL = "https://cdn.jsdelivr.net/npm/mathjs@15.2.0/lib/browser/math.js"
 
@@ -214,16 +219,50 @@ function Pandoc(doc)
       scripts = { "chrome/" .. name .. ".js" }
     }
     if not scriptOnly then chromeDep.stylesheets = { "chrome/" .. name .. ".css" } end
-    quarto.doc.add_html_dependency(chromeDep)
+    -- The meta tags go first: sidebar-rail.js reads its storage key while
+    -- <head> is still parsing, before anything below it exists.
     for meta_name, content in pairs(meta_tags or {}) do
       if content ~= nil and content ~= "" then
         headTag("mathviz-" .. meta_name, '<meta name="mathviz:' .. meta_name .. '" content="' .. escapeAttr(content) .. '">')
       end
     end
+    quarto.doc.add_html_dependency(chromeDep)
   end
 
+  -- The rail's page grid gives the body column the width the site's
+  -- `grid:` asks for, which a stylesheet can't read (Quarto compiles those
+  -- options into Bootstrap's Sass and exposes none of them at run time).
+  -- A filter does see them, in the page's metadata, so they travel as
+  -- custom properties on :root, Quarto's defaults when unset. Only when
+  -- the rail is on: nothing here reaches a page that doesn't use it.
+  if enabled(opts, "sidebar-rail") then
+    local pin = opts["sidebar-rail"]
+    local pinKey = nil
+    if type(pin) ~= "boolean" then pinKey = pandoc.utils.stringify(pin) end
+    chrome("sidebar-rail", { ["sidebar-pin-key"] = pinKey })
+    local grid = doc.meta.grid
+    local function gridValue(key, default)
+      if pandoc.utils.type(grid) ~= "table" or grid[key] == nil then return default end
+      local value = pandoc.utils.stringify(grid[key])
+      -- A CSS length, nothing that could close the declaration or the tag.
+      if value == "" or value:find("[;{}<>\\]") then return default end
+      return value
+    end
+    headTag("mathviz-sidebar-rail-grid", "<style>:root{"
+      .. "--vm-rail-body-width:" .. gridValue("body-width", "800px") .. ";"
+      .. "--vm-rail-margin-width:" .. gridValue("margin-width", "250px") .. ";"
+      .. "--vm-rail-gutter:" .. gridValue("gutter-width", "1.5em") .. "}</style>")
+  end
   if enabled(opts, "sidebar-search") then
     chrome("sidebar-search")
+  end
+  -- Stylesheet only: no script, no settings.
+  if enabled(opts, "quiet-apps") then
+    quarto.doc.add_html_dependency({
+      name = "mathviz-quiet-apps",
+      version = VERSION,
+      stylesheets = { "chrome/quiet-apps.css" }
+    })
   end
   if enabled(opts, "category-cloud") then
     chrome("category-cloud", nil, true)
@@ -232,7 +271,7 @@ function Pandoc(doc)
   if enabled(opts, "embed") or enabled(opts, "share") then
     chrome("embed")
   end
-  if enabled(opts, "share") or enabled(opts, "report-bug") then
+  if enabled(opts, "share") then
     quarto.doc.add_html_dependency({ name = "mathviz-chrome-site", version = VERSION, scripts = { "chrome/site.js" } })
   end
   if enabled(opts, "share") then
@@ -240,17 +279,6 @@ function Pandoc(doc)
       ["share-site-url"] = subOption(opts, "share", "site-url"),
       ["share-embed-docs"] = subOption(opts, "share", "embed-docs")
     })
-  end
-  if enabled(opts, "report-bug") then
-    local repo = subOption(opts, "report-bug", "repo")
-    if repo == nil then
-      quarto.log.warning("mathviz: report-bug needs report-bug.repo (owner/name); skipping it")
-    else
-      chrome("report-bug", {
-        ["report-bug-repo"] = repo,
-        ["report-bug-branch"] = subOption(opts, "report-bug", "branch")
-      })
-    end
   end
 
   -- Opt-in, because a site with its own typography shouldn't carry ~400kB of

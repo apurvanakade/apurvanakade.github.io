@@ -491,7 +491,7 @@ Prose.
   `<main>` to three cards' width so the title, prose, cloud and filter box
   line up with the grid's edges. Plotly, math.js and mathviz's component
   stylesheet are off there because the page draws no charts or panels;
-  `dist/mathviz.min.js` (about 72 KB) still loads, since the filter always
+  `dist/mathviz.min.js` (about 75 KB) still loads, since the filter always
   adds it. The page has no `subtitle:`.
 - **Categories** are a flat vocabulary mixing kind (`app`, `course notes`,
   `problem sets`, `course design`, `formalization`, `OER`, `expository`), venue
@@ -804,8 +804,8 @@ theme also sets a few Bootstrap variables without `!default`
 `$font-size-root`, `$headings-font-weight`, `$h2-font-size`, `$h3-font-size`),
 so a `!default` in `base.scss` cannot change them. The type ones are derived
 from `$vm-font-size-root`, `$vm-font-weight-heading`, `$vm-h2-font-size` and
-`$vm-h3-font-size`, whose mathviz defaults are this site's; for the others,
-change them upstream.
+`$vm-h3-font-size`, whose mathviz defaults are this site's (semibold 600,
+h2 1.6rem, h3 1.3rem); for the others, change them upstream.
 
 **Upstream what any mathviz site would want.** mathviz's theme carries the
 generic prose and Bootstrap fixes any mathviz site wants: font features, the
@@ -814,7 +814,9 @@ under `fig-align="center"` figures, the tinted table header row (smaller on
 a phone), lowercase category chips, the listing's sort/filter boxes in dark
 mode, and the light backing behind SVG/PNG/GIF figures in dark mode. It
 also carries this site's quiet look as its defaults: the 17px root,
-medium, modest headings with no h2 rule, the title block's spacing, and the
+semibold headings with no h2 rule, the title block's spacing, one block gap
+(1.75rem) around callouts, theorems, figures, tables and apps, a little
+space between prose list items, slightly smaller table text, and the
 taller navbar with no rule and grey links over a ruleless small grey footer.
 Do not restate any of it in `base.scss`; a fix of that kind goes to mathviz.
 What stays here is this site's own taste: the 40rem column, the category
@@ -826,8 +828,8 @@ cloud's look and the institution colours. The grid cards are mathviz's
   from Google Fonts via `_includes/fonts.html`. The setting deliberately mirrors
   [visualmathlab.com](https://www.visualmathlab.com/) so the two sites feel like
   siblings: 17px body at line-height 1.65, page titles at weight 300 with
-  −0.02em tracking, section headings at weight 500 and modest sizes (h2
-  1.35rem) with no rule beneath, navbar brand at weight 400. An earlier
+  −0.02em tracking, section headings at weight 600 (h2 1.6rem, h3
+  1.3rem) with no rule beneath, navbar brand at weight 400. An earlier
   serif-body / sans-heading pairing with bold, tightly-tracked headings and
   tracked-out uppercase labels read as a corporate site; do not reintroduce
   any of those. A serif for prose alone (Inter kept for UI) was considered

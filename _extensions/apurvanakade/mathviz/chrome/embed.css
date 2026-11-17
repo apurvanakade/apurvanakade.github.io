@@ -9,9 +9,9 @@
 
 /* html.vm-embed is set by embed.js when the URL carries ?embed=1 -- another
  * site framing one of these apps in an <iframe>. Everything that is the site
- * rather than the app goes: navbar, sidebar and its glass, the title
+ * rather than the app goes: navbar, sidebar and its glass and rail, the title
  * block (the framing page has its own heading), footer, prev/next
- * navigation, Giscus comments, and mathviz's report-bug and share
+ * navigation, Giscus comments, and mathviz's sidebar rail and share
  * affordances (each of whose scripts also skips itself, so this is belt and
  * braces for the paint before they run). A site's own chrome opts in with a
  * data-vm-embed-hide attribute rather than being named here -- Visual Math
@@ -22,6 +22,7 @@ html.vm-embed #quarto-header,
 html.vm-embed #quarto-sidebar,
 html.vm-embed #quarto-sidebar-glass,
 html.vm-embed .quarto-secondary-nav,
+html.vm-embed #vm-sidebar-rail,
 html.vm-embed #title-block-header,
 html.vm-embed .nav-footer,
 html.vm-embed .footer,
@@ -29,7 +30,6 @@ html.vm-embed .page-navigation,
 html.vm-embed .giscus,
 html.vm-embed #quarto-margin-sidebar,
 html.vm-embed [data-vm-embed-hide],
-html.vm-embed .vm-report-bug-popup,
 html.vm-embed .vm-share-bar,
 html.vm-embed .vm-share-dialog {
   display: none !important;
@@ -84,9 +84,9 @@ html.vm-embed #quarto-document-content :not(.vm-app-active):not(.vm-app-active *
  * page's to choose). Quarto/Observable's wrapper divs between the block and
  * the graph div are matched with :has(), as in that chain, so the rule
  * doesn't depend on what they are named. Pages whose figure is an SVG
- * (.ojs-svg-block) draw at their own fixed height and are unaffected: every
- * rule below is gated on .js-plotly-plot, so nothing there is stretched or
- * pushed to the bottom of the frame.
+ * (Observable Plot, a hand-built <svg>) draw at their own fixed height and
+ * are unaffected: every rule below is gated on .js-plotly-plot, so nothing
+ * there is stretched or pushed to the bottom of the frame.
  *
  * The 300px floor is a frame too short for its app -- the chart holds at
  * something readable and the frame scrolls, rather than the chart vanishing
@@ -101,6 +101,10 @@ html.vm-embed .vm-app-active {
   flex-direction: column;
   height: calc(100vh - 1rem);
 }
+/* The theme spaces an app in the article with $vm-block-gap above and below;
+ * in the frame those margins pushed the app past its 100vh and the frame
+ * scrolled. The id out-ranks the theme's rule. */
+html.vm-embed #quarto-document-content .vm-app-active { margin-block: 0; }
 
 html.vm-embed .vm-app-active > .ojs-chart-block:has(.js-plotly-plot) {
   flex: 1 1 auto;
