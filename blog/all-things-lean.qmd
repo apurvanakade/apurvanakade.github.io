@@ -49,4 +49,5 @@ I'm tentatively teaching a course on Lean and math formalization in Fall 2027. T
 | [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) | Google DeepMind's collection of formalized statements of open conjectures, a source of ambitious project ideas. |
 | [The Equational Theories Project](https://arxiv.org/abs/2512.07087) | A large collaborative project led by Terence Tao that settled over 22 million implications between equational laws of magmas, all formalized in Lean. |
 | [The Stacks Project](https://axiommath.ai/research/the-stacks-project-formalized/) | The Stacks Project, formalized in Lean by AxiomMath. |
+| [The Enormous Theorem](https://axiommath.ai/research/blog/the-enormous-theorem-formalized) | The classification of finite simple groups, the longest proof in mathematics, formalized in Lean by AxiomMath. ([project site](https://cfsg.axiommath.ai/)) |
 | [Rubik's cube in Lean](https://github.com/vihdzp/rubik-lean4) | A proof that there are $2^{12} \times 3^{8} \times 8! \times 11!$ Rubik's cube positions, verified in Lean. |
