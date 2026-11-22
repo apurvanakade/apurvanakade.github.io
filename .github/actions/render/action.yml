@@ -11,7 +11,7 @@ runs:
     - name: Set up Quarto
       uses: quarto-dev/quarto-actions/setup@v2
       with:
-        version: "1.10.18"   # keep in sync with the version used locally
+        version: "1.11.9"   # keep in sync with the version used locally
 
     - name: Render site
       shell: bash
