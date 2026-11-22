@@ -22,9 +22,6 @@ Next, we use the [barycentric transformation](https://www.visualmathlab.com/apps
 
 
 ```{ojs}
-import {Plot} from "@observablehq/plot"
-import {slider} from "@jashkenas/inputs"
-
 N = 1000
 
 unit_triangle = [
@@ -79,13 +76,7 @@ transformed_points = unit_triangle_points.map(d => {
 
 ```{ojs}
 // Add a slider for M = number of points to plot
-viewof M = slider({
-  min: 0,
-  max: N,
-  step: 1,
-  value: 100,
-  width: 500
-});
+viewof M = Inputs.range([0, N], {step: 1, value: 100, width: 500});
 ```
 
 ```{ojs}
