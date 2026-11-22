@@ -72,7 +72,7 @@
 --
 -- Keep VERSION in step with _extension.yml and package.json --
 -- scripts/build.mjs refuses to build when the three disagree.
-local VERSION    = "1.14.0"
+local VERSION    = "1.15.1"
 local PLOTLY_URL = "https://cdn.plot.ly/plotly-2.35.2.min.js"
 local MATHJS_URL = "https://cdn.jsdelivr.net/npm/mathjs@15.2.0/lib/browser/math.js"
 
@@ -263,6 +263,15 @@ function Pandoc(doc)
   end
   if enabled(opts, "sidebar-search") then
     chrome("sidebar-search")
+  end
+  -- On unless `smooth-scroll: false`: the one piece of chrome a site opts
+  -- out of, since it changes nothing a page is laid out with. Not on a page
+  -- that turns on Quarto's own `smooth-scroll` (format metadata, so a plain
+  -- top-level key here): that loads zenscroll, which drives the scroll from
+  -- script, frame by frame, and with the CSS property on as well each of
+  -- its steps would itself be animated.
+  if option(opts, "smooth-scroll", true) ~= false and doc.meta["smooth-scroll"] ~= true then
+    chrome("smooth-scroll")
   end
   -- Stylesheet only: no script, no settings.
   if enabled(opts, "quiet-apps") then
