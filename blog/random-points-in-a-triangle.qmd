@@ -124,10 +124,13 @@ viewof sideBySidePlots = {
     ]
   });
 
-  // Layout container
+  // Layout container: side by side, stacked when the page is too narrow for both
   const container = document.createElement("div");
   container.style.display = "flex";
+  container.style.flexWrap = "wrap";
+  container.style.justifyContent = "center";
   container.style.gap = "20px";
+  for (const plot of [plot1, plot2]) plot.style.flex = "1 1 260px";
 
   // Outer wrapper with title and plots
   const wrapper = document.createElement("div");

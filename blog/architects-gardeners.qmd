@@ -23,8 +23,6 @@ I find the same to be true for my classes.
 Teaching as a "gardener" is risky, though. It requires attention, mindfulness, vulnerability, playfulness, and a good sense of humor. You're vulnerable to making mistakes, and most professors find it difficult to show this side of their thinking to students. For reasons I think have to do with ego, professors don't like to appear fallible. I, on the other hand, love this challenge. Every mistake I make in class reveals gaps in my understanding and helps me deepen it (while creating "learning moments" for students). You also need constant vigilance and attention to students' needs and the classroom environment. You want to create "constructive chaos" without devolving into utter chaos.
 
 ```{ojs}
-import {svg} from "@observablehq/stdlib"
-
 width = 600;
 height = 300;
 padding = 40;
@@ -66,7 +64,7 @@ viewof ruler = {
   
   const positionToX = (pos) => padding + pos * (width - 2 * padding);
   
-  return svg`<svg width="${width}" height="${height}" style="display:block; margin:auto; border:none;">
+  return svg`<svg viewBox="0 0 ${width} ${height}" width="${width}" style="display:block; margin:auto; border:none; max-width:100%; height:auto;">
     <defs>
       <marker id="arrowhead-down" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto">
         <path d="M0,0 L6,3 L0,6 Z" fill="#333" />
