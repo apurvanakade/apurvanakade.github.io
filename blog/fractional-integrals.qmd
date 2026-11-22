@@ -1,0 +1,39 @@
+---
+title: "Fractional Integrals"
+description: "Integrating a function half a time."
+date: 2026-11-17
+author: Apurva Nakade
+categories: [math]
+image: "images/fractional-integrals-equation.svg"
+---
+
+Let $I$ denote the integration operator,
+$$
+(If)(x) = \int_0^x f(t) \, dt.
+$$
+Applying $I$ twice, three times, or $n$ times makes sense for every positive integer $n$. Does it make sense to apply $I$ half a time?
+
+## Cauchy's formula for repeated integration
+
+Integrating $n$ times collapses into a single integral:
+$$
+(I^n f)(x) = \frac{1}{(n-1)!} \int_0^x (x - t)^{n-1} f(t) \, dt.
+$$
+This follows by induction, swapping the order of integration at each step.
+
+## Replacing the factorial
+
+The only place where $n$ needs to be an integer is the factorial. Replacing $(n-1)!$ with $\Gamma(n)$ gives the **Riemann–Liouville fractional integral**, defined for every $\alpha > 0$:
+$$
+(I^\alpha f)(x) = \frac{1}{\Gamma(\alpha)} \int_0^x (x - t)^{\alpha-1} f(t) \, dt.
+$$
+
+These operators satisfy the semigroup law $I^\alpha I^\beta = I^{\alpha + \beta}$, which is a restatement of the Beta integral. In particular, $I^{1/2}$ applied twice is $I$.
+
+## An example
+
+For $f(x) = x^k$,
+$$
+I^\alpha x^k = \frac{\Gamma(k+1)}{\Gamma(k + \alpha + 1)} \, x^{k + \alpha}.
+$$
+Taking $k = 0$ and $\alpha = 1/2$, the half-integral of the constant function $1$ is $2\sqrt{x/\pi}$.
