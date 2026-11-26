@@ -17,8 +17,7 @@ Good grades alone aren't enough. Your grades are already on your transcript, and
 - **Improvement:** how you grew over the course, especially after a rough start or a bad exam.
 - **Persistence:** staying with a hard problem, and how you responded to feedback.
 - **Creative projects:** a course project that went past the requirements or was your own idea.
-- **Applying the mathematics elsewhere:** using what we learned in my courses in another field, in a project, an internship or your own research. This is what I most like to write about.
-- **Research experience:** with me or with someone else, if I know enough about it to describe your part.
+- **Research and applications:** research experience, with me or with someone else, if I know enough about it to describe your part. I most like to write about work that applies the mathematics from my courses to another field, in a project, an internship or your own research.
 - **TA or grader roles:** working for one of my courses, or tutoring and mentoring elsewhere.
 - **Helping other students:** explaining ideas to classmates, and being a good teammate on group projects.
 - **Communication:** clear writing and clear presentations.
