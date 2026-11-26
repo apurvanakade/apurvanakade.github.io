@@ -22,19 +22,23 @@ You don't need all of these. Two or three that I can describe with specific exam
 
 ## What to send me
 
-Once I've agreed, send **one email**, at least **a month before your first deadline**, with the subject line "Recommendation letter: *your name*". Include:
+Once I've agreed, send **one email**, at least **a month before your first deadline**, with the subject line "Recommendation letter: *your name*".
+
+In the email, tell me:
 
 - [ ] Which of my courses you took, and when
 - [ ] What you're applying to, and each deadline
 - [ ] Whether you've waived your right to see the letter
+- [ ] **What you'd like me to highlight:** two or three things from the list above, each with a specific example (which course, which project, which conversation)
+
+Attach:
+
 - [ ] CV
 - [ ] Unofficial transcript
 - [ ] (Draft) statement of purpose
 - [ ] Any other work related to the program or to my courses, such as a project report or a writing sample (PDF only)
-- [ ] **What you'd like me to highlight** (see below)
-- [ ] **PhD applicants only:** a Google Sheet or Excel file listing each program, its deadline, how it collects letters, and a column for me to check off.
 
-**What to highlight.** Pick two or three things from the list above and give me a specific example of each: which course, which project, which conversation. Don't be modest. **Advocate for yourself**; I'd rather you claim too much than too little. If I don't agree with something, I'll leave it out, but if you don't mention something important, it might not make it into the letter.
+Don't be modest about what to highlight. **Advocate for yourself**; I'd rather you claim too much than too little. If I don't agree with something, I'll leave it out, but if you don't mention something important, it might not make it into the letter.
 
 ## Reminders
 
