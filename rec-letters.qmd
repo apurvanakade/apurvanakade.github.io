@@ -18,7 +18,7 @@ Good grades alone aren't enough. Your grades are already on your transcript, and
 - **Research and applications:** research experience, with me or with someone else, if I know enough about it to describe your part. I most like to write about work that applies the mathematics from my courses to another field, in a project, an internship or your own research.
 - **Teaching and helping others:** working as a TA or grader for one of my courses, tutoring or mentoring elsewhere, explaining ideas to classmates, and being a good teammate on group projects.
 
-You don't need all of these. Two or three that I can describe with specific examples make a strong letter. It also helps if I've known you for more than one course, or if we've kept in touch since.
+You don't need all of these. Two or three that I can describe with specific examples are enough for a strong letter. It also helps if I've known you for more than one course, or if we've kept in touch since.
 
 ## What to send me
 
@@ -30,7 +30,7 @@ Once I've agreed, send **one email**, at least **a month before your first deadl
 - [ ] CV
 - [ ] Unofficial transcript
 - [ ] (Draft) statement of purpose
-- [ ] Any other work related to the program or to my courses: a project report, a writing sample, code
+- [ ] Any other work related to the program or to my courses, such as a project report or a writing sample (PDF only)
 - [ ] **What you'd like me to highlight** (see below)
 - [ ] **PhD applicants only:** a Google Sheet or Excel file listing each program, its deadline, how it collects letters, and a column for me to check off.
 
