@@ -1,45 +1,43 @@
 ---
-title: Recommendation Letters
+title: Recommendation letters
 toc: false
 ---
 
-Writing recommendation letters is an important part of my job, so you're not asking for a favor. If you found this page on your own, email me first and we'll talk about whether I'm the right person to write for you.
+Writing recommendation letters is an important part of my job, so you're not asking for a favor. Ask me first, at least six weeks before your first deadline: a short email is enough, and we'll talk about whether I'm the right person to write for you.
 
-## What I Look For
+## What I look for
 
 I'll only agree to write a letter if I can write a strong one. A lukewarm letter hurts an application more than it helps, so a no from me isn't a judgment of you: it means someone who knows you better will write you a better letter.
 
 Good grades alone aren't enough. Your grades are already on your transcript, and a letter that only repeats them tells the committee nothing new. I need to be able to say something about you that the transcript can't, such as:
 
 - **Class participation:** asking questions, answering them, and joining discussions.
-- **Curiosity:** conversations outside of class about the material, or about mathematics beyond the syllabus.
-- **Office hours:** coming regularly, with questions you had already thought about.
-- **Improvement:** how you grew over the course, especially after a rough start or a bad exam.
-- **Persistence:** staying with a hard problem, and how you responded to feedback.
+- **Curiosity:** coming to office hours, and conversations outside of class about the material or about mathematics beyond the syllabus.
+- **Improvement:** how you grew over the course, especially after a rough start or a bad exam, and how you stayed with hard problems and responded to feedback.
 - **Creative projects:** a course project that went past the requirements or was your own idea.
 - **Research and applications:** research experience, with me or with someone else, if I know enough about it to describe your part. I most like to write about work that applies the mathematics from my courses to another field, in a project, an internship or your own research.
-- **TA or grader roles:** working for one of my courses, or tutoring and mentoring elsewhere.
-- **Helping other students:** explaining ideas to classmates, and being a good teammate on group projects.
-- **Communication:** clear writing and clear presentations.
-- **Independence:** reading on your own, a reading course, or learning something you needed without being told to.
+- **Teaching and helping others:** working as a TA or grader for one of my courses, tutoring or mentoring elsewhere, explaining ideas to classmates, and being a good teammate on group projects.
 
 You don't need all of these. Two or three that I can describe with specific examples make a strong letter. It also helps if I've known you for more than one course, or if we've kept in touch since.
 
-## What to Send Me
+## What to send me
 
-Send **one email**, at least **a month before your first deadline**, with the subject line "Recommendation letter: *your name*". Include:
+Once I've agreed, send **one email**, at least **a month before your first deadline**, with the subject line "Recommendation letter: *your name*". Include:
 
+- [ ] Which of my courses you took, and when
+- [ ] What you're applying to, and each deadline
+- [ ] Whether you've waived your right to see the letter
 - [ ] CV
 - [ ] Unofficial transcript
 - [ ] (Draft) statement of purpose
-- [ ] Any other work related to the program or to my courses
+- [ ] Any other work related to the program or to my courses: a project report, a writing sample, code
 - [ ] **What you'd like me to highlight** (see below)
 - [ ] **PhD applicants only:** a Google Sheet or Excel file listing each program, its deadline, how it collects letters, and a column for me to check off.
 
-**What to highlight.** Don't be modest. **Advocate for yourself**; I'd rather you claim too much than too little. If I don't agree with something, I'll leave it out, but if you don't mention something important, it might not make it into the letter.
+**What to highlight.** Pick two or three things from the list above and give me a specific example of each: which course, which project, which conversation. Don't be modest. **Advocate for yourself**; I'd rather you claim too much than too little. If I don't agree with something, I'll leave it out, but if you don't mention something important, it might not make it into the letter.
 
 ## Reminders
 
 If I haven't submitted your letter a week before a deadline, email me a reminder with the subject line "Recommendation letter reminder: *your name*, due *date*". Reminders are welcome, not a bother. They help me make sure nothing slips.
 
-Good luck with your applications!
+Good luck with your applications, and tell me how they went!
