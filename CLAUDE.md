@@ -60,8 +60,9 @@ The single most important convention in this repo is a hard split between files
 | | `CLAUDE.md` |
 
 `_extensions/apurvanakade/mathviz/` belongs to neither column: it is an
-installed upstream release, overwritten by `_scripts/update-mathviz.sh` on the
-next render. Nobody edits it (see §6, "mathviz").
+installed upstream release, gitignored, and overwritten by
+`_scripts/update-mathviz.sh` on the next render. Nobody edits it (see §6,
+"mathviz").
 
 **Consequences for Claude:**
 
@@ -653,7 +654,9 @@ under `window.VM`. This site consumes it the same way Monte-Carlo-Methods does.
   `_extensions/apurvanakade/mathviz/` before every render — a full render
   always checks, `quarto preview` at most hourly. A new mathviz release reaches
   this site on the next render. Never edit the installed copy; fix mathviz
-  upstream.
+  upstream. `_extensions/` is gitignored, as on Monte-Carlo-Methods and
+  Visual Math Lab: a committed copy went stale at every mathviz release, and
+  the next render then left every checkout with modified tracked files.
 - **Opt in per post, not site-wide.** A post that uses `VM` puts
   `filters: [mathviz]` in its frontmatter. The filter loads Plotly (~3.5 MB)
   and math.js from a CDN into the page's `<head>`, so enabling it in
@@ -957,9 +960,9 @@ from the files themselves. Each one is described in full in the section named.
 - **No repo named `blog` may have GitHub Pages on** (§6). Its project site
   would take precedence over this site's `/blog/` and shadow every post.
 - **mathviz is fetched at render time** (§6). The pre-render hook needs
-  network access to update it; offline it builds with the installed copy, and
-  on a fresh clone with no copy it fails. `_extensions/` is committed so that
-  case does not arise.
+  network access to update it; offline it builds with the installed copy.
+  `_extensions/` is gitignored, so a fresh clone has no copy and its first
+  render needs the network (CI always has it); offline, that render fails.
 - **`docs/` is gitignored, local build output** (§2). It is not committed and
   has no effect on the published site — only a push to `main` (or a
   manual workflow run) does. Never hand-edit it.

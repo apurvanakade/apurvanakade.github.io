@@ -16,7 +16,8 @@ runs:
     - name: Render site
       shell: bash
       run: quarto render --to html
-      # HTML only: CV.qmd's PDF format is built locally with `make cv` and
-      # committed as CV.pdf, so CI needs no LaTeX. No R, no Python: every code
-      # cell is Observable JS, which runs in the reader's browser (see
-      # CLAUDE.md §2). The pre-render hook fetches the latest mathviz release.
+      # HTML only: the CV and teaching portfolio PDFs are built locally with
+      # `make pdfs` and never published, so CI needs no LaTeX (CLAUDE.md §4).
+      # No R, no Python: every code cell is Observable JS, which runs in the
+      # reader's browser (CLAUDE.md §2). _extensions/ is gitignored: the
+      # pre-render hook installs the latest mathviz release (CLAUDE.md §6).

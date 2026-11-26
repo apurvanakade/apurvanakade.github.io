@@ -23,3 +23,7 @@
 /canvas-import-checklist.md
 
 /.luarc.json
+
+# mathviz, installed from its latest release by _scripts/update-mathviz.sh
+# before every render; never committed. See CLAUDE.md §6.
+/_extensions/
