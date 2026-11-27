@@ -878,8 +878,8 @@ cloud's look and the institution colours. The grid cards are mathviz's
   taught uses `--inst-mc` / `--chip-mc-*` for Mathcamp ones. Every use also
   names the institution in text or shape.
 - **One rule for every embed.** `main iframe` in `base.scss` makes any
-  `<iframe>` 85% of the column and centred, the width of an inset figure
-  in a post, so none overflows a phone, with a `--vm-border` border. Its
+  `<iframe>` 85% of the column and centred, so none overflows a phone,
+  with a `--vm-border` border. Its
   `width=` is ignored; its height is its own `height=`, in pixels (325 suits
   a 16:9 video at that width; a Visual Math Lab app's Share
   dialog measures its own). `height="100%"` does not work, because in a
