@@ -13,7 +13,7 @@ When I was a postdoc I started learning Lean by way of homotopy type theory. Hom
 
 When I gave job talks, I would joke about computers possibly proving theorems one day, and everyone would laugh. Who's laughing now? AI companies used to compete to get a gold medal at math olympiads. Back then it was really annoying to see them post their scores, and things have only gotten worse. None of this feels great, the way it is being done, with so much vitriol and one-upmanship.
 
-Isn't this what we always wanted? But maybe we never thought it would actually happen, and not like this. The proof of the f***ing RIEMANN HYPOTHESIS exists in those 250k lines of code and no human understands it (yet); no human can claim to have discovered it themselves. We have lost our throne as the most intelligent species on this planet. All of this reminds me of a quote from *The Sandman* that I keep coming back to:
+Isn't this what we always wanted? But maybe we never thought it would actually happen, and not like this. The proof of the fing RIEMANN HYPOTHESIS exists in those 250k lines of code and no human understands it (yet); no human can claim to have discovered it themselves. We have lost our throne as the most intelligent species on this planet. All of this reminds me of a quote from *The Sandman* that I keep coming back to:
 
 > "It is what he wanted. But he did not understand the price. Mortals never do. They only see the prize, their heart's desire, their dream... But the price of getting what you want, is getting what once you wanted." — Neil Gaiman, *The Sandman*, "A Midsummer Night's Dream"
 
