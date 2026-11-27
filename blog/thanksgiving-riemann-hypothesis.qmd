@@ -1,0 +1,28 @@
+---
+title: "Thanksgiving, after the Riemann Hypothesis"
+description: "AI proved the Riemann Hypothesis, and somehow that made me want to learn math again."
+date: 2026-11-26
+categories: [AI]
+author: Apurva Nakade
+image: "images/beksinski-aa72.jpg"
+---
+
+Today is Thanksgiving. There are a lot of things I'm grateful for: my wife, son, parents, sister, friends, my health, my job, Vipassana. I've lived a very lucky life, through no fault of my own. This year there's one more thing on the list, and it's a strange one: the math revolution of the past month. First we got a solution to Navier–Stokes, and less than a month later, the Riemann Hypothesis, all AI-generated and Lean-verified, but not yet understood by humans.
+
+When I was a postdoc I started learning Lean by way of homotopy type theory. Homotopy type theory never quite made sense to me, but Lean did. In the old days, when contributing was easy, I even contributed to some of its library: surreal numbers, of all things, and some convex optimization. Then I helped with porting the library from Lean 3 to Lean 4, and by then the contributor base had grown so big, and it had gotten so difficult to get anything into the library, that I stopped contributing. I wonder what the state of convex programming is in Mathlib today, and what it even means to contribute to a library when there is a self-contained proof of the RH out there.
+
+When I gave job talks, I would joke about computers possibly proving theorems one day, and everyone would laugh. Who's laughing now? AI companies used to compete to get a gold medal at math olympiads. Back then it was really annoying to see them post their scores, and things have only gotten worse. None of this feels great, the way it is being done, with so much vitriol and one-upmanship.
+
+Isn't this what we always wanted? But maybe we never thought it would actually happen, and not like this. The proof of the f***ing RIEMANN HYPOTHESIS exists in those 250k lines of code and no human understands it (yet); no human can claim to have discovered it themselves. We have lost our throne as the most intelligent species on this planet. All of this reminds me of a quote from *The Sandman* that I keep coming back to:
+
+> "It is what he wanted. But he did not understand the price. Mortals never do. They only see the prize, their heart's desire, their dream... But the price of getting what you want, is getting what once you wanted." — Neil Gaiman, *The Sandman*, "A Midsummer Night's Dream"
+
+But I've gone past feeling any resentment or frustration about this. I see now how fortunate I am to be here for this day. It doesn't really matter where we go from here; we have reached a singularity in intelligence.
+
+There are now gods among us, of our own creation.
+
+![*AA72*, Zdzisław Beksiński, 1972 (© Historical Museum in Sanok)](images/beksinski-aa72.jpg){width="80%" fig-align="center" fig-alt="A tiny figure holding up a torch walks along the pale floor of a vast canyon, whose walls are colossal hooded figures with skulls for faces, one with its hands pressed together in prayer, under an amber sky dotted with birds."}
+
+Paradoxically, these new results have made me want to get back to learning math, and perhaps to contributing to Lean again. I found myself reading about the connection between the RH and the prime number theorem. And instead of having to pore over pages and pages of books, all I do is ask Claude to walk me through the steps. What a gift to humanity. I've started following the Lean Zulip again and might get back into contributing, and now I don't even need to worry about proof golfing or any of that trivial bs: I can let Claude clean up my proofs for me.
+
+Now, I know that this does not make me a number theorist. Asking AI to explain something does not mean I understand it. I still have to do the legwork, and I still have to pay the price in time. But where there was no way in the past, now there is one. What a day to be alive!
