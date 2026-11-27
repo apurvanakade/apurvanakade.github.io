@@ -686,16 +686,6 @@ image: "images/random-points-triangle.png"
 ---
 ```
 
-An essay's cover (a post about teaching, learning or the like, rather than a
-piece of mathematics) is a public-domain image (a painting, engraving,
-photo or logo from Wikimedia Commons, saved to `blog/images/`), never
-AI-generated art. It is also shown in the post as a captioned figure, after
-the first paragraph rather than above it, at
-`{width="85%" fig-align="center" fig-alt="..."}`, with the caption naming
-the work and linking its Commons page. That follows Substack: the reader
-meets the text before the picture, and the inset marks the image as
-decorative. mathviz's theme centres the caption of any centred figure.
-
 A post with no natural figure uses its formula as its cover:
 `_scripts/make_equation_covers.py` typesets each formula in `COVERS` with the
 local LaTeX (`latex` + `dvisvgm --no-fonts`, so glyphs become paths) onto a
@@ -888,8 +878,8 @@ cloud's look and the institution colours. The grid cards are mathviz's
   taught uses `--inst-mc` / `--chip-mc-*` for Mathcamp ones. Every use also
   names the institution in text or shape.
 - **One rule for every embed.** `main iframe` in `base.scss` makes any
-  `<iframe>` 85% of the column and centred, matching a post's inset opening
-  figure (§6), so none overflows a phone, with a `--vm-border` border. Its
+  `<iframe>` 85% of the column and centred, the width of an inset figure
+  in a post, so none overflows a phone, with a `--vm-border` border. Its
   `width=` is ignored; its height is its own `height=`, in pixels (325 suits
   a 16:9 video at that width; a Visual Math Lab app's Share
   dialog measures its own). `height="100%"` does not work, because in a
